@@ -17,8 +17,8 @@ const PATHS = {
 const common = merge([
     {
     entry: {
-        'index': PATHS.source + '/pages/index/index.js',
-        'blog': PATHS.source + '/pages/blog/blog.js',
+        // 'index': PATHS.source + '/pages/index/index.js',
+        // 'blog': PATHS.source + '/pages/blog/blog.js',
         'colors_types': PATHS.source + '/pages/colors_types/colors_types.js'
     },
     output: {
@@ -26,16 +26,16 @@ const common = merge([
         filename: './js/[name].js'
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            filename: 'index.html',
-            chunks: ['index'],
-            template: PATHS.source + '/pages/index/index.pug'
-        }),
-        new HtmlWebpackPlugin({
-            filename: 'blog.html',
-            chunks: ['blog'],
-            template: PATHS.source + '/pages/blog/blog.pug'
-        }),
+        // new HtmlWebpackPlugin({
+        //     filename: 'index.html',
+        //     chunks: ['index'],
+        //     template: PATHS.source + '/pages/index/index.pug'
+        // }),
+        // new HtmlWebpackPlugin({
+        //     filename: 'blog.html',
+        //     chunks: ['blog'],
+        //     template: PATHS.source + '/pages/blog/blog.pug'
+        // }),
         new HtmlWebpackPlugin({
             filename: 'colors_types.html',
             chunks: ['colors_types'],
