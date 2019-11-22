@@ -18,7 +18,8 @@ const common = merge([
     {
     entry: {
         'index': PATHS.source + '/pages/index/index.js',
-        'blog': PATHS.source + '/pages/blog/blog.js'
+        'blog': PATHS.source + '/pages/blog/blog.js',
+        'colors_types': PATHS.source + '/pages/colors_types/colors_types.js'
     },
     output: {
         path: PATHS.build,
@@ -34,6 +35,11 @@ const common = merge([
             filename: 'blog.html',
             chunks: ['blog'],
             template: PATHS.source + '/pages/blog/blog.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'colors_types.html',
+            chunks: ['colors_types'],
+            template: PATHS.source + '/pages/colors_types/colors_types.pug'
         })
         ]
     },
