@@ -1,16 +1,10 @@
-//- extends ../base
-//- block title
-//-     | Index page
-//- block main
-//-     h1 page colors & types
-//-     p Dark Shade 100% #1F2041 probe 3
-//-     .container
-head
-body
+extends ../base
+block title
+	| Index page
+block main
 	.container
 		.row
-			.col-6
-				.inner
-					h1 Test
-			.col-6
-				h2 Page
+			- for (let i=0; i < 12; i++)
+				.col-md-2.col-lg-1
+					.inner
+

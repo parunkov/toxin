@@ -1,7 +1,10 @@
 h1{
-  color: blue;
+	color: blue;
 }
 .inner {
 	width: 100%;
+	height: 10px;
 	background: yellow;
+	border: 1px solid red;
+	margin-bottom: 10px;
 }
