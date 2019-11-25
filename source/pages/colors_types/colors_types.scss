@@ -8,3 +8,14 @@ h1{
 	border: 1px solid red;
 	margin-bottom: 10px;
 }
+.ui-kit-logo {
+	display: block;
+	margin-bottom: 10px;
+}
+.ui-kit-logo--bg {
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin-bottom: 10px;
+	background: url("ui_kit_logo.svg") left top no-repeat;
+}
