@@ -8,7 +8,8 @@ const sass = require('./webpack/sass');
 const css = require('./webpack/css');
 const extractCSS = require('./webpack/css.extract');
 const images = require('./webpack/images');
-// const fonts = require('./webpack/fonts');
+const fonts = require('./webpack/fonts');
+const CopyWebpackPlugin= require('copy-webpack-plugin');
 
 
 const PATHS = {
@@ -42,12 +43,16 @@ const common = merge([
             filename: 'colors_types.html',
             chunks: ['colors_types'],
             template: PATHS.source + '/pages/colors_types/colors_types.pug'
-        })
+        }),
+        new CopyWebpackPlugin([{
+            from: './source/fonts',
+            to: './fonts'
+        }])
         ]
     },
     pug(),
     images(),
-    // fonts()
+    fonts()
     ]);
 
 module.exports = function(env) {

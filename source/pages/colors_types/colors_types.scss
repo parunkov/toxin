@@ -1,5 +1,23 @@
-h1{
-	color: blue;
+@font-face {
+	font-family: 'Quicksand';
+	src: url("../../fonts/Quicksand-Regular.ttf");
+	// src: local('☺'), url('fonts/Quicksand-Regular.woff') format('woff'), url('fonts/Quicksand-Regular.ttf') format('truetype'), url('fonts/Quicksand-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Quicksand';
+	src: url("../../fonts/Quicksand-Bold.ttf");
+	// src: local('☺'), url('fonts/Quicksand-Regular.woff') format('woff'), url('fonts/Quicksand-Regular.ttf') format('truetype'), url('fonts/Quicksand-Regular.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+h1{	
+color: #1f2041;
+font-family: Quicksand;
+font-size: 24px;
+font-weight: 700;
 }
 .inner {
 	width: 100%;
