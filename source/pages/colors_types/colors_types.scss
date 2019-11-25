@@ -1,14 +1,14 @@
 @font-face {
 	font-family: 'Quicksand';
-	src: url("../../fonts/Quicksand-Regular.ttf");
-	// src: local('☺'), url('fonts/Quicksand-Regular.woff') format('woff'), url('fonts/Quicksand-Regular.ttf') format('truetype'), url('fonts/Quicksand-Regular.svg') format('svg');
+	src: url('../../fonts/Quicksand-Regular.woff');
+	src: url('../../fonts/Quicksand-Regular.ttf') format('truetype'), url('../../fonts/Quicksand-Regular.svg') format('svg');
 	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
 	font-family: 'Quicksand';
-	src: url("../../fonts/Quicksand-Bold.ttf");
-	// src: local('☺'), url('fonts/Quicksand-Regular.woff') format('woff'), url('fonts/Quicksand-Regular.ttf') format('truetype'), url('fonts/Quicksand-Regular.svg') format('svg');
+	src: url('../../fonts/Quicksand-Bold.woff');
+	src: url('../../fonts/Quicksand-Bold.ttf') format('truetype'), url('../../fonts/Quicksand-Bold.svg') format('svg');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -35,5 +35,5 @@ font-weight: 700;
 	width: 48px;
 	height: 48px;
 	margin-bottom: 10px;
-	background: url("ui_kit_logo.svg") left top no-repeat;
+	background: url('ui_kit_logo.svg') left top no-repeat;
 }
