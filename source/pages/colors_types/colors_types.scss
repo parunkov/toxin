@@ -37,3 +37,40 @@ font-weight: 700;
 	margin-bottom: 10px;
 	background: url('ui_kit_logo.svg') left top no-repeat;
 }
+.colors-types__row {
+	display: flex;
+  flex-wrap: wrap; 
+}
+.colors-types__col {
+position: relative;
+  padding-right: 1.66666%;
+  padding-left: 1.66666%;
+  border: 1px solid yellow;
+}
+.colors-types__col--1 {
+	flex: 0 0 63.33333%;
+  max-width: 63.33333%;
+@media (max-width: 1200px) {
+	flex: 0 0 63.33333%;
+  max-width: 63.33333%;
+}
+}
+.colors-types__col--2 {
+	flex: 0 0 36.66667%;
+  max-width: 36.66667%;
+  @media (max-width: 1200px) {
+	flex: 0 0 auto;
+  max-width: auto;
+}
+}
+.colors-types__colors {
+	margin-left: 9px;
+	width: 270px;
+	background:red;
+}
+.colors-types__types {
+	margin-left: 6px;
+	min-width: 280px;
+	max-width: 403px;
+	background: green;
+}
