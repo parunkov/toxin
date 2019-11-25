@@ -51,16 +51,16 @@ position: relative;
 	flex: 0 0 63.33333%;
   max-width: 63.33333%;
 @media (max-width: 1200px) {
-	flex: 0 0 63.33333%;
-  max-width: 63.33333%;
+	flex: 1 2 auto;
+  max-width: auto;
 }
 }
 .colors-types__col--2 {
 	flex: 0 0 36.66667%;
   max-width: 36.66667%;
   @media (max-width: 1200px) {
-	flex: 0 0 auto;
-  max-width: auto;
+	flex: 0 0 397px;
+  max-width: 397px;
 }
 }
 .colors-types__colors {
