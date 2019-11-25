@@ -2,14 +2,7 @@ extends ../base
 block title
 	| Index page
 block main
-	.container
-		img.ui-kit-logo(src = require("./ui_kit_logo.svg"))
-		img.ui-kit-logo(src = require("./ui_kit_logo.png"))
-		.ui-kit-logo--bg
+	img.ui-kit-logo(src = require("./ui_kit_logo.svg"))
+	.page__container
 		h1 Sample
-		.row
-			- for (let i=0; i < 12; i++)
-				.col-md-2.col-lg-1
-					.inner
-						p privet
 
