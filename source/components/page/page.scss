@@ -15,6 +15,22 @@
 	src: url("../../fonts/Quicksand-Bold.woff");
 	src: url("../../fonts/Quicksand-Bold.ttf") format("truetype"), url("../../fonts/Quicksand-Bold.svg") format("svg");
 }
+@font-face {
+	font-style: normal;
+	font-weight: 400;
+	font-family: "Montserrat";
+
+	src: url("../../fonts/Montserrat-Regular.woff");
+	src: url("../../fonts/Montserrat-Regular.ttf") format("truetype"), url("../../fonts/Montserrat-Regular.svg") format("svg");
+}
+@font-face {
+	font-style: normal;
+	font-weight: 700;
+	font-family: "Montserrat";
+
+	src: url("../../fonts/Montserrat-Bold.woff");
+	src: url("../../fonts/Montserrat-Bold.ttf") format("truetype"), url("../../fonts/Montserrat-Bold.svg") format("svg");
+}
 
 html {
 	box-sizing: border-box;
@@ -28,14 +44,32 @@ html {
 h1 {
 	font-weight: 700;
 	font-size: 24px;
+	line-height: 1.2em;
 	font-family: Quicksand;
 	color: #1f2041;
 }
 h2 {
 	font-weight: 700;
 	font-size: 19px;
+	line-height: 1.2em;
 	font-family: Quicksand;
 	color: $black;
+}
+h3 {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 1.2em;
+	font-family: Montserrat;
+	color: $black;
+	text-transform: uppercase;
+}
+p {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	line-height: 1.6em;
+	font-family: Montserrat;
+	color: $black-75;
 }
 .page__wrap {
 	position: absolute;
@@ -53,40 +87,40 @@ h2 {
 	top: 0;
 	left: 50%;
 	width: 100%;
-	max-width: 1440px;
+	max-width: $page-inner-max;
 	// border: 1px solid red;
 	transform: translateX(-50%);
 }
 .page__container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1200%*100/1440;
 	margin: 0 auto;
 	// border: 1px solid blue;
 }
-.row {
-	display: flex;
-	flex-wrap: wrap;
-}
-.col {
-	position: relative;
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-}
+// .row {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// }
+// .col {
+// 	position: relative;
+// 	width: 100%;
+// 	padding-right: 15px;
+// 	padding-left: 15px;
+// }
 
-.col {
-	flex-grow: 1;
-	flex-basis: 0;
-	max-width: 100%;
-}
+// .col {
+// 	flex-grow: 1;
+// 	flex-basis: 0;
+// 	max-width: 100%;
+// }
 
-.col-auto {
-	flex: 0 0 auto;
-	width: auto;
-	max-width: 100%;
-}
+// .col-auto {
+// 	flex: 0 0 auto;
+// 	width: auto;
+// 	max-width: 100%;
+// }
 
-.col-1 {
-	flex: 0 0 8.33333%;
-	max-width: 8.33333%;
-}
+// .col-1 {
+// 	flex: 0 0 8.33333%;
+// 	max-width: 8.33333%;
+// }
