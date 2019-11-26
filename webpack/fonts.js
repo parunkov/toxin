@@ -4,7 +4,7 @@ module.exports = function() {
       rules: [
         {
           test: /\.(woff|ttf|svg)$/,
-          exclude: /pages/,
+          include: /fonts/,
           loader: 'file-loader',
           options: {
               name: 'fonts/[name].[ext]'
