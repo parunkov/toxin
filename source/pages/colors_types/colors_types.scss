@@ -1,3 +1,4 @@
+@import "../../variables.scss";
 // @font-face {
 // 	font-style: normal;
 // 	font-weight: 400;
@@ -15,19 +16,19 @@
 // 	src: url("../../fonts/Quicksand-Bold.ttf") format("truetype"), url("../../fonts/Quicksand-Bold.svg") format("svg");
 // }
 
-h1 {
-	font-weight: 700;
-	font-size: 24px;
-	font-family: Quicksand;
-	color: #1f2041;
-}
-.inner {
-	width: 100%;
-	height: 30px;
-	margin-bottom: 10px;
-	background: yellow;
-	border: 1px solid red;
-}
+// h1 {
+// 	font-weight: 700;
+// 	font-size: 24px;
+// 	font-family: Quicksand;
+// 	color: #1f2041;
+// }
+// .inner {
+// 	width: 100%;
+// 	height: 30px;
+// 	margin-bottom: 10px;
+// 	background: yellow;
+// 	// border: 1px solid red;
+// }
 // .ui-kit-logo {
 // 	display: block;
 // 	margin-bottom: 10px;
@@ -42,12 +43,14 @@ h1 {
 .colors-types__row {
 	display: flex;
 	flex-wrap: wrap;
+	padding-top: 4px;
+	min-height: 760px;
 }
 .colors-types__col {
 	position: relative;
 	padding-right: 20%*100/1200;
 	padding-left: 20%*100/1200;
-	border: 1px solid yellow;
+	// border: 1px solid yellow;
 }
 .colors-types__col--1 {
 	flex: 0 0 700%*100/1200;
@@ -67,11 +70,62 @@ h1 {
 .colors-types__colors {
 	width: 270px;
 	margin-left: 9px;
-	background:red;
+	// background:red;
 }
 .colors-types__types {
 	min-width: 280px;
 	max-width: 403px;
 	margin-left: 6px;
-	background: green;
+	// background: green;
+}
+.colors-types__color-block {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	margin-right: 37px;
+	margin-bottom: 18px;
+	background-color: $black;
+	border-radius: 6px;
+	&--2 {
+		background-color: $black-75;
+	}
+	&--3 {
+		background-color: $black-50;
+	}
+	&--4 {
+		background-color: $black-25;
+	}
+	&--5 {
+		background-color: $black-5;
+	}
+	&--6 {
+		background-color: $purple;
+	}
+	&--7 {
+		background-color: $green;
+	}
+}
+.colors-types__color-block-text {
+	padding-top: 12px;
+	display: inline-block;
+	vertical-align: top;
+}
+.colors-types__color-block-h2 {
+	margin-bottom: 11px;
+}
+.colors-types__color-block-p {
+	font-weight: 400;
+	font-size: 19px;
+	font-family: Quicksand;
+	color: $black;
+}
+.colors-types__types-block-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+.colors-types__types-col-1 {
+	flex: 0 0 60px;
+}
+.colors-types__types-col-2 {
+	flex: 1 0 200px;
 }
