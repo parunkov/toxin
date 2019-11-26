@@ -1,19 +1,19 @@
-@font-face {
-	font-style: normal;
-	font-weight: 400;
-	font-family: "Quicksand";
+// @font-face {
+// 	font-style: normal;
+// 	font-weight: 400;
+// 	font-family: "Quicksand";
 
-	src: url("../../fonts/Quicksand-Regular.woff");
-	src: url("../../fonts/Quicksand-Regular.ttf") format("truetype"), url("../../fonts/Quicksand-Regular.svg") format("svg");
-}
-@font-face {
-	font-style: normal;
-	font-weight: 700;
-	font-family: "Quicksand";
+// 	src: url("../../fonts/Quicksand-Regular.woff");
+// 	src: url("../../fonts/Quicksand-Regular.ttf") format("truetype"), url("../../fonts/Quicksand-Regular.svg") format("svg");
+// }
+// @font-face {
+// 	font-style: normal;
+// 	font-weight: 700;
+// 	font-family: "Quicksand";
 
-	src: url("../../fonts/Quicksand-Bold.woff");
-	src: url("../../fonts/Quicksand-Bold.ttf") format("truetype"), url("../../fonts/Quicksand-Bold.svg") format("svg");
-}
+// 	src: url("../../fonts/Quicksand-Bold.woff");
+// 	src: url("../../fonts/Quicksand-Bold.ttf") format("truetype"), url("../../fonts/Quicksand-Bold.svg") format("svg");
+// }
 
 h1 {
 	font-weight: 700;
@@ -28,17 +28,17 @@ h1 {
 	background: yellow;
 	border: 1px solid red;
 }
-.ui-kit-logo {
-	display: block;
-	margin-bottom: 10px;
-}
-.ui-kit-logo--bg {
-	display: block;
-	width: 48px;
-	height: 48px;
-	margin-bottom: 10px;
-	background: url("ui_kit_logo.svg") left top no-repeat;
-}
+// .ui-kit-logo {
+// 	display: block;
+// 	margin-bottom: 10px;
+// }
+// .ui-kit-logo--bg {
+// 	display: block;
+// 	width: 48px;
+// 	height: 48px;
+// 	margin-bottom: 10px;
+// 	background: url("ui_kit_logo.svg") left top no-repeat;
+// }
 .colors-types__row {
 	display: flex;
 	flex-wrap: wrap;
@@ -50,15 +50,18 @@ h1 {
 	border: 1px solid yellow;
 }
 .colors-types__col--1 {
-	flex: 0 0 63.33333%;
+	flex: 0 0 700%*100/1200;
 	@media (max-width: 1200px) {
 		flex: 1 0 auto;
 	}
 }
 .colors-types__col--2 {
-	flex: 0 0 36.66667%;
+	flex: 0 0 500%*100/1200;
 	@media (max-width: 1200px) {
 		flex: 0 0 403px;
+	}
+	@media (max-width: 403px) {
+		flex: 0 0 auto;
 	}
 }
 .colors-types__colors {

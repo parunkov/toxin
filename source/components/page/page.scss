@@ -1,3 +1,20 @@
+@font-face {
+	font-style: normal;
+	font-weight: 400;
+	font-family: "Quicksand";
+
+	src: url("../../fonts/Quicksand-Regular.woff");
+	src: url("../../fonts/Quicksand-Regular.ttf") format("truetype"), url("../../fonts/Quicksand-Regular.svg") format("svg");
+}
+@font-face {
+	font-style: normal;
+	font-weight: 700;
+	font-family: "Quicksand";
+
+	src: url("../../fonts/Quicksand-Bold.woff");
+	src: url("../../fonts/Quicksand-Bold.ttf") format("truetype"), url("../../fonts/Quicksand-Bold.svg") format("svg");
+}
+
 html {
 	box-sizing: border-box;
 
@@ -60,4 +77,4 @@ html {
 .col-1 {
 	flex: 0 0 8.33333%;
 	max-width: 8.33333%;
-}
+}
