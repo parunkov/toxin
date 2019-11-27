@@ -23,8 +23,24 @@
 	font-size: 14px;
 	line-height: 18px;
 	font-family: Montserrat;
-	color: $black-25;
+	color: $black-75;
 	background-color: $white;
 	border: 1px solid $black-25;
 	border-radius: 4px;
+	&::-webkit-input-placeholder {
+		color: $black-25;
+	}
+	&::-moz-placeholder {
+		color: $black-25;
+	}
+	&:-moz-placeholder {
+		color: $black-25;
+	}
+	&:-ms-input-placeholder {
+		color: $black-25;
+	}
+	&:hover, &--hover, &:focus, &--focus {
+		border: 1px solid $black-50;
+		outline: none;
+	}
 }
