@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+.input__h3 {
+	display: block;
+	float: left;
+	margin-bottom: 5px;
+	padding-top: 4px;
+}
+.input__p {
+	display: block;
+	font-weight: 400;
+	font-size: 12px;
+	font-family: Montserrat;
+	vertical-align: top;
+	text-align: right;
+	color: $black-50;
+	text-transform: uppercase;
+}
+.input__input {
+	width: 100%;
+	height: 44px;
+	padding-left: 15px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: Montserrat;
+	color: $black-25;
+	background-color: $white;
+	border: 1px solid $black-25;
+	border-radius: 4px;
+}

@@ -2,8 +2,7 @@
 .form_elements__row {
 	display: flex;
 	flex-wrap: wrap;
-	// min-height: 760px;
-	padding-top: 4px;
+
 	@media (max-width: $page-inner-min) {
 		display: block;
 		max-width: 100vw;
@@ -14,11 +13,10 @@
 	}
 }
 .form_elements__col {
-	border: 1px solid red;
-	height: 100px;
-	padding-left: 21%*100/1200;
 	padding-right: 18%*100/1200;
-	// min-width: 360px;
+	// border: 1px solid red;
+	// height: 100px;
+	padding-left: 21%*100/1200;
 	&--1, &--4, &--7 {
 		flex: 0 0 446%*100/1200;
 		@media (max-width: $page-container) {
@@ -81,9 +79,8 @@
 	}
 }
 .form_elements__inner {
-	// width: 320px;
-	height: 40px;
-	border: 1px solid green;
+	// height: 40px;
+	// border: 1px solid green;
 	&--1, &--4, &--7 {
 		width: 320%*100/404;
 		@media (max-width: $page-container) {
@@ -102,4 +99,7 @@
 			width: 100%;
 		}
 	}
+}
+.form_elements__item {
+	margin-bottom: 17px;
 }
