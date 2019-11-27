@@ -22,7 +22,8 @@ const common = merge([
     entry: {
         // 'index': PATHS.source + '/pages/index/index.js',
         // 'blog': PATHS.source + '/pages/blog/blog.js',
-        'colors_types': PATHS.source + '/pages/colors_types/colors_types.js'
+        'colors_types': PATHS.source + '/pages/colors_types/colors_types.js',
+        'form_elements': PATHS.source + '/pages/form_elements/form_elements.js'
     },
     output: {
         path: PATHS.build,
@@ -43,6 +44,11 @@ const common = merge([
             filename: 'colors_types.html',
             chunks: ['colors_types'],
             template: PATHS.source + '/pages/colors_types/colors_types.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'form_elements.html',
+            chunks: ['form_elements'],
+            template: PATHS.source + '/pages/form_elements/form_elements.pug'
         }),
         new CopyWebpackPlugin([{
             from: './source/fonts',

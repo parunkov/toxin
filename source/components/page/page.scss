@@ -79,23 +79,30 @@ p {
 	min-width: 320px;
 	height: 100%;
 	margin: 0 auto;
-	// overflow-x: hidden;
-	// border: 1px solid green;
+	overflow-x: hidden;
+	border: 1px solid green;
 }
 .page__inner {
 	position: absolute;
 	top: 0;
 	left: 50%;
 	width: 100%;
+	min-width: $page-inner-min;
 	max-width: $page-inner-max;
-	// border: 1px solid red;
+	border: 1px solid red;
 	transform: translateX(-50%);
 }
 .page__container {
 	width: 100%;
 	max-width: 1200%*100/1440;
 	margin: 0 auto;
-	// border: 1px solid blue;
+	border: 1px solid blue;
+	@media (max-width: 1440px) {
+		max-width: $page-container;
+	}
+	@media (max-width: $page-container) {
+		max-width: 100%;
+	}
 }
 // .row {
 // 	display: flex;
