@@ -85,6 +85,21 @@
 	height: 40px;
 	border: 1px solid green;
 	&--1, &--4, &--7 {
-		width: 320px;
+		width: 320%*100/404;
+		@media (max-width: $page-container) {
+			width: 320px;
+		}
+		@media (max-width: 1086px) {
+			width: 100%;
+		}
+	}
+	&--2, &--5 {
+		width: 320%*100/350;
+		@media (max-width: $page-container) {
+			width: 320px;
+		}
+		@media (max-width: 1086px) {
+			width: 100%;
+		}
 	}
 }
