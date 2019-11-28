@@ -1,0 +1,9 @@
+mixin checkbox(cl, text, head)
+	.checkbox__container
+		each t, i in text
+			label.checkbox__label
+				input(type="checkbox" name=cl+"-"+i class="checkbox"+" "+cl)
+				.checkbox__custom
+				if head
+					h4.checkbox__header= head[i]
+				p.checkbox__text= t

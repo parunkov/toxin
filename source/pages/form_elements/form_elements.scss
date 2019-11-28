@@ -108,6 +108,10 @@
 	&--6, &--7 {
 		width: 266%*100/320;
 	}
+	&--8 {
+		padding-top: 5px;
+		width: 222%*100/320;
+	}
 }
 .form_elements__item-inner {
 	display: inline-block;
@@ -118,4 +122,7 @@
 	&--2 {
 		width: 150%*100/320;
 	}
-}
+}
+.form_elements__item-8-header {
+	margin-bottom: 16px;
+}
