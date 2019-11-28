@@ -102,8 +102,11 @@
 }
 .form_elements__item {
 	margin-bottom: 17px;
-	&--4 {
-		margin-bottom: 38px;
+	&--4, &--5, &--6 {
+		margin-bottom: 39px;
+	}
+	&--6, &--7 {
+		width: 266%*100/320;
 	}
 }
 .form_elements__item-inner {
