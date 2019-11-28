@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+.toggle {
+	display: none;
+}
+.toggle__label {
+	position: relative;
+}
+.toggle__custom {
+	width: 40px;
+	height: 20px;
+	border-radius: 10px;
+border: 1px solid $black-25;
+background-color: $white;
+position: absolute;
+top: 0;
+left: 0;
+}
+.toggle__custom-inner {
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 3px;
+	left: 4px;
+	border-radius: 6px;
+	background-color: $black-25;
+}
+.toggle:checked + .toggle__custom {
+	border: 1px solid $purple;
+}
+.toggle:checked + .toggle__custom .toggle__custom-inner {
+	background: $gradient-purple;
+	left: 24px;
+}
+.toggle__text {
+	padding-left: 50px;
+	margin-bottom: 10px;
+}
