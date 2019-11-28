@@ -6,5 +6,6 @@ import '../../components/input/input.js';
 import '../../components/checkbox/checkbox.js';
 import '../../components/radio/radio.js';
 import '../../components/toggle/toggle.js';
+import '../../components/like/like.js';
 import './form_elements.scss';
 // import './form_elements.pug';
