@@ -111,6 +111,10 @@
 	&--8 {
 		padding-top: 5px;
 		width: 222%*100/320;
+		margin-bottom: 42px;
+	}
+	&--9 {
+		margin-bottom: 41px;
 	}
 }
 .form_elements__item-inner {
@@ -125,4 +129,7 @@
 }
 .form_elements__item-8-header {
 	margin-bottom: 16px;
+}
+.form_elements__item-9-header {
+	margin-bottom: 15px;
 }

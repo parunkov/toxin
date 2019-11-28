@@ -5,6 +5,7 @@ block main
 	include ../../components/ui_kit/ui_kit.pug
 	include ../../components/input/input.pug
 	include ../../components/checkbox/checkbox.pug
+	include ../../components/radio/radio.pug
 	.page__container
 		.form_elements__row
 			.form_elements__col.form_elements__col--1
@@ -31,6 +32,11 @@ block main
 					.form_elements__item.form_elements__item--8
 						h3.form_elements__item-8-header Checkbox Buttons
 						+checkbox('form_elements__checkbox-1', ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'])
+					.form_elements__item.form_elements__item--9
+						h3.form_elements__item-9-header Radio Buttons
+						+radio('form_elements__radio', ['Мужчина', 'Женщина'])
+					.form_elements__item.form_elements__item--10
+						h3.form_elements__item-10-header Toggle
 			.form_elements__col.form_elements__col--3
 				.form_elements__inner.form_elements__inner--3
 			.form_elements__col.form_elements__col--4
