@@ -1,4 +1,7 @@
 @import "../../variables.scss";
+.input__container {
+	position: relative;
+}
 .input__h3 {
 	display: block;
 	float: left;
@@ -42,5 +45,37 @@
 	&:hover, &--hover, &:focus, &--focus {
 		border: 1px solid $black-50;
 		outline: none;
+	}
+	&::-webkit-calendar-picker-indicator {
+		display: none;
+	}
+	&::-webkit-inner-spin-button {
+		display: none;
+	}
+	&::-webkit-clear-button {
+		display: none;
+	}
+	&::-ms-clear {
+		display: none;
+	}
+}
+.input__icon {
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+	width: 40px;
+	height: 39px;
+	padding-top: 5px;
+	text-align: center;
+	background: $white;
+	border-radius: 4px;
+}
+.input__icon-text {
+	font-weight: 400;
+	font-size: 24px;
+	font-family: "Material Icons";
+	color: $black-50;
+	&--purple {
+		color: $purple;
 	}
 }

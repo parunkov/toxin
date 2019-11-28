@@ -31,6 +31,14 @@
 	src: url("../../fonts/Montserrat-Bold.woff");
 	src: url("../../fonts/Montserrat-Bold.ttf") format("truetype"), url("../../fonts/Montserrat-Bold.svg") format("svg");
 }
+@font-face {
+	font-style: normal;
+	font-weight: 400;
+	font-family: "Material Icons";
+
+	src: url("../../fonts/MaterialIcons-Regular.woff");
+	src: url("../../fonts/MaterialIcons-Regular.ttf") format("truetype"), url("../../fonts/MaterialIcons-Regular.svg") format("svg");
+}
 
 html {
 	box-sizing: border-box;
