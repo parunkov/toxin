@@ -8,6 +8,7 @@ import '../../components/radio/radio.js';
 import '../../components/toggle/toggle.js';
 import '../../components/like/like.js';
 import '../../components/rate/rate.js';
+import '../../components/slider/slider.js';
 import './form_elements.scss';
 // import './form_elements.pug';
 
@@ -24,3 +25,5 @@ $('.form_elements__rate-1-star').each(function( i ) {
 			$('.form_elements__rate-2-star:lt('+(i+1)+')').text('star');
 		});
 	});
+
+

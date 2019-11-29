@@ -1,0 +1,74 @@
+@import "../../variables.scss";
+.slider__container {
+	position: relative;
+}
+#ui-slider-range {
+	position: relative;
+	width: 100%;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	display: block;
+	font-size: 0.7em;
+	background: red;
+	background-position: 0 0;
+	border: 0;
+}
+.ui-corner-all {
+	border-top-left-radius: 3px;
+}
+.ui-slider-horizontal {
+	height: 0.8em;
+}
+.ui-widget {
+	font-size: 1em;
+	font-family: Arial,Helvetica,sans-serif;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+	font-size: 1em;
+	font-family: Arial,Helvetica,sans-serif;
+}
+.ui-widget.ui-widget-content {
+	border: 1px solid #c5c5c5;
+}
+.ui-widget-content {
+	color: #333333;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+}
+.ui-widget-content a {
+	color: #333333;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+
+	-ms-touch-action: none;
+	    touch-action: none;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, /* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+	font-weight: normal;
+	color: #454545;
+	background: #f6f6f6;
+	border: 1px solid #c5c5c5;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+	color: #454545;
+	text-decoration: none;
+}
+.ui-widget-header {
+	height: 10px;
+	font-weight: bold;
+	color: #333333;
+	background: #cf5252;
+	border: 1px solid #dddddd;
+}
