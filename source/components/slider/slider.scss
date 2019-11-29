@@ -1,6 +1,7 @@
 @import "../../variables.scss";
 .slider__container {
 	position: relative;
+	width: 266%*100/320;
 }
 #ui-slider-range {
 	position: relative;
@@ -72,3 +73,51 @@ html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:activ
 	background: #cf5252;
 	border: 1px solid #dddddd;
 }
+
+
+.slider__container {
+	position: relative;
+	width: 266%*100/320;
+}
+#ui-slider-range {
+	position: relative;
+	width: 100%;
+}
+.slider__h3 {
+	display: inline-block;
+	float: left;
+	padding-top: 1px;
+	width: 50%;
+}
+#amount {
+	text-align: right;
+	display: inline-block;
+	width: 50%;
+	color: $black-50;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+text-transform: uppercase;
+vertical-align: top;
+margin-bottom: 20px;
+
+}
+.ui-slider-horizontal {
+    height: 6px;
+    border-radius: 3px;
+border: 1px solid $black-25;
+background-color: $white;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    margin-top: -5px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    -ms-touch-action: none;
+    touch-action: none;
+    border-radius: 8px;
+border: 2px solid $white;
+background: $gradient-green;
+    }
