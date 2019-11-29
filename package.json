@@ -19,6 +19,7 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-csscomb": "^3.1.1",
     "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.4.1",
     "node-sass": "^4.13.0",
     "node-static": "^0.7.11",
     "normalize.css": "^8.0.1",

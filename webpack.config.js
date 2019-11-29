@@ -53,7 +53,11 @@ const common = merge([
         new CopyWebpackPlugin([{
             from: './source/fonts',
             to: './fonts'
-        }])
+        }]),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        })
         ]
     },
     pug(),

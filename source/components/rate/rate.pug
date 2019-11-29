@@ -1,0 +1,7 @@
+mixin rate(cl, n)
+	div(class= "rate__container "+cl)
+		- for (let i = 0; i <5 ; i++)
+			if i < n
+				i(class= "rate__star "+cl+"-star") star
+			else
+				i(class= "rate__star "+cl+"-star") star_border

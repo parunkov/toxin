@@ -119,6 +119,9 @@
 	&--10 {
 		margin-bottom: 46px;
 	}
+	&--11 {
+		margin-bottom: 41px;
+	}
 }
 .form_elements__item-inner {
 	display: inline-block;
@@ -141,4 +144,7 @@
 }
 .form_elements__item-11-header {
 	margin-bottom: 16px;
+}
+.form_elements__rate-1-star, .form_elements__rate-2-star {
+	cursor: pointer;
 }
