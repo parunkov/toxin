@@ -109,15 +109,15 @@
 		width: 266%*100/320;
 	}
 	&--8 {
-		padding-top: 5px;
 		width: 222%*100/320;
-		margin-bottom: 42px;
+		margin-bottom: 40px;
+		padding-top: 5px;
 	}
 	&--9 {
-		margin-bottom: 41px;
+		margin-bottom: 39px;
 	}
 	&--10 {
-		margin-bottom: 48px;
+		margin-bottom: 46px;
 	}
 }
 .form_elements__item-inner {
@@ -138,4 +138,7 @@
 }
 .form_elements__item-10-header {
 	margin-bottom: 15px;
+}
+.form_elements__item-11-header {
+	margin-bottom: 16px;
 }

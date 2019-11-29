@@ -6,32 +6,32 @@
 	position: relative;
 }
 .toggle__custom {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 40px;
 	height: 20px;
+	background-color: $white;
+	border: 1px solid $black-25;
 	border-radius: 10px;
-border: 1px solid $black-25;
-background-color: $white;
-position: absolute;
-top: 0;
-left: 0;
 }
 .toggle__custom-inner {
 	position: absolute;
-	width: 12px;
-	height: 12px;
 	top: 3px;
 	left: 4px;
-	border-radius: 6px;
+	width: 12px;
+	height: 12px;
 	background-color: $black-25;
+	border-radius: 6px;
 }
 .toggle:checked + .toggle__custom {
 	border: 1px solid $purple;
 }
 .toggle:checked + .toggle__custom .toggle__custom-inner {
-	background: $gradient-purple;
 	left: 24px;
+	background: $gradient-purple;
 }
 .toggle__text {
-	padding-left: 50px;
 	margin-bottom: 10px;
+	padding-left: 50px;
 }

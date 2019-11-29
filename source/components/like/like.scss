@@ -1,0 +1,48 @@
+@import "../../variables.scss";
+.like__container {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	margin-right: 6px;
+}
+.like {
+	display: none;
+}
+.like__custom {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 20px;
+	border: 1px solid $black-25;
+	border-radius: 10px;
+}
+.like__custom::after {
+	content: "favorite_border";
+	position: absolute;
+	top: 4px;
+	left: 5px;
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 9.96px;
+	font-family: "Material Icons";
+	color: $black-25;
+}
+.like__text {
+	padding-top: 2px;
+	padding-left: 20px;
+	font-weight: 400;
+	font-size: 10px;
+	font-family: Montserrat;
+	color: $black-25;
+}
+.like:checked + .like__custom {
+	border: 1px solid $purple;
+}
+.like:checked + .like__custom::after {
+	content: "favorite";
+	color: $purple;
+}
+.like:checked ~ .like__text {
+	color: $purple;
+}
