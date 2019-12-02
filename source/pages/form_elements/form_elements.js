@@ -9,6 +9,7 @@ import '../../components/toggle/toggle.js';
 import '../../components/like/like.js';
 import '../../components/rate/rate.js';
 import '../../components/slider/slider.js';
+import '../../components/btn/btn.js';
 import './form_elements.scss';
 // import './form_elements.pug';
 

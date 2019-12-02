@@ -48,12 +48,12 @@
 }
 .ui-slider .ui-slider-range {
 	position: absolute;
-    z-index: 1;
-    display: block;
-    font-size: 0.7em;
-    background: red;
-    background-position: 0 0;
-    border: 0;
-    height: 6px;
-    background: $gradient-green;
+	z-index: 1;
+	display: block;
+	height: 6px;
+	font-size: 0.7em;
+	background: red;
+	background: $gradient-green;
+	background-position: 0 0;
+	border: 0;
 }
