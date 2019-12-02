@@ -7,117 +7,53 @@
 	position: relative;
 	width: 100%;
 }
-.ui-slider .ui-slider-range {
-	position: absolute;
-	z-index: 1;
-	display: block;
-	font-size: 0.7em;
-	background: red;
-	background-position: 0 0;
-	border: 0;
+.slider__h3 {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	padding-top: 1px;
 }
-.ui-corner-all {
-	border-top-left-radius: 3px;
+#amount {
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 12px;
+	font-family: Montserrat;
+	vertical-align: top;
+	text-align: right;
+	color: $black-50;
+	text-transform: uppercase;
 }
 .ui-slider-horizontal {
-	height: 0.8em;
-}
-.ui-widget {
-	font-size: 1em;
-	font-family: Arial,Helvetica,sans-serif;
-}
-.ui-widget .ui-widget {
-	font-size: 1em;
-}
-.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
-	font-size: 1em;
-	font-family: Arial,Helvetica,sans-serif;
-}
-.ui-widget.ui-widget-content {
-	border: 1px solid #c5c5c5;
-}
-.ui-widget-content {
-	color: #333333;
-	background: #ffffff;
-	border: 1px solid #dddddd;
-}
-.ui-widget-content a {
-	color: #333333;
+	height: 6px;
+	background-color: $white;
+	border: 1px solid $black-25;
+	border-radius: 3px;
 }
 .ui-slider .ui-slider-handle {
 	position: absolute;
 	z-index: 2;
-	width: 1.2em;
-	height: 1.2em;
-	cursor: default;
+	width: 16px;
+	height: 16px;
+	margin-top: -5px;
+	margin-left: -8px;
+	background: $gradient-green;
+	border: 2px solid $white;
+	border-radius: 8px;
+	cursor: pointer;
 
 	-ms-touch-action: none;
 	    touch-action: none;
 }
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, /* We use html here because we need a greater specificity to make sure disabled
-works properly when clicked or hovered */
-html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-	font-weight: normal;
-	color: #454545;
-	background: #f6f6f6;
-	border: 1px solid #c5c5c5;
-}
-.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
-	color: #454545;
-	text-decoration: none;
-}
-.ui-widget-header {
-	height: 10px;
-	font-weight: bold;
-	color: #333333;
-	background: #cf5252;
-	border: 1px solid #dddddd;
-}
-
-
-.slider__container {
-	position: relative;
-	width: 266%*100/320;
-}
-#ui-slider-range {
-	position: relative;
-	width: 100%;
-}
-.slider__h3 {
-	display: inline-block;
-	float: left;
-	padding-top: 1px;
-	width: 50%;
-}
-#amount {
-	text-align: right;
-	display: inline-block;
-	width: 50%;
-	color: $black-50;
-font-family: Montserrat;
-font-size: 12px;
-font-weight: 400;
-text-transform: uppercase;
-vertical-align: top;
-margin-bottom: 20px;
-
-}
-.ui-slider-horizontal {
+.ui-slider .ui-slider-range {
+	position: absolute;
+    z-index: 1;
+    display: block;
+    font-size: 0.7em;
+    background: red;
+    background-position: 0 0;
+    border: 0;
     height: 6px;
-    border-radius: 3px;
-border: 1px solid $black-25;
-background-color: $white;
+    background: $gradient-green;
 }
-.ui-slider .ui-slider-handle {
-    position: absolute;
-    z-index: 2;
-    margin-top: -5px;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    -ms-touch-action: none;
-    touch-action: none;
-    border-radius: 8px;
-border: 2px solid $white;
-background: $gradient-green;
-    }
