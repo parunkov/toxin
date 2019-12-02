@@ -1,5 +1,6 @@
-mixin rate(cl, n)
+mixin rate(cl, n, active)
 	div(class= "rate__container "+cl)
+		.rate__active #{active}
 		- for (let i = 0; i <5 ; i++)
 			if i < n
 				i(class= "rate__star "+cl+"-star") star
