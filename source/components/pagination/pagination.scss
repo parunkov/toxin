@@ -1,8 +1,47 @@
 @import "../../variables.scss";
 // @import "../../../node_modules/paginationjs/dist/pagination.css";
-// #data-container {
-// 	height: 50px;
+
+// .paginationjs-prev.disabled {
+// 	display: none;
 // }
-// #pagination-container {
-// 	height: 50px;
-// }
+.paginationjs-prev, .paginationjs-page, .paginationjs-next, .paginationjs-ellipsis {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	text-align: center;
+}
+.paginationjs-page a, .paginationjs-ellipsis a {
+	padding: 10px;
+
+	text-decoration: none;
+	position: relative;
+	top: 11px;
+	color: $black-50;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+}
+.paginationjs-prev, .paginationjs-next {
+	background: $gradient-green;
+}
+.paginationjs-prev a, .paginationjs-next a {
+	padding: 10px;
+	text-decoration: none;
+	position: relative;
+	top: 11px;
+	color: transparent;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 400;
+}
+.paginationjs-page.active {
+	
+background: $gradient-purple;
+cursor: default;
+}
+.paginationjs-page.active a {
+	color: $white;
+font-weight: 700;
+}

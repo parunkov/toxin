@@ -1,16 +1,48 @@
 import '../../variables.scss';
 import './pagination.scss';
-import $ from 'jquery';
-import './jquery.simplePagination.js';
-import './simplePagination.css';
+import '../../../node_modules/paginationjs/src/pagination.js';
+// import '../../../node_modules/paginationjs/dist/pagination.css';
 
 $(function() {
-    $(selector).pagination({
-        items: 100,
-        itemsOnPage: 10,
-        cssStyle: 'light-theme'
-    });
+  (function(name) {
+    var container = $('#pagination-container');
+    var sources = function () {
+      var result = [];
+
+      for (var i = 0; i < 180; i++) {
+        result.push(i);
+      }
+
+      return result;
+    }();
+
+    var options = {
+      dataSource: sources,
+      pageSize: 12,
+      pageRange: 1,
+      autoHidePrevious: true,
+      autoHideNext: true,
+      showFirstOnEllipsisShow: false,
+      showLastOnEllipsisShow: false, 
+      callback: function (response, pagination) {
+      }
+    };
+    // console.log(container.pagination);
+    container.pagination(options);
+
+  })();
+
 });
+
+
+
+// $(function() {
+//     $(selector).pagination({
+//         items: 100,
+//         itemsOnPage: 10,
+//         cssStyle: 'light-theme'
+//     });
+// });
 
 
 
