@@ -1,9 +1,8 @@
 import '../../variables.scss';
 import './pagination.scss';
 import '../../../node_modules/paginationjs/src/pagination.js';
-// import '../../../node_modules/paginationjs/dist/pagination.css';
 
-$(function() {
+$(function() {  
   (function(name) {
     var container = $('#pagination-container');
     var sources = function () {
@@ -23,9 +22,10 @@ $(function() {
       autoHidePrevious: true,
       autoHideNext: true,
       callback: function (response, pagination) {
+        $('.pagination__first').html(pagination.pageNumber * pagination.pageSize - pagination.pageSize + 1);
+        $('.pagination__second').html(pagination.pageNumber * pagination.pageSize);
       }
     };
-    // console.log(container.pagination);
     container.pagination(options);
 
   })();
