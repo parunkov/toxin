@@ -1,0 +1,11 @@
+mixin dropdown(cl, item1, item2, item3, mod, open)
+	div(class="dropdown__container " + cl + "-container")
+		.iqdropdown
+			p.iqdropdown-selection
+			.iqdropdown-menu
+				div(class="iqdropdown-menu-option" data-id="item1")
+					p.iqdropdown-item #{item1}
+				div(class="iqdropdown-menu-option" data-id="item2")
+					p.iqdropdown-item #{item2}
+				div(class="iqdropdown-menu-option" data-id="item3")
+					p.iqdropdown-item #{item3}
