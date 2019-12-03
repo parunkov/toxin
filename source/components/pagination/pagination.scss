@@ -1,9 +1,5 @@
 @import "../../variables.scss";
-// @import "../../../node_modules/paginationjs/dist/pagination.css";
 
-// .paginationjs-prev.disabled {
-// 	display: none;
-// }
 .paginationjs-prev, .paginationjs-page, .paginationjs-next, .paginationjs-ellipsis {
 	position: relative;
 	display: inline-block;
@@ -44,4 +40,19 @@ cursor: default;
 .paginationjs-page.active a {
 	color: $white;
 font-weight: 700;
+}
+.paginationjs-next::after, .paginationjs-prev::after {
+	content: " arrow_forward";
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		display: inline;
+		font-weight: 400;
+		font-size: 24px;
+		font-family: "Material Icons";
+		color: $white;
+		text-transform: none;
+}
+.paginationjs-prev::after {
+	transform: rotate(180deg);
 }

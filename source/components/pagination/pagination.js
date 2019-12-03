@@ -22,8 +22,6 @@ $(function() {
       pageRange: 1,
       autoHidePrevious: true,
       autoHideNext: true,
-      showFirstOnEllipsisShow: false,
-      showLastOnEllipsisShow: false, 
       callback: function (response, pagination) {
       }
     };
