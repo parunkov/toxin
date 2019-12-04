@@ -21,10 +21,28 @@ let options = {
 $(document).ready(() => {
 	$('.iqdropdown').iqDropdown(options);
 
-	let $counter = $('.counter');
+	let $counter = $('.iqdropdown .counter');
+	let $decrementBtn = $('.iqdropdown .button-decrement');
 	let $text = $('.iqdropdown-selection');
+
+	let opacytyBtn = function() {
+		for (let i = 0; i < $counter.length; i++) {
+			// console.log($counter.eq(i).html());
+			if ($counter.eq(i).html() === '0') {
+				// console.log('!!!');
+				$decrementBtn.eq(i).css({'opacity' : '0.5'});
+			} else {
+				$decrementBtn.eq(i).css({'opacity' : '1'});
+			}
+		}
+	}
+	opacytyBtn();
+
+
 	$('button').click(function() {
-		console.log($counter[0].innerHTML);
+		opacytyBtn();
+
+		// console.log($counter[0].innerHTML);
 		$text.html($counter[0].innerHTML);
 	});
 });
