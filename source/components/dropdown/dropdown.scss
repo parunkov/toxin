@@ -1,2 +1,100 @@
 @import "../../variables.scss";
-@import "./item-quantity-dropdown.min.css";
+// @import "./item-quantity-dropdown.min.css";
+.dropdown__h3 {
+	display: block;
+	float: left;
+	margin-bottom: 5px;
+	padding-top: 4px;
+}
+.dropdown__p {
+	display: block;
+	font-weight: 400;
+	font-size: 12px;
+	font-family: Montserrat;
+	vertical-align: top;
+	text-align: right;
+	color: $black-50;
+	text-transform: uppercase;
+}
+.iqdropdown {
+	position: relative;
+	top: 5px;
+    // align-items: center;
+    border: 1px solid $black-25;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    // display: flex;
+    height: 44px;
+    // justify-content: space-between;
+    // padding: 0 15px;
+    width: 100%;
+}
+.iqdropdown.menu-open {
+	border: 1px solid $black-50;
+}
+.iqdropdown .iqdropdown-selection {
+    color: $black-75;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+    // flex: 1;
+    position: relative;
+}
+.iqdropdown .iqdropdown-selection::after {
+	content: 'expand_more';
+	color: $black-50;
+font-family: "Material Icons";
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+	right: -14px;
+	top: -7px;
+	width: 40px;
+	height: 39px;
+	padding-top: 5px;
+	// text-align: center;
+	background: $white;
+	border-radius: 4px;
+}
+.iqdropdown.menu-open .iqdropdown-selection::after {
+	background: $white;
+	transform: rotate(180deg);
+	right: -14px;
+	top: -9px;
+}
+.iqdropdown-item {
+	color: $black;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 700;
+text-transform: uppercase;
+}
+.iqdropdown.menu-open .iqdropdown-menu {
+	display: block;
+}
+.iqdropdown .iqdropdown-menu {
+	// box-shadow: none;
+	border: 1px solid $black-50;
+	background-color: $white;
+    cursor: default;
+    display: none;
+    left: 0;
+    // height: 119px;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    z-index: 99999;
+    padding-top: 7px;
+    padding-right: 15px;
+    border-radius: 0 0 4px 4px;
+    margin-left: -1px;
+    margin-right: -1px;
+    // width: 100%;
+}
+.iqdropdown .iqdropdown-menu-option {
+	align-items: center;
+    // display: flex;
+    height: 31px;
+    margin-bottom: 7px;
+}

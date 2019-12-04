@@ -1,7 +1,7 @@
 import '../../variables.scss';
 import './dropdown.scss';
 import './dropdown.pug';
-import './item-quantity-dropdown.min.css';
+// import './item-quantity-dropdown.min.css';
 import './index.js';
 
 let options = {
