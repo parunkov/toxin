@@ -147,3 +147,34 @@
 	content: "+";
 	transform: translate(-50%, -44%);
 }
+.dropdown__bottom {
+	margin-top: 21px;
+	margin-bottom: 13px;
+	padding-left: 15px;
+}
+.dropdown__clear {
+	display: none;
+	font-weight: 700;
+	font-size: 12px;
+	font-family: Montserrat;
+	color: $black-50;
+	text-transform: uppercase;
+	cursor: pointer;
+	&--wrap {
+		float: left;
+	}
+}
+.dropdown__set {
+	display: inline;
+	font-weight: 700;
+	font-size: 12px;
+	font-family: Montserrat;
+	text-align: right;
+	color: $purple;
+	text-transform: uppercase;
+	cursor: pointer;
+	&--wrap {
+		display: block;
+		text-align: right;
+	}
+}

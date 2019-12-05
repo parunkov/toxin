@@ -1,4 +1,4 @@
-mixin dropdown(type, cl, h3, p, item1, item2, item3)
+mixin dropdown(type, cl, h3, p, item1, item2, item3, clear)
 	.dropdown__type #{type}
 	div(class="dropdown__container " + cl + "-container")
 		h3.dropdown__h3= h3
@@ -12,3 +12,9 @@ mixin dropdown(type, cl, h3, p, item1, item2, item3)
 					h3.iqdropdown-item #{item2}
 				div(class="iqdropdown-menu-option" data-id="item3")
 					h3.iqdropdown-item #{item3}
+				if clear
+					.dropdown__bottom
+						.dropdown__clear--wrap
+							.dropdown__clear очистить
+						.dropdown__set--wrap
+							.dropdown__set применить

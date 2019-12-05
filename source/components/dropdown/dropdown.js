@@ -41,8 +41,6 @@ $(document).ready(() => {
 		}
 	});
 
-	// console.log($type);
-
 	let opacytyBtn = function() {
 		for (let i = 0; i < $counter.length; i++) {
 			if ($counter.eq(i).html() === '0') {
@@ -54,21 +52,16 @@ $(document).ready(() => {
 	}
 	opacytyBtn();
 
+	$('.iqdropdown').each(function(i) {
+		$('.iqdropdown').eq(i).find('button').click(function() {
+			opacytyBtn();
 
-	$('button').click(function() {
-		opacytyBtn();
-
-		$type.each(function(i) {
 			let $itemCounter = $('.iqdropdown-menu').eq(i).find('.counter');
-			console.log($itemCounter);
 			if ($type.eq(i).html() === 'rooms') {
 
 				let textPart0 = $itemCounter[0].innerHTML + ' ' + num2str(+$itemCounter[0].innerHTML, ['спальня', 'спальни', 'спален']) + ',';
-				console.log(textPart0);
 				let textPart1 = $itemCounter[1].innerHTML + ' ' + num2str(+$itemCounter[1].innerHTML, ['кровать', 'кровати', 'кроватей']) + ',';
-				console.log(textPart1);
 				let textPart2 = $itemCounter[2].innerHTML + ' ' + num2str(+$itemCounter[2].innerHTML, ['ванная', 'ванные', 'ванных']);
-				console.log(textPart2);
 
 				$('.iqdropdown-selection').eq(i).html(textPart0 + ' ' + textPart1 + ' ' + textPart2);
 
@@ -76,10 +69,8 @@ $(document).ready(() => {
 				let guestsNumber = +$itemCounter[0].innerHTML + +$itemCounter[1].innerHTML + +$itemCounter[2].innerHTML;
 				$('.iqdropdown-selection').eq(i).html(guestsNumber + ' ' + num2str(+guestsNumber, ['гость', 'гостя', 'гостей']));
 			}
-		});
 
-		// console.log($counter[0].innerHTML);
-		// $text.html($counter[0].innerHTML);
+		});
 	});
 });
 
