@@ -1,7 +1,6 @@
 import '../../variables.scss';
 import './dropdown.scss';
 import './dropdown.pug';
-import './index.js';
 
 const num2str = function(n, text_forms) {  
     n = Math.abs(n) % 100; var n1 = n % 10;
@@ -11,26 +10,12 @@ const num2str = function(n, text_forms) {
     return text_forms[2];
 }
 
-let options = {
-	// maxItems: Infinity,
-	// minItems: 0,
-	selectionText: ' ',
-	textPlural: ' ',
-	// controls: {
-	// 	position: 'right',
-	// 	displayCls: 'iqdropdown-content',
-	// 	controlsCls: 'iqdropdown-item-controls',
-	// 	counterCls: 'counter',
-	// }
-}
-// console.log(options);
-
 $(document).ready(() => {
-	$('.iqdropdown').iqDropdown(options);
 
 	let $type = $('.dropdown__type');
 	let $counter = $('.iqdropdown .counter');
 	let $decrementBtn = $('.iqdropdown .button-decrement');
+	let $incrementBtn = $('.iqdropdown .button-increment');
 	let $text = $('.iqdropdown-selection');
 
 	$type.each(function(i) {
@@ -39,6 +24,23 @@ $(document).ready(() => {
 		} else {
 			$text.eq(i).html('Сколько гостей');
 		}
+	});
+
+	$counter.each(function(i) {
+		$incrementBtn.eq(i).click(function() {
+			let count = +$counter.eq(i).html();
+			count++;
+			$counter.eq(i).html(count);
+		});
+		$decrementBtn.eq(i).click(function() {
+			let count = +$counter.eq(i).html();
+			if (count <= 0) {
+				count = 0;
+			} else{
+				count--;
+			}
+			$counter.eq(i).html(count);
+		});
 	});
 
 	let opacytyBtn = function() {
@@ -53,6 +55,11 @@ $(document).ready(() => {
 	opacytyBtn();
 
 	$('.iqdropdown').each(function(i) {
+
+		$('.iqdropdown').eq(i).find('.iqdropdown-selection').click(function() {
+			$('.iqdropdown').eq(i).toggleClass('menu-open');
+		});
+
 		$('.iqdropdown').eq(i).find('button').click(function() {
 			opacytyBtn();
 
@@ -70,6 +77,16 @@ $(document).ready(() => {
 				$('.iqdropdown-selection').eq(i).html(guestsNumber + ' ' + num2str(+guestsNumber, ['гость', 'гостя', 'гостей']));
 			}
 
+		});
+
+		$('.iqdropdown').eq(i).find('.dropdown__set').click(function() {
+			$('.iqdropdown').eq(i).find('.dropdown__clear').css({'display' : 'inline'});
+		});
+		$('.iqdropdown').eq(i).find('.dropdown__clear').click(function() {
+			$('.iqdropdown').eq(i).find('.counter').html('0');
+			opacytyBtn();
+			$('.iqdropdown').eq(i).find('.iqdropdown-selection').html('Сколько гостей');
+			$('.iqdropdown').eq(i).find('.dropdown__clear').css({'display' : 'none'});
 		});
 	});
 });

@@ -108,6 +108,8 @@
 	right: -2px;
 }
 .iqdropdown .button-decrement, .iqdropdown .button-increment {
+	position: relative;
+	display: inline-block;
 	width: 30px;
 	height: 30px;
 	background: $white;
@@ -128,7 +130,10 @@
 	text-transform: uppercase;
 }
 .iqdropdown .icon-decrement, .iqdropdown .icon-increment {
-	position: relative;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .iqdropdown .icon-decrement::after, .iqdropdown .icon-increment::after {
 	position: absolute;
@@ -148,8 +153,8 @@
 	transform: translate(-50%, -44%);
 }
 .dropdown__bottom {
-	margin-top: 21px;
-	margin-bottom: 13px;
+	margin-top: 18px;
+	margin-bottom: 12px;
 	padding-left: 15px;
 }
 .dropdown__clear {

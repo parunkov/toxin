@@ -1,3 +1,10 @@
+mixin dropdown__menu-item()
+	.iqdropdown-item-controls
+		button.button-decrement
+			i.icon-decrement
+		span.counter 0
+		button.button-increment
+			i.icon-increment
 mixin dropdown(type, cl, h3, p, item1, item2, item3, clear)
 	.dropdown__type #{type}
 	div(class="dropdown__container " + cl + "-container")
@@ -8,10 +15,13 @@ mixin dropdown(type, cl, h3, p, item1, item2, item3, clear)
 			.iqdropdown-menu
 				div(class="iqdropdown-menu-option" data-id="item1")
 					h3.iqdropdown-item #{item1}
+					+dropdown__menu-item
 				div(class="iqdropdown-menu-option" data-id="item2")
 					h3.iqdropdown-item #{item2}
+					+dropdown__menu-item
 				div(class="iqdropdown-menu-option" data-id="item3")
 					h3.iqdropdown-item #{item3}
+					+dropdown__menu-item
 				if clear
 					.dropdown__bottom
 						.dropdown__clear--wrap

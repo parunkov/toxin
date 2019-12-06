@@ -14,19 +14,7 @@ import '../../components/pagination/pagination.js';
 import '../../components/dropdown/dropdown.js';
 import './form_elements.scss';
 // import './form_elements.pug';
+// import '../../../node_modules/jquery/dist/jquery.js';
 
-
-// $('.form_elements__rate-1-star').each(function( i ) {
-// 	$(this).click(function() {
-// 		$('.form_elements__rate-1-star').text('star_border');
-// 		$('.form_elements__rate-1-star:lt('+(i+1)+')').text('star');
-// 	});
-// });
-// 	$('.form_elements__rate-2-star').each(function( i ) {
-// 		$(this).click(function() {
-// 			$('.form_elements__rate-2-star').text('star_border');
-// 			$('.form_elements__rate-2-star:lt('+(i+1)+')').text('star');
-// 		});
-// 	});
-
+$('.form_elements__checkbox-1:gt(0)').prop('checked', true);
 
