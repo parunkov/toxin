@@ -25,17 +25,17 @@
 	line-height: 1.4em;
 	color: $black-50;
 	&--small {
+		margin-bottom: 11px;
 		padding-left: 29px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		font-family: Montserrat;
 		color: $black-50;
 		text-transform: none;
-font-family: Montserrat;
-font-size: 12px;
-font-weight: 400;
-line-height: 14px;
-margin-bottom: 11px;
 	}
 }
 .checkbox__header {
-	padding-left: 29px;
 	margin-bottom: 5px;
+	padding-left: 29px;
 }

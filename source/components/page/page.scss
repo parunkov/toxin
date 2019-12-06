@@ -72,12 +72,12 @@ h3 {
 	text-transform: uppercase;
 }
 h4 {
-	text-transform: none;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: Montserrat;
 	color: $black-75;
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 700;
-line-height: 18px;
+	text-transform: none;
 }
 p {
 	font-weight: 400;
@@ -120,30 +120,24 @@ p {
 		max-width: 100%;
 	}
 }
-// .row {
-// 	display: flex;
-// 	flex-wrap: wrap;
-// }
-// .col {
-// 	position: relative;
-// 	width: 100%;
-// 	padding-right: 15px;
-// 	padding-left: 15px;
-// }
-
-// .col {
-// 	flex-grow: 1;
-// 	flex-basis: 0;
-// 	max-width: 100%;
-// }
-
-// .col-auto {
-// 	flex: 0 0 auto;
-// 	width: auto;
-// 	max-width: 100%;
-// }
-
-// .col-1 {
-// 	flex: 0 0 8.33333%;
-// 	max-width: 8.33333%;
-// }
+.page__li {
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 21px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	font-family: Montserrat;
+	color: $black-75;
+}
+.page__li::before {
+	content: '';
+		position: absolute;
+		top: 5px;
+		left: 0;
+		display: block;
+		width: 10px;
+		height: 10px;
+		background-color: $black-25;
+		border-radius: 5px;
+	}

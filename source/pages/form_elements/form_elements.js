@@ -23,3 +23,11 @@ $('.form_elements__checkbox-2:lt(4)').prop('checked', true);
 $('.form_elements__checkbox-2').eq(0).prop('checked', false);
 $('.form_elements__item--20 .iqdropdown').addClass('menu-open');
 $('.form_elements__item--22 .iqdropdown').addClass('menu-open');
+$(document).ready(() => {
+	console.log($('.form_elements__item--22 .iqdropdown button').eq(1));
+	$('.form_elements__item--22 .iqdropdown button').eq(1).trigger('click');
+	$('.form_elements__item--22 .iqdropdown button').eq(1).trigger('click');
+	$('.form_elements__item--22 .iqdropdown button').eq(3).trigger('click');
+	$('.form_elements__item--22 .dropdown__set').trigger('click');
+});
+

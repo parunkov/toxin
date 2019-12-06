@@ -111,7 +111,7 @@
 	&--4, &--5, &--6 {
 		margin-bottom: 39px;
 	}
-	&--6, &--7, &--16, &--17, &--18, &--19,&--21 {
+	&--6, &--7, &--16, &--17, &--18, &--19, &--21, &--23 {
 		width: 266%*100/320;
 	}
 	&--8 {
@@ -141,21 +141,21 @@
 	&--18, &--19 {
 		margin-bottom: 50px;
 		h3 {
-			display: block;
 			position: relative;
+			display: block;
 		}
 		h3::after {
-			text-transform: none;
-			display: block;
 			content: "expand_more";
 			position: absolute;
 			top: -1px;
 			right: 12px;
+			display: block;
 			font-weight: 400;
 			font-size: 24px;
 			font-family: "Material Icons";
 			text-align: center;
 			color: $black-50;
+			text-transform: none;
 			background: $white;
 			border-radius: 4px;
 		}
@@ -168,12 +168,17 @@
 			transform: rotate(180deg);
 		}
 	}
-	&--20 {
+	&--20, &--22 {
 		margin-bottom: 257px;
 	}
 	&--21 {
 		h3 {
 			margin-bottom: 17px;
+		}
+	}
+	&--23 {
+		h3 {
+			margin-bottom: 14px;
 		}
 	}
 }
