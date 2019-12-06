@@ -151,9 +151,32 @@ block main
 							'спальни', 
 							'кровати', 
 							'ванные комнаты')
+					.form_elements__item.form_elements__item--17
+						+dropdown(
+							'rooms',
+							'form_elements__dropdown-rooms-1', 
+							'dropdown', 
+							'expanded', 
+							'спальни', 
+							'кровати', 
+							'ванные комнаты')
+					.form_elements__item.form_elements__item--18
+						h3 expandable checkbox list
+					.form_elements__item.form_elements__item--19
+						h3 expandable checkbox list
+						+checkbox(
+							'form_elements__checkbox-2', 
+							['Завтрак', 
+							'Письменный стол', 
+							'Стул для кормления',
+							'Кроватка',
+							'Телевизор',
+							'Шампунь',
+							'Телевизор',
+							'Шампунь'])
 			.form_elements__col.form_elements__col--5
 				.form_elements__inner.form_elements__inner--5
-					.form_elements__item.form_elements__item--
+					.form_elements__item.form_elements__item--20
 						+dropdown(
 							'peoples',
 							'form_elements__dropdown-peoples-1', 
@@ -163,9 +186,17 @@ block main
 							'дети', 
 							'младенцы',
 							'1')
+					.form_elements__item.form_elements__item--21
+						h3 rich Checkbox Buttons
+						+checkbox(
+							'form_elements__checkbox-3', 
+							['Ширина коридоров в номере не менее 91 см.', 
+							'На 1 этаже вас встретит специалист  и проводит до номера.'],
+							['Широкий коридор',
+							'Помощник для инвалидов'])
 			.form_elements__col.form_elements__col--6
 				.form_elements__inner.form_elements__inner--6
-					.form_elements__item.form_elements__item--
+					.form_elements__item.form_elements__item--22
 						+dropdown(
 							'peoples',
 							'form_elements__dropdown-peoples-2', 

@@ -111,7 +111,7 @@
 	&--4, &--5, &--6 {
 		margin-bottom: 39px;
 	}
-	&--6, &--7, &--16 {
+	&--6, &--7, &--16, &--17, &--18, &--19,&--21 {
 		width: 266%*100/320;
 	}
 	&--8 {
@@ -135,8 +135,46 @@
 	&--14 {
 		margin-bottom: 38px;
 	}
-	&--16 {
-		margin-bottom: 600px;
+	&--17 {
+		margin-bottom: 173px;
+	}
+	&--18, &--19 {
+		margin-bottom: 50px;
+		h3 {
+			display: block;
+			position: relative;
+		}
+		h3::after {
+			text-transform: none;
+			display: block;
+			content: "expand_more";
+			position: absolute;
+			top: -1px;
+			right: 12px;
+			font-weight: 400;
+			font-size: 24px;
+			font-family: "Material Icons";
+			text-align: center;
+			color: $black-50;
+			background: $white;
+			border-radius: 4px;
+		}
+	}
+	&--19 {
+		h3 {
+			margin-bottom: 18px;
+		}
+		h3::after {
+			transform: rotate(180deg);
+		}
+	}
+	&--20 {
+		margin-bottom: 257px;
+	}
+	&--21 {
+		h3 {
+			margin-bottom: 17px;
+		}
 	}
 }
 .form_elements__item-inner {

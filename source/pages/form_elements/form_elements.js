@@ -14,7 +14,12 @@ import '../../components/pagination/pagination.js';
 import '../../components/dropdown/dropdown.js';
 import './form_elements.scss';
 // import './form_elements.pug';
-// import '../../../node_modules/jquery/dist/jquery.js';
 
 $('.form_elements__checkbox-1:gt(0)').prop('checked', true);
-
+$('.form_elements__toggle').eq(0).prop('checked', true);
+$('.form_elements__like-2').prop('checked', true);
+$('.form_elements__item--17 .iqdropdown').addClass('menu-open');
+$('.form_elements__checkbox-2:lt(4)').prop('checked', true);
+$('.form_elements__checkbox-2').eq(0).prop('checked', false);
+$('.form_elements__item--20 .iqdropdown').addClass('menu-open');
+$('.form_elements__item--22 .iqdropdown').addClass('menu-open');
