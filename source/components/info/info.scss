@@ -1,1 +1,24 @@
 @import "../../variables.scss";
+.info__container {
+	border-bottom: 1px solid $black-10;
+	padding-bottom: 20px;
+}
+.info__img {
+	font-family: "Material Icons";
+font-size: 48px;
+font-weight: 400;
+line-height: 47.81px;
+color: $purple;
+display: inline-block;
+width: 48px;
+height: 48px;
+float: left;
+margin-right: 10px;
+}
+.info__text-wrap {
+	display: inline-block;
+	padding-top: 3px;
+}
+.info__h4 {
+	margin-bottom: 5px;
+}
