@@ -1,19 +1,19 @@
 @import "../../variables.scss";
 .info__container {
-	border-bottom: 1px solid $black-10;
 	padding-bottom: 20px;
+	border-bottom: 1px solid $black-10;
 }
 .info__img {
+	display: inline-block;
+	float: left;
+	width: 48px;
+	height: 48px;
+	margin-right: 10px;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 47.81px;
 	font-family: "Material Icons";
-font-size: 48px;
-font-weight: 400;
-line-height: 47.81px;
-color: $purple;
-display: inline-block;
-width: 48px;
-height: 48px;
-float: left;
-margin-right: 10px;
+	color: $purple;
 }
 .info__text-wrap {
 	display: inline-block;

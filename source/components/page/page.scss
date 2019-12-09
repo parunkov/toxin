@@ -95,7 +95,7 @@ p {
 	min-width: 320px;
 	height: 100%;
 	margin: 0 auto;
-	// overflow-x: hidden;
+	overflow-x: hidden;
 	// border: 1px solid green;
 }
 .page__inner {
@@ -131,13 +131,13 @@ p {
 	color: $black-75;
 }
 .page__li::before {
-	content: '';
-		position: absolute;
-		top: 5px;
-		left: 0;
-		display: block;
-		width: 10px;
-		height: 10px;
-		background-color: $black-25;
-		border-radius: 5px;
-	}
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 0;
+	display: block;
+	width: 10px;
+	height: 10px;
+	background-color: $black-25;
+	border-radius: 5px;
+}

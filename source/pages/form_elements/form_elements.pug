@@ -12,6 +12,7 @@ block main
 	include ../../components/slider/slider.pug
 	include ../../components/dropdown/dropdown.pug
 	include ../../components/info/info.pug
+	include ../../components/review/review.pug
 	.page__container
 		.form_elements__row
 			.form_elements__col.form_elements__col--1
@@ -118,8 +119,8 @@ block main
 							'Получать спецпредложения'])
 					.form_elements__item.form_elements__item--11
 						h3.form_elements__item-11-header like button
-						+like('form_elements__like-1', '2')
-						+like('form_elements__like-2', '12')
+						+like('form_elements__1', '2')
+						+like('form_elements__2', '12')
 					.form_elements__item.form_elements__item--12
 						h3.form_elements__item-11-header rate button
 						+rate('form_elements__rate-1', 4, 1)
@@ -217,16 +218,23 @@ block main
 				.form_elements__inner.form_elements__inner--7
 					.form_elements__item.form_elements__item--24
 						+info(
-							'.form_elements__info-1',
+							'form_elements__info-1',
 							'insert_emoticon',
 							'Комфорт',
 							'Шумопоглощающие стены')
 					.form_elements__item.form_elements__item--25
 						+info(
-							'.form_elements__info-1',
+							'form_elements__info-1',
 							'location_city',
 							'Удобство',
 							'Окно в каждой из спален')
 			.form_elements__col.form_elements__col--8
 				.form_elements__inner.form_elements__inner--8
-					.form_elements__item.form_elements__item--25
+					.form_elements__item.form_elements__item--26
+						+review(
+							'form_elements__revew-1',
+							'img/murad.jpg',
+							'12',
+							'Мурад Сарафанов',
+							'5 дней назад',
+							'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
