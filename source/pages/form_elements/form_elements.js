@@ -12,6 +12,7 @@ import '../../components/slider/slider.js';
 import '../../components/btn/btn.js';
 import '../../components/pagination/pagination.js';
 import '../../components/dropdown/dropdown.js';
+import '../../components/info/info.js';
 import './form_elements.scss';
 // import './form_elements.pug';
 
