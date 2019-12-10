@@ -3,22 +3,49 @@
 	background: $grey;
 }
 .cards__container {
-	width: 1260px;
-	border: 1px solid green;
+	width: 1260%*100/1440;
+	// border: 1px solid green;
 	margin: 0 auto;
+	@media (max-width: 1440px) {
+		width: 1260px;
+	}
+	@media (max-width: 1260px) {
+		width: 100%;
+	}
 }
 .cards__row {
 	display: flex;
 	flex-wrap: wrap;
-	border: 1px solid yellow;
+	// border: 1px solid yellow;
 }
 .cards__col {
-	border: 1px solid blue;
-	flex: 0 0 33.33%;
-	padding-left: 20px;
-	padding-right: 20px;
+	// border: 1px solid blue;
+	flex: 0 0 420%*100/1260;
+	@media (max-width: 1260px) {
+		flex: 1 0 380px;
+	}
+	@media (max-width: 420px) {
+		display: block;
+		width: 100%;
+	}
 }
 .cards__inner {
-	border: 1px solid red;
+	// border: 1px solid red;
+	margin: 0 auto;
+	width: 380%*100/420;
+	@media (max-width: 1260px) {
+		min-width: 380px;
+	}
+	@media (max-width: 380px) {
+		overflow-x: hidden;
+	}
+}
+.cards__content {
+	// border: 1px solid green;
 	height: 100px;
+	margin: 0 auto;
+	width: 320%*100/380;
+	@media (max-width: 380px) {
+		max-width: 315px;
+	}
 }
