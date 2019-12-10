@@ -4,48 +4,18 @@ block title
 block main
 	.cards__page
 		include ../../components/ui_kit/ui_kit.pug
-		include ../../components/input/input.pug
-		include ../../components/dropdown/dropdown.pug
 		.cards__container
 			.cards__row
 				.cards__col.cards__col--1
 					.cards__inner.cards__inner--1
 						.cards__content.cards__content--1
 							include ../../components/search/search.pug
-							//- h1.body__h1.cards__h1 Найдём номера под ваши пожелания
-							//- form
-							//- 	.cards__input-wrap.cards__input-wrap--1
-							//- 		+input(
-							//- 		'прибытие', 
-							//- 		'date', 
-							//- 		'arrival', 
-							//- 		'cards__input-1', 
-							//- 		'', 
-							//- 		'', 
-							//- 		'', 
-							//- 		'expand_more')
-							//- 	.cards__input-wrap.cards__input-wrap--2
-							//- 		+input(
-							//- 		'выезд', 
-							//- 		'date', 
-							//- 		'departure', 
-							//- 		'cards__input-2', 
-							//- 		'', 
-							//- 		'', 
-							//- 		'', 
-							//- 		'expand_more')
-							//- 	+dropdown(
-							//- 	'peoples',
-							//- 	'cards__dropdown-peoples-1', 
-							//- 	'гости', 
-							//- 	'', 
-							//- 	'взрослые', 
-							//- 	'дети', 
-							//- 	'младенцы',
-							//- 	'1')
-				.cards__col.cards__col--2
 					.cards__inner.cards__inner--2
+						.cards__content.cards__content--2
+							include ../../components/reg/reg.pug
+				.cards__col.cards__col--2
+					.cards__inner.cards__inner--3
 						.cards__content.cards__content--3
 				.cards__col.cards__col--3
-					.cards__inner.cards__inner--3
+					.cards__inner.cards__inner--5
 						.cards__content.cards__content--5

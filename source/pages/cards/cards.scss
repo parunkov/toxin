@@ -40,6 +40,9 @@ border-radius: 4px;
 background-color: $white;
 	margin: 0 auto;
 	width: 380%*100/420;
+	&--1 {
+		margin-bottom: 40px;
+	}
 	&--3 {
 		width: 320%*100/360;
 	}

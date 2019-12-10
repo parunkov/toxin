@@ -1,0 +1,55 @@
+include ../../components/input/input.pug
+include ../../components/radio/radio.pug
+include ../../components/toggle/toggle.pug
+.reg__container
+	h1.page__h1.reg__h1 Регистрация аккаунта
+	form
+		+input(
+			'', 
+			'text', 
+			'name', 
+			'reg__input-1', 
+			'', 
+			'Имя', 
+			'')
+		+input(
+			'', 
+			'text', 
+			'surname', 
+			'reg__input-2', 
+			'', 
+			'Фамилия', 
+			'')
+		.reg__radio-wrap
+			+radio(
+				'reg__radio', 
+				['Мужчина', 'Женщина'])
+		+input(
+			'дата рождения', 
+			'date', 
+			'birthday', 
+			'reg__input-3', 
+			'', 
+			'', 
+			'')
+		+input(
+			'данные для входа в сервис', 
+			'email', 
+			'email', 
+			'reg__input-4', 
+			'', 
+			'Email', 
+			'')
+		+input(
+			'', 
+			'text', 
+			'password', 
+			'reg__input-5', 
+			'', 
+			'Пароль', 
+			'')
+		.reg__toggle-wrap
+			+toggle(
+				'reg__toggle', 
+				['Получать спецпредложения'])
+		button.btn.btn--arrow.btn--button.reg__btn перейти к оплате
