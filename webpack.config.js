@@ -17,29 +17,39 @@ const PATHS = {
     build: path.join(__dirname, 'build')
 };
 
+// let chunk = [];
+// let fs = require('fs');
+// let folders = fs.readdirSync('./source/pages/');
+// console.log(folders);
+// for(let folder of folders) {
+//     console.log(`${folder}`);
+//     console.log(chunk.concat(folder));
+// }
+// console.log(new HtmlWebpackPlugin({
+//             filename: 'colors_types.html',
+//             chunks: ['colors_types'],
+//             template: PATHS.source + '/pages/colors_types/colors_types.pug'
+//         }),);
+// console.log(folders.map(folder => new HtmlWebpackPlugin({
+//             filename: `${folder}.html`,
+//             chunks: chunk.concat(folder),
+//             template: PATHS.source + `/pages/${folder}/${folder}.pug`
+//         })))
+
 const common = merge([
     {
     entry: {
         // 'index': PATHS.source + '/pages/index/index.js',
         // 'blog': PATHS.source + '/pages/blog/blog.js',
         'colors_types': PATHS.source + '/pages/colors_types/colors_types.js',
-        'form_elements': PATHS.source + '/pages/form_elements/form_elements.js'
+        'form_elements': PATHS.source + '/pages/form_elements/form_elements.js',
+        'cards': PATHS.source + '/pages/cards/cards.js'
     },
     output: {
         path: PATHS.build,
         filename: './js/[name].js'
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //     filename: 'index.html',
-        //     chunks: ['index'],
-        //     template: PATHS.source + '/pages/index/index.pug'
-        // }),
-        // new HtmlWebpackPlugin({
-        //     filename: 'blog.html',
-        //     chunks: ['blog'],
-        //     template: PATHS.source + '/pages/blog/blog.pug'
-        // }),
         new HtmlWebpackPlugin({
             filename: 'colors_types.html',
             chunks: ['colors_types'],
@@ -50,6 +60,16 @@ const common = merge([
             chunks: ['form_elements'],
             template: PATHS.source + '/pages/form_elements/form_elements.pug'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'cards.html',
+            chunks: ['cards'],
+            template: PATHS.source + '/pages/cards/cards.pug'
+        }),
+        // folders.map(folder => new HtmlWebpackPlugin({
+        //     filename: `${folder}.html`,
+        //     chunks: chunk.concat(folder),
+        //     template: PATHS.source + `/pages/${folder}/${folder}.pug`
+        // })),
         new CopyWebpackPlugin([{
             from: './source/fonts',
             to: './fonts'

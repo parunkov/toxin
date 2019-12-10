@@ -1,0 +1,24 @@
+@import "../../variables.scss";
+.cards__page {
+	background: $grey;
+}
+.cards__container {
+	width: 1260px;
+	border: 1px solid green;
+	margin: 0 auto;
+}
+.cards__row {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid yellow;
+}
+.cards__col {
+	border: 1px solid blue;
+	flex: 0 0 33.33%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.cards__inner {
+	border: 1px solid red;
+	height: 100px;
+}
