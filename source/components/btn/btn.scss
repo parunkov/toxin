@@ -11,6 +11,12 @@
 	text-transform: uppercase;
 	background: $gradient-purple;
 	border-radius: 22px;
+	&--button {
+		display: block;
+		width: 100%;
+		border: none;
+		padding-top: 0;
+	}
 	&:hover, &--hover {
 		opacity: 0.5;
 	}

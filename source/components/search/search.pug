@@ -1,0 +1,33 @@
+.search__container
+	h1.page__h1.search__h1 Найдём номера под ваши пожелания
+	form
+		.search__input-wrap.search__input-wrap--1
+			+input(
+			'прибытие', 
+			'date', 
+			'arrival', 
+			'search__input-1', 
+			'', 
+			'', 
+			'', 
+			'expand_more')
+		.search__input-wrap.search__input-wrap--2
+			+input(
+			'выезд', 
+			'date', 
+			'departure', 
+			'search__input-2', 
+			'', 
+			'', 
+			'', 
+			'expand_more')
+		+dropdown(
+		'peoples',
+		'search__dropdown', 
+		'гости', 
+		'', 
+		'взрослые', 
+		'дети', 
+		'младенцы',
+		'1')
+		button.btn.btn--arrow.btn--button.search__btn подобрать номер

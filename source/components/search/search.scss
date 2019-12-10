@@ -1,0 +1,22 @@
+@import "../../variables.scss";
+.search__container {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.search__h1 {
+	margin-bottom: 16px;
+}
+.search__input-wrap {
+	display: inline-block;
+	width: 147%*100/320;
+	margin-bottom: 17px;
+	&--1 {
+		margin-right: 20%*100/320;
+	}
+}
+.search__dropdown-container {
+	margin-bottom: 30px;
+}
+// .search__btn {
+// 	margin-bottom: 30px;
+// }

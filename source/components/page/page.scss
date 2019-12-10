@@ -39,6 +39,14 @@
 	src: url("../../fonts/MaterialIcons-Regular.woff");
 	src: url("../../fonts/MaterialIcons-Regular.ttf") format("truetype"), url("../../fonts/MaterialIcons-Regular.svg") format("svg");
 }
+@font-face {
+	font-style: normal;
+	font-weight: 700;
+	font-family: "Open Sans";
+
+	src: url("../../fonts/Open Sans Bold.woff");
+	src: url("../../fonts/Open Sans Bold.ttf") format("truetype"), url("../../fonts/Montserrat-Bold.svg") format("svg");
+}
 
 html {
 	box-sizing: border-box;
@@ -55,6 +63,13 @@ h1 {
 	line-height: 1.2em;
 	font-family: Quicksand;
 	color: #1f2041;
+}
+.page__h1 {
+	color: $black;
+font-family: Open Sans;
+font-size: 24px;
+font-weight: 700;
+line-height: 1.3em;
 }
 h2 {
 	font-weight: 700;

@@ -52,8 +52,6 @@ background-color: $white;
 }
 .cards__content {
 	// border: 1px solid green;
-
-	height: 100px;
 	margin: 0 auto;
 	width: 320%*100/380;
 	&--5 {
@@ -63,3 +61,13 @@ background-color: $white;
 		max-width: 315px;
 	}
 }
+// .cards__h1 {
+	
+// }
+// .cards__input-wrap {
+// 	display: inline-block;
+// 	width: 147%*100/320;
+// 	&--1 {
+// 		margin-right: 20%*100/320;
+// 	}
+// }
