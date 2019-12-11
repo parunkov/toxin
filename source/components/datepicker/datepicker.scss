@@ -1,0 +1,55 @@
+@import "../../variables.scss";
+.datepicker__container {
+	padding-left: 6.25%;
+	padding-right: 6.25%;
+}
+.datepicker {
+	border: none;
+	width: 100%;
+	font-family: Montserrat;
+	font-size: 12px;
+}
+.datepicker--nav {
+	height: 57px;
+}
+.datepicker--days-names {
+	height: 31px;
+}
+.datepicker--day-name {
+	color: $purple;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 700;
+}
+.datepicker--nav-title, .datepicker--nav-title i {
+	color: $black;
+font-family: Open Sans;
+font-size: 19px;
+font-weight: 700;
+}
+.datepicker--cell {
+	height: 40px;
+	border-radius: 20px;	
+}
+.datepicker--cell.-selected-, .datepicker--cell.-range-from-, .datepicker--cell.-range-to-, .datepicker--cell.-selected-.-focus- {
+	border-radius: 20px;
+	background: $gradient-purple;
+	font-weight: 700;
+	position: relative;
+	// z-index: 10;
+}
+.datepicker--cell.-range-from-::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background: red;
+	// z-index: 0;
+}
+.datepicker--cell.-in-range- {
+	// background: $purple;
+	// opacity: 0.25;
+	background: green;
+}
