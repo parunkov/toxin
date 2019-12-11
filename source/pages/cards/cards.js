@@ -5,5 +5,6 @@ import '../../components/ui_kit/ui_kit.js';
 import '../../components/search/search.js';
 import '../../components/reg/reg.js';
 import '../../components/room/room.js';
+import '../../components/login/login.js';
 import './cards.scss';
 

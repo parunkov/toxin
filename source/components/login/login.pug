@@ -1,0 +1,26 @@
+include ../../components/input/input.pug
+.login__container
+	h1.page__h1.login__h1 Войти
+	form
+		+input(
+			'', 
+			'email', 
+			'email', 
+			'login__input-1', 
+			'', 
+			'Email', 
+			'')
+		+input(
+			'', 
+			'text', 
+			'password', 
+			'login__input-2', 
+			'', 
+			'Пароль', 
+			'')
+		button.btn.btn--arrow.btn--button.login__btn войти
+	.login__footer
+		.login__footer-1
+			p.login__footer-text Нет аккаунта на Toxin?
+		.login__footer-2
+			.btn.btn--white.login__btn-2 создать

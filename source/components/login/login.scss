@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+.login__container {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.login__h1 {
+	margin-bottom: 18px;
+}
+.login__input-1 {
+	margin-bottom: 10px;
+}
+.login__input-2 {
+	margin-bottom: 20px;
+}
+.login__btn {
+	margin-bottom: 30px;
+}
+.login__footer-1 {
+	display: inline-block;
+	width: 67.7%;
+}
+.login__footer-text {
+	color: $black-text;
+}
+.login__footer-2 {
+	display: inline-block;
+	width: 99%*100/320;
+}
