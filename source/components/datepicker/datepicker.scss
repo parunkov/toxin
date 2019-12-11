@@ -36,7 +36,7 @@ font-weight: 700;
 	background: $gradient-purple;
 	font-weight: 700;
 	position: relative;
-	// z-index: 10;
+	transform-style: preserve-3d;
 }
 .datepicker--cell.-range-from-::before {
 	content: '';
@@ -45,11 +45,23 @@ font-weight: 700;
 	right: 0;
 	width: 50%;
 	height: 100%;
-	background: red;
-	// z-index: 0;
+	background: $purple;
+	opacity: 0.25;
+	transform: translateZ(-1px);
+}
+.datepicker--cell.-range-to-::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: $purple;
+	opacity: 0.25;
+	transform: translateZ(-1px);
 }
 .datepicker--cell.-in-range- {
-	// background: $purple;
-	// opacity: 0.25;
-	background: green;
+	background: $purple;
+	opacity: 0.25;
+	color: $black-50;
 }
