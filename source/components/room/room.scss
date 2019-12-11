@@ -42,3 +42,52 @@ text-transform: uppercase;
 		margin-right: 20%*100/320;
 	}
 }
+.room__dropdown-container {
+	margin-bottom: 22px;
+}
+.room__p {
+	clear: both;
+	margin-bottom: 15px;
+	line-height: 1.3em;
+	&--left {
+		display: inline-block;
+		width: 220%*100/320;
+	}
+	&--right {
+		float: right;
+		width: 75%*100/320;
+		text-align: right;
+	}
+}
+.room__i {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	border: 1px solid $black-25;
+	border-radius: 10px;
+	vertical-align: top;
+}
+.room__price {
+	clear: both;
+	padding-top: 17px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	&-1 {
+		flex-grow: 0;
+		margin-right: 5px;
+	}
+	&-2 {
+		flex-grow: 1;
+		border-bottom: 1px dotted $black-25;
+		height: 18px;
+	}
+	&-3 {
+		flex-grow: 0;
+		margin-left: 5px;
+	}
+}
+.room__btn {
+	clear: both;
+}
