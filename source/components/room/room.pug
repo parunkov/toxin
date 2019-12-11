@@ -1,0 +1,40 @@
+include ../../components/input/input.pug
+include ../../components/dropdown/dropdown.pug
+.room__container
+	.room__header
+		.room__header-1
+			h1.page__h1.room__h1 <span class="room__header--number">№</span>888
+				span.room__header--category  люкс
+		.room__header-2
+			p.room__header--p 9 990₽ <span class="room__header--price">в сутки</span>
+	form
+		.room__input-wrap.room__input-wrap--1
+			+input(
+			'прибытие', 
+			'date', 
+			'arrival', 
+			'room__input-1', 
+			'2019-08-19', 
+			'', 
+			'', 
+			'expand_more')
+		.room__input-wrap.room__input-wrap--2
+			+input(
+			'выезд', 
+			'date', 
+			'departure', 
+			'room__input-2', 
+			'2019-08-23', 
+			'', 
+			'', 
+			'expand_more')
+		.room__dropdown-wrap
+			+dropdown(
+			'peoples',
+			'room__dropdown', 
+			'гости', 
+			'', 
+			'взрослые', 
+			'дети', 
+			'младенцы',
+			'1')

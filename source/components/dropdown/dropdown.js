@@ -27,12 +27,14 @@ $(document).ready(() => {
 	});
 
 	$counter.each(function(i) {
-		$incrementBtn.eq(i).click(function() {
+		$incrementBtn.eq(i).click(function(evt) {
+			evt.preventDefault();
 			let count = +$counter.eq(i).html();
 			count++;
 			$counter.eq(i).html(count);
 		});
-		$decrementBtn.eq(i).click(function() {
+		$decrementBtn.eq(i).click(function(evt) {
+			evt.preventDefault();
 			let count = +$counter.eq(i).html();
 			if (count <= 0) {
 				count = 0;

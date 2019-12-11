@@ -1,0 +1,44 @@
+@import "../../variables.scss";
+.room__container {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.room__header-1 {
+	display: inline-block;
+	width: 60%;
+}
+.room__header-2 {
+	display: inline-block;
+	width: 38%;
+	text-align: right;
+}
+.room__header {
+	margin-bottom: 10px;
+	&--number {
+		font-weight: 700;
+    font-size: 16px;
+    font-family: Montserrat;
+	}
+	&--category {
+		color: $purple;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 700;
+text-transform: uppercase;
+	}
+	&--p {
+		font-weight: 700;
+	}
+	&--price {
+		font-weight: 400;
+		font-size: 12px;
+	}
+}
+.room__input-wrap {
+	display: inline-block;
+	width: 147%*100/320;
+	margin-bottom: 17px;
+	&--1 {
+		margin-right: 20%*100/320;
+	}
+}
