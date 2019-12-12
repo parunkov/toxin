@@ -21,10 +21,10 @@
 	position: relative;
 }
 .search__datepicker-container {
-	display: none;
 	position: absolute;
-	background: $white;
-	z-index: 10;
-	width: 100%;
 	top: -10px;
+	z-index: 10;
+	display: none;
+	width: 100%;
+	background: $white;
 }

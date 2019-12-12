@@ -9,7 +9,6 @@
 	display: none;
 }
 .like__custom {
-	cursor: pointer;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -17,6 +16,7 @@
 	height: 20px;
 	border: 1px solid $black-25;
 	border-radius: 10px;
+	cursor: pointer;
 }
 .like__custom::after {
 	content: "favorite_border";

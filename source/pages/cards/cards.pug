@@ -4,6 +4,17 @@ block title
 block main
 	.cards__page
 		include ../../components/ui_kit/ui_kit.pug
+		include ../../components/card/card.pug
+		- 
+			let RoomData = function(img, num, lux, price, rate, rev) {
+				this.img = img;
+				this.num = num;
+				this.lux = lux;
+				this.price = price;
+				this.rate = rate;
+				this.rev = rev;
+			};
+			let a = new RoomData([], 888, 'люкс', '9 990', 5, 145);
 		.cards__container
 			.cards__row
 				.cards__col.cards__col--1
@@ -24,3 +35,8 @@ block main
 					.cards__inner.cards__inner--5
 						.cards__content.cards__content--5
 							include ../../components/datepicker/datepicker.pug
+					.cards__inner.cards__inner--6
+						.cards__content.cards__content--6
+							+card('cards__card-1', a)
+					.cards__inner.cards__inner--7
+						.cards__content.cards__content--7

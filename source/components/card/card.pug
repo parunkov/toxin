@@ -1,0 +1,14 @@
+include ../rate/rate.pug
+mixin card(cl, data)
+	.card__container
+		.card__slider
+		.card__text
+			.card__text-1
+				span.card__num-wrap
+					span.card__num №
+					h2.card__h2 #{data.num}
+					span.card__lux #{data.lux}
+				span.card__price #{data.price}₽
+					span.card__price-text в сутки
+			.card__text-2
+				+rate('card__rate', data.rate)

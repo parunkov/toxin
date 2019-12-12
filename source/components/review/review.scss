@@ -12,14 +12,14 @@
 }
 .review__col-2 {
 	flex: 1 0 250px;
-	padding-left: 10px;
 	padding-top: 3px;
+	padding-left: 10px;
 }
 .review__img {
+	float: left;
 	width: 44px;
 	height: 44px;
 	border-radius: 22px;
-	float: left;
 }
 .review__img-wrap {
 	width: 48px;

@@ -16,15 +16,15 @@
 	margin-bottom: 10px;
 	&--number {
 		font-weight: 700;
-    font-size: 16px;
-    font-family: Montserrat;
+		font-size: 16px;
+		font-family: Montserrat;
 	}
 	&--category {
+		font-weight: 700;
+		font-size: 12px;
+		font-family: Montserrat;
 		color: $purple;
-font-family: Montserrat;
-font-size: 12px;
-font-weight: 700;
-text-transform: uppercase;
+		text-transform: uppercase;
 	}
 	&--p {
 		font-weight: 700;
@@ -63,25 +63,25 @@ text-transform: uppercase;
 	display: inline-block;
 	width: 20px;
 	height: 20px;
+	vertical-align: top;
 	text-align: center;
 	border: 1px solid $black-25;
 	border-radius: 10px;
-	vertical-align: top;
 }
 .room__price {
-	clear: both;
-	padding-top: 17px;
 	display: flex;
 	flex-wrap: wrap;
+	clear: both;
 	margin-bottom: 20px;
+	padding-top: 17px;
 	&-1 {
 		flex-grow: 0;
 		margin-right: 5px;
 	}
 	&-2 {
 		flex-grow: 1;
-		border-bottom: 1px dotted $black-25;
 		height: 18px;
+		border-bottom: 1px dotted $black-25;
 	}
 	&-3 {
 		flex-grow: 0;
