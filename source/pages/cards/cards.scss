@@ -50,6 +50,9 @@ background-color: $white;
 		width: 320%*100/360;
 		margin-bottom: 40px;
 	}
+	&--4 {
+		margin-bottom: 40px;
+	}
 	@media (max-width: $page-container) {
 		min-width: 380px;
 	}

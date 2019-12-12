@@ -17,6 +17,14 @@
 .search__dropdown-container {
 	margin-bottom: 30px;
 }
-// .search__btn {
-// 	margin-bottom: 30px;
-// }
+.search__datepicker-wrap {
+	position: relative;
+}
+.search__datepicker-container {
+	display: none;
+	position: absolute;
+	background: $white;
+	z-index: 10;
+	width: 100%;
+	top: -10px;
+}

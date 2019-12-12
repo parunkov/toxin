@@ -2,6 +2,10 @@
 .datepicker__container {
 	padding-left: 6.25%;
 	padding-right: 6.25%;
+	border: 1px solid $black-25;
+	border-radius: 4px;
+	background: $white;
+	width: 100%;
 }
 .datepicker {
 	border: none;
@@ -45,8 +49,7 @@ font-weight: 700;
 	right: 0;
 	width: 50%;
 	height: 100%;
-	background: $purple;
-	opacity: 0.25;
+	background: $bg-purple;
 	transform: translateZ(-1px);
 }
 .datepicker--cell.-range-to-::before {
@@ -56,13 +59,11 @@ font-weight: 700;
 	left: 0;
 	width: 50%;
 	height: 100%;
-	background: $purple;
-	opacity: 0.25;
+	background: $bg-purple;
 	transform: translateZ(-1px);
 }
 .datepicker--cell.-in-range- {
-	background: $purple;
-	opacity: 0.25;
+	background: $bg-purple;
 	color: $black-50;
 }
 .datepicker--cell.-current- {
@@ -79,4 +80,58 @@ background: $gradient-green;
 .datepicker--cell-day.-other-month-::before, .datepicker--cell-day.-other-month-:hover, .-selected-.datepicker--cell-day.-other-month-:hover {
 	background: transparent;
 	color: #dedede;
+}
+.-in-range-.datepicker--cell-day.-other-month-, {
+	background: transparent;
+}
+.datepicker--nav-action {
+
+}
+.datepicker--nav-action:first-child::before {
+	content: "arrow_back";
+	color: $purple;
+font-family: "Material Icons";
+font-size: 24px;
+font-weight: 400;
+line-height: 23.91px;
+}
+.datepicker--nav-action:last-child::before {
+	content: "arrow_forward";
+	color: $purple;
+font-family: "Material Icons";
+font-size: 24px;
+font-weight: 400;
+line-height: 23.91px;
+padding-left: 10px;
+}
+.datepicker__bottom {
+	margin-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 5px;
+}
+.datepicker__clear {
+	// display: none;
+	font-weight: 700;
+	font-size: 12px;
+	font-family: Montserrat;
+	color: $black-50;
+	text-transform: uppercase;
+	cursor: pointer;
+	&--wrap {
+		float: left;
+	}
+}
+.datepicker__set {
+	display: inline;
+	font-weight: 700;
+	font-size: 12px;
+	font-family: Montserrat;
+	text-align: right;
+	color: $purple;
+	text-transform: uppercase;
+	cursor: pointer;
+	&--wrap {
+		display: block;
+		text-align: right;
+	}
 }

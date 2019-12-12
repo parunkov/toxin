@@ -32,9 +32,9 @@ const PATHS = {
 //         }),);
 // console.log(folders.map(folder => new HtmlWebpackPlugin({
 //             filename: `${folder}.html`,
-//             chunks: chunk.concat(folder),
+//             chunks: new Array(folder),
 //             template: PATHS.source + `/pages/${folder}/${folder}.pug`
-//         })))
+//         })));
 
 const common = merge([
     {
@@ -67,7 +67,7 @@ const common = merge([
         }),
         // folders.map(folder => new HtmlWebpackPlugin({
         //     filename: `${folder}.html`,
-        //     chunks: chunk.concat(folder),
+        //     chunks: new Array(folder),
         //     template: PATHS.source + `/pages/${folder}/${folder}.pug`
         // })),
         new CopyWebpackPlugin([{
@@ -87,6 +87,11 @@ const common = merge([
     ]);
 
 module.exports = function(env) {
+	// optimization: {
+	//     splitChunks: {
+	//       chunks: "all"
+	//     }
+ //  	}
     if (env === 'production') {
         return merge([
             common,
