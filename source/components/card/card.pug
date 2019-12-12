@@ -2,13 +2,20 @@ include ../rate/rate.pug
 mixin card(cl, data)
 	.card__container
 		.card__slider
+			.card__slide.card__slide-1
+				img(src=data.img[0])
+			.card__slide.card__slide-2
+			.card__slide.card__slide-3
+			.card__slide.card__slide-4
 		.card__text
 			.card__text-1
 				span.card__num-wrap
 					span.card__num №
 					h2.card__h2 #{data.num}
 					span.card__lux #{data.lux}
-				span.card__price #{data.price}₽
+				.card__price #{data.price}₽
 					span.card__price-text в сутки
 			.card__text-2
 				+rate('card__rate', data.rate)
+				.card__reviews #{data.rev}
+					span.card__reviews-text Отзывов

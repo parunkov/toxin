@@ -1,11 +1,17 @@
 @import "../../variables.scss";
+.card__container {
+	height: 257.5px;	
+}
 .card__slider {
+	position: relative;
 	height: 152px;
 	margin-bottom: 20px;
+	overflow: hidden;
+	border-radius: 4px 4px 0 0;
 }
 .card__text {
-	padding-left: 20%*100/270;
 	padding-right: 20%*100/270;
+	padding-left: 20%*100/270;
 }
 .card__num-wrap {
 	float: left;
@@ -14,8 +20,8 @@
 .card__num {
 	display: inline;
 	font-weight: 700;
-    font-size: 14px;
-    font-family: Montserrat;
+	font-size: 14px;
+	font-family: Montserrat;
 }
 .card__h2 {
 	display: inline;
@@ -23,26 +29,51 @@
 }
 .card__lux {
 	display: inline;
+	font-weight: 700;
+	font-size: 12px;
+	font-family: Montserrat;
 	color: $purple;
-font-family: Montserrat;
-font-size: 12px;
-font-weight: 700;
-text-transform: uppercase;
+	text-transform: uppercase;
 }
 .card__price {
-	padding-top: 3px;
 	display: block;
+	padding-top: 3px;
+	padding-bottom: 10px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: Montserrat;
 	text-align: right;
 	color: $black-50;
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 700;
-line-height: 18px;
-padding-bottom: 10px;
-border-bottom: 1px solid $black-10;
+	border-bottom: 1px solid $black-10;
 }
 .card__price-text {
+	margin-left: 5px;
 	font-weight: 400;
 	font-size: 12px;
+}
+.card__text-2 {
+	clear: both;
+	padding-top: 10px;
+	&::after {
+		content: "";
+		clear: both;
+	}
+}
+.card__rate {
+	float: left;
+}
+.card__reviews {
+	display: block;
+	padding-top: 3px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 18px;
+	font-family: Montserrat;
+	text-align: right;
+	color: $black-50;
+}
+.card__reviews-text {
 	margin-left: 5px;
+	font-weight: 400;
 }

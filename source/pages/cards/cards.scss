@@ -76,8 +76,8 @@
 		width: 270%*100/320;
 		margin-left: 0;
 		background-color: $white;
-	border-radius: 4px;
-	box-shadow: 0 0 25px $shadow;
+		border-radius: 4px;
+		box-shadow: 0 0 25px $shadow;
 	}
 	@media (max-width: 380px) {
 		max-width: 315px;
