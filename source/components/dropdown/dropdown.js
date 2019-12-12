@@ -83,7 +83,7 @@ $(document).ready(() => {
 
 		$('.iqdropdown').eq(i).find('.dropdown__set').click(function() {
 			$('.iqdropdown').eq(i).find('.dropdown__clear').css({'display' : 'inline'});
-			$('.iqdropdown').eq(i).toggleClass('menu-open');
+			$('.iqdropdown').eq(i).removeClass('menu-open');
 		});
 		$('.iqdropdown').eq(i).find('.dropdown__clear').click(function() {
 			$('.iqdropdown').eq(i).find('.counter').html('0');

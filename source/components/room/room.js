@@ -9,4 +9,5 @@ $(document).ready(() => {
 	$('.room__container .iqdropdown button').eq(1).trigger('click');
 	$('.room__container .iqdropdown button').eq(3).trigger('click');
 	$('.room__container .dropdown__set').trigger('click');
+	$('.room__container .iqdropdown').removeClass('menu-open');
 });
