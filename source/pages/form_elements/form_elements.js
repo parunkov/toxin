@@ -31,5 +31,6 @@ $(document).ready(() => {
 	$('.form_elements__item--22 .iqdropdown button').eq(1).trigger('click');
 	$('.form_elements__item--22 .iqdropdown button').eq(3).trigger('click');
 	$('.form_elements__item--22 .dropdown__set').trigger('click');
+	$('.form_elements__item--22 .iqdropdown').addClass('menu-open');
 });
 
