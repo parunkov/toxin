@@ -1,14 +1,24 @@
 mixin header(cl, menu, login)
-	ul.header__ul
-		each val, i in menu
-			if menu[i].incl
-				li.header__li.header__li--big
-					a= menu[i].item
-					span.header__arrow expand_more
-					ul.header__ul--incl
-						each val, j in menu[i].incl
-							li.header__li.header__li--incl
-								a= menu[i].incl[j]
-			else
-				li.header__li
-					a= menu[i].item
+	.header__container
+		.page__logo.header__logo
+		.header__ul-wrap
+			ul.header__ul
+				each val, i in menu
+					if menu[i].incl
+						li.header__li.header__li--big
+							a(href=menu[i].href) !{menu[i].item}
+							span.header__arrow expand_more
+							ul.header__ul.header__ul--menu.header__ul-incl
+								each val, j in menu[i].incl
+									li.header__li.header__li--incl
+										a(href=menu[i].hrefs[j]) !{menu[i].incl[j]}
+					else
+						li.header__li
+							a(href=menu[i].href) !{menu[i].item}
+							ul.header__ul.header__ul--menu
+		.header__login-container
+			.header__login-content
+				.header__login-wrap
+					a(href="#" class="btn btn--white btn--small-white") Login
+				.header__register-wrap
+					a(href="#" class="btn btn--small") Register
