@@ -1,6 +1,7 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../../components/rate/rate.js';
+import '../../components/data/data.js';
 import './card.scss';
 
 $('.card__container').each(function(i) {
