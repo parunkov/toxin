@@ -6,11 +6,9 @@ import './card.scss';
 $('.card__container').each(function(i) {
 	let counter = 0;
 	let $slides = $('.card__container').eq(i).find('.card__slide');
-	// console.log($slides);
 	let left = $('.card__container').eq(i).find('.card__arrow-left');
 	let right = $('.card__container').eq(i).find('.card__arrow-right');
 	let $controls = $('.card__container').eq(i).find('.card__control');
-	// console.log($controls);
 	let showSlides = function() {
 		$slides.removeClass('card__slide-left');
 		$slides.removeClass('card__slide-active');
@@ -44,4 +42,31 @@ $('.card__container').each(function(i) {
 		}
 	}
 	showSlides();
+	$controls.each(function(i) {
+		$controls.eq(i).click(function(evt) {
+			evt.preventDefault();
+			counter = i;
+			showSlides();
+		});
+	});
+	left.click(function() {
+		switch (counter) {
+			case 0:
+				counter = 3;
+				break;
+			default:
+				counter--;
+		}
+		showSlides();
+	});
+	right.click(function() {
+		switch (counter) {
+			case 3:
+				counter = 0;
+				break;
+			default:
+				counter++;
+		}
+		showSlides();
+	});
 });
