@@ -73,6 +73,7 @@
 		width: 100%;
 	}
 	&--6, &--7 {
+		min-width: 270px;
 		width: 270%*100/320;
 		margin-left: 0;
 		background-color: $white;

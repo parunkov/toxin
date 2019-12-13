@@ -2,11 +2,18 @@ include ../rate/rate.pug
 mixin card(cl, data)
 	.card__container
 		.card__slider
-			.card__slide.card__slide-1
-				img(src=data.img[0])
-			.card__slide.card__slide-2
-			.card__slide.card__slide-3
-			.card__slide.card__slide-4
+			.card__slide-wrap
+				.card__slide-container
+					- for (let i = 0; i < 4; i++)
+						.card__slide
+							img(src=data.img[i])
+				.card__shadow-left
+				.card__shadow-right
+				.card__arrow-left expand_more
+				.card__arrow-right expand_more
+				.card__controls
+					- for (let i = 0; i < 4; i++)
+						.card__control
 		.card__text
 			.card__text-1
 				span.card__num-wrap
