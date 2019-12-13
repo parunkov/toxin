@@ -55,9 +55,9 @@
 	}
 	&--6, &--7 {
 		width: 320%*100/360;
+		margin-bottom: 40px;
 		background: transparent;
 		box-shadow: none;
-		margin-bottom: 40px;
 	}
 	@media (max-width: $page-container) {
 		min-width: 380px;
@@ -74,8 +74,8 @@
 		width: 100%;
 	}
 	&--6, &--7 {
-		min-width: 270px;
 		width: 270%*100/320;
+		min-width: 270px;
 		margin-left: 0;
 		background-color: $white;
 		border-radius: 4px;

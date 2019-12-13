@@ -1,43 +1,41 @@
 @import "../../variables.scss";
 .card__container {
-	height: 257.5px;	
+	height: 257.5px;
 }
 .card__slider {
 	height: 152px;
 	margin-bottom: 20px;
 	overflow: hidden;
-	border-radius: 4px 4px 0 0;
 	border: 1px solid $green;
+	border-radius: 4px 4px 0 0;
 }
 .card__slide-wrap {
 	position: relative;
 	width: 270px;
 	margin: 0 auto;
 }
-.card__slide-container {
-	
-}
+
 .card__slide {
-	display: none;	
+	display: none;
 }
 .card__slide-active {
-	display: block;
 	position: absolute;
 	top: 0;
 	left: 0;
+	display: block;
 }
 .card__slide-left {
-	display: block;
 	position: absolute;
 	top: 0;
 	left: -270px;
+	display: block;
 	opacity: 0.5;
 }
 .card__slide-right {
-	display: block;
 	position: absolute;
 	top: 0;
 	left: 270px;
+	display: block;
 	opacity: 0.5;
 }
 .card__shadow-left {
@@ -57,34 +55,34 @@
 	background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
 }
 .card__arrow-left {
-	cursor: pointer;
 	position: absolute;
 	top: 43px;
 	left: 0;
 	width: 45px;
 	height: 45px;
+	padding-top: 12px;
+	padding-left: 19px;
+	font-weight: 400;
+	font-size: 24px;
+	font-family: "Material Icons";
+	color: $white;
 	transform: rotate(90deg);
-color: $white;
-font-family: "Material Icons";
-font-size: 24px;
-font-weight: 400;
-padding-left: 19px;
-padding-top: 12px;
+	cursor: pointer;
 }
 .card__arrow-right {
-	cursor: pointer;
 	position: absolute;
 	top: 43px;
 	right: 0;
 	width: 45px;
 	height: 45px;
+	padding-top: 10px;
+	padding-left: 2px;
+	font-weight: 400;
+	font-size: 24px;
+	font-family: "Material Icons";
+	color: $white;
 	transform: rotate(-90deg);
-color: $white;
-font-family: "Material Icons";
-font-size: 24px;
-font-weight: 400;
-padding-left: 2px;
-padding-top: 10px;
+	cursor: pointer;
 }
 .card__controls {
 	position: absolute;
@@ -93,12 +91,12 @@ padding-top: 10px;
 }
 .card__control {
 	display: inline-block;
-	cursor: pointer;
 	width: 7.5px;
 	height: 7.5px;
-	border: 1px solid $white;
 	margin-right: 0;
+	border: 1px solid $white;
 	border-radius: 3.75px;
+	cursor: pointer;
 	&--active {
 		background: $white;
 	}

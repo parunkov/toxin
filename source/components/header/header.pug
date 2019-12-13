@@ -1,0 +1,14 @@
+mixin header(cl, menu, login)
+	ul.header__ul
+		each val, i in menu
+			if menu[i].incl
+				li.header__li.header__li--big
+					a= menu[i].item
+					span.header__arrow expand_more
+					ul.header__ul--incl
+						each val, j in menu[i].incl
+							li.header__li.header__li--incl
+								a= menu[i].incl[j]
+			else
+				li.header__li
+					a= menu[i].item

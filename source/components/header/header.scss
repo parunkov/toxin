@@ -1,0 +1,25 @@
+@import "../../variables.scss";
+.header__li {
+	position: relative;
+	display: inline-block;
+	margin-right: 30px;
+	color: $black-50;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+	&--big {
+		margin-right: 44px;
+	}
+}
+.header__arrow {
+	position: absolute;
+	bottom: -5px;
+	right: -20px;
+	display: inline-block;
+	color: $black-50;
+font-family: "Material Icons";
+font-size: 24px;
+font-weight: 400;
+line-height: 23.91px;
+padding-top: 20px;
+}

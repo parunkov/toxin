@@ -1,0 +1,24 @@
+extends ../../base.pug
+block title
+	| Headers & Footers
+block main
+	.headers_footers__page
+		include ../../components/ui_kit/ui_kit.pug
+		include ../../components/header/header.pug
+		-
+			let MenuItem = function(item, incl) {
+				this.item = item;
+				this.incl = incl;
+			}
+			let menu = [
+				new MenuItem('Home'),
+				new MenuItem('About Us'),
+				new MenuItem('Services', ['Services1', 'Services2', 'Services3']),
+				new MenuItem('Careers'),
+				new MenuItem('News'),
+				new MenuItem('Documentation')
+			];
+		.headers_footers__menu.headers_footers__menu--1
+			.headers_footers__container
+				//- .page__logo
+				+header(headers_footers__header-menu, menu)
