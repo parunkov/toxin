@@ -1,8 +1,11 @@
 @import "../../variables.scss";
+.header__active {
+	display: none;
+}
 .header__container {	
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 14px;
+	padding-top: 17px;
 	width: 100%;
 	max-width: 1200%*100/1440;
 	padding-left: 20%*100/1440;
@@ -49,7 +52,6 @@
 	position: relative;
 	display: inline-block;
 	margin-right: 26px;
-	color: $black-50;
 font-family: Montserrat;
 font-size: 14px;
 font-weight: 400;
@@ -66,18 +68,44 @@ margin-bottom: 15px;
 			white-space: nowrap;
 		}
 	}
+	&--active {
+		cursor: default;
+		a {
+			font-weight: 700;
+			cursor: default;
+		}
+	}
 	a {
 		text-decoration: none;
-		color: $black-50;
 		cursor: pointer;
 	}	
 }
 .header__li a:hover {
-	color: $black-text;
 }
 .header__li:hover > .header__ul-incl {
 	visibility: visible;
 	 opacity: 1;
+}
+.header__li--active:hover {
+	cursor: default;
+	a {
+		cursor: default;
+	}
+}
+.header__li--active a:hover, .header__a--active:hover {
+		cursor: default;
+}
+.header__a {
+	color: $black-50;
+}
+.header__a--active {
+	color: $black-75;
+}
+.header__a:hover {
+	color: $black-text;
+}
+.header__a--active:hover {
+	color: $black-75;
 }
 .header__arrow {
 	position: absolute;
@@ -90,6 +118,21 @@ font-size: 24px;
 font-weight: 400;
 line-height: 23.91px;
 padding-top: 20px;
+}
+.header__login-container-logged {
+	margin-top: 10px;
+	flex: 0 0 145px;
+	padding-left: 30px;
+	border-left: 1px solid $black-10;
+	padding-top: 4px;
+	height: 30px;
+}
+.header__user {
+	color: $black-50;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 400;
+cursor: default;
 }
 .header__login-container {
 	flex: 0 0 200px;

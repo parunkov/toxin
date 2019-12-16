@@ -1,25 +1,30 @@
-mixin header(cl, menu, login)
+mixin header(cl, menu, active, login)
 	.header__container
+		.header__active= active
 		.page__logo.header__logo
 		.header__ul-wrap
 			ul.header__ul
 				each val, i in menu
 					if menu[i].incl
 						li.header__li.header__li--big
-							a(href=menu[i].href) !{menu[i].item}
+							a(href=menu[i].href class="header__a") !{menu[i].item}
 							ul.header__ul.header__ul--menu.header__ul-incl
 								each val, j in menu[i].incl
 									li.header__li.header__li--incl
-										a(href=menu[i].hrefs[j]) !{menu[i].incl[j]}
+										a(href=menu[i].hrefs[j] class="header__a") !{menu[i].incl[j]}
 							span.header__arrow expand_more
 					else
 						li.header__li
-							a(href=menu[i].href) !{menu[i].item}
+							a(href=menu[i].href class="header__a") !{menu[i].item}
 							ul.header__ul.header__ul--menu
-		.header__login-container
-			.header__login-content
-				.header__login-wrap
-					a(href="#" class="btn btn--white btn--small-white") Login
-				.header__login-space
-				.header__register-wrap
-					a(href="#" class="btn btn--small") Register
+		if login
+			.header__login-container-logged
+				.header__user Cosmin Negoita
+		else
+			.header__login-container
+				.header__login-content
+					.header__login-wrap
+						a(href="#" class="btn btn--white btn--small-white") Login
+					.header__login-space
+					.header__register-wrap
+						a(href="#" class="btn btn--small") Register
