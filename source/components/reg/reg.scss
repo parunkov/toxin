@@ -30,14 +30,17 @@
 .reg__btn {
 	margin-bottom: 30px;
 }
+.reg__footer {
+	display: flex;
+	flex-wrap: nowrap
+}
 .reg__footer-1 {
-	display: inline-block;
-	width: 67.7%;
+	flex: auto;
+	padding-top: 10px;
 }
 .reg__footer-text {
 	color: $black-text;
 }
 .reg__footer-2 {
-	display: inline-block;
-	width: 99%*100/320;
+	flex: 0 0 99%*100/320;
 }
