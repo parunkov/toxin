@@ -5,6 +5,7 @@ block main
 	.headers_footers__page
 		include ../../components/ui_kit/ui_kit.pug
 		include ../../components/header/header.pug
+		include ../../components/footer/footer.pug
 		-
 			let MenuItem = function(item, href, incl, hrefs) {
 				this.item = item;
@@ -29,4 +30,5 @@ block main
 			+header(headers_footers__header-menu, menu, 0)
 		.headers_footers__menu.headers_footers__menu--2
 			+header(headers_footers__header-menu, menu, 0, 1)
-		.headers_footers__footer-1
+		//- .headers_footers__footer-1
+		//- 	+footer(headers_footers__footer, nav)
