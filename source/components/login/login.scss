@@ -15,14 +15,17 @@
 .login__btn {
 	margin-bottom: 30px;
 }
+.login__footer {
+	display: flex;
+	flex-wrap: nowrap;
+}
 .login__footer-1 {
-	display: inline-block;
-	width: 67.7%;
+	flex: auto;
+	padding-top: 10px;
 }
 .login__footer-text {
 	color: $black-text;
 }
 .login__footer-2 {
-	display: inline-block;
-	width: 99%*100/320;
+	flex: 0 0 99%*100/320;
 }

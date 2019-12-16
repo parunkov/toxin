@@ -35,12 +35,15 @@
 	}
 }
 .room__input-wrap {
-	display: inline-block;
-	width: 147%*100/320;
+	display: flex;
+	flex-wrap: nowrap;
 	margin-bottom: 17px;
-	&--1 {
-		margin-right: 20%*100/320;
-	}
+}
+.room__input-inner {
+	flex: 0 0 147%*100/320;
+}
+.room__input-space {
+	flex: auto;
 }
 .room__dropdown-container {
 	margin-bottom: 22px;

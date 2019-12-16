@@ -8,26 +8,28 @@ include ../../components/dropdown/dropdown.pug
 		.room__header-2
 			p.room__header--p 9 990₽ <span class="room__header--price">в сутки</span>
 	form
-		.room__input-wrap.room__input-wrap--1
-			+input(
-			'прибытие', 
-			'date', 
-			'arrival', 
-			'room__input-1', 
-			'2019-08-19', 
-			'', 
-			'', 
-			'expand_more')
-		.room__input-wrap.room__input-wrap--2
-			+input(
-			'выезд', 
-			'date', 
-			'departure', 
-			'room__input-2', 
-			'2019-08-23', 
-			'', 
-			'', 
-			'expand_more')
+		.room__input-wrap
+			.room__input-inner
+				+input(
+				'прибытие', 
+				'date', 
+				'arrival', 
+				'room__input-1', 
+				'2019-08-19', 
+				'', 
+				'', 
+				'expand_more')
+			.room__input-space
+			.room__input-inner
+				+input(
+				'выезд', 
+				'date', 
+				'departure', 
+				'room__input-2', 
+				'2019-08-23', 
+				'', 
+				'', 
+				'expand_more')
 		+dropdown(
 		'peoples',
 		'room__dropdown', 
