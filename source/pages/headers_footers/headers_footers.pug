@@ -20,7 +20,13 @@ block main
 				new MenuItem('News', '#'),
 				new MenuItem('Documentation', '#')
 			];
+			let nav = [
+				new MenuItem('Navigation', '#', ['About Us', 'News', 'Support', 'Products'], ['#', '#', '#', '#']),
+				new MenuItem('About Us', '#', ['Who we are', 'Our team', 'Careers', 'Investors'], ['#', '#', '#', '#']),
+				new MenuItem('Support', '#', ['Documentation', 'Community', 'Get in Touch'], ['#', '#', '#'])
+			];
 		.headers_footers__menu.headers_footers__menu--1
 			+header(headers_footers__header-menu, menu, 0)
 		.headers_footers__menu.headers_footers__menu--2
 			+header(headers_footers__header-menu, menu, 0, 1)
+		.headers_footers__footer-1
