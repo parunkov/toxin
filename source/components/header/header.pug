@@ -7,11 +7,12 @@ mixin header(cl, menu, login)
 					if menu[i].incl
 						li.header__li.header__li--big
 							a(href=menu[i].href) !{menu[i].item}
-							span.header__arrow expand_more
+							//- span.header__arrow expand_more
 							ul.header__ul.header__ul--menu.header__ul-incl
 								each val, j in menu[i].incl
 									li.header__li.header__li--incl
 										a(href=menu[i].hrefs[j]) !{menu[i].incl[j]}
+							span.header__arrow expand_more
 					else
 						li.header__li
 							a(href=menu[i].href) !{menu[i].item}
