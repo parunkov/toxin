@@ -7,12 +7,15 @@
 	margin-bottom: 16px;
 }
 .search__input-wrap {
-	display: inline-block;
-	width: 147%*100/320;
+	display: flex;
+	flex-wrap: nowrap;
 	margin-bottom: 17px;
-	&--1 {
-		margin-right: 20%*100/320;
-	}
+}
+.search__input-1-wrap, .search__input-2-wrap {
+	flex: 0 0 147%*100/320;
+}
+.search__input-space {
+	flex: auto;
 }
 .search__dropdown-container {
 	margin-bottom: 30px;
