@@ -101,16 +101,20 @@ padding-top: 20px;
 }
 .header__login-content {
 	margin: 0 auto;
-	width: 200px;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
 }
 .header__login-wrap {
-	width: 79px;
+	flex: 1 0 79%*100/200;
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 16px;
+}
+.header__login-space {
+	flex: 0 1 16px;
 }
 .header__register-wrap {
-	width: 101px;
+	flex: 1 0 101%*100/200;
 	display: inline-block;
 	vertical-align: top;
 }

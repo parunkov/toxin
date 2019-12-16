@@ -7,7 +7,6 @@ mixin header(cl, menu, login)
 					if menu[i].incl
 						li.header__li.header__li--big
 							a(href=menu[i].href) !{menu[i].item}
-							//- span.header__arrow expand_more
 							ul.header__ul.header__ul--menu.header__ul-incl
 								each val, j in menu[i].incl
 									li.header__li.header__li--incl
@@ -21,5 +20,6 @@ mixin header(cl, menu, login)
 			.header__login-content
 				.header__login-wrap
 					a(href="#" class="btn btn--white btn--small-white") Login
+				.header__login-space
 				.header__register-wrap
 					a(href="#" class="btn btn--small") Register
