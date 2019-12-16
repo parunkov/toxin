@@ -1,6 +1,15 @@
 mixin footer(cl, menu)
 	.footer__container
-		.footer__col-1
-		.footer__col-2
-		.footer__col-3
-		.footer__col-4
+		.footer__col.footer__col--1
+			.page__logo.footer__logo
+			p.footer__p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+		.footer__nav
+			each val, i in menu
+				div(class ="footer__col footer__col--" + (i + 2))
+					h3.footer__h3
+						a(href=menu[i].href class="footer__a") !{menu[i].item}
+					ul.footer__ul.footer__ul--menu.footer__ul-incl
+						each val, j in menu[i].incl
+							li.footer__li.footer__li--incl
+								a(href=menu[i].hrefs[j] class="footer__a") !{menu[i].incl[j]}
+		.footer__col.footer__col--5
