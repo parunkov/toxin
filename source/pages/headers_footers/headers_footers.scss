@@ -1,6 +1,7 @@
 @import "../../variables.scss";
 .headers_footers__page {
 	background: $grey;
+	padding-bottom: 130px;
 }
 .headers_footers__menu {
 	width: 100%;
@@ -17,4 +18,30 @@
 .headers_footers__footer-1 {
 	background: $white;
 	box-shadow: 0 10px 20px $black-5;
+	margin-bottom: 40px;
+}
+.headers_footers__footer-wrap {
+	background: $white;
+	box-shadow: 0 10px 20px $black-5;
+}
+.headers_footers__p {
+	margin-bottom: 20px;
+} 
+.headers_footers__footer-container {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 110px;
+	width: 560%*100/1440;
+	// border: 1px solid red;
+	@media (max-width: 1440px) {
+		width: 560px;
+	}
+	@media (max-width: 560px) {
+		width: 100%;
+	}
+}
+.headers_footers__logo {
+	margin: 0 auto;
+	margin-bottom: 20px;
 }
