@@ -4,5 +4,5 @@ import '../../components/page/page.js';
 import '../../components/ui_kit/ui_kit.js';
 import '../../components/data/data.js';
 import '../../components/header/header.js';
-// import '../../components/footer/footer.js';
+import '../../components/footer/footer.js';
 import './headers_footers.scss';
