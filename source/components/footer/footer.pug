@@ -1,15 +1,56 @@
-mixin footer(cl, menu)
-	.footer__container
-		.footer__col.footer__col--1
-			.page__logo.footer__logo
-			p.footer__p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-		.footer__nav
-			each val, i in menu
-				div(class ="footer__col footer__col--" + (i + 2))
-					h3.footer__h3
-						a(href=menu[i].href class="footer__a") !{menu[i].item}
-					ul.footer__ul.footer__ul--menu.footer__ul-incl
-						each val, j in menu[i].incl
-							li.footer__li.footer__li--incl
-								a(href=menu[i].hrefs[j] class="footer__a") !{menu[i].incl[j]}
-		.footer__col.footer__col--5
+include ../../components/input/input.pug
+mixin footer(cl, menu, copyright, ui)
+	.footer__block-1
+		.footer__container
+			.footer__col.footer__col--1
+				.page__logo.footer__logo
+				p.footer__p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+			.footer__nav
+				each val, i in menu
+					div(class ="footer__col footer__col--" + (i + 2))
+						h3.footer__h3
+							a(href=menu[i].href class="footer__a") !{menu[i].item}
+						ul.footer__ul.footer__ul--menu.footer__ul-incl
+							each val, j in menu[i].incl
+								li.footer__li.footer__li--incl
+									a(href=menu[i].hrefs[j] class="footer__a") !{menu[i].incl[j]}
+			.footer__col.footer__col--5
+				h3.footer__h3 Subscribe to our newsletter
+				p.footer__p Receive our latest news and promotions in your inbox!
+				form
+					if ui
+						- let email = 'Your email address';
+						+input(
+							'', 
+							'email', 
+							'footer__input', 
+							'footer__input', 
+							'', 
+							email, 
+							'', 
+							'arrow_forward', 
+							'purple')
+					else
+						- let email = 'Email'
+						+input(
+							'', 
+							'email', 
+							'footer__input', 
+							'footer__input', 
+							'', 
+							email, 
+							'', 
+							'arrow_forward', 
+							'purple')
+	.footer__block-2
+		.footer__container.footer__container--bottom
+			.footer__col.footer__col--6
+				p= copyright
+			.footer__col.footer__col--7
+				ul
+					li.footer__social-li
+						a(href="#" class="footer__social footer__social--twitter") Twitter
+					li.footer__social-li
+						a(href="#" class="footer__social footer__social--facebook") Facebook
+					li.footer__social-li
+						a(href="#" class="footer__social footer__social--instagram") Instagram

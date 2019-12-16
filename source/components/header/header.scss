@@ -2,15 +2,15 @@
 .header__active {
 	display: none;
 }
-.header__container {	
+.header__container {
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 17px;
 	width: 100%;
 	max-width: 1200%*100/1440;
-	padding-left: 20%*100/1440;
-	padding-right: 20%*100/1440;
 	margin: 0 auto;
+	padding-top: 17px;
+	padding-right: 20%*100/1440;
+	padding-left: 20%*100/1440;
 	// border: 1px solid blue;
 	@media (max-width: 1440px) {
 		max-width: $page-container;
@@ -27,22 +27,22 @@
 .header__ul {
 	&-wrap {
 		flex: 1 0 320px;
-		text-align: right;
 		padding-top: 12px;
+		text-align: right;
 	}
 	&-incl {
-		visibility: hidden; 
-		opacity: 0;
-		padding-right: 10px;
-		padding-left: 10px;
-		padding-top: 10px;
 		position: absolute;
 		top: 16px;
 		left: 10px;
+		z-index: 10;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-left: 10px;
 		background: $white;
 		border: 1px solid $black-50;
 		border-radius: 4px;
-		z-index: 10;		
+		visibility: hidden;
+		opacity: 0;
 	}
 	&-incl--active {
 		display: block;
@@ -52,17 +52,17 @@
 	position: relative;
 	display: inline-block;
 	margin-right: 26px;
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 400;
-margin-bottom: 15px;
+	margin-bottom: 15px;
+	font-weight: 400;
+	font-size: 14px;
+	font-family: Montserrat;
 	&--big {
 		margin-right: 36px;
 	}
 	&--incl {
-		margin-bottom: 10px;
-		margin-right: 0;
 		display: block;
+		margin-right: 0;
+		margin-bottom: 10px;
 		a {
 			display: block;
 			white-space: nowrap;
@@ -78,13 +78,12 @@ margin-bottom: 15px;
 	a {
 		text-decoration: none;
 		cursor: pointer;
-	}	
+	}
 }
-.header__li a:hover {
-}
+
 .header__li:hover > .header__ul-incl {
 	visibility: visible;
-	 opacity: 1;
+	opacity: 1;
 }
 .header__li--active:hover {
 	cursor: default;
@@ -93,7 +92,7 @@ margin-bottom: 15px;
 	}
 }
 .header__li--active a:hover, .header__a--active:hover {
-		cursor: default;
+	cursor: default;
 }
 .header__a {
 	color: $black-50;
@@ -109,55 +108,55 @@ margin-bottom: 15px;
 }
 .header__arrow {
 	position: absolute;
-	bottom: -5px;
 	right: -20px;
+	bottom: -5px;
 	display: inline-block;
+	padding-top: 20px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 23.91px;
+	font-family: "Material Icons";
 	color: $black-50;
-font-family: "Material Icons";
-font-size: 24px;
-font-weight: 400;
-line-height: 23.91px;
-padding-top: 20px;
 }
 .header__login-container-logged {
-	margin-top: 10px;
 	flex: 0 0 145px;
+	height: 30px;
+	margin-top: 10px;
+	padding-top: 4px;
 	padding-left: 30px;
 	border-left: 1px solid $black-10;
-	padding-top: 4px;
-	height: 30px;
 }
 .header__user {
+	font-weight: 400;
+	font-size: 14px;
+	font-family: Montserrat;
 	color: $black-50;
-font-family: Montserrat;
-font-size: 14px;
-font-weight: 400;
-cursor: default;
+	cursor: default;
 }
 .header__login-container {
 	flex: 0 0 200px;
-	padding-top: 3px;
 	margin-bottom: 10px;
+	padding-top: 3px;
 	@media (max-width: 700px) {
 		flex: 1 0 320px;
 	}
 }
 .header__login-content {
-	margin: 0 auto;
-	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
+	width: 100%;
+	margin: 0 auto;
 }
 .header__login-wrap {
-	flex: 1 0 79%*100/200;
 	display: inline-block;
+	flex: 1 0 79%*100/200;
 	vertical-align: top;
 }
 .header__login-space {
 	flex: 0 1 16px;
 }
 .header__register-wrap {
-	flex: 1 0 101%*100/200;
 	display: inline-block;
+	flex: 1 0 101%*100/200;
 	vertical-align: top;
 }
