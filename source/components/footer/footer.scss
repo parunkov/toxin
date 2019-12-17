@@ -55,8 +55,11 @@
 }
 .footer__nav {
 	display: flex;
-	flex: 1 1 600%*100/1200;
+	flex: 1 0 600%*100/1200;
 	flex-wrap: nowrap;
+	@media (max-width: 1300px) {
+		flex: 0 0 100%;
+	}
 	@media (max-width: 700px) {
 		flex-wrap: wrap;
 	}
