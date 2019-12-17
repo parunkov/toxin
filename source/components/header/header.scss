@@ -134,10 +134,12 @@
 	cursor: default;
 }
 .header__login-container {
-	flex: 0 0 200px;
+	// flex: 0 0 200px;
+	padding-right: 20px;
+	flex: 0 0 auto;
 	margin-bottom: 10px;
 	padding-top: 3px;
-	@media (max-width: 700px) {
+	@media (max-width: 800px) {
 		flex: 1 0 320px;
 	}
 }
@@ -149,14 +151,16 @@
 }
 .header__login-wrap {
 	display: inline-block;
-	flex: 1 0 79%*100/200;
+	// flex: 1 0 79%*100/200;
+	flex: 1 0 auto;
 	vertical-align: top;
 }
 .header__login-space {
-	flex: 0 1 16px;
+	flex: 0 0 16px;
 }
 .header__register-wrap {
 	display: inline-block;
-	flex: 1 0 101%*100/200;
+	// flex: 1 0 101%*100/200;
+	flex: 1 0 auto;
 	vertical-align: top;
 }

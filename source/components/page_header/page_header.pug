@@ -1,0 +1,17 @@
+.page_header__container
+	include ../../components/header/header.pug
+	-
+		let MenuItem = function(item, href, incl, hrefs) {
+			this.item = item;
+			this.href = href;
+			this.incl = incl;
+			this.hrefs = hrefs;
+		}
+		let menu = [
+			new MenuItem('О нас', '#'),
+			new MenuItem('Услуги', '#', ['Услуга 1', 'Услуга 2', 'Услуга 3'], ['#', "#", '#']),
+			new MenuItem('Вакансии', '#'),
+			new MenuItem('Новости', '#'),
+			new MenuItem('Соглашения', '#', ['Соглашение 1', 'Соглашение 2', 'Соглашение 3'], ['#', "#", '#'])
+		];
+	+header(page_header__header-menu, menu, -1, 'войти', 'зарегистрироваться')

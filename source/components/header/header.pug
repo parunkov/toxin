@@ -1,4 +1,4 @@
-mixin header(cl, menu, active, login)
+mixin header(cl, menu, active, btn1, btn2, login)
 	.header__container
 		.header__active= active
 		.page__logo.header__logo
@@ -24,7 +24,7 @@ mixin header(cl, menu, active, login)
 			.header__login-container
 				.header__login-content
 					.header__login-wrap
-						a(href="#" class="btn btn--white btn--small-white") Login
+						a(href="#" class="btn btn--white btn--small-white") !{btn1}
 					.header__login-space
 					.header__register-wrap
-						a(href="#" class="btn btn--small") Register
+						a(href="#" class="btn btn--small") !{btn2}
