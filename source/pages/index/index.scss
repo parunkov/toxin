@@ -1,1 +1,53 @@
 @import "../../variables.scss";
+.index__wrap {
+	width: 100%;
+	height: 830px;
+	background: transparent url('bg3.jpg') center no-repeat;
+	background-position-y: -70px;
+}
+.index__container {
+
+}
+.index__row {
+	display: flex;
+	flex-wrap: nowrap;
+	&--1 {
+		padding-top: 70px;
+	}
+}
+.index__col-1 {
+	flex: 0 0 420%*100/1200;
+	// border: 1px solid green;
+	@media (max-width: $page-container) {
+		flex: 0 0 420px;
+	}
+	@media (max-width: 420px) {
+		flex: none;
+		display: block;
+		width: 100%;
+	}
+}
+.index__form-wrap {
+	// border: 1px solid red;
+	width: 380%*100/420;
+	margin: 0 auto;
+	background-color: $white;
+	border-radius: 4px;
+	box-shadow: 0 0 25px $shadow;
+	@media (max-width: $page-container) {
+		min-width: 380px;
+	}
+	@media (max-width: 380px) {
+		overflow-x: hidden;
+	}
+}
+.index__form {
+	width: 320%*100/380;
+	margin: 0 auto;
+	@media (max-width: 380px) {
+		max-width: 315px;
+	}
+}
+.index__col-2 {
+	flex: auto;
+}
