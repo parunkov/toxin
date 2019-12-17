@@ -1,10 +1,10 @@
 include ../../components/input/input.pug
-mixin footer(cl, menu, copyright, ui)
+mixin footer(cl, text, menu, h3, p, copyright, ui)
 	.footer__block-1
 		.footer__container
 			.footer__col.footer__col--1
 				.page__logo.footer__logo
-				p.footer__p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+				p.footer__p= text
 			.footer__nav
 				each val, i in menu
 					div(class ="footer__col footer__col--" + (i + 2))
@@ -15,8 +15,8 @@ mixin footer(cl, menu, copyright, ui)
 								li.footer__li.footer__li--incl
 									a(href=menu[i].hrefs[j] class="footer__a") !{menu[i].incl[j]}
 			.footer__col.footer__col--5
-				h3.footer__h3 Subscribe to our newsletter
-				p.footer__p Receive our latest news and promotions in your inbox!
+				h3.footer__h3= h3
+				p.footer__p= p 
 				form
 					if ui
 						- let email = 'Your email address';
