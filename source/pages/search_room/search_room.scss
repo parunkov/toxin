@@ -1,0 +1,60 @@
+@import "../../variables.scss";
+.search_room__header {
+	box-shadow: 0 10px 20px $black-5;
+	position: relative;
+	z-index: 10;
+}
+.search_room__wrap {
+	background: $white;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	@media (max-width: 380px) {
+		width: 100vw;
+	}
+}
+.search_room__container {
+	margin: 0 auto;
+	width: 1200%*100/1440;
+	padding-left: 10%*100/1440;
+	padding-right: 14%*100/1440;
+	height: 150px;
+	// border: 1px solid red;
+	display: flex;
+	flex-wrap: nowrap;
+	@media (max-width: 1440px) {
+		width: 1200px;
+	}
+	@media (max-width: $page-container) {
+		width: 100vw;
+	}
+	@media (max-width: 600px) {
+		flex-wrap: wrap;
+	}
+}
+.search_room__form {
+	flex: 0 0 286%*100/1200;
+	// border: 1px solid green;
+	min-width: 266px;
+	height: 100px;
+	@media (max-width: 600px) {
+		flex-grow: 1;
+	}
+}
+.search_room__space {
+	flex: 0 1 44%*100/1200;
+	// flex: auto;
+}
+.search_room__cards {
+	// flex: 0 0 834%*100/1200;
+	flex: auto;
+	// border: 1px solid blue;
+	min-width: 282px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.search_room__card-wrap {
+	flex: 1 0 280px;
+	// border: 1px solid magenta;
+	height: 150px;
+}
