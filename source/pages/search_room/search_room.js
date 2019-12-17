@@ -3,6 +3,7 @@ import '../../variables.scss';
 import '../../components/page/page.js';
 import '../../components/page_header/page_header.js';
 import '../../components/input/input.js';
+import '../../components/dropdown/dropdown.js';
 import '../../components/slider/slider.js';
 import '../../components/checkbox/checkbox.js';
 import '../../components/card/card.js';

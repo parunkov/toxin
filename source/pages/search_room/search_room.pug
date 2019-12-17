@@ -5,8 +5,43 @@ block main
 	.search_room__header
 		include ../../components/page_header/page_header.pug
 	.search_room__wrap
+		include ../../components/input/input.pug
+		include ../../components/dropdown/dropdown.pug
+		include ../../components/slider/slider.pug
+		include ../../components/checkbox/checkbox.pug
 		.search_room__container
 			.search_room__form
+				form
+					.search_room__input-wrap
+						+input(
+							'даты пребывания в отеле', 
+							'text', 
+							'search_room__input-1', 
+							'search_room__input', 
+							'', 
+							'19 авг - 23 авг', 
+							'',
+							'expand_more')
+					.search_room__dropdown-wrap
+						+dropdown(
+							'peoples',
+							'form_elements__dropdown-peoples-1', 
+							'dropdown', 
+							'', 
+							'взрослые', 
+							'дети', 
+							'младенцы',
+							'1')
+					.search_room__slider-wrap
+						+slider(1)
+					.search_room__slider-text Стоимость за сутки пребывания в номере
+					.search_room__checkbox-wrap
+						h3.search_room__checkbox-h3 Checkbox Buttons
+						+checkbox(
+							'form_elements__checkbox-1', 
+							['Можно курить', 
+							'Можно с питомцами', 
+							'Можно пригласить гостей (до 10 человек)'])
 			.search_room__space
 			.search_room__cards
 				.search_room__card-wrap
