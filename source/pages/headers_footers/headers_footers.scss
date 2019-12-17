@@ -40,6 +40,9 @@
 	@media (max-width: 560px) {
 		width: 100%;
 	}
+	@media (max-width: 420px) {
+		width: 100vw;
+	}
 }
 .headers_footers__logo {
 	margin: 0 auto;

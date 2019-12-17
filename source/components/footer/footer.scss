@@ -19,6 +19,9 @@
 	@media (max-width: $page-container) {
 		max-width: 100%;
 	}
+	@media (max-width: 420px) {
+		width: 100vw;
+	}
 }
 .footer__col {
 	// border: 1px solid red;

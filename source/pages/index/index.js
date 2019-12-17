@@ -3,5 +3,6 @@ import '../../variables.scss';
 import '../../components/page/page.js';
 import '../../components/page_header/page_header.js';
 import '../../components/search/search.js';
+import '../../components/page_footer/page_footer.js';
 import './index.scss';
 

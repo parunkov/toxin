@@ -144,12 +144,12 @@
 	cursor: default;
 }
 .header__login-container {
-	// flex: 0 0 200px;
-	padding-right: 20%*100/1200;
-	padding-left: 20%*100/1200;
 	flex: 0 1 auto;
 	margin-bottom: 10px;
 	padding-top: 3px;
+	// flex: 0 0 200px;
+	padding-right: 20%*100/1200;
+	padding-left: 20%*100/1200;
 	@media (max-width: 800px) {
 		flex: 1 1 320px;
 	}
