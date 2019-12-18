@@ -70,7 +70,7 @@ $(document).ready(() => {
 			return false;
 		}
 		if (!(contains(classList, 'card__arrow-right') || contains(classList, 'card__arrow-left') || contains(classList, 'card__control'))) {
-			console.log('!!!');
+			window.location.href = 'room_details.html';
 		}
 	});
 });

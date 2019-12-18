@@ -46,7 +46,8 @@ const common = merge([
         'cards': PATHS.source + '/pages/cards/cards.js',
         'headers_footers': PATHS.source + '/pages/headers_footers/headers_footers.js',
         'index': PATHS.source + '/pages/index/index.js',
-        'search_room': PATHS.source + '/pages/search_room/search_room.js'
+        'search_room': PATHS.source + '/pages/search_room/search_room.js',
+        'room_details': PATHS.source + '/pages/room_details/room_details.js'
     },
     output: {
         path: PATHS.build,
@@ -82,6 +83,11 @@ const common = merge([
             filename: 'search_room.html',
             chunks: ['search_room'],
             template: PATHS.source + '/pages/search_room/search_room.pug'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'room_details.html',
+            chunks: ['room_details'],
+            template: PATHS.source + '/pages/room_details/room_details.pug'
         }),
         // folders.map(folder => new HtmlWebpackPlugin({
         //     filename: `${folder}.html`,

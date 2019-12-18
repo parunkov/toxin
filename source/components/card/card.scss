@@ -67,7 +67,8 @@
 	font-family: "Material Icons";
 	color: $white;
 	transform: rotate(90deg);
-	cursor: pointer;
+	// cursor: pointer;
+	cursor: default;
 }
 .card__arrow-right {
 	position: absolute;
@@ -82,7 +83,8 @@
 	font-family: "Material Icons";
 	color: $white;
 	transform: rotate(-90deg);
-	cursor: pointer;
+	// cursor: pointer;
+	cursor: default;
 }
 .card__controls {
 	position: absolute;
@@ -96,7 +98,8 @@
 	margin-right: 0;
 	border: 1px solid $white;
 	border-radius: 3.75px;
-	cursor: pointer;
+	// cursor: pointer;
+	cursor: default;
 	&--active {
 		background: $white;
 	}
