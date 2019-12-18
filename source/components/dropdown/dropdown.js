@@ -75,8 +75,13 @@ $(document).ready(() => {
 				$('.iqdropdown-selection').eq(i).html(textPart0 + ' ' + textPart1 + ' ' + textPart2);
 
 			} else {
-				let guestsNumber = +$itemCounter[0].innerHTML + +$itemCounter[1].innerHTML + +$itemCounter[2].innerHTML;
+				let guestsNumber = +$itemCounter[0].innerHTML + +$itemCounter[1].innerHTML;
+				let babyNumber = +$itemCounter[2].innerHTML;
 				$('.iqdropdown-selection').eq(i).html(guestsNumber + ' ' + num2str(+guestsNumber, ['гость', 'гостя', 'гостей']));
+				if (babyNumber) {
+					let inputText = $('.iqdropdown-selection').eq(i).html();
+					$('.iqdropdown-selection').eq(i).html(inputText + ', ' + babyNumber + ' ' + num2str(+babyNumber, ['младенец', 'младенца', 'младенцев']));
+				}
 			}
 
 		});
