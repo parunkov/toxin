@@ -23,9 +23,9 @@
 	width: 1200%*100/1440;
 	padding-left: 20%*100/1440;
 	padding-right: 14%*100/1440;
-	height: 150px;
 	// border: 1px solid red;
 	display: flex;
+	border-bottom: 1px solid $black-10;
 	flex-wrap: nowrap;
 	@media (max-width: 1440px) {
 		width: 1200px;
@@ -114,11 +114,11 @@ margin-bottom: 30px;
 	}
 }
 .search_room__expandable-text {
-
+ 	margin-bottom: 30px;
 }
 .search_room__space {
 	// flex: 0 1 100%*100/1200;
-	flex: 0 1 106px;
+	flex: 0 1 210px;
 	// flex: auto;
 }
 .search_room__cards {
@@ -133,11 +133,19 @@ margin-bottom: 30px;
 .search_room__cards-wrap {
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 21px;	
 }
 .search_room__card-wrap {
 	flex: 1 0 280px;
 	// border: 1px solid magenta;
 	padding-left: 4.8%*100/834;
 	padding-right: 4.8%*100/834;
-	margin-bottom: 20px;
+	margin-bottom: 21px;
+	box-shadow: 0 10px 20px $black-5;
+	border-radius: 4px;
+}
+.search_room__pagination-wrap {
+	margin: 0 auto;
+	width: 320px;
+	margin-bottom: 70px;
 }
