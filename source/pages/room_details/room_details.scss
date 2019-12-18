@@ -58,3 +58,47 @@
 		margin-top: -3%;
 	}
 }
+.room_details__container {
+	margin: 0 auto;
+	width: $page-container;
+	border: 1px solid red;
+	// padding-left: 20%*100/1440;
+	// padding-right: 20%*100/1400;
+	display: flex;
+	flex-wrap: nowrap;
+	@media (max-width: 1440px)	{
+		width: $page-container;
+	}
+	@media (max-width: $page-container) {
+		width: 100%;
+	}
+	@media (max-width: 840px) {
+		flex-wrap: wrap;
+	}
+}
+.room_details__col-1 {
+	flex: 0 0 752%*100/1200;
+	border: 1px solid blue;
+	height: 100px;
+	@media (max-width: $page-container) {
+		flex: 0 1 752%*100/1200;
+		min-width: 420px;
+	}
+	@media (max-width: 840px) {
+		flex: 0 0 100%;
+	}
+}
+.room_details__col-2 {
+	flex: 0 0 420%*100/1200;
+	border: 1px solid blue;
+	height: 100px;
+	@media (max-width: $page-container) {
+		flex: 0 0 420px;
+	}
+	@media (max-width: 840px) {
+		flex: 0 0 100%;
+	}
+}
+.room_details__space {
+	flex: 0 1 28%*100/1200;
+}
