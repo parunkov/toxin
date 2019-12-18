@@ -2,5 +2,13 @@ extends ../../base.pug
 block title
 	| Room details
 block main
-	.search_room__header
+	.room_details__header
 		include ../../components/page_header/page_header.pug
+	.room_details__img-wrap
+		.room_details__img-col-1
+			img(src="img/room1.jpg" width="100%")
+		.room_details__img-col-2
+			.room_details__img-2
+				img(src="img/room2.jpg" width="100%")
+			.room_details__img-3
+				img(src="img/room3.jpg" width="100%")

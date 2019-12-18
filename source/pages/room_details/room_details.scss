@@ -1,0 +1,60 @@
+@import "../../variables.scss";
+.room_details__img-wrap {
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	@media (max-width: 1440px) {
+		width: 100vw;
+	}
+	@media (max-width: 640px) {
+		flex-wrap: wrap;
+	}
+	@media (max-width: 320px){
+		width: 100%;
+	}
+}
+.room_details__img-col-1 {
+	flex: 0 0 981%*100/1440;
+	@media (max-width: 640px) {
+		flex: 0 0 100%;
+	}
+}
+.room_details__img-col-2 {
+	flex: 0 0 459%*100/1440;
+	display: flex;
+	flex-wrap: wrap;
+	@media (max-width: 640px) {
+		flex: 0 0 100%;
+		flex-wrap: nowrap;
+	}
+	@media (max-width: 450px) {
+		flex-wrap: wrap;
+	}
+}
+.room_details__img-2 {
+	flex: 0 0 100%;
+	height: 50%;
+	background-size: cover;
+	@media (max-width: 640px) {
+		flex: 0 0 50%;
+		margin-top: -1%;
+	}
+	@media (max-width: 450px) {
+		flex: 0 0 100%;
+	}
+
+}
+.room_details__img-3 {
+	flex: 0 0 100%;
+	height: 50%;
+	background-size: cover;
+	margin-top: -2.79897%;
+	@media (max-width: 640px) {
+		flex: 0 0 50%;
+		margin-top: -1%;
+	}
+	@media (max-width: 450px) {
+		flex: 0 0 100%;
+		margin-top: -3%;
+	}
+}
