@@ -9,6 +9,24 @@ block main
 		include ../../components/dropdown/dropdown.pug
 		include ../../components/slider/slider.pug
 		include ../../components/checkbox/checkbox.pug
+		include ../../components/card/card.pug
+		- 	
+			let RoomData = function(img, num, lux, price, rate, rev) {
+				this.img = img;
+				this.num = num;
+				this.lux = lux;
+				this.price = price;
+				this.rate = rate;
+				this.rev = rev;
+			};
+			let data = [
+				new RoomData(['img/image1.jpg', 'img/image2.jpg', 'img/image3.jpg', 'img/image4.jpg'], 888, 'люкс', '9 990', 5, 145),
+				new RoomData(['img/image2.jpg', 'img/image3.jpg', 'img/image4.jpg', 'img/image5.jpg'], 840, '', '9 990', 4, 65),
+				new RoomData(['img/image2.jpg', 'img/image3.jpg', 'img/image4.jpg', 'img/image5.jpg'], 840, '', '9 990', 4, 65),
+				new RoomData(['img/image2.jpg', 'img/image3.jpg', 'img/image4.jpg', 'img/image5.jpg'], 840, '', '9 990', 4, 65),
+				new RoomData(['img/image2.jpg', 'img/image3.jpg', 'img/image4.jpg', 'img/image5.jpg'], 840, '', '9 990', 4, 65),
+				new RoomData(['img/image2.jpg', 'img/image3.jpg', 'img/image4.jpg', 'img/image5.jpg'], 840, '', '9 990', 4, 65)
+				];
 		.search_room__container
 			.search_room__form
 				form
@@ -78,6 +96,9 @@ block main
 			.search_room__space
 			.search_room__cards
 				h1.page__h1.search_room__h1 Номера, которые мы для вас подобрали
-				.search_room__card-wrap
+				.search_room__cards-wrap
+					each val, i in data
+						.search_room__card-wrap
+							+card('cards__card-' + i, val)
 
 				

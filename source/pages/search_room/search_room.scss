@@ -41,7 +41,6 @@
 	flex: 0 0 275%*100/1200;
 	// border: 1px solid green;
 	min-width: 266px;
-	height: 100px;
 	@media (max-width: 600px) {
 		flex-grow: 1;
 	}
@@ -118,7 +117,8 @@ margin-bottom: 30px;
 
 }
 .search_room__space {
-	flex: 0 1 46%*100/1200;
+	// flex: 0 1 100%*100/1200;
+	flex: 0 1 106px;
 	// flex: auto;
 }
 .search_room__cards {
@@ -126,11 +126,18 @@ margin-bottom: 30px;
 	flex: auto;
 	// border: 1px solid blue;
 	min-width: 282px;
+}
+.search_room__h1 {
+	margin-bottom: 20px;
+}
+.search_room__cards-wrap {
 	display: flex;
 	flex-wrap: wrap;
 }
 .search_room__card-wrap {
 	flex: 1 0 280px;
 	// border: 1px solid magenta;
-	height: 150px;
+	padding-left: 4.8%*100/834;
+	padding-right: 4.8%*100/834;
+	margin-bottom: 20px;
 }
