@@ -46,6 +46,18 @@
 .search_room__input-wrap {
 	margin-bottom: 18px;
 }
+.search_room__datepicker-wrap {
+	position: relative;
+}
+.search_room__datepicker-container {
+	position: absolute;
+	top: -10px;
+	left: -5px;
+	z-index: 10;
+	display: none;
+	width: 320px;
+	background: $white;
+}
 .search_room__dropdown-wrap {
 	margin-bottom: 29px;
 }
