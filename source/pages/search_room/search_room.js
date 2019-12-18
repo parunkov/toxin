@@ -58,4 +58,19 @@ $(document).ready(() => {
 	$('.search_room__dropdown-2-wrap .iqdropdown button').eq(1).trigger('click');
 	$('.search_room__dropdown-2-wrap .iqdropdown button').eq(3).trigger('click');
 	$('.search_room__dropdown-2-wrap .iqdropdown button').eq(3).trigger('click');
+	$('.search_room__card-wrap').eq(0).click(function(evt) {
+		evt.preventDefault();
+		let classList = evt.target.classList;
+		let contains = function(arr, elem) {
+			for (var i = 0; i < arr.length; i++) {
+				if (arr[i] === elem) {
+					return true;
+				}
+			}
+			return false;
+		}
+		if (!(contains(classList, 'card__arrow-right') || contains(classList, 'card__arrow-left') || contains(classList, 'card__control'))) {
+			console.log('!!!');
+		}
+	});
 });

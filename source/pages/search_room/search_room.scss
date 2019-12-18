@@ -3,30 +3,30 @@
 	display: none;
 }
 .search_room__header {
-	box-shadow: 0 10px 20px $black-5;
 	position: relative;
 	z-index: 10;
+	box-shadow: 0 10px 20px $black-5;
 }
 .search_room__wrap {
-	margin: 0 auto;
-	background: $white;
-	width: 100%;
 	position: relative;
 	z-index: 1;
+	width: 100%;
+	margin: 0 auto;
+	background: $white;
 	@media (max-width: 380px) {
 		width: 100vw;
 	}
 }
 .search_room__container {
-	padding-top: 25px;
-	margin: 0 auto;
-	width: 1200%*100/1440;
-	padding-left: 20%*100/1440;
-	padding-right: 14%*100/1440;
 	// border: 1px solid red;
 	display: flex;
-	border-bottom: 1px solid $black-10;
 	flex-wrap: nowrap;
+	width: 1200%*100/1440;
+	margin: 0 auto;
+	padding-top: 25px;
+	padding-right: 14%*100/1440;
+	padding-left: 20%*100/1440;
+	border-bottom: 1px solid $black-10;
 	@media (max-width: 1440px) {
 		width: 1200px;
 	}
@@ -67,12 +67,12 @@
 	margin-bottom: 15px;
 }
 .search_room__slider-text {
+	margin-bottom: 30px;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	font-family: Montserrat;
 	color: $black-50;
-font-family: Montserrat;
-font-size: 12px;
-font-weight: 400;
-line-height: 14px;
-margin-bottom: 30px;
 }
 .search_room__checkbox-wrap {
 	width: 222%*100/266;
@@ -91,30 +91,30 @@ margin-bottom: 30px;
 	margin-bottom: 31px;
 }
 .search_room__expandable-h3 {
-	cursor: pointer;
 	position: relative;
 	margin-bottom: 20px;
+	cursor: pointer;
 	&::after, &--rotate::after {
 		content: "expand_more";
-    position: absolute;
-    top: -1px;
-    right: 12px;
-    display: block;
-    font-weight: 400;
-    font-size: 24px;
-    font-family: "Material Icons";
-    text-align: center;
-    color: $black-50;
-    text-transform: none;
-    background: #ffffff;
-    border-radius: 4px;
+		position: absolute;
+		top: -1px;
+		right: 12px;
+		display: block;
+		font-weight: 400;
+		font-size: 24px;
+		font-family: "Material Icons";
+		text-align: center;
+		color: $black-50;
+		text-transform: none;
+		background: #ffffff;
+		border-radius: 4px;
 	}
 	&--rotate::after {
 		transform: rotate(180deg);
 	}
 }
 .search_room__expandable-text {
- 	margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 .search_room__space {
 	// flex: 0 1 100%*100/1200;
@@ -133,19 +133,20 @@ margin-bottom: 30px;
 .search_room__cards-wrap {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 21px;	
+	margin-bottom: 21px;
 }
 .search_room__card-wrap {
+	// cursor: pointer;
 	flex: 1 0 280px;
+	margin-bottom: 21px;
+	padding-right: 4.8%*100/834;
 	// border: 1px solid magenta;
 	padding-left: 4.8%*100/834;
-	padding-right: 4.8%*100/834;
-	margin-bottom: 21px;
-	box-shadow: 0 10px 20px $black-5;
 	border-radius: 4px;
+	box-shadow: 0 10px 20px $black-5;
 }
 .search_room__pagination-wrap {
-	margin: 0 auto;
 	width: 320px;
+	margin: 0 auto;
 	margin-bottom: 70px;
 }
