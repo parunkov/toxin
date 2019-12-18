@@ -28,8 +28,8 @@ block main
 					.search_room__dropdown-wrap
 						+dropdown(
 							'peoples',
-							'form_elements__dropdown-peoples-1', 
-							'dropdown', 
+							'search_room__dropdown-peoples-1', 
+							'гости', 
 							'', 
 							'взрослые', 
 							'дети', 
@@ -41,12 +41,43 @@ block main
 					.search_room__checkbox-wrap
 						h3.search_room__checkbox-h3 Checkbox Buttons
 						+checkbox(
-							'form_elements__checkbox-1', 
+							'search_room__checkbox-1', 
 							['Можно курить', 
 							'Можно с питомцами', 
 							'Можно пригласить гостей (до 10 человек)'])
+					.search_room__rich-wrap
+						h3.search_room__rich-h3 доступность
+						+checkbox(
+							'search_room__checkbox-2', 
+							['Ширина коридоров в номере не менее 91 см.', 
+							'На 1 этаже вас встретит специалист  и проводит до номера.'],
+							['Широкий коридор',
+							'Помощник для инвалидов'])
+					.search_room__dropdown-2-wrap
+						+dropdown(
+							'rooms',
+							'search_room__dropdown-rooms-1', 
+							'удобства номера', 
+							'', 
+							'спальни', 
+							'кровати', 
+							'ванные комнаты')
+					.search_room__expandable-wrap
+						h3.search_room__expandable-h3 дополнительные удобства
+						.search_room__expandable-text.d-none
+							+checkbox(
+								'search_room__checkbox-3', 
+								['Завтрак', 
+								'Письменный стол', 
+								'Стул для кормления',
+								'Кроватка',
+								'Телевизор',
+								'Шампунь',
+								'Телевизор',
+								'Шампунь'])
 			.search_room__space
 			.search_room__cards
+				h1.page__h1.search_room__h1 Номера, которые мы для вас подобрали
 				.search_room__card-wrap
 
 				
