@@ -3,6 +3,7 @@ import '../../variables.scss';
 import '../../components/page/page.js';
 import '../../components/page_header/page_header.js';
 import '../../components/page_footer/page_footer.js';
+import '../../components/info/info.js';
 import './room_details.scss';
 import './room1.jpg';
 import './room2.jpg';

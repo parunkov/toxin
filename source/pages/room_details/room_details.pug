@@ -13,9 +13,29 @@ block main
 			.room_details__img-3
 				img(src="img/room3.jpg" width="100%")
 	.room_details__container
+		include ../../components/info/info.pug
 		.room_details__col-1
 			.room_details__content-row-1
 				.room_details__text-1
+					h2.page__h2.room_details__h2-1 Сведения о номере
+					.room_details__info-wrap
+						+info(
+							'room_details__info-1',
+							'insert_emoticon',
+							'Комфорт',
+							'Шумопоглощающие стены')
+					.room_details__info-wrap
+						+info(
+							'room_details__info-2',
+							'location_city',
+							'Удобство',
+							'Окно в каждой из спален')
+					.room_details__info-wrap
+						+info(
+							'room_details__info-3',
+							'whatshot',
+							'Уют',
+							'Номер оснащён камином')
 				.room_details__text-space-1
 				.room_details__text-2
 			.room_details__content-row-2
