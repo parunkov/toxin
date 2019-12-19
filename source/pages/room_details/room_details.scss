@@ -261,8 +261,13 @@ text-transform: uppercase;
 }
 .room_details__text-3 {
 	flex: 0 1 100%;
-	border: 1px solid green;
-	height: 100px;
+	// border: 1px solid green;
+}
+.room_details__h2-3 {
+	margin-bottom: 21px;
+}
+.room_details__review-wrap {
+	margin-bottom: 24px;
 }
 .room_details__content-row-3 {
 	display: flex;

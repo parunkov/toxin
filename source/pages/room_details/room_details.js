@@ -2,12 +2,17 @@ import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../../components/page/page.js';
 import '../../components/page_header/page_header.js';
+import '../../components/like/like.js';
+import '../../components/review/review.js';
 import '../../components/page_footer/page_footer.js';
 import '../../components/info/info.js';
 import './room_details.scss';
 import './room1.jpg';
 import './room2.jpg';
 import './room3.jpg';
+import './Patricia.jpg';
+
+$('.room_details__revew-1-like').prop('checked', true);
 
 let dataset1 = [
 	{

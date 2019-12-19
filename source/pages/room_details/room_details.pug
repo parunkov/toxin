@@ -14,6 +14,8 @@ block main
 				img(src="img/room3.jpg" width="100%")
 	.room_details__container
 		include ../../components/info/info.pug
+		include ../../components/like/like.pug
+		include ../../components/review/review.pug
 		.room_details__col-1
 			.room_details__content-row-1
 				.room_details__text-1
@@ -60,6 +62,23 @@ block main
 							p.room_details__chart-p Разочарован
 			.room_details__content-row-2
 				.room_details__text-3
+					h2.page__h2.room_details__h2-3 Отзывы посетителей номера
+					.room_details__review-wrap
+						+review(
+							'room_details__revew-1',
+							'img/murad.jpg',
+							'12',
+							'Мурад Сарафанов',
+							'5 дней назад',
+							'Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+					.room_details__review-wrap
+						+review(
+							'room_details__revew-2',
+							'img/Patricia.jpg',
+							'2',
+							'Патрисия Стёклышкова',
+							'Неделю назад',
+							'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
 			.room_details__content-row-3
 				.room_details__text-4
 				.room_details__text-space-2
