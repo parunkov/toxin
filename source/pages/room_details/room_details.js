@@ -16,7 +16,7 @@ let dataset1 = [
 	},
 	{
 		value: 24,
-		color: '#b29dfe'
+		color: '#bc9cff'
 	}, 
 	{
 		value: 1,
@@ -24,7 +24,7 @@ let dataset1 = [
 	},
 	{
 		value: 24,
-		color: '#6ed0a3'
+		color: '#6fcf97'
 	}, 
 	{
 		value: 1,
@@ -47,16 +47,40 @@ let dataset2 = [
 	{
 		value: 0.5,
 		color: '#ffffff'
+	},	
+	{
+		value: 24,
+		color: 'transparent'
+	},
+	{
+		value: 1,
+		color: '#ffffff'
 	},
 	{
 		value: 24,
-		color: '#b29dfe'
+		color: '#ffffff'
+	}, 
+	{
+		value: 1,
+		color: '#ffffff'
+	},
+	{
+		value: 24,
+		color: '#ffffff'
+	},
+	{
+		value: 1,
+		color: '#ffffff'
+	},
+	{
+		value: 24,
+		color: '#ffffff'
 	}
 ];
 let addCart = function(dataset, chartClass, sectorClass) {
 	let maxValue = 25;
 	let container = $(chartClass);
-	
+
 	let addSector = function(data, startAngle, collapse) {
 		let sectorDeg = 3.6 * data.value;
 		let skewDeg = 90 + sectorDeg;
@@ -64,7 +88,7 @@ let addCart = function(dataset, chartClass, sectorClass) {
 		if (collapse) {
 			skewDeg++;
 		}
-		
+
 		let sector = $('<div>', {
 			'class': sectorClass
 		}).css({
@@ -72,16 +96,16 @@ let addCart = function(dataset, chartClass, sectorClass) {
 			'transform': 'rotate(' + rotateDeg + 'deg) skewY(' + skewDeg + 'deg)'
 		});
 		container.append(sector);
-		
+
 		return startAngle + sectorDeg;
 	};
-	
+
 	dataset.reduce(function (prev, curr) {
 		return (function addPart(data, angle) {
 			if (data.value <= maxValue) {
 				return addSector(data, angle, false);
 			}
-			
+
 			return addPart({
 				value: data.value - maxValue,
 				color: data.color
