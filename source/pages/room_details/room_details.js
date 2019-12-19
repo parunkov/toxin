@@ -37,8 +37,12 @@ let dataset1 = [
 		color: '#ffffff'
 	},
 	{
-		value: 49,
-		color: '#ffcd9c'
+		value: 25,
+		color: 'linear-gradient(180deg, #ffba9c 0%, #ffcd9c 100%)'
+	},	
+	{
+		value: 24,
+		color: 'linear-gradient(180deg, #ffcd9c 0%, #ffe39c 100%)'
 	}
 ];
 let dataset2 = [

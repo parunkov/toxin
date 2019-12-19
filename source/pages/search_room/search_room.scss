@@ -136,7 +136,6 @@
 	margin-bottom: 21px;
 }
 .search_room__card-wrap {
-	cursor: pointer;
 	flex: 1 0 280px;
 	margin-bottom: 21px;
 	padding-right: 4.8%*100/834;
@@ -144,6 +143,7 @@
 	padding-left: 4.8%*100/834;
 	border-radius: 4px;
 	box-shadow: 0 10px 20px $black-5;
+	cursor: pointer;
 }
 .search_room__pagination-wrap {
 	width: 320px;

@@ -3,16 +3,16 @@
 	box-shadow: 0 10px 20px $black-5;
 }
 .room_details__img-wrap {
-	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
+	width: 100%;
 	@media (max-width: 1440px) {
 		width: 100vw;
 	}
 	@media (max-width: 640px) {
 		flex-wrap: wrap;
 	}
-	@media (max-width: 320px){
+	@media (max-width: 320px) {
 		width: 100%;
 	}
 }
@@ -23,8 +23,8 @@
 	}
 }
 .room_details__img-col-2 {
-	flex: 0 0 459%*100/1440;
 	display: flex;
+	flex: 0 0 459%*100/1440;
 	flex-wrap: wrap;
 	@media (max-width: 640px) {
 		flex: 0 0 100%;
@@ -45,13 +45,12 @@
 	@media (max-width: 450px) {
 		flex: 0 0 100%;
 	}
-
 }
 .room_details__img-3 {
 	flex: 0 0 100%;
 	height: 50%;
-	background-size: cover;
 	margin-top: -2.79897%;
+	background-size: cover;
 	@media (max-width: 640px) {
 		flex: 0 0 50%;
 		margin-top: -1%;
@@ -62,17 +61,17 @@
 	}
 }
 .room_details__wrap {
-		border-bottom: 1px solid $black-10;
-		padding-bottom: 43px;
-	}
+	padding-bottom: 43px;
+	border-bottom: 1px solid $black-10;
+}
 .room_details__container {
-	margin: 0 auto;
-	width: $page-container;
-	// border: 1px solid red;
-	padding-top: 55px;
 	display: flex;
 	flex-wrap: nowrap;
-	@media (max-width: 1440px)	{
+	width: $page-container;
+	margin: 0 auto;
+	// border: 1px solid red;
+	padding-top: 55px;
+	@media (max-width: 1440px) {
 		width: $page-container;
 	}
 	@media (max-width: $page-container) {
@@ -85,12 +84,11 @@
 		width: 100vw;
 		min-width: 380px;
 	}
-
 }
 .room_details__col-1 {
 	flex: 0 0 752%*100/1200;
-	padding-left: 20%*100/1200;
 	padding-right: 20%*100/1200;
+	padding-left: 20%*100/1200;
 	// border: 1px solid blue;
 	@media (max-width: $page-container) {
 		flex: 0 1 752%*100/1200;
@@ -101,8 +99,8 @@
 	}
 	@media (max-width: 420px) {
 		flex: 0 1 100%;
-		max-width: 100vw;
 		min-width: 320px;
+		max-width: 100vw;
 		margin: 0 auto;
 	}
 	@media (max-width: 320px) {
@@ -111,8 +109,8 @@
 }
 .room_details__col-2 {
 	flex: 0 0 420%*100/1200;
-	padding-left: 20%*100/1200;
 	padding-right: 20%*100/1200;
+	padding-left: 20%*100/1200;
 	// border: 1px solid blue;
 	@media (max-width: $page-container) {
 		flex: 0 0 415px;
@@ -177,76 +175,76 @@
 	margin-right: 24px;
 }
 .room_details__chart {
-	width: 120px;
-	height: 120px;
-	border-radius: 60px;
 	// border: 1px solid red;
 	position: relative;
+	width: 120px;
+	height: 120px;
 	overflow: hidden;
+	border-radius: 60px;
 }
 .room_details__chart-2 {
-	width: 112px;
-	height: 112px;
-	border-radius: 56px;
 	// border: 1px solid red;
 	position: absolute;
 	top: 4px;
 	left: 4px;
+	width: 112px;
+	height: 112px;
 	overflow: hidden;
+	border-radius: 56px;
 	// background: $white;
 }
 .room_details__chart-inner {
-	width: 100px;
-	height: 100px;
-	border-radius: 50px;
 	// border: 1px solid red;
 	position: absolute;
 	top: 10px;
 	left: 10px;
-	overflow: hidden;
-	background: $white;
-	text-align: center;
+	width: 100px;
+	height: 100px;
 	padding-top: 27px;
+	overflow: hidden;
+	text-align: center;
+	background: $white;
+	border-radius: 50px;
 }
 .room_details__sector {
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform-origin: left bottom;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 50%;
+	transform-origin: left bottom;
 }
 .room_details__chart-number {
+	margin-bottom: 5px;
+	font-weight: 700;
+	font-size: 24px;
+	font-family: Quicksand;
 	color: $purple;
-font-family: Quicksand;
-font-size: 24px;
-font-weight: 700;
-margin-bottom: 5px;
 }
 .room_details__chart-text {
-color: $purple;
-font-family: Montserrat;
-font-size: 12px;
-font-weight: 700;
-text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	font-family: Montserrat;
+	color: $purple;
+	text-transform: uppercase;
 }
 .room_details__chart-comment {
-	vertical-align: top;
 	display: inline-block;
 	width: 165px;
 	padding-top: 27px;
+	vertical-align: top;
 }
 .room_details__chart-item {
 	margin-bottom: 2px;
 }
 .room_details__chart-before {
+	display: inline-block;
+	float: left;
 	width: 10px;
 	height: 10px;
-	display: inline-block;
-	border-radius: 5px;
-	float: left;
 	margin-top: 6px;
 	margin-right: 6px;
+	border-radius: 5px;
 	&--1 {
 		background: $orange;
 	}
@@ -283,10 +281,10 @@ text-transform: uppercase;
 	}
 }
 .room_details__text-4 {
-	margin-bottom: 20px;
 	flex: 0 0 42%;
 	// border: 1px solid green;
 	min-width: 292px;
+	margin-bottom: 20px;
 	padding-right: 5%;
 	@media (max-width: 1080px) {
 		flex: 0 0 100%;
@@ -303,10 +301,10 @@ text-transform: uppercase;
 	}
 }
 .room_details__text-5 {
-	margin-bottom: 50px;
 	flex: 0 0 49%;
 	// border: 1px solid green;
 	min-width: 342px;
+	margin-bottom: 50px;
 	@media (max-width: 1080px) {
 		flex: 0 0 100%;
 	}
@@ -322,8 +320,8 @@ text-transform: uppercase;
 	line-height: 1.75em;
 }
 .room_details__form {
-	box-shadow: 0 0 25px $shadow;
-	border-radius: 4px;
-	padding-left: 30%*100/380;
 	padding-right: 30%*100/380;
+	padding-left: 30%*100/380;
+	border-radius: 4px;
+	box-shadow: 0 0 25px $shadow;
 }
