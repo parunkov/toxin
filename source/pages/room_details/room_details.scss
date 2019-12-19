@@ -72,33 +72,106 @@
 	@media (max-width: $page-container) {
 		width: 100%;
 	}
-	@media (max-width: 840px) {
+	@media (max-width: 830px) {
 		flex-wrap: wrap;
 	}
 }
 .room_details__col-1 {
 	flex: 0 0 752%*100/1200;
+	padding-left: 20%*100/1200;
+	padding-right: 20%*100/1200;
 	border: 1px solid blue;
-	height: 100px;
 	@media (max-width: $page-container) {
 		flex: 0 1 752%*100/1200;
-		min-width: 420px;
+		min-width: 415px;
 	}
-	@media (max-width: 840px) {
+	@media (max-width: 830px) {
 		flex: 0 0 100%;
 	}
 }
 .room_details__col-2 {
 	flex: 0 0 420%*100/1200;
+	padding-left: 20%*100/1200;
+	padding-right: 20%*100/1200;
 	border: 1px solid blue;
-	height: 100px;
 	@media (max-width: $page-container) {
-		flex: 0 0 420px;
+		flex: 0 0 415px;
 	}
-	@media (max-width: 840px) {
+	@media (max-width: 830px) {
 		flex: 0 0 100%;
 	}
 }
 .room_details__space {
 	flex: 0 1 28%*100/1200;
+}
+.room_details__content-row-1 {
+	display: flex;
+	flex-wrap: nowrap;
+	@media (max-width: 1080px) {
+		flex-wrap: wrap;
+	}
+}
+.room_details__text-1 {
+	flex: 0 0 40%;
+	border: 1px solid green;
+	height: 100px;
+	min-width: 280px;
+	@media (max-width: 1080px) {
+		flex: 0 0 100%;
+	}
+}
+.room_details__text-space-1 {
+	flex: 0 1 11%;
+	@media (max-width: 1080px) {
+		display: none;
+	}
+}
+.room_details__text-2 {
+	flex: 0 0 45%;
+	border: 1px solid green;
+	height: 100px;
+	min-width: 312px;
+	@media (max-width: 1080px) {
+		flex: 0 0 100%;
+	}
+}
+.room_details__content-row-2 {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.room_details__text-3 {
+	flex: 0 1 100%;
+	border: 1px solid green;
+	height: 100px;
+}
+.room_details__content-row-3 {
+	display: flex;
+	flex-wrap: nowrap;
+	@media (max-width: 1080px) {
+		flex-wrap: wrap;
+	}
+}
+.room_details__text-4 {
+	flex: 0 0 42%;
+	border: 1px solid green;
+	min-width: 292px;
+	height: 100px;
+	@media (max-width: 1080px) {
+		flex: 0 0 100%;
+	}
+}
+.room_details__text-space-2 {
+	flex: 0 1 9%;
+	@media (max-width: 1080px) {
+		display: none;
+	}
+}
+.room_details__text-5 {
+	flex: 0 0 49%;
+	border: 1px solid green;
+	height: 100px;
+	min-width: 342px;
+	@media (max-width: 1080px) {
+		flex: 0 0 100%;
+	}
 }
