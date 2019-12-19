@@ -1,4 +1,7 @@
 @import "../../variables.scss";
+.room_details__header {
+	box-shadow: 0 10px 20px $black-5;
+}
 .room_details__img-wrap {
 	width: 100%;
 	display: flex;
@@ -153,12 +156,55 @@
 }
 .room_details__text-2 {
 	flex: 0 0 45%;
-	border: 1px solid green;
-	height: 100px;
+	// border: 1px solid green;
 	min-width: 312px;
 	@media (max-width: 1080px) {
 		flex: 0 0 100%;
 	}
+}
+.room_details__h2-2 {
+	margin-bottom: 25px;
+}
+.room_details__chart-wrap {
+	position: relative;
+}
+.room_details__chart {
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	// border: 1px solid red;
+	position: relative;
+	overflow: hidden;
+}
+.room_details__chart-2 {
+	width: 112px;
+	height: 112px;
+	border-radius: 56px;
+	// border: 1px solid red;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	overflow: hidden;
+	background: $white;
+}
+.room_details__chart-inner {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	// border: 1px solid red;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	overflow: hidden;
+	background: $white;
+}
+.room_details__sector {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform-origin: left bottom;
 }
 .room_details__content-row-2 {
 	display: flex;
