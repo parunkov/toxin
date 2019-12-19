@@ -6,6 +6,7 @@ import '../../components/like/like.js';
 import '../../components/review/review.js';
 import '../../components/page_footer/page_footer.js';
 import '../../components/info/info.js';
+import '../../components/room/room.js';
 import './room_details.scss';
 import './room1.jpg';
 import './room2.jpg';
