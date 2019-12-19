@@ -22,7 +22,7 @@ let dataset1 = [
 	},
 	{
 		value: 24,
-		color: '#bc9cff'
+		color: 'linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%)'
 	}, 
 	{
 		value: 1,
@@ -30,22 +30,14 @@ let dataset1 = [
 	},
 	{
 		value: 24,
-		color: '#6fcf97'
+		color: 'linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%)'
 	}, 
 	{
 		value: 1,
 		color: '#ffffff'
 	},
 	{
-		value: 24,
-		color: '#ffcd9c'
-	},
-	{
-		value: 1,
-		color: '#ffcd9c'
-	},
-	{
-		value: 24,
+		value: 49,
 		color: '#ffcd9c'
 	}
 ];
@@ -71,15 +63,7 @@ let dataset2 = [
 		color: '#ffffff'
 	},
 	{
-		value: 24,
-		color: '#ffffff'
-	},
-	{
-		value: 1,
-		color: '#ffffff'
-	},
-	{
-		value: 24,
+		value: 49,
 		color: '#ffffff'
 	}
 ];
