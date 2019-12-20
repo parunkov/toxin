@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Landing Page
+    <title>Sign In
     </title>
-  <link href="./css/index.css" rel="stylesheet"></head>
+  <link href="./css/sign_in.css" rel="stylesheet"></head>
   <body>
     <div class="page__wrap">
       <div class="page__inner">
-        <div class="index__header">
+        <div class="sign_in__header">
           <div class="page_header__container">
                         <div class="header__container">
                           <div class="header__active">-1</div>
@@ -51,102 +51,30 @@
                         </div>
           </div>
         </div>
-        <div class="index__wrap">
-          <div class="page__container index__container">
-            <div class="index__row index__row--1">
-              <div class="index__col-1">
-                <div class="index__form-wrap">
-                  <div class="index__form">
-                    <div class="search__container">
-                      <h1 class="page__h1 search__h1">Найдём номера под ваши пожелания</h1>
-                      <form>
-                        <div class="search__input-wrap">
-                          <div class="search__input-1-wrap">
-                                                <div class="input__container">
-                                                  <h3 class="input__h3">прибытие</h3>
-                                                  <p class="input__p"></p>
-                                                  <input class="input__input search__input-1" type="date" name="arrival" value="" placeholder="">
-                                                  <div class="input__icon"><i class="input__icon-text">expand_more</i>
-                                                  </div>
-                                                </div>
-                          </div>
-                          <div class="search__input-space"></div>
-                          <div class="search__input-2-wrap">
-                                                <div class="input__container">
-                                                  <h3 class="input__h3">выезд</h3>
-                                                  <p class="input__p"></p>
-                                                  <input class="input__input search__input-2" type="date" name="departure" value="" placeholder="">
-                                                  <div class="input__icon"><i class="input__icon-text">expand_more</i>
-                                                  </div>
-                                                </div>
-                          </div>
-                        </div>
-                        <div class="search__datepicker-wrap">
-                          <div class="search__datepicker-container">
-<div class="datepicker__container">
-  <div class="datepicker__content"></div>
-  <div class="datepicker__bottom">
-    <div class="datepicker__clear--wrap">
-      <div class="datepicker__clear">очистить</div>
-    </div>
-    <div class="datepicker__set--wrap">
-      <div class="datepicker__set">применить</div>
-    </div>
-  </div>
-</div>
-                          </div>
-                        </div>
-                                            <div class="dropdown__type">peoples</div>
-                                            <div class="dropdown__container search__dropdown-container">
-                                              <h3 class="dropdown__h3">гости</h3>
-                                              <p class="dropdown__p"></p>
-                                              <div class="iqdropdown">
-                                                <p class="iqdropdown-selection"></p>
-                                                <div class="iqdropdown-menu">
-                                                  <div class="iqdropdown-menu-option" data-id="item1">
-                                                    <h3 class="iqdropdown-item">взрослые</h3>
-                                                                        <div class="iqdropdown-item-controls">
-                                                                          <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                                                          <button class="button-increment"><i class="icon-increment"></i></button>
-                                                                        </div>
-                                                  </div>
-                                                  <div class="iqdropdown-menu-option" data-id="item2">
-                                                    <h3 class="iqdropdown-item">дети</h3>
-                                                                        <div class="iqdropdown-item-controls">
-                                                                          <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                                                          <button class="button-increment"><i class="icon-increment"></i></button>
-                                                                        </div>
-                                                  </div>
-                                                  <div class="iqdropdown-menu-option" data-id="item3">
-                                                    <h3 class="iqdropdown-item">младенцы</h3>
-                                                                        <div class="iqdropdown-item-controls">
-                                                                          <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                                                          <button class="button-increment"><i class="icon-increment"></i></button>
-                                                                        </div>
-                                                  </div>
-                                                  <div class="dropdown__bottom">
-                                                    <div class="dropdown__clear--wrap">
-                                                      <div class="dropdown__clear">очистить</div>
-                                                    </div>
-                                                    <div class="dropdown__set--wrap">
-                                                      <div class="dropdown__set">применить</div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                        <button class="btn btn--arrow btn--button search__btn">подобрать номер</button>
-                      </form>
-                    </div>
+        <div class="sign_in__wrap">
+          <div class="sign_in__container">
+            <div class="sign_in__inner">
+              <div class="login__container">
+                <h1 class="page__h1 login__h1">Войти</h1>
+                <form>
+                                <div class="input__container">
+                                  <h3 class="input__h3"></h3>
+                                  <p class="input__p"></p>
+                                  <input class="input__input login__input-1" type="email" name="email" value="" placeholder="Email">
+                                </div>
+                                <div class="input__container">
+                                  <h3 class="input__h3"></h3>
+                                  <p class="input__p"></p>
+                                  <input class="input__input login__input-2" type="text" name="password" value="" placeholder="Пароль">
+                                </div>
+                  <button class="btn btn--arrow btn--button login__btn">войти</button>
+                </form>
+                <div class="login__footer">
+                  <div class="login__footer-1">
+                    <p class="login__footer-text">Нет аккаунта на Toxin?</p>
                   </div>
+                  <div class="login__footer-2"><a href="registration.html"><span class="btn btn--white login__btn-2">создать</span></a></div>
                 </div>
-              </div>
-              <div class="index__col-2"></div>
-            </div>
-            <div class="index__row index__row--2">
-              <div class="index__col-3"></div>
-              <div class="index__col-4">
-                <p class="index__p">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
               </div>
             </div>
           </div>
@@ -220,5 +148,5 @@
         </div>
       </div>
     </div>
-  <script type="text/javascript" src="./js/index.js"></script></body>
+  <script type="text/javascript" src="./js/sign_in.js"></script></body>
 </html>
