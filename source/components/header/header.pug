@@ -1,7 +1,8 @@
 mixin header(cl, menu, active, btn1, href1, btn2, href2, login)
 	.header__container
 		.header__active= active
-		.page__logo.header__logo
+		a(href="index.html")
+			span.page__logo.header__logo
 		.header__ul-wrap
 			ul.header__ul
 				each val, i in menu
