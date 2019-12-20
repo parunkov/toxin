@@ -146,7 +146,18 @@
 	cursor: pointer;
 }
 .search_room__pagination-wrap {
-	width: 320px;
+	width: 500px;
 	margin: 0 auto;
 	margin-bottom: 70px;
+	padding-left: 124px;
+	@media (max-width: 800px) {
+		width: 320px;
+		padding-left: 0;
+	}
+}
+.search_room__pagination-wrap .paginationjs-page {
+	margin-right: 1px;
+	@media (max-width: 800px) {
+		margin-right: -6px;
+	}
 }
