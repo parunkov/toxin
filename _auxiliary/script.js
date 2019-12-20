@@ -12,6 +12,6 @@ for (let i = 0; i < folders.length; i++) {
     console.log(`${folders[i]}`);
     let key = folders[i];
     // entryList[folders[i]] = 1;
-    entryList[folders[i]] = (/*PATHS.source + */`/pages/${folders[i]}/${folders[i]}.js`);
+    entryList[folders[i]] = (PATHS.source + `/pages/${folders[i]}/${folders[i]}.js`);
 };
 console.log(entryList);
