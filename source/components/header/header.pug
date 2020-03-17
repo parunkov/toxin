@@ -1,9 +1,9 @@
 mixin header(cl, menu, active, btn1, href1, btn2, href2, login)
-	header.header__container
+	section.header__container
 		.header__active= active
 		a(href="index.html")
 			span.page__logo.header__logo
-		.header__ul-wrap
+		nav.header__ul-wrap
 			ul.header__ul
 				each val, i in menu
 					if menu[i].incl

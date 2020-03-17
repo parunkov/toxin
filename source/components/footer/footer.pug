@@ -1,11 +1,11 @@
 include ../../components/input/input.pug
 mixin footer(cl, text, menu, h3, p, copyright, ui)
-	footer.footer__block-1
+	section.footer__block-1
 		.footer__container
 			.footer__col.footer__col--1
 				.page__logo.footer__logo
 				p.footer__p= text
-			.footer__nav
+			nav.footer__nav
 				each val, i in menu
 					div(class ="footer__col footer__col--" + (i + 2))
 						h3.footer__h3
@@ -42,7 +42,7 @@ mixin footer(cl, text, menu, h3, p, copyright, ui)
 							'', 
 							'arrow_forward', 
 							'purple')
-	.footer__block-2
+	section.footer__block-2
 		.footer__container.footer__container--bottom
 			.footer__col.footer__col--6
 				p= copyright
