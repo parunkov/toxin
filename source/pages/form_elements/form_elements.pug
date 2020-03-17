@@ -14,9 +14,9 @@ block main
 	include ../../components/info/info.pug
 	include ../../components/review/review.pug
 	.page__container
-		.form_elements__row
+		article.form_elements__row
 			.form_elements__col.form_elements__col--1
-				.form_elements__inner.form_elements__inner--1
+				section.form_elements__inner.form_elements__inner--1
 					.form_elements__item.form_elements__item--1
 						+input(
 							'Text Field', 
@@ -99,7 +99,7 @@ block main
 							'arrow_forward', 
 							'purple')
 			.form_elements__col.form_elements__col--2
-				.form_elements__inner.form_elements__inner--2
+				section.form_elements__inner.form_elements__inner--2
 					.form_elements__item.form_elements__item--8
 						h3.form_elements__item-8-header Checkbox Buttons
 						+checkbox(
@@ -127,7 +127,7 @@ block main
 						+rate('form_elements__rate-1', 4, 1)
 						+rate('form_elements__rate-2', 5, 1)
 			.form_elements__col.form_elements__col--3
-				.form_elements__inner.form_elements__inner--3
+				section.form_elements__inner.form_elements__inner--3
 					.form_elements__item.form_elements__item--13
 						+slider(1, 'Range Slider')
 					.form_elements__item.form_elements__item--14
@@ -144,7 +144,7 @@ block main
 						#pagination-container
 						p.pagination__text <span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды
 			.form_elements__col.form_elements__col--4
-				.form_elements__inner.form_elements__inner--4
+				section.form_elements__inner.form_elements__inner--4
 					.form_elements__item.form_elements__item--16
 						+dropdown(
 							'rooms',
@@ -178,7 +178,7 @@ block main
 							'Телевизор',
 							'Шампунь'])
 			.form_elements__col.form_elements__col--5
-				.form_elements__inner.form_elements__inner--5
+				section.form_elements__inner.form_elements__inner--5
 					.form_elements__item.form_elements__item--20
 						+dropdown(
 							'peoples',
@@ -198,7 +198,7 @@ block main
 							['Широкий коридор',
 							'Помощник для инвалидов'])
 			.form_elements__col.form_elements__col--6
-				.form_elements__inner.form_elements__inner--6
+				section.form_elements__inner.form_elements__inner--6
 					.form_elements__item.form_elements__item--22
 						+dropdown(
 							'peoples',
@@ -216,7 +216,7 @@ block main
 							li.page__li Без вечеринок и мероприятий
 							li.page__li Время прибытия — после 13:00, а выезд до 12:00
 			.form_elements__col.form_elements__col--7
-				.form_elements__inner.form_elements__inner--7
+				section.form_elements__inner.form_elements__inner--7
 					.form_elements__item.form_elements__item--24
 						+info(
 							'form_elements__info-1',
@@ -230,7 +230,7 @@ block main
 							'Удобство',
 							'Окно в каждой из спален')
 			.form_elements__col.form_elements__col--8
-				.form_elements__inner.form_elements__inner--8
+				section.form_elements__inner.form_elements__inner--8
 					.form_elements__item.form_elements__item--26
 						+review(
 							'form_elements__revew-1',
