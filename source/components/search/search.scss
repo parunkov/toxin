@@ -1,36 +1,36 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 .search__container {
-	padding-top: 40px;
-	padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 .search__h1 {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 .search__input-wrap {
-	display: flex;
-	flex-wrap: nowrap;
-	margin-bottom: 17px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 17px;
 }
 .search__input-1-wrap, .search__input-2-wrap {
-	flex: 0 0 147%*100/320;
+  flex: 0 0 147%*100/320;
 }
 .search__input-space {
-	flex: auto;
+  flex: auto;
 }
 .search__dropdown-container {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .search__datepicker-wrap {
-	position: relative;
+  position: relative;
 }
 .search__datepicker-container {
-	position: absolute;
-	top: -10px;
-	z-index: 10;
-	display: none;
-	width: 100%;
-	background: $white;
+  position: absolute;
+  top: -10px;
+  z-index: 10;
+  display: none;
+  width: 100%;
+  background: $white;
 }
 .search__btn {
-	display: block;
+  display: block;
 }

@@ -1,82 +1,82 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 .input__container {
-	position: relative;
+  position: relative;
 }
 .input__h3 {
-	display: block;
-	float: left;
-	margin-bottom: 5px;
-	padding-top: 4px;
+  display: block;
+  float: left;
+  margin-bottom: 5px;
+  padding-top: 4px;
 }
 .input__p {
-	display: block;
-	font-weight: 400;
-	font-size: 12px;
-	font-family: Montserrat;
-	vertical-align: top;
-	text-align: right;
-	color: $black-50;
-	text-transform: uppercase;
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: Montserrat;
+  vertical-align: top;
+  text-align: right;
+  color: $black-50;
+  text-transform: uppercase;
 }
 .input__input {
-	width: 100%;
-	height: 44px;
-	padding-left: 15px;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 18px;
-	font-family: Montserrat;
-	color: $black-75;
-	background-color: $white;
-	border: 1px solid $black-25;
-	border-radius: 4px;
-	&::-webkit-input-placeholder {
-		color: $black-25;
-	}
-	&::-moz-placeholder {
-		color: $black-25;
-	}
-	&:-moz-placeholder {
-		color: $black-25;
-	}
-	&:-ms-input-placeholder {
-		color: $black-25;
-	}
-	&:hover, &--hover, &:focus, &--focus {
-		border: 1px solid $black-50;
-		outline: none;
-	}
-	&::-webkit-calendar-picker-indicator {
-		display: none;
-	}
-	&::-webkit-inner-spin-button {
-		display: none;
-	}
-	&::-webkit-clear-button {
-		display: none;
-	}
-	&::-ms-clear {
-		display: none;
-	}
+  width: 100%;
+  height: 44px;
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Montserrat;
+  color: $black-75;
+  background-color: $white;
+  border: 1px solid $black-25;
+  border-radius: 4px;
+  &::-webkit-input-placeholder {
+    color: $black-25;
+  }
+  &::-moz-placeholder {
+    color: $black-25;
+  }
+  &:-moz-placeholder {
+    color: $black-25;
+  }
+  &:-ms-input-placeholder {
+    color: $black-25;
+  }
+  &:hover, &--hover, &:focus, &--focus {
+    border: 1px solid $black-50;
+    outline: none;
+  }
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  &::-webkit-inner-spin-button {
+    display: none;
+  }
+  &::-webkit-clear-button {
+    display: none;
+  }
+  &::-ms-clear {
+    display: none;
+  }
 }
 .input__icon {
-	position: absolute;
-	right: 2px;
-	bottom: 2px;
-	width: 40px;
-	height: 39px;
-	padding-top: 5px;
-	text-align: center;
-	background: $white;
-	border-radius: 4px;
-	cursor: pointer;
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  width: 40px;
+  height: 39px;
+  padding-top: 5px;
+  text-align: center;
+  background: $white;
+  border-radius: 4px;
+  cursor: pointer;
 }
 .input__icon-text {
-	font-weight: 400;
-	font-size: 24px;
-	font-family: "Material Icons";
-	color: $black-50;
-	&--purple {
-		color: $purple;
-	}
+  font-weight: 400;
+  font-size: 24px;
+  font-family: 'Material Icons';
+  color: $black-50;
+  &--purple {
+    color: $purple;
+  }
 }

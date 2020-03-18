@@ -1,96 +1,96 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 .room__container {
-	padding-top: 40px;
-	padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 .room__header-1 {
-	display: inline-block;
-	width: 60%;
+  display: inline-block;
+  width: 60%;
 }
 .room__header-2 {
-	display: inline-block;
-	width: 38%;
-	text-align: right;
+  display: inline-block;
+  width: 38%;
+  text-align: right;
 }
 .room__header {
-	margin-bottom: 10px;
-	&--number {
-		font-weight: 700;
-		font-size: 16px;
-		font-family: Montserrat;
-	}
-	&--category {
-		font-weight: 700;
-		font-size: 12px;
-		font-family: Montserrat;
-		color: $purple;
-		text-transform: uppercase;
-	}
-	&--p {
-		font-weight: 700;
-	}
-	&--price {
-		font-weight: 400;
-		font-size: 12px;
-	}
+  margin-bottom: 10px;
+  &--number {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: Montserrat;
+  }
+  &--category {
+    font-weight: 700;
+    font-size: 12px;
+    font-family: Montserrat;
+    color: $purple;
+    text-transform: uppercase;
+  }
+  &--p {
+    font-weight: 700;
+  }
+  &--price {
+    font-weight: 400;
+    font-size: 12px;
+  }
 }
 .room__input-wrap {
-	display: flex;
-	flex-wrap: nowrap;
-	margin-bottom: 17px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 17px;
 }
 .room__input-inner {
-	flex: 0 0 147%*100/320;
+  flex: 0 0 147%*100/320;
 }
 .room__input-space {
-	flex: auto;
+  flex: auto;
 }
 .room__dropdown-container {
-	margin-bottom: 22px;
+  margin-bottom: 22px;
 }
 .room__p {
-	clear: both;
-	margin-bottom: 15px;
-	line-height: 1.3em;
-	&--left {
-		display: inline-block;
-		width: 220%*100/320;
-	}
-	&--right {
-		float: right;
-		width: 75%*100/320;
-		text-align: right;
-	}
+  clear: both;
+  margin-bottom: 15px;
+  line-height: 1.3em;
+  &--left {
+    display: inline-block;
+    width: 220%*100/320;
+  }
+  &--right {
+    float: right;
+    width: 75%*100/320;
+    text-align: right;
+  }
 }
 .room__i {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	vertical-align: top;
-	text-align: center;
-	border: 1px solid $black-25;
-	border-radius: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+  text-align: center;
+  border: 1px solid $black-25;
+  border-radius: 10px;
 }
 .room__price {
-	display: flex;
-	flex-wrap: wrap;
-	clear: both;
-	margin-bottom: 20px;
-	padding-top: 17px;
-	&-1 {
-		flex-grow: 0;
-		margin-right: 5px;
-	}
-	&-2 {
-		flex-grow: 1;
-		height: 18px;
-		border-bottom: 1px dotted $black-25;
-	}
-	&-3 {
-		flex-grow: 0;
-		margin-left: 5px;
-	}
+  display: flex;
+  flex-wrap: wrap;
+  clear: both;
+  margin-bottom: 20px;
+  padding-top: 17px;
+  &-1 {
+    flex-grow: 0;
+    margin-right: 5px;
+  }
+  &-2 {
+    flex-grow: 1;
+    height: 18px;
+    border-bottom: 1px dotted $black-25;
+  }
+  &-3 {
+    flex-grow: 0;
+    margin-left: 5px;
+  }
 }
 .room__btn {
-	clear: both;
+  clear: both;
 }

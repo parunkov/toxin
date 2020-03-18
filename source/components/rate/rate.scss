@@ -1,18 +1,18 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 .rate__container {
-	display: inline-block;
-	margin-right: 15px;
-	vertical-align: top;
+  display: inline-block;
+  margin-right: 15px;
+  vertical-align: top;
 }
 .rate__n, .rate__active, .rate__number {
-	display: none;
+  display: none;
 }
 .rate__star {
-	display: inline-block;
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 23.91px;
-	font-family: "Material Icons";
-	color: $purple;
-	cursor: default;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23.91px;
+  font-family: 'Material Icons';
+  color: $purple;
+  cursor: default;
 }

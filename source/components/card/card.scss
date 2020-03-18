@@ -1,174 +1,174 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 .card__container {
-	height: 257.5px;
+  height: 257.5px;
 }
 .card__slider {
-	height: 152px;
-	margin-bottom: 20px;
-	overflow: hidden;
-	border: 1px solid $green;
-	border-radius: 4px 4px 0 0;
+  height: 152px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid $green;
+  border-radius: 4px 4px 0 0;
 }
 .card__slide-wrap {
-	position: relative;
-	width: 270px;
-	margin: 0 auto;
+  position: relative;
+  width: 270px;
+  margin: 0 auto;
 }
 
 .card__slide {
-	display: none;
+  display: none;
 }
 .card__slide-active {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
 }
 .card__slide-left {
-	position: absolute;
-	top: 0;
-	left: -270px;
-	display: block;
-	opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: -270px;
+  display: block;
+  opacity: 0.4;
 }
 .card__slide-right {
-	position: absolute;
-	top: 0;
-	left: 270px;
-	display: block;
-	opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 270px;
+  display: block;
+  opacity: 0.4;
 }
 .card__shadow-left {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 40px;
-	height: 152px;
-	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 152px;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
 }
 .card__shadow-right {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 40px;
-	height: 152px;
-	background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 152px;
+  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
 }
 .card__arrow-left {
-	position: absolute;
-	top: 43px;
-	left: 0;
-	width: 45px;
-	height: 45px;
-	padding-top: 12px;
-	padding-left: 19px;
-	font-weight: 400;
-	font-size: 24px;
-	font-family: "Material Icons";
-	color: $white;
-	transform: rotate(90deg);
-	// cursor: pointer;
-	cursor: default;
+  position: absolute;
+  top: 43px;
+  left: 0;
+  width: 45px;
+  height: 45px;
+  padding-top: 12px;
+  padding-left: 19px;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: 'Material Icons';
+  color: $white;
+  transform: rotate(90deg);
+  // cursor: pointer;
+  cursor: default;
 }
 .card__arrow-right {
-	position: absolute;
-	top: 43px;
-	right: 0;
-	width: 45px;
-	height: 45px;
-	padding-top: 10px;
-	padding-left: 2px;
-	font-weight: 400;
-	font-size: 24px;
-	font-family: "Material Icons";
-	color: $white;
-	transform: rotate(-90deg);
-	// cursor: pointer;
-	cursor: default;
+  position: absolute;
+  top: 43px;
+  right: 0;
+  width: 45px;
+  height: 45px;
+  padding-top: 10px;
+  padding-left: 2px;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: 'Material Icons';
+  color: $white;
+  transform: rotate(-90deg);
+  // cursor: pointer;
+  cursor: default;
 }
 .card__controls {
-	position: absolute;
-	top: 121px;
-	right: 16px;
+  position: absolute;
+  top: 121px;
+  right: 16px;
 }
 .card__control {
-	display: inline-block;
-	width: 7.5px;
-	height: 7.5px;
-	margin-right: 0;
-	border: 1px solid $white;
-	border-radius: 3.75px;
-	// cursor: pointer;
-	cursor: default;
-	&--active {
-		background: $white;
-	}
+  display: inline-block;
+  width: 7.5px;
+  height: 7.5px;
+  margin-right: 0;
+  border: 1px solid $white;
+  border-radius: 3.75px;
+  // cursor: pointer;
+  cursor: default;
+  &--active {
+    background: $white;
+  }
 }
 .card__text {
-	padding-right: 20%*100/270;
-	padding-left: 20%*100/270;
+  padding-right: 20%*100/270;
+  padding-left: 20%*100/270;
 }
 .card__num-wrap {
-	float: left;
-	vertical-align: top;
+  float: left;
+  vertical-align: top;
 }
 .card__num {
-	display: inline;
-	font-weight: 700;
-	font-size: 14px;
-	font-family: Montserrat;
+  display: inline;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: Montserrat;
 }
 .card__h2 {
-	display: inline;
-	margin-right: 5px;
+  display: inline;
+  margin-right: 5px;
 }
 .card__lux {
-	display: inline;
-	font-weight: 700;
-	font-size: 12px;
-	font-family: Montserrat;
-	color: $purple;
-	text-transform: uppercase;
+  display: inline;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: Montserrat;
+  color: $purple;
+  text-transform: uppercase;
 }
 .card__price {
-	display: block;
-	padding-top: 3px;
-	padding-bottom: 10px;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 18px;
-	font-family: Montserrat;
-	text-align: right;
-	color: $black-50;
-	border-bottom: 1px solid $black-10;
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Montserrat;
+  text-align: right;
+  color: $black-50;
+  border-bottom: 1px solid $black-10;
 }
 .card__price-text {
-	margin-left: 5px;
-	font-weight: 400;
-	font-size: 12px;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 12px;
 }
 .card__text-2 {
-	clear: both;
-	padding-top: 10px;
-	&::after {
-		content: "";
-		clear: both;
-	}
+  clear: both;
+  padding-top: 10px;
+  &::after {
+    content: '';
+    clear: both;
+  }
 }
 .card__rate {
-	float: left;
+  float: left;
 }
 .card__reviews {
-	display: block;
-	padding-top: 3px;
-	font-weight: 700;
-	font-size: 14px;
-	line-height: 18px;
-	font-family: Montserrat;
-	text-align: right;
-	color: $black-50;
+  display: block;
+  padding-top: 3px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Montserrat;
+  text-align: right;
+  color: $black-50;
 }
 .card__reviews-text {
-	margin-left: 5px;
-	font-weight: 400;
+  margin-left: 5px;
+  font-weight: 400;
 }

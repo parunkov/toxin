@@ -1,37 +1,37 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 .toggle {
-	display: none;
+  display: none;
 }
 .toggle__label {
-	position: relative;
+  position: relative;
 }
 .toggle__custom {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 40px;
-	height: 20px;
-	background-color: $white;
-	border: 1px solid $black-25;
-	border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  background-color: $white;
+  border: 1px solid $black-25;
+  border-radius: 10px;
 }
 .toggle__custom-inner {
-	position: absolute;
-	top: 3px;
-	left: 4px;
-	width: 12px;
-	height: 12px;
-	background-color: $black-25;
-	border-radius: 6px;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: $black-25;
+  border-radius: 6px;
 }
 .toggle:checked + .toggle__custom {
-	border: 1px solid $purple;
+  border: 1px solid $purple;
 }
 .toggle:checked + .toggle__custom .toggle__custom-inner {
-	left: 24px;
-	background: $gradient-purple;
+  left: 24px;
+  background: $gradient-purple;
 }
 .toggle__text {
-	margin-bottom: 10px;
-	padding-left: 50px;
+  margin-bottom: 10px;
+  padding-left: 50px;
 }

@@ -1,69 +1,69 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 .btn {
-	position: relative;
-	height: 44px;
-	padding-top: 16px;
-	font-weight: 700;
-	font-size: 12px;
-	font-family: Montserrat;
-	text-align: center;
-	color: $white;
-	text-transform: uppercase;
-	background: $gradient-purple;
-	border-radius: 22px;
-	&--button {
-		display: block;
-		width: 100%;
-		padding-top: 0;
-		border: none;
-	}
-	&:hover, &--hover {
-		opacity: 0.5;
-	}
-	&--white {
-		padding-top: 14px;
-		color: $purple;
-		background: $white;
-		border: 2px solid $purple;
-		border-radius: 22px;
-	}
-	&--icon-link {
-		height: 15px;
-		padding-top: 0;
-		color: $purple;
-		background: $white;
-		&:hover, &-hover {
-			color: $black-50;
-			opacity: 1;
-		}
-	}
-	&--arrow::after {
-		content: " arrow_forward";
-		position: absolute;
-		top: 10px;
-		right: 12px;
-		display: inline;
-		font-weight: 400;
-		font-size: 24px;
-		font-family: "Material Icons";
-		color: $white;
-		text-transform: none;
-	}
-	&--small {
-		display: block;
-		width: 100%;
-		height: 34px;
-		padding-top: 11px;
-		padding-right: 20px;
-		padding-left: 19px;
-	}
-	&--small-white {
-		display: block;
-		width: 100%;
-		height: 34px;
-		padding-top: 11px;
-		padding-top: 9px;
-		padding-right: 20px;
-		padding-left: 19px;
-	}
+  position: relative;
+  height: 44px;
+  padding-top: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: Montserrat;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  background: $gradient-purple;
+  border-radius: 22px;
+  &--button {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    border: none;
+  }
+  &:hover, &--hover {
+    opacity: 0.5;
+  }
+  &--white {
+    padding-top: 14px;
+    color: $purple;
+    background: $white;
+    border: 2px solid $purple;
+    border-radius: 22px;
+  }
+  &--icon-link {
+    height: 15px;
+    padding-top: 0;
+    color: $purple;
+    background: $white;
+    &:hover, &-hover {
+      color: $black-50;
+      opacity: 1;
+    }
+  }
+  &--arrow::after {
+    content: ' arrow_forward';
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    display: inline;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Material Icons';
+    color: $white;
+    text-transform: none;
+  }
+  &--small {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding-top: 11px;
+    padding-right: 20px;
+    padding-left: 19px;
+  }
+  &--small-white {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding-top: 11px;
+    padding-top: 9px;
+    padding-right: 20px;
+    padding-left: 19px;
+  }
 }
