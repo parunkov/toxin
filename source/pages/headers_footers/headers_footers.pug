@@ -14,22 +14,22 @@ block main
 				this.hrefs = hrefs;
 			}
 			let menu = [
-				new MenuItem('Home', '#'),
-				new MenuItem('About Us', '#'),
-				new MenuItem('Services', '#', ['Service 1', 'Service 2', 'Service 3'], ['#', "#", '#']),
-				new MenuItem('Careers', '#'),
-				new MenuItem('News', '#'),
-				new MenuItem('Documentation', '#')
+				new MenuItem('Home', '/mock-address/change-me'),
+				new MenuItem('About Us', '/mock-address/change-me'),
+				new MenuItem('Services', '/mock-address/change-me', ['Service 1', 'Service 2', 'Service 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
+				new MenuItem('Careers', '/mock-address/change-me'),
+				new MenuItem('News', '/mock-address/change-me'),
+				new MenuItem('Documentation', '/mock-address/change-me')
 			];
 			let nav = [
-				new MenuItem('Navigation', '#', ['About Us', 'News', 'Support', 'Products'], ['#', '#', '#', '#']),
-				new MenuItem('About Us', '#', ['Who we are', 'Our team', 'Careers', 'Investors'], ['#', '#', '#', '#']),
-				new MenuItem('Support', '#', ['Documentation', 'Community', 'Get in Touch'], ['#', '#', '#'])
+				new MenuItem('Navigation', '/mock-address/change-me', ['About Us', 'News', 'Support', 'Products'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
+				new MenuItem('About Us', '/mock-address/change-me', ['Who we are', 'Our team', 'Careers', 'Investors'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
+				new MenuItem('Support', '/mock-address/change-me', ['Documentation', 'Community', 'Get in Touch'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me'])
 			];
 		.headers_footers__menu.headers_footers__menu--1
-			+header(headers_footers__header-menu, menu, 0, 'Login', '#', 'Register', '#')
+			+header(headers_footers__header-menu, menu, 0, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me')
 		.headers_footers__menu.headers_footers__menu--2
-			+header(headers_footers__header-menu, menu, 0, 'Login', '#', 'Register', '#', 1)
+			+header(headers_footers__header-menu, menu, 0, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me', 1)
 		.headers_footers__footer-1
 			+footer(
 				headers_footers__footer, 
@@ -46,8 +46,8 @@ block main
 					p.headers_footers__p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
 					ul
 						li.footer__social-li
-							a(href="#" class="footer__social footer__social--twitter") Twitter
+							a(href="/mock-address/change-me" target="_blank" class="footer__social footer__social--twitter") Twitter
 						li.footer__social-li
-							a(href="#" class="footer__social footer__social--facebook") Facebook
+							a(href="/mock-address/change-me" target="_blank" class="footer__social footer__social--facebook") Facebook
 						li.footer__social-li
-							a(href="#" class="footer__social footer__social--instagram") Instagram
+							a(href="/mock-address/change-me" target="_blank" class="footer__social footer__social--instagram") Instagram

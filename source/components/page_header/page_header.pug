@@ -8,10 +8,10 @@
 			this.hrefs = hrefs;
 		}
 		let menu = [
-			new MenuItem('О нас', '#'),
-			new MenuItem('Услуги', '#', ['Услуга 1', 'Услуга 2', 'Услуга 3'], ['#', "#", '#']),
-			new MenuItem('Вакансии', '#'),
-			new MenuItem('Новости', '#'),
-			new MenuItem('Соглашения', '#', ['Соглашение 1', 'Соглашение 2', 'Соглашение 3'], ['#', "#", '#'])
+			new MenuItem('О нас', '/mock-address/change-me'),
+			new MenuItem('Услуги', '/mock-address/change-me', ['Услуга 1', 'Услуга 2', 'Услуга 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
+			new MenuItem('Вакансии', '/mock-address/change-me'),
+			new MenuItem('Новости', '/mock-address/change-me'),
+			new MenuItem('Соглашения', '/mock-address/change-me', ['Соглашение 1', 'Соглашение 2', 'Соглашение 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me'])
 		];
 	+header(page_header__header-menu, menu, -1, 'войти', 'sign_in.html', 'зарегистрироваться', 'registration.html')
