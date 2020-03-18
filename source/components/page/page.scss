@@ -52,6 +52,11 @@ html {
   box-sizing: border-box;
 
   -ms-overflow-style: scrollbar;
+
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black-75;
 }
 
 *, *::before, *::after {
@@ -61,34 +66,34 @@ h1 {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.2em;
-  font-family: Quicksand;
+  font-family: Quicksand, Arial, sans-serif;
   color: #1f2041;
 }
 .page__h1 {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.3em;
-  font-family: Open Sans;
+  font-family: 'Open Sans', Arial, sans-serif;
   color: $black;
 }
 h2 {
   font-weight: 700;
   font-size: 19px;
   line-height: 1.2em;
-  font-family: Quicksand;
+  font-family: Quicksand, Arial, sans-serif;
   color: $black;
 }
 .page__h2 {
   font-weight: 700;
   font-size: 19px;
-  font-family: Open Sans;
+  font-family: 'Open Sans', Arial, sans-serif;
   color: $black;
 }
 h3 {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.2em;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   color: $black;
   text-transform: uppercase;
 }
@@ -96,7 +101,7 @@ h4 {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   color: $black-75;
   text-transform: none;
 }
@@ -108,7 +113,7 @@ p {
   font-size: 14px;
   line-height: 24px;
   line-height: 1.6em;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   color: $black-75;
 }
 .page__wrap {
@@ -151,7 +156,7 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   color: $black-75;
 }
 .page__li::before {

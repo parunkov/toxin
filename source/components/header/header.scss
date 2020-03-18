@@ -62,7 +62,7 @@
   margin-bottom: 15px;
   font-weight: 400;
   font-size: 14px;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   &:last-child {
     margin-right: 15px;
   }
@@ -140,7 +140,7 @@
 .header__user {
   font-weight: 400;
   font-size: 14px;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   color: $black-50;
   cursor: default;
 }

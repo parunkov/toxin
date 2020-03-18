@@ -10,7 +10,7 @@
 .datepicker {
   width: 100%;
   font-size: 12px;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   border: none;
 }
 .datepicker--nav {
@@ -22,13 +22,13 @@
 .datepicker--day-name {
   font-weight: 700;
   font-size: 12px;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   color: $purple;
 }
 .datepicker--nav-title, .datepicker--nav-title i {
   font-weight: 700;
   font-size: 19px;
-  font-family: Open Sans;
+  font-family: 'Open Sans', Arial, sans-serif;
   color: $black;
 }
 .datepicker--cell {
@@ -68,7 +68,7 @@
 }
 .datepicker--cell.-current- {
   font-weight: 700;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   color: $white;
   background: $gradient-green;
 }
@@ -111,7 +111,7 @@
   // display: none;
   font-weight: 700;
   font-size: 12px;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   color: $black-50;
   text-transform: uppercase;
   cursor: pointer;
@@ -123,7 +123,7 @@
   display: inline;
   font-weight: 700;
   font-size: 12px;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, sans-serif;
   text-align: right;
   color: $purple;
   text-transform: uppercase;
