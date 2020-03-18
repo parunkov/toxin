@@ -2,9 +2,9 @@ extends ../../base.pug
 block title
 	| Room details
 block main
-	.room_details__header
+	header.room_details__header
 		include ../../components/page_header/page_header.pug
-	.room_details__img-wrap
+	figure.room_details__img-wrap
 		.room_details__img-col-1
 			img(src="img/room1.jpg" width="100%")
 		.room_details__img-col-2
@@ -13,13 +13,13 @@ block main
 			.room_details__img-3
 				img(src="img/room3.jpg" width="100%")
 	.room_details__wrap
-		.room_details__container
+		section.room_details__container
 			include ../../components/info/info.pug
 			include ../../components/like/like.pug
 			include ../../components/review/review.pug
 			.room_details__col-1
 				.room_details__content-row-1
-					.room_details__text-1
+					article.room_details__text-1
 						h2.page__h2.room_details__h2-1 Сведения о номере
 						.room_details__info-wrap
 							+info(
@@ -40,7 +40,7 @@ block main
 								'Уют',
 								'Номер оснащён камином')
 					.room_details__text-space-1
-					.room_details__text-2
+					article.room_details__text-2
 						h2.page__h2.room_details__h2-2 Впечатления от номера
 						.room_details__chart-wrap
 							.room_details__chart
@@ -62,7 +62,7 @@ block main
 								.room_details__chart-before.room_details__chart-before--4
 								p.room_details__chart-p Разочарован
 				.room_details__content-row-2
-					.room_details__text-3
+					article.room_details__text-3
 						h2.page__h2.room_details__h2-3 Отзывы посетителей номера
 						.room_details__review-wrap
 							+review(
@@ -81,14 +81,14 @@ block main
 								'Неделю назад',
 								'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
 				.room_details__content-row-3
-					.room_details__text-4
+					article.room_details__text-4
 						h2.page__h2.room_details__h2-4 Правила
 						ul
 							li.page__li Нельзя с питомцами
 							li.page__li Без вечеринок и мероприятий
 							li.page__li Время прибытия — после 13:00, а выезд до 12:00
 					.room_details__text-space-2
-					.room_details__text-5
+					article.room_details__text-5
 						h2.page__h2.room_details__h2-5 Отмена
 						p.room_details__p-5 Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 			.room_details__space

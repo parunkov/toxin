@@ -2,7 +2,7 @@ extends ../../base.pug
 block title
 	| Search room/Filter
 block main
-	.search_room__header
+	header.search_room__header
 		include ../../components/page_header/page_header.pug
 	.search_room__wrap
 		include ../../components/input/input.pug
@@ -35,7 +35,7 @@ block main
 				new RoomData(['img/image12.jpg', 'img/image1.jpg', 'img/image2.jpg', 'img/image3.jpg'], 352, '', '5 000', 3, 53)
 				];
 		.search_room__container
-			.search_room__form
+			aside.search_room__form
 				form
 					.search_room__input-wrap
 						+input(
@@ -101,7 +101,7 @@ block main
 								'Телевизор',
 								'Шампунь'])
 			.search_room__space
-			.search_room__cards
+			section.search_room__cards
 				h1.page__h1.search_room__h1 Номера, которые мы для вас подобрали
 				.search_room__cards-wrap
 					each val, i in data
