@@ -5,6 +5,7 @@ import '../../components/page_header/page_header.js';
 import '../../components/search/search.js';
 import '../../components/page_footer/page_footer.js';
 import './index.scss';
+import '../../favicons/favicons.js';
 
 // $('.index__form').find('button').click(function(evt) {
 // 	evt.preventDefault();
