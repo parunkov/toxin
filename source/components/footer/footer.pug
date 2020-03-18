@@ -17,7 +17,7 @@ mixin footer(cl, text, menu, h3, p, copyright, ui)
 			.footer__col.footer__col--5
 				h3.footer__h3= h3
 				p.footer__p= p 
-				form
+				form.footer__form
 					if ui
 						- let email = 'Your email address';
 						+input(
@@ -47,7 +47,7 @@ mixin footer(cl, text, menu, h3, p, copyright, ui)
 			.footer__col.footer__col--6
 				p= copyright
 			.footer__col.footer__col--7
-				ul
+				ul.footer__social-ul
 					li.footer__social-li
 						a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social footer__social--twitter") Twitter
 					li.footer__social-li
