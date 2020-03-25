@@ -6,18 +6,18 @@
 
 ### UI-Kit
 
-https://parunkov.github.io/work/build/colors_types.html - Colors & Type  
-https://parunkov.github.io/work/build/form_elements.html - Form Elements  
-https://parunkov.github.io/work/build/cards.html - Cards  
-https://parunkov.github.io/work/build/headers_footers.html - Headers & Footers  
+https://parunkov.github.io/toxin/build/colors_types.html - Colors & Type  
+https://parunkov.github.io/toxin/build/form_elements.html - Form Elements  
+https://parunkov.github.io/toxin/build/cards.html - Cards  
+https://parunkov.github.io/toxin/build/headers_footers.html - Headers & Footers  
 
 ### Страницы сайта
 
-https://parunkov.github.io/work/build/index.html - Landing page  
-https://parunkov.github.io/work/build/search_room.html - Search Room/Filter  
-https://parunkov.github.io/work/build/room_details.html - Room Details  
-https://parunkov.github.io/work/build/registration.html - Registration  
-https://parunkov.github.io/work/build/sign_in.html - Sign In  
+https://parunkov.github.io/toxin/build/index.html - Landing page  
+https://parunkov.github.io/toxin/build/search_room.html - Search Room/Filter  
+https://parunkov.github.io/toxin/build/room_details.html - Room Details  
+https://parunkov.github.io/toxin/build/registration.html - Registration  
+https://parunkov.github.io/toxin/build/sign_in.html - Sign In  
 
 ## Команды
 
