@@ -24,4 +24,3 @@ https://parunkov.github.io/work/build/sign_in.html - Sign In
 npm i - установка проекта  
 npm run start - запуск dev server, адрес localhost:9000  
 npm run build - сборка проекта  
-  
