@@ -99,13 +99,13 @@
   position: relative;
   height: 30px;
   margin-bottom: 7px;
-  padding-top: 7px;
+  padding-top: 5px;
   padding-left: 15px;
 }
 .iqdropdown-item-controls {
   position: absolute;
   top: 0;
-  right: -2px;
+  right: -6px;
 }
 .iqdropdown .button-decrement, .iqdropdown .button-increment {
   position: relative;
@@ -121,6 +121,7 @@
   display: inline-block;
   width: 28px;
   padding-top: 7px;
+  padding-left: 4px;
   font-weight: 700;
   font-size: 12px;
   font-family: Montserrat, Arial, sans-serif;
@@ -170,6 +171,7 @@
   }
 }
 .dropdown__set {
+  margin-right: -6px;
   display: inline;
   font-weight: 700;
   font-size: 12px;
