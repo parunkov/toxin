@@ -19,7 +19,7 @@
   // height: 100px;
   padding-left: 21%*100/1200;
   &--1, &--4, &--7 {
-    flex: 0 0 446%*100/1200;
+    flex: 0 0 445%*100/1200;
     @media (max-width: $page-container) {
       flex: 1 0 362px;
     }
@@ -127,11 +127,11 @@
   }
   &--8 {
     width: 222%*100/320;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     padding-top: 5px;
   }
   &--9 {
-    margin-bottom: 42px;
+    margin-bottom: 41px;
   }
   &--10 {
     margin-bottom: 46px;

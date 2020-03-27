@@ -64,7 +64,7 @@
   font-size: 14px;
   font-family: Montserrat, Arial, sans-serif;
   &:last-child {
-    margin-right: 15px;
+    margin-right: 29px;
   }
   &--big {
     margin-right: 36px;
@@ -145,12 +145,11 @@
   cursor: default;
 }
 .header__login-container {
-  flex: 0 1 auto;
+  flex: 0 1 17.2%;
   margin-bottom: 10px;
   padding-top: 3px;
   // flex: 0 0 200px;
-  padding-right: 20%*100/1200;
-  padding-left: 20%*100/1200;
+  padding-right: 1.37%;
   @media (max-width: 800px) {
     flex: 1 1 320px;
   }
@@ -168,7 +167,7 @@
   vertical-align: top;
 }
 .header__login-space {
-  flex: 0 0 16px;
+  flex: 0 0 20px;
 }
 .header__register-wrap {
   display: inline-block;

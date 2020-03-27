@@ -9,7 +9,7 @@
   width: 100%;
   max-width: 1200%*100/1440;
   margin: 0 auto;
-  padding-top: 100px;
+  padding-top: 98px;
   &--bottom {
     padding-top: 10px;
   }
@@ -43,9 +43,12 @@
   &--4 {
     min-width: 190px;
   }
+  &--5 {
+    padding-top: 5px;
+  }
   &--6 {
     flex: 1 0 320px;
-    padding-top: 10px;
+    padding-top: 12px;
     padding-right: 20%*100/1200;
     padding-left: 20%*100/1200;
   }
@@ -58,6 +61,7 @@
   }
 }
 .footer__nav {
+  padding-top: 4px;
   display: flex;
   flex: 1 0 600%*100/1200;
   flex-wrap: nowrap;
@@ -69,10 +73,10 @@
   }
 }
 .footer__logo {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 }
 .footer__p {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   line-height: 1.75em;
 }
 .footer__h3 {
@@ -80,6 +84,10 @@
   color: $black;
   a:hover {
     color: $purple;
+  }
+  &--col-5 {
+    margin-bottom: 18px;
+    letter-spacing: -0.3px;
   }
 }
 .footer__li {

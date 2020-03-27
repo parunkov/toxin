@@ -6,6 +6,7 @@
 .room__header-1 {
   display: inline-block;
   width: 60%;
+  padding-left: 2px;
 }
 .room__header-2 {
   display: inline-block;
@@ -13,7 +14,7 @@
   text-align: right;
 }
 .room__header {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   &--number {
     font-weight: 700;
     font-size: 16px;
@@ -40,7 +41,7 @@
   margin-bottom: 17px;
 }
 .room__input-inner {
-  flex: 0 0 147%*100/320;
+  flex: 0 0 47%;
 }
 .room__input-space {
   flex: auto;
@@ -75,8 +76,8 @@
   display: flex;
   flex-wrap: wrap;
   clear: both;
-  margin-bottom: 20px;
-  padding-top: 17px;
+  margin-bottom: 19px;
+  padding-top: 16px;
   &-1 {
     flex-grow: 0;
     margin-right: 5px;

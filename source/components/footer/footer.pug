@@ -15,7 +15,7 @@ mixin footer(cl, text, menu, h3, p, copyright, ui)
 								li.footer__li.footer__li--incl
 									a(href=menu[i].hrefs[j] class="footer__a") !{menu[i].incl[j]}
 			.footer__col.footer__col--5
-				h3.footer__h3= h3
+				h3.footer__h3.footer__h3--col-5= h3
 				p.footer__p= p 
 				form.footer__form
 					if ui
