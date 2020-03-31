@@ -1,1 +1,33 @@
 @import '../../variables.scss';
+
+.page_header__container {
+  .header__container {
+    padding-top: 15px;
+  }
+  .header__ul-wrap {
+    padding-top: 13px;
+    padding-right: 24px;
+  }
+  .header__arrow {
+    width: 20px;
+    text-align: right;
+  }
+  .header__li {
+    margin-right: 22px;
+    &:nth-child(1) {
+      margin-right: 18px;
+    }
+    &:nth-child(2) {
+      margin-right: 41px;
+    }
+    &:nth-child(3) {
+      margin-right: 17px;
+    }
+    &:nth-child(4) {
+      margin-right: 17px;
+    }
+  }
+  .header__login-container {
+    padding-right: 1.87%;
+  }
+}
