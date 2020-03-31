@@ -23,9 +23,13 @@ https://parunkov.github.io/toxin/build/sign_in.html - Sign In
 
 ## Команды
 
-Клонирование репозитория в Git Bash:
+Клонирование репозитория по протоколу https:
 
     $ git clone https://github.com/parunkov/toxin
+
+Клонирование репозитория по протоколу git:
+
+    $ git clone git://github.com/parunkov/toxin
 
 Установка проекта:
     
