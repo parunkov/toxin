@@ -21,11 +21,26 @@
     opacity: 0.5;
   }
   &--white {
-    padding-top: 14px;
+    position: relative;
+    padding-top: 0;
     color: $purple;
-    background: $white;
-    border: 2px solid $purple;
+    background: $gradient-purple;
+    // border: 2px solid $purple;
     border-radius: 22px;
+    span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      background: $white;
+      background-clip: padding-box;
+      width: 100%;
+      height: 100%;
+      padding-top: 14px;
+      border: 2px solid transparent;
+      padding-top: 14px;
+      border-radius: 22px;
+    }
   }
   &--icon-link {
     height: 15px;
