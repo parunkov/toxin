@@ -25,11 +25,11 @@ https://parunkov.github.io/toxin/build/sign_in.html - Sign In
 
 Клонирование репозитория по протоколу https:
 
-    $ git clone https://github.com/parunkov/toxin
+    git clone https://github.com/parunkov/toxin
 
-Клонирование репозитория по протоколу git:
+Клонирование репозитория по протоколу ssh:
 
-    $ git clone git://github.com/parunkov/toxin
+    git clone git://github.com/parunkov/toxin
 
 Установка проекта:
     
