@@ -46,7 +46,7 @@
 }
 .colors-types__colors {
   width: 270px;
-  margin-left: 9px;
+  margin-left: 10px;
   // background:red;
 }
 .colors-types__types {
@@ -59,8 +59,8 @@
   display: inline-block;
   width: 70px;
   height: 70px;
-  margin-right: 37px;
-  margin-bottom: 18px;
+  margin-right: 36px;
+  margin-bottom: 18.5px;
   background-color: $black;
   border-radius: 6px;
   &--2 {
@@ -111,9 +111,9 @@
 }
 .colors-types__types-col-2 {
   flex: 1 0 200px;
-  margin-bottom: 49px;
-  padding-top: 3px;
-  padding-left: 9px;
+  margin-bottom: 48px;
+  padding-top: 2px;
+  padding-left: 7px;
   &--4 {
     max-width: 320px;
     padding-top: 0;
@@ -145,6 +145,12 @@
   font-size: 14px;
   line-height: 24px;
 }
+.colors-types__types-block-h1{
+  line-height: 1.25em;
+}
 .colors-types__types-block-h2 {
   line-height: 1.3em;
+}
+.colors-types__types-block-p {
+  line-height: 1.7em;
 }
