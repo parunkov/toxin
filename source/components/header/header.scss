@@ -93,6 +93,10 @@
 }
 
 .header__li:hover > .header__ul-incl {
+  // visibility: visible;
+  // opacity: 1;
+}
+.header__ul-incl--show {
   visibility: visible;
   opacity: 1;
 }
@@ -128,6 +132,7 @@
   line-height: 23.91px;
   font-family: 'Material Icons';
   color: $black-50;
+  cursor: pointer;
 }
 .header__login-container-logged {
   flex: 0 0 145px;
