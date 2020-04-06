@@ -17,6 +17,8 @@ $('.header__container').each(function(i) {
 
 $('.header__li').hover(
 	function(){
+		$('.header__ul-incl').removeClass('header__ul-incl--show');
+		$('.header__arrow').text('expand_more');
 		$(this).find('.header__ul-incl').addClass('header__ul-incl--show');
 		$(this).find('.header__arrow').text('expand_less');
 		$(document).click(
