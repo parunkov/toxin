@@ -17,6 +17,10 @@
 .search__input-space {
   flex: auto;
 }
+.search__input-1, .search__input-2 {
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+}
 .search__dropdown-container {
   margin-bottom: 30px;
 }
