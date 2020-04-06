@@ -13,7 +13,7 @@
     text-align: right;
   }
   .header__li {
-    margin-right: 22px;
+    margin-right: 20px;
     &:nth-child(1) {
       margin-right: 18px;
     }
@@ -29,5 +29,9 @@
   }
   .header__login-container {
     padding-right: 1.87%;
+    flex: 0 1 26.2%;
+  }
+  .header__login-wrap {
+    flex: 1 0 88px;
   }
 }
