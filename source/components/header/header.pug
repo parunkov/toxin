@@ -25,7 +25,8 @@ mixin header(cl, menu, active, btn1, href1, btn2, href2, login)
 			.header__login-container
 				.header__login-content
 					.header__login-wrap
-						a(href=href1 class="btn btn--white btn--header-white") !{btn1}
+						a(href=href1 class="btn btn--white btn--header-white") 
+							span !{btn1}
 					.header__login-space
 					.header__register-wrap
 						a(href=href2 class="btn btn--small") !{btn2}
