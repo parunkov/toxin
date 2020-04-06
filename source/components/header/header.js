@@ -15,7 +15,7 @@ $('.header__container').each(function(i) {
 	});
 });
 
-$('.header__li').hover(
+$('.header__li--big').hover(
 	function(){
 		$('.header__ul-incl').removeClass('header__ul-incl--show');
 		$('.header__arrow').text('expand_more');
