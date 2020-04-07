@@ -22,24 +22,20 @@
   }
   &--white {
     position: relative;
-    padding-top: 0;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
     color: $purple;
     background: $gradient-purple;
-    // border: 2px solid $purple;
     border-radius: 22px;
     span {
-      position: absolute;
-      left: 0;
-      top: 0;
       display: block;
       background: $white;
       background-clip: padding-box;
-      width: 100%;
-      height: 100%;
+      height: 40px;
       padding-top: 14px;
-      border: 2px solid transparent;
-      padding-top: 14px;
-      border-radius: 22px;
+      border-radius: 20px;
     }
   }
   &--icon-link {
@@ -85,12 +81,15 @@
     display: block;
     width: 100%;
     height: 34px;
-    padding-top: 11px;
-    padding-top: 9px;
-    padding-right: 20px;
-    padding-left: 15px;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
     span {
       padding-top: 9px;
+      padding-left: 17px;
+      padding-right: 18px;
+      height: 30px;
     }
   }
 }

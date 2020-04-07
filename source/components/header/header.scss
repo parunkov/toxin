@@ -154,7 +154,7 @@
   margin-bottom: 10px;
   padding-top: 3px;
   // flex: 0 0 200px;
-  padding-right: 1.37%;
+  // padding-right: 1.37%;
   @media (max-width: 800px) {
     flex: 1 1 320px;
   }
@@ -168,7 +168,7 @@
 .header__login-wrap {
   display: inline-block;
   // flex: 1 0 79%*100/200;
-  flex: 1 0 79px;
+  flex: 1 0 auto;
   vertical-align: top;
 }
 .header__login-space {
