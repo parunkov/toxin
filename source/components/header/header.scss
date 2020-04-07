@@ -36,6 +36,11 @@
     flex: 1 1 320px;
     padding-top: 12px;
     text-align: right;
+    border: 1px solid green;
+    @media (max-width: 750px) {
+      flex: 0 0 100%;
+      text-align: center;
+    }
   }
   &-incl {
     position: absolute;
@@ -63,6 +68,9 @@
   font-weight: 400;
   font-size: 14px;
   font-family: Montserrat, Arial, sans-serif;
+  @media (max-width: 450px) {
+    display: block;
+  }
   &:last-child {
     margin-right: 29px;
   }
@@ -141,6 +149,11 @@
   padding-top: 4px;
   padding-left: 30px;
   border-left: 1px solid $black-10;
+  @media (max-width: 950px) {
+    flex: 0 0 100%;
+    text-align: center;
+    padding-right: 50px;
+  }
 }
 .header__user {
   font-weight: 400;
@@ -150,13 +163,15 @@
   cursor: default;
 }
 .header__login-container {
-  flex: 0 1 17.2%;
+  flex: 0 0 200px;
   margin-bottom: 10px;
   padding-top: 3px;
   // flex: 0 0 200px;
   // padding-right: 1.37%;
-  @media (max-width: 800px) {
-    flex: 1 1 320px;
+  border: 1px solid red;
+  @media (max-width: 950px) {
+    // flex: 1 1 320px;
+    flex: 0 0 100%;
   }
 }
 .header__login-content {
@@ -164,19 +179,33 @@
   flex-wrap: nowrap;
   width: 100%;
   margin: 0 auto;
+  @media (max-width: 450px) {
+    flex-wrap: wrap;
+  }
 }
 .header__login-wrap {
-  display: inline-block;
-  // flex: 1 0 79%*100/200;
-  flex: 1 0 auto;
+  // display: inline-block;
+  flex: 1 1 79%*100/200;
+  // flex: 1 0 auto;
   vertical-align: top;
+  @media (max-width: 450px) {
+    flex: 0 0 100%;
+  }
 }
 .header__login-space {
   flex: 0 0 20px;
+  // flex: 1 0 20%*100/200;
+  @media (max-width: 450px) {
+    flex: 0 0 100%;
+    height: 10px;
+  }
 }
 .header__register-wrap {
-  display: inline-block;
-  // flex: 1 0 101%*100/200;
-  flex: 1 0 auto;
+  // display: inline-block;
+  flex: 1 1 101%*100/200;
+  // flex: 1 0 auto;
   vertical-align: top;
+  @media (max-width: 450px) {
+    flex: 0 0 100%;
+  }
 }
