@@ -89,6 +89,9 @@
   &--col-5 {
     margin-bottom: 18px;
     letter-spacing: -0.3px;
+    &:hover {
+      color: $purple;
+    }
   }
 }
 .footer__li {
@@ -130,4 +133,7 @@
 }
 .footer__copyright {
   letter-spacing: -0.1px;
+}
+.footer__input {
+  padding-right: 40px;
 }
