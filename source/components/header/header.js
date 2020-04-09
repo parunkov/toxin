@@ -41,3 +41,10 @@ $(document).click(
 	}
 );
 
+$('.header__burger').click(
+	function() {
+		$('.header__ul-wrap').toggleClass('header__ul-wrap--show');
+		$('.header__login-container').toggleClass('header__login-container--show');
+		$('.header__login-container-logged').toggleClass('header__login-container--show');
+	}
+);
