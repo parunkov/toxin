@@ -44,6 +44,24 @@
       }
     }
   }
+  .header__li--incl {
+    margin-right: 0;
+    &:nth-child(1) {
+      margin-right: 0;
+    }
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+    &:nth-child(4) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
   .header__login-container {
     // padding-right: 1.87%;
     flex: 0 1 303px;
