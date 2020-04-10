@@ -1,6 +1,6 @@
 @import '../../variables.scss';
 .footer__block-1 {
-  padding-bottom: 78px;
+  padding-bottom: 79px;
   border-bottom: 1px solid $black-10;
 }
 .footer__container {
@@ -9,9 +9,9 @@
   width: 100%;
   max-width: 1200%*100/1440;
   margin: 0 auto;
-  padding-top: 98px;
+  padding-top: 96px;
   &--bottom {
-    padding-top: 10px;
+    padding-top: 12px;
   }
   @media (max-width: 1440px) {
     max-width: $page-container;
@@ -24,8 +24,12 @@
   }
 }
 .footer__col {
+  flex: 1 0 200%*100/600;
+  padding-right: 20%*100/600;
+  padding-left: 20%*100/600;
+  min-width: 190px;
   // border: 1px solid red;
-  &--1, &--5 {
+  &--1, &--25 {
     flex: 1 0 300%*100/1200;
     min-width: 300px;
     padding-right: 20%*100/1200;
@@ -33,7 +37,6 @@
   }
   &--2, &--3, &--4 {
     flex: 1 0 200%*100/600;
-    padding-top: 2px;
     padding-right: 20%*100/600;
     padding-left: 20%*100/600;
   }
@@ -43,16 +46,16 @@
   &--4 {
     min-width: 190px;
   }
-  &--5 {
+  &--25 {
     padding-top: 5px;
   }
-  &--6 {
+  &--26 {
     flex: 1 0 320px;
     padding-top: 12px;
     padding-right: 20%*100/1200;
     padding-left: 20%*100/1200;
   }
-  &--7 {
+  &--27 {
     flex: 1 0 150px;
     text-align: right;
     margin-bottom: 23px;
@@ -64,7 +67,7 @@
   padding-top: 4px;
   display: flex;
   flex: 1 0 600%*100/1200;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   @media (max-width: 1300px) {
     flex: 0 0 100%;
   }
