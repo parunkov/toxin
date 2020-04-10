@@ -22,6 +22,9 @@
   @media (max-width: 420px) {
     width: 100vw;
   }
+  .input__input--arrow + .input__icon {
+    padding-left: 5px;
+  }
 }
 .footer__col {
   flex: 1 0 200%*100/600;
