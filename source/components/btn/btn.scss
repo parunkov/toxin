@@ -3,7 +3,6 @@
   position: relative;
   min-height: 44px;
   padding-top: 16px;
-  padding-bottom: 5px;
   font-weight: 700;
   font-size: 12px;
   font-family: Montserrat, Arial, sans-serif;
@@ -33,7 +32,7 @@
     span {
       display: block;
       background: $white;
-      padding-bottom: 3px;
+      padding-bottom: 9px;
       background-clip: padding-box;
       min-height: 40px;
       padding-top: 14px;
@@ -67,6 +66,7 @@
     width: 100%;
     min-height: 34px;
     padding-top: 11px;
+    padding-bottom: 11px;
     padding-right: 20px;
     padding-left: 19px;
   }
