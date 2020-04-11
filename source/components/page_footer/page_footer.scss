@@ -1,8 +1,17 @@
+@import '../../variables.scss';
 .page_footer__container {
   .footer__container {
     padding-top: 98px;
     &--bottom {
       padding-top: 13px;
+    }
+    @media (max-width: $mobile-menu-breakpoint) {
+      padding-top: 25px;
+    }
+  }
+  .footer__block-1 {
+    @media (max-width: $mobile-menu-breakpoint) {
+      padding-bottom: 25px;
     }
   }
   .footer__social-li {
