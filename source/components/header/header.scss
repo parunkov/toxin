@@ -38,7 +38,7 @@
     display: block;
     width: 30px;
     position: absolute;
-    top: 15px;
+    top: 18px;
     right: 5%;
     cursor: pointer;
   }
@@ -48,7 +48,23 @@
   height: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
-  background: $black-75;
+  background: $black;
+  &--cross-1 {
+    display: none;
+    transform: rotate(45deg);
+    margin-top: 13px;
+  }
+  &--cross-2 {
+    display: none;
+    transform: rotate(-45deg);
+    margin-top: -9px;
+  }
+  &--show {
+    display: block;
+  }
+  &--hide {
+    display: none;
+  }
 }
 .header__ul {
   &-wrap {
@@ -79,7 +95,8 @@
       position: static;
       display: none;
       text-align: center;
-      border: none;
+      margin-top: 10px;
+      // border: none;
       padding-top: 15px;
       // left: 50%;
       // top: 30px;
@@ -202,6 +219,7 @@
   color: $black-50;
   cursor: pointer;
   @media (max-width: $mobile-menu-breakpoint) {
+    margin-left: 5px;
     padding-top: 0;
     position: relative;
     top: 8px;

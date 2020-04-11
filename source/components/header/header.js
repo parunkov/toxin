@@ -46,5 +46,8 @@ $('.header__burger').click(
 		$('.header__ul-wrap').toggleClass('header__ul-wrap--show');
 		$('.header__login-container').toggleClass('header__login-container--show');
 		$('.header__login-container-logged').toggleClass('header__login-container--show');
+		$('.header__burger-line--burger').toggleClass('header__burger-line--hide');
+		$('.header__burger-line--cross-1').toggleClass('header__burger-line--show');
+		$('.header__burger-line--cross-2').toggleClass('header__burger-line--show');
 	}
 );
