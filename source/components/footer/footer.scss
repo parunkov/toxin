@@ -1,7 +1,15 @@
 @import '../../variables.scss';
+.footer__logo {
+  @media (max-width: 590px) {
+    margin: 0 auto;
+  }
+}
 .footer__block-1 {
   padding-bottom: 79px;
   border-bottom: 1px solid $black-10;
+  @media (max-width: 590px) {
+    text-align: center;
+  }
 }
 .footer__container {
   display: flex;
@@ -34,6 +42,8 @@
   @media (max-width: $mobile-menu-breakpoint) {
     padding-left: 0;
     padding-right: 0;
+    display: block;
+    flex: 0 0 100%;
   }
   // border: 1px solid red;
   &--1, &--25 {
@@ -46,6 +56,12 @@
     flex: 1 0 200%*100/600;
     padding-right: 20%*100/600;
     padding-left: 20%*100/600;
+    @media (max-width: 590px) {
+      padding-left: 0;
+      padding-right: 0;
+      display: block;
+      flex: 0 0 100%;
+    }
   }
   &--2, &--3 {
     min-width: 190px;
@@ -73,6 +89,15 @@
     @media (max-width: $mobile-menu-breakpoint) {
       padding-left: 0;
       padding-right: 0;
+    }
+  }
+  &--26, &--27 {
+    @media (max-width: 590px) {
+      padding-left: 0;
+      padding-right: 0;
+      display: block;
+      flex: 0 0 100%;
+      text-align: center;
     }
   }
 }
@@ -123,6 +148,16 @@
 .footer__a:hover {
   color: $black-text;
 }
+.footer__form {
+  .input__container {
+    @media (max-width: 1300px) {
+      width: 450px;
+    }
+    @media (max-width: 450px) {
+      width: 100%;
+    }
+  }
+}
 .footer__social-li {
   display: inline-block;
   width: 24px;
@@ -152,4 +187,7 @@
 }
 .footer__input {
   padding-right: 45px;
+  // @media (max-width: 1300px) {
+  //   width: 600px;
+  // }
 }
