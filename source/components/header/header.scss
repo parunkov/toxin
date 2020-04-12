@@ -73,10 +73,11 @@
     text-align: right;
     // border: 1px solid green;
     @media (max-width: 750px) {
-      flex: 0 0 100%;
-      text-align: center;
+      // flex: 0 0 100%;
+      // text-align: center;
     }
     @media (max-width: $mobile-menu-breakpoint) {
+      flex: 0 0 100%;
       display: none;
     }
   }
@@ -237,11 +238,13 @@
   border-left: 1px solid $black-10;
   @media (max-width: 950px) {
     flex: 0 0 100%;
-    text-align: center;
+    text-align: right;
     padding-right: 50px;
+    padding-right: 29px;
   }
   @media (max-width: $mobile-menu-breakpoint) {
     display: none;
+    text-align: center;
   }
 }
 .header__user {
@@ -276,8 +279,16 @@
   flex-wrap: nowrap;
   width: 100%;
   margin: 0 auto;
+  @media (max-width: 950px) {
+    width: 200px;
+    margin-left: auto;
+    margin-right: 29px;
+  }
   @media (max-width: $mobile-menu-breakpoint) {
     flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
 }
 .header__login-wrap {
