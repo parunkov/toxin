@@ -56,6 +56,10 @@
     flex: 1 0 200%*100/600;
     padding-right: 20%*100/600;
     padding-left: 20%*100/600;
+    @media (max-width: 1300px) {
+      padding-right: 20%*100/1200;
+      padding-left: 20%*100/1200;
+    }
     @media (max-width: 590px) {
       padding-left: 0;
       padding-right: 0;
@@ -153,7 +157,7 @@
     @media (max-width: 1300px) {
       width: 450px;
     }
-    @media (max-width: 450px) {
+    @media (max-width: 590px) {
       width: 100%;
     }
   }
