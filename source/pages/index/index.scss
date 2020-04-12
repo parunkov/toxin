@@ -45,7 +45,7 @@
   }
 }
 .index__col-1 {
-  flex: 0 0 420%*100/1200;
+  flex: 0 0 420px;
   // border: 1px solid green;
   @media (max-width: $page-container) {
     flex: 0 0 420px;
