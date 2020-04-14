@@ -80,6 +80,7 @@
     @media (max-width: $mobile-menu-breakpoint) {
       flex: 0 0 100%;
       display: none;
+      padding-right: 0;
     }
   }
   &-incl {
@@ -97,12 +98,10 @@
       position: static;
       display: none;
       text-align: center;
-      margin-top: 10px;
-      // border: none;
+      // margin-top: 10px;
+      border-radius: 0;
+      border: none;
       padding-top: 15px;
-      // left: 50%;
-      // top: 30px;
-      // transform: translate(-50%, 0);
     }
   }
   &-incl--active {
@@ -125,9 +124,14 @@
   @media (max-width: $mobile-menu-breakpoint) {
     display: block;
     margin-right: 0;
+    margin-bottom: 15px;
+    // vertical-align: top;
+    // padding-bottom: 15px;
     text-align: center;
+    
     a {
       text-align: center;
+      // padding-bottom: 15px;
     }
   }
   &:last-child {
@@ -155,6 +159,18 @@
     @media (max-width: $mobile-menu-breakpoint) {
       position: static;
       padding-left: 0;
+      background: $black-5;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 2px;
+    }
+    &:hover {
+      @media (max-width: $mobile-menu-breakpoint) {
+        background: $black-10;
+        a {
+          color: $black-text;
+        }
+      }
     }
     a {
       display: block;
@@ -307,20 +323,3 @@
     flex: 0 0 100%;
   }
 }
-// .header__login-space {
-//   flex: 0 0 20px;
-//   // flex: 1 0 20%*100/200;
-//   @media (max-width: $mobile-menu-breakpoint) {
-//     flex: 0 0 100%;
-//     height: 10px;
-//   }
-// }
-// .header__register-wrap {
-//   // display: inline-block;
-//   flex: 1 1 101%*100/200;
-//   // flex: 1 0 auto;
-//   vertical-align: top;
-//   @media (max-width: $mobile-menu-breakpoint) {
-//     flex: 0 0 100%;
-//   }
-// }

@@ -7,6 +7,9 @@
   .header__ul-wrap {
     padding-top: 13px;
     padding-right: 11px;
+    @media (max-width: $mobile-menu-breakpoint) {
+      padding-right: 0;
+    }
   }
   .header__arrow {
     width: 20px;
@@ -18,29 +21,34 @@
       margin-right: 18px;
       @media (max-width: $mobile-menu-breakpoint) {
         margin-right: 0;
+        margin-left: 0;
       }
     }
     &:nth-child(2) {
       margin-right: 41px;
       @media (max-width: $mobile-menu-breakpoint) {
         margin-right: 0;
+        margin-left: 0;
       }
     }
     &:nth-child(3) {
       margin-right: 17px;
       @media (max-width: $mobile-menu-breakpoint) {
         margin-right: 0;
+        margin-left: 0;
       }
     }
     &:nth-child(4) {
       margin-right: 17px;
       @media (max-width: $mobile-menu-breakpoint) {
         margin-right: 0;
+        margin-left: 0;
       }
     }
     &:last-child {
       @media (max-width: $mobile-menu-breakpoint) {
         margin-right: 0;
+        margin-left: 0;
       }
     }
   }
