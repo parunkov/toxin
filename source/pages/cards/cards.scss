@@ -26,7 +26,7 @@
     flex: 0 0 360%*100/1200;
   }
   @media (max-width: $page-container) {
-    flex: 1 0 380px;
+    flex: 1 0 320px;
   }
   @media (max-width: 420px) {
     display: block;
@@ -60,7 +60,7 @@
     box-shadow: none;
   }
   @media (max-width: $page-container) {
-    min-width: 380px;
+    min-width: 320px;
   }
   @media (max-width: 380px) {
     overflow-x: hidden;
