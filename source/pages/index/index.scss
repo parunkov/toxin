@@ -66,8 +66,10 @@
   @media (max-width: $page-container) {
     min-width: 380px;
   }
-  @media (max-width: 380px) {
-    overflow-x: hidden;
+  @media (max-width: 390px) {
+    // overflow-x: hidden;
+    width: 96%;
+    min-width: 96%;
   }
 }
 .index__form {
