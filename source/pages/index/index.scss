@@ -26,14 +26,15 @@
   width: 100%;
   min-height: 830px;
   background: transparent center bottom no-repeat;
-  // background-size: 1440px 900px;
   background-size: cover;
   animation-name: bg;
   animation-duration: 45s;
   animation-timing-function: steps(1, end);
   animation-iteration-count: infinite;
-
   animation-fill-mode: forwards;
+  @media (max-width: $mobile-menu-breakpoint) {
+    min-height: 560px;
+  }
 }
 
 .index__row {
@@ -42,6 +43,9 @@
   &--1 {
     margin-bottom: 320px;
     padding-top: 68px;
+    @media (max-width: $mobile-menu-breakpoint) {
+      margin-bottom: 50px;
+    }
   }
 }
 .index__col-1 {
