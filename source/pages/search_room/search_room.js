@@ -24,10 +24,18 @@ let dateToValue = (date) => (('0' + date.getDate()).substr(-2) + ' ' + months[da
 
 $('.search_room__container .input__icon'). click(function(evt) {
 	evt.preventDefault();
-	datepickerContainer.css({'display' : 'block'});
+	// datepickerContainer.css({'display' : 'block'});
+	if (datepickerContainer.css('display') === 'block') {
+		datepickerContainer.css({'display' : 'none'});
+		$('.input__icon-text').text('expand_more');
+	} else {
+		datepickerContainer.css({'display' : 'block'});
+		$('.input__icon-text').text('expand_less');
+	}
 	setBtn.click(function(evt) {
 		evt.preventDefault();
 		datepickerContainer.css({'display' : 'none'});
+		$('.input__icon-text').text('expand_more');
 		if (myDatepicker.selectedDates[0]) {
 			input.attr('value', dateToValue(myDatepicker.selectedDates[0]));
 		} else {

@@ -17,14 +17,16 @@ $(document).ready(() => {
 	let $decrementBtn = $('.iqdropdown .button-decrement');
 	let $incrementBtn = $('.iqdropdown .button-increment');
 	let $text = $('.iqdropdown-selection');
+	let $arrow = $('.input__icon-dropdown')
 
 	$type.each(function(i) {
 		if ($type.eq(i).html() === 'rooms') {
-			$text.eq(i).html('0 спален, 0 кроватей, 0 ванных');
+			$text.eq(i).attr('value', '0 спален, 0 кроватей, 0 ванных');
 		} else {
-			$text.eq(i).html('Сколько гостей');
+			$text.eq(i).attr('placeholder', 'Сколько гостей');
 		}
 	});
+
 
 	$counter.each(function(i) {
 		$incrementBtn.eq(i).click(function(evt) {
@@ -58,7 +60,14 @@ $(document).ready(() => {
 
 	$('.iqdropdown').each(function(i) {
 
-		$('.iqdropdown').eq(i).find('.iqdropdown-selection').click(function() {
+		$('.iqdropdown').eq(i).find('.input__icon-dropdown').click(function() {
+			// console.log($('.iqdropdown').eq(i).find('.input__icon-dropdown-text').text());
+			if ($('.iqdropdown').eq(i).find('.input__icon-dropdown-text').text() === 'expand_more') {
+				$('.iqdropdown').eq(i).find('.input__icon-dropdown-text').text('expand_less');
+			} else {
+				$('.iqdropdown').eq(i).find('.input__icon-dropdown-text').text('expand_more');
+			}
+			$('.iqdropdown').eq(i).attr('style', 'border-radius: 4px 4px 0 0;');
 			$('.iqdropdown').eq(i).toggleClass('menu-open');
 		});
 
@@ -72,28 +81,31 @@ $(document).ready(() => {
 				let textPart1 = $itemCounter[1].innerHTML + ' ' + num2str(+$itemCounter[1].innerHTML, ['кровать', 'кровати', 'кроватей']) + ',';
 				let textPart2 = $itemCounter[2].innerHTML + ' ' + num2str(+$itemCounter[2].innerHTML, ['ванная', 'ванные', 'ванных']);
 
-				$('.iqdropdown-selection').eq(i).html(textPart0 + ' ' + textPart1 + ' ' + textPart2);
+				$('.iqdropdown-selection').eq(i).attr('value', textPart0 + ' ' + textPart1 + ' ' + textPart2);
 
 			} else {
 				let guestsNumber = +$itemCounter[0].innerHTML + +$itemCounter[1].innerHTML;
 				let babyNumber = +$itemCounter[2].innerHTML;
-				$('.iqdropdown-selection').eq(i).html(guestsNumber + ' ' + num2str(+guestsNumber, ['гость', 'гостя', 'гостей']));
+				$('.iqdropdown-selection').eq(i).attr('value', guestsNumber + ' ' + num2str(+guestsNumber, ['гость', 'гостя', 'гостей']));
 				if (babyNumber) {
-					let inputText = $('.iqdropdown-selection').eq(i).html();
-					$('.iqdropdown-selection').eq(i).html(inputText + ', ' + babyNumber + ' ' + num2str(+babyNumber, ['младенец', 'младенца', 'младенцев']));
+					let inputText = $('.iqdropdown-selection').eq(i).attr('value');
+					$('.iqdropdown-selection').eq(i).attr('value', inputText + ', ' + babyNumber + ' ' + num2str(+babyNumber, ['младенец', 'младенца', 'младенцев']));
 				}
 			}
 
 		});
 
 		$('.iqdropdown').eq(i).find('.dropdown__set').click(function() {
+			$('.iqdropdown').eq(i).find('.input__icon-dropdown-text').text('expand_more');
+			$('.iqdropdown').eq(i).attr('style', '');
 			$('.iqdropdown').eq(i).find('.dropdown__clear').css({'display' : 'inline'});
 			$('.iqdropdown').eq(i).removeClass('menu-open');
 		});
 		$('.iqdropdown').eq(i).find('.dropdown__clear').click(function() {
 			$('.iqdropdown').eq(i).find('.counter').html('0');
 			opacytyBtn();
-			$('.iqdropdown').eq(i).find('.iqdropdown-selection').html('Сколько гостей');
+			$('.iqdropdown').eq(i).find('.iqdropdown-selection').attr('placeholder', 'Сколько гостей');
+			$('.iqdropdown').eq(i).find('.iqdropdown-selection').attr('value', '');
 			$('.iqdropdown').eq(i).find('.dropdown__clear').css({'display' : 'none'});
 		});
 	});

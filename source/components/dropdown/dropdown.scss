@@ -30,7 +30,7 @@
   height: 44px;
   text-align: left;
   border: 1px solid $black-25;
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px;
   cursor: pointer;
   &:hover {
     border: 1px solid $black-50;
@@ -44,13 +44,21 @@
   top: 9px;
   left: 0;
   display: block;
-  width: 100%;
+  width: 86%;
   padding-left: 15px;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  line-height: 1.6em;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black-75;
+  outline: none;
 }
-.iqdropdown .iqdropdown-selection::after {
-  content: 'expand_more';
+.input__icon-dropdown-text {
+  // content: 'expand_more';
   position: absolute;
-  top: -7px;
+  top: 2px;
   right: 2px;
   width: 40px;
   height: 39px;
