@@ -75,6 +75,7 @@
 .index__form {
   width: 320%*100/380;
   margin: 0 auto;
+  min-width: 280px;
   @media (max-width: 380px) {
     max-width: 315px;
   }
