@@ -52,13 +52,19 @@
   background: $black;
   &--cross-1 {
     display: none;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    transform-origin: center center;
     transform: rotate(45deg);
-    margin-top: 13px;
   }
   &--cross-2 {
     display: none;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    transform-origin: center center;
     transform: rotate(-45deg);
-    margin-top: -9.5px;
   }
   &--show {
     display: block;
