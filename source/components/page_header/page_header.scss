@@ -26,6 +26,9 @@
     }
     &:nth-child(2) {
       margin-right: 41px;
+      .header__li--incl a {
+        min-width: 65px;
+      }
       @media (max-width: $mobile-menu-breakpoint) {
         margin-right: 0;
         margin-left: 0;

@@ -162,15 +162,16 @@
     text-align: left;
     @media (max-width: $mobile-menu-breakpoint) {
       position: static;
+      text-align: center;
       padding-left: 0;
-      background: $black-5;
+      background: $black-10;
       padding-top: 5px;
       padding-bottom: 5px;
       margin-bottom: 2px;
     }
     &:hover {
       @media (max-width: $mobile-menu-breakpoint) {
-        background: $black-10;
+        // background: $black-10;
         a {
           color: $black-text;
         }
@@ -180,6 +181,9 @@
       display: block;
       min-width: 110px;
       // white-space: nowrap;
+      @media (max-width: $mobile-menu-breakpoint) {
+        display: inline;
+      }
     }
   }
   &--active {
