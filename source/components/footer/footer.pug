@@ -8,15 +8,15 @@ mixin footer(cl, text, menu, h3, p, copyright, ui)
 			nav.footer__nav
 				each val, i in menu
 					div(class ="footer__col footer__col--" + (i + 2))
-						h3.footer__h3
-							a(href=menu[i].href class="footer__a") !{menu[i].item}
+						h3.footer__h3 !{menu[i].item}
+							// a(href=menu[i].href class="footer__a") !{menu[i].item}
 						ul.footer__ul.footer__ul--menu.footer__ul-incl
 							each val, j in menu[i].incl
 								li.footer__li.footer__li--incl
 									a(href=menu[i].hrefs[j] class="footer__a") !{menu[i].incl[j]}
 			.footer__col.footer__col--25
-				a(href="/mock-address/change-me" class="footer__a")
-					h3.footer__h3.footer__h3--col-5= h3
+				// a(href="/mock-address/change-me" class="footer__a")
+				h3.footer__h3.footer__h3--col-5= h3
 				p.footer__p= p 
 				form.footer__form
 					if ui
