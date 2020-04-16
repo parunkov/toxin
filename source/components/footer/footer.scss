@@ -18,6 +18,8 @@
   max-width: 1200%*100/1440;
   margin: 0 auto;
   padding-top: 96px;
+  padding-right: 20%*100/1440;
+  padding-left: 20%*100/1440;
   &--bottom {
     padding-top: 12px;
   }
@@ -46,19 +48,28 @@
     flex: 0 0 100%;
   }
   // border: 1px solid red;
-  &--1, &--25 {
-    flex: 1 0 300%*100/1200;
-    min-width: 300px;
-    padding-right: 20%*100/1200;
-    padding-left: 20%*100/1200;
+  &--1 {
+    flex: 1 0 280%*100/1160;
+    min-width: 280px;
+    padding-right: 20%*100/1160;
+    padding-left: 0;
+  }
+  &--25 {
+    flex: 1 0 280%*100/1160;
+    min-width: 280px;
+    padding-right: 0;
+    padding-left: 20%*100/1160;
+    @media (max-width: 1300px) {
+      padding-left: 0;
+    }
   }
   &--2, &--3, &--4 {
     flex: 1 0 200%*100/600;
     padding-right: 20%*100/600;
     padding-left: 20%*100/600;
     @media (max-width: 1300px) {
-      padding-right: 20%*100/1200;
-      padding-left: 20%*100/1200;
+      padding-right: 40%*100/1200;
+      padding-left: 0;
     }
     @media (max-width: 590px) {
       padding-left: 3px;
@@ -77,17 +88,17 @@
     padding-top: 5px;
   }
   &--26 {
-    flex: 1 0 320px;
+    flex: 1 0 300px;
     padding-top: 12px;
-    padding-right: 20%*100/1200;
-    padding-left: 20%*100/1200;
+    padding-right: 20%*100/1160;
+    padding-left: 0;
   }
   &--27 {
-    flex: 1 0 150px;
+    flex: 1 0 130px;
     text-align: right;
     margin-bottom: 23px;
-    padding-right: 20%*100/1200;
-    padding-left: 20%*100/1200;
+    padding-right: 0;
+    padding-left: 20%*100/1160;
   }
   &--1, &--2, &--3, &--4, &--25, &--26, &--27 {
     @media (max-width: $mobile-menu-breakpoint) {
@@ -108,7 +119,7 @@
 .footer__nav {
   padding-top: 4px;
   display: flex;
-  flex: 1 0 600%*100/1200;
+  flex: 1 0 600%*100/1160;
   flex-wrap: wrap;
   @media (max-width: 1300px) {
     flex: 0 0 100%;
