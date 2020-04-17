@@ -51,6 +51,12 @@
       margin-bottom: 50px;
     }
   }
+  &--2 {
+    min-height: 315px;
+    @media (max-width: $mobile-menu-breakpoint) {
+      min-height: 45px;
+    }
+  }
 }
 .index__col-1 {
   flex: 0 0 380px;
@@ -93,6 +99,7 @@
 }
 .index__col-4 {
   padding-right: 0;
+  margin-top: auto;
   margin-right: -6px;
   flex: 0 0 300px;
   text-align: right;
@@ -100,6 +107,6 @@
     margin-right: 0;
   }
   @media (max-width: 380px) {
-    padding-right: 30px;
+    // padding-right: 15px;
   }
 }
