@@ -15,6 +15,22 @@
     background-image: url('bg3.jpg');
   }
 }
+@keyframes text {
+  0% {
+    background: transparent;
+  }
+
+  33% {
+    background: $white;
+  }
+
+  66% {
+    background: transparent;
+  }
+  100% {
+    background: transparent;
+  }
+}
 .index__header {
   position: relative;
   z-index: 10;
@@ -100,7 +116,7 @@
 .index__col-4 {
   padding-right: 0;
   margin-top: auto;
-  margin-right: -6px;
+  margin-right: -9px;
   flex: 0 0 300px;
   text-align: right;
   @media (max-width: $mobile-menu-breakpoint) {
@@ -109,4 +125,14 @@
   @media (max-width: 380px) {
     // padding-right: 15px;
   }
+}
+.index__p {
+  animation-name: text;
+  animation-duration: 45s;
+  animation-timing-function: steps(1, end);
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  color: $black-75;
+  padding-right: 3px;
+  border-radius: 4px;
 }
