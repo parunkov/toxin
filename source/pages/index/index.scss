@@ -59,12 +59,12 @@
 
 .index__row {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   &--1 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     padding-top: 68px;
     @media (max-width: $mobile-menu-breakpoint) {
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
   }
   &--2 {
@@ -76,6 +76,8 @@
 }
 .index__col-1 {
   flex: 0 0 380px;
+  margin-right: 20px;
+  margin-bottom: 20px;
   // border: 1px solid green;
   @media (max-width: $page-container) {
     flex: 0 0 380px;
