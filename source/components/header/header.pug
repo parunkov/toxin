@@ -1,5 +1,5 @@
 mixin header(cl, menu, active, btn1, href1, btn2, href2, login)
-	section.header__container
+	section.page__container.header__container
 		.header__active= active
 		a(href="index.html")
 			span.page__logo.header__logo
@@ -29,10 +29,10 @@ mixin header(cl, menu, active, btn1, href1, btn2, href2, login)
 				.header__user Cosmin Negoita
 		else
 			.header__login-container
-				.header__login-content
-					.header__login-wrap
-						a(href=href1 class="btn btn--white btn--header-white") 
-							span !{btn1}
-					.header__login-wrap
-						a(href=href2 class="btn btn--small") !{btn2}
+				// .header__login-content
+				// .header__login-wrap
+				a(href=href1 class="btn btn--white btn--header-white header__login-wrap") 
+					span !{btn1}
+				// .header__login-wrap
+				a(href=href2 class="btn btn--small header__login-wrap") !{btn2}
 
