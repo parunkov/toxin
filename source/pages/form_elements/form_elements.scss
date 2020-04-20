@@ -1,4 +1,7 @@
 @import '../../variables.scss';
+.form_elements__container {
+  padding: 0;
+}
 .form_elements__row {
   display: flex;
   flex-wrap: wrap;
