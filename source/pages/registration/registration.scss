@@ -3,10 +3,11 @@
   box-shadow: 0 10px 20px $black-5;
 }
 .registration__wrap {
-  height: 700px;
+  // min-height: 700px;
   padding-top: 30px;
-  background: transparent url('reg__bg.jpg') center top no-repeat;
-  background-position-y: -70px;
+  padding-bottom: 22px;
+  background: transparent url('reg__bg.jpg') center bottom no-repeat;
+  // background-position-y: -70px;
   background-size: cover;
 }
 .registration__container {
@@ -16,12 +17,13 @@
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   box-shadow: 0 0 25px $shadow;
+  max-width: 380px;
   @media (max-width: 1440px) {
     width: 380px;
   }
-  @media (max-width: 380px) {
-    width: 100vw;
-    min-width: 375px;
+  @media (max-width: 385px) {
+    width: 97%;
+    // min-width: 375px;
   }
 }
 .registration__inner {
