@@ -21,7 +21,7 @@
   }
 
   33% {
-    background: $white;
+    background: $grey;
   }
 
   66% {
@@ -37,14 +37,17 @@
   box-shadow: 0 10px 20px $black-5;
 }
 .index__container {
-  padding-right: 20%*100/1440;
-  padding-left: 20%*100/1440;
+  display: flex;
+  flex-direction: row;
+  padding-top: 70px;
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
 }
 .index__wrap {
   position: relative;
   z-index: 0;
   width: 100%;
-  min-height: 830px;
   background: transparent center bottom no-repeat;
   background-size: cover;
   animation-name: bg;
@@ -52,35 +55,16 @@
   animation-timing-function: steps(1, end);
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-  @media (max-width: $mobile-menu-breakpoint) {
-    min-height: 560px;
-  }
-}
-
-.index__row {
-  display: flex;
-  flex-wrap: wrap;
-  &--1 {
-    margin-bottom: 30px;
-    padding-top: 68px;
-    @media (max-width: $mobile-menu-breakpoint) {
-      margin-bottom: 30px;
-    }
-  }
-  &--2 {
-    min-height: 315px;
-    @media (max-width: $mobile-menu-breakpoint) {
-      min-height: 45px;
-    }
-  }
 }
 .index__col-1 {
   flex: 0 0 380px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  // border: 1px solid green;
+  max-width: 380px;
+  margin-bottom: 386px;
   @media (max-width: $page-container) {
     flex: 0 0 380px;
+  }
+  @media (max-width: $mobile-menu-breakpoint) {
+    margin-bottom: 20px;
   }
   @media (max-width: 420px) {
     display: block;
@@ -89,7 +73,10 @@
   }
 }
 .index__form-wrap {
-  // border: 1px solid red;
+  padding-left: 30%*100/380;
+  padding-right: 30%*100/380;
+  margin-bottom: 20px;
+  margin-right: 20px;
   width: 100%;
   margin: 0;
   background-color: $white;
@@ -99,33 +86,28 @@
     min-width: 380px;
   }
   @media (max-width: 390px) {
-    // overflow-x: hidden;
-    // width: 100%;
     min-width: 100%;
   }
 }
 .index__form {
-  width: 320%*100/380;
-  margin: 0 auto;
   min-width: 280px;
   @media (max-width: 380px) {
     max-width: 315px;
   }
 }
-.index__col-2, .index__col-3 {
-  flex: auto;
-}
 .index__col-4 {
+  padding-left: 20px;
   padding-right: 0;
+  padding-bottom: 24px;
   margin-top: auto;
   margin-right: -9px;
+  margin-left: auto;
   flex: 0 0 300px;
+  max-width: 300px;
   text-align: right;
   @media (max-width: $mobile-menu-breakpoint) {
     margin-right: 0;
-  }
-  @media (max-width: 380px) {
-    // padding-right: 15px;
+    flex: none;
   }
 }
 .index__p {

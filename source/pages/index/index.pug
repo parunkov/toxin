@@ -6,14 +6,14 @@ block main
 		include ../../components/page_header/page_header.pug
 	.index__wrap
 		.page__container.index__container
-			.index__row.index__row--1
-				.index__col-1
-					.index__form-wrap
-						.index__form
-							include ../../components/search/search.pug
-				.index__col-2
-			.index__row.index__row--2
-				.index__col-3
-				.index__col-4
-					p.index__p Лучшие номера для вашей работы, отдыха и просто вдохновения
+			//- .index__row.index__row--1
+			.index__col-1
+				.index__form-wrap
+					.index__form
+					include ../../components/search/search.pug
+			//- 	.index__col-2
+			//- .index__row.index__row--2
+			//- 	.index__col-3
+			.index__col-4
+				p.index__p Лучшие номера для вашей работы, отдыха и просто вдохновения
 	include ../../components/page_footer/page_footer.pug
