@@ -60,6 +60,7 @@ html {
 }
 body {
   max-width: $page-inner-max;
+  min-width: $page-min;
   margin: 0 auto;
 }
 *, *::before, *::after {

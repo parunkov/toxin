@@ -303,6 +303,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     width: auto;
+    flex: none;
   }
 }
 .header__login-container--show {
@@ -321,6 +322,6 @@
   }
   @media (max-width: $mobile-menu-breakpoint) {
     flex: none;
-    margin-right: 0;
+    margin-right: 0;    
   }
 }
