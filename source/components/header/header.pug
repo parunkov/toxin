@@ -29,10 +29,9 @@ mixin header(cl, menu, active, btn1, href1, btn2, href2, login)
 				.header__user Cosmin Negoita
 		else
 			.header__login-container
-				// .header__login-content
-				// .header__login-wrap
-				a(href=href1 class="btn btn--white btn--header-white header__login-wrap") 
-					span !{btn1}
-				// .header__login-wrap
-				a(href=href2 class="btn btn--small header__login-wrap") !{btn2}
+				.header__login-wrap
+					a(href=href1 class="btn btn--white btn--header-white header__login-wrap") 
+						span !{btn1}
+				.header__login-wrap
+					a(href=href2 class="btn btn--small header__login-wrap") !{btn2}
 
