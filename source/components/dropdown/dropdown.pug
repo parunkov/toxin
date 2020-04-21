@@ -13,21 +13,21 @@ mixin dropdown(type, cl, h3, p, item1, item2, item3, clear)
 		.iqdropdown
 			.input__container
 				input(type= text name= cl class="iqdropdown-selection "+cl autocomplete="off" readonly)
-			.input__icon-dropdown
-				i.input__icon-dropdown-text= "expand_more"
-			.iqdropdown-menu
-				div(class="iqdropdown-menu-option" data-id="item1")
-					h3.iqdropdown-item #{item1}
-					+dropdown__menu-item
-				div(class="iqdropdown-menu-option" data-id="item2")
-					h3.iqdropdown-item #{item2}
-					+dropdown__menu-item
-				div(class="iqdropdown-menu-option" data-id="item3")
-					h3.iqdropdown-item #{item3}
-					+dropdown__menu-item
-				if clear
-					.dropdown__bottom
-						.dropdown__clear--wrap
-							.dropdown__clear очистить
-						.dropdown__set--wrap
-							.dropdown__set применить
+				.input__icon-dropdown
+					i.input__icon-dropdown-text= "expand_more"
+				.iqdropdown-menu
+					div(class="iqdropdown-menu-option" data-id="item1")
+						h3.iqdropdown-item #{item1}
+						+dropdown__menu-item
+					div(class="iqdropdown-menu-option" data-id="item2")
+						h3.iqdropdown-item #{item2}
+						+dropdown__menu-item
+					div(class="iqdropdown-menu-option" data-id="item3")
+						h3.iqdropdown-item #{item3}
+						+dropdown__menu-item
+					if clear
+						.dropdown__bottom
+							.dropdown__clear--wrap
+								.dropdown__clear очистить
+							.dropdown__set--wrap
+								.dropdown__set применить

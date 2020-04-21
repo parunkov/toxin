@@ -2,7 +2,7 @@
 // @import './item-quantity-dropdown.min.css';
 .dropdown__container {
   position: relative;
-  height: 68px;
+  min-height: 68px;
 }
 .dropdown__type {
   display: none;
@@ -24,8 +24,9 @@
   text-transform: uppercase;
 }
 .iqdropdown {
-  position: absolute;
-  top: 24px;
+  // position: absolute;
+  // top: 24px;
+  clear: both;
   width: 100%;
   height: 44px;
   text-align: left;
