@@ -5,6 +5,7 @@ import '../../components/datepicker/datepicker.css';
 import './datepicker.scss';
 
 $('.datepicker__content').datepicker({
+	minDate: new Date(),
 	range: true,
 	navTitles: {
 	    days: 'MM <i>yyyy</i>',
