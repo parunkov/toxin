@@ -86,7 +86,7 @@ $(document).ready(() => {
 				$('.iqdropdown-selection').eq(i).attr('value', textPart0 + ' ' + textPart1 + ' ' + textPart2);
 
 			} else {
-				let guestsNumber = +$itemCounter[0].innerHTML + +$itemCounter[1].innerHTML;
+				let guestsNumber = +$itemCounter[0].innerHTML + +$itemCounter[1].innerHTML + +$itemCounter[2].innerHTML;
 				let babyNumber = +$itemCounter[2].innerHTML;
 				$('.iqdropdown-selection').eq(i).attr('value', guestsNumber + ' ' + num2str(+guestsNumber, ['гость', 'гостя', 'гостей']));
 				if (babyNumber) {
@@ -100,7 +100,6 @@ $(document).ready(() => {
 		$('.iqdropdown').eq(i).find('.dropdown__set').click(function() {
 			$('.iqdropdown').eq(i).find('.input__icon-dropdown-text').text('expand_more');
 			$('.iqdropdown').eq(i).attr('style', '');
-			$('.iqdropdown').eq(i).find('.dropdown__clear').css({'display' : 'inline'});
 			$('.iqdropdown').eq(i).removeClass('menu-open');
 		});
 		$('.iqdropdown').eq(i).find('.dropdown__clear').click(function() {
@@ -108,7 +107,6 @@ $(document).ready(() => {
 			opacytyBtn();
 			$('.iqdropdown').eq(i).find('.iqdropdown-selection').attr('placeholder', 'Сколько гостей');
 			$('.iqdropdown').eq(i).find('.iqdropdown-selection').attr('value', '');
-			$('.iqdropdown').eq(i).find('.dropdown__clear').css({'display' : 'none'});
 		});
 	});
 });
