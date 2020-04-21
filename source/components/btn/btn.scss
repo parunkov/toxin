@@ -3,6 +3,7 @@
   position: relative;
   min-height: 44px;
   padding-top: 16px;
+  padding-bottom: 16px;
   font-weight: 700;
   font-size: 12px;
   font-family: Montserrat, Arial, sans-serif;
@@ -49,10 +50,15 @@
       opacity: 1;
     }
   }
+  &--arrow {
+    padding-right: 40px;
+    padding-left: 20px;
+  }
   &--arrow::after {
     content: ' arrow_forward';
     position: absolute;
-    top: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
     right: 12px;
     display: inline;
     font-weight: 400;
