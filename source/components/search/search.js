@@ -20,14 +20,15 @@ setBtn.click(function() {
 
 $('.search__container .input__icon'). click(function(evt) {
 	evt.preventDefault();
-	if (datepickerContainer.css('display') === 'block') {
+	if (datepickerContainer.css('display') === 'block' && $(this).find('.input__icon-text').text() === 'expand_more') {
 		datepickerContainer.css({'display' : 'none'});
-		$('.input__icon-text').text('expand_more');
-	} else {
+		$('.search__input-wrap .input__icon-text').text('expand_more');
+		$(this).find('.input__icon-text').text('expand_more');
+	} else if (datepickerContainer.css('display') === 'none' && $(this).find('.input__icon-text').text() === 'expand_less') {
 		datepickerContainer.css({'display' : 'block'});
-		$('.input__icon-text').text('expand_less');
+		$('.search__input-wrap .input__icon-text').text('expand_more');
+		$(this).find('.input__icon-text').text('expand_less');
 	}
-	console.log(datepickerContainer.css('display'));
 	setBtn.click(function(evt) {
 		evt.preventDefault();
 		datepickerContainer.css({'display' : 'none'});
