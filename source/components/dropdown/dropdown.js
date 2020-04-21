@@ -51,8 +51,10 @@ $(document).ready(() => {
 		for (let i = 0; i < $counter.length; i++) {
 			if ($counter.eq(i).html() === '0') {
 				$decrementBtn.eq(i).css({'opacity' : '0.5'});
+				$decrementBtn.eq(i).css({'cursor' : 'default'});
 			} else {
 				$decrementBtn.eq(i).css({'opacity' : '1'});
+				$decrementBtn.eq(i).css({'cursor' : 'pointer'});
 			}
 		}
 	}

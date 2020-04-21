@@ -24,6 +24,7 @@
 }
 .paginationjs-prev, .paginationjs-next {
   background: $gradient-green;
+  cursor: pointer;
 }
 .paginationjs-prev a, .paginationjs-next a {
   position: relative;

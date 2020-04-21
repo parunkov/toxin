@@ -16,7 +16,9 @@
     display: block;
     width: 100%;
     padding-top: 0;
+    padding-bottom: 0;
     border: none;
+    cursor: pointer;
   }
   &:hover, &--hover {
     opacity: 0.5;
