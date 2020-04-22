@@ -8,6 +8,7 @@
 }
 .checkbox__custom {
   position: absolute;
+  cursor: pointer;
   top: 0;
   left: 0;
   width: 20px;
@@ -21,11 +22,13 @@
   border: 1px solid $purple;
 }
 .checkbox__text {
+  cursor: pointer;
   margin-bottom: 11px;
   padding-left: 29px;
   line-height: 1.4em;
   color: $black-50;
   &--small {
+    cursor: pointer;
     margin-bottom: 12px;
     padding-left: 29px;
     font-weight: 400;
@@ -37,6 +40,7 @@
   }
 }
 .checkbox__header {
+  cursor: pointer;
   margin-bottom: 5px;
   padding-left: 29px;
 }
