@@ -10,6 +10,9 @@
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 18px;
+  .input__h3 {
+    word-break: break-all;
+  }
 }
 .search__input-1-wrap, .search__input-2-wrap {
   margin-top: auto;

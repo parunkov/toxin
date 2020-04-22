@@ -12,6 +12,7 @@
   float: left;
   width: 50%;
   padding-top: 1px;
+  margin-bottom: 7px;
 }
 #amount {
   display: inline-block;
@@ -26,6 +27,7 @@
   text-transform: uppercase;
 }
 .ui-slider-horizontal {
+  position: relative;
   height: 6px;
   background-color: $white;
   border: 1px solid $black-25;
@@ -56,4 +58,7 @@
   background: $gradient-green;
   background-position: 0 0;
   border: 0;
+}
+.slider__clearfix {
+  clear: both;
 }
