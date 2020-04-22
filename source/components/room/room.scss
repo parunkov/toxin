@@ -39,11 +39,15 @@
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 17px;
+  .input__h3 {
+    word-break: break-all;
+  }
 }
 .room__input-1, .room__input-2 {
   letter-spacing: -0.4px;
 }
 .room__input-inner {
+  margin-top: auto;
   flex: 0 0 47%;
 }
 .room__input-space {
