@@ -73,6 +73,8 @@
   transform: rotate(180deg);
 }
 .iqdropdown-item {
+  padding-right: 35%;
+  margin-bottom: 7px;
   font-weight: 700;
   font-size: 12px;
   font-family: Montserrat, Arial, sans-serif;
@@ -101,7 +103,7 @@
 }
 .iqdropdown .iqdropdown-menu-option {
   position: relative;
-  height: 30px;
+  min-height: 30px;
   margin-bottom: 7px;
   padding-top: 5px;
   padding-left: 14px;
