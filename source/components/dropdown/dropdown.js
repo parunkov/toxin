@@ -20,7 +20,7 @@ $(document).ready(() => {
 	let $arrow = $('.input__icon-dropdown');
 
 	let totalCount = 0;
-	let inputText = '';
+	let inputValue = '';
 
 
 	$type.each(function(i) {
@@ -96,15 +96,17 @@ $(document).ready(() => {
 				let textPart1 = $itemCounter[1].innerHTML + ' ' + num2str(+$itemCounter[1].innerHTML, ['кровать', 'кровати', 'кроватей']) + ',';
 				let textPart2 = $itemCounter[2].innerHTML + ' ' + num2str(+$itemCounter[2].innerHTML, ['ванная', 'ванные', 'ванных']);
 
-				$('.iqdropdown-selection').eq(i).attr('value', textPart0 + ' ' + textPart1 + ' ' + textPart2);
+				// $('.iqdropdown-selection').eq(i).attr('value', textPart0 + ' ' + textPart1 + ' ' + textPart2);
+				inputValue = textPart0 + ' ' + textPart1 + ' ' + textPart2;
 
 			} else {
 				let guestsNumber = +$itemCounter[0].innerHTML + +$itemCounter[1].innerHTML + +$itemCounter[2].innerHTML;
 				let babyNumber = +$itemCounter[2].innerHTML;
-				$('.iqdropdown-selection').eq(i).attr('value', guestsNumber + ' ' + num2str(+guestsNumber, ['гость', 'гостя', 'гостей']));
+				inputValue = guestsNumber + ' ' + num2str(+guestsNumber, ['гость', 'гостя', 'гостей']);
 				if (babyNumber) {
-					let inputText = $('.iqdropdown-selection').eq(i).attr('value');
-					$('.iqdropdown-selection').eq(i).attr('value', inputText + ', ' + babyNumber + ' ' + num2str(+babyNumber, ['младенец', 'младенца', 'младенцев']));
+					let inputText = inputValue;
+					// $('.iqdropdown-selection').eq(i).attr('value', inputText + ', ' + babyNumber + ' ' + num2str(+babyNumber, ['младенец', 'младенца', 'младенцев']));
+					inputValue = inputText + ', ' + babyNumber + ' ' + num2str(+babyNumber, ['младенец', 'младенца', 'младенцев']);
 				}
 			}
 
@@ -114,12 +116,14 @@ $(document).ready(() => {
 			$('.iqdropdown').eq(i).find('.input__icon-dropdown-text').text('expand_more');
 			$('.iqdropdown').eq(i).attr('style', '');
 			$('.iqdropdown').eq(i).removeClass('menu-open');
+			$('.iqdropdown').eq(i).find('.iqdropdown-selection').attr('value', inputValue);
 		});
 		$('.iqdropdown').eq(i).find('.dropdown__clear').click(function() {
 			$('.iqdropdown').eq(i).find('.counter').html('0');
 			opacytyBtn();
 			$('.iqdropdown').eq(i).find('.iqdropdown-selection').attr('placeholder', 'Сколько гостей');
 			$('.iqdropdown').eq(i).find('.iqdropdown-selection').attr('value', '');
+			inputValue = '';
 		});
 	});
 });
