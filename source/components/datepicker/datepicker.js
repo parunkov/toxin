@@ -12,6 +12,7 @@ $('.datepicker__content').datepicker({
 	    months: 'yyyy',
 	    years: 'yyyy1 - yyyy2'
 	},
+	dateFormat: 'dd.mm.yyyy',
 });
 
 

@@ -13,6 +13,20 @@
   .input__h3 {
     word-break: break-all;
   }
+  input {
+    &::-webkit-input-placeholder {
+      color: $black-75;
+    }
+    &::-moz-placeholder {
+      color: $black-75;
+    }
+    &:-moz-placeholder {
+      color: $black-75;
+    }
+    &:-ms-input-placeholder {
+      color: $black-75;
+    }
+  }
 }
 .search__input-1-wrap, .search__input-2-wrap {
   margin-top: auto;

@@ -11,7 +11,8 @@ let datepickerContainer = $('.search__datepicker-container');
 let setBtn = $('.search__datepicker-container .datepicker__set');
 let arrival = $('.search__input-1');
 let departure = $('.search__input-2');
-let dateToValue = (date) => date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).substr(-2) + '-' + ('0' + date.getDate()).substr(-2);
+// let dateToValue = (date) => date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).substr(-2) + '-' + ('0' + date.getDate()).substr(-2);
+let dateToValue = (date) =>  ('0' + date.getDate()).substr(-2) + '.' + ('0' + (date.getMonth() + 1)).substr(-2) + '.' + date.getFullYear();
 
 setBtn.click(function() {
 	$('.input__icon-text').text('expand_more');
