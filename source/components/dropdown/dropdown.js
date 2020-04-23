@@ -17,7 +17,11 @@ $(document).ready(() => {
 	let $decrementBtn = $('.iqdropdown .button-decrement');
 	let $incrementBtn = $('.iqdropdown .button-increment');
 	let $text = $('.iqdropdown-selection');
-	let $arrow = $('.input__icon-dropdown')
+	let $arrow = $('.input__icon-dropdown');
+
+	let totalCount = 0;
+	let inputText = '';
+
 
 	$type.each(function(i) {
 		if ($type.eq(i).html() === 'rooms') {
@@ -34,14 +38,23 @@ $(document).ready(() => {
 			let count = +$counter.eq(i).html();
 			count++;
 			$counter.eq(i).html(count);
+			totalCount++;
+			// console.log(totalCount);
+			if (totalCount) {
+				$('.dropdown__clear').eq(i).css({'display' : 'block'});
+			} 
 		});
 		$decrementBtn.eq(i).click(function(evt) {
 			evt.preventDefault();
 			let count = +$counter.eq(i).html();
 			if (count <= 0) {
 				count = 0;
-			} else{
+			} else {
 				count--;
+				totalCount--;
+			}
+			if (!totalCount) {
+				$('.dropdown__clear').eq(i).css({'display' : 'none'});
 			}
 			$counter.eq(i).html(count);
 		});
