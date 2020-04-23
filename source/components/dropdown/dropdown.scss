@@ -30,7 +30,7 @@
   text-align: left;
   border: 1px solid $black-25;
   border-radius: 4px;
-  cursor: pointer;
+  // cursor: pointer;
 }
 .iqdropdown.menu-open {
   border: 1px solid $black-50;
@@ -50,6 +50,7 @@
   font-family: Montserrat, Arial, sans-serif;
   color: $black-75;
   outline: none;
+  cursor: default;
 }
 .input__icon-dropdown-text {
   // content: 'expand_more';
@@ -66,6 +67,7 @@
   color: $black-50;
   background: $white;
   border-radius: 4px;
+  cursor: pointer;
   // border: 1px solid red;
 }
 .iqdropdown.menu-open .iqdropdown-selection::after {
