@@ -2,10 +2,11 @@ extends ../../base.pug
 block title
 	| Sign In
 block main
-	.sign_in__header
+	header.sign_in__header
 		include ../../components/page_header/page_header.pug
-	.sign_in__wrap
+	main.sign_in__wrap
 		.sign_in__container
 			.sign_in__inner
 				include ../../components/login/login.pug
+	.page__space
 	include ../../components/page_footer/page_footer.pug
