@@ -25,10 +25,15 @@ $('.search__container .input__icon'). click(function(evt) {
 		datepickerContainer.css({'display' : 'none'});
 		$('.search__input-wrap .input__icon-text').text('expand_more');
 		$(this).find('.input__icon-text').text('expand_more');
+		$('.search__input-wrap .input__icon').css({'cursor' : 'pointer'});
+	} else if (datepickerContainer.css('display') === 'block' && $(this).find('.input__icon-text').text() === 'expand_less') {
+		$(this).find('.input__icon-text').text('expand_more');
 	} else if (datepickerContainer.css('display') === 'none' && $(this).find('.input__icon-text').text() === 'expand_less') {
 		datepickerContainer.css({'display' : 'block'});
 		$('.search__input-wrap .input__icon-text').text('expand_more');
+		$('.search__input-wrap .input__icon').css({'cursor' : 'default'});
 		$(this).find('.input__icon-text').text('expand_less');
+		$(this).css({'cursor' : 'pointer'});
 	}
 	setBtn.click(function(evt) {
 		evt.preventDefault();
