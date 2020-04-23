@@ -17,6 +17,10 @@
   }
   .header__li {
     margin-right: 34px;
+    @media (max-width: $mobile-menu-breakpoint) {
+        margin-right: 0;
+        margin-left: 0;
+      }
     &:nth-child(1) {
       margin-right: 18px;
       @media (max-width: $mobile-menu-breakpoint) {
