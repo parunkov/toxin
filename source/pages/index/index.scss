@@ -110,7 +110,7 @@
   text-align: right;
   @media (max-width: $mobile-menu-breakpoint) {
     margin-right: 0;
-    flex: none;
+    flex: 0 1 auto;
   }
 }
 .index__p {
