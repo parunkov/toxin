@@ -1,13 +1,13 @@
 @import '../../variables.scss';
 .footer__logo {
-  @media (max-width: 590px) {
+  @media (max-width: 600px) {
     margin: 0 auto;
   }
 }
 .footer__block-1 {
   padding-bottom: 79px;
   border-bottom: 1px solid $black-10;
-  @media (max-width: 590px) {
+  @media (max-width: 600px) {
     text-align: center;
   }
 }
@@ -71,11 +71,12 @@
       padding-right: 40%*100/1200;
       padding-left: 0;
     }
-    @media (max-width: 590px) {
+    @media (max-width: 600px) {
       padding-left: 3px;
       padding-right: 3px;
       display: block;
       flex: 0 0 100%;
+      margin-bottom: 24px;
     }
   }
   &--2, &--3 {
@@ -107,7 +108,7 @@
     }
   }
   &--26, &--27 {
-    @media (max-width: 590px) {
+    @media (max-width: 600px) {
       padding-left: 0;
       padding-right: 0;
       display: block;
@@ -168,7 +169,7 @@
     @media (max-width: 1300px) {
       width: 450px;
     }
-    @media (max-width: 590px) {
+    @media (max-width: 600px) {
       width: 100%;
     }
   }
