@@ -2,36 +2,33 @@ import '../../variables.scss';
 import './pagination.scss';
 import '../../../node_modules/paginationjs/src/pagination.js';
 
-$(function() {  
-  (function(name) {
-    var container = $('#pagination-container');
-    var sources = function () {
-      var result = [];
+$(() => {
+  (function () {
+    const $container = $('#pagination-container');
+    const sources = (function () {
+      const result = [];
 
-      for (var i = 0; i < 180; i++) {
+      for (let i = 0; i < 180; i += 1) {
         result.push(i);
       }
 
       return result;
-    }();
+    }());
 
-    var options = {
+    const options = {
       dataSource: sources,
       pageSize: 12,
       pageRange: 1,
       autoHidePrevious: true,
       autoHideNext: true,
-      callback: function (response, pagination) {
+      callback(response, pagination) {
         $('.pagination__first').html(pagination.pageNumber * pagination.pageSize - pagination.pageSize + 1);
         $('.pagination__second').html(pagination.pageNumber * pagination.pageSize);
-      }
+      },
     };
-    container.pagination(options);
-
-  })();
-
+    $container.pagination(options);
+  }());
 });
-
 
 
 // $(function() {
@@ -41,10 +38,6 @@ $(function() {
 //         cssStyle: 'light-theme'
 //     });
 // });
-
-
-
-
 
 
 // import '../../../node_modules/paginationjs/dist/pagination.js';
