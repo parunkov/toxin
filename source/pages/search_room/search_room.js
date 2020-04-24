@@ -12,45 +12,45 @@ import '../../components/datepicker/datepicker.js';
 import '../../components/pagination/pagination.js';
 import './search_room.scss';
 
-let myDatepicker = $('.search_room__datepicker-container .datepicker__content').datepicker().data('datepicker');
-let datepickerContainer = $('.search_room__datepicker-container');
-let setBtn = $('.search_room__datepicker-container .datepicker__set');
-let input = $('.search_room__input');
-let months = [
-	'янв', 'фев', 'мар', 'апр', 'май', 'июн',
-	'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
+const $myDatepicker = $('.search_room__datepicker-container .datepicker__content').datepicker().data('datepicker');
+const $datepickerContainer = $('.search_room__datepicker-container');
+const $setBtn = $('.search_room__datepicker-container .datepicker__set');
+const $input = $('.search_room__input');
+const months = [
+  'янв', 'фев', 'мар', 'апр', 'май', 'июн',
+  'июл', 'авг', 'сен', 'окт', 'ноя', 'дек',
 ];
-let dateToValue = (date) => (('0' + date.getDate()).substr(-2) + ' ' + months[date.getMonth()]);
+const dateToValue = (date) => (`${(`0${date.getDate()}`).substr(-2)} ${months[date.getMonth()]}`);
 
-$('.search_room__container .input__icon'). click(function(evt) {
-	evt.preventDefault();
-	// datepickerContainer.css({'display' : 'block'});
-	if (datepickerContainer.css('display') === 'block') {
-		datepickerContainer.css({'display' : 'none'});
-		$('.input__icon-text').text('expand_more');
-	} else {
-		datepickerContainer.css({'display' : 'block'});
-		$('.input__icon-text').text('expand_less');
-	}
-	setBtn.click(function(evt) {
-		evt.preventDefault();
-		datepickerContainer.css({'display' : 'none'});
-		$('.input__icon-text').text('expand_more');
-		if (myDatepicker.selectedDates[0]) {
-			input.attr('value', dateToValue(myDatepicker.selectedDates[0]));
-		} else {
-			input.attr('value', '');
-		}
-		if (myDatepicker.selectedDates[1]) {
-			input.attr('value', dateToValue(myDatepicker.selectedDates[0]) + ' - ' + dateToValue(myDatepicker.selectedDates[1]));
-		} 
-	});
+$('.search_room__container .input__icon').click((evt) => {
+  evt.preventDefault();
+  // $datepickerContainer.css({'display' : 'block'});
+  if ($datepickerContainer.css('display') === 'block') {
+    $datepickerContainer.css({ display: 'none' });
+    $('.input__icon-text').text('expand_more');
+  } else {
+    $datepickerContainer.css({ display: 'block' });
+    $('.input__icon-text').text('expand_less');
+  }
+  $setBtn.click((e) => {
+    e.preventDefault();
+    $datepickerContainer.css({ display: 'none' });
+    $('.input__icon-text').text('expand_more');
+    if ($myDatepicker.selectedDates[0]) {
+      $input.attr('value', dateToValue($myDatepicker.selectedDates[0]));
+    } else {
+      input.attr('value', '');
+    }
+    if ($myDatepicker.selectedDates[1]) {
+      $input.attr('value', `${dateToValue($myDatepicker.selectedDates[0])} - ${dateToValue($myDatepicker.selectedDates[1])}`);
+    }
+  });
 });
 
-$('.search_room__expandable-h3').click(function(evt) {
-	evt.preventDefault();
-	$('.search_room__expandable-text').toggleClass('d-none');
-	$('.search_room__expandable-h3').toggleClass('search_room__expandable-h3--rotate');
+$('.search_room__expandable-h3').click((evt) => {
+  evt.preventDefault();
+  $('.search_room__expandable-text').toggleClass('d-none');
+  $('.search_room__expandable-h3').toggleClass('search_room__expandable-h3--rotate');
 });
 
 $('.search_room__checkbox-1:gt(0)').prop('checked', true);
@@ -58,27 +58,31 @@ $('.search_room__checkbox-3:lt(4)').prop('checked', true);
 $('.search_room__checkbox-3').eq(0).prop('checked', false);
 
 $(document).ready(() => {
-	$('.search_room__dropdown-wrap .iqdropdown button').eq(1).trigger('click');
-	$('.search_room__dropdown-wrap .iqdropdown button').eq(1).trigger('click');
-	$('.search_room__dropdown-wrap .iqdropdown button').eq(3).trigger('click');
-	$('.search_room__dropdown-wrap .iqdropdown button').eq(5).trigger('click');
-	$('.search_room__dropdown-2-wrap .iqdropdown button').eq(1).trigger('click');
-	$('.search_room__dropdown-2-wrap .iqdropdown button').eq(1).trigger('click');
-	$('.search_room__dropdown-2-wrap .iqdropdown button').eq(3).trigger('click');
-	$('.search_room__dropdown-2-wrap .iqdropdown button').eq(3).trigger('click');
-	$('.search_room__card-wrap').eq(0).click(function(evt) {
-		evt.preventDefault();
-		let classList = evt.target.classList;
-		let contains = function(arr, elem) {
-			for (var i = 0; i < arr.length; i++) {
-				if (arr[i] === elem) {
-					return true;
-				}
-			}
-			return false;
-		}
-		if (!(contains(classList, 'card__arrow-right') || contains(classList, 'card__arrow-left') || contains(classList, 'card__control'))) {
-			window.location.href = 'room_details.html';
-		}
-	});
+  $button1 = $('.search_room__dropdown-wrap .iqdropdown button');
+  $button2 = $('.search_room__dropdown-2-wrap .iqdropdown button');
+
+  $button1.eq(1).trigger('click');
+  $button1.eq(1).trigger('click');
+  $button1.eq(3).trigger('click');
+  $button1.eq(5).trigger('click');
+  $button2.eq(1).trigger('click');
+  $button2.eq(1).trigger('click');
+  $button2.eq(3).trigger('click');
+  $button2.eq(3).trigger('click');
+  
+  $('.search_room__card-wrap').eq(0).click((evt) => {
+    evt.preventDefault();
+    const { classList } = evt.target;
+    const contains = function (arr, elem) {
+      for (let i = 0; i < arr.length; i += 1) {
+        if (arr[i] === elem) {
+          return true;
+        }
+      }
+      return false;
+    };
+    if (!(contains(classList, 'card__arrow-right') || contains(classList, 'card__arrow-left') || contains(classList, 'card__control'))) {
+      window.location.href = 'room_details.html';
+    }
+  });
 });
