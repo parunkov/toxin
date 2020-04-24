@@ -2,12 +2,14 @@ import '../../variables.scss';
 import './input.scss';
 import './input.pug';
 
-$('.input__icon').each(function(i) {
-	$('.input__icon').eq(i).click(function(evt) {
-		if ($('.input__icon').eq(i).find('.input__icon-text').text() === 'expand_more') {
-			$('.input__icon').eq(i).find('.input__icon-text').text('expand_less');
-		} else if ($('.input__icon').eq(i).find('.input__icon-text').text() === 'expand_less') {
-			$('.input__icon').eq(i).find('.input__icon-text').text('expand_more');
-		}
-	});
+const $icon = $('.input__icon');
+
+$icon.each((i) => {
+  $icon.eq(i).click(() => {
+    if ($icon.eq(i).find('.input__icon-text').text() === 'expand_more') {
+      $icon.eq(i).find('.input__icon-text').text('expand_less');
+    } else if ($icon.eq(i).find('.input__icon-text').text() === 'expand_less') {
+      $icon.eq(i).find('.input__icon-text').text('expand_more');
+    }
+  });
 });
