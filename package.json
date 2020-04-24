@@ -31,6 +31,6 @@
     "webpack-jquery-ui": "^2.0.1",
     "webpack-merge": "^4.2.2",
     "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.20.2"
   }
 }
