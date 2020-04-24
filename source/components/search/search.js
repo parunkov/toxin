@@ -9,13 +9,14 @@ import './search.scss';
 let myDatepicker = $('.search__datepicker-container .datepicker__content').datepicker().data('datepicker');
 let datepickerContainer = $('.search__datepicker-container');
 let setBtn = $('.search__datepicker-container .datepicker__set');
+let clearBtn = $('.search__datepicker-container .datepicker__clear');
 let arrival = $('.search__input-1');
 let departure = $('.search__input-2');
 // let dateToValue = (date) => date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).substr(-2) + '-' + ('0' + date.getDate()).substr(-2);
 let dateToValue = (date) =>  ('0' + date.getDate()).substr(-2) + '.' + ('0' + (date.getMonth() + 1)).substr(-2) + '.' + date.getFullYear();
 
 setBtn.click(function() {
-	$('.input__icon-text').text('expand_more');
+	// $('.input__icon-text').text('expand_more');
 });
 
 
@@ -38,6 +39,7 @@ $('.search__container .input__icon'). click(function(evt) {
 	setBtn.click(function(evt) {
 		evt.preventDefault();
 		datepickerContainer.css({'display' : 'none'});
+		$('.search__input-wrap .input__icon-text').text('expand_more');
 		if (myDatepicker.selectedDates[0]) {
 			arrival.attr('value', dateToValue(myDatepicker.selectedDates[0]));
 		} else {
@@ -48,6 +50,11 @@ $('.search__container .input__icon'). click(function(evt) {
 		} else {
 			departure.attr('value', '');
 		}
+	});
+	clearBtn.click(function(evt) {
+		evt.preventDefault();
+		arrival.attr('value', '');
+		departure.attr('value', '');
 	});
 });
 

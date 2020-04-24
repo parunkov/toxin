@@ -24,11 +24,15 @@ let myDatepickers = [];
 
 $('.datepicker__content').each(function(i) {
 	myDatepickers[i] = $('.datepicker__content').eq(i).datepicker().data('datepicker');
+	// myDatepickers[i].mouseup(function() {
+	// 	console.log(myDatepickers[i].selectedDates);
+	// });
 });
 let $clear = $('.datepicker__clear');
 $('.datepicker__set').each(function(i) {
 	$('.datepicker__set').eq(i).click(function(evt) {
 		evt.preventDefault();
+		// console.log(myDatepickers[i].selectedDates);
 		// $clear.eq(i).css({'display' : 'block'});
 		// console.log(myDatepickers[i].selectedDates);
 		// window.datepickers.i[i] = i;
@@ -40,10 +44,20 @@ $clear.each(function(i) {
 	$clear.eq(i).click(function(evt) {
 		evt.preventDefault();
 		myDatepickers[i].clear();
-		// $clear.eq(i).css({'display' : 'none'});
+		$clear.eq(i).css({'display' : 'none'});
 		// console.log(myDatepickers[i].selectedDates);
 		// window.datepickers.i[i] = i;
 		// window.datepickers.dates[i] = myDatepickers[i].selectedDates;
 		// console.log(window.datepickers);
+	});
+});
+$('.datepicker__container').each(function(i) {
+	// myDatepickers[i] = $('.datepicker__content').eq(i).datepicker().data('datepicker');
+	$(this).mouseup(function() {
+		if (myDatepickers[i].selectedDates.length === 0) {
+			$clear.eq(i).css({'display' : 'none'});
+		} else {
+			$clear.eq(i).css({'display' : 'block'});
+		}
 	});
 });
