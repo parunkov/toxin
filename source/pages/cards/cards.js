@@ -10,5 +10,3 @@ import '../../components/datepicker/datepicker.js';
 import '../../components/card/card.js';
 import '../../components/data/data.js';
 import './cards.scss';
-
-

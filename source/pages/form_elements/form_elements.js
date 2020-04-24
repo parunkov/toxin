@@ -27,10 +27,10 @@ $('.form_elements__item--20 .iqdropdown').addClass('menu-open');
 $('.form_elements__item--22 .iqdropdown').addClass('menu-open');
 $('.form_elements__revew-1-like').prop('checked', true);
 $(document).ready(() => {
-	$('.form_elements__item--22 .iqdropdown button').eq(1).trigger('click');
-	$('.form_elements__item--22 .iqdropdown button').eq(1).trigger('click');
-	$('.form_elements__item--22 .iqdropdown button').eq(3).trigger('click');
-	$('.form_elements__item--22 .dropdown__set').trigger('click');
-	$('.form_elements__item--22 .iqdropdown').addClass('menu-open');
+  $button = $('.form_elements__item--22 .iqdropdown button');
+  $button.eq(1).trigger('click');
+  $button.eq(1).trigger('click');
+  $button.eq(3).trigger('click');
+  $('.form_elements__item--22 .dropdown__set').trigger('click');
+  $('.form_elements__item--22 .iqdropdown').addClass('menu-open');
 });
-

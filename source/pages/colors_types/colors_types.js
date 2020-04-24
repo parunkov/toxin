@@ -3,6 +3,3 @@ import '../../variables.scss';
 import '../../components/page/page.js';
 import '../../components/ui_kit/ui_kit.js';
 import './colors_types.scss';
-// import './colors_types.pug'
- 
-// console.log('in !!!')
