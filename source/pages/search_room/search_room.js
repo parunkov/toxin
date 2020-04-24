@@ -58,31 +58,27 @@ $('.search_room__checkbox-3:lt(4)').prop('checked', true);
 $('.search_room__checkbox-3').eq(0).prop('checked', false);
 
 $(document).ready(() => {
-  $button1 = $('.search_room__dropdown-wrap .iqdropdown button');
-  $button2 = $('.search_room__dropdown-2-wrap .iqdropdown button');
-
-  $button1.eq(1).trigger('click');
-  $button1.eq(1).trigger('click');
-  $button1.eq(3).trigger('click');
-  $button1.eq(5).trigger('click');
-  $button2.eq(1).trigger('click');
-  $button2.eq(1).trigger('click');
-  $button2.eq(3).trigger('click');
-  $button2.eq(3).trigger('click');
-  
-  $('.search_room__card-wrap').eq(0).click((evt) => {
-    evt.preventDefault();
-    const { classList } = evt.target;
-    const contains = function (arr, elem) {
-      for (let i = 0; i < arr.length; i += 1) {
-        if (arr[i] === elem) {
-          return true;
-        }
-      }
-      return false;
-    };
-    if (!(contains(classList, 'card__arrow-right') || contains(classList, 'card__arrow-left') || contains(classList, 'card__control'))) {
-      window.location.href = 'room_details.html';
-    }
-  });
+	$('.search_room__dropdown-wrap .iqdropdown button').eq(1).trigger('click');
+	$('.search_room__dropdown-wrap .iqdropdown button').eq(1).trigger('click');
+	$('.search_room__dropdown-wrap .iqdropdown button').eq(3).trigger('click');
+	$('.search_room__dropdown-wrap .iqdropdown button').eq(5).trigger('click');
+	$('.search_room__dropdown-2-wrap .iqdropdown button').eq(1).trigger('click');
+	$('.search_room__dropdown-2-wrap .iqdropdown button').eq(1).trigger('click');
+	$('.search_room__dropdown-2-wrap .iqdropdown button').eq(3).trigger('click');
+	$('.search_room__dropdown-2-wrap .iqdropdown button').eq(3).trigger('click');
+	$('.search_room__card-wrap').eq(0).click(function(evt) {
+		evt.preventDefault();
+		let classList = evt.target.classList;
+		let contains = function(arr, elem) {
+			for (var i = 0; i < arr.length; i++) {
+				if (arr[i] === elem) {
+					return true;
+				}
+			}
+			return false;
+		}
+		if (!(contains(classList, 'card__arrow-right') || contains(classList, 'card__arrow-left') || contains(classList, 'card__control'))) {
+			window.location.href = 'room_details.html';
+		}
+	});
 });
