@@ -1,13 +1,16 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
-import '../../components/input/input.js';
-import '../../components/dropdown/dropdown.js';
-import '../../components/btn/btn.js';
+import '../input/input.js';
+import '../dropdown/dropdown.js';
+import '../btn/btn.js';
 import './room.scss';
+
+const $button = $('.room__container .iqdropdown button');
+
 $(document).ready(() => {
-	$('.room__container .iqdropdown button').eq(1).trigger('click');
-	$('.room__container .iqdropdown button').eq(1).trigger('click');
-	$('.room__container .iqdropdown button').eq(3).trigger('click');
-	$('.room__container .dropdown__set').trigger('click');
-	$('.room__container .iqdropdown').removeClass('menu-open');
+  $button.eq(1).trigger('click');
+  $button.eq(1).trigger('click');
+  $button.eq(3).trigger('click');
+  $('.room__container .dropdown__set').trigger('click');
+  $('.room__container .iqdropdown').removeClass('menu-open');
 });
