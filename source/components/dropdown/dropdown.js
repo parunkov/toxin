@@ -12,69 +12,71 @@ const num2str = function (num, textForms) {
 };
 
 $(document).ready(() => {
-  const $type = $('.dropdown__type');
-  const $counter = $('.iqdropdown .counter');
-  const $decrementBtn = $('.iqdropdown .button-decrement');
-  const $incrementBtn = $('.iqdropdown .button-increment');
-  const $text = $('.iqdropdown-selection');
-  // const $arrow = $('.input__icon-dropdown');
   const $iqdropdown = $('.iqdropdown');
 
-  let totalCount = 0;
-  let inputValue = '';
-
-
-  $type.each((i) => {
-    if ($type.eq(i).html() === 'rooms') {
-      $text.eq(i).attr('value', '0 спален, 0 кроватей, 0 ванных');
-    } else {
-      $text.eq(i).attr('placeholder', 'Сколько гостей');
-    }
-  });
-
-
-  $counter.each((i) => {
-    $incrementBtn.eq(i).click((evt) => {
-      evt.preventDefault();
-      let count = +$counter.eq(i).html();
-      count += 1;
-      $counter.eq(i).html(count);
-      totalCount += 1;
-      // console.log(totalCount);
-      if (totalCount) {
-        $('.dropdown__clear').eq(i).css({ display: 'block' });
-      }
-    });
-    $decrementBtn.eq(i).click((evt) => {
-      evt.preventDefault();
-      let count = +$counter.eq(i).html();
-      if (count <= 0) {
-        count = 0;
-      } else {
-        count -= 1;
-        totalCount -= 1;
-      }
-      if (!totalCount) {
-        $('.dropdown__clear').eq(i).css({ display: 'none' });
-      }
-      $counter.eq(i).html(count);
-    });
-  });
-
-  const opacytyBtn = function () {
-    for (let i = 0; i < $counter.length; i += 1) {
-      if ($counter.eq(i).html() === '0') {
-        $decrementBtn.eq(i).css({ opacity: '0.5' });
-        $decrementBtn.eq(i).css({ cursor: 'default' });
-      } else {
-        $decrementBtn.eq(i).css({ opacity: '1' });
-        $decrementBtn.eq(i).css({ cursor: 'pointer' });
-      }
-    }
-  };
-  opacytyBtn();
-
   $iqdropdown.each((i) => {
+    const $type = $('.dropdown__type');
+    const $counter = $iqdropdown.eq(i).find('.counter');
+    const $decrementBtn = $iqdropdown.eq(i).find('.button-decrement');
+    const $incrementBtn = $iqdropdown.eq(i).find('.button-increment');
+    const $text = $('.iqdropdown-selection');
+    const $dropdownClear = $iqdropdown.eq(i).find('.dropdown__clear');
+    console.log($dropdownClear);
+
+    let totalCount = 0;
+    let inputValue = '';
+
+
+    $type.each((j) => {
+      if ($type.eq(j).html() === 'rooms') {
+        $text.eq(j).attr('value', '0 спален, 0 кроватей, 0 ванных');
+      } else {
+        $text.eq(j).attr('placeholder', 'Сколько гостей');
+      }
+    });
+
+
+    $counter.each((j) => {
+      $incrementBtn.eq(j).click((evt) => {
+        evt.preventDefault();
+        let count = +$counter.eq(j).html();
+        count += 1;
+        $counter.eq(j).html(count);
+        totalCount += 1;
+        // console.log(totalCount);
+        if (totalCount) {
+          $dropdownClear.css({ display: 'block' });
+        }
+      });
+      $decrementBtn.eq(j).click((evt) => {
+        evt.preventDefault();
+        let count = +$counter.eq(j).html();
+        if (count <= 0) {
+          count = 0;
+        } else {
+          count -= 1;
+          totalCount -= 1;
+        }
+        if (!totalCount) {
+          $dropdownClear.css({ display: 'none' });
+        }
+        $counter.eq(j).html(count);
+      });
+    });
+
+    const opacytyBtn = function () {
+      for (let j = 0; j < $counter.length; j += 1) {
+        if ($counter.eq(j).html() === '0') {
+          $decrementBtn.eq(j).css({ opacity: '0.5' });
+          $decrementBtn.eq(j).css({ cursor: 'default' });
+        } else {
+          $decrementBtn.eq(j).css({ opacity: '1' });
+          $decrementBtn.eq(j).css({ cursor: 'pointer' });
+        }
+      }
+    };
+    opacytyBtn();
+
     $iqdropdown.eq(i).find('.input__icon-dropdown').click(() => {
       if ($iqdropdown.eq(i).find('.input__icon-dropdown-text').text() === 'expand_more') {
         $iqdropdown.eq(i).find('.input__icon-dropdown-text').text('expand_less');
@@ -95,7 +97,7 @@ $(document).ready(() => {
         const textPart1 = `${$itemCounter[1].innerHTML} ${num2str(+$itemCounter[1].innerHTML, ['кровать', 'кровати', 'кроватей'])},`;
         const textPart2 = `${$itemCounter[2].innerHTML} ${num2str(+$itemCounter[2].innerHTML, ['ванная', 'ванные', 'ванных'])}`;
 
-        // $('.iqdropdown-selection').eq(i).attr('value', textPart0 + ' ' + textPart1 + ' ' + textPart2);
+        $('.iqdropdown-selection').eq(i).attr('value', `${textPart0} ${textPart1} ${textPart2}`);
         inputValue = `${textPart0} ${textPart1} ${textPart2}`;
       } else {
         const guestsNumber = +$itemCounter[0].innerHTML + +$itemCounter[1].innerHTML + +$itemCounter[2].innerHTML;
@@ -117,6 +119,7 @@ $(document).ready(() => {
     });
     $iqdropdown.eq(i).find('.dropdown__clear').click(() => {
       $iqdropdown.eq(i).find('.counter').html('0');
+      $dropdownClear.css({ display: 'none' });
       opacytyBtn();
       $iqdropdown.eq(i).find('.iqdropdown-selection').attr('placeholder', 'Сколько гостей');
       $iqdropdown.eq(i).find('.iqdropdown-selection').attr('value', '');
