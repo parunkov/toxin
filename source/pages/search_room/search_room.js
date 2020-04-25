@@ -62,9 +62,9 @@ $(document).ready(() => {
   const $button2 = $('.search_room__dropdown-2-wrap .iqdropdown button');
 
 	$button1.eq(1).trigger('click');
-	$button1.eq(1).trigger('click');
 	$button1.eq(3).trigger('click');
 	$button1.eq(5).trigger('click');
+  $('.search_room__dropdown-wrap .dropdown__set').trigger('click');
 	$button2.eq(1).trigger('click');
 	$button2.eq(1).trigger('click');
 	$button2.eq(3).trigger('click');
