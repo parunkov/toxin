@@ -1,9 +1,9 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
-import '../input/input.js';
-import '../dropdown/dropdown.js';
-import '../btn/btn.js';
-import '../datepicker/datepicker.js';
+import '../input/input';
+import '../dropdown/dropdown';
+import '../btn/btn';
+import '../datepicker/datepicker';
 import './search.scss';
 
 const $myDatepicker = $('.search__datepicker-container .datepicker__content').datepicker().data('datepicker');

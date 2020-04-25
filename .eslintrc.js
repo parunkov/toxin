@@ -14,6 +14,6 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
-        "no-undef": 0,
+        // "no-undef": 0,
     }
 };

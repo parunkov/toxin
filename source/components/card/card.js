@@ -1,8 +1,9 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
-import '../rate/rate.js';
-import '../data/data.js';
+import '../rate/rate';
+import '../data/data';
 import './card.scss';
+import $ from 'jquery';
 
 $('.card__container').each((i) => {
   let counter = 0;

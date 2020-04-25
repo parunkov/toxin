@@ -32,13 +32,13 @@ import './dropdown.scss';
       const itemCount = {};
       let totalItems = 0;
 
-      function updateDisplay () {
+      function updateDisplay() {
         const usePlural = totalItems !== 1 && settings.textPlural.length > 0;
         const text = usePlural ? settings.textPlural : settings.selectionText;
         $selection.html(`${totalItems} ${text}`);
       }
 
-      function setItemSettings (id, $item) {
+      function setItemSettings(id, $item) {
         const minCount = Number($item.data('mincount'));
         const maxCount = Number($item.data('maxcount'));
 
@@ -48,7 +48,7 @@ import './dropdown.scss';
         };
       }
 
-      function addControls (id, $item) {
+      function addControls(id, $item) {
         const $controls = $('<div />').addClass(settings.controls.controlsCls);
         const $decrementButton = $(`
           <button class="button-decrement">
@@ -72,7 +72,9 @@ import './dropdown.scss';
         }
 
         $decrementButton.click((event) => {
-          const { items, minItems, beforeDecrement, onChange } = settings;
+          const {
+            items, minItems, beforeDecrement, onChange,
+          } = settings;
           const allowClick = beforeDecrement(id, itemCount);
 
           if (allowClick && totalItems > minItems && itemCount[id] > items[id].minCount) {
@@ -87,7 +89,9 @@ import './dropdown.scss';
         });
 
         $incrementButton.click((event) => {
-          const { items, maxItems, beforeIncrement, onChange } = settings;
+          const {
+            items, maxItems, beforeIncrement, onChange,
+          } = settings;
           const allowClick = beforeIncrement(id, itemCount);
 
           if (allowClick && totalItems < maxItems && itemCount[id] < items[id].maxCount) {
@@ -101,7 +105,7 @@ import './dropdown.scss';
           event.preventDefault();
         });
 
-        $item.click(event => event.stopPropagation());
+        $item.click((event) => event.stopPropagation());
 
         return $item;
       }
