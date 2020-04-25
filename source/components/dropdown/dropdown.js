@@ -1,6 +1,7 @@
 import '../../variables.scss';
 import './dropdown.scss';
 import './dropdown.pug';
+import $ from 'jquery';
 
 const num2str = function (num, textForms) {
   const n = Math.abs(num) % 100;
@@ -100,12 +101,14 @@ $(document).ready(() => {
         $('.iqdropdown-selection').eq(i).attr('value', `${textPart0} ${textPart1} ${textPart2}`);
         inputValue = `${textPart0} ${textPart1} ${textPart2}`;
       } else {
-        const guestsNumber = +$itemCounter[0].innerHTML + +$itemCounter[1].innerHTML + +$itemCounter[2].innerHTML;
+        const guestsNumber = +$itemCounter[0].innerHTML
+        + +$itemCounter[1].innerHTML
+        + +$itemCounter[2].innerHTML;
         const babyNumber = +$itemCounter[2].innerHTML;
-        inputValue = `${guestsNumber} ${num2str(+guestsNumber, ['гость', 'гостя', 'гостей'])}`;
+        inputValue = `${guestsNumber} ${num2str(+guestsNumber,
+          ['гость', 'гостя', 'гостей'])}`;
         if (babyNumber) {
           const inputText = inputValue;
-          // $('.iqdropdown-selection').eq(i).attr('value', inputText + ', ' + babyNumber + ' ' + num2str(+babyNumber, ['младенец', 'младенца', 'младенцев']));
           inputValue = `${inputText}, ${babyNumber} ${num2str(+babyNumber, ['младенец', 'младенца', 'младенцев'])}`;
         }
       }

@@ -1,6 +1,7 @@
 import '../../variables.scss';
 import './pagination.scss';
-import '../../../node_modules/paginationjs/src/pagination.js';
+import '../../../node_modules/paginationjs/src/pagination';
+import $ from 'jquery';
 
 $(() => {
   (function () {

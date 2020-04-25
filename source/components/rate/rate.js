@@ -1,6 +1,7 @@
 import '../../variables.scss';
 import './rate.scss';
 import './rate.pug';
+import $ from 'jquery';
 
 const $active = $('.rate__active');
 $('.rate__container').each(function (i) {

@@ -5,6 +5,7 @@ import '../dropdown/dropdown';
 import '../btn/btn';
 import '../datepicker/datepicker';
 import './search.scss';
+import $ from 'jquery';
 
 const $myDatepicker = $('.search__datepicker-container .datepicker__content').datepicker().data('datepicker');
 const $datepickerContainer = $('.search__datepicker-container');

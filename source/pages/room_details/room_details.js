@@ -1,17 +1,18 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
-import '../../components/page/page.js';
-import '../../components/page_header/page_header.js';
-import '../../components/like/like.js';
-import '../../components/review/review.js';
-import '../../components/page_footer/page_footer.js';
-import '../../components/info/info.js';
-import '../../components/room/room.js';
+import '../../components/page/page';
+import '../../components/page_header/page_header';
+import '../../components/like/like';
+import '../../components/review/review';
+import '../../components/page_footer/page_footer';
+import '../../components/info/info';
+import '../../components/room/room';
 import './room_details.scss';
 import './room1.jpg';
 import './room2.jpg';
 import './room3.jpg';
 import './Patricia.jpg';
+import $ from 'jquery';
 
 $('.room_details__revew-1-like').prop('checked', true);
 

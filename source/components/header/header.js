@@ -1,14 +1,15 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
-import '../btn/btn.js';
+import '../btn/btn';
 import './header.scss';
+import $ from 'jquery';
 
 const $container = $('.header__container');
 
 $container.each((i) => {
   const num = $container.eq(i).find('.header__active').html();
   $container.eq(i).find('.header__li').each((j) => {
-    if (j == num) {
+    if (j === +num) {
       $container.eq(i).find('.header__li').eq(j).addClass('header__li--active');
       $container.eq(i).find('.header__li').eq(j).find('a')
         .addClass('header__a--active');

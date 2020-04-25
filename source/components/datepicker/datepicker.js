@@ -1,8 +1,9 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
-import './datepicker_plugin.js';
+import './datepicker_plugin';
 import './datepicker.css';
 import './datepicker.scss';
+import $ from 'jquery';
 
 $('.datepicker__content').datepicker({
   minDate: new Date(),

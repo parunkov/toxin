@@ -1,9 +1,10 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
-import '../input/input.js';
-import '../dropdown/dropdown.js';
-import '../btn/btn.js';
+import '../input/input';
+import '../dropdown/dropdown';
+import '../btn/btn';
 import './room.scss';
+import $ from 'jquery';
 
 const $button = $('.room__container .iqdropdown button');
 
