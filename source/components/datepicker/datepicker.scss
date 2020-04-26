@@ -42,14 +42,20 @@
     height: 33px;
   }
 }
-.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-, .datepicker--cell.-current-.-focus-, .datepicker--cell.-range-from-, .datepicker--cell.-range-to-, .datepicker--cell.-selected-.-focus-, .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-day.-other-month-.-focus- {
+.datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-, .datepicker--cell.-current-.-focus-, .datepicker--cell.-range-from-, .datepicker--cell.-range-from-.-other-month-.-selected-, .datepicker--cell.-range-to-, .datepicker--cell.-range-to-.-other-month-.-selected-, .datepicker--cell.-selected-.-focus-, .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-day.-other-month-.-focus- {
   position: relative;
   font-weight: 700;
   background: $gradient-purple;
   border-radius: 20px;
   transform-style: preserve-3d;
   border: none;
-
+  color: $white;
+}
+.datepicker--cell.-selected-.-current-, .datepicker--cell.-current-.-focus- {
+  background: $gradient-green;
+}
+.datepicker--cell-day.-other-month-:hover {
+    color:  $white;
 }
 .datepicker--cell.-range-from-::before {
   content: '';
@@ -106,11 +112,11 @@
 }
 .-selected-.datepicker--cell-day.-other-month- {
   font-weight: 400;
-  color: #dedede;
+  color: $white;
   // background: transparent;
 }
 .datepicker--cell-day.-other-month-::before, .datepicker--cell-day.-other-month-:hover, .-selected-.datepicker--cell-day.-other-month-:hover {
-  color: #dedede;
+  color: $white;
   // background: transparent;
 }
 .-in-range-.datepicker--cell-day.-other-month- {
@@ -118,6 +124,7 @@
   background: $bg-purple;
   &.-focus- {
     background: $bg-purple;
+    color: #cccccc;
   }
 }
 .datepicker--cell.-in-range-.-disabled- {
@@ -130,12 +137,12 @@
   background: transparent;
   font-weight: 400;
 }
-.datepicker--cell-month.-range-from-.-current-.-selected- {
-  background: $gradient-green;
-  &::before {
-    background: transparent;
-  }
-}
+// .datepicker--cell-month.-range-from-.-current-.-selected- {
+//   background: $gradient-green;
+//   &::before {
+//     background: transparent;
+//   }
+// }
 .datepicker--cell.datepicker--cell-month.-range-to-.-in-range-.-selected-, .datepicker--cell.datepicker--cell-month.-range-from-.-selected- {
   background: transparent;
   font-weight: 400;
@@ -147,8 +154,40 @@
     background: transparent;
   }
 }
-.datepicker--cell.datepicker--cell-year.-range-from-.-range-to-.-current-.-selected- {
+.datepicker--cell-month.-range-from-.-current-.-selected- {
   background: $gradient-green;
+  font-weight: 700;
+  color: $white;
+  &:hover {
+    background: $gradient-green;
+  }
+  &::before {
+    background: transparent;
+  }
+}
+.datepicker--cell-month.-range-from-.-selected- {
+  background: transparent;
+}
+.datepicker--cell.datepicker--cell-year.-range-from-.-current-.-selected-, .datepicker--cell.datepicker--cell-year.-range-to-.-current-.-selected-,.datepicker--cell.datepicker--cell-year.-range-from-.-range-to-.-current-.-selected-.-focus- {
+  background: $gradient-green;
+  font-weight: 700;
+  color: $white;
+  &:hover {
+    background: $gradient-green;
+    font-weight: 700;
+    color: $white;
+  }
+  &::before {
+    background: transparent;
+  }
+}
+.datepicker--cell-year.-range-to-.-in-range-.-selected- {
+  background: transparent;
+  font-weight: 400;
+  color: #4a4a4a;
+  &:hover {
+    background: #f0f0f0;
+  }
   &::before {
     background: transparent;
   }
