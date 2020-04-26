@@ -31,6 +31,11 @@
 .search__input-1-wrap, .search__input-2-wrap {
   margin-top: auto;
   flex: 0 0 47.24%;
+  .input__icon {
+    @media (max-width: 350px) {
+      right: -6px;
+    }
+  }
 }
 .search__input-space {
   flex: auto;
@@ -38,6 +43,11 @@
 .search__input-1, .search__input-2 {
   text-transform: uppercase;
   letter-spacing: -0.4px;
+  // padding-left: 10%;
+  // padding-right: 10%;
+  @media (max-width: 350px) {
+    padding-left: 12px;
+  }
 }
 .search__dropdown-container {
   margin-bottom: 30px;
