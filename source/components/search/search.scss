@@ -43,6 +43,10 @@
 .search__input-1, .search__input-2 {
   text-transform: uppercase;
   letter-spacing: -0.4px;
+  cursor: default;
+  &:hover {
+    border: 1px solid $black-25;
+  }
   // padding-left: 10%;
   // padding-right: 10%;
   @media (max-width: 350px) {
