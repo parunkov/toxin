@@ -304,6 +304,8 @@
     margin: 0 auto;
     width: auto;
     flex: none;
+    text-align: center;
+    max-width: 100%;
   }
 }
 .header__login-container--show {
@@ -322,6 +324,13 @@
   }
   @media (max-width: $mobile-menu-breakpoint) {
     flex: none;
-    margin-right: 0;    
+    margin-right: 0;
+  }
+}
+.header__btn {
+  @media (max-width: $mobile-menu-breakpoint) {
+    display: inline-block;
+    width: inherit;
+    min-width: 196px;
   }
 }
