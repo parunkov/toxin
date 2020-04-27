@@ -23,6 +23,8 @@ const months = [
 ];
 const dateToValue = (date) => (`${(`0${date.getDate()}`).substr(-2)} ${months[date.getMonth()]}`);
 
+$('.search_room__input-1').attr('disabled', '');
+
 $('.search_room__container .input__icon').click((evt) => {
   evt.preventDefault();
   // $datepickerContainer.css({'display' : 'block'});

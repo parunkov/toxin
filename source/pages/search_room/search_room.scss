@@ -50,13 +50,30 @@
 .search_room__input-wrap {
   margin-bottom: 17px;
 }
+.search_room__input-1 {
+  &::-webkit-input-placeholder {
+    color: $black-75;
+  }
+  &::-moz-placeholder {
+    color: $black-75;
+  }
+  &:-moz-placeholder {
+    color: $black-75;
+  }
+  &:-ms-input-placeholder {
+    color: $black-75;
+  }
+  &:hover {
+    border: 1px solid $black-25;
+  }
+}
 .search_room__datepicker-wrap {
   position: relative;
 }
 .search_room__datepicker-container {
   position: absolute;
   top: -10px;
-  left: -5px;
+  left: 0;
   z-index: 10;
   display: none;
   width: 320px;
