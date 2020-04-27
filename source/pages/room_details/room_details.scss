@@ -81,7 +81,7 @@
     flex-wrap: wrap;
   }
   @media (max-width: 420px) {
-    width: 100vw;
+    width: 100%;
     // min-width: 380px;
   }
 }
@@ -123,6 +123,7 @@
   }
   @media (max-width: 420px) {
     flex: none;
+    width: 100%;
     // min-width: 380px;
   }
 }

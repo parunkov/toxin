@@ -45,6 +45,25 @@
 }
 .room__input-1, .room__input-2 {
   letter-spacing: -0.4px;
+  cursor: default;
+  &:hover {
+    border: 1px solid $black-25;
+  }
+  @media (max-width: 350px) {
+    padding-left: 12px;
+  }
+  &::-webkit-input-placeholder {
+      color: $black-75;
+  }
+  &::-moz-placeholder {
+    color: $black-75;
+  }
+  &:-moz-placeholder {
+    color: $black-75;
+  }
+  &:-ms-input-placeholder {
+    color: $black-75;
+  }
 }
 .room__input-inner {
   margin-top: auto;
@@ -52,6 +71,16 @@
 }
 .room__input-space {
   flex: auto;
+}
+.room__datepicker-wrap {
+  position: relative;
+}
+.room__datepicker-container {
+ position: absolute;
+ top: -10px;
+ left: 0;
+ z-index: 10;
+ display: none;
 }
 .room__dropdown-container {
   margin-bottom: 22px;

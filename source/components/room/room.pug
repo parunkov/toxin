@@ -12,24 +12,27 @@ article.room__container
 			.room__input-inner
 				+input(
 				'прибытие', 
-				'date', 
+				'text', 
 				'arrival', 
 				'room__input-1', 
-				'2019-08-19', 
-				'', 
+				'19.08.2019', 
+				'ДД.ММ.ГГГГ', 
 				'', 
 				'expand_more')
 			.room__input-space
 			.room__input-inner
 				+input(
 				'выезд', 
-				'date', 
+				'text', 
 				'departure', 
 				'room__input-2', 
-				'2019-08-23', 
-				'', 
+				'23.08.2019', 
+				'ДД.ММ.ГГГГ', 
 				'', 
 				'expand_more')
+		.room__datepicker-wrap
+			.room__datepicker-container
+				include ../../components/datepicker/datepicker.pug
 		+dropdown(
 		'peoples',
 		'room__dropdown', 
