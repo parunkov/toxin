@@ -42,6 +42,11 @@
   .input__h3 {
     word-break: break-all;
   }
+  .input__icon {
+    @media (max-width: 350px) {
+      right: -6px;
+    }
+  }
 }
 .room__input-1, .room__input-2 {
   letter-spacing: -0.4px;
