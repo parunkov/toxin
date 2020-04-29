@@ -127,6 +127,12 @@
     color: #cccccc;
   }
 }
+.datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-current-.-selected- {
+  background: $gradient-green;
+  &:hover {
+    background: $gradient-green;
+  }
+}
 .datepicker--cell.-in-range-.-disabled- {
   background: transparent;
 }
