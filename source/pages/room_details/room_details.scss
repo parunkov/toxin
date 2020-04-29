@@ -93,7 +93,7 @@
   // border: 1px solid blue;
   @media (max-width: $page-container) {
     flex: 0 1 752%*100/1200;
-    min-width: 415px;
+    // min-width: 415px;
   }
   @media (max-width: 830px) {
     flex: 0 0 100%;
@@ -113,7 +113,7 @@
   flex: 0 0 420%*100/1200;
   padding-right: 20%*100/1200;
   padding-left: 20%*100/1200;
-  max-width: 380px;
+  max-width: 420px;
   // border: 1px solid blue;
   @media (max-width: $page-container) {
     flex: 0 0 415px;
