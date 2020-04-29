@@ -4,7 +4,7 @@
 }
 .registration__wrap {
   padding-top: 30px;
-  padding-bottom: 22px;
+  padding-bottom: 25px;
   background: transparent url('reg__bg.jpg') center bottom no-repeat;
   // background-position-y: -70px;
   background-size: cover;
@@ -23,6 +23,9 @@
   @media (max-width: 385px) {
     width: 97%;
     // min-width: 375px;
+  }
+  .toggle__text {
+    margin-top: -2px;
   }
 }
 .registration__inner {
