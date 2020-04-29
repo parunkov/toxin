@@ -33,7 +33,8 @@
   flex: 0 0 47.24%;
   .input__icon {
     @media (max-width: 350px) {
-      right: -6px;
+      // right: -6px;
+      width: 32px;
     }
   }
 }
