@@ -43,18 +43,18 @@ https://parunkov.github.io/toxin/build/sign_in.html - Sign In
 
 UI-Kit
 
-localhost:9000/colors_types.html - Colors & Type  
-localhost:9000/form_elements.html - Form Elements  
-localhost:9000/cards.html - Cards  
-localhost:9000/headers_footers.html - Headers & Footers  
+http://localhost:9000/colors_types.html - Colors & Type  
+http://localhost:9000/form_elements.html - Form Elements  
+http://localhost:9000/cards.html - Cards  
+http://localhost:9000/headers_footers.html - Headers & Footers  
 
 Страницы сайта
 
-localhost:9000/index.html - Landing page  
-localhost:9000/search_room.html - Search Room/Filter  
-localhost:9000/room_details.html - Room Details  
-localhost:9000/registration.html - Registration  
-localhost:9000/sign_in.html - Sign In  
+http://localhost:9000/index.html - Landing page  
+http://localhost:9000/search_room.html - Search Room/Filter  
+http://localhost:9000/room_details.html - Room Details  
+http://localhost:9000/registration.html - Registration  
+http://localhost:9000/sign_in.html - Sign In  
 
 Сборка проекта:
 
