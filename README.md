@@ -39,6 +39,23 @@ https://parunkov.github.io/toxin/build/sign_in.html - Sign In
 
     npm run start
 
+Ссылки на страницы для dev server
+
+UI-Kit
+
+localhost:9000/colors_types.html - Colors & Type  
+localhost:9000/form_elements.html - Form Elements  
+localhost:9000/cards.html - Cards  
+localhost:9000/headers_footers.html - Headers & Footers  
+
+Страницы сайта
+
+localhost:9000/index.html - Landing page  
+localhost:9000/search_room.html - Search Room/Filter  
+localhost:9000/room_details.html - Room Details  
+localhost:9000/registration.html - Registration  
+localhost:9000/sign_in.html - Sign In  
+
 Сборка проекта:
 
     npm run build
