@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Project links
+    <title>Landing Page
     </title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -12,9 +12,9 @@
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-  <link href="./css/index.css" rel="stylesheet"></head>
+  <link href="./css/landing.css" rel="stylesheet"></head>
   <body>
-    <header class="index__header">
+    <header class="landing__header">
       <div class="page_header__container">
                 <section class="page__container header__container">
                   <div class="header__active">-1</div><a href="index.html"><span class="page__logo header__logo"></span></a>
@@ -63,27 +63,98 @@
                 </section>
       </div>
     </header>
-    <main class="index__wrap">
-      <div class="page__container index__container">
-        <h1 class="index__h1">Ссылки на страницы проекта</h1>
-        <div class="index__col">
-          <h2 class="index__h2">Ui-Kit</h2>
-          <ul class="index__ul">
-            <li class="index__li"><a class="index__a" href="colors_types.html">Colors & Type</a></li>
-            <li class="index__li"><a class="index__a" href="form_elements.html">Form Elements</a></li>
-            <li class="index__li"><a class="index__a" href="cards.html">Cards</a></li>
-            <li class="index__li"><a class="index__a" href="headers_footers.html">Headers & Footers</a></li>
-          </ul>
+    <main class="landing__wrap">
+      <div class="page__container landing__container">
+        <div class="landing__col-1">
+          <div class="landing__form-wrap">
+            <div class="landing__form"></div>
+            <article class="search__container">
+              <h1 class="page__h1 search__h1">Найдём номера под ваши пожелания</h1>
+              <form class="search__form">
+                <div class="search__input-wrap">
+                  <div class="search__input-1-wrap">
+                                <div class="input__container">
+                                  <h3 class="input__h3">прибытие</h3>
+                                  <p class="input__p"></p>
+                                  <input class="input__input search__input-1" type="text" name="arrival" value="" placeholder="ДД.ММ.ГГГГ">
+                                  <div class="input__icon"><i class="input__icon-text">expand_more</i>
+                                  </div>
+                                </div>
+                  </div>
+                  <div class="search__input-space"></div>
+                  <div class="search__input-2-wrap">
+                                <div class="input__container">
+                                  <h3 class="input__h3">выезд</h3>
+                                  <p class="input__p"></p>
+                                  <input class="input__input search__input-2" type="text" name="departure" value="" placeholder="ДД.ММ.ГГГГ">
+                                  <div class="input__icon"><i class="input__icon-text">expand_more</i>
+                                  </div>
+                                </div>
+                  </div>
+                </div>
+                <div class="search__datepicker-wrap">
+                  <div class="search__datepicker-container">
+<div class="datepicker__container">
+  <div class="datepicker__content"></div>
+  <div class="datepicker__bottom">
+    <div class="datepicker__clear--wrap">
+      <div class="datepicker__clear">очистить</div>
+    </div>
+    <div class="datepicker__set--wrap">
+      <div class="datepicker__set">применить</div>
+    </div>
+  </div>
+</div>
+                  </div>
+                </div>
+                            <div class="dropdown__type">peoples</div>
+                            <div class="dropdown__container search__dropdown-container">
+                              <h3 class="dropdown__h3">гости</h3>
+                              <p class="dropdown__p"></p>
+                              <div class="iqdropdown">
+                                <div class="input__container">
+                                  <input class="iqdropdown-selection search__dropdown" name="search__dropdown" autocomplete="off" readonly>
+                                  <div class="input__icon-dropdown"><i class="input__icon-dropdown-text">expand_more</i></div>
+                                  <div class="iqdropdown-menu">
+                                    <div class="iqdropdown-menu-option" data-id="item1">
+                                      <h3 class="iqdropdown-item">взрослые</h3>
+                                                  <div class="iqdropdown-item-controls">
+                                                    <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
+                                                    <button class="button-increment"><i class="icon-increment"></i></button>
+                                                  </div>
+                                    </div>
+                                    <div class="iqdropdown-menu-option" data-id="item2">
+                                      <h3 class="iqdropdown-item">дети</h3>
+                                                  <div class="iqdropdown-item-controls">
+                                                    <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
+                                                    <button class="button-increment"><i class="icon-increment"></i></button>
+                                                  </div>
+                                    </div>
+                                    <div class="iqdropdown-menu-option" data-id="item3">
+                                      <h3 class="iqdropdown-item">младенцы</h3>
+                                                  <div class="iqdropdown-item-controls">
+                                                    <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
+                                                    <button class="button-increment"><i class="icon-increment"></i></button>
+                                                  </div>
+                                    </div>
+                                    <div class="dropdown__bottom">
+                                      <div class="dropdown__clear--wrap">
+                                        <div class="dropdown__clear">очистить</div>
+                                      </div>
+                                      <div class="dropdown__set--wrap">
+                                        <div class="dropdown__set">применить</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div><a href="search_room.html"><span class="btn btn--arrow search__btn">подобрать номер</span></a>
+              </form>
+            </article>
+          </div>
         </div>
-        <div class="index__col">
-          <h2 class="index__h2">Страницы сайта</h2>
-          <ul class="index__ul">
-            <li class="index__li"><a class="index__a" href="landing.html">Landing page</a></li>
-            <li class="index__li"><a class="index__a" href="search_room.html">Search Room/Filter</a></li>
-            <li class="index__li"><a class="index__a" href="room_details.html">Room Details</a></li>
-            <li class="index__li"><a class="index__a" href="registration.html">Registration</a></li>
-            <li class="index__li"><a class="index__a" href="sign_in.html">Sign In</a></li>
-          </ul>
+        <div class="landing__col-4">
+          <p class="landing__p">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
         </div>
       </div>
     </main>
@@ -162,5 +233,5 @@
               </section>
       </div>
     </footer>
-  <script type="text/javascript" src="./js/index.js"></script></body>
+  <script type="text/javascript" src="./js/landing.js"></script></body>
 </html>

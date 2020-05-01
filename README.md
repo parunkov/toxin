@@ -15,7 +15,7 @@ https://parunkov.github.io/toxin/build/headers_footers.html - Headers & Footers
 
 ### Страницы сайта
 
-https://parunkov.github.io/toxin/build/index.html - Landing page  
+https://parunkov.github.io/toxin/build/landing.html - Landing page  
 https://parunkov.github.io/toxin/build/search_room.html - Search Room/Filter  
 https://parunkov.github.io/toxin/build/room_details.html - Room Details  
 https://parunkov.github.io/toxin/build/registration.html - Registration  
@@ -50,7 +50,7 @@ http://localhost:9000/headers_footers.html - Headers & Footers
 
 Страницы сайта
 
-http://localhost:9000/index.html - Landing page  
+http://localhost:9000/landing.html - Landing page  
 http://localhost:9000/search_room.html - Search Room/Filter  
 http://localhost:9000/room_details.html - Room Details  
 http://localhost:9000/registration.html - Registration  
