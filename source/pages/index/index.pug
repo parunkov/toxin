@@ -2,8 +2,6 @@ extends ../../base.pug
 block title
 	| Project links
 block main
-	header.index__header
-		include ../../components/page_header/page_header.pug
 	main.index__wrap
 		.page__container.index__container
 			h1.index__h1 Ссылки на страницы проекта
@@ -31,5 +29,3 @@ block main
 						a.index__a(href="registration.html") Registration
 					li.index__li
 						a.index__a(href="sign_in.html") Sign In
-	.page__space
-	include ../../components/page_footer/page_footer.pug
