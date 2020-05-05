@@ -70,13 +70,13 @@
     @media (max-width: 1300px) {
       padding-right: 40%*100/1200;
       padding-left: 0;
+      margin-bottom: 24px;
     }
     @media (max-width: 600px) {
       padding-left: 3px;
       padding-right: 3px;
       display: block;
       flex: 0 0 100%;
-      margin-bottom: 24px;
     }
   }
   &--2, &--3 {
