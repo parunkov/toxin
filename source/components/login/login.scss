@@ -5,6 +5,9 @@
 }
 .login__h1 {
   margin-bottom: 20px;
+  @media (max-width: 350px) {
+    word-break: break-all;
+  }
 }
 .login__input-1 {
   margin-bottom: 10px;
@@ -31,4 +34,9 @@
 }
 .login__btn-2 {
   display: block;
+  span {
+    padding-left: 10px;
+    padding-right: 10px;
+    word-break: break-all;
+  }
 }
