@@ -67,6 +67,9 @@
     flex: 0 0 380px;
   }
   @media (max-width: $mobile-menu-breakpoint) {
+    margin-bottom: 180px;
+  }
+  @media (max-width: 650px) {
     margin-bottom: 20px;
   }
   @media (max-width: 420px) {
