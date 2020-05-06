@@ -14,7 +14,7 @@
   margin: 0 auto;
   background: $white;
   @media (max-width: 380px) {
-    width: 100vw;
+    // width: 100vw;
   }
 }
 .search_room__space {
@@ -34,7 +34,7 @@
   @media (max-width: 1440px) {
     width: 1200px;
   }
-  @media (max-width: $page-container) {
+  @media (max-width: 1220px) {
     width: 100%;
   }
   @media (max-width: 600px) {
@@ -43,6 +43,7 @@
 }
 .search_room__form {
   flex: 0 0 275%*100/1200;
+  // flex: 0 0 267px;
   // border: 1px solid green;
   min-width: 266px;
   margin-right: 4.5%;
@@ -168,13 +169,22 @@
   cursor: pointer;
 }
 .search_room__pagination-wrap {
-  width: 500px;
-  margin: 0 auto;
+  // width: 500px;
+  // margin: 0 auto;
   margin-bottom: 69px;
-  padding-left: 124px;
+  // padding-left: 124px;
+  text-align: center;
+  margin-left: -20px;
+  #pagination-container {
+    display: inline-block;
+  }
   @media (max-width: 800px) {
+    margin-left: -50px;
     width: 320px;
     padding-left: 0;
+  }
+  @media (max-width: 600px) {
+    margin: 0 auto;
   }
 }
 .search_room__pagination-wrap .paginationjs-page {
