@@ -6,7 +6,7 @@
 .paginationjs-prev, .paginationjs-page, .paginationjs-next, .paginationjs-ellipsis {
   position: relative;
   display: inline-block;
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   margin-right: -6px;
   text-align: center;
@@ -14,7 +14,7 @@
 }
 .paginationjs-page a, .paginationjs-ellipsis a {
   position: relative;
-  top: 11px;
+  top: 12px;
   padding: 10px;
   font-weight: 400;
   font-size: 12px;
