@@ -17,13 +17,14 @@ const $myDatepicker = $('.search_room__datepicker-container .datepicker__content
 const $datepickerContainer = $('.search_room__datepicker-container');
 const $setBtn = $('.search_room__datepicker-container .datepicker__set');
 const $input = $('.search_room__input');
+const $input1 = $('.search_room__input-1');
 const months = [
   'янв', 'фев', 'мар', 'апр', 'май', 'июн',
   'июл', 'авг', 'сен', 'окт', 'ноя', 'дек',
 ];
 const dateToValue = (date) => (`${(`0${date.getDate()}`).substr(-2)} ${months[date.getMonth()]}`);
 
-$('.search_room__input-1').attr('disabled', '');
+// $('.search_room__input-1').attr('disabled', '');
 
 $('.search_room__container .input__icon').click((evt) => {
   evt.preventDefault();
@@ -40,12 +41,12 @@ $('.search_room__container .input__icon').click((evt) => {
     $datepickerContainer.css({ display: 'none' });
     $('.input__icon-text').text('expand_more');
     if ($myDatepicker.selectedDates[0]) {
-      $input.attr('value', dateToValue($myDatepicker.selectedDates[0]));
+      $input1.attr('value', dateToValue($myDatepicker.selectedDates[0]));
     } else {
-      $input.attr('value', '');
+      $input1.attr('value', '');
     }
     if ($myDatepicker.selectedDates[1]) {
-      $input.attr('value', `${dateToValue($myDatepicker.selectedDates[0])} - ${dateToValue($myDatepicker.selectedDates[1])}`);
+      $input1.attr('value', `${dateToValue($myDatepicker.selectedDates[0])} - ${dateToValue($myDatepicker.selectedDates[1])}`);
     }
   });
 });
