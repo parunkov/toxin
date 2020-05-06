@@ -10,3 +10,6 @@ import './image9.jpg';
 import './image10.jpg';
 import './image11.jpg';
 import './image12.jpg';
+import './image13.jpg';
+import './image14.jpg';
+import './image15.jpg';
