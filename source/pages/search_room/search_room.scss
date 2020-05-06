@@ -17,6 +17,9 @@
     width: 100vw;
   }
 }
+.search_room__space {
+  border-bottom: 1px solid $black-10;
+}
 .search_room__container {
   // border: 1px solid red;
   display: flex;
@@ -27,7 +30,7 @@
   padding-top: 27px;
   padding-right: 14%*100/1440;
   padding-left: 20%*100/1440;
-  border-bottom: 1px solid $black-10;
+  // border-bottom: 1px solid $black-10;
   @media (max-width: 1440px) {
     width: 1200px;
   }
@@ -167,7 +170,7 @@
 .search_room__pagination-wrap {
   width: 500px;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 69px;
   padding-left: 124px;
   @media (max-width: 800px) {
     width: 320px;
