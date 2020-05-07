@@ -16,10 +16,11 @@ mixin card(cl, data)
 						.card__control
 		.card__text
 			.card__text-1
-				span.card__num-wrap
-					span.card__num №
-					h2.card__h2 #{data.num}
-					span.card__lux #{data.lux}
+				a(class="card__a" href= data.link)
+					span.card__num-wrap
+						span.card__num №
+						h2.card__h2 #{data.num}
+						span.card__lux #{data.lux}
 				.card__price #{data.price}₽
 					span.card__price-text в сутки
 			.card__text-2

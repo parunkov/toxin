@@ -80,19 +80,19 @@ $(document).ready(() => {
   $button2.eq(3).trigger('click');
   $button2.eq(3).trigger('click');
 
-  $('.search_room__card-wrap').eq(0).click((evt) => {
-    evt.preventDefault();
-    const { classList } = evt.target;
-    const contains = function (arr, elem) {
-      for (let i = 0; i < arr.length; i += 1) {
-        if (arr[i] === elem) {
-          return true;
-        }
-      }
-      return false;
-    };
-    if (!(contains(classList, 'card__arrow-right') || contains(classList, 'card__arrow-left') || contains(classList, 'card__control'))) {
-      window.location.href = 'room_details.html';
-    }
-  });
+  // $('.search_room__card-wrap').eq(0).click((evt) => {
+  //   evt.preventDefault();
+  //   const { classList } = evt.target;
+  //   const contains = function (arr, elem) {
+  //     for (let i = 0; i < arr.length; i += 1) {
+  //       if (arr[i] === elem) {
+  //         return true;
+  //       }
+  //     }
+  //     return false;
+  //   };
+  //   if (!(contains(classList, 'card__arrow-right') || contains(classList, 'card__arrow-left') || contains(classList, 'card__control'))) {
+  //     window.location.href = 'room_details.html';
+  //   }
+  // });
 });
