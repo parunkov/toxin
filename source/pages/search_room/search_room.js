@@ -51,6 +51,12 @@ $('.search_room__container .input__icon').click((evt) => {
   });
 });
 
+$('.search_room__filters-h3').click((evt) => {
+  evt.preventDefault();
+  $('.search_room__form').toggleClass('d-block');
+  $('.search_room__filters-h3').toggleClass('search_room__filters-h3--rotate');
+});
+
 $('.search_room__expandable-h3').click((evt) => {
   evt.preventDefault();
   $('.search_room__expandable-text').toggleClass('d-none');
