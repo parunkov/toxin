@@ -5,6 +5,7 @@
     "build": "webpack --env production"
   },
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1",
     "paginationjs": "^2.1.5",

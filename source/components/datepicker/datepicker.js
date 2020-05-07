@@ -1,7 +1,9 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
-import './datepicker_plugin';
-import './datepicker.css';
+// import './datepicker_plugin';
+// import './datepicker.css';
+import '../../../node_modules/air-datepicker/dist/js/datepicker.js';
+import '../../../node_modules/air-datepicker/dist/css/datepicker.css';
 import './datepicker.scss';
 import $ from 'jquery';
 
