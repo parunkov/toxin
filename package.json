@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --env development",
-    "build": "webpack --env production"
+    "build": "webpack --env production",
+    "lint": "npx eslint source/*/*/*.js"
   },
   "dependencies": {
     "air-datepicker": "^2.2.3",
