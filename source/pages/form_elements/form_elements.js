@@ -27,7 +27,7 @@ $('.form_elements__item--20 .iqdropdown').addClass('menu-open');
 $('.form_elements__item--22 .iqdropdown').addClass('menu-open');
 $('.form_elements__revew-1-like').prop('checked', true);
 $(document).ready(() => {
-  $button = $('.form_elements__item--22 .iqdropdown button');
+  const $button = $('.form_elements__item--22 .iqdropdown button');
   $button.eq(1).trigger('click');
   $button.eq(1).trigger('click');
   $button.eq(3).trigger('click');
