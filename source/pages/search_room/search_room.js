@@ -26,30 +26,30 @@ const dateToValue = (date) => (`${(`0${date.getDate()}`).substr(-2)} ${months[da
 
 // $('.search_room__input-1').attr('disabled', '');
 
-$('.search_room__container .input__icon').click((evt) => {
-  evt.preventDefault();
-  // $datepickerContainer.css({'display' : 'block'});
-  if ($datepickerContainer.css('display') === 'block') {
-    $datepickerContainer.css({ display: 'none' });
-    $('.input__icon-text').text('expand_more');
-  } else {
-    $datepickerContainer.css({ display: 'block' });
-    $('.input__icon-text').text('expand_less');
-  }
-  $setBtn.click((e) => {
-    e.preventDefault();
-    $datepickerContainer.css({ display: 'none' });
-    $('.input__icon-text').text('expand_more');
-    if ($myDatepicker.selectedDates[0]) {
-      $input1.attr('value', dateToValue($myDatepicker.selectedDates[0]));
-    } else {
-      $input1.attr('value', '');
-    }
-    if ($myDatepicker.selectedDates[1]) {
-      $input1.attr('value', `${dateToValue($myDatepicker.selectedDates[0])} - ${dateToValue($myDatepicker.selectedDates[1])}`);
-    }
-  });
-});
+// $('.search_room__container .input__icon').click((evt) => {
+//   evt.preventDefault();
+//   // $datepickerContainer.css({'display' : 'block'});
+//   if ($datepickerContainer.css('display') === 'block') {
+//     $datepickerContainer.css({ display: 'none' });
+//     $('.input__icon-text').text('expand_more');
+//   } else {
+//     $datepickerContainer.css({ display: 'block' });
+//     $('.input__icon-text').text('expand_less');
+//   }
+//   $setBtn.click((e) => {
+//     e.preventDefault();
+//     $datepickerContainer.css({ display: 'none' });
+//     $('.input__icon-text').text('expand_more');
+//     if ($myDatepicker.selectedDates[0]) {
+//       $input1.attr('value', dateToValue($myDatepicker.selectedDates[0]));
+//     } else {
+//       $input1.attr('value', '');
+//     }
+//     if ($myDatepicker.selectedDates[1]) {
+//       $input1.attr('value', `${dateToValue($myDatepicker.selectedDates[0])} - ${dateToValue($myDatepicker.selectedDates[1])}`);
+//     }
+//   });
+// });
 
 $('.search_room__filters-h3').click((evt) => {
   evt.preventDefault();
