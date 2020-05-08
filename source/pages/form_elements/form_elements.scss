@@ -153,10 +153,13 @@
     padding-top: 4px;
   }
   &--14 {
-    margin-bottom: 38px;
+    margin-bottom: 38px;    
   }
   &--15 {
     margin-bottom: 40px;
+    .paginationjs-page, .paginationjs-ellipsis {
+      margin-right: 0;
+    }
   }
   &--16 {
     margin-bottom: 15px;

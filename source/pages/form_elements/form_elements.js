@@ -33,4 +33,12 @@ $(document).ready(() => {
   $button.eq(3).trigger('click');
   $('.form_elements__item--22 .dropdown__set').trigger('click');
   $('.form_elements__item--22 .iqdropdown').addClass('menu-open');
+
+  $('.form_elements__item--15').bind('DOMSubtreeModified', () => {
+  	const $paginationPage = $('.paginationjs-page');
+  	if($paginationPage.length > 4) {
+  		$paginationPage.css({'margin-right': '-8px'});
+  	}
+
+  });
 });
