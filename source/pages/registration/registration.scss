@@ -3,8 +3,8 @@
   box-shadow: 0 10px 20px $black-5;
 }
 .registration__wrap {
-  padding-top: 30px;
-  padding-bottom: 24px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   background: transparent url('reg__bg.jpg') center bottom no-repeat;
   // background-position-y: -70px;
   background-size: cover;
@@ -32,6 +32,9 @@
   width: 320%*100/380;
   margin: 0 auto;
   .reg__radio-wrap {
-    margin-bottom: 18px;
+    margin-bottom: 19px;
+  }
+  .reg__toggle-wrap {
+    margin-bottom: 24px;
   }
 }
