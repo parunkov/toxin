@@ -42,9 +42,9 @@
     flex: 0 0 50%;
     margin-top: -1%;
   }
-  @media (max-width: 450px) {
-    flex: 0 0 100%;
-  }
+  // @media (max-width: 450px) {
+  //   flex: 0 0 100%;
+  // }
 }
 .room_details__img-3 {
   flex: 0 0 100%;
@@ -55,10 +55,10 @@
     flex: 0 0 50%;
     margin-top: -1%;
   }
-  @media (max-width: 450px) {
-    flex: 0 0 100%;
-    margin-top: -3%;
-  }
+  // @media (max-width: 450px) {
+  //   flex: 0 0 100%;
+  //   margin-top: -3%;
+  // }
 }
 .room_details__wrap {
   padding-bottom: 41px;
