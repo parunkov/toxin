@@ -4,14 +4,15 @@
 // }
 .review__container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .review__col-1 {
   flex: 0 0 48px;
-  width: 48px;
+  // min-width: 48px;
 }
 .review__col-2 {
-  flex: 1 0 250px;
+  // flex: 1 0 250px;
+  flex: auto;
   padding-top: 3px;
   padding-left: 10px;
 }
@@ -24,7 +25,7 @@
 .review__img-wrap {
   width: 48px;
   height: 48px;
-  margin-bottom: 0;
+  margin-bottom: 12px;
   border: 2px solid $white;
   border-radius: 24px;
   box-shadow: 0 10px 20px $black-10;
