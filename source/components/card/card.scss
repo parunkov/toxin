@@ -56,12 +56,13 @@
 }
 .card__arrow-left {
   position: absolute;
-  top: 43px;
+  top: 52.5px;
   left: 0;
   width: 45px;
   height: 45px;
   padding-top: 12px;
-  padding-left: 19px;
+  padding-left: 9.5px;
+  padding-right: 9.5px;
   font-weight: 400;
   font-size: 24px;
   font-family: 'Material Icons';
@@ -71,12 +72,13 @@
 }
 .card__arrow-right {
   position: absolute;
-  top: 43px;
+  top: 52.5px;
   right: 0;
   width: 45px;
   height: 45px;
   padding-top: 10px;
-  padding-left: 2px;
+  padding-left: 9.5px;
+  padding-right: 9.5px;
   font-weight: 400;
   font-size: 24px;
   font-family: 'Material Icons';
