@@ -130,6 +130,7 @@
 .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-current-.-selected-,
 .datepicker--cell.datepicker--cell-day.-in-range-.-current- {
   background: $gradient-green;
+  transform-style: preserve-3d;
   &:hover {
     background: $gradient-green;
   }
