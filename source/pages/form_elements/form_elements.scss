@@ -177,6 +177,9 @@
   }
   &--16 {
     margin-bottom: 15px;
+    .iqdropdown-menu {
+      z-index: 10;
+    }
   }
   &--17 {
     margin-bottom: 173px;
