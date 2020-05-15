@@ -3,4 +3,5 @@ mixin like(cl, text)
 		label.like__label
 			input(type="checkbox" name=cl + "-like" class="like" + " " + cl + "-like")
 			.like__custom
-			p.like__text= text
+				span
+					p.like__text= text

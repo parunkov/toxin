@@ -22,7 +22,7 @@ $(document).ready(() => {
     const $incrementBtn = $iqdropdown.eq(i).find('.button-increment');
     const $text = $('.iqdropdown-selection');
     const $dropdownClear = $iqdropdown.eq(i).find('.dropdown__clear');
-    console.log($dropdownClear);
+    // console.log($dropdownClear);
 
     let totalCount = 0;
     let inputValue = '';
