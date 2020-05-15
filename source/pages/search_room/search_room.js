@@ -41,4 +41,6 @@ $(document).ready(() => {
   $button2.eq(1).trigger('click');
   $button2.eq(3).trigger('click');
   $button2.eq(3).trigger('click');
+
+  $('.search_room__input-wrap i').removeClass('input__icon-text').addClass('search_room__input-icon-text');
 });

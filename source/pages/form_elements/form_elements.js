@@ -40,4 +40,5 @@ $(document).ready(() => {
       $paginationPage.css({ 'margin-right': '-8px' });
     }
   });
+
 });
