@@ -63,6 +63,9 @@
 .room_details__wrap {
   padding-bottom: 41px;
   border-bottom: 1px solid $black-10;
+  @media (max-width: $page-container) {
+    width: 100%;
+  }
 }
 .room_details__container {
   display: flex;
@@ -74,7 +77,7 @@
   @media (max-width: 1440px) {
     width: $page-container;
   }
-  @media (max-width: $page-container) {
+  @media (max-width: 1250px) {
     width: 100%;
   }
   @media (max-width: 830px) {
@@ -101,12 +104,12 @@
   }
   @media (max-width: 420px) {
     flex: 0 1 100%;
-    min-width: 320px;
-    max-width: 100vw;
+    //min-width: 320px;
+    max-width: 100%;
     margin: 0 auto;
   }
   @media (max-width: 320px) {
-    min-width: 320px;
+    // min-width: 320px;
   }
 }
 .room_details__col-2 {
@@ -137,7 +140,7 @@
 .room_details__text-1 {
   flex: 0 0 40%;
   // border: 1px solid green;
-  min-width: 280px;
+  // min-width: 280px;
   margin-right: 10.8%;
   @media (max-width: 1080px) {
     flex: 0 0 100%;
@@ -158,7 +161,7 @@
 .room_details__text-2 {
   flex: 0 0 45%;
   // border: 1px solid green;
-  min-width: 312px;
+  // min-width: 312px;
   margin-bottom: 30px;
   @media (max-width: 1080px) {
     flex: 0 0 100%;
@@ -302,7 +305,7 @@
 .room_details__text-4 {
   flex: 0 0 42%;
   // border: 1px solid green;
-  min-width: 292px;
+  // min-width: 292px;
   margin-bottom: 20px;
   padding-right: 5%;
   @media (max-width: 1080px) {
@@ -322,7 +325,7 @@
 .room_details__text-5 {
   flex: 0 0 49.2%;
   // border: 1px solid green;
-  min-width: 342px;
+  // min-width: 342px;
   margin-bottom: 50px;
   @media (max-width: 1080px) {
     flex: 0 0 100%;
@@ -330,7 +333,7 @@
   @media (max-width: 420px) {
     flex: 0 1 315px;
     // min-width: 315px;
-    min-width: 0;
+    // min-width: 0;
   }
 }
 .room_details__h2-5 {
