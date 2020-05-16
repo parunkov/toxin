@@ -1,9 +1,9 @@
 @import '../../variables.scss';
-.headers_footers__page {
+.headers-footers {
   padding-bottom: 130px;
   background: $grey;
 }
-.headers_footers__menu {
+.headers-footers__menu {
   width: 100%;
   background: $white;
   box-shadow: 0 10px 20px $black-5;
@@ -15,19 +15,19 @@
     margin-bottom: 42px;
   }
 }
-.headers_footers__footer-1 {
+.headers-footers__footer-1 {
   margin-bottom: 40px;
   background: $white;
   box-shadow: 0 10px 20px $black-5;
 }
-.headers_footers__footer-wrap {
+.headers-footers__footer-wrap {
   background: $white;
   box-shadow: 0 10px 20px $black-5;
 }
-.headers_footers__p {
+.headers-footers__p {
   margin-bottom: 20px;
 } 
-.headers_footers__footer-container {
+.headers-footers__footer-container {
   width: 560%*100/1440;
   margin: 0 auto;
   padding-top: 100px;
@@ -44,7 +44,7 @@
     width: 100vw;
   }
 }
-.headers_footers__logo {
+.headers-footers__logo {
   margin: 0 auto;
   margin-bottom: 18px;
 }
