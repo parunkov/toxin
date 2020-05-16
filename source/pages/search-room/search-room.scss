@@ -5,22 +5,22 @@
 .d-block {
   display: block !important;
 }
-.search_room__header {
+.search-room__header {
   position: relative;
   z-index: 10;
   box-shadow: 0 10px 20px $black-5;
 }
-.search_room__wrap {
+.search-room__wrap {
   position: relative;
   z-index: 1;
   width: 100%;
   margin: 0 auto;
   background: $white;
 }
-.search_room__space {
+.search-room__space {
   border-bottom: 1px solid $black-10;
 }
-.search_room__container {
+.search-room__container {
   // border: 1px solid red;
   display: flex;
   flex-direction: row;
@@ -46,7 +46,7 @@
     flex-wrap: wrap;
   }
 }
-.search_room__filters {
+.search-room__filters {
   display: none;
   @media (max-width: 905px) {
     display: block;
@@ -82,7 +82,7 @@
     }
   }
 }
-.search_room__form {
+.search-room__form {
   flex: 0 0 275%*100/1200;
   // border: 1px solid green;
   min-width: 266px;
@@ -97,10 +97,10 @@
     flex-grow: 1;
   }
 }
-.search_room__input-wrap {
+.search-room__input-wrap {
   margin-bottom: 17px;
 }
-.search_room__input-1 {
+.search-room__input-1 {
   &::-webkit-input-placeholder {
     color: $black-75;
   }
@@ -117,10 +117,10 @@
     border: 1px solid $black-25;
   }
 }
-.search_room__datepicker-wrap {
+.search-room__datepicker-wrap {
   position: relative;
 }
-.search_room__datepicker-container {
+.search-room__datepicker-container {
   position: absolute;
   top: -10px;
   left: 0;
@@ -129,13 +129,13 @@
   width: 320px;
   background: $white;
 }
-.search_room__dropdown-wrap {
+.search-room__dropdown-wrap {
   margin-bottom: 29px;
 }
-.search_room__slider-wrap {
+.search-room__slider-wrap {
   margin-bottom: 15px;
 }
-.search_room__slider-text {
+.search-room__slider-text {
   margin-bottom: 31px;
   font-weight: 400;
   font-size: 12px;
@@ -143,23 +143,23 @@
   font-family: Montserrat, Arial, sans-serif;
   color: $black-50;
 }
-.search_room__checkbox-wrap {
+.search-room__checkbox-wrap {
   width: 222%*100/266;
   margin-bottom: 31px;
 }
-.search_room__checkbox-h3 {
+.search-room__checkbox-h3 {
   margin-bottom: 15px;
 }
-.search_room__rich-wrap {
+.search-room__rich-wrap {
   margin-bottom: 28px;
 }
-.search_room__rich-h3 {
+.search-room__rich-h3 {
   margin-bottom: 18px;
 }
-.search_room__dropdown-2-wrap {
+.search-room__dropdown-2-wrap {
   margin-bottom: 30px;
 }
-.search_room__expandable-h3 {
+.search-room__expandable-h3 {
   position: relative;
   margin-bottom: 18px;
   cursor: pointer;
@@ -182,29 +182,29 @@
     transform: rotate(180deg);
   }
 }
-.search_room__expandable-text {
+.search-room__expandable-text {
   margin-bottom: 30px;
   .checkbox__text {
     margin-bottom: 11px;
   }
 }
-.search_room__cards {
+.search-room__cards {
   flex: auto;
   padding-top: 3px;
   // border: 1px solid blue;
   min-width: 282px;
 }
-.search_room__h1 {
+.search-room__h1 {
   padding-left: 4px;
   letter-spacing: 0.1px;
   margin-bottom: 20px;
 }
-.search_room__cards-wrap {
+.search-room__cards-wrap {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 18px;
 }
-.search_room__card-wrap {
+.search-room__card-wrap {
   flex: 1 0 280px;
   margin-bottom: 21px;
   padding-right: 4.8%*100/834;
@@ -214,7 +214,7 @@
   box-shadow: 0 10px 20px $black-5;
   // cursor: pointer;
 }
-.search_room__pagination-wrap {
+.search-room__pagination-wrap {
   margin-bottom: 69px;
   text-align: center;
   margin-left: -20px;
@@ -226,13 +226,13 @@
     margin-bottom: 69px;
   }
 }
-.search_room__pagination-wrap .paginationjs-page {
+.search-room__pagination-wrap .paginationjs-page {
   margin-right: 1px;
   @media (max-width: 800px) {
     margin-right: -6px;
   }
 }
-.search_room__input-icon-text {
+.search-room__input-icon-text {
   font-weight: 400;
   font-size: 24px;
   font-family: 'Material Icons';
