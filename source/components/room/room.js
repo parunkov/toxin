@@ -7,14 +7,14 @@ import './room.scss';
 import '../datepicker/datepicker';
 import $ from 'jquery';
 
-const $button = $('.room__container .iqdropdown button');
+const $button = $('.room .iqdropdown button');
 
 $(document).ready(() => {
   $button.eq(1).trigger('click');
   $button.eq(1).trigger('click');
   $button.eq(3).trigger('click');
-  $('.room__container .dropdown__set').trigger('click');
-  $('.room__container .iqdropdown').removeClass('menu-open');
+  $('.room .dropdown__set').trigger('click');
+  $('.room .iqdropdown').removeClass('menu-open');
 });
 
 const $myDatepicker = $('.room__datepicker-container .datepicker__content').datepicker().data('datepicker');
@@ -32,7 +32,7 @@ const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.
 $arrival.attr('disabled', '');
 $departure.attr('disabled', '');
 
-$('.room__container .input__icon').click(function (evt) {
+$('.room .input__icon').click(function (evt) {
   evt.preventDefault();
   if ($datepickerContainer.css('display') === 'block' && $(this).find('.input__icon-text').text() === 'expand_more') {
     $datepickerContainer.css({ display: 'none' });
