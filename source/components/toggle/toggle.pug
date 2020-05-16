@@ -1,8 +1,8 @@
 mixin toggle(cl, text)
-	.toggle__container
+	.toggle
 		each t, i in text
 			label.toggle__label
-				input(type="checkbox" name=cl+"-"+i class="toggle"+" "+cl)
+				input(type="checkbox" name=cl+"-"+i class="toggle__input"+" "+cl)
 				.toggle__custom
 					.toggle__custom-inner
 				p.toggle__text= t

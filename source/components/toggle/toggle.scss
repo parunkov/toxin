@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-.toggle {
+.toggle__input {
   display: none;
 }
 .toggle__label {
@@ -24,10 +24,10 @@
   background-color: $black-25;
   border-radius: 6px;
 }
-.toggle:checked + .toggle__custom {
+.toggle__input:checked + .toggle__custom {
   border: 1px solid $purple;
 }
-.toggle:checked + .toggle__custom .toggle__custom-inner {
+.toggle__input:checked + .toggle__custom .toggle__custom-inner {
   left: 24px;
   background: $gradient-purple;
 }
