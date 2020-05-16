@@ -1,10 +1,10 @@
 mixin radio(cl, text)
-	.radio__container
+	.radio
 		each t, i in text
 			label.radio__label
 				if i === 0
-					input(type="radio" name=cl class="radio"+" "+cl checked)
+					input(type="radio" name=cl class="radio__input"+" "+cl checked)
 				else
-					input(type="radio" name=cl class="radio"+" "+cl)
+					input(type="radio" name=cl class="radio__input"+" "+cl)
 				.radio__custom
 				p.radio__text= t

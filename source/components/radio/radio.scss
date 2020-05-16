@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-.radio {
+.radio__input {
   display: none;
 }
 .radio__label {
@@ -19,7 +19,7 @@
   border: 1px solid $black-25;
   border-radius: 10px;
 }
-.radio:checked + .radio__custom {
+.radio__input:checked + .radio__custom {
   cursor: default;
   top: 1px;
   left: 1px;
@@ -34,7 +34,7 @@
   margin-right: 17px;
   color: $black-50;
 }
-.radio:checked ~ .radio__text {
+.radio__input:checked ~ .radio__text {
   cursor: default;
   color: $black-75;
 }
