@@ -1,7 +1,7 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../../components/page/page';
-import '../../components/page_header/page_header';
+import '../../components/page-header/page-header';
 import '../../components/like/like';
 import '../../components/review/review';
 import '../../components/page-footer/page-footer';
