@@ -5,12 +5,12 @@ import '../data/data';
 import './card.scss';
 import $ from 'jquery';
 
-$('.card__container').each((i) => {
+$('.card').each((i) => {
   let counter = 0;
-  const $slides = $('.card__container').eq(i).find('.card__slide');
-  const $left = $('.card__container').eq(i).find('.card__arrow-left');
-  const $right = $('.card__container').eq(i).find('.card__arrow-right');
-  const $controls = $('.card__container').eq(i).find('.card__control');
+  const $slides = $('.card').eq(i).find('.card__slide');
+  const $left = $('.card').eq(i).find('.card__arrow-left');
+  const $right = $('.card').eq(i).find('.card__arrow-right');
+  const $controls = $('.card').eq(i).find('.card__control');
   const showSlides = function () {
     $slides.removeClass('card__slide-left');
     $slides.removeClass('card__slide-active');
