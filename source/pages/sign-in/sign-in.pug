@@ -1,0 +1,13 @@
+extends ../../base.pug
+block title
+	| Sign In
+block main
+	.sign-in
+		header.sign-in__header
+			include ../../components/page-header/page-header.pug
+		main.sign-in__wrap
+			.sign-in__container
+				.sign-in__inner
+					include ../../components/login/login.pug
+		.page__space
+		include ../../components/page-footer/page-footer.pug

@@ -4,5 +4,5 @@ import '../../components/page/page';
 import '../../components/page-header/page-header';
 import '../../components/page-footer/page-footer';
 import '../../components/login/login';
-import './sign_in.scss';
+import './sign-in.scss';
 import '../registration/reg__bg.jpg';

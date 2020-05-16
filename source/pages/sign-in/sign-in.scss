@@ -1,8 +1,8 @@
 @import '../../variables.scss';
-.sign_in__header {
+.sign-in__header {
   box-shadow: 0 10px 20px $black-5;
 }
-.sign_in__wrap {
+.sign-in__wrap {
   // height: 685px;
   padding-top: 171px;
   padding-bottom: 171px;
@@ -10,7 +10,7 @@
   // background-position-y: -70px;
   background-size: cover;
 }
-.sign_in__container {
+.sign-in__container {
   width: 380%*100/1440;
   margin: 0 auto;
   background-color: $white;
@@ -26,7 +26,7 @@
     // min-width: 375px;
   }
 }
-.sign_in__inner {
+.sign-in__inner {
   width: 320%*100/380;
   margin: 0 auto;
 }
