@@ -29,12 +29,12 @@ $(document).ready(() => {
   $('.input__icon-dropdown').eq(2).trigger('click');
   $('.input__icon-dropdown').eq(3).trigger('click');
 
-  const $button = $('.form_elements__item--22 .iqdropdown button');
+  const $button = $('.form_elements__item_22 .iqdropdown button');
   $button.eq(1).trigger('click');
   $button.eq(1).trigger('click');
   $button.eq(3).trigger('click');
 
-  $('.form_elements__item--15').bind('DOMSubtreeModified', () => {
+  $('.form_elements__item_15').bind('DOMSubtreeModified', () => {
     const $paginationPage = $('.paginationjs-page');
     if ($paginationPage.length > 4) {
       $paginationPage.css({ 'margin-right': '-8px' });

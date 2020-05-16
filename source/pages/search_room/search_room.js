@@ -16,13 +16,13 @@ import $ from 'jquery';
 $('.search_room__filters-h3').click((evt) => {
   evt.preventDefault();
   $('.search_room__form').toggleClass('d-block');
-  $('.search_room__filters-h3').toggleClass('search_room__filters-h3--rotate');
+  $('.search_room__filters-h3').toggleClass('search_room__filters-h3_rotate');
 });
 
 $('.search_room__expandable-h3').click((evt) => {
   evt.preventDefault();
   $('.search_room__expandable-text').toggleClass('d-none');
-  $('.search_room__expandable-h3').toggleClass('search_room__expandable-h3--rotate');
+  $('.search_room__expandable-h3').toggleClass('search_room__expandable-h3_rotate');
 });
 
 $('.search_room__checkbox-1:gt(0)').prop('checked', true);

@@ -50,7 +50,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   background: $black;
-  &--cross-1 {
+  &_cross-1 {
     display: none;
     position: absolute;
     top: 9px;
@@ -58,7 +58,7 @@
     transform-origin: center center;
     transform: rotate(45deg);
   }
-  &--cross-2 {
+  &_cross-2 {
     display: none;
     position: absolute;
     top: 9px;
@@ -66,10 +66,10 @@
     transform-origin: center center;
     transform: rotate(-45deg);
   }
-  &--show {
+  &_show {
     display: block;
   }
-  &--hide {
+  &_hide {
     display: none;
   }
 }
@@ -115,11 +115,11 @@
       }
     }
   }
-  &-incl--active {
+  &-incl_active {
     display: block;
   }
 }
-.header__ul-wrap--show {
+.header__ul-wrap_show {
   @media (max-width: $mobile-menu-breakpoint) {
     display: block;
   }
@@ -148,7 +148,7 @@
       margin-right: 0;
     }
   }
-  &--big {
+  &_big {
     margin-right: 36px;
     @media (max-width: $mobile-menu-breakpoint) {
       margin-right: 0;
@@ -157,7 +157,7 @@
       // line-height: 14px;
     }
   }
-  &--incl {
+  &_incl {
     display: block;
     margin-right: 0;
     padding-left: 10px;
@@ -195,7 +195,7 @@
       }
     }
   }
-  &--active {
+  &_active {
     cursor: default;
     a {
       font-weight: 700;
@@ -212,7 +212,7 @@
   // visibility: visible;
   // opacity: 1;
 }
-.header__ul-incl--show {
+.header__ul-incl_show {
   visibility: visible;
   opacity: 1;
   @media (max-width: $mobile-menu-breakpoint) {
@@ -221,25 +221,25 @@
     opacity: 1;
   }
 }
-.header__li--active:hover {
+.header__li_active:hover {
   cursor: default;
   a {
     cursor: default;
   }
 }
-.header__li--active a:hover, .header__a--active:hover {
+.header__li_active a:hover, .header__a_active:hover {
   cursor: default;
 }
 .header__a {
   color: $black-50;
 }
-.header__a--active {
+.header__a_active {
   color: $black-75;
 }
 .header__a:hover {
   color: $black-text;
 }
-.header__a--active:hover {
+.header__a_active:hover {
   color: $black-75;
 }
 .header__arrow {
@@ -308,7 +308,7 @@
     max-width: 100%;
   }
 }
-.header__login-container--show {
+.header__login-container_show {
   @media (max-width: $mobile-menu-breakpoint) {
     display: inline-block;
   }

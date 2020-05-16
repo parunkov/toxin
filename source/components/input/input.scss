@@ -44,7 +44,7 @@
   &:-ms-input-placeholder {
     color: $black-25;
   }
-  &:hover, &--hover, &:focus, &--focus {
+  &:hover, &_hover, &:focus, &_focus {
     border: 1px solid $black-50;
     outline: none;
   }
@@ -60,7 +60,7 @@
   &::-ms-clear {
     display: none;
   }
-  &--arrow {
+  &_arrow {
     + .input__icon{
       padding-top: 12px;
       padding-left: 3px;
@@ -88,7 +88,7 @@
   font-size: 24px;
   font-family: 'Material Icons';
   color: $black-50;
-  &--purple {
+  &_purple {
     color: transparent;
   }
 }

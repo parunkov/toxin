@@ -24,7 +24,7 @@
   // border: 1px solid red;
   // height: 100px;
   padding-left: 21%*100/1200;
-  &--1, &--4, &--7, &--41 {
+  &_1, &_4, &_7, &_41 {
     flex: 0 0 445%*100/1200;
     @media (max-width: $page-container) {
       flex: 1 0 362px;
@@ -36,13 +36,13 @@
       flex: 0 0 100%;
     }
   }
-  &--1 {
+  &_1 {
     margin-bottom: 80px;
   }
-  &--41 {
+  &_41 {
     order: 5;
   }
-  &--2, &--5, &--51 {
+  &_2, &_5, &_51 {
     padding-left: 1.85%;
     flex: 0 0 392%*100/1200;
     @media (max-width: $page-container) {
@@ -55,10 +55,10 @@
       flex: 0 0 100%;
     }
   }
-  &--51 {
+  &_51 {
     order: 6;
   }
-  &--3, &--6, &--61 {
+  &_3, &_6, &_61 {
     padding-left: 1.95%;
     flex: 0 0 362%*100/1200;
     @media (max-width: $page-container) {
@@ -71,10 +71,10 @@
       flex: 0 0 100%;
     }
   }
-  &--61 {
+  &_61 {
     order: 7;
   }
-  &--7 {
+  &_7 {
     flex: 0 0 446%*100/1200;
     order: 8;
     @media (max-width: $page-container) {
@@ -87,7 +87,7 @@
       flex: 0 0 100%;
     }
   }
-  &--8 {
+  &_8 {
     flex: 0 0 754%*100/1200;
     order: 9;
     @media (max-width: $page-container) {
@@ -105,7 +105,7 @@
   max-width: 100vw;
   // height: 40px;
   // border: 1px solid green;
-  &--1, &--4, &--7, &--41 {
+  &_1, &_4, &_7, &_41 {
     width: 320%*100/404;
     @media (max-width: $page-container) {
       width: 320px;
@@ -114,7 +114,7 @@
       width: 100%;
     }
   }
-  &--2, &--5, &--51 {
+  &_2, &_5, &_51 {
     width: 320%*100/350;
     @media (max-width: $page-container) {
       width: 320px;
@@ -127,64 +127,64 @@
 .form_elements__item {
   max-width: 100vw;
   margin-bottom: 17px;
-  &--2 {
+  &_2 {
     margin-bottom: 16.5px;
   }
-  &--3 {
+  &_3 {
     margin-bottom: 20px;
   }
-  &--4 {
+  &_4 {
     margin-bottom: 37px;
   }
-  &--6 {
+  &_6 {
     margin-bottom: 38px;
   }
-  &--5 {
+  &_5 {
     display: flex;
     flex-wrap: nowrap;
     margin-bottom: 38px;
   }
-  &--6, &--7, &--16, &--17, &--18, &--19, &--21, &--23 {
+  &_6, &_7, &_16, &_17, &_18, &_19, &_21, &_23 {
     width: 266%*100/320;
   }
-  &--8 {
+  &_8 {
     width: 222%*100/320;
     margin-bottom: 40px;
     padding-top: 5px;
   }
-  &--9 {
+  &_9 {
     margin-bottom: 40px;
   }
-  &--10 {
+  &_10 {
     margin-bottom: 45px;
   }
-  &--11 {
+  &_11 {
     margin-bottom: 41px;
   }
-  &--13 {
+  &_13 {
     width: 266%*100/320;
     margin-bottom: 44px;
     padding-top: 4px;
   }
-  &--14 {
+  &_14 {
     margin-bottom: 38px;    
   }
-  &--15 {
+  &_15 {
     margin-bottom: 40px;
     .paginationjs-page, .paginationjs-ellipsis {
       margin-right: 0;
     }
   }
-  &--16 {
+  &_16 {
     margin-bottom: 15px;
     .iqdropdown-menu {
       z-index: 10;
     }
   }
-  &--17 {
+  &_17 {
     margin-bottom: 173px;
   }
-  &--18, &--19 {
+  &_18, &_19 {
     margin-bottom: 50px;
     h3 {
       position: relative;
@@ -206,7 +206,7 @@
       border-radius: 4px;
     }
   }
-  &--19 {
+  &_19 {
     margin-bottom: 102px;
     h3 {
       margin-bottom: 18px;
@@ -215,45 +215,45 @@
       transform: rotate(180deg);
     }
   }
-  &--20, &--22 {
+  &_20, &_22 {
     margin-bottom: 255px;
   }
-  &--21 {
+  &_21 {
     margin-bottom: 40px;
     padding-right: 5px;
     h3 {
       margin-bottom: 17px;
     }
   }
-  &--23 {
+  &_23 {
     margin-bottom: 40px;
     padding-right: 5px;
     h3 {
       margin-bottom: 14px;
     }
   }
-  &--24 {
+  &_24 {
     margin-bottom: 20px;
   }
-  &--24, &--25 {
+  &_24, &_25 {
     width: 280%*100/320;
   }
-  &--25 {
+  &_25 {
     margin-bottom: 50px;
   }
-  &--26 {
+  &_26 {
     margin-bottom: 147px;
     padding-top: 10px;
   }
 }
 .form_elements__item-inner {
   display: inline-block;
-  &--1 {
+  &_1 {
     // width: 150%*100/320;
     // margin-right: 16%*100/320;
     flex: 0 0 150%*100/320;
   }
-  &--2 {
+  &_2 {
     // width: 150%*100/320;
     flex: 0 0 150%*100/320;
   }
@@ -287,14 +287,14 @@
   width: 99px;
   margin-right: 15px;
   margin-bottom: 30px;
-  &--4 {
+  &_4 {
     margin-right: 30px;
   }
-  &--5, &--6 {
+  &_5, &_6 {
     width: 61px;
     margin-bottom: 17px;
   }
-  &--7 {
+  &_7 {
     margin-bottom: 41px;
     display: block;
     width: 100%;
@@ -308,7 +308,7 @@
 }
 .form_elements__input {
   letter-spacing: -0.2px;
-  &--uppercase {
+  &_uppercase {
     text-transform: uppercase;
   }
 }

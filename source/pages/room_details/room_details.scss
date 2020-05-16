@@ -246,16 +246,16 @@
   margin-top: 6px;
   margin-right: 6px;
   border-radius: 5px;
-  &--1 {
+  &_1 {
     background: $orange;
   }
-  &--2 {
+  &_2 {
     background: $gradient-green;
   }
-  &--3 {
+  &_3 {
     background: $gradient-purple;
   }
-  &--4 {
+  &_4 {
     background: $gradient-black;
   }
 }

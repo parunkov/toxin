@@ -176,7 +176,7 @@
   text-transform: uppercase;
   cursor: pointer;
   display: none;
-  &--wrap {
+  &_wrap {
     float: left;
   }
 }
@@ -190,7 +190,7 @@
   color: $purple;
   text-transform: uppercase;
   cursor: pointer;
-  &--wrap {
+  &_wrap {
     display: block;
     text-align: right;
   }

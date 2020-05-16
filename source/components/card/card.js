@@ -15,31 +15,31 @@ $('.card__container').each((i) => {
     $slides.removeClass('card__slide-left');
     $slides.removeClass('card__slide-active');
     $slides.removeClass('card__slide-right');
-    $controls.removeClass('card__control--active');
+    $controls.removeClass('card__control_active');
     switch (counter) {
       case 0:
         $slides.eq(3).addClass('card__slide-left');
         $slides.eq(0).addClass('card__slide-active');
         $slides.eq(1).addClass('card__slide-right');
-        $controls.eq(0).addClass('card__control--active');
+        $controls.eq(0).addClass('card__control_active');
         break;
       case 1:
         $slides.eq(0).addClass('card__slide-left');
         $slides.eq(1).addClass('card__slide-active');
         $slides.eq(2).addClass('card__slide-right');
-        $controls.eq(1).addClass('card__control--active');
+        $controls.eq(1).addClass('card__control_active');
         break;
       case 2:
         $slides.eq(1).addClass('card__slide-left');
         $slides.eq(2).addClass('card__slide-active');
         $slides.eq(3).addClass('card__slide-right');
-        $controls.eq(2).addClass('card__control--active');
+        $controls.eq(2).addClass('card__control_active');
         break;
       case 3:
         $slides.eq(2).addClass('card__slide-left');
         $slides.eq(3).addClass('card__slide-active');
         $slides.eq(0).addClass('card__slide-right');
-        $controls.eq(3).addClass('card__control--active');
+        $controls.eq(3).addClass('card__control_active');
         break;
       default:
         break;

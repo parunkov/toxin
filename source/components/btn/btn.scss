@@ -13,7 +13,7 @@
   text-transform: uppercase;
   background: $gradient-purple;
   border-radius: 22px;
-  &--button {
+  &_button {
     display: block;
     width: 100%;
     padding-top: 0;
@@ -21,10 +21,10 @@
     border: none;
     cursor: pointer;
   }
-  &:hover, &--hover {
+  &:hover, &_hover {
     opacity: 0.5;
   }
-  &--white {
+  &_white {
     position: relative;
     padding-top: 2px;
     padding-left: 2px;
@@ -43,7 +43,7 @@
       border-radius: 20px;
     }
   }
-  &--icon-link {
+  &_icon-link {
     min-height: 15px;
     padding-top: 0;
     color: $purple;
@@ -53,11 +53,11 @@
       opacity: 1;
     }
   }
-  &--arrow {
+  &_arrow {
     padding-right: 40px;
     padding-left: 38px;
   }
-  &--arrow::after {
+  &_arrow::after {
     content: ' arrow_forward';
     position: absolute;
     top: 50%;
@@ -70,7 +70,7 @@
     color: $white;
     text-transform: none;
   }
-  &--small {
+  &_small {
     display: block;
     width: 100%;
     min-height: 34px;
@@ -79,7 +79,7 @@
     padding-right: 20px;
     padding-left: 19px;
   }
-  &--small-white {
+  &_small-white {
     display: block;
     width: 100%;
     min-height: 34px;
@@ -88,7 +88,7 @@
     padding-right: 20px;
     padding-left: 19px;
   }
-  &--header-white {
+  &_header-white {
     display: block;
     width: 100%;
     min-height: 34px;

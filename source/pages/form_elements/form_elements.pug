@@ -15,9 +15,9 @@ block main
 	include ../../components/review/review.pug
 	.page__container.form_elements__container
 		article.form_elements__row
-			.form_elements__col.form_elements__col--1
-				section.form_elements__inner.form_elements__inner--1
-					.form_elements__item.form_elements__item--1
+			.form_elements__col.form_elements__col_1
+				section.form_elements__inner.form_elements__inner_1
+					.form_elements__item.form_elements__item_1
 						+input(
 							'Text Field', 
 							'email', 
@@ -26,16 +26,16 @@ block main
 							'', 
 							'Email', 
 							'Default')
-					.form_elements__item.form_elements__item--2
+					.form_elements__item.form_elements__item_2
 						+input(
 							'Text Field', 
 							'email', 
 							'form_elements__input-2', 
-							'input__input--hover form_elements__input', 
+							'input__input_hover form_elements__input', 
 							'This is pretty awesome', 
 							'', 
 							'Hover / Focus')
-					.form_elements__item.form_elements__item--3
+					.form_elements__item.form_elements__item_3
 						+input(
 							'Dropdown', 
 							'email', 
@@ -45,29 +45,29 @@ block main
 							'', 
 							'Default', 
 							'expand_more')
-					.form_elements__item.form_elements__item--4
+					.form_elements__item.form_elements__item_4
 						+input(
 							'masked text field', 
 							'date', 
 							'form_elements__input-4', 
-							'form_elements__input form_elements__input--uppercase', 
+							'form_elements__input form_elements__input_uppercase', 
 							'', 
 							'Email', 
 							'Default', 
 							'expand_more')
-					.form_elements__item.form_elements__item--5
-						.form_elements__item-inner.form_elements__item-inner--1
+					.form_elements__item.form_elements__item_5
+						.form_elements__item-inner.form_elements__item-inner_1
 							+input(
 								'date Dropdown', 
 								'date', 
 								'form_elements__input-5', 
-								'form_elements__input form_elements__input--uppercase', 
+								'form_elements__input form_elements__input_uppercase', 
 								'', 
 								'', 
 								'', 
 								'expand_more')
 						.form_elements__space
-						.form_elements__item-inner.form_elements__item-inner--2
+						.form_elements__item-inner.form_elements__item-inner_2
 							+input(
 								'date Dropdown', 
 								'date', 
@@ -77,7 +77,7 @@ block main
 								'', 
 								'', 
 								'expand_more')
-					.form_elements__item.form_elements__item--6
+					.form_elements__item.form_elements__item_6
 						+input(
 							'filter date dropdown', 
 							'email', 
@@ -87,67 +87,67 @@ block main
 							'', 
 							'', 
 							'expand_more')
-					.form_elements__item.form_elements__item--7
+					.form_elements__item.form_elements__item_7
 						+input(
 							'subscription text field', 
 							'email', 
 							'form_elements__input-8', 
-							'input__input--arrow form_elements__input', 
+							'input__input_arrow form_elements__input', 
 							'', 
 							'Email', 
 							'', 
 							'arrow_forward', 
 							'purple')
-			.form_elements__col.form_elements__col--2
-				section.form_elements__inner.form_elements__inner--2
-					.form_elements__item.form_elements__item--8
+			.form_elements__col.form_elements__col_2
+				section.form_elements__inner.form_elements__inner_2
+					.form_elements__item.form_elements__item_8
 						h3.form_elements__item-8-header Checkbox Buttons
 						+checkbox(
 							'form_elements__checkbox-1', 
 							['Можно курить', 
 							'Можно с питомцами', 
 							'Можно пригласить гостей (до 10 человек)'])
-					.form_elements__item.form_elements__item--9
+					.form_elements__item.form_elements__item_9
 						h3.form_elements__item-9-header Radio Buttons
 						+radio(
 							'form_elements__radio', 
 							['Мужчина', 'Женщина'])
-					.form_elements__item.form_elements__item--10
+					.form_elements__item.form_elements__item_10
 						h3.form_elements__item-10-header Toggle
 						+toggle(
 							'form_elements__toggle', 
 							['Получать спецпредложения', 
 							'Получать спецпредложения'])
-					.form_elements__item.form_elements__item--11
+					.form_elements__item.form_elements__item_11
 						h3.form_elements__item-11-header like button
 						+like('form_elements__1', '2')
 						+like('form_elements__2', '12')
-					.form_elements__item.form_elements__item--12
+					.form_elements__item.form_elements__item_12
 						h3.form_elements__item-12-header rate button
 						+rate('form_elements__rate-1', 4, 1)
 						+rate('form_elements__rate-2', 5, 1)
-			.form_elements__col.form_elements__col--3
-				section.form_elements__inner.form_elements__inner--3
-					.form_elements__item.form_elements__item--13
+			.form_elements__col.form_elements__col_3
+				section.form_elements__inner.form_elements__inner_3
+					.form_elements__item.form_elements__item_13
 						+slider(1, 'Range Slider')
-					.form_elements__item.form_elements__item--14
+					.form_elements__item.form_elements__item_14
 						h3.form_elements__item-14-header buttons
-						.form_elements__btn.form_elements__btn--1.btn click me
-						.form_elements__btn.form_elements__btn--2.btn.btn--hover click me
-						.form_elements__btn.form_elements__btn--3.btn.btn--white 
+						.form_elements__btn.form_elements__btn_1.btn click me
+						.form_elements__btn.form_elements__btn_2.btn.btn_hover click me
+						.form_elements__btn.form_elements__btn_3.btn.btn_white 
 							span click me
-						.form_elements__btn.form_elements__btn--4.btn.btn--white.btn--hover
+						.form_elements__btn.form_elements__btn_4.btn.btn_white.btn_hover
 							span click me
-						.form_elements__btn.form_elements__btn--5.btn.btn--icon-link click me
-						.form_elements__btn.form_elements__btn--6.btn.btn--icon-link.btn--icon-link-hover click me
-						.form_elements__btn.form_elements__btn--7.btn.btn--arrow перейти к оплате
-					.form_elements__item.form_elements__item--15
+						.form_elements__btn.form_elements__btn_5.btn.btn_icon-link click me
+						.form_elements__btn.form_elements__btn_6.btn.btn_icon-link.btn_icon-link-hover click me
+						.form_elements__btn.form_elements__btn_7.btn.btn_arrow перейти к оплате
+					.form_elements__item.form_elements__item_15
 						h3.form_elements__item-15-header pagination
 						#pagination-container
 						p.pagination__text <span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды
-			.form_elements__col.form_elements__col--4
-				section.form_elements__inner.form_elements__inner--4
-					.form_elements__item.form_elements__item--16
+			.form_elements__col.form_elements__col_4
+				section.form_elements__inner.form_elements__inner_4
+					.form_elements__item.form_elements__item_16
 						+dropdown(
 							'rooms',
 							'form_elements__dropdown-rooms-1', 
@@ -156,7 +156,7 @@ block main
 							'спальни', 
 							'кровати', 
 							'ванные комнаты')
-					.form_elements__item.form_elements__item--17
+					.form_elements__item.form_elements__item_17
 						+dropdown(
 							'rooms',
 							'form_elements__dropdown-rooms-1', 
@@ -165,11 +165,11 @@ block main
 							'спальни', 
 							'кровати', 
 							'ванные комнаты')
-			.form_elements__col.form_elements__col--41
-				section.form_elements__inner.form_elements__inner--41
-					.form_elements__item.form_elements__item--18
+			.form_elements__col.form_elements__col_41
+				section.form_elements__inner.form_elements__inner_41
+					.form_elements__item.form_elements__item_18
 						h3 expandable checkbox list
-					.form_elements__item.form_elements__item--19
+					.form_elements__item.form_elements__item_19
 						h3 expandable checkbox list
 						+checkbox(
 							'form_elements__checkbox-2', 
@@ -179,9 +179,9 @@ block main
 							'Кроватка',
 							'Телевизор',
 							'Шампунь'])
-			.form_elements__col.form_elements__col--5
-				section.form_elements__inner.form_elements__inner--5
-					.form_elements__item.form_elements__item--20
+			.form_elements__col.form_elements__col_5
+				section.form_elements__inner.form_elements__inner_5
+					.form_elements__item.form_elements__item_20
 						+dropdown(
 							'peoples',
 							'form_elements__dropdown-peoples-1', 
@@ -191,9 +191,9 @@ block main
 							'дети', 
 							'младенцы',
 							'1')
-			.form_elements__col.form_elements__col--51
-				section.form_elements__inner.form_elements__inner--51
-					.form_elements__item.form_elements__item--21
+			.form_elements__col.form_elements__col_51
+				section.form_elements__inner.form_elements__inner_51
+					.form_elements__item.form_elements__item_21
 						h3 rich Checkbox Buttons
 						+checkbox(
 							'form_elements__checkbox-3', 
@@ -201,9 +201,9 @@ block main
 							'На 1 этаже вас встретит специалист  и проводит до номера.'],
 							['Широкий коридор',
 							'Помощник для инвалидов'])
-			.form_elements__col.form_elements__col--6
-				section.form_elements__inner.form_elements__inner--6
-					.form_elements__item.form_elements__item--22
+			.form_elements__col.form_elements__col_6
+				section.form_elements__inner.form_elements__inner_6
+					.form_elements__item.form_elements__item_22
 						+dropdown(
 							'peoples',
 							'form_elements__dropdown-peoples-2', 
@@ -213,31 +213,31 @@ block main
 							'дети', 
 							'младенцы',
 							'1')
-			.form_elements__col.form_elements__col--61
-				section.form_elements__inner.form_elements__inner--61
-					.form_elements__item.form_elements__item--23
+			.form_elements__col.form_elements__col_61
+				section.form_elements__inner.form_elements__inner_61
+					.form_elements__item.form_elements__item_23
 						h3 bullet list
 						ul.form_elements__ul
 							li.page__li Нельзя с питомцами
 							li.page__li Без вечеринок и мероприятий
 							li.page__li Время прибытия — после 13:00, а выезд до 12:00
-			.form_elements__col.form_elements__col--7
-				section.form_elements__inner.form_elements__inner--7
-					.form_elements__item.form_elements__item--24
+			.form_elements__col.form_elements__col_7
+				section.form_elements__inner.form_elements__inner_7
+					.form_elements__item.form_elements__item_24
 						+info(
 							'form_elements__info-1',
 							'insert_emoticon',
 							'Комфорт',
 							'Шумопоглощающие стены')
-					.form_elements__item.form_elements__item--25
+					.form_elements__item.form_elements__item_25
 						+info(
 							'form_elements__info-1',
 							'location_city',
 							'Удобство',
 							'Окно в каждой из спален')
-			.form_elements__col.form_elements__col--8
-				section.form_elements__inner.form_elements__inner--8
-					.form_elements__item.form_elements__item--26
+			.form_elements__col.form_elements__col_8
+				section.form_elements__inner.form_elements__inner_8
+					.form_elements__item.form_elements__item_26
 						+review(
 							'form_elements__revew-1',
 							'img/murad.jpg',

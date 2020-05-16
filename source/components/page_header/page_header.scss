@@ -30,7 +30,7 @@
     }
     &:nth-child(2) {
       margin-right: 41px;
-      .header__li--incl a {
+      .header__li_incl a {
         min-width: 65px;
       }
       @media (max-width: $mobile-menu-breakpoint) {
@@ -59,7 +59,7 @@
       }
     }
   }
-  .header__li--incl {
+  .header__li_incl {
     margin-right: 0;
     @media (max-width:$mobile-menu-breakpoint) {
         margin-left: auto;

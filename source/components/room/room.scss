@@ -15,23 +15,23 @@
 }
 .room__header {
   margin-bottom: 12px;
-  &--number {
+  &_number {
     font-weight: 700;
     font-size: 16px;
     font-family: Montserrat, Arial, sans-serif;
   }
-  &--category {
+  &_category {
     font-weight: 700;
     font-size: 12px;
     font-family: Montserrat, Arial, sans-serif;
     color: $purple;
     text-transform: uppercase;
   }
-  &--p {
+  &_p {
     font-weight: 700;
     letter-spacing: -0.2px;
   }
-  &--price {
+  &_price {
     font-weight: 400;
     font-size: 12px;
   }
@@ -96,11 +96,11 @@
   clear: both;
   margin-bottom: 15px;
   line-height: 1.3em;
-  &--left {
+  &_left {
     display: inline-block;
     width: 220%*100/320;
   }
-  &--right {
+  &_right {
     float: right;
     width: 75%*100/320;
     text-align: right;
