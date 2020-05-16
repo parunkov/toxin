@@ -1,8 +1,5 @@
 @import '../../variables.scss';
-.header__active {
-  display: none;
-}
-.header__container {
+.header {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -25,6 +22,9 @@
   @media (max-width: 380px) {
     max-width: 315px;
   }
+}
+.header__active {
+  display: none;
 }
 .header__logo {
   display: block;

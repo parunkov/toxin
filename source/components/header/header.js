@@ -4,7 +4,7 @@ import '../btn/btn';
 import './header.scss';
 import $ from 'jquery';
 
-const $container = $('.header__container');
+const $container = $('.header');
 
 $container.each((i) => {
   const num = $container.eq(i).find('.header__active').html();
