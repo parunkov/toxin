@@ -1,7 +1,7 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../../components/page/page';
-import '../../components/ui_kit/ui_kit';
+import '../../components/ui-kit/ui-kit';
 import '../../components/search/search';
 import '../../components/reg/reg';
 import '../../components/room/room';
