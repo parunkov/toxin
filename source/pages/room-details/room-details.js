@@ -7,14 +7,14 @@ import '../../components/review/review';
 import '../../components/page-footer/page-footer';
 import '../../components/info/info';
 import '../../components/room/room';
-import './room_details.scss';
+import './room-details.scss';
 import './room1.jpg';
 import './room2.jpg';
 import './room3.jpg';
 import './Patricia.jpg';
 import $ from 'jquery';
 
-$('.room_details__revew-1-like').prop('checked', true);
+$('.room-details__revew-1-like').prop('checked', true);
 
 const dataset1 = [
   {
@@ -109,5 +109,5 @@ const addCart = function (dataset, chartClass, sectorClass) {
     }, angle, true));
   }(curr, prev)), 0);
 };
-addCart(dataset1, '.room_details__chart', 'room_details__sector');
-addCart(dataset2, '.room_details__chart-2', 'room_details__sector');
+addCart(dataset1, '.room-details__chart', 'room-details__sector');
+addCart(dataset2, '.room-details__chart-2', 'room-details__sector');
