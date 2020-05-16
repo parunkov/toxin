@@ -4,7 +4,7 @@ import '../../components/page/page';
 import '../../components/page_header/page_header';
 import '../../components/like/like';
 import '../../components/review/review';
-import '../../components/page_footer/page_footer';
+import '../../components/page-footer/page-footer';
 import '../../components/info/info';
 import '../../components/room/room';
 import './room_details.scss';

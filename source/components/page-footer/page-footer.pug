@@ -1,4 +1,4 @@
-footer.page_footer__container
+footer.page-footer__container
 	include ../../components/footer/footer.pug
 	-
 		let nav = [
@@ -6,7 +6,7 @@ footer.page_footer__container
 			new MenuItem('о нас', '/mock-address/change-me', ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
 			new MenuItem('Служба поддержки', '/mock-address/change-me', ['Соглашения', 'Сообщества', 'Связь с нами'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me'])
 		];
-	.page_footer__content
+	.page-footer__content
 
 		+footer(
 			headers_footers__footer, 

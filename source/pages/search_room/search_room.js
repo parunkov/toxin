@@ -7,7 +7,7 @@ import '../../components/dropdown/dropdown';
 import '../../components/slider/slider';
 import '../../components/checkbox/checkbox';
 import '../../components/card/card';
-import '../../components/page_footer/page_footer';
+import '../../components/page-footer/page-footer';
 import '../../components/datepicker/datepicker';
 import '../../components/pagination/pagination';
 import './search_room.scss';
