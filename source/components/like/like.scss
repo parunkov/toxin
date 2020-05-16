@@ -1,11 +1,11 @@
 @import '../../variables.scss';
-.like__container {
+.like {
   position: relative;
   display: inline-block;
   min-width: 40px;
   margin-right: 6px;
 }
-.like {
+.like__input {
   display: none;
 }
 .like__custom {
@@ -47,14 +47,14 @@
   color: $black-25;
   // word-break: break-all;
 }
-.like:checked + .like__custom {
+.like__input:checked + .like__custom {
   // border: 1px solid $purple;
   background: $gradient-purple;
 }
-.like:checked + .like__custom::after {
+.like__input:checked + .like__custom::after {
   content: 'favorite';
   color: $purple;
 }
-.like:checked + .like__custom .like__text {
+.like__input:checked + .like__custom .like__text {
   color: $purple;
 }

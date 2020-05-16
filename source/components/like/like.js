@@ -5,7 +5,7 @@ import './like.pug';
 $(document).ready(() => {
 	const $like = $('.like__label');
 	$like.each((i) => {
-		const $input = $('.like__container input').eq(i);
+		const $input = $('.like input').eq(i);
 		const onClick = (e) => {
 			e.preventDefault();
 			const $text = $('.like__text').eq(i);
