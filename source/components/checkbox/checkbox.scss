@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-.checkbox {
+.checkbox__input {
   display: none;
 }
 .checkbox__label {
@@ -17,7 +17,7 @@
   border: 1px solid $black-25;
   border-radius: 4px;
 }
-.checkbox:checked + .checkbox__custom {
+.checkbox__input:checked + .checkbox__custom {
   background: url('check.svg') center center no-repeat;
   border: 1px solid $purple;
 }
