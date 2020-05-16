@@ -1,4 +1,17 @@
 @import '../../variables.scss';
+
+.index {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  background: transparent center bottom no-repeat;
+  background-size: cover;
+  animation-name: bg;
+  animation-duration: 45s;
+  animation-timing-function: steps(1, end);
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
 .index__header {
   position: relative;
   z-index: 10;
@@ -16,18 +29,6 @@
     flex-direction: column;
     text-align: center;
   }
-}
-.index__wrap {
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  background: transparent center bottom no-repeat;
-  background-size: cover;
-  animation-name: bg;
-  animation-duration: 45s;
-  animation-timing-function: steps(1, end);
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
 }
 .index__h1 {
   display: block;
