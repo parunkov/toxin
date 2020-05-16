@@ -4,7 +4,7 @@ import './rate.pug';
 import $ from 'jquery';
 
 const $active = $('.rate__active');
-$('.rate__container').each(function (i) {
+$('.rate').each(function (i) {
   if ($active[i].innerHTML) {
     const $rate = $(this);
     const $stars = $rate.children();
