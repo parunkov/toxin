@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <title>Registration
+    <title>Sign In
     </title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -12,10 +12,10 @@
     <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-  <link href="./css/registration.css" rel="stylesheet"></head>
+  <link href="./css/sign-in.css" rel="stylesheet"></head>
   <body>
-    <div class="registration">
-      <header class="registration__header">
+    <div class="sign-in">
+      <header class="sign-in__header">
         <div class="page-header">
                     <section class="page__container header">
                       <div class="header__active">-1</div><a href="index.html"><span class="page__logo header__logo"></span></a>
@@ -64,69 +64,29 @@
                     </section>
         </div>
       </header>
-      <main class="registration__wrap">
-        <div class="registration__container">
-          <div class="registration__inner">
-            <article class="reg">
-              <h1 class="page__h1 reg__h1">Регистрация аккаунта</h1>
-              <form class="reg__form">
+      <main class="sign-in__wrap">
+        <div class="sign-in__container">
+          <div class="sign-in__inner">
+            <article class="login">
+              <h1 class="page__h1 login__h1">Войти</h1>
+              <form class="login__form">
                             <div class="input">
                               <h3 class="input__h3"></h3>
                               <p class="input__p"></p>
-                              <input class="input__input reg__input-1" type="text" name="name" value="" placeholder="Имя">
-                            </div>
-                            <div class="input">
-                              <h3 class="input__h3"></h3>
-                              <p class="input__p"></p>
-                              <input class="input__input reg__input-2" type="text" name="surname" value="" placeholder="Фамилия">
-                            </div>
-                <div class="reg__radio-wrap">
-                              <div class="radio">
-                                <label class="radio__label">
-                                  <input class="radio__input reg__radio" type="radio" name="reg__radio" checked>
-                                  <div class="radio__custom"></div>
-                                  <p class="radio__text">Мужчина</p>
-                                </label>
-                                <label class="radio__label">
-                                  <input class="radio__input reg__radio" type="radio" name="reg__radio">
-                                  <div class="radio__custom"></div>
-                                  <p class="radio__text">Женщина</p>
-                                </label>
-                              </div>
-                </div>
-                            <div class="input">
-                              <h3 class="input__h3">дата рождения</h3>
-                              <p class="input__p"></p>
-                              <input class="input__input reg__input-3" type="date" name="birthday" value="" placeholder="">
-                            </div>
-                            <div class="input">
-                              <h3 class="input__h3">данные для входа в сервис</h3>
-                              <p class="input__p"></p>
-                              <input class="input__input reg__input-4" type="email" name="email" value="" placeholder="Email">
+                              <input class="input__input login__input-1" type="email" name="email" value="" placeholder="Email">
                             </div>
                             <div class="input">
                               <h3 class="input__h3"></h3>
                               <p class="input__p"></p>
-                              <input class="input__input reg__input-5" type="text" name="password" value="" placeholder="Пароль">
+                              <input class="input__input login__input-2" type="text" name="password" value="" placeholder="Пароль">
                             </div>
-                <div class="reg__toggle-wrap">
-                              <div class="toggle">
-                                <label class="toggle__label">
-                                  <input class="toggle__input reg__toggle" type="checkbox" name="reg__toggle-0">
-                                  <div class="toggle__custom">
-                                    <div class="toggle__custom-inner"></div>
-                                  </div>
-                                  <p class="toggle__text">Получать спецпредложения</p>
-                                </label>
-                              </div>
-                </div>
-                <button class="btn btn_arrow btn_button reg__btn">перейти к оплате</button>
+                <button class="btn btn_arrow btn_button login__btn">войти</button>
               </form>
-              <div class="reg__footer">
-                <div class="reg__footer-1">
-                  <p class="reg__footer-text">Уже есть аккаунт на Toxin</p>
+              <div class="login__footer">
+                <div class="login__footer-1">
+                  <p class="login__footer-text">Нет аккаунта на Toxin?</p>
                 </div>
-                <div class="reg__footer-2"><a href="sign_in.html"><span class="btn btn_white reg__btn-2"> <span>войти</span></span></a></div>
+                <div class="login__footer-2"><a href="registration.html"><span class="btn btn_white login__btn-2"> <span>создать</span></span></a></div>
               </div>
             </article>
           </div>
@@ -210,5 +170,5 @@
         </div>
       </footer>
     </div>
-  <script type="text/javascript" src="./js/registration.js"></script></body>
+  <script type="text/javascript" src="./js/sign-in.js"></script></body>
 </html>
