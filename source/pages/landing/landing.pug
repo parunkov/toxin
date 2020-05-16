@@ -2,15 +2,16 @@ extends ../../base.pug
 block title
 	| Landing Page
 block main
-	header.landing__header
-		include ../../components/page-header/page-header.pug
-	main.landing__wrap
-		.page__container.landing__container
-			.landing__col-1
-				.landing__form-wrap
-					.landing__form
-					include ../../components/search/search.pug
-			.landing__col-4
-				p.landing__p Лучшие номера для вашей работы, отдыха и просто вдохновения
-	.page__space
-	include ../../components/page-footer/page-footer.pug
+	.landing
+		header.landing__header
+			include ../../components/page-header/page-header.pug
+		main.landing__wrap
+			.page__container.landing__container
+				.landing__col-1
+					.landing__form-wrap
+						.landing__form
+						include ../../components/search/search.pug
+				.landing__col-4
+					p.landing__p Лучшие номера для вашей работы, отдыха и просто вдохновения
+		.page__space
+		include ../../components/page-footer/page-footer.pug
