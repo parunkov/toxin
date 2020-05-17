@@ -51,6 +51,7 @@ $('.room .input__icon').click(function (evt) {
   $setBtn.click((e) => {
     e.preventDefault();
     $datepickerContainer.css({ display: 'none' });
+    $icon.css({ cursor: 'pointer' });
     $iconText.text('expand_more');
     if ($myDatepicker.selectedDates[0]) {
       $arrival.attr('value', dateToValue($myDatepicker.selectedDates[0]));
