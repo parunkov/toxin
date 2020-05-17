@@ -267,8 +267,8 @@
 .header__login-container-logged {
   flex: 0 0 145px;
   height: 30px;
-  margin-top: 10px;
-  padding-top: 4px;
+  margin-top: 4px;
+  padding-top: 10px;
   padding-left: 30px;
   border-left: 1px solid $black-10;
   @media (max-width: 950px) {
@@ -280,6 +280,8 @@
   @media (max-width: $mobile-menu-breakpoint) {
     display: none;
     text-align: center;
+    border-left: none;
+    border-top: 1px solid $black-10;
   }
 }
 .header__user {
