@@ -69,6 +69,10 @@
   color: $white;
   transform: rotate(90deg);
   cursor: pointer;
+  color: transparent;
+  &:hover {
+    color: $white;
+  }
 }
 .card__arrow-right {
   position: absolute;
@@ -85,6 +89,10 @@
   color: $white;
   transform: rotate(-90deg);
   cursor: pointer;
+  color: transparent;
+  &:hover {
+    color: $white;
+  }
 }
 .card__controls {
   position: absolute;
