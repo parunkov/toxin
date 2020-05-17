@@ -22,7 +22,7 @@ $(document).ready(() => {
     const $incrementBtn = $iqdropdown.eq(i).find('.button-increment');
     const $text = $('.iqdropdown-selection');
     const $dropdownClear = $iqdropdown.eq(i).find('.dropdown__clear');
-    // console.log($dropdownClear);
+    console.log($dropdownClear);
 
     let totalCount = 0;
     let inputValue = '';
@@ -58,6 +58,7 @@ $(document).ready(() => {
           count -= 1;
           totalCount -= 1;
         }
+        // console.log(totalCount);
         if (!totalCount) {
           $dropdownClear.css({ display: 'none' });
         }
@@ -121,6 +122,7 @@ $(document).ready(() => {
       $iqdropdown.eq(i).find('.iqdropdown-selection').attr('value', inputValue);
     });
     $iqdropdown.eq(i).find('.dropdown__clear').click(() => {
+      totalCount = 0;
       $iqdropdown.eq(i).find('.counter').html('0');
       $dropdownClear.css({ display: 'none' });
       opacytyBtn();
