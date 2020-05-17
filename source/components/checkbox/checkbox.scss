@@ -3,6 +3,7 @@
   display: none;
 }
 .checkbox__label {
+  display: block;
   position: relative;
   vertical-align: top;
 }
@@ -22,6 +23,7 @@
   border: 1px solid $purple;
 }
 .checkbox__text {
+  display: inline-block;
   cursor: pointer;
   margin-bottom: 11px;
   padding-left: 29px;
@@ -40,6 +42,7 @@
   }
 }
 .checkbox__header {
+  display: inline-block;
   cursor: pointer;
   margin-bottom: 5px;
   padding-left: 29px;
