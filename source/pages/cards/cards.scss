@@ -45,6 +45,9 @@
   }
   &_2 {
     margin-bottom: 140px;
+    @media (max-width: $page-container) {
+      margin-bottom: 40px;
+    }
   }
   &_3 {
     width: 320%*100/360;
@@ -52,6 +55,9 @@
   }
   &_4, &_5 {
     margin-bottom: 40px;
+  }
+  &_5 {
+    max-width: 380px;
   }
   &_6, &_7 {
     width: 320%*100/360;
