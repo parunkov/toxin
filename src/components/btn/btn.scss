@@ -19,20 +19,14 @@
     padding-top: 0;
     padding-bottom: 0;
     border: none;
-    cursor: pointer;
   }
   &:hover, &_hover {
     opacity: 0.5;
   }
   &_white {
     position: relative;
-    padding-top: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-    padding-bottom: 2px;
+    padding: 2px;
     color: $purple;
-    background: $gradient-purple;
-    border-radius: 22px;
     span {
       display: block;
       background: $white;
