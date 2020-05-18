@@ -8,8 +8,8 @@ import $ from 'jquery';
 $('.card').each((i) => {
   let counter = 0;
   const $slides = $('.card').eq(i).find('.card__slide');
-  const $left = $('.card').eq(i).find('.card__arrow-left');
-  const $right = $('.card').eq(i).find('.card__arrow-right');
+  const $left = $('.card').eq(i).find('.card__arrow_left');
+  const $right = $('.card').eq(i).find('.card__arrow_right');
   const $controls = $('.card').eq(i).find('.card__control');
   const showSlides = function () {
     $slides.removeClass('card__slide-left');

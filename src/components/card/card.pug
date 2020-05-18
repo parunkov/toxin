@@ -7,10 +7,10 @@ mixin card(cl, data)
 					- for (let i = 0; i < 4; i++)
 						.card__slide
 							img(src=data.img[i])
-				.card__shadow-left
-				.card__shadow-right
-				.card__arrow-left expand_more
-				.card__arrow-right expand_more
+				.card__shadow.card__shadow_left
+				.card__shadow.card__shadow_right
+				.card__arrow.card__arrow_left expand_more
+				.card__arrow.card__arrow_right expand_more
 				.card__controls
 					- for (let i = 0; i < 4; i++)
 						.card__control
