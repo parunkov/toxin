@@ -30,7 +30,6 @@
   text-align: left;
   border: 1px solid $black-25;
   border-radius: 4px;
-  // cursor: pointer;
 }
 .iqdropdown.menu-open {
   border: 1px solid $black-50;
@@ -53,7 +52,6 @@
   cursor: default;
 }
 .input__icon-dropdown-text {
-  // content: 'expand_more';
   position: absolute;
   top: 2px;
   right: 2px;
@@ -68,7 +66,6 @@
   background: $white;
   border-radius: 4px;
   cursor: pointer;
-  // border: 1px solid red;
 }
 .iqdropdown.menu-open .iqdropdown-selection::after {
   background: $white;

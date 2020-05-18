@@ -3,13 +3,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  // width: 100%;
-  // max-width: 1200%*100/1440;
-  // margin: 0 auto;
   padding-top: 17px;
-  // padding-right: 20%*100/1440;
-  // padding-left: 20%*100/1440;
-  // border: 1px solid blue;
   @media (max-width: 1440px) {
     max-width: $page-container;
   }
@@ -80,8 +74,6 @@
     text-align: right;
     // border: 1px solid green;
     @media (max-width: 750px) {
-      // flex: 0 0 100%;
-      // text-align: center;
     }
     @media (max-width: $mobile-menu-breakpoint) {
       flex: 0 0 100%;
@@ -105,7 +97,6 @@
       position: static;
       display: none;
       text-align: center;
-      // margin-top: 10px;
       border-radius: 0;
       border: none;
       padding-top: 15px;
@@ -135,7 +126,6 @@
   @media (max-width: $mobile-menu-breakpoint) {
     display: block;
     margin-right: 0;
-    margin-bottom: 15px;
     text-align: center;
     line-height: 14px;
     a {
@@ -154,33 +144,26 @@
       margin-right: 0;
       margin-top: 0;
       margin-left: 10px;
-      // line-height: 14px;
     }
   }
   &_incl {
     display: block;
     margin-right: 0;
     padding-left: 10px;
-    // padding-top: 10px;
     padding-right: 10px;
-    // margin-bottom: 10px;
     text-align: left;
     @media (max-width: $mobile-menu-breakpoint) {
       position: static;
       text-align: center;
-      padding-left: 10px;
-      padding-right: 10px;
       background: $black-10;
       padding-top: 5px;
       padding-bottom: 5px;
       margin-bottom: 2px;
-      // max-width: 320px;
       margin-left: auto;
       margin-right: auto;
     }
     &:hover {
       @media (max-width: $mobile-menu-breakpoint) {
-        // background: $black-10;
         a {
           color: $black-text;
         }
@@ -189,7 +172,6 @@
     a {
       display: block;
       min-width: 110px;
-      // white-space: nowrap;
       @media (max-width: $mobile-menu-breakpoint) {
         display: inline;
       }
@@ -208,10 +190,6 @@
   }
 }
 
-.header__li:hover > .header__ul-incl {
-  // visibility: visible;
-  // opacity: 1;
-}
 .header__ul-incl_show {
   visibility: visible;
   opacity: 1;
@@ -261,7 +239,6 @@
     top: 8px;
     left: -5px;
     line-height: 1px;
-    // vertical-align: bottom;
   }
 }
 .header__login-container-logged {
