@@ -102,11 +102,9 @@
     }
   }
   .header__login-container {
-    // padding-right: 1.87%;
     margin-bottom: 0;
     flex: 0 1 303px;
     @media (max-width: $mobile-menu-breakpoint) {
-      // flex: 0 0 100%;
       flex: none;
     }
   }
@@ -119,8 +117,5 @@
       width: 100%;
       margin: 0 auto;
     }
-  }
-  .header__login-wrap {
-    // flex: 1 0 auto;
   }
 }
