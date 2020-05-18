@@ -24,7 +24,6 @@ $('.form-elements__checkbox-2:lt(4)').prop('checked', true);
 $('.form-elements__checkbox-2').eq(0).prop('checked', false);
 $('.form-elements__revew-1-like').prop('checked', true);
 $(document).ready(() => {
-
   $('.input__icon-dropdown').eq(1).trigger('click');
   $('.input__icon-dropdown').eq(2).trigger('click');
   $('.input__icon-dropdown').eq(3).trigger('click');
@@ -40,5 +39,4 @@ $(document).ready(() => {
       $paginationPage.css({ 'margin-right': '-8px' });
     }
   });
-
 });

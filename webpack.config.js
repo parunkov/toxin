@@ -13,26 +13,26 @@ const CopyWebpackPlugin= require('copy-webpack-plugin');
 
 
 const PATHS = {
-    source: path.join(__dirname, 'source'),
+    src: path.join(__dirname, 'src'),
     build: path.join(__dirname, 'build')
 };
 
 let fs = require('fs');
-let folders = fs.readdirSync('./source/pages/');
+let folders = fs.readdirSync('./src/pages/');
 
 let entryList = {};
 for (let i = 0; i < folders.length; i++) {
-    entryList[folders[i]] = (PATHS.source + `/pages/${folders[i]}/${folders[i]}.js`);
+    entryList[folders[i]] = (PATHS.src + `/pages/${folders[i]}/${folders[i]}.js`);
 };
 
 let folderPlugins = folders.map(folder => new HtmlWebpackPlugin({
     filename: `${folder}.html`,
     chunks: new Array(folder),
-    template: PATHS.source + `/pages/${folder}/${folder}.pug`
+    template: PATHS.src + `/pages/${folder}/${folder}.pug`
 }));
 let pluginsList = [
 new CopyWebpackPlugin([{
-    from: './source/fonts',
+    from: './src/fonts',
     to: './fonts'
 }]),
 new webpack.ProvidePlugin({
