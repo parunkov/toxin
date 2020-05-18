@@ -22,7 +22,6 @@
 .form-elements__col {
   padding-right: 18%*100/1200;
   // border: 1px solid red;
-  // height: 100px;
   padding-left: 21%*100/1200;
   &_1, &_4, &_7, &_41 {
     flex: 0 0 445%*100/1200;
@@ -103,7 +102,6 @@
 }
 .form-elements__inner {
   max-width: 100vw;
-  // height: 40px;
   // border: 1px solid green;
   &_1, &_4, &_7, &_41 {
     width: 320%*100/404;
@@ -249,12 +247,9 @@
 .form-elements__item-inner {
   display: inline-block;
   &_1 {
-    // width: 150%*100/320;
-    // margin-right: 16%*100/320;
     flex: 0 0 150%*100/320;
   }
   &_2 {
-    // width: 150%*100/320;
     flex: 0 0 150%*100/320;
   }
 }
