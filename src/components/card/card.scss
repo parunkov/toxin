@@ -18,6 +18,9 @@
 .card__slide {
   display: none;
 }
+// .card__slide:hover ~ .card__arrow {
+//   color: red;
+// }
 .card__slide-active {
   position: absolute;
   top: 0;
@@ -62,12 +65,11 @@
   font-weight: 400;
   font-size: 24px;
   font-family: 'Material Icons';
-  color: $white;
   cursor: pointer;
   color: transparent;
-  &:hover {
-    color: $white;
-  }
+}
+.card__slider:hover .card__arrow {
+  color: $white;
 }
 .card__arrow_left {
   top: 52.5px;
