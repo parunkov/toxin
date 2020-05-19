@@ -13,6 +13,8 @@ import '../../components/pagination/pagination';
 import './search-room.scss';
 import $ from 'jquery';
 
+$('.search-room__input-1').attr('disabled', '');
+
 $('.search-room__filters-h3').click((evt) => {
   evt.preventDefault();
   $('.search-room__form').toggleClass('d-block');
