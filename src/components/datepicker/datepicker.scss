@@ -17,6 +17,9 @@
   height: 57px;
   border: none;
 }
+.datepicker--nav-title:hover {
+    background: transparent; 
+}
 .datepicker--days-names {
   height: 31px;
 }
@@ -41,6 +44,9 @@
   @media (max-width: 355px) {
     height: 33px;
   }
+}
+.datepicker--cell.-focus- {
+  background: transparent;
 }
 .datepicker--cell.-selected-, .datepicker--cell.-selected-.-current-, .datepicker--cell.-current-.-focus-, .datepicker--cell.-range-from-, .datepicker--cell.-range-from-.-other-month-.-selected-, .datepicker--cell.-range-to-, .datepicker--cell.-range-to-.-other-month-.-selected-, .datepicker--cell.-selected-.-focus-, .-selected-.datepicker--cell-day.-other-month-, .-selected-.datepicker--cell-day.-other-month-.-focus- {
   position: relative;
