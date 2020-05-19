@@ -17,9 +17,9 @@
     max-width: 315px;
   }
 }
-// .header__active {
-//   display: none;
-// }
+.header__active {
+  display: none;
+}
 .header__logo {
   display: block;
   flex: 0 0 106px;
@@ -177,13 +177,13 @@
       }
     }
   }
-  // &_active {
-  //   cursor: default;
-  //   a {
-  //     font-weight: 700;
-  //     cursor: default;
-  //   }
-  // }
+  &_active {
+    cursor: default;
+    a {
+      font-weight: 700;
+      cursor: default;
+    }
+  }
   a {
     text-decoration: none;
     cursor: pointer;
@@ -211,9 +211,9 @@
 .header__a {
   color: $black-50;
 }
-// .header__a_active {
-//   color: $black-75;
-// }
+.header__a_active {
+  color: $black-75;
+}
 .header__a:hover {
   color: $black-text;
 }
