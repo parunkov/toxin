@@ -43,3 +43,18 @@ $('.datepicker__container').each(function (i) {
     }
   });
 });
+
+// $(document).ready(() => {
+//   const onWindowResize = () => {
+//     console.log($('.datepicker--cell:last').width());
+//     const height = $('.datepicker--cell:last').width();
+//     $('.datepicker--cell-day').css({'height' : height, 'border-radius' : height / 2});
+//     $('.-in-range-').css({'border-radius' : 0});
+//     $('.-current-').css({'border-radius' : height / 2});
+
+//   };
+//   onWindowResize();
+//   $(window).resize(onWindowResize);
+//   $(document).click(onWindowResize);
+//   $(document).mousemove(onWindowResize);
+// });

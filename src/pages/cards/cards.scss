@@ -57,7 +57,26 @@
     margin-bottom: 40px;
   }
   &_5 {
-    max-width: 380px;
+    max-width: 330px;
+    .datepicker__container {
+      border-color: transparent;
+    }
+    // .datepicker--cell-day {
+    //   height: 40px;
+    //   // border-radius: 50%;
+    //   @media (max-width: 959px) {
+    //     height: 50px;
+    //   }
+    //   @media (max-width: 420px) {
+    //     height: 45px;
+    //   }
+    //   @media (max-width: 385px) {
+    //     height: 40px;
+    //   }
+    //   @media (max-width: 360px) {
+    //     height: 38px;
+    //   }
+    // }
   }
   &_6, &_7 {
     width: 320%*100/360;
