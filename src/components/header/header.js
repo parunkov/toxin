@@ -6,16 +6,16 @@ import $ from 'jquery';
 
 const $container = $('.header');
 
-$container.each((i) => {
-  const num = $container.eq(i).find('.header__active').html();
-  $container.eq(i).find('.header__li').each((j) => {
-    if (j === +num) {
-      $container.eq(i).find('.header__li').eq(j).addClass('header__li_active');
-      $container.eq(i).find('.header__li').eq(j).find('a')
-        .addClass('header__a_active');
-    }
-  });
-});
+// $container.each((i) => {
+//   const num = $container.eq(i).find('.header__active').html();
+//   $container.eq(i).find('.header__li').each((j) => {
+//     if (j === +num) {
+//       $container.eq(i).find('.header__li').eq(j).addClass('header__li_active');
+//       $container.eq(i).find('.header__li').eq(j).find('a')
+//         .addClass('header__a_active');
+//     }
+//   });
+// });
 
 
 $('.header__li_big').click(
