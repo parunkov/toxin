@@ -31,11 +31,11 @@
     background: transparent;
   }
 }
-.landing__header {
-  position: relative;
-  z-index: 10;
-  box-shadow: 0 10px 20px $black-5;
-}
+// .landing__header {
+//   // position: relative;
+//   // z-index: 10;
+//   // box-shadow: 0 10px 20px $black-5;
+// }
 .landing__container {
   display: flex;
   flex-direction: row;
@@ -47,7 +47,7 @@
     flex-direction: column;
   }
 }
-.landing__wrap {
+.landing {
   position: relative;
   z-index: 0;
   width: 100%;
