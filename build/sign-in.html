@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
-    <meta name="keywords" content="отель, номер, бронирование">
-    <meta name="description" content="Отель Toxin - личный кабинет">
+    <meta name="keywords" content="отель, номер, бронирование, поиск, сервис">
+    <meta name="description" content="Отель «Toxin» - вход в личный кабинет.">
     <title>Отель "Toxin" - личный кабинет
     </title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
@@ -16,87 +16,89 @@
     <meta name="theme-color" content="#ffffff">
   <link href="./css/sign-in.css" rel="stylesheet"></head>
   <body class="page">
-    <div class="sign-in">
-      <header class="sign-in__header">
-        <div class="page-header">
-                    <section class="page__container header">
-                      <div class="header__active">-1</div><a href="index.html"><span class="page__logo header__logo"></span></a>
-                      <div class="header__burger">
-                        <div class="header__burger-line header__burger-line_burger"></div>
-                        <div class="header__burger-line header__burger-line_burger"></div>
-                        <div class="header__burger-line header__burger-line_burger"></div>
-                        <div class="header__burger-line header__burger-line_cross-1"></div>
-                        <div class="header__burger-line header__burger-line_cross-2"></div>
-                      </div>
-                      <nav class="header__ul-wrap">
-                        <ul class="header__ul">
-                          <li class="header__li"><a class="header__a" href="/mock-address/change-me">О нас</a>
-                            <ul class="header__ul header__ul_menu"></ul>
-                          </li>
-                          <li class="header__li header__li_big"><a class="header__a" href="/mock-address/change-me">Услуги</a><span class="header__arrow">expand_more</span>
-                            <ul class="header__ul header__ul_menu header__ul-incl">
-                              <div class="header__ul-incl-inner">
-                                <li class="header__li header__li_incl"><a class="header__a" href="/mock-address/change-me">Услуга 1</a></li>
-                                <li class="header__li header__li_incl"><a class="header__a" href="/mock-address/change-me">Услуга 2</a></li>
-                                <li class="header__li header__li_incl"><a class="header__a" href="/mock-address/change-me">Услуга 3</a></li>
-                              </div>
-                            </ul>
-                          </li>
-                          <li class="header__li"><a class="header__a" href="/mock-address/change-me">Вакансии</a>
-                            <ul class="header__ul header__ul_menu"></ul>
-                          </li>
-                          <li class="header__li"><a class="header__a" href="/mock-address/change-me">Новости</a>
-                            <ul class="header__ul header__ul_menu"></ul>
-                          </li>
-                          <li class="header__li header__li_big"><a class="header__a" href="/mock-address/change-me">Соглашения</a><span class="header__arrow">expand_more</span>
-                            <ul class="header__ul header__ul_menu header__ul-incl">
-                              <div class="header__ul-incl-inner">
-                                <li class="header__li header__li_incl"><a class="header__a" href="/mock-address/change-me">Соглашение 1</a></li>
-                                <li class="header__li header__li_incl"><a class="header__a" href="/mock-address/change-me">Соглашение 2</a></li>
-                                <li class="header__li header__li_incl"><a class="header__a" href="/mock-address/change-me">Соглашение 3</a></li>
-                              </div>
-                            </ul>
-                          </li>
+        <header class="page-header">
+              <div class="page__container">
+                <nav class="header">
+                  <div class="header__active-page-number">-1</div><a href="index.html"><span class="page__logo header__logo"></span></a><a class="header__burger">
+                    <div class="header__burger-line"></div></a>
+                  <div class="header__nav-list-wrap">
+                    <ul class="header__nav-list">
+                      <li class="header__nav-item"><a class="header__a" href="/mock-address/change-me">О нас</a>
+                        <ul class="header__nav-list"></ul>
+                      </li>
+                      <li class="header__nav-item header__nav-item_with-submenu"><a class="header__a header__a_with-submenu" href="/mock-address/change-me">Услуги</a>
+                        <ul class="header__nav-list header__nav-list-submenu">
+                          <div class="header__nav-list-submenu-inner">
+                            <li class="header__nav-item header__nav-item_submenu"><a class="header__a" href="/mock-address/change-me">Услуга 1</a></li>
+                            <li class="header__nav-item header__nav-item_submenu"><a class="header__a" href="/mock-address/change-me">Услуга 2</a></li>
+                            <li class="header__nav-item header__nav-item_submenu"><a class="header__a" href="/mock-address/change-me">Услуга 3</a></li>
+                          </div>
                         </ul>
-                      </nav>
-                      <div class="header__login-container">
-                        <div class="header__login-wrap"><a class="btn btn_white btn_header-white header__btn" href="sign_in.html"> <span>войти</span></a></div>
-                        <div class="header__login-wrap"><a class="btn btn_small header__btn" href="registration.html">зарегистрироваться</a></div>
-                      </div>
-                    </section>
-        </div>
-      </header>
-      <main class="sign-in__wrap">
-        <div class="sign-in__container">
-          <div class="sign-in__inner">
-            <article class="login">
-              <h1 class="page__h1 login__h1">Войти</h1>
-              <form class="login__form">
-                            <div class="input">
-                              <h3 class="input__h3"></h3>
-                              <p class="input__p"></p>
-                              <input class="input__input login__input-1" type="email" name="email" value="" placeholder="Email">
-                            </div>
-                            <div class="input">
-                              <h3 class="input__h3"></h3>
-                              <p class="input__p"></p>
-                              <input class="input__input login__input-2" type="text" name="password" value="" placeholder="Пароль">
-                            </div>
-                <button class="btn btn_arrow btn_button login__btn">войти</button>
-              </form>
-              <div class="login__footer">
-                <div class="login__footer-1">
-                  <p class="login__footer-text">Нет аккаунта на Toxin?</p>
-                </div>
-                <div class="login__footer-2"><a href="registration.html"><span class="btn btn_white login__btn-2"> <span>создать</span></span></a></div>
+                      </li>
+                      <li class="header__nav-item"><a class="header__a" href="/mock-address/change-me">Вакансии</a>
+                        <ul class="header__nav-list"></ul>
+                      </li>
+                      <li class="header__nav-item"><a class="header__a" href="/mock-address/change-me">Новости</a>
+                        <ul class="header__nav-list"></ul>
+                      </li>
+                      <li class="header__nav-item header__nav-item_with-submenu"><a class="header__a header__a_with-submenu" href="/mock-address/change-me">Соглашения</a>
+                        <ul class="header__nav-list header__nav-list-submenu">
+                          <div class="header__nav-list-submenu-inner">
+                            <li class="header__nav-item header__nav-item_submenu"><a class="header__a" href="/mock-address/change-me">Соглашение 1</a></li>
+                            <li class="header__nav-item header__nav-item_submenu"><a class="header__a" href="/mock-address/change-me">Соглашение 2</a></li>
+                            <li class="header__nav-item header__nav-item_submenu"><a class="header__a" href="/mock-address/change-me">Соглашение 3</a></li>
+                          </div>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="header__btn-container">
+                    <div class="header__btn-wrap">
+                      <div class="header__btn"><a class="btn btn_white btn_header-white" href="sign-in.html"> <span class="header__btn-inner">войти</span></a></div>
+                    </div>
+                    <div class="header__btn-wrap">
+                      <div class="header__btn"><a class="btn btn_small" href="registration.html">зарегистрироваться</a></div>
+                    </div>
+                  </div>
+                </nav>
               </div>
-            </article>
-          </div>
+        </header>
+    <main class="sign-in">
+      <div class="sign-in__container">
+        <div class="sign-in__inner">
+              <article class="login">
+                <h1 class="page__h1 login__h1">Войти</h1>
+                <form class="login__form">
+                      <div class="input">
+                        <h3 class="input__h3"></h3>
+                        <p class="input__p"></p>
+                        <input class="input__input login__input-1" type="email" name="email" value="" placeholder="Email">
+                      </div>
+                      <div class="input">
+                        <h3 class="input__h3"></h3>
+                        <p class="input__p"></p>
+                        <input class="input__input login__input-2" type="text" name="password" value="" placeholder="Пароль">
+                      </div>
+                  <div class="login__btn">
+                    <button class="btn btn_arrow btn_button">войти</button>
+                  </div>
+                </form>
+                <div class="login__footer">
+                  <div class="login__footer-1">
+                    <p class="login__footer-text">Нет аккаунта на Toxin?</p>
+                  </div>
+                  <div class="login__footer-2"><a href="registration.html">
+                      <div class="login__btn-2"> 
+                        <div class="btn btn_white"><span class="login__btn-2-inner">создать</span></div>
+                      </div></a></div>
+                </div>
+              </article>
         </div>
-      </main>
-      <div class="page__space"></div>
-      <footer class="page-footer">
-        <div class="page-footer__content">
+      </div>
+    </main>
+    <div class="page__space"></div>
+        <footer class="page-footer">
+          <div class="page-footer__content">
                   <div class="footer">
                     <section class="footer__block-1">
                       <div class="footer__container">
@@ -106,9 +108,7 @@
                         </div>
                         <nav class="footer__nav">
                           <div class="footer__col footer__col_2">
-                            <h3 class="footer__h3">навигация
-                              <!-- a(href=menu[i].href class="footer__a") !{menu[i].item}-->
-                            </h3>
+                            <h3 class="footer__h3">навигация</h3>
                             <ul class="footer__ul footer__ul_menu footer__ul-incl">
                               <li class="footer__li footer__li_incl"><a class="footer__a" href="/mock-address/change-me">О нас</a></li>
                               <li class="footer__li footer__li_incl"><a class="footer__a" href="/mock-address/change-me">Новости</a></li>
@@ -117,9 +117,7 @@
                             </ul>
                           </div>
                           <div class="footer__col footer__col_3">
-                            <h3 class="footer__h3">о нас
-                              <!-- a(href=menu[i].href class="footer__a") !{menu[i].item}-->
-                            </h3>
+                            <h3 class="footer__h3">о нас</h3>
                             <ul class="footer__ul footer__ul_menu footer__ul-incl">
                               <li class="footer__li footer__li_incl"><a class="footer__a" href="/mock-address/change-me">О сервисе</a></li>
                               <li class="footer__li footer__li_incl"><a class="footer__a" href="/mock-address/change-me">Наша команда</a></li>
@@ -128,9 +126,7 @@
                             </ul>
                           </div>
                           <div class="footer__col footer__col_4">
-                            <h3 class="footer__h3">Служба поддержки
-                              <!-- a(href=menu[i].href class="footer__a") !{menu[i].item}-->
-                            </h3>
+                            <h3 class="footer__h3">Служба поддержки</h3>
                             <ul class="footer__ul footer__ul_menu footer__ul-incl">
                               <li class="footer__li footer__li_incl"><a class="footer__a" href="/mock-address/change-me">Соглашения</a></li>
                               <li class="footer__li footer__li_incl"><a class="footer__a" href="/mock-address/change-me">Сообщества</a></li>
@@ -139,17 +135,16 @@
                           </div>
                         </nav>
                         <div class="footer__col footer__col_25">
-                          <!-- a(href="/mock-address/change-me" class="footer__a")-->
                           <h3 class="footer__h3 footer__h3_col-5">Подписка</h3>
                           <p class="footer__p">Получайте специальные предложения и новости сервиса</p>
                           <form class="footer__form">
-                                    <div class="input">
-                                      <h3 class="input__h3"></h3>
-                                      <p class="input__p"></p>
-                                      <input class="input__input input__input_arrow footer__input" type="email" name="footer__input" value="" placeholder="Email">
-                                      <div class="input__icon"><i class="input__icon-text input__icon-text_purple">arrow_forward</i>
-                                      </div>
+                                  <div class="input">
+                                    <h3 class="input__h3"></h3>
+                                    <p class="input__p"></p>
+                                    <input class="input__input input__input_arrow footer__input" type="email" name="footer__input" value="" placeholder="Email">
+                                    <div class="input__icon"><i class="input__icon-text input__icon-text_purple">arrow_forward</i>
                                     </div>
+                                  </div>
                           </form>
                         </div>
                       </div>
@@ -169,8 +164,7 @@
                       </div>
                     </section>
                   </div>
-        </div>
-      </footer>
-    </div>
+          </div>
+        </footer>
   <script type="text/javascript" src="./js/sign-in.js"></script></body>
 </html>
