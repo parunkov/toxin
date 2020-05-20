@@ -3,7 +3,8 @@ mixin reg
 	include ../../components/radio/radio.pug
 	include ../../components/toggle/toggle.pug
 	article.reg
-		h1.page__h1.reg__h1 Регистрация аккаунта
+		.reg__header-wrap
+			h1.page__h1 Регистрация аккаунта
 		form.reg__form
 			+input(
 				'', 
@@ -53,11 +54,13 @@ mixin reg
 				+toggle(
 					'reg__toggle', 
 					['Получать спецпредложения'])
-			button.btn.btn_arrow.btn_button.reg__btn перейти к оплате
+			.reg__btn
+				button.btn.btn_arrow.btn_button перейти к оплате
 		.reg__footer
 			.reg__footer-1
 				p.reg__footer-text Уже есть аккаунт на Toxin
 			.reg__footer-2
 				a(href="sign-in.html")
-					span.btn.btn_white.reg__btn-2 
-						span войти
+					.reg__btn-2 
+						.btn.btn_white
+							span.reg__btn-inner войти
