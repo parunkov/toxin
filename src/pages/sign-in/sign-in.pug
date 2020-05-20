@@ -5,10 +5,11 @@ block title
 	| Отель "Toxin" - личный кабинет
 block main
 	include ../../components/login/login.pug
+	include ../../components/page-footer/page-footer.pug
 	include ../../components/page-header/page-header.pug
 	main.sign-in
 		.sign-in__container
 			.sign-in__inner
 				+login
 	.page__space
-	include ../../components/page-footer/page-footer.pug
+	+page-footer

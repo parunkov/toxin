@@ -1,17 +1,18 @@
-footer.page-footer
-	include ../../components/footer/footer.pug
-	-
-		let nav = [
-			new MenuItem('навигация', '/mock-address/change-me', ['О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
-			new MenuItem('о нас', '/mock-address/change-me', ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
-			new MenuItem('Служба поддержки', '/mock-address/change-me', ['Соглашения', 'Сообщества', 'Связь с нами'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me'])
-		];
-	.page-footer__content
+mixin page-footer
+	footer.page-footer
+		include ../../components/footer/footer.pug
+		-
+			let nav = [
+				new MenuItem('навигация', '/mock-address/change-me', ['О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
+				new MenuItem('о нас', '/mock-address/change-me', ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
+				new MenuItem('Служба поддержки', '/mock-address/change-me', ['Соглашения', 'Сообщества', 'Связь с нами'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me'])
+			];
+		.page-footer__content
 
-		+footer(
-			headers-footers__footer, 
-			'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
-			nav, 
-			'Подписка',
-			'Получайте специальные предложения и новости сервиса',
-			'Copyright © 2018 Toxin отель. Все права зачищены.')
+			+footer(
+				headers-footers__footer, 
+				'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
+				nav, 
+				'Подписка',
+				'Получайте специальные предложения и новости сервиса',
+				'Copyright © 2018 Toxin отель. Все права зачищены.')

@@ -4,6 +4,7 @@ block description
 block title
 	|  Отель "Toxin"
 block main
+	include ../../components/page-footer/page-footer.pug
 	include ../../components/page-header/page-header.pug
 	main.landing
 		.page__container.landing__container
@@ -14,4 +15,4 @@ block main
 			.landing__col-4
 				p.landing__p Лучшие номера для вашей работы, отдыха и просто вдохновения
 	.page__space
-	include ../../components/page-footer/page-footer.pug
+	+page-footer
