@@ -13,6 +13,6 @@ include ../../components/header/header.pug
 		new MenuItem('Новости', '/mock-address/change-me'),
 		new MenuItem('Соглашения', '/mock-address/change-me', ['Соглашение 1', 'Соглашение 2', 'Соглашение 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
 	];
-mixin page-header(active)
+mixin page-header(activePageNumber)
 	header.page-header
-		+header(page-header__header-menu, menu, active, 'войти', 'sign-in.html', 'зарегистрироваться', 'registration.html')
+		+header(page-header__header-menu, menu, activePageNumber, 'войти', 'sign-in.html', 'зарегистрироваться', 'registration.html')
