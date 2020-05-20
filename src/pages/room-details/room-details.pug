@@ -6,6 +6,7 @@ block title
 block main
 	include ../../components/page-header/page-header.pug
 	include ../../components/page-footer/page-footer.pug
+	include ../../components/room/room.pug
 	+page-header(-1)
 	main.room-details
 		figure.room-details__img-wrap
@@ -98,6 +99,6 @@ block main
 				.room-details__col-2
 					.room-details__form
 						.room-details__form-inner
-							include ../../components/room/room.pug
+							+room
 	.page__space
 	+page-footer

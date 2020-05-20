@@ -10,6 +10,7 @@ block main
 		include ../../components/datepicker/datepicker.pug
 		include ../../components/login/login.pug
 		include ../../components/reg/reg.pug
+		include ../../components/room/room.pug
 		- 	
 			let RoomData = function(img, num, lux, price, rate, rev) {
 				this.img = img;
@@ -35,7 +36,7 @@ block main
 				.cards__col.cards__col_2
 					.cards__inner.cards__inner_3
 						.cards__content.cards__content_3
-							include ../../components/room/room.pug
+							+room
 					.cards__inner.cards__inner_4
 						.cards__content.cards__content_4
 							+login
