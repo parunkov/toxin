@@ -4,8 +4,9 @@ block description
 block title
 	|  Отель "Toxin" - регистрация
 block main
-	include ../../components/page-footer/page-footer.pug
 	include ../../components/page-header/page-header.pug
+	include ../../components/page-footer/page-footer.pug
+	+page-header(-1)
 	main.registration
 		.registration__container
 			.registration__inner
