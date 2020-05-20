@@ -3,7 +3,7 @@
   padding-top: 40px;
   padding-bottom: 30px;
 }
-.search__h1 {
+.search__header-wrap {
   margin-bottom: 17px;
 }
 .search__input-wrap {
@@ -64,7 +64,4 @@
   display: none;
   width: 100%;
   background: $white;
-}
-.search__btn {
-  display: block;
 }

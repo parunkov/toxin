@@ -3,7 +3,8 @@ mixin search
 	include ../../components/dropdown/dropdown.pug
 	include ../../components/datepicker/datepicker.pug
 	article.search
-		h1.page__h1.search__h1 Найдём номера под ваши пожелания
+		.search__header-wrap
+			h1.page__h1 Найдём номера под ваши пожелания
 		form.search__form
 			.search__input-wrap
 				.search__input-1-wrap
@@ -40,4 +41,4 @@ mixin search
 			'младенцы',
 			'1')
 			a(href="search-room.html")
-				span.btn.btn_arrow.search__btn подобрать номер
+				.btn.btn_arrow подобрать номер
