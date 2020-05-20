@@ -1,42 +1,43 @@
-include ../../components/input/input.pug
-include ../../components/dropdown/dropdown.pug
-include ../../components/datepicker/datepicker.pug
-article.search
-	h1.page__h1.search__h1 Найдём номера под ваши пожелания
-	form.search__form
-		.search__input-wrap
-			.search__input-1-wrap
-				+input(
-				'прибытие', 
-				'text', 
-				'arrival', 
-				'search__input-1', 
-				'', 
-				'ДД.ММ.ГГГГ', 
-				'', 
-				'expand_more')
-			.search__input-space
-			.search__input-2-wrap
-				+input(
-				'выезд', 
-				'text', 
-				'departure', 
-				'search__input-2', 
-				'', 
-				'ДД.ММ.ГГГГ', 
-				'', 
-				'expand_more')
-		.search__datepicker-wrap
-			.search__datepicker-container
-				+datepicker
-		+dropdown(
-		'peoples',
-		'search__dropdown', 
-		'гости', 
-		'', 
-		'взрослые', 
-		'дети', 
-		'младенцы',
-		'1')
-		a(href="search-room.html")
-			span.btn.btn_arrow.search__btn подобрать номер
+mixin search
+	include ../../components/input/input.pug
+	include ../../components/dropdown/dropdown.pug
+	include ../../components/datepicker/datepicker.pug
+	article.search
+		h1.page__h1.search__h1 Найдём номера под ваши пожелания
+		form.search__form
+			.search__input-wrap
+				.search__input-1-wrap
+					+input(
+					'прибытие', 
+					'text', 
+					'arrival', 
+					'search__input-1', 
+					'', 
+					'ДД.ММ.ГГГГ', 
+					'', 
+					'expand_more')
+				.search__input-space
+				.search__input-2-wrap
+					+input(
+					'выезд', 
+					'text', 
+					'departure', 
+					'search__input-2', 
+					'', 
+					'ДД.ММ.ГГГГ', 
+					'', 
+					'expand_more')
+			.search__datepicker-wrap
+				.search__datepicker-container
+					+datepicker
+			+dropdown(
+			'peoples',
+			'search__dropdown', 
+			'гости', 
+			'', 
+			'взрослые', 
+			'дети', 
+			'младенцы',
+			'1')
+			a(href="search-room.html")
+				span.btn.btn_arrow.search__btn подобрать номер

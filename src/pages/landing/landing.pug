@@ -6,13 +6,14 @@ block title
 block main
 	include ../../components/page-header/page-header.pug
 	include ../../components/page-footer/page-footer.pug
+	include ../../components/search/search.pug
 	+page-header(-1)
 	main.landing
 		.page__container.landing__container
 			.landing__col-1
 				.landing__form-wrap
 					.landing__form
-					include ../../components/search/search.pug
+						+search
 			.landing__col-4
 				p.landing__p Лучшие номера для вашей работы, отдыха и просто вдохновения
 	.page__space

@@ -11,6 +11,7 @@ block main
 		include ../../components/login/login.pug
 		include ../../components/reg/reg.pug
 		include ../../components/room/room.pug
+		include ../../components/search/search.pug
 		- 	
 			let RoomData = function(img, num, lux, price, rate, rev) {
 				this.img = img;
@@ -29,7 +30,7 @@ block main
 				.cards__col.cards__col_1
 					.cards__inner.cards__inner_1
 						.cards__content.cards__content_1
-							include ../../components/search/search.pug
+							+search
 					.cards__inner.cards__inner_2
 						.cards__content.cards__content_2
 							+reg
