@@ -10,13 +10,11 @@ mixin footer(cl, text, menu, h3, p, copyright, ui)
 					each val, i in menu
 						div(class ="footer__col footer__col_" + (i + 2))
 							h3.footer__h3 !{menu[i].item}
-								// a(href=menu[i].href class="footer__a") !{menu[i].item}
 							ul.footer__ul.footer__ul_menu.footer__ul-incl
 								each val, j in menu[i].incl
 									li.footer__li.footer__li_incl
 										a(href=menu[i].hrefs[j] class="footer__a") !{menu[i].incl[j]}
 				.footer__col.footer__col_25
-					// a(href="/mock-address/change-me" class="footer__a")
 					h3.footer__h3.footer__h3_col-5= h3
 					p.footer__p= p 
 					form.footer__form
