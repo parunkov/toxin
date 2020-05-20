@@ -6,31 +6,31 @@ mixin header(cl, menu, activePageNumber, btn1, href1, btn2, href2, login)
 				span.page__logo.header__logo
 			a.header__burger
 				.header__burger-line
-			.header__ul-wrap
-				ul.header__ul
+			.header__nav-list-wrap
+				ul.header__nav-list
 					each val, i in menu
 						if menu[i].incl
-							li.header__li.header__li_big
-								a(href=menu[i].href class="header__a header__a_big") !{menu[i].item}
-								ul.header__ul.header__ul_menu.header__ul-incl
-									.header__ul-incl-inner
+							li.header__nav-item.header__nav-item_with-submenu
+								a(href=menu[i].href class="header__a header__a_with-submenu") !{menu[i].item}
+								ul.header__nav-list.header__nav-list-submenu
+									.header__nav-list-submenu-inner
 										each val, j in menu[i].incl
-											li.header__li.header__li_incl
+											li.header__nav-item.header__nav-item_submenu
 												a(href=menu[i].hrefs[j] class="header__a") !{menu[i].incl[j]}
 						else
-							li.header__li
+							li.header__nav-item
 								a(href=menu[i].href class="header__a") !{menu[i].item}
-								ul.header__ul.header__ul_menu
+								ul.header__nav-list
 			if login
-				.header__login-container-logged
+				.header__btn-container-logged
 					.header__user Cosmin Negoita
 			else
-				.header__login-container
-					.header__login-wrap
+				.header__btn-container
+					.header__btn-wrap
 						.header__btn
 							a(href=href1 class="btn btn_white btn_header-white") 
-								span.header__login-inner !{btn1}
-					.header__login-wrap
+								span.header__btn-inner !{btn1}
+					.header__btn-wrap
 						.header__btn
 							a(href=href2 class="btn btn_small") !{btn2}
 

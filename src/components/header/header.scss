@@ -75,7 +75,7 @@
     }
   }
 }
-.header__ul {
+.header__nav-list {
   &-wrap {
     flex: 1 1 320px;
     padding-top: 12px;
@@ -90,7 +90,7 @@
       margin: 0 auto;
     }
   }
-  &-incl {
+  &-submenu {
     position: absolute;
     top: 16px;
     left: -10px;
@@ -114,16 +114,16 @@
       }
     }
   }
-  &-incl_active {
+  &-submenu_active {
     display: block;
   }
 }
-.header__ul-wrap_show {
+.header__nav-list-wrap_visible {
   @media (max-width: $mobile-menu-breakpoint) {
     display: block;
   }
 }
-.header__li {
+.header__nav-item {
   position: relative;
   display: inline-block;
   margin-right: 26px;
@@ -146,7 +146,7 @@
       margin-right: 0;
     }
   }
-  &_big {
+  &_with-submenu {
     position: relative;
     margin-right: 36px;
     @media (max-width: $mobile-menu-breakpoint) {
@@ -155,7 +155,7 @@
       margin-left: 10px;
     }
   }
-  &_incl {
+  &_submenu {
     display: block;
     margin-right: 0;
     padding-left: 10px;
@@ -199,7 +199,7 @@
   }
 }
 
-.header__ul-incl_show {
+.header__nav-list-submenu_visible {
   visibility: visible;
   opacity: 1;
   @media (max-width: $mobile-menu-breakpoint) {
@@ -208,13 +208,13 @@
     opacity: 1;
   }
 }
-.header__li_active:hover {
+.header__nav-item_active:hover {
   cursor: default;
   a {
     cursor: default;
   }
 }
-.header__li_active a:hover, .header__a_active:hover {
+.header__nav-item_active a:hover, .header__a_active:hover {
   cursor: default;
 }
 .header__a {
@@ -229,7 +229,7 @@
 .header__a_active:hover {
   color: $black-75;
 }
-.header__li_big .header__a_big::after, .header__li_big-open .header__a_big::after {
+.header__nav-item_with-submenu .header__a_with-submenu::after, .header__nav-item_with-submenu-open .header__a_with-submenu::after {
   position: absolute;
   right: -25px;
   bottom: -6px;
@@ -251,13 +251,13 @@
     line-height: 1px;
   }
 }
-.header__li_big .header__a_big::after {
+.header__nav-item_with-submenu .header__a_with-submenu::after {
   content: 'expand_more';
 }
-.header__li_big-open .header__a_big::after {
+.header__nav-item_with-submenu-open .header__a_with-submenu::after {
   content: 'expand_less';
 }
-.header__login-container-logged {
+.header__btn-container-logged {
   flex: 0 0 145px;
   height: 30px;
   margin-top: 4px;
@@ -285,7 +285,7 @@
   color: $black-50;
   cursor: default;
 }
-.header__login-container {
+.header__btn-container {
   flex: 0 0 200px;
   margin-bottom: 0;
   padding-top: 3px;
@@ -304,12 +304,12 @@
     max-width: 100%;
   }
 }
-.header__login-container_show {
+.header__btn-container_visible {
   @media (max-width: $mobile-menu-breakpoint) {
     display: inline-block;
   }
 }
-.header__login-wrap {
+.header__btn-wrap {
   flex: 1 1 79%*100/200;
   vertical-align: top;
   margin-right: 20px;
