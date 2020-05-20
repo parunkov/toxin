@@ -47,6 +47,8 @@
   }
 }
 .headers-footers__logo {
-  margin: 0 auto;
-  margin-bottom: 18px;
+  .page__logo {
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
 }
