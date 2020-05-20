@@ -5,7 +5,7 @@ mixin room
 	article.room
 		.room__header
 			.room__header-1
-				h1.page__h1.room__h1 <span class="room__header_number">№</span>888
+				h1.page__h1 <span class="room__header_number">№</span>888
 					span.room__header_category  люкс
 			.room__header-2
 				p.room__header_p 9 990₽ <span class="room__header_price">в сутки</span>
@@ -59,4 +59,5 @@ mixin room
 				span.page__h2.room__price-1 Итого
 				span.room__price-2
 				h2.room__price-3 38 081₽
-			button.btn.btn_arrow.btn_button.room__btn забронировать
+			.room__btn
+				button.btn.btn_arrow.btn_button забронировать
