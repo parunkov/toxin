@@ -11,8 +11,7 @@ mixin header(cl, menu, activePageNumber, btn1, href1, btn2, href2, login)
 					each val, i in menu
 						if menu[i].incl
 							li.header__li.header__li_big
-								a(href=menu[i].href class="header__a") !{menu[i].item}
-								span.header__arrow expand_more
+								a(href=menu[i].href class="header__a header__a_big") !{menu[i].item}
 								ul.header__ul.header__ul_menu.header__ul-incl
 									.header__ul-incl-inner
 										each val, j in menu[i].incl

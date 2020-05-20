@@ -147,6 +147,7 @@
     }
   }
   &_big {
+    position: relative;
     margin-right: 36px;
     @media (max-width: $mobile-menu-breakpoint) {
       margin-right: 0;
@@ -228,10 +229,33 @@
 .header__a_active:hover {
   color: $black-75;
 }
-.header__arrow {
+.header__li_big .header__a_big::after {
+  content: 'expand_more';
   position: absolute;
-  right: -20px;
-  bottom: -5px;
+  right: -25px;
+  bottom: -6px;
+  display: inline-block;
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23.91px;
+  font-family: 'Material Icons';
+  color: $black-50;
+  cursor: pointer;
+  @media (max-width: $mobile-menu-breakpoint) {
+    margin-left: 5px;
+    padding-top: 0;
+    position: relative;
+    top: 8px;
+    left: -5px;
+    line-height: 1px;
+  }
+}
+.header__li_big-open .header__a_big::after {
+  content: 'expand_less';
+  position: absolute;
+  right: -25px;
+  bottom: -6px;
   display: inline-block;
   padding-top: 20px;
   font-weight: 400;
