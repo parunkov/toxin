@@ -1,12 +1,12 @@
 mixin header(cl, menu, activePageNumber, btn1, href1, btn2, href2, login)
 	.page__container
-		.header
+		nav.header
 			.header__active-page-number= activePageNumber
 			a(href="index.html")
 				span.page__logo.header__logo
 			a.header__burger
 				.header__burger-line
-			nav.header__ul-wrap
+			.header__ul-wrap
 				ul.header__ul
 					each val, i in menu
 						if menu[i].incl
