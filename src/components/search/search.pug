@@ -1,5 +1,6 @@
 include ../../components/input/input.pug
 include ../../components/dropdown/dropdown.pug
+include ../../components/datepicker/datepicker.pug
 article.search
 	h1.page__h1.search__h1 Найдём номера под ваши пожелания
 	form.search__form
@@ -27,7 +28,7 @@ article.search
 				'expand_more')
 		.search__datepicker-wrap
 			.search__datepicker-container
-				include ../../components/datepicker/datepicker.pug
+				+datepicker
 		+dropdown(
 		'peoples',
 		'search__dropdown', 

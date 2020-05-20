@@ -7,6 +7,7 @@ block main
 	.cards
 		include ../../components/ui-kit/ui-kit.pug
 		include ../../components/card/card.pug
+		include ../../components/datepicker/datepicker.pug
 		- 	
 			let RoomData = function(img, num, lux, price, rate, rev) {
 				this.img = img;
@@ -39,7 +40,7 @@ block main
 				.cards__col.cards__col_3
 					.cards__inner.cards__inner_5
 						.cards__content.cards__content_5
-							include ../../components/datepicker/datepicker.pug
+							+datepicker
 					.cards__inner.cards__inner_6
 						.cards__content.cards__content_6
 							+card('cards__card-1', data[0])

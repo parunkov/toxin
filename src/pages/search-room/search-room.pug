@@ -11,6 +11,7 @@ block main
 		include ../../components/slider/slider.pug
 		include ../../components/checkbox/checkbox.pug
 		include ../../components/card/card.pug
+		include ../../components/datepicker/datepicker.pug
 		- 	
 			let RoomData = function(img, num, lux, price, rate, rev, link) {
 				this.img = img;
@@ -52,7 +53,7 @@ block main
 							'expand_more')
 					.search-room__datepicker-wrap
 						.search-room__datepicker-container
-							include ../../components/datepicker/datepicker.pug
+							+datepicker
 					.search-room__dropdown-wrap
 						+dropdown(
 							'peoples',

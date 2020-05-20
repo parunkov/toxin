@@ -1,5 +1,6 @@
 include ../../components/input/input.pug
 include ../../components/dropdown/dropdown.pug
+include ../../components/datepicker/datepicker.pug
 article.room
 	.room__header
 		.room__header-1
@@ -32,7 +33,7 @@ article.room
 				'expand_more')
 		.room__datepicker-wrap
 			.room__datepicker-container
-				include ../../components/datepicker/datepicker.pug
+				+datepicker
 		+dropdown(
 		'peoples',
 		'room__dropdown', 
