@@ -1,62 +1,63 @@
-include ../../components/input/input.pug
-include ../../components/radio/radio.pug
-include ../../components/toggle/toggle.pug
-article.reg
-	h1.page__h1.reg__h1 Регистрация аккаунта
-	form.reg__form
-		+input(
-			'', 
-			'text', 
-			'name', 
-			'reg__input-1', 
-			'', 
-			'Имя', 
-			'')
-		+input(
-			'', 
-			'text', 
-			'surname', 
-			'reg__input-2', 
-			'', 
-			'Фамилия', 
-			'')
-		.reg__radio-wrap
-			+radio(
-				'reg__radio', 
-				['Мужчина', 'Женщина'])
-		+input(
-			'дата рождения', 
-			'date', 
-			'birthday', 
-			'reg__input-3', 
-			'', 
-			'', 
-			'')
-		+input(
-			'данные для входа в сервис', 
-			'email', 
-			'email', 
-			'reg__input-4', 
-			'', 
-			'Email', 
-			'')
-		+input(
-			'', 
-			'text', 
-			'password', 
-			'reg__input-5', 
-			'', 
-			'Пароль', 
-			'')
-		.reg__toggle-wrap
-			+toggle(
-				'reg__toggle', 
-				['Получать спецпредложения'])
-		button.btn.btn_arrow.btn_button.reg__btn перейти к оплате
-	.reg__footer
-		.reg__footer-1
-			p.reg__footer-text Уже есть аккаунт на Toxin
-		.reg__footer-2
-			a(href="sign_in.html")
-				span.btn.btn_white.reg__btn-2 
-					span войти
+mixin reg
+	include ../../components/input/input.pug
+	include ../../components/radio/radio.pug
+	include ../../components/toggle/toggle.pug
+	article.reg
+		h1.page__h1.reg__h1 Регистрация аккаунта
+		form.reg__form
+			+input(
+				'', 
+				'text', 
+				'name', 
+				'reg__input-1', 
+				'', 
+				'Имя', 
+				'')
+			+input(
+				'', 
+				'text', 
+				'surname', 
+				'reg__input-2', 
+				'', 
+				'Фамилия', 
+				'')
+			.reg__radio-wrap
+				+radio(
+					'reg__radio', 
+					['Мужчина', 'Женщина'])
+			+input(
+				'дата рождения', 
+				'date', 
+				'birthday', 
+				'reg__input-3', 
+				'', 
+				'', 
+				'')
+			+input(
+				'данные для входа в сервис', 
+				'email', 
+				'email', 
+				'reg__input-4', 
+				'', 
+				'Email', 
+				'')
+			+input(
+				'', 
+				'text', 
+				'password', 
+				'reg__input-5', 
+				'', 
+				'Пароль', 
+				'')
+			.reg__toggle-wrap
+				+toggle(
+					'reg__toggle', 
+					['Получать спецпредложения'])
+			button.btn.btn_arrow.btn_button.reg__btn перейти к оплате
+		.reg__footer
+			.reg__footer-1
+				p.reg__footer-text Уже есть аккаунт на Toxin
+			.reg__footer-2
+				a(href="sign_in.html")
+					span.btn.btn_white.reg__btn-2 
+						span войти
