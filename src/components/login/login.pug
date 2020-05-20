@@ -1,28 +1,29 @@
 include ../../components/input/input.pug
-article.login
-	h1.page__h1.login__h1 Войти
-	form.login__form
-		+input(
-			'', 
-			'email', 
-			'email', 
-			'login__input-1', 
-			'', 
-			'Email', 
-			'')
-		+input(
-			'', 
-			'text', 
-			'password', 
-			'login__input-2', 
-			'', 
-			'Пароль', 
-			'')
-		button.btn.btn_arrow.btn_button.login__btn войти
-	.login__footer
-		.login__footer-1
-			p.login__footer-text Нет аккаунта на Toxin?
-		.login__footer-2
-			a(href="registration.html")
-				span.btn.btn_white.login__btn-2 
-					span создать
+mixin login
+	article.login
+		h1.page__h1.login__h1 Войти
+		form.login__form
+			+input(
+				'', 
+				'email', 
+				'email', 
+				'login__input-1', 
+				'', 
+				'Email', 
+				'')
+			+input(
+				'', 
+				'text', 
+				'password', 
+				'login__input-2', 
+				'', 
+				'Пароль', 
+				'')
+			button.btn.btn_arrow.btn_button.login__btn войти
+		.login__footer
+			.login__footer-1
+				p.login__footer-text Нет аккаунта на Toxin?
+			.login__footer-2
+				a(href="registration.html")
+					span.btn.btn_white.login__btn-2 
+						span создать
