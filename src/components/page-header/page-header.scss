@@ -104,14 +104,14 @@
       }
     }
   }
-  .header__login-container {
+  .header__btn-container {
     margin-bottom: 0;
     flex: 0 1 303px;
     @media (max-width: $mobile-menu-breakpoint) {
       flex: none;
     }
   }
-  .header__login-content {
+  .header__btn-content {
     @media (max-width: 950px) {
       width: 303px;
       margin-right: 24px;

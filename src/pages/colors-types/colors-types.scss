@@ -1,6 +1,15 @@
 @import '../../variables.scss';
 .colors-types {
+  width: 100%;
+  max-width: 1200%*100/1440;
+  margin: 0 auto;
   padding: 0;
+  @media (max-width: 1440px) {
+    max-width: $page-container;
+  }
+  @media (max-width: $page-container) {
+    max-width: 100%;
+  }
 }
 .colors-types__row {
   display: flex;
