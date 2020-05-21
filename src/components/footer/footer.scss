@@ -132,7 +132,11 @@
 .footer__logo {
   margin-bottom: 17px;
 }
-.footer__p {
+.footer__text {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black-75;
   margin-bottom: 23px;
   line-height: 1.75em;
   letter-spacing: -0.1px;

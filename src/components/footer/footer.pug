@@ -5,7 +5,7 @@ mixin footer(cl, text, menu, h3, p, copyright, ui)
 			.footer__container
 				.footer__col.footer__col_1
 					.page__logo.footer__logo
-					p.footer__p= text
+					p.footer__text= text
 				nav.footer__nav
 					each val, i in menu
 						div(class ="footer__col footer__col_" + (i + 2))
@@ -16,7 +16,7 @@ mixin footer(cl, text, menu, h3, p, copyright, ui)
 										a(href=menu[i].hrefs[j] class="footer__a") !{menu[i].incl[j]}
 				.footer__col.footer__col_25
 					h3.footer__h3.footer__h3_col-5= h3
-					p.footer__p= p 
+					p.footer__text= p 
 					form.footer__form
 						if ui
 							- let email = 'Your email address';
