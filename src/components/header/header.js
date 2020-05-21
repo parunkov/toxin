@@ -15,7 +15,7 @@ $header.each((i) => {
     if (j === +num) {
       $header.eq(i).find('.header__navigation-item').eq(j).addClass('header__navigation-item_active');
       $header.eq(i).find('.header__navigation-item').eq(j).find('a')
-        .addClass('header__a_active');
+        .addClass('header__link_active');
     }
   });
 });
