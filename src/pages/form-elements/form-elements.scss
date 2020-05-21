@@ -265,6 +265,14 @@
 .form-elements__space {
   flex: auto;
 }
+.form-elements__item-header {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black;
+  text-transform: uppercase;
+}
 .form-elements__item-8-header {
   margin-bottom: 16px;
 }
