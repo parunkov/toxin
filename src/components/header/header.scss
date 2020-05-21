@@ -76,7 +76,7 @@
   }
 }
 .header__navigation-list {
-  &-wrap {
+  &-wrapper {
     flex: 1 1 320px;
     padding-top: 12px;
     text-align: right;
@@ -118,7 +118,7 @@
     display: block;
   }
 }
-.header__navigation-list-wrap_visible {
+.header__navigation-list-wrapper_visible {
   @media (max-width: $mobile-menu-breakpoint) {
     display: block;
   }
@@ -309,7 +309,7 @@
     display: inline-block;
   }
 }
-.header__btn-wrap {
+.header__btn-wrapper {
   flex: 1 1 79%*100/200;
   vertical-align: top;
   margin-right: 20px;

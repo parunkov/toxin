@@ -52,7 +52,7 @@ $(document).click(
 $burger.each((i) => {
   $burger.eq(i).click(
     () => {
-      $('.header__navigation-list-wrap').eq(i).toggleClass('header__navigation-list-wrap_visible');
+      $('.header__navigation-list-wrapper').eq(i).toggleClass('header__navigation-list-wrapper_visible');
       $('.header__btn-container').eq(i).toggleClass('header__btn-container_visible');
       $('.header').eq(i).find('.header__btn-container-logged').toggleClass('header__btn-container_visible');
       $burger.eq(i).find('.header__burger-line').toggleClass('header__burger-line_cross');

@@ -7,7 +7,7 @@ mixin header(cl, menu, activePageNumber, btn1, href1, btn2, href2, login)
 					span.page__logo
 			a.header__burger
 				.header__burger-line
-			.header__navigation-list-wrap
+			.header__navigation-list-wrapper
 				ul.header__navigation-list
 					each val, i in menu
 						if menu[i].incl
@@ -27,11 +27,11 @@ mixin header(cl, menu, activePageNumber, btn1, href1, btn2, href2, login)
 					.header__user Cosmin Negoita
 			else
 				.header__btn-container
-					.header__btn-wrap
+					.header__btn-wrapper
 						.header__btn
 							a(href=href1 class="btn btn_white btn_header-white") 
 								span.header__btn-inner !{btn1}
-					.header__btn-wrap
+					.header__btn-wrapper
 						.header__btn
 							a(href=href2 class="btn btn_small") !{btn2}
 
