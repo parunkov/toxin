@@ -41,6 +41,12 @@
   }
 }
 .checkbox__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black-75;
+  text-transform: none;
   display: inline-block;
   cursor: pointer;
   margin-bottom: 5px;
