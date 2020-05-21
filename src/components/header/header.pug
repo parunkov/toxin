@@ -14,10 +14,9 @@ mixin header(cl, menu, activePageNumber, btn1, href1, btn2, href2, login)
 							li.header__navigation-item.header__navigation-item_with-submenu
 								a(href=menu[i].href class="header__link header__link_with-submenu") !{menu[i].item}
 								ul.header__navigation-list.header__navigation-list-submenu
-									.header__navigation-list-submenu-inner
-										each val, j in menu[i].incl
-											li.header__navigation-item.header__navigation-item_submenu
-												a(href=menu[i].hrefs[j] class="header__link") !{menu[i].incl[j]}
+									each val, j in menu[i].incl
+										li.header__navigation-item.header__navigation-item_submenu
+											a(href=menu[i].hrefs[j] class="header__link") !{menu[i].incl[j]}
 						else
 							li.header__navigation-item
 								a(href=menu[i].href class="header__link") !{menu[i].item}
