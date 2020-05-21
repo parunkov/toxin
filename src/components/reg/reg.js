@@ -9,9 +9,9 @@ import $ from 'jquery';
 
 const onWindowResize = () => {
   if ($(window).width() < 350) {
-    $('.reg__h1').html('Регистрация<br>аккаунта');
+    $('.reg__header').html('Регистрация<br>аккаунта');
   } else {
-    $('.reg__h1').html('Регистрация аккаунта');
+    $('.reg__header').html('Регистрация аккаунта');
   }
 };
 onWindowResize();

@@ -3,10 +3,17 @@
   padding-top: 40px;
   padding-bottom: 30px;
 }
-.reg__header-wrap {
+.reg__header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25em;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: $black;
+}
+.reg__header-wrapper {
   margin-bottom: 20px;
   @media (max-width: 350px) {
-    .page__h1 {
+    .reg__header {
       word-break: break-all;
     }
   }
@@ -17,7 +24,7 @@
 .reg__input-2 {
   margin-bottom: 10px;
 }
-.reg__radio-wrap {
+.reg__radio-wrapper {
   margin-bottom: 19px;
 }
 .reg__input-3 {
@@ -31,7 +38,7 @@
 .reg__input-5 {
   margin-bottom: 10px;
 }
-.reg__toggle-wrap {
+.reg__toggle-wrapper {
   margin-bottom: 22px;
 }
 .reg__btn {

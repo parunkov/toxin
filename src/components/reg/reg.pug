@@ -3,8 +3,8 @@ mixin reg
 	include ../../components/radio/radio.pug
 	include ../../components/toggle/toggle.pug
 	article.reg
-		.reg__header-wrap
-			h1.page__h1 Регистрация аккаунта
+		.reg__header-wrapper
+			h1.reg__header Регистрация аккаунта
 		form.reg__form
 			+input(
 				'', 
@@ -22,7 +22,7 @@ mixin reg
 				'', 
 				'Фамилия', 
 				'')
-			.reg__radio-wrap
+			.reg__radio-wrapper
 				+radio(
 					'reg__radio', 
 					['Мужчина', 'Женщина'])
@@ -50,7 +50,7 @@ mixin reg
 				'', 
 				'Пароль', 
 				'')
-			.reg__toggle-wrap
+			.reg__toggle-wrapper
 				+toggle(
 					'reg__toggle', 
 					['Получать спецпредложения'])
