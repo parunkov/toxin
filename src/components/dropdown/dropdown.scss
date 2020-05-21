@@ -7,13 +7,21 @@
 .dropdown__type {
   display: none;
 }
-.dropdown__h3 {
+.dropdown__header {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black;
+  text-transform: uppercase;
   display: block;
   float: left;
   margin-bottom: 5px;
   padding-top: 4px;
 }
-.dropdown__p {
+.dropdown__state {
+  font-weight: 400;
+  line-height: 1.6em;
   display: block;
   font-weight: 400;
   font-size: 12px;
@@ -173,7 +181,7 @@
   text-transform: uppercase;
   cursor: pointer;
   display: none;
-  &_wrap {
+  &_wrapper {
     float: left;
   }
 }
@@ -187,7 +195,7 @@
   color: $purple;
   text-transform: uppercase;
   cursor: pointer;
-  &_wrap {
+  &_wrapper {
     display: block;
     text-align: right;
   }

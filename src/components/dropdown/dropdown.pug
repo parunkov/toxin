@@ -9,8 +9,8 @@ mixin dropdown(type, cl, h3, p, item1, item2, item3, clear)
 	.dropdown
 		.dropdown__type #{type}
 		div(class="dropdown__container " + cl + "-container")
-			h3.dropdown__h3= h3
-			p.dropdown__p= p
+			h3.dropdown__header= h3
+			p.dropdown__state= p
 			.iqdropdown
 				.input
 					input(type= text name= cl class="iqdropdown-selection "+cl autocomplete="off" readonly)
@@ -28,7 +28,7 @@ mixin dropdown(type, cl, h3, p, item1, item2, item3, clear)
 							+dropdown__menu-item
 						if clear
 							.dropdown__bottom
-								.dropdown__clear_wrap
+								.dropdown__clear_wrapper
 									.dropdown__clear очистить
-								.dropdown__set_wrap
+								.dropdown__set_wrapper
 									.dropdown__set применить
