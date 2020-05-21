@@ -257,7 +257,7 @@
 .header__navigation-item_with-submenu-open .header__link_with-submenu::after {
   content: 'expand_less';
 }
-.header__btn-container-logged {
+.header__user-block-logged {
   flex: 0 0 145px;
   height: 30px;
   margin-top: 4px;
@@ -285,7 +285,7 @@
   color: $black-50;
   cursor: default;
 }
-.header__btn-container {
+.header__user-block {
   flex: 0 0 200px;
   margin-bottom: 0;
   padding-top: 3px;
@@ -304,7 +304,7 @@
     max-width: 100%;
   }
 }
-.header__btn-container_visible {
+.header__user-block_visible {
   @media (max-width: $mobile-menu-breakpoint) {
     display: inline-block;
   }
