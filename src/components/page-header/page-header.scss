@@ -7,7 +7,7 @@
   .header {
     padding-top: 15px;
   }
-  .header__nav-list-wrap {
+  .header__navigation-list-wrap {
     padding-top: 13px;
     padding-right: 11px;
     @media (max-width: $mobile-menu-breakpoint) {
@@ -18,7 +18,7 @@
     width: 20px;
     text-align: right;
   }
-  .header__nav-item {
+  .header__navigation-item {
     margin-right: 34px;
     @media (max-width: $mobile-menu-breakpoint) {
         margin-right: 0;
@@ -33,7 +33,7 @@
     }
     &:nth-child(2) {
       margin-right: 41px;
-      .header__nav-item_submenu a {
+      .header__navigation-item_submenu a {
         min-width: 65px;
       }
       @media (max-width: $mobile-menu-breakpoint) {
@@ -62,7 +62,7 @@
       }
     }
   }
-  .header__nav-item_submenu {
+  .header__navigation-item_submenu {
     margin-right: 0;
     @media (max-width:$mobile-menu-breakpoint) {
         margin-left: auto;
