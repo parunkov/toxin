@@ -3,11 +3,11 @@ mixin search
 	include ../../components/dropdown/dropdown.pug
 	include ../../components/datepicker/datepicker.pug
 	article.search
-		.search__header-wrap
-			h1.page__h1 Найдём номера под ваши пожелания
+		.search__header-wrapper
+			h1.search__header Найдём номера под ваши пожелания
 		form.search__form
-			.search__input-wrap
-				.search__input-1-wrap
+			.search__input-wrapper
+				.search__input-1-wrapper
 					+input(
 					'прибытие', 
 					'text', 
@@ -18,7 +18,7 @@ mixin search
 					'', 
 					'expand_more')
 				.search__input-space
-				.search__input-2-wrap
+				.search__input-2-wrapper
 					+input(
 					'выезд', 
 					'text', 
@@ -28,7 +28,7 @@ mixin search
 					'ДД.ММ.ГГГГ', 
 					'', 
 					'expand_more')
-			.search__datepicker-wrap
+			.search__datepicker-wrapper
 				.search__datepicker-container
 					+datepicker
 			+dropdown(
@@ -40,5 +40,5 @@ mixin search
 			'дети', 
 			'младенцы',
 			'1')
-			a(href="search-room.html")
+			a(href="search-room.html" class="search__link")
 				.btn.btn_arrow подобрать номер
