@@ -3,7 +3,12 @@
   padding-top: 40px;
   padding-bottom: 30px;
 }
-.login__h1 {
+.login__header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25em;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: $black;
   margin-bottom: 20px;
   @media (max-width: 350px) {
     word-break: break-all;
