@@ -229,7 +229,7 @@
 .header__link_active:hover {
   color: $black-75;
 }
-.header__navigation-item_with-submenu .header__link_with-submenu::after, .header__navigation-item_with-submenu-open .header__link_with-submenu::after {
+.header__navigation-item_with-submenu .header__link_with-submenu::after, .header__navigation-item_with-submenu-opened .header__link_with-submenu::after {
   position: absolute;
   right: -25px;
   bottom: -6px;
@@ -254,7 +254,7 @@
 .header__navigation-item_with-submenu .header__link_with-submenu::after {
   content: 'expand_more';
 }
-.header__navigation-item_with-submenu-open .header__link_with-submenu::after {
+.header__navigation-item_with-submenu-opened .header__link_with-submenu::after {
   content: 'expand_less';
 }
 .header__user-block-logged {
