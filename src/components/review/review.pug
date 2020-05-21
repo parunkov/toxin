@@ -1,11 +1,12 @@
 mixin review(cl, img, like, head, days, text)
-	div(class=cl + "-container review")
-		.review__col-1
-			.review__img-wrap
-				img(src=img class=cl + "-img review__img")
-			.review__like-wrap
-				+like(cl, like)
-		.review__col-2
-			h4.review__h4= head
-			p.review__days= days
-			p.review__text= text
+	div(class=cl + "-container")
+		.review
+			.review__col-1
+				.review__img-wrapper
+					img(src=img class=cl + "-img review__img")
+				.review__like-wrapper
+					+like(cl, like)
+			.review__col-2
+				h4.review__header= head
+				p.review__days= days
+				p.review__text= text

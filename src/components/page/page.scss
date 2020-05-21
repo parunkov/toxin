@@ -48,6 +48,9 @@
   src: url('../../fonts/open-sans-bold.ttf') format('truetype'), url('../../fonts/montserrat-bold.svg') format('svg');
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
@@ -74,9 +77,9 @@ header, main {
 footer {
   flex: 0 0 auto;
 }
-*, *::before, *::after {
-  box-sizing: inherit;
-}
+// *, *::before, *::after {
+//   box-sizing: inherit;
+// }
 h1 {
   font-weight: 700;
   font-size: 24px;

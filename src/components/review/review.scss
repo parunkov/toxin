@@ -20,7 +20,7 @@
   height: 44px;
   border-radius: 22px;
 }
-.review__img-wrap {
+.review__img-wrapper {
   width: 48px;
   height: 48px;
   margin-bottom: 12px;
@@ -28,10 +28,16 @@
   border-radius: 24px;
   box-shadow: 0 10px 20px $black-10;
 }
-.review__like-wrap {
+.review__like-wrapper {
   padding-left: 3px;
 }
-.review__h4 {
+.review__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black-75;
+  text-transform: none;
   margin-bottom: 5px;
 }
 .review__days {
