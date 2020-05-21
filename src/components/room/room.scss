@@ -8,6 +8,13 @@
   width: 60%;
   padding-left: 2px;
 }
+.room__header-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25em;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: $black;
+}
 .room__header-2 {
   display: inline-block;
   width: 38%;
@@ -27,16 +34,21 @@
     color: $purple;
     text-transform: uppercase;
   }
-  &_p {
+  &_price {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-family: Montserrat, Arial, sans-serif;
+    color: $black-75;
     font-weight: 700;
     letter-spacing: -0.2px;
   }
-  &_price {
+  &_price-text {
     font-weight: 400;
     font-size: 12px;
   }
 }
-.room__input-wrap {
+.room__input-wrapper {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 17px;
@@ -78,7 +90,7 @@
 .room__input-space {
   flex: auto;
 }
-.room__datepicker-wrap {
+.room__datepicker-wrapper {
   position: relative;
 }
 .room__datepicker-container {
@@ -91,7 +103,11 @@
 .room__dropdown-container {
   margin-bottom: 22px;
 }
-.room__p {
+.room__text {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black-75;
   clear: both;
   margin-bottom: 15px;
   line-height: 1.3em;

@@ -5,12 +5,12 @@ mixin room
 	article.room
 		.room__header
 			.room__header-1
-				h1.page__h1 <span class="room__header_number">№</span>888
+				h1.room__header-text <span class="room__header_number">№</span>888
 					span.room__header_category  люкс
 			.room__header-2
-				p.room__header_p 9 990₽ <span class="room__header_price">в сутки</span>
+				p.room__header_price 9 990₽ <span class="room__header_price-text">в сутки</span>
 		form.room__form
-			.room__input-wrap
+			.room__input-wrapper
 				.room__input-inner
 					+input(
 					'прибытие', 
@@ -32,7 +32,7 @@ mixin room
 					'ДД.ММ.ГГГГ', 
 					'', 
 					'expand_more')
-			.room__datepicker-wrap
+			.room__datepicker-wrapper
 				.room__datepicker-container
 					+datepicker
 			+dropdown(
@@ -44,17 +44,17 @@ mixin room
 			'дети', 
 			'младенцы',
 			'1')
-			p.room__p 
-				span.room__p_left 9 990₽ х 4 суток 
-				span.room__p_right 39 960₽
-			p.room__p
-				span.room__p_left Сбор за услуги: скидка 2 179₽ 
+			p.room__text 
+				span.room__text_left 9 990₽ х 4 суток 
+				span.room__text_right 39 960₽
+			p.room__text
+				span.room__text_left Сбор за услуги: скидка 2 179₽ 
 				span.room__i i
-				span.room__p_right 0₽
-			p.room__p
-				span.room__p_left Сбор за дополнительные услуги
+				span.room__text_right 0₽
+			p.room__text
+				span.room__text_left Сбор за дополнительные услуги
 				span.room__i i
-				span.room__p_right 300₽
+				span.room__text_right 300₽
 			.room__price
 				span.page__h2.room__price-1 Итого
 				span.room__price-2
