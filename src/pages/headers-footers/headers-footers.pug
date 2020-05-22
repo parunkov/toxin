@@ -11,25 +11,12 @@ block main
 		include ../../components/logo/logo.pug
 
 		+ui-kit
-		-
-			let nav = [
-				new MenuItem('Navigation', '/mock-address/change-me', ['About Us', 'News', 'Support', 'Products'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
-				new MenuItem('About Us', '/mock-address/change-me', ['Who we are', 'Our team', 'Careers', 'Investors'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
-				new MenuItem('Support', '/mock-address/change-me', ['Documentation', 'Community', 'Get in Touch'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me'])
-			];
 		.headers-footers__menu.headers-footers__menu_1
 			+header(1)
 		.headers-footers__menu.headers-footers__menu_2
 			+header(1, 1)
 		.headers-footers__footer-1
-			+footer(
-				headers-footers__footer, 
-				'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.',
-				nav, 
-				'Subscribe to our newsletter',
-				'Receive our latest news and promotions in your inbox!',
-				'Copyright © 2018 Toxin UI Kit. All rights reserved.', 
-				1)
+			+footer(1)
 		.headers-footers__footer-2
 			.headers-footers__footer-wrapper
 				.headers-footers__footer-container
