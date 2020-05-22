@@ -147,27 +147,27 @@ footer {
 //     max-width: 100%;
 //   }
 // }
-.page__li {
-  position: relative;
-  margin-bottom: 10px;
-  padding-left: 21px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: Montserrat, Arial, sans-serif;
-  color: $black-75;
-}
-.page__li::before {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 0;
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: $black-25;
-  border-radius: 5px;
-}
+// .page__li {
+//   position: relative;
+//   margin-bottom: 10px;
+//   padding-left: 21px;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 24px;
+//   font-family: Montserrat, Arial, sans-serif;
+//   color: $black-75;
+// }
+// .page__li::before {
+//   content: '';
+//   position: absolute;
+//   top: 5px;
+//   left: 0;
+//   display: block;
+//   width: 10px;
+//   height: 10px;
+//   background-color: $black-25;
+//   border-radius: 5px;
+// }
 .page__logo {
   width: 106px;
   height: 40px;

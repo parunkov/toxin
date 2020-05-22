@@ -349,3 +349,24 @@
   border-radius: 4px;
   box-shadow: 0 0 25px $shadow;
 }
+.room-details__bullet-item {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 21px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black-75;
+}
+.room-details__bullet-item::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: $black-25;
+  border-radius: 5px;
+}
