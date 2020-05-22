@@ -142,6 +142,12 @@
   letter-spacing: -0.1px;
 }
 .footer__h3 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black;
+  text-transform: uppercase;
   margin-bottom: 24px;
   color: $black;
   &_col-5 {
