@@ -1,10 +1,13 @@
 include ../../components/input/input.pug
+include ../../components/logo/logo.pug
+
 mixin footer(cl, text, menu, h3, p, copyright, ui)
 	.footer
 		section.footer__block-1
 			.footer__container
 				.footer__col.footer__col_1
-					.page__logo.footer__logo
+					.footer__logo
+						+logo
 					p.footer__text= text
 				nav.footer__nav
 					each val, i in menu
