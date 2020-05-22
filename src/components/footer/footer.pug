@@ -12,13 +12,13 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 				nav.footer__nav
 					each val, i in menu
 						div(class ="footer__col footer__col_" + (i + 2))
-							h3.footer__h3 !{menu[i].item}
-							ul.footer__ul.footer__ul_menu.footer__ul-incl
+							h3.footer__list-header !{menu[i].item}
+							ul.footer__list.footer__list_menu
 								each val, j in menu[i].incl
-									li.footer__li.footer__li_incl
+									li.footer__list-item
 										a(href=menu[i].hrefs[j] class="footer__a") !{menu[i].incl[j]}
 				.footer__col.footer__col_25
-					h3.footer__h3.footer__h3_col-5= h3
+					h3.footer__list-header.footer__list-header_col-5= h3
 					p.footer__text= p 
 					form.footer__form
 						if ui
@@ -50,7 +50,7 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 				.footer__col.footer__col_26
 					p.footer__copyright= copyright
 				.footer__col.footer__col_27
-					ul.footer__social-ul
+					ul.footer__social-list
 						li.footer__social-item
 							a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social footer__social_twitter") Twitter
 						li.footer__social-item
