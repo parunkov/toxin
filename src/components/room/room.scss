@@ -140,6 +140,10 @@
   margin-bottom: 19px;
   padding-top: 16px;
   &-1 {
+    font-weight: 700;
+    font-size: 19px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: $black;
     flex-grow: 0;
     margin-right: 5px;
   }
@@ -149,6 +153,11 @@
     border-bottom: 1px dotted $black-25;
   }
   &-3 {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.2em;
+    font-family: Quicksand, Arial, sans-serif;
+    color: $black;
     flex-grow: 0;
     margin-left: 5px;
   }
