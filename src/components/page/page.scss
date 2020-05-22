@@ -68,11 +68,11 @@ body {
   min-width: $page-min;
   margin: 0 auto;
 }
-header, main {
+header {
   flex: 0 0 auto;
 }
-.page__space {
-  flex: auto;
+main {
+  flex: 1 0 auto;
 }
 footer {
   flex: 0 0 auto;
