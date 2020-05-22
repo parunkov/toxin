@@ -9,7 +9,7 @@ block main
 	include ../../components/room/room.pug
 	+page-header(-1)
 	main.room-details
-		figure.room-details__img-wrap
+		figure.room-details__img-wrapper
 			.room-details__img-col-1
 				img(src="img/room1.jpg" width="100%")
 			.room-details__img-col-2
@@ -17,36 +17,36 @@ block main
 					img(src="img/room2.jpg" width="100%")
 				.room-details__img-3
 					img(src="img/room3.jpg" width="100%")
-		.room-details__wrap
+		.room-details__wrapper
 			section.room-details__container
 				include ../../components/info/info.pug
 				include ../../components/like/like.pug
 				include ../../components/review/review.pug
 				.room-details__col-1
 					.room-details__content-row-1
-						article.room-details__text-1
-							h2.page__h2.room-details__h2-1 Сведения о номере
-							.room-details__info-wrap
+						article.room-details__article-1
+							h2.room-details__header.room-details__header-1 Сведения о номере
+							.room-details__info-wrapper
 								+info(
 									'room-details__info-1',
 									'insert_emoticon',
 									'Комфорт',
 									'Шумопоглощающие стены')
-							.room-details__info-wrap
+							.room-details__info-wrapper
 								+info(
 									'room-details__info-2',
 									'location_city',
 									'Удобство',
 									'Окно в каждой из спален')
-							.room-details__info-wrap
+							.room-details__info-wrapper
 								+info(
 									'room-details__info-3',
 									'whatshot',
 									'Уют',
 									'Номер оснащён камином')
-						article.room-details__text-2
-							h2.page__h2.room-details__h2-2 Впечатления от номера
-							.room-details__chart-wrap
+						article.room-details__article-2
+							h2.room-details__header.room-details__header-2 Впечатления от номера
+							.room-details__chart-wrapper
 								.room-details__chart
 								.room-details__chart-2
 								.room-details__chart-inner
@@ -55,21 +55,21 @@ block main
 							.room-details__chart-comment
 								.room-details__chart-item
 									.room-details__chart-before.room-details__chart-before_1
-									p.room-details__chart-p Великолепно
+									p.room-details__chart-text-item Великолепно
 								.room-details__chart-item
 									.room-details__chart-before.room-details__chart-before_2
-									p.room-details__chart-p Хорошо
+									p.room-details__chart-text-item Хорошо
 								.room-details__chart-item
 									.room-details__chart-before.room-details__chart-before_3
-									p.room-details__chart-p Удовлетворительно
+									p.room-details__chart-text-item Удовлетворительно
 								.room-details__chart-item
 									.room-details__chart-before.room-details__chart-before_4
-									p.room-details__chart-p Разочарован
+									p.room-details__chart-text-item Разочарован
 					.room-details__content-row-2
-						article.room-details__text-3
-							h2.page__h2.room-details__h2-3 Отзывы посетителей номера
-								span.room-details__h2-3-span 2 отзыва
-							.room-details__review-wrap
+						article.room-details__article-3
+							h2.room-details__header.room-details__header-3 Отзывы посетителей номера
+								span.room-details__header-3-span 2 отзыва
+							.room-details__review-wrapper
 								+review(
 									'room-details__revew-1',
 									'img/murad.jpg',
@@ -77,7 +77,7 @@ block main
 									'Мурад Сарафанов',
 									'5 дней назад',
 									'Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
-							.room-details__review-wrap
+							.room-details__review-wrapper
 								+review(
 									'room-details__revew-2',
 									'img/Patricia.jpg',
@@ -86,16 +86,16 @@ block main
 									'Неделю назад',
 									'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
 					.room-details__content-row-3
-						article.room-details__text-4
-							h2.page__h2.room-details__h2-4 Правила
+						article.room-details__article-4
+							h2.room-details__header.room-details__header-4 Правила
 							ul.room-details__ul
 								li.page__li Нельзя с питомцами
 								li.page__li Без вечеринок и мероприятий
 								li.page__li Время прибытия — после 13:00, а выезд до 12:00
-						.room-details__text-space-2
-						article.room-details__text-5
-							h2.page__h2.room-details__h2-5 Отмена
-							p.room-details__p-5 Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+						.room-details__article-space-2
+						article.room-details__article-5
+							h2.room-details__header.room-details__header-5 Отмена
+							p.room-details__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 				.room-details__col-2
 					.room-details__form
 						.room-details__form-inner
