@@ -108,7 +108,11 @@
     flex: 0 1 auto;
   }
 }
-.landing__p {
+.landing__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6em;
+  font-family: Montserrat, Arial, sans-serif;
   animation-name: text;
   animation-duration: 45s;
   animation-timing-function: steps(1, end);
