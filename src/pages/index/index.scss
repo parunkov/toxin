@@ -12,11 +12,6 @@
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
-.index__header {
-  position: relative;
-  z-index: 10;
-  box-shadow: 0 10px 20px $black-5;
-}
 .index__container {
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +24,12 @@
     text-align: center;
   }
 }
-.index__h1 {
+.index__header {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25em;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: $black;
   display: block;
   flex: 0 0 100%;
   margin-bottom: 50px;
@@ -38,20 +38,24 @@
 .index__col {
   flex: 0 0 50%;
 }
-.index__h2 {
+.index__header-2 {
+  font-weight: 700;
+  font-size: 19px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: $black;
   display: block;
   margin-bottom: 30px;
   font-family: Open Sans;
 }
-.index__ul {
+.index__links-list {
   display: block;
   margin-bottom: 50px;
 }
-.index__li {
+.index__links-item {
   display: block;
   margin-bottom: 20px;
 }
-.index__a {
+.index__link {
   color: $black-50;
   &:hover {
     color: $black-text;
