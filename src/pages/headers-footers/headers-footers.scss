@@ -20,11 +20,16 @@
   background: $white;
   box-shadow: 0 10px 20px $black-5;
 }
-.headers-footers__footer-wrap {
+.headers-footers__footer-wrapper {
   background: $white;
   box-shadow: 0 10px 20px $black-5;
 }
-.headers-footers__p {
+.headers-footers__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6em;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black-75;
   margin-bottom: 20px;
 } 
 .headers-footers__footer-container {
