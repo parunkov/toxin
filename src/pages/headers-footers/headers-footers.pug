@@ -8,6 +8,8 @@ block main
 		include ../../components/ui-kit/ui-kit.pug
 		include ../../components/header/header.pug
 		include ../../components/footer/footer.pug
+		include ../../components/logo/logo.pug
+
 		+ui-kit
 		-
 			let MenuItem = function(item, href, incl, hrefs) {
@@ -46,7 +48,7 @@ block main
 			.headers-footers__footer-wrapper
 				.headers-footers__footer-container
 					.headers-footers__logo
-						.page__logo
+						+logo
 					p.headers-footers__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
 					ul.headers-footers__social-list
 						li.footer__social-item

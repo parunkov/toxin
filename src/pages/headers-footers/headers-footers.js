@@ -4,4 +4,5 @@ import '../../components/page/page';
 import '../../components/ui-kit/ui-kit';
 import '../../components/header/header';
 import '../../components/footer/footer';
+import '../../components/logo/logo'
 import './headers-footers.scss';
