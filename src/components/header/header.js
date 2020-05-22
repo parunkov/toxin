@@ -10,16 +10,13 @@ const $subMenu = $('.header__navigation-list-submenu');
 const $itemWithSubMenu = $('.header__navigation-item_with-submenu');
 const $burger = $('.header__burger');
 
-$header.each((i) => {
-  const num = $header.eq(i).find('.header__active-page-number').html();
-  $header.eq(i).find('.header__navigation-item').each((j) => {
-    if (j === +num) {
-      $header.eq(i).find('.header__navigation-item').eq(j).addClass('header__navigation-item_active');
-      $header.eq(i).find('.header__navigation-item').eq(j).find('a')
-        .addClass('header__link_active');
-    }
-  });
-});
+$('.header_eng').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
+$('.header_eng').find('.header__navigation-item').eq(0).find('a')
+  .addClass('header__link_active');
+
+$('.header_eng-logged').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
+$('.header_eng-logged').find('.header__navigation-item').eq(0).find('a')
+  .addClass('header__link_active');
 
 $itemWithSubMenu.click(
   function (e) {

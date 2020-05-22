@@ -12,29 +12,15 @@ block main
 
 		+ui-kit
 		-
-			let MenuItem = function(item, href, incl, hrefs) {
-				this.item = item;
-				this.href = href;
-				this.incl = incl;
-				this.hrefs = hrefs;
-			}
-			let menu = [
-				new MenuItem('Home', '/mock-address/change-me'),
-				new MenuItem('About Us', '/mock-address/change-me'),
-				new MenuItem('Services', '/mock-address/change-me', ['Service 1', 'Service 2', 'Service 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
-				new MenuItem('Careers', '/mock-address/change-me'),
-				new MenuItem('News', '/mock-address/change-me'),
-				new MenuItem('Documentation', '/mock-address/change-me')
-			];
 			let nav = [
 				new MenuItem('Navigation', '/mock-address/change-me', ['About Us', 'News', 'Support', 'Products'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
 				new MenuItem('About Us', '/mock-address/change-me', ['Who we are', 'Our team', 'Careers', 'Investors'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
 				new MenuItem('Support', '/mock-address/change-me', ['Documentation', 'Community', 'Get in Touch'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me'])
 			];
 		.headers-footers__menu.headers-footers__menu_1
-			+header(headers-footers__header-menu, menu, 0, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me')
+			+header(1)
 		.headers-footers__menu.headers-footers__menu_2
-			+header(headers-footers__header-menu, menu, 0, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me', 1)
+			+header(1, 1)
 		.headers-footers__footer-1
 			+footer(
 				headers-footers__footer, 

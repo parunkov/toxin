@@ -1,9 +1,8 @@
 include ../../components/logo/logo.pug
 
-mixin header(cl, menu, activePageNumber, btn1, href1, btn2, href2, login)
-	.header
+mixin headerMarkup(cl, menu, btn1, href1, btn2, href2, login)
+	header(class = "header " + cl)
 		nav.header__navigation
-			.header__active-page-number= activePageNumber
 			.header__logo
 				+logo
 			a.header__burger
@@ -34,4 +33,33 @@ mixin header(cl, menu, activePageNumber, btn1, href1, btn2, href2, login)
 					.header__btn-wrapper
 						.header__btn
 							a(href=href2 class="btn btn_small") !{btn2}
-
+-
+	let MenuItem = function(item, href, incl, hrefs) {
+		this.item = item;
+		this.href = href;
+		this.incl = incl;
+		this.hrefs = hrefs;
+	}
+	let menuRus = [
+		new MenuItem('О нас', '/mock-address/change-me'),
+		new MenuItem('Услуги', '/mock-address/change-me', ['Услуга 1', 'Услуга 2', 'Услуга 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
+		new MenuItem('Вакансии', '/mock-address/change-me'),
+		new MenuItem('Новости', '/mock-address/change-me'),
+		new MenuItem('Соглашения', '/mock-address/change-me', ['Соглашение 1', 'Соглашение 2', 'Соглашение 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
+	];
+	let menuEng = [
+		new MenuItem('Home', '/mock-address/change-me'),
+		new MenuItem('About Us', '/mock-address/change-me'),
+		new MenuItem('Services', '/mock-address/change-me', ['Service 1', 'Service 2', 'Service 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
+		new MenuItem('Careers', '/mock-address/change-me'),
+		new MenuItem('News', '/mock-address/change-me'),
+		new MenuItem('Documentation', '/mock-address/change-me')
+	];
+mixin header(isEng, isLogged)
+	if isEng
+		if isLogged
+			+headerMarkup('header_eng-logged', menuEng, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me', 1)
+		else
+			+headerMarkup('header_eng', menuEng, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me')
+	else
+		+headerMarkup('header_rus', menuRus, 'войти', 'sign-in.html', 'зарегистрироваться', 'registration.html')

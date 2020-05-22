@@ -1,18 +1,18 @@
-include ../../components/header/header.pug
--
-	let MenuItem = function(item, href, incl, hrefs) {
-		this.item = item;
-		this.href = href;
-		this.incl = incl;
-		this.hrefs = hrefs;
-	}
-	let menu = [
-		new MenuItem('О нас', '/mock-address/change-me'),
-		new MenuItem('Услуги', '/mock-address/change-me', ['Услуга 1', 'Услуга 2', 'Услуга 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
-		new MenuItem('Вакансии', '/mock-address/change-me'),
-		new MenuItem('Новости', '/mock-address/change-me'),
-		new MenuItem('Соглашения', '/mock-address/change-me', ['Соглашение 1', 'Соглашение 2', 'Соглашение 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
-	];
-mixin page-header(activePageNumber)
-	header.page-header
-		+header(page-header__header-menu, menu, activePageNumber, 'войти', 'sign-in.html', 'зарегистрироваться', 'registration.html')
+//- include ../../components/header/header.pug
+//- -
+//- 	let MenuItem = function(item, href, incl, hrefs) {
+//- 		this.item = item;
+//- 		this.href = href;
+//- 		this.incl = incl;
+//- 		this.hrefs = hrefs;
+//- 	}
+//- 	let menu = [
+//- 		new MenuItem('О нас', '/mock-address/change-me'),
+//- 		new MenuItem('Услуги', '/mock-address/change-me', ['Услуга 1', 'Услуга 2', 'Услуга 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
+//- 		new MenuItem('Вакансии', '/mock-address/change-me'),
+//- 		new MenuItem('Новости', '/mock-address/change-me'),
+//- 		new MenuItem('Соглашения', '/mock-address/change-me', ['Соглашение 1', 'Соглашение 2', 'Соглашение 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
+//- 	];
+//- mixin page-header(activePageNumber)
+//- 	header.page-header
+//- 		+header(page-header__header-menu, menu, activePageNumber, 'войти', 'sign-in.html', 'зарегистрироваться', 'registration.html')
