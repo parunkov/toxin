@@ -133,20 +133,20 @@ footer {
 //   font-family: Montserrat, Arial, sans-serif;
 //   color: $black-75;
 // }
-.page__container {
-  width: 100%;
-  max-width: 1200%*100/1440;
-  margin: 0 auto;
-  // border: 1px solid blue;
-  padding-right: 20%*100/1440;
-  padding-left: 20%*100/1440;
-  @media (max-width: 1440px) {
-    max-width: $page-container;
-  }
-  @media (max-width: $page-container) {
-    max-width: 100%;
-  }
-}
+// .page__container {
+//   width: 100%;
+//   max-width: 1200%*100/1440;
+//   margin: 0 auto;
+//   // border: 1px solid blue;
+//   padding-right: 20%*100/1440;
+//   padding-left: 20%*100/1440;
+//   @media (max-width: 1440px) {
+//     max-width: $page-container;
+//   }
+//   @media (max-width: $page-container) {
+//     max-width: 100%;
+//   }
+// }
 .page__li {
   position: relative;
   margin-bottom: 10px;

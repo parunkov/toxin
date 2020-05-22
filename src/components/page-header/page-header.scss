@@ -5,6 +5,9 @@
   z-index: 10;
   box-shadow: 0 10px 20px $black-5;
   .header {
+    padding-top: 0;
+  }
+  .header__navigation {
     padding-top: 15px;
   }
   .header__navigation-list-wrapper {

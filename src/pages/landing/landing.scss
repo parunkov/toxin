@@ -32,6 +32,18 @@
   }
 }
 .landing__container {
+  width: 100%;
+  max-width: 1200%*100/1440;
+  margin: 0 auto;
+  // border: 1px solid blue;
+  padding-right: 20%*100/1440;
+  padding-left: 20%*100/1440;
+  @media (max-width: 1440px) {
+    max-width: $page-container;
+  }
+  @media (max-width: $page-container) {
+    max-width: 100%;
+  }
   display: flex;
   flex-direction: row;
   padding-top: 70px;
