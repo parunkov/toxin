@@ -23,7 +23,7 @@
 .login__btn {
   margin-bottom: 30px;
   word-break: break-all;
-  &::after {
+  .btn_arrow::after {
     word-break: normal;
   }
 }
