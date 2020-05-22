@@ -1,6 +1,7 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../btn/btn';
+import '../logo/logo';
 import './header.scss';
 import $ from 'jquery';
 

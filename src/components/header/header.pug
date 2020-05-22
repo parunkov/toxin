@@ -1,10 +1,11 @@
+include ../../components/logo/logo.pug
+
 mixin header(cl, menu, activePageNumber, btn1, href1, btn2, href2, login)
 	.header
 		nav.header__navigation
 			.header__active-page-number= activePageNumber
-			a(href="index.html")
-				.header__logo
-					span.page__logo
+			.header__logo
+				+logo
 			a.header__burger
 				.header__burger-line
 			.header__navigation-list-wrapper
