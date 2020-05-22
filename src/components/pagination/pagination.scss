@@ -60,5 +60,10 @@
   transform: rotate(180deg);
 }
 .pagination__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6em;
+  font-family: Montserrat, Arial, sans-serif;
+  color: $black-75;
   padding-left: 5px;
 }

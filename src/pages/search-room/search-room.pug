@@ -40,10 +40,10 @@ block main
 				];
 		.search-room__container
 			.search-room__filters
-				h3.search-room__filters-h3 Фильтры
+				h3.search-room__aside-header.search-room__filters-header Фильтры
 			aside.search-room__form
 				form.search-room__form-content
-					.search-room__input-wrap
+					.search-room__input-wrapper
 						+input(
 							'даты пребывания в отеле', 
 							'text', 
@@ -53,10 +53,10 @@ block main
 							'19 авг - 23 авг', 
 							'',
 							'expand_more')
-					.search-room__datepicker-wrap
+					.search-room__datepicker-wrapper
 						.search-room__datepicker-container
 							+datepicker
-					.search-room__dropdown-wrap
+					.search-room__dropdown-wrapper
 						+dropdown(
 							'peoples',
 							'search-room__dropdown-peoples-1', 
@@ -66,25 +66,25 @@ block main
 							'дети', 
 							'младенцы',
 							'1')
-					.search-room__slider-wrap
+					.search-room__slider-wrapper
 						+slider(1, 'диапазон цены')
 					.search-room__slider-text Стоимость за сутки пребывания в номере
-					.search-room__checkbox-wrap
-						h3.search-room__checkbox-h3 Checkbox Buttons
+					.search-room__checkbox-wrapper
+						h3.search-room__aside-header.search-room__checkbox-header Checkbox Buttons
 						+checkbox(
 							'search-room__checkbox-1', 
 							['Можно курить', 
 							'Можно с питомцами', 
 							'Можно пригласить гостей (до 10 человек)'])
-					.search-room__rich-wrap
-						h3.search-room__rich-h3 доступность
+					.search-room__rich-wrapper
+						h3.search-room__aside-header.search-room__rich-header доступность
 						+checkbox(
 							'search-room__checkbox-2', 
 							['Ширина коридоров в номере не менее 91 см.', 
 							'На 1 этаже вас встретит специалист  и проводит до номера.'],
 							['Широкий коридор',
 							'Помощник для инвалидов'])
-					.search-room__dropdown-2-wrap
+					.search-room__dropdown-2-wrapper
 						+dropdown(
 							'rooms',
 							'search-room__dropdown-rooms-1', 
@@ -93,8 +93,8 @@ block main
 							'спальни', 
 							'кровати', 
 							'ванные комнаты')
-					.search-room__expandable-wrap
-						h3.search-room__expandable-h3 дополнительные удобства
+					.search-room__expandable-wrapper
+						h3.search-room__aside-header.search-room__expandable-header дополнительные удобства
 						.search-room__expandable-text.d-none
 							+checkbox(
 								'search-room__checkbox-3', 
@@ -105,12 +105,12 @@ block main
 								'Телевизор',
 								'Шампунь'])
 			section.search-room__cards
-				h1.page__h1.search-room__h1 Номера, которые мы для вас подобрали
-				.search-room__cards-wrap
+				h1.search-room__header Номера, которые мы для вас подобрали
+				.search-room__cards-wrapper
 					each val, i in data
-						.search-room__card-wrap
+						.search-room__card-wrapper
 							+card('search-room__card-' + i, val)
-				.search-room__pagination-wrap
+				.search-room__pagination-wrapper
 					#pagination-container
 					p.pagination__text <span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды
 	.page__space.search-room__space

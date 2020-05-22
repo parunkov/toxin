@@ -15,16 +15,16 @@ import $ from 'jquery';
 
 $('.search-room__input-1').attr('disabled', '');
 
-$('.search-room__filters-h3').click((evt) => {
+$('.search-room__filters-header').click((evt) => {
   evt.preventDefault();
   $('.search-room__form').toggleClass('d-block');
-  $('.search-room__filters-h3').toggleClass('search-room__filters-h3_rotate');
+  $('.search-room__filters-header').toggleClass('search-room__filters-header_rotate');
 });
 
-$('.search-room__expandable-h3').click((evt) => {
+$('.search-room__expandable-header').click((evt) => {
   evt.preventDefault();
   $('.search-room__expandable-text').toggleClass('d-none');
-  $('.search-room__expandable-h3').toggleClass('search-room__expandable-h3_rotate');
+  $('.search-room__expandable-header').toggleClass('search-room__expandable-header_rotate');
 });
 
 $('.search-room__checkbox-1:gt(0)').prop('checked', true);
@@ -32,17 +32,17 @@ $('.search-room__checkbox-3:lt(4)').prop('checked', true);
 $('.search-room__checkbox-3').eq(0).prop('checked', false);
 
 $(document).ready(() => {
-  const $button1 = $('.search-room__dropdown-wrap .iqdropdown button');
-  const $button2 = $('.search-room__dropdown-2-wrap .iqdropdown button');
+  const $button1 = $('.search-room__dropdown-wrapper .iqdropdown button');
+  const $button2 = $('.search-room__dropdown-2-wrapper .iqdropdown button');
 
   $button1.eq(1).trigger('click');
   $button1.eq(3).trigger('click');
   $button1.eq(5).trigger('click');
-  $('.search-room__dropdown-wrap .dropdown__set').trigger('click');
+  $('.search-room__dropdown-wrapper .dropdown__set').trigger('click');
   $button2.eq(1).trigger('click');
   $button2.eq(1).trigger('click');
   $button2.eq(3).trigger('click');
   $button2.eq(3).trigger('click');
 
-  $('.search-room__input-wrap i').removeClass('input__icon-text').addClass('search-room__input-icon-text');
+  $('.search-room__input-wrapper i').removeClass('input__icon-text').addClass('search-room__input-icon-text');
 });
