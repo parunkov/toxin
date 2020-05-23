@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="page">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
@@ -15,7 +15,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   <link href="./css/cards.css" rel="stylesheet"></head>
-  <body class="page">
+  <body class="page__body">
     <div class="cards">
             <header class="ui-kit"><a class="ui-kit__a" href="index.html">
                 <div class="ui-kit-logo"></div></a></header>
@@ -25,40 +25,39 @@
             <div class="cards__inner cards__inner_1">
               <div class="cards__content cards__content_1">
                       <article class="search">
-                        <div class="search__header-wrap">
-                          <h1 class="page__h1">Найдём номера под ваши пожелания</h1>
+                        <div class="search__header-wrapper">
+                          <h1 class="search__header">Найдём номера под ваши пожелания</h1>
                         </div>
                         <form class="search__form">
-                          <div class="search__input-wrap">
-                            <div class="search__input-1-wrap">
+                          <div class="search__inputs-wrapper">
+                            <div class="search__input-1-wrapper">
                                     <div class="input">
-                                      <h3 class="input__h3">прибытие</h3>
-                                      <p class="input__p"></p>
+                                      <h3 class="input__header">прибытие</h3>
+                                      <p class="input__text"></p>
                                       <input class="input__input search__input-1" type="text" name="arrival" value="" placeholder="ДД.ММ.ГГГГ">
                                       <div class="input__icon"><i class="input__icon-text">expand_more</i>
                                       </div>
                                     </div>
                             </div>
-                            <div class="search__input-space"></div>
-                            <div class="search__input-2-wrap">
+                            <div class="search__input-2-wrapper">
                                     <div class="input">
-                                      <h3 class="input__h3">выезд</h3>
-                                      <p class="input__p"></p>
+                                      <h3 class="input__header">выезд</h3>
+                                      <p class="input__text"></p>
                                       <input class="input__input search__input-2" type="text" name="departure" value="" placeholder="ДД.ММ.ГГГГ">
                                       <div class="input__icon"><i class="input__icon-text">expand_more</i>
                                       </div>
                                     </div>
                             </div>
                           </div>
-                          <div class="search__datepicker-wrap">
+                          <div class="search__datepicker-wrapper">
                             <div class="search__datepicker-container">
                                     <div class="datepicker__container">
                                       <div class="datepicker__content"></div>
                                       <div class="datepicker__bottom">
-                                        <div class="datepicker__clear_wrap">
+                                        <div class="datepicker__clear_wrapper">
                                           <div class="datepicker__clear">очистить</div>
                                         </div>
-                                        <div class="datepicker__set_wrap">
+                                        <div class="datepicker__set_wrapper">
                                           <div class="datepicker__set">применить</div>
                                         </div>
                                       </div>
@@ -68,8 +67,8 @@
                                 <div class="dropdown">
                                   <div class="dropdown__type">peoples</div>
                                   <div class="dropdown__container search__dropdown-container">
-                                    <h3 class="dropdown__h3">гости</h3>
-                                    <p class="dropdown__p"></p>
+                                    <h3 class="dropdown__header">гости</h3>
+                                    <p class="dropdown__state"></p>
                                     <div class="iqdropdown">
                                       <div class="input">
                                         <input class="iqdropdown-selection search__dropdown" name="search__dropdown" autocomplete="off" readonly>
@@ -97,10 +96,10 @@
                                                   </div>
                                           </div>
                                           <div class="dropdown__bottom">
-                                            <div class="dropdown__clear_wrap">
+                                            <div class="dropdown__clear_wrapper">
                                               <div class="dropdown__clear">очистить</div>
                                             </div>
-                                            <div class="dropdown__set_wrap">
+                                            <div class="dropdown__set_wrapper">
                                               <div class="dropdown__set">применить</div>
                                             </div>
                                           </div>
@@ -108,7 +107,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                </div><a href="search-room.html">
+                                </div><a class="search__link" href="search-room.html">
                             <div class="btn btn_arrow">подобрать номер</div></a>
                         </form>
                       </article>
@@ -117,21 +116,21 @@
             <div class="cards__inner cards__inner_2">
               <div class="cards__content cards__content_2">
                       <article class="reg">
-                        <div class="reg__header-wrap">
-                          <h1 class="page__h1">Регистрация аккаунта</h1>
+                        <div class="reg__header-wrapper">
+                          <h1 class="reg__header">Регистрация аккаунта</h1>
                         </div>
                         <form class="reg__form">
                                 <div class="input">
-                                  <h3 class="input__h3"></h3>
-                                  <p class="input__p"></p>
+                                  <h3 class="input__header"></h3>
+                                  <p class="input__text"></p>
                                   <input class="input__input reg__input-1" type="text" name="name" value="" placeholder="Имя">
                                 </div>
                                 <div class="input">
-                                  <h3 class="input__h3"></h3>
-                                  <p class="input__p"></p>
+                                  <h3 class="input__header"></h3>
+                                  <p class="input__text"></p>
                                   <input class="input__input reg__input-2" type="text" name="surname" value="" placeholder="Фамилия">
                                 </div>
-                          <div class="reg__radio-wrap">
+                          <div class="reg__radio-wrapper">
                                   <div class="radio">
                                     <label class="radio__label">
                                       <input class="radio__input reg__radio" type="radio" name="reg__radio" checked>
@@ -146,21 +145,21 @@
                                   </div>
                           </div>
                                 <div class="input">
-                                  <h3 class="input__h3">дата рождения</h3>
-                                  <p class="input__p"></p>
+                                  <h3 class="input__header">дата рождения</h3>
+                                  <p class="input__text"></p>
                                   <input class="input__input reg__input-3" type="date" name="birthday" value="" placeholder="">
                                 </div>
                                 <div class="input">
-                                  <h3 class="input__h3">данные для входа в сервис</h3>
-                                  <p class="input__p"></p>
+                                  <h3 class="input__header">данные для входа в сервис</h3>
+                                  <p class="input__text"></p>
                                   <input class="input__input reg__input-4" type="email" name="email" value="" placeholder="Email">
                                 </div>
                                 <div class="input">
-                                  <h3 class="input__h3"></h3>
-                                  <p class="input__p"></p>
+                                  <h3 class="input__header"></h3>
+                                  <p class="input__text"></p>
                                   <input class="input__input reg__input-5" type="text" name="password" value="" placeholder="Пароль">
                                 </div>
-                          <div class="reg__toggle-wrap">
+                          <div class="reg__toggle-wrapper">
                                   <div class="toggle">
                                     <label class="toggle__label">
                                       <input class="toggle__input reg__toggle" type="checkbox" name="reg__toggle-0">
@@ -179,9 +178,9 @@
                           <div class="reg__footer-1">
                             <p class="reg__footer-text">Уже есть аккаунт на Toxin</p>
                           </div>
-                          <div class="reg__footer-2"><a href="sign-in.html">
+                          <div class="reg__footer-2"><a class="reg__link" href="sign-in.html">
                               <div class="reg__btn-2"> 
-                                <div class="btn btn_white"><span class="reg__btn-inner">войти</span></div>
+                                <div class="btn btn_light"><span class="btn_light-inner btn_light-form">войти</span></div>
                               </div></a></div>
                         </div>
                       </article>
@@ -194,43 +193,42 @@
                       <article class="room">
                         <div class="room__header">
                           <div class="room__header-1">
-                            <h1 class="page__h1"><span class="room__header_number">№</span>888<span class="room__header_category"> люкс</span></h1>
+                            <h1 class="room__header-text"><span class="room__header_number">№</span>888<span class="room__header_category"> люкс</span></h1>
                           </div>
                           <div class="room__header-2">
-                            <p class="room__header_p">9 990₽ <span class="room__header_price">в сутки</span></p>
+                            <p class="room__header_price">9 990₽ <span class="room__header_price-text">в сутки</span></p>
                           </div>
                         </div>
                         <form class="room__form">
-                          <div class="room__input-wrap">
-                            <div class="room__input-inner">
+                          <div class="room__inputs-wrapper">
+                            <div class="room__input-wrapper">
                                     <div class="input">
-                                      <h3 class="input__h3">прибытие</h3>
-                                      <p class="input__p"></p>
+                                      <h3 class="input__header">прибытие</h3>
+                                      <p class="input__text"></p>
                                       <input class="input__input room__input-1" type="text" name="arrival" value="19.08.2019" placeholder="ДД.ММ.ГГГГ">
                                       <div class="input__icon"><i class="input__icon-text">expand_more</i>
                                       </div>
                                     </div>
                             </div>
-                            <div class="room__input-space"></div>
-                            <div class="room__input-inner">
+                            <div class="room__input-wrapper">
                                     <div class="input">
-                                      <h3 class="input__h3">выезд</h3>
-                                      <p class="input__p"></p>
+                                      <h3 class="input__header">выезд</h3>
+                                      <p class="input__text"></p>
                                       <input class="input__input room__input-2" type="text" name="departure" value="23.08.2019" placeholder="ДД.ММ.ГГГГ">
                                       <div class="input__icon"><i class="input__icon-text">expand_more</i>
                                       </div>
                                     </div>
                             </div>
                           </div>
-                          <div class="room__datepicker-wrap">
+                          <div class="room__datepicker-wrapper">
                             <div class="room__datepicker-container">
                                     <div class="datepicker__container">
                                       <div class="datepicker__content"></div>
                                       <div class="datepicker__bottom">
-                                        <div class="datepicker__clear_wrap">
+                                        <div class="datepicker__clear_wrapper">
                                           <div class="datepicker__clear">очистить</div>
                                         </div>
-                                        <div class="datepicker__set_wrap">
+                                        <div class="datepicker__set_wrapper">
                                           <div class="datepicker__set">применить</div>
                                         </div>
                                       </div>
@@ -240,8 +238,8 @@
                                 <div class="dropdown">
                                   <div class="dropdown__type">peoples</div>
                                   <div class="dropdown__container room__dropdown-container">
-                                    <h3 class="dropdown__h3">гости</h3>
-                                    <p class="dropdown__p"></p>
+                                    <h3 class="dropdown__header">гости</h3>
+                                    <p class="dropdown__state"></p>
                                     <div class="iqdropdown">
                                       <div class="input">
                                         <input class="iqdropdown-selection room__dropdown" name="room__dropdown" autocomplete="off" readonly>
@@ -269,10 +267,10 @@
                                                   </div>
                                           </div>
                                           <div class="dropdown__bottom">
-                                            <div class="dropdown__clear_wrap">
+                                            <div class="dropdown__clear_wrapper">
                                               <div class="dropdown__clear">очистить</div>
                                             </div>
-                                            <div class="dropdown__set_wrap">
+                                            <div class="dropdown__set_wrapper">
                                               <div class="dropdown__set">применить</div>
                                             </div>
                                           </div>
@@ -281,10 +279,10 @@
                                     </div>
                                   </div>
                                 </div>
-                          <p class="room__p"> <span class="room__p_left">9 990₽ х 4 суток </span><span class="room__p_right">39 960₽</span></p>
-                          <p class="room__p"><span class="room__p_left">Сбор за услуги: скидка 2 179₽ </span><span class="room__i">i</span><span class="room__p_right">0₽</span></p>
-                          <p class="room__p"><span class="room__p_left">Сбор за дополнительные услуги</span><span class="room__i">i</span><span class="room__p_right">300₽</span></p>
-                          <div class="room__price"><span class="page__h2 room__price-1">Итого</span><span class="room__price-2"></span>
+                          <p class="room__text"> <span class="room__text_left">9 990₽ х 4 суток </span><span class="room__text_right">39 960₽</span></p>
+                          <p class="room__text"><span class="room__text_left">Сбор за услуги: скидка 2 179₽ </span><span class="room__i">i</span><span class="room__text_right">0₽</span></p>
+                          <p class="room__text"><span class="room__text_left">Сбор за дополнительные услуги</span><span class="room__i">i</span><span class="room__text_right">300₽</span></p>
+                          <div class="room__price"><span class="room__price-1">Итого</span><span class="room__price-2"></span>
                             <h2 class="room__price-3">38 081₽</h2>
                           </div>
                           <div class="room__btn">
@@ -297,16 +295,16 @@
             <div class="cards__inner cards__inner_4">
               <div class="cards__content cards__content_4">
                       <article class="login">
-                        <h1 class="page__h1 login__h1">Войти</h1>
+                        <h1 class="login__header">Войти</h1>
                         <form class="login__form">
                                 <div class="input">
-                                  <h3 class="input__h3"></h3>
-                                  <p class="input__p"></p>
+                                  <h3 class="input__header"></h3>
+                                  <p class="input__text"></p>
                                   <input class="input__input login__input-1" type="email" name="email" value="" placeholder="Email">
                                 </div>
                                 <div class="input">
-                                  <h3 class="input__h3"></h3>
-                                  <p class="input__p"></p>
+                                  <h3 class="input__header"></h3>
+                                  <p class="input__text"></p>
                                   <input class="input__input login__input-2" type="text" name="password" value="" placeholder="Пароль">
                                 </div>
                           <div class="login__btn">
@@ -317,9 +315,9 @@
                           <div class="login__footer-1">
                             <p class="login__footer-text">Нет аккаунта на Toxin?</p>
                           </div>
-                          <div class="login__footer-2"><a href="registration.html">
+                          <div class="login__footer-2"><a class="login__link" href="registration.html">
                               <div class="login__btn-2"> 
-                                <div class="btn btn_white"><span class="login__btn-2-inner">создать</span></div>
+                                <div class="btn btn_light"><span class="btn_light-inner btn_light-form">создать</span></div>
                               </div></a></div>
                         </div>
                       </article>
@@ -332,10 +330,10 @@
                       <div class="datepicker__container">
                         <div class="datepicker__content"></div>
                         <div class="datepicker__bottom">
-                          <div class="datepicker__clear_wrap">
+                          <div class="datepicker__clear_wrapper">
                             <div class="datepicker__clear">очистить</div>
                           </div>
-                          <div class="datepicker__set_wrap">
+                          <div class="datepicker__set_wrapper">
                             <div class="datepicker__set">применить</div>
                           </div>
                         </div>
@@ -346,7 +344,7 @@
               <div class="cards__content cards__content_6">
                       <section class="card cards__card-1">
                         <div class="card__slider">
-                          <div class="card__slide-wrap">
+                          <div class="card__slide-wrapper">
                             <div class="card__slide-container">
                               <div class="card__slide"><img src="img/image1.jpg"></div>
                               <div class="card__slide"><img src="img/image13.jpg"></div>
@@ -367,7 +365,7 @@
                         </div>
                         <div class="card__text">
                           <div class="card__text-1"><a class="card__a"><span class="card__num-wrap"><span class="card__num">№</span>
-                                <h2 class="card__h2">888</h2><span class="card__lux">люкс</span></span></a>
+                                <h2 class="card__header">888</h2><span class="card__lux">люкс</span></span></a>
                             <div class="card__price">9 990₽<span class="card__price-text">в сутки</span></div>
                           </div>
                           <div class="card__text-2">
@@ -384,7 +382,7 @@
               <div class="cards__content cards__content_7">
                       <section class="card cards__card-1">
                         <div class="card__slider">
-                          <div class="card__slide-wrap">
+                          <div class="card__slide-wrapper">
                             <div class="card__slide-container">
                               <div class="card__slide"><img src="img/image2.jpg"></div>
                               <div class="card__slide"><img src="img/image13.jpg"></div>
@@ -405,7 +403,7 @@
                         </div>
                         <div class="card__text">
                           <div class="card__text-1"><a class="card__a"><span class="card__num-wrap"><span class="card__num">№</span>
-                                <h2 class="card__h2">840</h2><span class="card__lux"></span></span></a>
+                                <h2 class="card__header">840</h2><span class="card__lux"></span></span></a>
                             <div class="card__price">9 990₽<span class="card__price-text">в сутки</span></div>
                           </div>
                           <div class="card__text-2">
