@@ -43,6 +43,9 @@
 .header__burger {
   position: relative;
   display: none;
+  background: transparent;
+  border: none;
+  outline: none;
   @media (max-width: $mobile-menu-breakpoint) {
     display: block;
     width: 30px;
