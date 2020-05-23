@@ -99,12 +99,6 @@
     min-width: 100%;
   }
 }
-.landing__form {
-  min-width: 280px;
-  @media (max-width: 380px) {
-    max-width: 315px;
-  }
-}
 .landing__col-4 {
   padding-left: 20px;
   padding-right: 0;
