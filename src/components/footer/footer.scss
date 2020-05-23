@@ -60,7 +60,7 @@
     padding-right: 20%*100/1160;
     padding-left: 0;
   }
-  &_25 {
+  &_last {
     flex: 1 0 280%*100/1160;
     min-width: 280px;
     padding-right: 0;
@@ -91,29 +91,29 @@
   &_4 {
     min-width: 190px;
   }
-  &_25 {
+  &_last {
     padding-top: 5px;
   }
-  &_26 {
+  &_bottom-left {
     flex: 1 0 300px;
     padding-top: 15px;
     padding-right: 20%*100/1160;
     padding-left: 0;
   }
-  &_27 {
+  &_bottom-right {
     flex: 1 0 130px;
     text-align: right;
     margin-bottom: 23px;
     padding-right: 0;
     padding-left: 20%*100/1160;
   }
-  &_1, &_2, &_3, &_4, &_25, &_26, &_27 {
+  &_1, &_2, &_3, &_4, &_last, &_bottom-left, &_bottom-right {
     @media (max-width: $mobile-menu-breakpoint) {
       padding-left: 3px;
       padding-right: 3px;
     }
   }
-  &_26, &_27 {
+  &_bottom-left, &_bottom-right {
     @media (max-width: 600px) {
       padding-left: 0;
       padding-right: 0;
@@ -123,7 +123,7 @@
     }
   }
 }
-.footer__nav {
+.footer__navigation {
   padding-top: 4px;
   display: flex;
   flex: 1 0 600%*100/1160;
@@ -153,7 +153,7 @@
   text-transform: uppercase;
   margin-bottom: 24px;
   color: $black;
-  &_col-5 {
+  &_last {
     margin-bottom: 18px;
     letter-spacing: -0.3px;
   }
