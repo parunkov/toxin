@@ -55,6 +55,7 @@
   }
 }
 .landing {
+  flex: 1 0 auto;
   position: relative;
   z-index: 0;
   width: 100%;
@@ -66,7 +67,7 @@
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
-.landing__col-1 {
+.landing__grid-column-1 {
   flex: 0 0 380px;
   max-width: 380px;
   margin-bottom: 386px;
@@ -99,7 +100,7 @@
     min-width: 100%;
   }
 }
-.landing__col-4 {
+.landing__grid-column-2 {
   padding-left: 20px;
   padding-right: 0;
   padding-bottom: 24px;

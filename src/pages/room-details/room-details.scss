@@ -1,7 +1,8 @@
 @import '../../variables.scss';
-// .room-details__header {
-//   // box-shadow: 0 10px 20px $black-5;
-// }
+
+.room-details {
+  flex: 1 0 auto;
+}
 .room-details__img-wrapper {
   display: flex;
   flex-wrap: nowrap;

@@ -1,9 +1,7 @@
 @import '../../variables.scss';
-// .sign-in__header {
-//   // box-shadow: 0 10px 20px $black-5;
-// }
+
 .sign-in {
-  // height: 685px;
+  flex: 1 0 auto;
   padding-top: 172px;
   padding-bottom: 171px;
   background: transparent url('../registration/reg__bg.jpg') center bottom no-repeat;
