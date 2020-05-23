@@ -5,19 +5,19 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 	footer(class = "footer " + cl)
 		section.footer__block-1
 			.footer__container
-				.footer__col.footer__col_1
+				.footer__grid-column.footer__grid-column_1
 					.footer__logo
 						+logo
 					p.footer__text= text
 				nav.footer__nav
 					each val, i in menu
-						div(class ="footer__col footer__col_" + (i + 2))
+						div(class ="footer__grid-column footer__grid-column_" + (i + 2))
 							h3.footer__list-header !{menu[i].item}
 							ul.footer__list.footer__list_menu
 								each val, j in menu[i].incl
 									li.footer__list-item
-										a(href=menu[i].hrefs[j] class="footer__a") !{menu[i].incl[j]}
-				.footer__col.footer__col_25
+										a(href=menu[i].hrefs[j] class="footer__link") !{menu[i].incl[j]}
+				.footer__grid-column.footer__grid-column_25
 					h3.footer__list-header.footer__list-header_col-5= h3
 					p.footer__text= p 
 					form.footer__form
@@ -47,9 +47,9 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 								'purple')
 		section.footer__block-2
 			.footer__container.footer__container_bottom
-				.footer__col.footer__col_26
+				.footer__grid-column.footer__grid-column_26
 					p.footer__copyright= copyright
-				.footer__col.footer__col_27
+				.footer__grid-column.footer__grid-column_27
 					ul.footer__social-list
 						li.footer__social-item
 							a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social footer__social_twitter") Twitter
