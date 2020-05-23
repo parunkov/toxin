@@ -23,19 +23,19 @@
   &:hover, &_hover {
     opacity: 0.5;
   }
-  &_white {
+  &_light {
     position: relative;
     padding: 2px;
     color: $purple;
-    span {
-      display: block;
-      background: $white;
-      padding-bottom: 14px;
-      background-clip: padding-box;
-      min-height: 40px;
-      padding-top: 14px;
-      border-radius: 20px;
-    }
+  }
+  &_light-inner {
+    display: block;
+    background: $white;
+    padding-bottom: 14px;
+    background-clip: padding-box;
+    min-height: 40px;
+    padding-top: 14px;
+    border-radius: 20px;
   }
   &_icon-link {
     min-height: 15px;
@@ -73,16 +73,16 @@
     padding-right: 20px;
     padding-left: 19px;
   }
-  &_small-white {
-    display: block;
-    width: 100%;
-    min-height: 34px;
-    padding-top: 11px;
-    padding-top: 9px;
-    padding-right: 20px;
-    padding-left: 19px;
-  }
-  &_header-white {
+  // &_small-white {
+  //   display: block;
+  //   width: 100%;
+  //   min-height: 34px;
+  //   padding-top: 11px;
+  //   padding-top: 9px;
+  //   padding-right: 20px;
+  //   padding-left: 19px;
+  // }
+  &_light-header {
     display: block;
     width: 100%;
     min-height: 34px;
@@ -90,12 +90,17 @@
     padding-right: 2px;
     padding-left: 2px;
     padding-bottom: 2px;
-    span {
-      padding-top: 9px;
-      padding-left: 17px;
-      padding-right: 18px;
-      padding-bottom: 9px;
-      min-height: 30px;
-    }
+  }
+  &_light-header-inner {
+    padding-top: 9px;
+    padding-left: 17px;
+    padding-right: 18px;
+    padding-bottom: 9px;
+    min-height: 30px;
+  }
+  &_light-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    word-break: break-all;
   }
 }

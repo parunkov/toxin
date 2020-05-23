@@ -24,12 +24,12 @@
   @media (max-width: $page-container) {
     max-width: 100%;
   }
-  @media (max-width: 420px) {
-    max-width: 380%*100/420;
-  }
-  @media (max-width: 380px) {
-    max-width: 315px;
-  }
+  // @media (max-width: 420px) {
+  //   max-width: 380%*100/420;
+  // }
+  // @media (max-width: 380px) {
+  //   max-width: 315px;
+  // }
 }
 .header__active-page-number {
   display: none;
