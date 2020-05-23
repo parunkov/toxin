@@ -10,8 +10,8 @@ mixin room
 			.room__header-2
 				p.room__header_price 9 990₽ <span class="room__header_price-text">в сутки</span>
 		form.room__form
-			.room__input-wrapper
-				.room__input-inner
+			.room__inputs-wrapper
+				.room__input-wrapper
 					+input(
 					'прибытие', 
 					'text', 
@@ -21,8 +21,8 @@ mixin room
 					'ДД.ММ.ГГГГ', 
 					'', 
 					'expand_more')
-				.room__input-space
-				.room__input-inner
+				//- .room__input-space
+				.room__input-wrapper
 					+input(
 					'выезд', 
 					'text', 

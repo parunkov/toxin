@@ -48,7 +48,7 @@
     font-size: 12px;
   }
 }
-.room__input-wrapper {
+.room__inputs-wrapper {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 17px;
@@ -83,12 +83,12 @@
     color: $black-75;
   }
 }
-.room__input-inner {
+.room__input-wrapper {
   margin-top: auto;
   flex: 0 0 47%;
-}
-.room__input-space {
-  flex: auto;
+  &:first-child {
+    margin-right: auto;
+  }
 }
 .room__datepicker-wrapper {
   position: relative;
