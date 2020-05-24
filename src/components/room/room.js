@@ -24,8 +24,8 @@ const $clearBtn = $('.room__datepicker-container .datepicker__clear');
 const $arrival = $('.room__input-1');
 const $departure = $('.room__input-2');
 
-const $icon = $('.room__input-wrap .input__icon');
-const $iconText = $('.room__input-wrap .input__icon-text');
+const $icon = $('.room__input-wrapper .input__icon');
+const $iconText = $('.room__input-wrapper .input__icon-text');
 
 const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.getMonth() + 1}`).substr(-2)}.${date.getFullYear()}`;
 
