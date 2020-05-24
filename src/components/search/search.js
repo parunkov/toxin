@@ -20,10 +20,6 @@ const $iconText = $('.search__inputs-wrapper .input__icon-text');
 
 const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.getMonth() + 1}`).substr(-2)}.${date.getFullYear()}`;
 
-// $setBtn.click(() => {
-//   // $('.input__icon-text').text('expand_more');
-// });
-
 $arrival.attr('disabled', '');
 $departure.attr('disabled', '');
 
