@@ -21,7 +21,7 @@ $(document).ready(() => {
     const $decrementBtn = $iqdropdown.eq(i).find('.button-decrement');
     const $incrementBtn = $iqdropdown.eq(i).find('.button-increment');
     const $text = $('.iqdropdown-selection');
-    const $dropdownClear = $iqdropdown.eq(i).find('.dropdown__clear');
+    const $dropdownClear = $iqdropdown.eq(i).find('.dropdown__clear-btn');
     console.log($dropdownClear);
 
     let totalCount = 0;
@@ -115,13 +115,15 @@ $(document).ready(() => {
       }
     });
 
-    $iqdropdown.eq(i).find('.dropdown__set').click(() => {
+    $iqdropdown.eq(i).find('.dropdown__set-btn').click((e) => {
+      e.preventDefault();
       $iqdropdown.eq(i).find('.input__icon-dropdown-text').text('expand_more');
       $iqdropdown.eq(i).attr('style', '');
       $iqdropdown.eq(i).removeClass('menu-open');
       $iqdropdown.eq(i).find('.iqdropdown-selection').attr('value', inputValue);
     });
-    $iqdropdown.eq(i).find('.dropdown__clear').click(() => {
+    $iqdropdown.eq(i).find('.dropdown__clear-btn').click((e) => {
+      e.preventDefault();
       totalCount = 0;
       $iqdropdown.eq(i).find('.counter').html('0');
       $dropdownClear.css({ display: 'none' });

@@ -13,7 +13,7 @@ $(document).ready(() => {
   $button.eq(1).trigger('click');
   $button.eq(1).trigger('click');
   $button.eq(3).trigger('click');
-  $('.room .dropdown__set').trigger('click');
+  $('.room .dropdown__set-btn').trigger('click');
   $('.room .iqdropdown').removeClass('menu-open');
 });
 
