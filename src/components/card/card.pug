@@ -3,10 +3,9 @@ mixin card(cl, data)
 	section(class="card " + cl)
 		.card__slider
 			.card__slide-wrapper
-				.card__slide-container
-					- for (let i = 0; i < 4; i++)
-						.card__slide
-							img(src=data.img[i])
+				- for (let i = 0; i < 4; i++)
+					.card__slide
+						img(src=data.img[i])
 				.card__shadow.card__shadow_left
 				.card__shadow.card__shadow_right
 				.card__arrow.card__arrow_left expand_more
