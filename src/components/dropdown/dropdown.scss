@@ -168,33 +168,35 @@
   transform: translate(-50%, -44%);
 }
 .dropdown__bottom {
-  display: flex;
-  flex-direction: row-reverse;
   margin-top: 18px;
-  margin-right: -13px;
   margin-bottom: 12px;
-  padding-left: 6px;
+  padding-left: 15px;
 }
-.dropdown__clear-btn, .dropdown__set-btn {
-  word-break: break-all;
-  flex: 0 1 auto;
+.dropdown__clear {
+  display: inline;
   font-weight: 700;
   font-size: 12px;
   font-family: Montserrat, Arial, sans-serif;
+  color: $black-50;
   text-transform: uppercase;
   cursor: pointer;
-  border: none;
-  outline: none;
-  background: transparent;
-} 
-.dropdown__clear-btn {
   display: none;
-  margin-right: auto;
-  color: $black-50;
+  &_wrapper {
+    float: left;
+  }
 }
-.dropdown__set-btn {
-  display: inline-block;
-  padding-right: 5px;
+.dropdown__set {
+  margin-right: -6px;
+  display: inline;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: Montserrat, Arial, sans-serif;
   text-align: right;
   color: $purple;
+  text-transform: uppercase;
+  cursor: pointer;
+  &_wrapper {
+    display: block;
+    text-align: right;
+  }
 }

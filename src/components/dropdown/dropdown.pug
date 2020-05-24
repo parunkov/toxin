@@ -28,5 +28,7 @@ mixin dropdown(type, cl, h3, p, item1, item2, item3, clear)
 							+dropdown__menu-item
 						if clear
 							.dropdown__bottom
-								button.dropdown__set-btn применить
-								button.dropdown__clear-btn очистить
+								.dropdown__clear_wrapper
+									.dropdown__clear очистить
+								.dropdown__set_wrapper
+									.dropdown__set применить
