@@ -19,8 +19,8 @@ $(document).ready(() => {
 
 const $myDatepicker = $('.room__datepicker-container .datepicker__content').datepicker().data('datepicker');
 const $datepickerContainer = $('.room__datepicker-container');
-const $setBtn = $('.room__datepicker-container .datepicker__set');
-const $clearBtn = $('.room__datepicker-container .datepicker__clear');
+const $setBtn = $('.room__datepicker-container .datepicker__set-btn');
+const $clearBtn = $('.room__datepicker-container .datepicker__clear-btn');
 const $arrival = $('.room__input-1');
 const $departure = $('.room__input-2');
 

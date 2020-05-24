@@ -21,9 +21,9 @@ const myDatepickers = [];
 $('.datepicker__content').each((i) => {
   myDatepickers[i] = $('.datepicker__content').eq(i).datepicker().data('datepicker');
 });
-const $clear = $('.datepicker__clear');
-$('.datepicker__set').each((i) => {
-  $('.datepicker__set').eq(i).click((evt) => {
+const $clear = $('.datepicker__clear-btn');
+$('.datepicker__set-btn').each((i) => {
+  $('.datepicker__set-btn').eq(i).click((evt) => {
     evt.preventDefault();
   });
 });

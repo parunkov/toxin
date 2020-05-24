@@ -9,8 +9,8 @@ import $ from 'jquery';
 
 const $myDatepicker = $('.search__datepicker-container .datepicker__content').datepicker().data('datepicker');
 const $datepickerContainer = $('.search__datepicker-container');
-const $setBtn = $('.search__datepicker-container .datepicker__set');
-const $clearBtn = $('.search__datepicker-container .datepicker__clear');
+const $setBtn = $('.search__datepicker-container .datepicker__set-btn');
+const $clearBtn = $('.search__datepicker-container .datepicker__clear-btn');
 const $arrival = $('.search__input-1');
 const $departure = $('.search__input-2');
 
