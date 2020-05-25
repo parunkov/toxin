@@ -4,19 +4,19 @@ import '../input/input';
 import '../dropdown/dropdown';
 import '../btn/btn';
 import '../datepicker/datepicker';
-import './search.scss';
+import './search-form.scss';
 import $ from 'jquery';
 
-const $myDatepicker = $('.search__datepicker-container .datepicker__content').datepicker().data('datepicker');
-const $datepickerContainer = $('.search__datepicker-container');
-const $setBtn = $('.search__datepicker-container .datepicker__set-btn');
-const $clearBtn = $('.search__datepicker-container .datepicker__clear-btn');
-const $arrival = $('.search__input-1');
-const $departure = $('.search__input-2');
+const $myDatepicker = $('.search-form__datepicker-container .datepicker__content').datepicker().data('datepicker');
+const $datepickerContainer = $('.search-form__datepicker-container');
+const $setBtn = $('.search-form__datepicker-container .datepicker__set-btn');
+const $clearBtn = $('.search-form__datepicker-container .datepicker__clear-btn');
+const $arrival = $('.search-form__input-1');
+const $departure = $('.search-form__input-2');
 
-const $icon = $('.search__inputs-wrapper .input__icon');
+const $icon = $('.search-form__inputs-wrapper .input__icon');
 console.log($icon);
-const $iconText = $('.search__inputs-wrapper .input__icon-text');
+const $iconText = $('.search-form__inputs-wrapper .input__icon-text');
 
 const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.getMonth() + 1}`).substr(-2)}.${date.getFullYear()}`;
 

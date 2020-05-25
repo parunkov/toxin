@@ -2,7 +2,7 @@ import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../../components/page/page';
 import '../../components/ui-kit/ui-kit';
-import '../../components/search/search';
+import '../../components/search-form/search-form';
 import '../../components/reg/reg';
 import '../../components/room/room';
 import '../../components/login/login';

@@ -3,41 +3,41 @@ mixin search
 	include ../../components/dropdown/dropdown.pug
 	include ../../components/datepicker/datepicker.pug
 	article.search
-		.search__header-wrapper
-			h1.search__header Найдём номера под ваши пожелания
-		form.search__form
-			.search__inputs-wrapper
-				.search__input-1-wrapper
+		.search-form__header-wrapper
+			h1.search-form__header Найдём номера под ваши пожелания
+		form.search-form__form
+			.search-form__inputs-wrapper
+				.search-form__input-1-wrapper
 					+input(
 					'прибытие', 
 					'text', 
 					'arrival', 
-					'search__input-1', 
+					'search-form__input-1', 
 					'', 
 					'ДД.ММ.ГГГГ', 
 					'', 
 					'expand_more')
-				.search__input-2-wrapper
+				.search-form__input-2-wrapper
 					+input(
 					'выезд', 
 					'text', 
 					'departure', 
-					'search__input-2', 
+					'search-form__input-2', 
 					'', 
 					'ДД.ММ.ГГГГ', 
 					'', 
 					'expand_more')
-			.search__datepicker-wrapper
-				.search__datepicker-container
+			.search-form__datepicker-wrapper
+				.search-form__datepicker-container
 					+datepicker
 			+dropdown(
 			'peoples',
-			'search__dropdown', 
+			'search-form__dropdown', 
 			'гости', 
 			'', 
 			'взрослые', 
 			'дети', 
 			'младенцы',
 			'1')
-			a(href="search-room.html" class="search__link")
+			a(href="search-room.html" class="search-form__link")
 				.btn.btn_arrow подобрать номер
