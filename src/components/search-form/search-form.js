@@ -23,7 +23,7 @@ const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.
 $arrival.attr('disabled', '');
 $departure.attr('disabled', '');
 
-$('.search .input__icon').click(function (evt) {
+$('.search-form .input__icon').click(function (evt) {
   evt.preventDefault();
   if ($datepickerContainer.css('display') === 'block' && $(this).find('.input__icon-text').text() === 'expand_more') {
     $datepickerContainer.css({ display: 'none' });
