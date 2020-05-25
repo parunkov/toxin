@@ -4,6 +4,7 @@
   max-width: 1200%*100/1440;
   margin: 0 auto;
   padding: 0;
+  padding-top: 50px;
   @media (max-width: 1440px) {
     max-width: $page-container;
   }
