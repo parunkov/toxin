@@ -62,77 +62,75 @@
             </header>
     <main class="registration">
       <div class="registration__container">
-        <div class="registration__inner">
-              <article class="reg">
-                <div class="reg__header-wrapper">
-                  <h1 class="reg__header">Регистрация аккаунта</h1>
+            <article class="registration-form">
+              <div class="registration-form__header-wrapper">
+                <h1 class="registration-form__header">Регистрация аккаунта</h1>
+              </div>
+              <form class="registration-form__form">
+                    <div class="input">
+                      <h3 class="input__header"></h3>
+                      <p class="input__text"></p>
+                      <input class="input__input registration-form__input-1" type="text" name="name" value="" placeholder="Имя">
+                    </div>
+                    <div class="input">
+                      <h3 class="input__header"></h3>
+                      <p class="input__text"></p>
+                      <input class="input__input registration-form__input-2" type="text" name="surname" value="" placeholder="Фамилия">
+                    </div>
+                <div class="registration-form__radio-wrapper">
+                      <div class="radio">
+                        <label class="radio__label">
+                          <input class="radio__input registration-form__radio" type="radio" name="registration-form__radio" checked>
+                          <div class="radio__custom"></div>
+                          <p class="radio__text">Мужчина</p>
+                        </label>
+                        <label class="radio__label">
+                          <input class="radio__input registration-form__radio" type="radio" name="registration-form__radio">
+                          <div class="radio__custom"></div>
+                          <p class="radio__text">Женщина</p>
+                        </label>
+                      </div>
                 </div>
-                <form class="reg__form">
-                      <div class="input">
-                        <h3 class="input__header"></h3>
-                        <p class="input__text"></p>
-                        <input class="input__input reg__input-1" type="text" name="name" value="" placeholder="Имя">
+                    <div class="input">
+                      <h3 class="input__header">дата рождения</h3>
+                      <p class="input__text"></p>
+                      <input class="input__input registration-form__input-3" type="date" name="birthday" value="" placeholder="">
+                    </div>
+                    <div class="input">
+                      <h3 class="input__header">данные для входа в сервис</h3>
+                      <p class="input__text"></p>
+                      <input class="input__input registration-form__input-4" type="email" name="email" value="" placeholder="Email">
+                    </div>
+                    <div class="input">
+                      <h3 class="input__header"></h3>
+                      <p class="input__text"></p>
+                      <input class="input__input registration-form__input-5" type="text" name="password" value="" placeholder="Пароль">
+                    </div>
+                <div class="registration-form__toggle-wrapper">
+                      <div class="toggle">
+                        <label class="toggle__label">
+                          <input class="toggle__input registration-form__toggle" type="checkbox" name="registration-form__toggle-0">
+                          <div class="toggle__custom">
+                            <div class="toggle__custom-inner"></div>
+                          </div>
+                          <p class="toggle__text">Получать спецпредложения</p>
+                        </label>
                       </div>
-                      <div class="input">
-                        <h3 class="input__header"></h3>
-                        <p class="input__text"></p>
-                        <input class="input__input reg__input-2" type="text" name="surname" value="" placeholder="Фамилия">
-                      </div>
-                  <div class="reg__radio-wrapper">
-                        <div class="radio">
-                          <label class="radio__label">
-                            <input class="radio__input reg__radio" type="radio" name="reg__radio" checked>
-                            <div class="radio__custom"></div>
-                            <p class="radio__text">Мужчина</p>
-                          </label>
-                          <label class="radio__label">
-                            <input class="radio__input reg__radio" type="radio" name="reg__radio">
-                            <div class="radio__custom"></div>
-                            <p class="radio__text">Женщина</p>
-                          </label>
-                        </div>
-                  </div>
-                      <div class="input">
-                        <h3 class="input__header">дата рождения</h3>
-                        <p class="input__text"></p>
-                        <input class="input__input reg__input-3" type="date" name="birthday" value="" placeholder="">
-                      </div>
-                      <div class="input">
-                        <h3 class="input__header">данные для входа в сервис</h3>
-                        <p class="input__text"></p>
-                        <input class="input__input reg__input-4" type="email" name="email" value="" placeholder="Email">
-                      </div>
-                      <div class="input">
-                        <h3 class="input__header"></h3>
-                        <p class="input__text"></p>
-                        <input class="input__input reg__input-5" type="text" name="password" value="" placeholder="Пароль">
-                      </div>
-                  <div class="reg__toggle-wrapper">
-                        <div class="toggle">
-                          <label class="toggle__label">
-                            <input class="toggle__input reg__toggle" type="checkbox" name="reg__toggle-0">
-                            <div class="toggle__custom">
-                              <div class="toggle__custom-inner"></div>
-                            </div>
-                            <p class="toggle__text">Получать спецпредложения</p>
-                          </label>
-                        </div>
-                  </div>
-                  <div class="reg__btn">
-                    <button class="btn btn_arrow btn_submit">перейти к оплате</button>
-                  </div>
-                </form>
-                <div class="reg__footer">
-                  <div class="reg__footer-1">
-                    <p class="reg__footer-text">Уже есть аккаунт на Toxin</p>
-                  </div>
-                  <div class="reg__footer-2"><a class="reg__link" href="sign-in.html">
-                      <div class="reg__btn-2"> 
-                        <div class="btn btn_light"><span class="btn_light-inner btn_light-tall">войти</span></div>
-                      </div></a></div>
                 </div>
-              </article>
-        </div>
+                <div class="registration-form__btn">
+                  <button class="btn btn_arrow btn_submit">перейти к оплате</button>
+                </div>
+              </form>
+              <div class="registration-form__footer">
+                <div class="registration-form__footer-1">
+                  <p class="registration-form__footer-text">Уже есть аккаунт на Toxin</p>
+                </div>
+                <div class="registration-form__footer-2"><a class="registration-form__link" href="sign-in.html">
+                    <div class="registration-form__btn-2"> 
+                      <div class="btn btn_light"><span class="btn_light-inner btn_light-tall">войти</span></div>
+                    </div></a></div>
+              </div>
+            </article>
       </div>
     </main>
             <footer class="footer footer_rus">

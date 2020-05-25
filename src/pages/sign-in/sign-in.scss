@@ -10,6 +10,8 @@
 .sign-in__container {
   width: 380%*100/1440;
   margin: 0 auto;
+  padding-left: 30%*100/1440;
+  padding-right: 30%*100/1440;
   background-color: $white;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -22,7 +24,7 @@
     width: 97%;
   }
 }
-.sign-in__inner {
-  width: 320%*100/380;
-  margin: 0 auto;
-}
+// .sign-in__inner {
+//   width: 320%*100/380;
+//   margin: 0 auto;
+// }

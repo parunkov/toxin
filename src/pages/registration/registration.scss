@@ -1,16 +1,22 @@
 @import '../../variables.scss';
-// .registration__header {
-//   // box-shadow: 0 10px 20px $black-5;
-// }
+
 .registration {
   flex: 1 0 auto;
   padding-top: 27px;
   padding-bottom: 27px;
   background: transparent url('reg__bg.jpg') center bottom no-repeat;
   background-size: cover;
+  .reg__radio-wrapper {
+    margin-bottom: 19px;
+  }
+  .reg__toggle-wrapper {
+    margin-bottom: 24px;
+  }
 }
 .registration__container {
   width: 380%*100/1440;
+  padding-left: 30%*100/1440;
+  padding-right: 30%*100/1440;
   margin: 0 auto;
   background-color: $white;
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -25,15 +31,5 @@
   }
   .toggle__text {
     margin-top: -2px;
-  }
-}
-.registration__inner {
-  width: 320%*100/380;
-  margin: 0 auto;
-  .reg__radio-wrapper {
-    margin-bottom: 19px;
-  }
-  .reg__toggle-wrapper {
-    margin-bottom: 24px;
   }
 }
