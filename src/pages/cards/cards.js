@@ -5,7 +5,7 @@ import '../../components/ui-kit/ui-kit';
 import '../../components/search-form/search-form';
 import '../../components/registration-form/registration-form';
 import '../../components/reservation-form/reservation-form';
-import '../../components/login/login';
+import '../../components/login-form/login-form';
 import '../../components/datepicker/datepicker';
 import '../../components/card/card';
 import '../../components/data/data';

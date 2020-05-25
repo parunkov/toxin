@@ -1,9 +1,9 @@
 @import '../../variables.scss';
-.login {
+.login-form {
   padding-top: 40px;
   padding-bottom: 30px;
 }
-.login__header {
+.login-form__header {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25em;
@@ -14,37 +14,37 @@
     word-break: break-all;
   }
 }
-.login__input-1 {
+.login-form__input-1 {
   margin-bottom: 10px;
 }
-.login__input-2 {
+.login-form__input-2 {
   margin-bottom: 20px;
 }
-.login__btn {
+.login-form__btn {
   margin-bottom: 30px;
   word-break: break-all;
   .btn_arrow::after {
     word-break: normal;
   }
 }
-.login__footer {
+.login-form__footer {
   display: flex;
   flex-wrap: nowrap;
 }
-.login__footer-1 {
+.login-form__footer-1 {
   flex: auto;
   padding-top: 14px;
 }
-.login__footer-text {
+.login-form__footer-text {
   color: $black-text;
 }
-.login__footer-2 {
+.login-form__footer-2 {
   flex: 0 0 99%*100/320;
 }
-.login__btn-2 {
+.login-form__btn-2 {
   display: block;
   min-width: 98.5px;
 }
-.login__link {
+.login-form__link {
   text-decoration: none;
 }
