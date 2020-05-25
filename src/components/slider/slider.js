@@ -11,16 +11,16 @@ function prettify(num) {
 }
 
 $(() => {
-  $('#slider-range').slider({
+  $('#slider__range').slider({
     range: true,
     min: 0,
     max: 17000,
     step: 100,
     values: [5000, 10000],
     slide(event, ui) {
-      $('#amount').val(`${prettify(ui.values[0])}₽ - ${prettify(ui.values[1])}₽`);
+      $('#slider__amount').val(`${prettify(ui.values[0])}₽ - ${prettify(ui.values[1])}₽`);
     },
   });
-  $('#amount').val(`${prettify($('#slider-range').slider('values', 0))}₽`
-    + ` - ${prettify(`${$('#slider-range').slider('values', 1)}₽`)}`);
+  $('#slider__amount').val(`${prettify($('#slider__range').slider('values', 0))}₽`
+    + ` - ${prettify(`${$('#slider__range').slider('values', 1)}₽`)}`);
 });

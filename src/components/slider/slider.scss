@@ -19,7 +19,7 @@
   padding-top: 1px;
   margin-bottom: 7px;
 }
-#amount {
+#slider__amount {
   display: inline-block;
   width: 50%;
   margin-bottom: 20px;
@@ -65,13 +65,13 @@
   background-position: 0 0;
   border: 0;
 }
-.slider__clearfix {
-  clear: both;
-}
 .slider__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.6em;
   font-family: Montserrat, Arial, sans-serif;
   color: $black-75;
+}
+#slider__range {
+  clear: both;
 }
