@@ -3,7 +3,7 @@ import '../../variables.scss';
 import '../../components/page/page';
 import '../../components/ui-kit/ui-kit';
 import '../../components/search-form/search-form';
-import '../../components/reg/reg';
+import '../../components/registration-form/registration-form';
 import '../../components/room/room';
 import '../../components/login/login';
 import '../../components/datepicker/datepicker';

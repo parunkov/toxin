@@ -1,16 +1,16 @@
-mixin reg
+mixin registration-form
 	include ../../components/input/input.pug
 	include ../../components/radio/radio.pug
 	include ../../components/toggle/toggle.pug
-	article.reg
-		.reg__header-wrapper
-			h1.reg__header Регистрация аккаунта
-		form.reg__form
+	article.registration-form
+		.registration-form__header-wrapper
+			h1.registration-form__header Регистрация аккаунта
+		form.registration-form__form
 			+input(
 				'', 
 				'text', 
 				'name', 
-				'reg__input-1', 
+				'registration-form__input-1', 
 				'', 
 				'Имя', 
 				'')
@@ -18,19 +18,19 @@ mixin reg
 				'', 
 				'text', 
 				'surname', 
-				'reg__input-2', 
+				'registration-form__input-2', 
 				'', 
 				'Фамилия', 
 				'')
-			.reg__radio-wrapper
+			.registration-form__radio-wrapper
 				+radio(
-					'reg__radio', 
+					'registration-form__radio', 
 					['Мужчина', 'Женщина'])
 			+input(
 				'дата рождения', 
 				'date', 
 				'birthday', 
-				'reg__input-3', 
+				'registration-form__input-3', 
 				'', 
 				'', 
 				'')
@@ -38,7 +38,7 @@ mixin reg
 				'данные для входа в сервис', 
 				'email', 
 				'email', 
-				'reg__input-4', 
+				'registration-form__input-4', 
 				'', 
 				'Email', 
 				'')
@@ -46,21 +46,21 @@ mixin reg
 				'', 
 				'text', 
 				'password', 
-				'reg__input-5', 
+				'registration-form__input-5', 
 				'', 
 				'Пароль', 
 				'')
-			.reg__toggle-wrapper
+			.registration-form__toggle-wrapper
 				+toggle(
-					'reg__toggle', 
+					'registration-form__toggle', 
 					['Получать спецпредложения'])
-			.reg__btn
+			.registration-form__btn
 				button.btn.btn_arrow.btn_submit перейти к оплате
-		.reg__footer
-			.reg__footer-1
-				p.reg__footer-text Уже есть аккаунт на Toxin
-			.reg__footer-2
-				a(href="sign-in.html" class="reg__link")
-					.reg__btn-2 
+		.registration-form__footer
+			.registration-form__footer-1
+				p.registration-form__footer-text Уже есть аккаунт на Toxin
+			.registration-form__footer-2
+				a(href="sign-in.html" class="registration-form__link")
+					.registration-form__btn-2 
 						.btn.btn_light
 							span.btn_light-inner.btn_light-tall войти

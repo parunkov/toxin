@@ -4,14 +4,14 @@ import '../input/input';
 import '../btn/btn';
 import '../radio/radio';
 import '../toggle/toggle';
-import './reg.scss';
+import './registration-form.scss';
 import $ from 'jquery';
 
 const onWindowResize = () => {
   if ($(window).width() < 350) {
-    $('.reg__header').html('Регистрация<br>аккаунта');
+    $('.registration-form__header').html('Регистрация<br>аккаунта');
   } else {
-    $('.reg__header').html('Регистрация аккаунта');
+    $('.registration-form__header').html('Регистрация аккаунта');
   }
 };
 onWindowResize();
