@@ -27,28 +27,20 @@ block main
 				new RoomData(['img/image2.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 840, '', '9 990', 4, 65)
 				];
 		.cards__container
-			.cards__row
-				.cards__col.cards__col_1
-					.cards__inner.cards__inner_1
-						.cards__content.cards__content_1
-							+search-form
-					.cards__inner.cards__inner_2
-						.cards__content.cards__content_2
-							+registration-form
-				.cards__col.cards__col_2
-					.cards__inner.cards__inner_3
-						.cards__content.cards__content_3
-							+reservation-form
-					.cards__inner.cards__inner_4
-						.cards__content.cards__content_4
-							+login-form
-				.cards__col.cards__col_3
-					.cards__inner.cards__inner_5
-						.cards__content.cards__content_5
-							+datepicker
-					.cards__inner.cards__inner_6
-						.cards__content.cards__content_6
-							+card('cards__card-1', data[0])
-					.cards__inner.cards__inner_7
-						.cards__content.cards__content_7
-							+card('cards__card-1', data[1])
+			.cards__grid-column.cards__grid-column_1
+				.cards__card-wrapper.cards__card-wrapper_1
+					+search-form
+				.cards__card-wrapper.cards__card-wrapper_2
+					+registration-form
+			.cards__grid-column.cards__grid-column_2
+				.cards__card-wrapper.cards__card-wrapper_3
+					+reservation-form
+				.cards__card-wrapper.cards__card-wrapper_4
+					+login-form
+			.cards__grid-column.cards__grid-column_3
+				.cards__card-wrapper.cards__card-wrapper_5
+					+datepicker
+				.cards__card-wrapper.cards__card-wrapper_6
+					+card('cards__card-1', data[0])
+				.cards__card-wrapper.cards__card-wrapper_7
+					+card('cards__card-1', data[1])

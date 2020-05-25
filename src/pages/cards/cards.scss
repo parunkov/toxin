@@ -4,9 +4,10 @@
 }
 .cards__container {
   width: 1200%*100/1440;
-  // border: 1px solid green;
   margin: 0 auto;
   padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
   @media (max-width: 1440px) {
     width: $page-container;
   }
@@ -14,13 +15,7 @@
     width: 100%;
   }
 }
-.cards__row {
-  display: flex;
-  flex-wrap: wrap;
-  // border: 1px solid yellow;
-}
-.cards__col {
-  // border: 1px solid blue;
+.cards__grid-column {
   flex: 0 0 420%*100/1200;
   &_3 {
     flex: 0 0 360%*100/1200;
@@ -33,12 +28,13 @@
     width: 100%;
   }
 }
-.cards__inner {
+.cards__card-wrapper {
   width: 380%*100/420;
+  padding-left: 30%*100/420;
+  padding-right: 30%*100/420;
   margin: 0 auto;
   background-color: $white;
   border-radius: 4px;
-  // border: 1px solid red;
   box-shadow: 0 0 25px $shadow;
   &_1 {
     margin-bottom: 40px;
@@ -50,20 +46,27 @@
     }
   }
   &_3 {
-    width: 320%*100/360;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
   &_4, &_5 {
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
   &_5 {
-    max-width: 400px;
+    max-width: 360px;
+    padding-left: 1.25%;
+    padding-right: 1.25%;  
+    @media (min-width: 1445px) {
+      margin-left: 20px;
+      margin-right: auto;
+    } 
+    @media (max-width: 959px) {
+      max-width: 400px;
+    }
     .datepicker__container {
       border-color: transparent;
     }
     .datepicker--cell-day {
       height: 40px;
-      // border-radius: 50%;
       @media (max-width: 959px) {
         height: 50px;
       }
@@ -82,10 +85,11 @@
     }  
   }
   &_6, &_7 {
-    width: 320%*100/360;
     margin-bottom: 40px;
     background: transparent;
     box-shadow: none;
+    padding-left: 0.7%;
+    padding-right: 14.6%;
   }
   @media (max-width: $page-container) {
     min-width: 310px;
@@ -93,32 +97,10 @@
   @media (max-width: 380px) {
     overflow-x: hidden;
   }
-}
-.cards__content {
-  width: 320%*100/380;
-  // border: 1px solid green;
-  margin: 0 auto;
-  &_1 {
-    width: 84.71%;
-  }
-  &_3 {
-    width: 86%;
-  }
-  &_4 {
-    width: 84.5%;
-  }
-  &_5, {
-    width: 100%;
-  }
-  &_6, &_7 {
-    width: 270%*100/320;
-    min-width: 270px;
-    margin-left: 0;
-    background-color: $white;
-    border-radius: 4px;
+  .card {
+    background: $white;
     box-shadow: 0 0 25px $shadow;
-  }
-  @media (max-width: 380px) {
-    max-width: 315px;
+    border-right: 4px;
+    min-width: 270px;
   }
 }
