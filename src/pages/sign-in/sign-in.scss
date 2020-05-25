@@ -19,12 +19,12 @@
   max-width: 380px;
   @media (max-width: 1440px) {
     width: 380px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   @media (max-width: 385px) {
     width: 97%;
+    padding-left: 30%*100/385;
+    padding-left: 30%*100/385;
   }
 }
-// .sign-in__inner {
-//   width: 320%*100/380;
-//   margin: 0 auto;
-// }
