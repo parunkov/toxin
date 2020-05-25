@@ -17,8 +17,8 @@ block main
 	include ../../components/review/review.pug
 	+ui-kit
 	.form-elements
-		article.form-elements__row
-			.form-elements__col.form-elements__col_1
+		article.form-elements__grid-row
+			.form-elements__grid-column.form-elements__grid-column_1
 				section.form-elements__inner.form-elements__inner_1
 					.form-elements__item.form-elements__item_1
 						+input(
@@ -101,7 +101,7 @@ block main
 							'', 
 							'arrow_forward', 
 							'purple')
-			.form-elements__col.form-elements__col_2
+			.form-elements__grid-column.form-elements__grid-column_2
 				section.form-elements__inner.form-elements__inner_2
 					.form-elements__item.form-elements__item_8
 						h3.form-elements__item-header.form-elements__item-8-header Checkbox Buttons
@@ -129,7 +129,7 @@ block main
 						h3.form-elements__item-header.form-elements__item-12-header rate button
 						+rate('form-elements__rate-1', 4, 1)
 						+rate('form-elements__rate-2', 5, 1)
-			.form-elements__col.form-elements__col_3
+			.form-elements__grid-column.form-elements__grid-column_3
 				section.form-elements__inner.form-elements__inner_3
 					.form-elements__item.form-elements__item_13
 						+slider(1, 'Range Slider')
@@ -148,7 +148,7 @@ block main
 						h3.form-elements__item-header.form-elements__item-15-header pagination
 						#pagination-container
 						p.pagination__text <span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды
-			.form-elements__col.form-elements__col_4
+			.form-elements__grid-column.form-elements__grid-column_4
 				section.form-elements__inner.form-elements__inner_4
 					.form-elements__item.form-elements__item_16
 						+dropdown(
@@ -168,7 +168,7 @@ block main
 							'спальни', 
 							'кровати', 
 							'ванные комнаты')
-			.form-elements__col.form-elements__col_41
+			.form-elements__grid-column.form-elements__grid-column_41
 				section.form-elements__inner.form-elements__inner_41
 					.form-elements__item.form-elements__item_18
 						h3.form-elements__item-header expandable checkbox list
@@ -182,7 +182,7 @@ block main
 							'Кроватка',
 							'Телевизор',
 							'Шампунь'])
-			.form-elements__col.form-elements__col_5
+			.form-elements__grid-column.form-elements__grid-column_5
 				section.form-elements__inner.form-elements__inner_5
 					.form-elements__item.form-elements__item_20
 						+dropdown(
@@ -194,7 +194,7 @@ block main
 							'дети', 
 							'младенцы',
 							'1')
-			.form-elements__col.form-elements__col_51
+			.form-elements__grid-column.form-elements__grid-column_51
 				section.form-elements__inner.form-elements__inner_51
 					.form-elements__item.form-elements__item_21
 						h3.form-elements__item-header rich Checkbox Buttons
@@ -204,7 +204,7 @@ block main
 							'На 1 этаже вас встретит специалист  и проводит до номера.'],
 							['Широкий коридор',
 							'Помощник для инвалидов'])
-			.form-elements__col.form-elements__col_6
+			.form-elements__grid-column.form-elements__grid-column_6
 				section.form-elements__inner.form-elements__inner_6
 					.form-elements__item.form-elements__item_22
 						+dropdown(
@@ -216,7 +216,7 @@ block main
 							'дети', 
 							'младенцы',
 							'1')
-			.form-elements__col.form-elements__col_61
+			.form-elements__grid-column.form-elements__grid-column_61
 				section.form-elements__inner.form-elements__inner_61
 					.form-elements__item.form-elements__item_23
 						h3.form-elements__item-header bullet list
@@ -224,7 +224,7 @@ block main
 							li.form-elements__bullet-item Нельзя с питомцами
 							li.form-elements__bullet-item Без вечеринок и мероприятий
 							li.form-elements__bullet-item Время прибытия — после 13:00, а выезд до 12:00
-			.form-elements__col.form-elements__col_7
+			.form-elements__grid-column.form-elements__grid-column_7
 				section.form-elements__inner.form-elements__inner_7
 					.form-elements__item.form-elements__item_24
 						+info(
@@ -238,7 +238,7 @@ block main
 							'location_city',
 							'Удобство',
 							'Окно в каждой из спален')
-			.form-elements__col.form-elements__col_8
+			.form-elements__grid-column.form-elements__grid-column_8
 				section.form-elements__inner.form-elements__inner_8
 					.form-elements__item.form-elements__item_26
 						+review(
