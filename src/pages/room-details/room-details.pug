@@ -9,10 +9,10 @@ block main
 	include ../../components/reservation-form/reservation-form.pug
 	+header
 	main.room-details
-		figure.room-details__img-wrapper
-			.room-details__img-col-1
+		figure.room-details__img-section
+			.room-details__img-wrapper-1
 				img(src="img/room1.jpg" width="100%" class="room-details__image-1")
-			.room-details__img-col-2
+			.room-details__img-wrapper-2
 				.room-details__img-2
 					img(src="img/room2.jpg" width="100%" class="room-details__image-2")
 				.room-details__img-3
@@ -22,10 +22,10 @@ block main
 				include ../../components/info/info.pug
 				include ../../components/like/like.pug
 				include ../../components/review/review.pug
-				.room-details__col-1
+				.room-details__grid-column-1
 					.room-details__content-row-1
 						article.room-details__article-1
-							h2.room-details__header.room-details__header-1 Сведения о номере
+							h2.room-details__header.room-details__header_1 Сведения о номере
 							.room-details__info-wrapper
 								+info(
 									'room-details__info-1',
@@ -45,30 +45,30 @@ block main
 									'Уют',
 									'Номер оснащён камином')
 						article.room-details__article-2
-							h2.room-details__header.room-details__header-2 Впечатления от номера
+							h2.room-details__header.room-details__header_2 Впечатления от номера
 							.room-details__chart-wrapper
 								.room-details__chart
-								.room-details__chart-2
+								.room-details__chart-white-mask
 								.room-details__chart-inner
 									.room-details__chart-number 260
 									.room-details__chart-text голосов
 							.room-details__chart-comment
 								.room-details__chart-item
-									.room-details__chart-before.room-details__chart-before_1
+									.room-details__mark.room-details__mark_1
 									p.room-details__chart-text-item Великолепно
 								.room-details__chart-item
-									.room-details__chart-before.room-details__chart-before_2
+									.room-details__mark.room-details__mark_2
 									p.room-details__chart-text-item Хорошо
 								.room-details__chart-item
-									.room-details__chart-before.room-details__chart-before_3
+									.room-details__mark.room-details__mark_3
 									p.room-details__chart-text-item Удовлетворительно
 								.room-details__chart-item
-									.room-details__chart-before.room-details__chart-before_4
+									.room-details__mark.room-details__mark_4
 									p.room-details__chart-text-item Разочарован
 					.room-details__content-row-2
 						article.room-details__article-3
-							h2.room-details__header.room-details__header-3 Отзывы посетителей номера
-								span.room-details__header-3-span 2 отзыва
+							h2.room-details__header.room-details__header_3 Отзывы посетителей номера
+								span.room-details__header-right-part 2 отзыва
 							.room-details__review-wrapper
 								+review(
 									'room-details__revew-1',
@@ -87,17 +87,16 @@ block main
 									'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
 					.room-details__content-row-3
 						article.room-details__article-4
-							h2.room-details__header.room-details__header-4 Правила
+							h2.room-details__header.room-details__header_4 Правила
 							ul.room-details__ul
 								li.room-details__bullet-item Нельзя с питомцами
 								li.room-details__bullet-item Без вечеринок и мероприятий
 								li.room-details__bullet-item Время прибытия — после 13:00, а выезд до 12:00
 						.room-details__article-space-2
 						article.room-details__article-5
-							h2.room-details__header.room-details__header-5 Отмена
+							h2.room-details__header.room-details__header_5 Отмена
 							p.room-details__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
-				.room-details__col-2
+				.room-details__grid-column-2
 					.room-details__form
-						.room-details__form-inner
-							+reservation-form
+						+reservation-form
 	+footer

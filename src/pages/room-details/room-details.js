@@ -110,4 +110,4 @@ const addCart = function (dataset, chartClass, sectorClass) {
   }(curr, prev)), 0);
 };
 addCart(dataset1, '.room-details__chart', 'room-details__sector');
-addCart(dataset2, '.room-details__chart-2', 'room-details__sector');
+addCart(dataset2, '.room-details__chart-white-mask', 'room-details__sector');
