@@ -3,36 +3,36 @@ import '../../variables.scss';
 import '../input/input';
 import '../dropdown/dropdown';
 import '../btn/btn';
-import './room.scss';
+import './reservation-form.scss';
 import '../datepicker/datepicker';
 import $ from 'jquery';
 
-const $button = $('.room .iqdropdown button');
+const $button = $('.reservation-form .iqdropdown button');
 
 $(document).ready(() => {
   $button.eq(1).trigger('click');
   $button.eq(1).trigger('click');
   $button.eq(3).trigger('click');
-  $('.room .dropdown__set-btn').trigger('click');
-  $('.room .iqdropdown').removeClass('menu-open');
+  $('.reservation-form .dropdown__set-btn').trigger('click');
+  $('.reservation-form .iqdropdown').removeClass('menu-open');
 });
 
-const $myDatepicker = $('.room__datepicker-container .datepicker__content').datepicker().data('datepicker');
-const $datepickerContainer = $('.room__datepicker-container');
-const $setBtn = $('.room__datepicker-container .datepicker__set-btn');
-const $clearBtn = $('.room__datepicker-container .datepicker__clear-btn');
-const $arrival = $('.room__input-1');
-const $departure = $('.room__input-2');
+const $myDatepicker = $('.reservation-form__datepicker-container .datepicker__content').datepicker().data('datepicker');
+const $datepickerContainer = $('.reservation-form__datepicker-container');
+const $setBtn = $('.reservation-form__datepicker-container .datepicker__set-btn');
+const $clearBtn = $('.reservation-form__datepicker-container .datepicker__clear-btn');
+const $arrival = $('.reservation-form__input-1');
+const $departure = $('.reservation-form__input-2');
 
-const $icon = $('.room__input-wrapper .input__icon');
-const $iconText = $('.room__input-wrapper .input__icon-text');
+const $icon = $('.reservation-form__input-wrapper .input__icon');
+const $iconText = $('.reservation-form__input-wrapper .input__icon-text');
 
 const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.getMonth() + 1}`).substr(-2)}.${date.getFullYear()}`;
 
 $arrival.attr('disabled', '');
 $departure.attr('disabled', '');
 
-$('.room .input__icon').click(function (evt) {
+$('.reservation-form .input__icon').click(function (evt) {
   evt.preventDefault();
   if ($datepickerContainer.css('display') === 'block' && $(this).find('.input__icon-text').text() === 'expand_more') {
     $datepickerContainer.css({ display: 'none' });

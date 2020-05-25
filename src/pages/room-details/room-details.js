@@ -6,7 +6,7 @@ import '../../components/like/like';
 import '../../components/review/review';
 import '../../components/footer/footer';
 import '../../components/info/info';
-import '../../components/room/room';
+import '../../components/reservation-form/reservation-form';
 import './room-details.scss';
 import './room1.jpg';
 import './room2.jpg';

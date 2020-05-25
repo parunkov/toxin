@@ -4,7 +4,7 @@ import '../../components/page/page';
 import '../../components/ui-kit/ui-kit';
 import '../../components/search-form/search-form';
 import '../../components/registration-form/registration-form';
-import '../../components/room/room';
+import '../../components/reservation-form/reservation-form';
 import '../../components/login/login';
 import '../../components/datepicker/datepicker';
 import '../../components/card/card';

@@ -1,0 +1,62 @@
+mixin reservation-form
+	include ../../components/input/input.pug
+	include ../../components/dropdown/dropdown.pug
+	include ../../components/datepicker/datepicker.pug
+	article.reservation-form
+		.reservation-form__header
+			.reservation-form__header-1
+				h1.reservation-form__header-text <span class="reservation-form__header_number">№</span>888
+					span.reservation-form__header_category  люкс
+			.reservation-form__header-2
+				p.reservation-form__header_price 9 990₽ <span class="reservation-form__header_price-text">в сутки</span>
+		form.reservation-form__form
+			.reservation-form__inputs-wrapper
+				.reservation-form__input-wrapper
+					+input(
+					'прибытие', 
+					'text', 
+					'arrival', 
+					'reservation-form__input-1', 
+					'19.08.2019', 
+					'ДД.ММ.ГГГГ', 
+					'', 
+					'expand_more')
+				.reservation-form__input-wrapper
+					+input(
+					'выезд', 
+					'text', 
+					'departure', 
+					'reservation-form__input-2', 
+					'23.08.2019', 
+					'ДД.ММ.ГГГГ', 
+					'', 
+					'expand_more')
+			.reservation-form__datepicker-wrapper
+				.reservation-form__datepicker-container
+					+datepicker
+			+dropdown(
+			'peoples',
+			'reservation-form__dropdown', 
+			'гости', 
+			'', 
+			'взрослые', 
+			'дети', 
+			'младенцы',
+			'1')
+			p.reservation-form__text 
+				span.reservation-form__text_left 9 990₽ х 4 суток 
+				span.reservation-form__text_right 39 960₽
+			p.reservation-form__text
+				span.reservation-form__text_left Сбор за услуги: скидка 2 179₽ 
+				span.reservation-form__i i
+				span.reservation-form__text_right 0₽
+			p.reservation-form__text
+				span.reservation-form__text_left Сбор за дополнительные услуги
+				span.reservation-form__i i
+				span.reservation-form__text_right 300₽
+			.reservation-form__price
+				span.reservation-form__price-1 Итого
+				span.reservation-form__price-2
+				h2.reservation-form__price-3 38 081₽
+			.reservation-form__btn
+				button.btn.btn_arrow.btn_submit забронировать
