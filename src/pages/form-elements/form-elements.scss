@@ -289,7 +289,7 @@
 .form-elements__item-12-header {
   margin-bottom: 17px;
 }
-.form-elements__rate-1-star, .form-elements__rate-2-star {
+.form-elements .rate__star {
   cursor: pointer;
 }
 .form-elements__item-14-header {
@@ -319,7 +319,7 @@
 .form-elements__info-1 {
   border-bottom: 1px solid $black-10;
 }
-.form-elements__input {
+.input__input {
   letter-spacing: -0.2px;
   &_uppercase {
     text-transform: uppercase;

@@ -17,12 +17,12 @@ import '../../components/review/review';
 import './form-elements.scss';
 import $ from 'jquery';
 
-$('.form-elements__checkbox-1:gt(0)').prop('checked', true);
-$('.form-elements__toggle').eq(0).prop('checked', true);
-$('.form-elements__2-like').prop('checked', true);
-$('.form-elements__checkbox-2:lt(4)').prop('checked', true);
-$('.form-elements__checkbox-2').eq(0).prop('checked', false);
-$('.form-elements__revew-1-like').prop('checked', true);
+$('.form-elements__item_8 .checkbox__input:gt(0)').prop('checked', true);
+$('.form-elements__item_10 .toggle__input').eq(0).prop('checked', true);
+$('.like__input').eq(1).prop('checked', true);
+$('.form-elements__item_19 .checkbox__input:lt(4)').prop('checked', true);
+$('.form-elements__item_19 .checkbox__input').eq(0).prop('checked', false);
+$('.like__input').eq(2).prop('checked', true);
 $(document).ready(() => {
   $('.input__icon-dropdown').eq(1).trigger('click');
   $('.input__icon-dropdown').eq(2).trigger('click');

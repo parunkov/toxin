@@ -25,7 +25,7 @@ block main
 							'Text Field', 
 							'email', 
 							'form-elements__input-1', 
-							'form-elements__input', 
+							'', 
 							'', 
 							'Email', 
 							'Default')
@@ -34,7 +34,7 @@ block main
 							'Text Field', 
 							'email', 
 							'form-elements__input-2', 
-							'input__input_hover form-elements__input', 
+							'input__input_hover', 
 							'This is pretty awesome', 
 							'', 
 							'Hover / Focus')
@@ -43,7 +43,7 @@ block main
 							'Dropdown', 
 							'email', 
 							'form-elements__input-3', 
-							'form-elements__input', 
+							'', 
 							'Сколько гостей', 
 							'', 
 							'Default', 
@@ -53,7 +53,7 @@ block main
 							'masked text field', 
 							'date', 
 							'form-elements__input-4', 
-							'form-elements__input form-elements__input_uppercase', 
+							'input__input_uppercase', 
 							'', 
 							'Email', 
 							'Default', 
@@ -64,7 +64,7 @@ block main
 								'date Dropdown', 
 								'date', 
 								'form-elements__input-5', 
-								'form-elements__input form-elements__input_uppercase', 
+								'input__input_uppercase', 
 								'', 
 								'', 
 								'', 
@@ -75,7 +75,7 @@ block main
 								'date Dropdown', 
 								'date', 
 								'form-elements__input-6', 
-								'form-elements__input', 
+								'', 
 								'2019-08-19', 
 								'', 
 								'', 
@@ -85,7 +85,7 @@ block main
 							'filter date dropdown', 
 							'email', 
 							'form-elements__input-7', 
-							'form-elements__input', 
+							'', 
 							'19 авг - 23 авг', 
 							'', 
 							'', 
@@ -95,7 +95,7 @@ block main
 							'subscription text field', 
 							'email', 
 							'form-elements__input-8', 
-							'input__input_arrow form-elements__input', 
+							'input__input_arrow', 
 							'', 
 							'Email', 
 							'', 
@@ -106,29 +106,29 @@ block main
 					.form-elements__item.form-elements__item_8
 						h3.form-elements__item-header.form-elements__item-8-header Checkbox Buttons
 						+checkbox(
-							'form-elements__checkbox-1', 
+							'', 
 							['Можно курить', 
 							'Можно с питомцами', 
 							'Можно пригласить гостей (до 10 человек)'])
 					.form-elements__item.form-elements__item_9
 						h3.form-elements__item-header.form-elements__item-9-header Radio Buttons
 						+radio(
-							'form-elements__radio', 
+							'', 
 							['Мужчина', 'Женщина'])
 					.form-elements__item.form-elements__item_10
 						h3.form-elements__item-header.form-elements__item-10-header Toggle
 						+toggle(
-							'form-elements__toggle', 
+							'', 
 							['Получать спецпредложения', 
 							'Получать спецпредложения'])
 					.form-elements__item.form-elements__item_11
 						h3.form-elements__item-header.form-elements__item-11-header like button
-						+like('form-elements__1', '2')
-						+like('form-elements__2', '12')
+						+like('', '2')
+						+like('', '12')
 					.form-elements__item.form-elements__item_12
 						h3.form-elements__item-header.form-elements__item-12-header rate button
-						+rate('form-elements__rate-1', 4, 1)
-						+rate('form-elements__rate-2', 5, 1)
+						+rate('', 4, 1)
+						+rate('', 5, 1)
 			.form-elements__grid-column.form-elements__grid-column_3
 				section.form-elements__inner.form-elements__inner_3
 					.form-elements__item.form-elements__item_13
@@ -175,7 +175,7 @@ block main
 					.form-elements__item.form-elements__item_19
 						h3.form-elements__item-header expandable checkbox list
 						+checkbox(
-							'form-elements__checkbox-2', 
+							'', 
 							['Завтрак', 
 							'Письменный стол', 
 							'Стул для кормления',
@@ -199,7 +199,7 @@ block main
 					.form-elements__item.form-elements__item_21
 						h3.form-elements__item-header rich Checkbox Buttons
 						+checkbox(
-							'form-elements__checkbox-3', 
+							'', 
 							['Ширина коридоров в номере не менее 91 см.', 
 							'На 1 этаже вас встретит специалист  и проводит до номера.'],
 							['Широкий коридор',
@@ -242,7 +242,7 @@ block main
 				section.form-elements__inner.form-elements__inner_8
 					.form-elements__item.form-elements__item_26
 						+review(
-							'form-elements__revew-1',
+							'',
 							'img/murad.jpg',
 							'12',
 							'Мурад Сарафанов',
