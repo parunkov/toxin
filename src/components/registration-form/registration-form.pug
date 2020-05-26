@@ -6,50 +6,55 @@ mixin registration-form
 		.registration-form__header-wrapper
 			h1.registration-form__header Регистрация аккаунта
 		form.registration-form__form
-			+input(
-				'', 
-				'text', 
-				'name', 
-				'registration-form__input-1', 
-				'', 
-				'Имя', 
-				'')
-			+input(
-				'', 
-				'text', 
-				'surname', 
-				'registration-form__input-2', 
-				'', 
-				'Фамилия', 
-				'')
+			.registration-form__input-wrapper.registration-form__input-wrapper_1
+				+input(
+					'', 
+					'text', 
+					'name', 
+					'', 
+					'', 
+					'Имя', 
+					'')
+			.registration-form__input-wrapper.registration-form__input-wrapper_2
+				+input(
+					'', 
+					'text', 
+					'surname', 
+					'registration-form__input-2', 
+					'', 
+					'Фамилия', 
+					'')
 			.registration-form__radio-wrapper
 				+radio(
 					'registration-form__radio', 
 					['Мужчина', 'Женщина'])
-			+input(
-				'дата рождения', 
-				'date', 
-				'birthday', 
-				'registration-form__input-3', 
-				'', 
-				'', 
-				'')
-			+input(
-				'данные для входа в сервис', 
-				'email', 
-				'email', 
-				'registration-form__input-4', 
-				'', 
-				'Email', 
-				'')
-			+input(
-				'', 
-				'text', 
-				'password', 
-				'registration-form__input-5', 
-				'', 
-				'Пароль', 
-				'')
+			.registration-form__input-wrapper.registration-form__input-wrapper_3
+				+input(
+					'дата рождения', 
+					'date', 
+					'birthday', 
+					'', 
+					'', 
+					'', 
+					'')
+			.registration-form__input-wrapper.registration-form__input-wrapper_4
+				+input(
+					'данные для входа в сервис', 
+					'email', 
+					'email', 
+					'', 
+					'', 
+					'Email', 
+					'')
+			.registration-form__input-wrapper.registration-form__input-wrapper_5
+				+input(
+					'', 
+					'text', 
+					'password', 
+					'', 
+					'', 
+					'Пароль', 
+					'')
 			.registration-form__toggle-wrapper
 				+toggle(
 					'registration-form__toggle', 
