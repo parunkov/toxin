@@ -102,7 +102,7 @@
 .search-room__input-wrapper {
   margin-bottom: 17px;
 }
-.search-room__input-1 {
+.search-room__input-wrapper .input__input {
   &::-webkit-input-placeholder {
     color: $black-75;
   }

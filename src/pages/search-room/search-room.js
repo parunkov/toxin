@@ -13,7 +13,7 @@ import '../../components/pagination/pagination';
 import './search-room.scss';
 import $ from 'jquery';
 
-$('.search-room__input-1').attr('disabled', '');
+$('.search-room__input-wrapper .input__input').attr('disabled', '');
 
 $('.search-room__filters-header').click((evt) => {
   evt.preventDefault();
@@ -27,9 +27,9 @@ $('.search-room__expandable-header').click((evt) => {
   $('.search-room__expandable-header').toggleClass('search-room__expandable-header_rotate');
 });
 
-$('.search-room__checkbox-1:gt(0)').prop('checked', true);
-$('.search-room__checkbox-3:lt(4)').prop('checked', true);
-$('.search-room__checkbox-3').eq(0).prop('checked', false);
+$('.search-room__checkbox-wrapper .checkbox__input:gt(0)').prop('checked', true);
+$('.search-room__expandable-wrapper .checkbox__input:lt(4)').prop('checked', true);
+$('.search-room__expandable-wrapper .checkbox__input').eq(0).prop('checked', false);
 
 $(document).ready(() => {
   const $button1 = $('.search-room__dropdown-wrapper .iqdropdown button');
