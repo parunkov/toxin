@@ -47,7 +47,7 @@
 .search-form__input-1-wrapper {
   margin-right: auto;
 }
-.search-form__input-1, .search-form__input-2 {
+.search-form__input-1-wrapper .input__input, .search-form__input-2-wrapper .input__input {
   text-transform: uppercase;
   letter-spacing: -0.4px;
   cursor: default;
@@ -58,7 +58,7 @@
     padding-left: 12px;
   }
 }
-.search-form__dropdown-container {
+.search-form .dropdown__container {
   margin-bottom: 30px;
 }
 .search-form__datepicker-wrapper {
