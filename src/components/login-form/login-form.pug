@@ -3,22 +3,24 @@ mixin login-form
 	article.login-form
 		h1.login-form__header Войти
 		form.login-form__form
-			+input(
-				'', 
-				'email', 
-				'email', 
-				'login-form__input-1', 
-				'', 
-				'Email', 
-				'')
-			+input(
-				'', 
-				'text', 
-				'password', 
-				'login-form__input-2', 
-				'', 
-				'Пароль', 
-				'')
+			.login-form__input-wrapper.login-form__input-wrapper_1
+				+input(
+					'', 
+					'email', 
+					'email', 
+					'', 
+					'', 
+					'Email', 
+					'')
+			.login-form__input-wrapper.login-form__input-wrapper_2
+				+input(
+					'', 
+					'text', 
+					'password', 
+					'', 
+					'', 
+					'Пароль', 
+					'')
 			.login-form__btn
 				button.btn.btn_arrow.btn_submit войти
 		.login-form__footer
