@@ -58,8 +58,8 @@ mixin headerMarkup(cl, menu, btn1, href1, btn2, href2, login)
 mixin header(isEng, isLogged)
 	if isEng
 		if isLogged
-			+headerMarkup('header_eng-logged', menuEng, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me', 1)
+			+headerMarkup('', menuEng, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me', 1)
 		else
-			+headerMarkup('header_eng', menuEng, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me')
+			+headerMarkup('', menuEng, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me')
 	else
-		+headerMarkup('header_rus', menuRus, 'войти', 'sign-in.html', 'зарегистрироваться', 'registration.html')
+		+headerMarkup('', menuRus, 'войти', 'sign-in.html', 'зарегистрироваться', 'registration.html')

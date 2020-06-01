@@ -2,6 +2,9 @@
 .header {
   flex: 0 0 auto;
   width: 100%;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 10px 20px $black-5;
 }
 .header__navigation {
   position: relative;
@@ -11,7 +14,7 @@
   margin: 0 auto;
   padding-right: 20%*100/1440;
   padding-left: 20%*100/1440;
-  padding-top: 17px;
+  padding-top: 15px;
   @media (max-width: 1440px) {
     max-width: $page-container;
   }
@@ -83,7 +86,8 @@
 .header__navigation-list {
   &-wrapper {
     flex: 1 1 320px;
-    padding-top: 12px;
+    padding-top: 13px;
+    padding-right: 11px;
     text-align: right;
     @media (max-width: 750px) {
     }
@@ -130,7 +134,7 @@
 .header__navigation-item {
   position: relative;
   display: inline-block;
-  margin-right: 26px;
+  margin-right: 34px;
   margin-bottom: 15px;
   font-weight: 400;
   font-size: 14px;
@@ -144,8 +148,49 @@
       text-align: center;
     }
   }
+    @media (max-width: $mobile-menu-breakpoint) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    &:nth-child(1) {
+      margin-right: 18px;
+      @media (max-width: $mobile-menu-breakpoint) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+    &:nth-child(2) {
+      margin-right: 41px;
+      .header__navigation-item_submenu a {
+        min-width: 65px;
+      }
+      @media (max-width: $mobile-menu-breakpoint) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+    &:nth-child(3) {
+      margin-right: 17px;
+      @media (max-width: $mobile-menu-breakpoint) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+    &:nth-child(4) {
+      margin-right: 17px;
+      @media (max-width: $mobile-menu-breakpoint) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+    &:last-child {
+      @media (max-width: $mobile-menu-breakpoint) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
   &:last-child {
-    margin-right: 29px;
+    // margin-right: 29px;
     @media (max-width: $mobile-menu-breakpoint) {
       margin-right: 0;
     }
@@ -176,10 +221,50 @@
       margin-bottom: 2px;
       margin-left: auto;
       margin-right: auto;
-      &:last-child {
+      // &:last-child {
+      //   margin-left: auto;
+      //   margin-right: auto;
+      // }
+      margin-right: 0;
+    @media (max-width:$mobile-menu-breakpoint) {
         margin-left: auto;
         margin-right: auto;
       }
+    &:nth-child(1) {
+      margin-right: 0;
+      @media (max-width:$mobile-menu-breakpoint) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &:nth-child(2) {
+      margin-right: 0;
+      @media (max-width:$mobile-menu-breakpoint) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &:nth-child(3) {
+      margin-right: 0;
+      @media (max-width:$mobile-menu-breakpoint) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &:nth-child(4) {
+      margin-right: 0;
+      @media (max-width:$mobile-menu-breakpoint) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+      @media (max-width:$mobile-menu-breakpoint) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
     }
     &:hover {
       @media (max-width: $mobile-menu-breakpoint) {
@@ -299,7 +384,7 @@
   cursor: default;
 }
 .header__user-block {
-  flex: 0 0 200px;
+  flex: 0 1 303px;
   margin-bottom: 0;
   padding-top: 3px;
   display: flex;
@@ -346,119 +431,7 @@
     min-width: 196px;
   }
 }
-
-.header_rus {
-  position: relative;
-  z-index: 10;
-  box-shadow: 0 10px 20px $black-5;
-  .header__navigation {
-    padding-top: 15px;
-  }
-  .header__navigation-list-wrapper {
-    padding-top: 13px;
-    padding-right: 11px;
-    @media (max-width: $mobile-menu-breakpoint) {
-      padding-right: 0;
-    }
-  }
-  .header__arrow {
-    width: 20px;
-    text-align: right;
-  }
-  .header__navigation-item {
-    margin-right: 34px;
-    @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    &:nth-child(1) {
-      margin-right: 18px;
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-    &:nth-child(2) {
-      margin-right: 41px;
-      .header__navigation-item_submenu a {
-        min-width: 65px;
-      }
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-    &:nth-child(3) {
-      margin-right: 17px;
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-    &:nth-child(4) {
-      margin-right: 17px;
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-    &:last-child {
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-  }
-  .header__navigation-item_submenu {
-    margin-right: 0;
-    @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    &:nth-child(1) {
-      margin-right: 0;
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-    &:nth-child(2) {
-      margin-right: 0;
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-    &:nth-child(3) {
-      margin-right: 0;
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-    &:nth-child(4) {
-      margin-right: 0;
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-    &:last-child {
-      margin-right: 0;
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-  }
-  .header__user-block {
-    margin-bottom: 0;
-    flex: 0 1 303px;
-    @media (max-width: $mobile-menu-breakpoint) {
-      flex: none;
-    }
-  }
-  .header__btn-content {
+.header__btn-content {
     @media (max-width: 950px) {
       width: 303px;
       margin-right: 24px;
@@ -468,4 +441,4 @@
       margin: 0 auto;
     }
   }
-}
+
