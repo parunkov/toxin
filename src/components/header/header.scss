@@ -30,6 +30,7 @@
   flex: 0 0 106px;
   margin-right: 15px;
   margin-bottom: 13px;
+  margin-right: auto;
 }
 .header__burger {
   position: relative;
@@ -84,7 +85,7 @@
   }
 }
 .header__navigation-list {
-  &-wrapper {
+  // &-wrapper {
     flex: 1 1 320px;
     padding-top: 13px;
     padding-right: 11px;
@@ -97,7 +98,7 @@
       padding-right: 0;
       margin: 0 auto;
     }
-  }
+  // }
   &-submenu {
     position: absolute;
     top: 16px;
@@ -126,7 +127,7 @@
     display: block;
   }
 }
-.header__navigation-list-wrapper_visible {
+.header__navigation-list_visible {
   @media (max-width: $mobile-menu-breakpoint) {
     display: block;
   }
