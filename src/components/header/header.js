@@ -6,7 +6,7 @@ import './header.scss';
 import $ from 'jquery';
 
 const $header = $('.header');
-const $subMenu = $('.header__navigation-list-submenu');
+const $subMenu = $('.header__navigation-list_submenu');
 const $itemWithSubMenu = $('.header__navigation-item_with-submenu');
 const $burger = $('.header__burger');
 
@@ -23,13 +23,13 @@ $itemWithSubMenu.click(
     if ($(e.target).parent().hasClass('header__navigation-item_with-submenu')) {
       e.preventDefault();
     }
-    if ($(this).find('.header__navigation-list-submenu').hasClass('header__navigation-list-submenu_visible')) {
-      $subMenu.removeClass('header__navigation-list-submenu_visible');
+    if ($(this).find('.header__navigation-list_submenu').hasClass('header__navigation-list_submenu_visible')) {
+      $subMenu.removeClass('header__navigation-list_submenu_visible');
       $itemWithSubMenu.removeClass('header__navigation-item_with-submenu-opened');
     } else {
-      $subMenu.removeClass('header__navigation-list-submenu_visible');
+      $subMenu.removeClass('header__navigation-list_submenu_visible');
       $itemWithSubMenu.removeClass('header__navigation-item_with-submenu-opened');
-      $(this).find('.header__navigation-list-submenu').addClass('header__navigation-list-submenu_visible');
+      $(this).find('.header__navigation-list_submenu').addClass('header__navigation-list_submenu_visible');
       console.log($(this));
       $(this).addClass('header__navigation-item_with-submenu-opened');
 
@@ -41,7 +41,7 @@ $(document).click(
     if ($(e.target).parent().hasClass('header__navigation-item_with-submenu')) {
       e.preventDefault();
     } else {
-      $subMenu.removeClass('header__navigation-list-submenu_visible');
+      $subMenu.removeClass('header__navigation-list_submenu_visible');
       $itemWithSubMenu.removeClass('header__navigation-item_with-submenu-opened');
     }
   },

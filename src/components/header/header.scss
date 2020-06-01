@@ -99,7 +99,7 @@
       margin: 0 auto;
     }
   // }
-  &-submenu {
+  &_submenu {
     position: absolute;
     top: 16px;
     left: -10px;
@@ -123,7 +123,7 @@
       }
     }
   }
-  &-submenu_active {
+  &_submenu_active {
     display: block;
   }
 }
@@ -200,7 +200,7 @@
   }
   &_with-submenu {
     position: relative;
-    margin-right: 36px;
+    margin-right: 33px;
     @media (max-width: $mobile-menu-breakpoint) {
       margin-right: 0;
       margin-top: 0;
@@ -297,7 +297,7 @@
   }
 }
 
-.header__navigation-list-submenu_visible {
+.header__navigation-list_submenu_visible {
   visibility: visible;
   opacity: 1;
   @media (max-width: $mobile-menu-breakpoint) {
@@ -335,7 +335,7 @@
 .header__navigation-item_with-submenu .header__link_with-submenu::after, .header__navigation-item_with-submenu-opened .header__link_with-submenu::after {
   position: absolute;
   right: -25px;
-  bottom: -6px;
+  bottom: -5px;
   display: inline-block;
   padding-top: 20px;
   font-weight: 400;
