@@ -10,7 +10,7 @@
     margin-bottom: 15px;
   }
 }
-.footer__block-1 {
+.footer__navigation-section {
   padding-bottom: 76px;
   border-bottom: 1px solid $black-10;
   @media (max-width: 600px) {
@@ -48,6 +48,18 @@
     padding-left: 5px;
   }
 }
+.footer__text-column {
+  flex: 1 0 280%*100/1160;
+  min-width: 280px;
+  padding-right: 20%*100/1160;
+  padding-left: 0;
+  @media (max-width: $mobile-menu-breakpoint) {
+    padding-left: 3px;
+    padding-right: 3px;
+    display: block;
+    flex: 0 0 100%;
+  }
+}
 .footer__grid-column {
   flex: 1 0 200%*100/600;
   padding-right: 20%*100/600;
@@ -58,22 +70,6 @@
     padding-right: 3px;
     display: block;
     flex: 0 0 100%;
-  }
-  // border: 1px solid red;
-  &_1 {
-    flex: 1 0 280%*100/1160;
-    min-width: 280px;
-    padding-right: 20%*100/1160;
-    padding-left: 0;
-  }
-  &_last {
-    flex: 1 0 280%*100/1160;
-    min-width: 280px;
-    padding-right: 0;
-    padding-left: 20%*100/1160;
-    @media (max-width: 1300px) {
-      padding-left: 0;
-    }
   }
   &_2, &_3, &_4 {
     flex: 1 0 200%*100/600;
@@ -97,9 +93,6 @@
   &_4 {
     min-width: 190px;
   }
-  &_last {
-    padding-top: 5px;
-  }
   &_bottom-left {
     flex: 1 0 300px;
     padding-top: 15px;
@@ -113,7 +106,7 @@
     padding-right: 0;
     padding-left: 20%*100/1160;
   }
-  &_1, &_2, &_3, &_4, &_last, &_bottom-left, &_bottom-right {
+  &_2, &_3, &_4, &_bottom-left, &_bottom-right {
     @media (max-width: $mobile-menu-breakpoint) {
       padding-left: 3px;
       padding-right: 3px;
@@ -141,6 +134,22 @@
     flex-wrap: wrap;
   }
 }
+.footer__subscribe {
+  flex: 1 0 280%*100/1160;
+  min-width: 280px;
+  padding-top: 5px;
+  padding-right: 0;
+  padding-left: 20%*100/1160;
+  @media (max-width: 1300px) {
+    padding-left: 0;
+  }
+  @media (max-width: $mobile-menu-breakpoint) {
+    padding-left: 3px;
+    padding-right: 3px;
+    display: block;
+    flex: 0 0 100%;
+  }
+}
 .footer__text {
   font-weight: 400;
   font-size: 14px;
@@ -150,7 +159,7 @@
   line-height: 1.75em;
   letter-spacing: -0.1px;
 }
-.footer__list-header {
+.footer__list-title {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.2em;
