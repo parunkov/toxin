@@ -12,13 +12,13 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 				nav.footer__navigation
 					each val, i in menu
 						section(class ="footer__grid-column footer__grid-column_" + (i + 2))
-							h2.footer__list-title !{menu[i].item}
+							h2.footer__title !{menu[i].item}
 							ul.footer__list.footer__list_menu
 								each val, j in menu[i].incl
 									li.footer__list-item
 										a(href=menu[i].hrefs[j] class="footer__link") !{menu[i].incl[j]}
 				.footer__subscribe
-					h2.footer__list-title.footer__list-title_last= h3
+					h2.footer__title.footer__title_last= h3
 					p.footer__text= p 
 					form.footer__form
 						if ui
