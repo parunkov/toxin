@@ -412,7 +412,7 @@
     display: inline-block;
   }
 }
-.header__btn-wrapper {
+.header__btn {
   flex: 1 1 79%*100/200;
   vertical-align: top;
   margin-right: 20px;
@@ -425,15 +425,13 @@
     flex: none;
     margin-right: 0;
   }
-}
-.header__btn {
   .btn {
     text-decoration: none;
-  }
-  @media (max-width: $mobile-menu-breakpoint) {
-    display: inline-block;
-    width: inherit;
-    min-width: 196px;
+    @media (max-width: $mobile-menu-breakpoint) {
+      display: inline-block;
+      width: inherit;
+      min-width: 196px;
+    }
   }
 }
 .header__btn-content {

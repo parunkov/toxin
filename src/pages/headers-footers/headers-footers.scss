@@ -124,6 +124,11 @@
       margin: 0 auto;
     }
   }
+  .header__btn .btn {
+    @media (max-width: $mobile-menu-breakpoint) {
+      min-width: 105px;
+    }
+  }
 }
 .headers-footers__footer-1 {
   margin-bottom: 38px;
