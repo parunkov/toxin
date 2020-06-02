@@ -23,12 +23,12 @@
   &:hover, &_hover {
     opacity: 0.5;
   }
-  &_light {
+  &_frame {
     position: relative;
     padding: 2px;
     color: $purple;
   }
-  &_light-inner {
+  &_frame-inner-block {
     display: block;
     background: $white;
     padding-bottom: 14px;
@@ -64,7 +64,7 @@
     color: $white;
     text-transform: none;
   }
-  &_low {
+  &_size_small {
     display: block;
     width: 100%;
     min-height: 34px;
@@ -73,7 +73,7 @@
     padding-right: 20px;
     padding-left: 19px;
   }
-  &_low-light {
+  &_size_small-frame {
     display: block;
     width: 100%;
     min-height: 34px;
@@ -82,14 +82,14 @@
     padding-left: 2px;
     padding-bottom: 2px;
   }
-  &_low-light-inner {
+  &_size_small-frame-inner-block {
     padding-top: 9px;
     padding-left: 17px;
     padding-right: 18px;
     padding-bottom: 9px;
     min-height: 30px;
   }
-  &_light-tall {
+  &_size_big-frame {
     padding-left: 10px;
     padding-right: 10px;
     word-break: break-all;

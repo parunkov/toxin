@@ -25,10 +25,10 @@ mixin headerMarkup(cl, menu, btn1, href1, btn2, href2, login)
 			else
 				.header__user-block
 					.header__btn
-						a(href=href1 class="btn btn_light btn_low-light") 
-							span.btn_light-inner.btn_low-light-inner  !{btn1}
+						a(href=href1 class="btn btn_frame btn_size_small-frame") 
+							span.btn_frame-inner-block.btn_size_small-frame-inner-block  !{btn1}
 					.header__btn
-						a(href=href2 class="btn btn_low") !{btn2}
+						a(href=href2 class="btn btn_size_small") !{btn2}
 -
 	let MenuItem = function(item, href, incl, hrefs) {
 		this.item = item;
