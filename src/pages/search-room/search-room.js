@@ -44,5 +44,16 @@ $(document).ready(() => {
   $button2.eq(3).trigger('click');
   $button2.eq(3).trigger('click');
 
-  $('.search-room__input-wrapper i').removeClass('input__icon-text').addClass('search-room__input-icon-text');
+
+  $('.search-room__input-wrapper i').removeClass('input__icon').addClass('search-room__input-icon');
+  const $icon = $('.search-room__input-icon');
+  $icon.each((i) => {
+    $icon.eq(i).click(() => {
+      if ($icon.eq(i).text() === 'expand_more') {
+        $icon.eq(i).text('expand_more');
+      } else if ($icon.eq(i).text() === 'expand_less') {
+        $icon.eq(i).text('expand_more');
+      }
+    });
+});
 });

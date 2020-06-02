@@ -25,7 +25,7 @@ const $arrival = $('.reservation-form__input-wrapper_1 .input__input');
 const $departure = $('.reservation-form__input-wrapper_2 .input__input');
 
 const $icon = $('.reservation-form__input-wrapper .input__icon');
-const $iconText = $('.reservation-form__input-wrapper .input__icon-text');
+const $iconText = $('.reservation-form__input-wrapper .input__icon');
 
 const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.getMonth() + 1}`).substr(-2)}.${date.getFullYear()}`;
 
@@ -34,18 +34,18 @@ $departure.attr('disabled', '');
 
 $('.reservation-form .input__icon').click(function (evt) {
   evt.preventDefault();
-  if ($datepickerContainer.css('display') === 'block' && $(this).find('.input__icon-text').text() === 'expand_more') {
+  if ($datepickerContainer.css('display') === 'block' && $(this).text() === 'expand_more') {
     $datepickerContainer.css({ display: 'none' });
     $iconText.text('expand_more');
-    $(this).find('.input__icon-text').text('expand_more');
+    $(this).text('expand_more');
     $icon.css({ cursor: 'pointer' });
-  } else if ($datepickerContainer.css('display') === 'block' && $(this).find('.input__icon-text').text() === 'expand_less') {
-    $(this).find('.input__icon-text').text('expand_more');
-  } else if ($datepickerContainer.css('display') === 'none' && $(this).find('.input__icon-text').text() === 'expand_less') {
+  } else if ($datepickerContainer.css('display') === 'block' && $(this).text() === 'expand_less') {
+    $(this).text('expand_more');
+  } else if ($datepickerContainer.css('display') === 'none' && $(this).text() === 'expand_less') {
     $datepickerContainer.css({ display: 'block' });
     $iconText.text('expand_more');
     $icon.css({ cursor: 'default' });
-    $(this).find('.input__icon-text').text('expand_less');
+    $(this).text('expand_less');
     $(this).css({ cursor: 'pointer' });
   }
   $setBtn.click((e) => {
