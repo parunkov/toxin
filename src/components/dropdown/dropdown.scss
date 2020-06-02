@@ -31,6 +31,9 @@
   color: $black-50;
   text-transform: uppercase;
 }
+.dropdown__input {
+  position: relative;
+}
 .iqdropdown {
   clear: both;
   width: 100%;
@@ -59,7 +62,7 @@
   outline: none;
   cursor: default;
 }
-.input__icon-dropdown-text {
+.dropdown__input-icon-text {
   position: absolute;
   top: 2px;
   right: 2px;

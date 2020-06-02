@@ -24,9 +24,9 @@ $('.form-elements__item_19 .checkbox__input:lt(4)').prop('checked', true);
 $('.form-elements__item_19 .checkbox__input').eq(0).prop('checked', false);
 $('.like__input').eq(2).prop('checked', true);
 $(document).ready(() => {
-  $('.input__icon-dropdown').eq(1).trigger('click');
-  $('.input__icon-dropdown').eq(2).trigger('click');
-  $('.input__icon-dropdown').eq(3).trigger('click');
+  $('.dropdown__input-icon').eq(1).trigger('click');
+  $('.dropdown__input-icon').eq(2).trigger('click');
+  $('.dropdown__input-icon').eq(3).trigger('click');
 
   const $button = $('.form-elements__item_22 .iqdropdown button');
   $button.eq(1).trigger('click');

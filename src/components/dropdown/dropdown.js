@@ -79,12 +79,12 @@ $(document).ready(() => {
     };
     opacytyBtn();
 
-    $iqdropdown.eq(i).find('.input__icon-dropdown').click(() => {
-      if ($iqdropdown.eq(i).find('.input__icon-dropdown-text').text() === 'expand_more') {
-        $iqdropdown.eq(i).find('.input__icon-dropdown-text').text('expand_less');
+    $iqdropdown.eq(i).find('.dropdown__input-icon').click(() => {
+      if ($iqdropdown.eq(i).find('.dropdown__input-icon-text').text() === 'expand_more') {
+        $iqdropdown.eq(i).find('.dropdown__input-icon-text').text('expand_less');
         $iqdropdown.eq(i).attr('style', 'border-radius: 4px 4px 0 0;');
       } else {
-        $iqdropdown.eq(i).find('.input__icon-dropdown-text').text('expand_more');
+        $iqdropdown.eq(i).find('.dropdown__input-icon-text').text('expand_more');
         $iqdropdown.eq(i).attr('style', '');
       }
       $iqdropdown.eq(i).toggleClass('menu-open');
@@ -117,7 +117,7 @@ $(document).ready(() => {
 
     $iqdropdown.eq(i).find('.dropdown__set-btn').click((e) => {
       e.preventDefault();
-      $iqdropdown.eq(i).find('.input__icon-dropdown-text').text('expand_more');
+      $iqdropdown.eq(i).find('.dropdown__input-icon-text').text('expand_more');
       $iqdropdown.eq(i).attr('style', '');
       $iqdropdown.eq(i).removeClass('menu-open');
       $iqdropdown.eq(i).find('.iqdropdown-selection').attr('value', inputValue);
