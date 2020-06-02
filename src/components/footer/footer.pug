@@ -11,7 +11,7 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 					p.footer__text= text
 				nav.footer__navigation
 					each val, i in menu
-						section(class ="footer__grid-column footer__grid-column_" + (i + 2))
+						section(class ="footer__column footer__column_" + (i + 2))
 							h2.footer__title !{menu[i].item}
 							ul.footer__list.footer__list_menu
 								each val, j in menu[i].incl
@@ -47,9 +47,9 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 								'purple')
 		section.footer__social-section
 			.footer__container.footer__container_bottom
-				.footer__grid-column.footer__grid-column_bottom-left
+				.footer__column.footer__column_bottom-left
 					p.footer__copyright= copyright
-				.footer__grid-column.footer__grid-column_bottom-right
+				.footer__column.footer__column_bottom-right
 					ul.footer__social-list
 						li.footer__social-item
 							a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social footer__social_twitter") Twitter
