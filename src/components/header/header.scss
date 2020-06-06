@@ -85,49 +85,77 @@
   }
 }
 .header__navigation-list {
-    flex: 1 1 320px;
-    padding-top: 13px;
-    padding-right: 11px;
-    text-align: right;
-    @media (max-width: 750px) {
-    }
-    @media (max-width: $mobile-menu-breakpoint) {
-      flex: 0 0 100%;
-      display: none;
-      padding-right: 0;
-      margin: 0 auto;
-    }
-  &_submenu {
-    position: absolute;
-    top: 16px;
-    left: -10px;
-    z-index: 10;
-    padding-top: 10px;
-    background: $white;
-    border: 1px solid $black-50;
-    border-radius: 4px;
-    visibility: hidden;
-    opacity: 0;
-    @media (max-width: $mobile-menu-breakpoint) {
-      position: static;
-      display: none;
-      text-align: center;
-      border-radius: 0;
-      border: none;
-      padding-top: 15px;
-      &-inner {
-        display: inline-block;
-        margin: 0 auto;
-      }
-    }
+  flex: 1 1 320px;
+  padding-top: 13px;
+  padding-right: 11px;
+  text-align: right;
+  @media (max-width: 750px) {
   }
-  &_submenu_active {
-    display: block;
+  @media (max-width: $mobile-menu-breakpoint) {
+    flex: 0 0 100%;
+    display: none;
+    padding-right: 0;
+    margin: 0 auto;
   }
+  // &_submenu {
+  //   position: absolute;
+  //   top: 16px;
+  //   left: -10px;
+  //   z-index: 10;
+  //   padding-top: 10px;
+  //   background: $white;
+  //   border: 1px solid $black-50;
+  //   border-radius: 4px;
+  //   visibility: hidden;
+  //   opacity: 0;
+  //   @media (max-width: $mobile-menu-breakpoint) {
+  //     position: static;
+  //     display: none;
+  //     text-align: center;
+  //     border-radius: 0;
+  //     border: none;
+  //     padding-top: 15px;
+  //     &-inner {
+  //       display: inline-block;
+  //       margin: 0 auto;
+  //     }
+  //   }
+  // }
 }
 .header__navigation-list_visible {
   @media (max-width: $mobile-menu-breakpoint) {
     display: block;
+  }
+}
+.header__navigation-item_with-submenu .header__navigation-list {
+  position: absolute;
+  top: 16px;
+  left: -10px;
+  z-index: 10;
+  padding-top: 10px;
+  background: $white;
+  border: 1px solid $black-50;
+  border-radius: 4px;
+  visibility: hidden;
+  opacity: 0;
+  @media (max-width: $mobile-menu-breakpoint) {
+    position: static;
+    display: none;
+    text-align: center;
+    border-radius: 0;
+    border: none;
+    padding-top: 15px;
+    &-inner {
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+}
+.header__navigation-item_with-submenu .header__navigation-list_visible {
+  visibility: visible;
+  opacity: 1;
+  @media (max-width: $mobile-menu-breakpoint) {
+    display: flex;
   }
 }
 .header__navigation-item {
@@ -149,47 +177,47 @@
       z-index: 1;
     }
   }
+  @media (max-width: $mobile-menu-breakpoint) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  &:nth-child(1) {
+    margin-right: 18px;
     @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    &:nth-child(1) {
-      margin-right: 18px;
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
+      margin-right: 0;
+      margin-left: 0;
     }
-    &:nth-child(2) {
-      margin-right: 41px;
-      .header__navigation-item_submenu a {
-        min-width: 65px;
-      }
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
+  }
+  &:nth-child(2) {
+    margin-right: 41px;
+    .header__navigation-item_submenu a {
+      min-width: 65px;
     }
-    &:nth-child(3) {
-      margin-right: 17px;
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
+    @media (max-width: $mobile-menu-breakpoint) {
+      margin-right: 0;
+      margin-left: 0;
     }
-    &:nth-child(4) {
-      margin-right: 17px;
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
+  }
+  &:nth-child(3) {
+    margin-right: 17px;
+    @media (max-width: $mobile-menu-breakpoint) {
+      margin-right: 0;
+      margin-left: 0;
     }
-    &:last-child {
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
+  }
+  &:nth-child(4) {
+    margin-right: 17px;
+    @media (max-width: $mobile-menu-breakpoint) {
+      margin-right: 0;
+      margin-left: 0;
     }
+  }
+  &:last-child {
+    @media (max-width: $mobile-menu-breakpoint) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
   &:last-child {
     // margin-right: 29px;
     @media (max-width: $mobile-menu-breakpoint) {
@@ -227,45 +255,45 @@
       //   margin-right: auto;
       // }
       margin-right: 0;
-    @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    &:nth-child(1) {
-      margin-right: 0;
       @media (max-width:$mobile-menu-breakpoint) {
         margin-left: auto;
         margin-right: auto;
       }
-    }
-    &:nth-child(2) {
-      margin-right: 0;
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
+      &:nth-child(1) {
+        margin-right: 0;
+        @media (max-width:$mobile-menu-breakpoint) {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
-    }
-    &:nth-child(3) {
-      margin-right: 0;
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
+      &:nth-child(2) {
+        margin-right: 0;
+        @media (max-width:$mobile-menu-breakpoint) {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
-    }
-    &:nth-child(4) {
-      margin-right: 0;
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
+      &:nth-child(3) {
+        margin-right: 0;
+        @media (max-width:$mobile-menu-breakpoint) {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
-    }
-    &:last-child {
-      margin-right: 0;
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
+      &:nth-child(4) {
+        margin-right: 0;
+        @media (max-width:$mobile-menu-breakpoint) {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
-    }
+      &:last-child {
+        margin-right: 0;
+        @media (max-width:$mobile-menu-breakpoint) {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
     }
     &:hover {
       @media (max-width: $mobile-menu-breakpoint) {
@@ -433,13 +461,13 @@
   }
 }
 .header__btn-content {
-    @media (max-width: 950px) {
-      width: 303px;
-      margin-right: 24px;
-    }
-    @media (max-width: $mobile-menu-breakpoint) {
-      width: 100%;
-      margin: 0 auto;
-    }
+  @media (max-width: 950px) {
+    width: 303px;
+    margin-right: 24px;
   }
+  @media (max-width: $mobile-menu-breakpoint) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 

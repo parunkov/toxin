@@ -12,7 +12,7 @@ mixin headerMarkup(cl, menu, btn1, href1, btn2, href2, login)
 					if menu[i].incl
 						li.header__navigation-item.header__navigation-item_with-submenu
 							a(href=menu[i].href class="header__link") !{menu[i].item}
-							ul.header__navigation-list.header__navigation-list_submenu
+							ul.header__navigation-list
 								each val, j in menu[i].incl
 									li.header__navigation-item.header__navigation-item_submenu
 										a(href=menu[i].hrefs[j] class="header__link") !{menu[i].incl[j]}

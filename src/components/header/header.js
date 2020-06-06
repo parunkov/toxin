@@ -10,14 +10,6 @@ const $subMenu = $('.header__navigation-list .header__navigation-list');
 const $itemWithSubMenu = $('.header__navigation-item_with-submenu');
 const $burger = $('.header__burger');
 
-// $('.header_eng').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
-// $('.header_eng').find('.header__navigation-item').eq(0).find('a')
-//   .addClass('header__link_active');
-
-// $('.header_eng-logged').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
-// $('.header_eng-logged').find('.header__navigation-item').eq(0).find('a')
-//   .addClass('header__link_active');
-
 $itemWithSubMenu.click(
   function (e) {
     if ($(e.target).parent().hasClass('header__navigation-item_with-submenu')) {
