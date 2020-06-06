@@ -6,30 +6,30 @@ import './header.scss';
 import $ from 'jquery';
 
 const $header = $('.header');
-const $subMenu = $('.header__navigation-list_submenu');
+const $subMenu = $('.header__navigation-list .header__navigation-list');
 const $itemWithSubMenu = $('.header__navigation-item_with-submenu');
 const $burger = $('.header__burger');
 
-$('.header_eng').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
-$('.header_eng').find('.header__navigation-item').eq(0).find('a')
-  .addClass('header__link_active');
+// $('.header_eng').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
+// $('.header_eng').find('.header__navigation-item').eq(0).find('a')
+//   .addClass('header__link_active');
 
-$('.header_eng-logged').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
-$('.header_eng-logged').find('.header__navigation-item').eq(0).find('a')
-  .addClass('header__link_active');
+// $('.header_eng-logged').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
+// $('.header_eng-logged').find('.header__navigation-item').eq(0).find('a')
+//   .addClass('header__link_active');
 
 $itemWithSubMenu.click(
   function (e) {
     if ($(e.target).parent().hasClass('header__navigation-item_with-submenu')) {
       e.preventDefault();
     }
-    if ($(this).find('.header__navigation-list_submenu').hasClass('header__navigation-list_submenu_visible')) {
-      $subMenu.removeClass('header__navigation-list_submenu_visible');
+    if ($(this).find('.header__navigation-list').hasClass('header__navigation-list_visible')) {
+      $subMenu.removeClass('header__navigation-list_visible');
       $itemWithSubMenu.removeClass('header__navigation-item_with-submenu-opened');
     } else {
-      $subMenu.removeClass('header__navigation-list_submenu_visible');
+      $subMenu.removeClass('header__navigation-list_visible');
       $itemWithSubMenu.removeClass('header__navigation-item_with-submenu-opened');
-      $(this).find('.header__navigation-list_submenu').addClass('header__navigation-list_submenu_visible');
+      $(this).find('.header__navigation-list').addClass('header__navigation-list_visible');
       console.log($(this));
       $(this).addClass('header__navigation-item_with-submenu-opened');
 
@@ -41,7 +41,7 @@ $(document).click(
     if ($(e.target).parent().hasClass('header__navigation-item_with-submenu')) {
       e.preventDefault();
     } else {
-      $subMenu.removeClass('header__navigation-list_submenu_visible');
+      $subMenu.removeClass('header__navigation-list_visible');
       $itemWithSubMenu.removeClass('header__navigation-item_with-submenu-opened');
     }
   },

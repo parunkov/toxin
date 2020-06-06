@@ -85,7 +85,6 @@
   }
 }
 .header__navigation-list {
-  // &-wrapper {
     flex: 1 1 320px;
     padding-top: 13px;
     padding-right: 11px;
@@ -98,7 +97,6 @@
       padding-right: 0;
       margin: 0 auto;
     }
-  // }
   &_submenu {
     position: absolute;
     top: 16px;
@@ -297,7 +295,7 @@
   }
 }
 
-.header__navigation-list_submenu_visible {
+.header__navigation-list_visible {
   visibility: visible;
   opacity: 1;
   @media (max-width: $mobile-menu-breakpoint) {
