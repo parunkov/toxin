@@ -50,7 +50,7 @@ $(document).click(
 $burger.each((i) => {
   $burger.eq(i).click(
     () => {
-      $('.header__navigation-list_main').eq(i).toggleClass('header__navigation-list_visible');
+      $('.header').eq(i).find('.header__navigation > .header__navigation-list').toggleClass('header__navigation-list_visible');
       $('.header__user-block').eq(i).toggleClass('header__user-block_visible');
       $('.header').eq(i).find('.header__user-block-logged').toggleClass('header__user-block_visible');
       $burger.eq(i).find('.header__burger-line').toggleClass('header__burger-line_cross');

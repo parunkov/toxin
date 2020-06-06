@@ -7,7 +7,7 @@ mixin headerMarkup(cl, menu, btn1, href1, btn2, href2, login)
 				+logo
 			button(type="button" class="header__burger")
 				.header__burger-line
-			ul.header__navigation-list.header__navigation-list_main
+			ul.header__navigation-list
 				each val, i in menu
 					if menu[i].incl
 						li.header__navigation-item.header__navigation-item_with-submenu
