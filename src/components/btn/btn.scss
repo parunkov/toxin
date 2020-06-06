@@ -23,12 +23,12 @@
   &:hover, &_hover {
     opacity: 0.5;
   }
-  &_frame {
+  &__theme_light {
     position: relative;
     padding: 2px;
     color: $purple;
   }
-  &__inner-block {
+  &__text {
     display: block;
     background: $white;
     padding-bottom: 14px;
@@ -64,7 +64,7 @@
     color: $white;
     text-transform: none;
   }
-  &_size_small {
+  &__size_small {
     display: block;
     width: 100%;
     min-height: 34px;
@@ -73,23 +73,25 @@
     padding-right: 20px;
     padding-left: 19px;
   }
-  &_size_small-frame {
-    display: block;
-    width: 100%;
-    min-height: 34px;
-    padding-top: 2px;
-    padding-right: 2px;
-    padding-left: 2px;
-    padding-bottom: 2px;
-  }
-  &__inner-block_size_small {
+}
+.btn__theme_light.btn__size_small {
+  display: block;
+  width: 100%;
+  min-height: 34px;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  .btn__text {
     padding-top: 9px;
     padding-left: 17px;
     padding-right: 18px;
     padding-bottom: 9px;
     min-height: 30px;
   }
-  &_size_big-frame {
+}
+.btn__theme_light.btn__size_big {
+  .btn__text {
     padding-left: 10px;
     padding-right: 10px;
     word-break: break-all;
