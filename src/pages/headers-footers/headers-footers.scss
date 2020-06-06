@@ -59,7 +59,7 @@
     }
     &:nth-child(2) {
       margin-right: 26px;
-      .header__navigation-item_submenu .header__link {
+      .header__navigation-item .header__link {
         min-width: 65px;
       }
       @media (max-width: $mobile-menu-breakpoint) {
@@ -89,7 +89,7 @@
       }
     }
   }
-  .header__navigation-item_submenu {
+  .header__navigation-item_with-submenu .header__navigation-item {
     margin-right: 0;
     @media (max-width:$mobile-menu-breakpoint) {
         margin-left: auto;
