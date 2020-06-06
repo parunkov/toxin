@@ -4,12 +4,15 @@
   background: $grey;
   .footer__container {
     padding-top: 98px;
-    &_bottom {
-      padding-top: 12px;
-    }
+    // &_bottom {
+    //   padding-top: 12px;
+    // }
     @media (max-width: $mobile-menu-breakpoint) {
       padding-top: 25px;
     }
+  }
+  .footer__social-section .footer__container {
+    padding-top: 12px;
   }
   .footer__navigation-section {
     padding-bottom: 79px;
