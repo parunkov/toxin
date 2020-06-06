@@ -5,7 +5,7 @@ mixin headerMarkup(cl, menu, btn1, href1, btn2, href2, login)
 		nav.header__navigation
 			.header__logo
 				+logo
-			button.header__burger
+			button(type="button" class="header__burger")
 				.header__burger-line
 			ul.header__navigation-list.header__navigation-list_main
 				each val, i in menu
