@@ -3,15 +3,15 @@ mixin reservation-form
 	include ../../components/dropdown/dropdown.pug
 	include ../../components/datepicker/datepicker.pug
 	article.reservation-form
-		.reservation-form__header
-			.reservation-form__header-1
-				h1.reservation-form__header-text <span class="reservation-form__header_number">№</span>888
-					span.reservation-form__header_category  люкс
-			.reservation-form__header-2
-				p.reservation-form__header_price 9 990₽ <span class="reservation-form__header_price-text">в сутки</span>
+		.reservation-form__title
+			.reservation-form__title-left
+				h1.reservation-form__title-text <span class="reservation-form__title_number">№</span>888
+					span.reservation-form__title_category  люкс
+			.reservation-form__title-right
+				p.reservation-form__title_price 9 990₽ <span class="reservation-form__title_price-text">в сутки</span>
 		form.reservation-form__form
 			.reservation-form__inputs-wrapper
-				.reservation-form__input-wrapper.reservation-form__input-wrapper_1
+				.reservation-form__input-wrapper.reservation-form__input-wrapper_left
 					+input(
 					'прибытие', 
 					'text', 
@@ -21,7 +21,7 @@ mixin reservation-form
 					'ДД.ММ.ГГГГ', 
 					'', 
 					'expand_more')
-				.reservation-form__input-wrapper.reservation-form__input-wrapper_2
+				.reservation-form__input-wrapper.reservation-form__input-wrapper_right
 					+input(
 					'выезд', 
 					'text', 
@@ -56,8 +56,8 @@ mixin reservation-form
 				span.reservation-form__i i
 				span.reservation-form__text_right 300₽
 			.reservation-form__price
-				span.reservation-form__price-1 Итого
-				span.reservation-form__price-2
-				h2.reservation-form__price-3 38 081₽
+				span.reservation-form__price-text Итого
+				span.reservation-form__price-space
+				h2.reservation-form__price-value 38 081₽
 			.reservation-form__btn
 				button.btn.btn_arrow.btn_submit забронировать

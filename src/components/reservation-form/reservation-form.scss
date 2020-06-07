@@ -3,24 +3,24 @@
   padding-top: 40px;
   padding-bottom: 30px;
 }
-.reservation-form__header-1 {
+.reservation-form__title-left {
   display: inline-block;
   width: 60%;
   padding-left: 2px;
 }
-.reservation-form__header-text {
+.reservation-form__title-text {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25em;
   font-family: 'Open Sans', Arial, sans-serif;
   color: $black;
 }
-.reservation-form__header-2 {
+.reservation-form__title-right {
   display: inline-block;
   width: 38%;
   text-align: right;
 }
-.reservation-form__header {
+.reservation-form__title {
   margin-bottom: 12px;
   &_number {
     font-weight: 700;
@@ -61,7 +61,7 @@
     }
   }
 }
-.reservation-form__input-wrapper_1 .input__field, .reservation-form__input-wrapper_2 .input__field {
+.reservation-form__input-wrapper .input__field {
   letter-spacing: -0.4px;
   cursor: default;
   &:hover {
@@ -139,7 +139,7 @@
   clear: both;
   margin-bottom: 19px;
   padding-top: 16px;
-  &-1 {
+  &-text {
     font-weight: 700;
     font-size: 19px;
     font-family: 'Open Sans', Arial, sans-serif;
@@ -147,12 +147,12 @@
     flex-grow: 0;
     margin-right: 5px;
   }
-  &-2 {
+  &-space {
     flex-grow: 1;
     height: 18px;
     border-bottom: 1px dotted $black-25;
   }
-  &-3 {
+  &-value {
     font-weight: 700;
     font-size: 19px;
     line-height: 1.2em;
