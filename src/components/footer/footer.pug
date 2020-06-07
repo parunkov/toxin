@@ -47,16 +47,14 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 								'purple')
 		section.footer__social-section
 			.footer__container
-				.footer__column.footer__column_bottom-left
-					p.footer__copyright= copyright
-				.footer__column.footer__column_bottom-right
-					ul.footer__social-list
-						li.footer__social-item
-							a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social footer__social_twitter") Twitter
-						li.footer__social-item
-							a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social footer__social_facebook") Facebook
-						li.footer__social-item
-							a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social footer__social_instagram") Instagram
+				p.footer__copyright= copyright
+				ul.footer__social-list
+					li.footer__social-item
+						a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social footer__social_twitter") Twitter
+					li.footer__social-item
+						a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social footer__social_facebook") Facebook
+					li.footer__social-item
+						a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social footer__social_instagram") Instagram
 
 mixin footer(isEng)
 	-
