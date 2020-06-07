@@ -91,7 +91,7 @@
     flex-grow: 1;
   }
 }
-.search-room__aside-header {
+.search-room__aside-title {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.2em;
@@ -131,7 +131,7 @@
   width: 320px;
   background: $white;
 }
-.search-room__dropdown-wrapper {
+.search-room__peoples-dropdown-wrapper {
   margin-bottom: 29px;
 }
 .search-room__slider-wrapper {
@@ -149,19 +149,19 @@
   width: 222%*100/266;
   margin-bottom: 21px;
 }
-.search-room__checkbox-header {
+.search-room__checkbox-title {
   margin-bottom: 15px;
 }
 .search-room__rich-wrapper {
   margin-bottom: 26px;
 }
-.search-room__rich-header {
+.search-room__rich-title {
   margin-bottom: 18px;
 }
-.search-room__dropdown-2-wrapper {
+.search-room__room-dropdown-wrapper {
   margin-bottom: 30px;
 }
-.search-room__expandable-header {
+.search-room__expandable-title {
   position: relative;
   margin-bottom: 18px;
   cursor: pointer;
@@ -196,7 +196,7 @@
   // border: 1px solid blue;
   min-width: 282px;
 }
-.search-room__header {
+.search-room__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25em;

@@ -15,16 +15,16 @@ import $ from 'jquery';
 
 $('.search-room__input-wrapper .input__field').attr('disabled', '');
 
-$('.search-room__filters-header').click((evt) => {
+$('.search-room__filters-title').click((evt) => {
   evt.preventDefault();
   $('.search-room__form').toggleClass('d-block');
-  $('.search-room__filters-header').toggleClass('search-room__filters-header_rotate');
+  $('.search-room__filters-title').toggleClass('search-room__filters-title_rotate');
 });
 
-$('.search-room__expandable-header').click((evt) => {
+$('.search-room__expandable-title').click((evt) => {
   evt.preventDefault();
   $('.search-room__expandable-text').toggleClass('d-none');
-  $('.search-room__expandable-header').toggleClass('search-room__expandable-header_rotate');
+  $('.search-room__expandable-title').toggleClass('search-room__expandable-title_rotate');
 });
 
 $('.search-room__checkbox-wrapper .checkbox__input:gt(0)').prop('checked', true);
@@ -32,13 +32,13 @@ $('.search-room__expandable-wrapper .checkbox__input:lt(4)').prop('checked', tru
 $('.search-room__expandable-wrapper .checkbox__input').eq(0).prop('checked', false);
 
 $(document).ready(() => {
-  const $button1 = $('.search-room__dropdown-wrapper .iqdropdown button');
-  const $button2 = $('.search-room__dropdown-2-wrapper .iqdropdown button');
+  const $button1 = $('.search-room__peoples-dropdown-wrapper .iqdropdown button');
+  const $button2 = $('.search-room__room-dropdown-wrapper .iqdropdown button');
 
   $button1.eq(1).trigger('click');
   $button1.eq(3).trigger('click');
   $button1.eq(5).trigger('click');
-  $('.search-room__dropdown-wrapper .dropdown__set-btn').trigger('click');
+  $('.search-room__peoples-dropdown-wrapper .dropdown__set-btn').trigger('click');
   $button2.eq(1).trigger('click');
   $button2.eq(1).trigger('click');
   $button2.eq(3).trigger('click');
