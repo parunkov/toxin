@@ -21,8 +21,8 @@ const $myDatepicker = $('.reservation-form__datepicker-container .datepicker__co
 const $datepickerContainer = $('.reservation-form__datepicker-container');
 const $setBtn = $('.reservation-form__datepicker-container .datepicker__set-btn');
 const $clearBtn = $('.reservation-form__datepicker-container .datepicker__clear-btn');
-const $arrival = $('.reservation-form__input-wrapper_1 .input__input');
-const $departure = $('.reservation-form__input-wrapper_2 .input__input');
+const $arrival = $('.reservation-form__input-wrapper_1 .input__field');
+const $departure = $('.reservation-form__input-wrapper_2 .input__field');
 
 const $icon = $('.reservation-form__input-wrapper .input__icon');
 const $iconText = $('.reservation-form__input-wrapper .input__icon');

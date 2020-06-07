@@ -13,7 +13,7 @@ import '../../components/pagination/pagination';
 import './search-room.scss';
 import $ from 'jquery';
 
-$('.search-room__input-wrapper .input__input').attr('disabled', '');
+$('.search-room__input-wrapper .input__field').attr('disabled', '');
 
 $('.search-room__filters-header').click((evt) => {
   evt.preventDefault();
