@@ -3,10 +3,10 @@ mixin registration-form
 	include ../../components/radio/radio.pug
 	include ../../components/toggle/toggle.pug
 	article.registration-form
-		.registration-form__header-wrapper
-			h1.registration-form__header Регистрация аккаунта
+		.registration-form__title-wrapper
+			h1.registration-form__title Регистрация аккаунта
 		form.registration-form__form
-			.registration-form__input-wrapper.registration-form__input-wrapper_1
+			.registration-form__input-wrapper
 				+input(
 					'', 
 					'text', 
@@ -15,7 +15,7 @@ mixin registration-form
 					'', 
 					'Имя', 
 					'')
-			.registration-form__input-wrapper.registration-form__input-wrapper_2
+			.registration-form__input-wrapper
 				+input(
 					'', 
 					'text', 
@@ -28,7 +28,7 @@ mixin registration-form
 				+radio(
 					'registration-form__radio', 
 					['Мужчина', 'Женщина'])
-			.registration-form__input-wrapper.registration-form__input-wrapper_3
+			.registration-form__input-wrapper
 				+input(
 					'дата рождения', 
 					'date', 
@@ -37,7 +37,7 @@ mixin registration-form
 					'', 
 					'', 
 					'')
-			.registration-form__input-wrapper.registration-form__input-wrapper_4
+			.registration-form__input-wrapper
 				+input(
 					'данные для входа в сервис', 
 					'email', 
@@ -46,7 +46,7 @@ mixin registration-form
 					'', 
 					'Email', 
 					'')
-			.registration-form__input-wrapper.registration-form__input-wrapper_5
+			.registration-form__input-wrapper
 				+input(
 					'', 
 					'text', 
@@ -62,10 +62,10 @@ mixin registration-form
 			.registration-form__btn
 				button.btn.btn_arrow.btn_submit перейти к оплате
 		.registration-form__footer
-			.registration-form__footer-1
+			.registration-form__footer-left
 				p.registration-form__footer-text Уже есть аккаунт на Toxin
-			.registration-form__footer-2
+			.registration-form__footer-right
 				a(href="sign-in.html" class="registration-form__link")
-					.registration-form__btn-2 
+					.registration-form__btn-wrapper 
 						.btn.btn__theme_light.btn__size_big
 							span.btn__text войти
