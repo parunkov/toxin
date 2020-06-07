@@ -148,7 +148,7 @@
   font-weight: 400;
   font-size: 12px;
 }
-.card__text-2 {
+.card__rate {
   clear: both;
   padding-top: 10px;
   &::after {
@@ -156,7 +156,7 @@
     clear: both;
   }
 }
-.card__text-2 .rate {
+.card__rate .rate {
   float: left;
 }
 .card__reviews {
