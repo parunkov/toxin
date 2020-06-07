@@ -48,7 +48,7 @@
   src: url('../../fonts/open-sans-bold.ttf') format('truetype'), url('../../fonts/montserrat-bold.svg') format('svg');
 }
 
-.page {
+html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
   height: 100%;
@@ -60,7 +60,7 @@
     box-sizing: inherit;
   }
 }
-.page__body {
+body {
   display: flex;
   flex-direction: column;
   height: 100%;
