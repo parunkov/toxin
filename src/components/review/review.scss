@@ -6,10 +6,10 @@
   display: flex;
   flex-wrap: nowrap;
 }
-.review__column-1 {
+.review__column-left {
   flex: 0 0 48px;
 }
-.review__column-2 {
+.review__column-right {
   flex: auto;
   padding-top: 3px;
   padding-left: 10px;
