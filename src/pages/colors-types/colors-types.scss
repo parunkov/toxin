@@ -26,14 +26,14 @@
     max-width: $page-min;
   }
 }
-.colors-types__grid-column {
+.colors-types__column {
   position: relative;
   margin-bottom: 30px;
   padding-right: 20%*100/1200;
   padding-left: 20%*100/1200;
   // border: 1px solid yellow;  
 }
-.colors-types__grid-column_1 {
+.colors-types__column_1 {
   flex: 1 0 700%*100/1200;
   @media (max-width: $page-container) {
     flex: 1 0 auto;
@@ -44,7 +44,7 @@
     flex: none;
   }
 }
-.colors-types__grid-column_2 {
+.colors-types__column_2 {
   flex: 0 0 500%*100/1200;
   @media (max-width: $page-container) {
     flex: 0 0 auto;

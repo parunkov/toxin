@@ -67,7 +67,7 @@
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
-.landing__grid-column-1 {
+.landing__column-left {
   flex: 0 0 380px;
   max-width: 380px;
   margin-bottom: 386px;
@@ -100,7 +100,7 @@
     min-width: 100%;
   }
 }
-.landing__grid-column-2 {
+.landing__column-right {
   padding-left: 20px;
   padding-right: 0;
   padding-bottom: 24px;
