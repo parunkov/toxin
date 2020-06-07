@@ -14,10 +14,10 @@
     word-break: break-all;
   }
 }
-.login-form__input-wrapper_1 .input__field {
+.login-form__input-wrapper:nth-child(1) .input__field {
   margin-bottom: 10px;
 }
-.login-form__input-wrapper_2 .input__field {
+.login-form__input-wrapper:nth-child(2) .input__field {
   margin-bottom: 20px;
 }
 .login-form__btn {
@@ -31,17 +31,17 @@
   display: flex;
   flex-wrap: nowrap;
 }
-.login-form__footer-1 {
+.login-form__footer-left {
   flex: auto;
   padding-top: 14px;
 }
 .login-form__footer-text {
   color: $black-text;
 }
-.login-form__footer-2 {
+.login-form__footer-right {
   flex: 0 0 99%*100/320;
 }
-.login-form__btn-2 {
+.login-form__btn-wrapper {
   display: block;
   min-width: 98.5px;
 }
