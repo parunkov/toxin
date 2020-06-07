@@ -13,7 +13,7 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 					each val, i in menu
 						section.footer__navigation-column
 							h2.footer__title !{menu[i].item}
-							ul.footer__list.footer__list_menu
+							ul.footer__list
 								each val, j in menu[i].incl
 									li.footer__list-item
 										a(href=menu[i].hrefs[j] class="footer__link") !{menu[i].incl[j]}
