@@ -11,6 +11,6 @@ $('.header').find('.header__navigation-item').eq(0).addClass('header__navigation
 $('.header').find('.header__navigation-item').eq(0).find('a')
   .addClass('header__link_active');
 
-$('.headers-footers__header_2').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
-$('.headers-footers__header_2').find('.header__navigation-item').eq(0).find('a')
+$('.headers-footers__header_logged').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
+$('.headers-footers__header_logged').find('.header__navigation-item').eq(0).find('a')
   .addClass('header__link_active');

@@ -50,18 +50,18 @@
             </header>
     <main class="room-details">
       <figure class="room-details__img-section">
-        <div class="room-details__img-wrapper-1"><img class="room-details__image-1" src="img/room1.jpg" width="100%"></div>
-        <div class="room-details__img-wrapper-2">
-          <div class="room-details__img-2"><img class="room-details__image-2" src="img/room2.jpg" width="100%"></div>
-          <div class="room-details__img-3"><img class="room-details__image-3" src="img/room3.jpg" width="100%"></div>
+        <div class="room-details__img-wrapper"><img class="room-details__img" src="img/room1.jpg" width="100%"></div>
+        <div class="room-details__img-wrapper">
+          <div class="room-details__img-container"><img class="room-details__img" src="img/room2.jpg" width="100%"></div>
+          <div class="room-details__img-container"><img class="room-details__img" src="img/room3.jpg" width="100%"></div>
         </div>
       </figure>
       <div class="room-details__wrapper">
         <section class="room-details__container">
-          <div class="room-details__column-1">
-            <div class="room-details__content-row-1">
-              <article class="room-details__article-1">
-                <h2 class="room-details__header room-details__header_1">Сведения о номере</h2>
+          <div class="room-details__content-column">
+            <div class="room-details__content-row">
+              <article class="room-details__article">
+                <h2 class="room-details__title">Сведения о номере</h2>
                 <div class="room-details__info-wrapper">
                             <div class=" info">
                               <div class="info__img-wrapper"><i class="info__img">insert_emoticon</i></div>
@@ -90,8 +90,8 @@
                             </div>
                 </div>
               </article>
-              <article class="room-details__article-2">
-                <h2 class="room-details__header room-details__header_2">Впечатления от номера</h2>
+              <article class="room-details__article">
+                <h2 class="room-details__title">Впечатления от номера</h2>
                 <div class="room-details__chart-wrapper">
                   <div class="room-details__chart"></div>
                   <div class="room-details__chart-white-mask"></div>
@@ -102,92 +102,87 @@
                 </div>
                 <div class="room-details__chart-comment">
                   <div class="room-details__chart-item">
-                    <div class="room-details__mark room-details__mark_1"></div>
+                    <div class="room-details__mark room-details__mark_color_orange"></div>
                     <p class="room-details__chart-text-item">Великолепно</p>
                   </div>
                   <div class="room-details__chart-item">
-                    <div class="room-details__mark room-details__mark_2"></div>
+                    <div class="room-details__mark room-details__mark_color_green"></div>
                     <p class="room-details__chart-text-item">Хорошо</p>
                   </div>
                   <div class="room-details__chart-item">
-                    <div class="room-details__mark room-details__mark_3"></div>
+                    <div class="room-details__mark room-details__mark_color_purple"></div>
                     <p class="room-details__chart-text-item">Удовлетворительно</p>
                   </div>
                   <div class="room-details__chart-item">
-                    <div class="room-details__mark room-details__mark_4"></div>
+                    <div class="room-details__mark room-details__mark_color_black"></div>
                     <p class="room-details__chart-text-item">Разочарован</p>
                   </div>
                 </div>
               </article>
             </div>
-            <div class="room-details__content-row-2">
-              <article class="room-details__article-3">
-                <h2 class="room-details__header room-details__header_3">Отзывы посетителей номера<span class="room-details__header-right-part">2 отзыва</span></h2>
+            <div class="room-details__content-row">
+              <article class="room-details__article">
+                <h2 class="room-details__title room-details__title">Отзывы посетителей номера<span class="room-details__title-right-part">2 отзыва</span></h2>
                 <div class="room-details__review-wrapper room-details__review-wrapper_1">
-                            <div class="-container">
-                              <div class="review">
-                                <div class="review__column-1">
-                                  <div class="review__img-wrapper"><img class="-img review__img" src="img/murad.jpg"></div>
-                                  <div class="review__like-wrapper">
-                                              <div class="like">
-                                                <label class="like__label">
-                                                  <input class="like__input " type="checkbox" name="-like">
-                                                  <div class="like__custom"><span class="like__inner">
-                                                      <p class="like__text">12</p></span></div>
-                                                </label>
-                                              </div>
-                                  </div>
+                            <div class="review">
+                              <div class="review__column-left">
+                                <div class="review__img-wrapper"><img class="-img review__img" src="img/murad.jpg"></div>
+                                <div class="review__like-wrapper">
+                                            <div class="like">
+                                              <label class="like__label">
+                                                <input class="like__input " type="checkbox" name="-like">
+                                                <div class="like__custom"><span class="like__inner">
+                                                    <p class="like__text">12</p></span></div>
+                                              </label>
+                                            </div>
                                 </div>
-                                <div class="review__column-2">
-                                  <h4 class="review__header">Мурад Сарафанов</h4>
-                                  <p class="review__days">5 дней назад</p>
-                                  <p class="review__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
-                                </div>
+                              </div>
+                              <div class="review__column-right">
+                                <h4 class="review__header">Мурад Сарафанов</h4>
+                                <p class="review__days">5 дней назад</p>
+                                <p class="review__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
                               </div>
                             </div>
                 </div>
                 <div class="room-details__review-wrapper room-details__review-wrapper_2">
-                            <div class="-container">
-                              <div class="review">
-                                <div class="review__column-1">
-                                  <div class="review__img-wrapper"><img class="-img review__img" src="img/Patricia.jpg"></div>
-                                  <div class="review__like-wrapper">
-                                              <div class="like">
-                                                <label class="like__label">
-                                                  <input class="like__input " type="checkbox" name="-like">
-                                                  <div class="like__custom"><span class="like__inner">
-                                                      <p class="like__text">2</p></span></div>
-                                                </label>
-                                              </div>
-                                  </div>
+                            <div class="review">
+                              <div class="review__column-left">
+                                <div class="review__img-wrapper"><img class="-img review__img" src="img/Patricia.jpg"></div>
+                                <div class="review__like-wrapper">
+                                            <div class="like">
+                                              <label class="like__label">
+                                                <input class="like__input " type="checkbox" name="-like">
+                                                <div class="like__custom"><span class="like__inner">
+                                                    <p class="like__text">2</p></span></div>
+                                              </label>
+                                            </div>
                                 </div>
-                                <div class="review__column-2">
-                                  <h4 class="review__header">Патрисия Стёклышкова</h4>
-                                  <p class="review__days">Неделю назад</p>
-                                  <p class="review__text">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</p>
-                                </div>
+                              </div>
+                              <div class="review__column-right">
+                                <h4 class="review__header">Патрисия Стёклышкова</h4>
+                                <p class="review__days">Неделю назад</p>
+                                <p class="review__text">Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент</p>
                               </div>
                             </div>
                 </div>
               </article>
             </div>
-            <div class="room-details__content-row-3">
-              <article class="room-details__article-4">
-                <h2 class="room-details__header room-details__header_4">Правила</h2>
+            <div class="room-details__content-row">
+              <article class="room-details__article">
+                <h2 class="room-details__title room-details__title">Правила</h2>
                 <ul class="room-details__ul">
                   <li class="room-details__bullet-item">Нельзя с питомцами</li>
                   <li class="room-details__bullet-item">Без вечеринок и мероприятий</li>
                   <li class="room-details__bullet-item">Время прибытия — после 13:00, а выезд до 12:00</li>
                 </ul>
               </article>
-              <div class="room-details__article-space-2"></div>
-              <article class="room-details__article-5">
-                <h2 class="room-details__header room-details__header_5">Отмена</h2>
+              <article class="room-details__article">
+                <h2 class="room-details__title room-details__title">Отмена</h2>
                 <p class="room-details__text">Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.</p>
               </article>
             </div>
           </div>
-          <div class="room-details__column-2">
+          <div class="room-details__form-column">
             <div class="room-details__form">
                   <article class="reservation-form">
                     <div class="reservation-form__header">

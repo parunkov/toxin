@@ -30,11 +30,11 @@
 .headers-footers__header {
   width: 100%;
   background: $white;
-  &_1 {
+  &_unlogged {
     margin-top: 8px;
     margin-bottom: 38px;
   }
-  &_2 {
+  &_logged {
     margin-bottom: 42px;
   }
   .header__navigation {
@@ -154,7 +154,7 @@
     }
   }
 }
-.headers-footers__footer-1 {
+.headers-footers__footer {
   margin-bottom: 38px;
   background: $white;
   box-shadow: 0 10px 20px $black-5;
