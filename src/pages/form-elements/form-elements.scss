@@ -261,10 +261,10 @@
 
 .form-elements__item-inner {
   display: inline-block;
-  &_1 {
+  &_left {
     flex: 0 0 150%*100/320;
   }
-  &_2 {
+  &_right {
     flex: 0 0 150%*100/320;
   }
 }
