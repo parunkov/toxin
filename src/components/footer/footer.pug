@@ -11,7 +11,7 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 					p.footer__text= text
 				nav.footer__navigation
 					each val, i in menu
-						section(class ="footer__column footer__column_" + (i + 2))
+						section.footer__navigation-column
 							h2.footer__title !{menu[i].item}
 							ul.footer__list.footer__list_menu
 								each val, j in menu[i].incl
