@@ -17,7 +17,7 @@
 }
 .cards__column {
   flex: 0 0 420%*100/1200;
-  &_3 {
+  &_right {
     flex: 0 0 360%*100/1200;
   }
   @media (max-width: $page-container) {
@@ -36,22 +36,22 @@
   background-color: $white;
   border-radius: 4px;
   box-shadow: 0 0 25px $shadow;
-  &_1 {
+  &_search {
     margin-bottom: 40px;
   }
-  &_2 {
+  &_registration {
     margin-bottom: 140px;
     @media (max-width: $page-container) {
       margin-bottom: 40px;
     }
   }
-  &_3 {
+  &_reservation {
     margin-bottom: 39px;
   }
-  &_4, &_5 {
+  &_login, &_datepicker {
     margin-bottom: 39px;
   }
-  &_5 {
+  &_datepicker {
     max-width: 360px;
     padding-left: 1.25%;
     padding-right: 1.25%;  
@@ -84,7 +84,7 @@
       border-radius: 50%;    
     }  
   }
-  &_6, &_7 {
+  &_card {
     margin-bottom: 40px;
     background: transparent;
     box-shadow: none;
