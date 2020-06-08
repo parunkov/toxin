@@ -17,234 +17,223 @@ block main
 	include ../../components/review/review.pug
 	+ui-kit
 	.form-elements
-		article.form-elements__container
-			.form-elements__column
-				section.form-elements__inner
-					.form-elements__item
+		.form-elements__container
+			section.form-elements__section
+				.form-elements__item
+					+input(
+						'Text Field', 
+						'email', 
+						'form-elements__input-1', 
+						'', 
+						'', 
+						'Email', 
+						'Default')
+				.form-elements__item
+					+input(
+						'Text Field', 
+						'email', 
+						'form-elements__input-2', 
+						'input__field_hover', 
+						'This is pretty awesome', 
+						'', 
+						'Hover / Focus')
+				.form-elements__item
+					+input(
+						'Dropdown', 
+						'email', 
+						'form-elements__input-3', 
+						'', 
+						'Сколько гостей', 
+						'', 
+						'Default', 
+						'expand_more')
+				.form-elements__item
+					+input(
+						'masked text field', 
+						'date', 
+						'form-elements__input-4', 
+						'input__field_uppercase', 
+						'', 
+						'Email', 
+						'Default', 
+						'expand_more')
+				.form-elements__item
+					.form-elements__item-inner.form-elements__item-inner_left
 						+input(
-							'Text Field', 
-							'email', 
-							'form-elements__input-1', 
-							'', 
-							'', 
-							'Email', 
-							'Default')
-					.form-elements__item
-						+input(
-							'Text Field', 
-							'email', 
-							'form-elements__input-2', 
-							'input__field_hover', 
-							'This is pretty awesome', 
-							'', 
-							'Hover / Focus')
-					.form-elements__item
-						+input(
-							'Dropdown', 
-							'email', 
-							'form-elements__input-3', 
-							'', 
-							'Сколько гостей', 
-							'', 
-							'Default', 
-							'expand_more')
-					.form-elements__item
-						+input(
-							'masked text field', 
+							'date Dropdown', 
 							'date', 
-							'form-elements__input-4', 
+							'form-elements__input-5', 
 							'input__field_uppercase', 
 							'', 
-							'Email', 
-							'Default', 
-							'expand_more')
-					.form-elements__item
-						.form-elements__item-inner.form-elements__item-inner_left
-							+input(
-								'date Dropdown', 
-								'date', 
-								'form-elements__input-5', 
-								'input__field_uppercase', 
-								'', 
-								'', 
-								'', 
-								'expand_more')
-						.form-elements__space
-						.form-elements__item-inner.form-elements__item-inner_right
-							+input(
-								'date Dropdown', 
-								'date', 
-								'form-elements__input-6', 
-								'', 
-								'2019-08-19', 
-								'', 
-								'', 
-								'expand_more')
-					.form-elements__item
-						+input(
-							'filter date dropdown', 
-							'email', 
-							'form-elements__input-7', 
-							'', 
-							'19 авг - 23 авг', 
 							'', 
 							'', 
 							'expand_more')
-					.form-elements__item
+					.form-elements__space
+					.form-elements__item-inner.form-elements__item-inner_right
 						+input(
-							'subscription text field', 
-							'email', 
-							'form-elements__input-8', 
-							'input__field_with-arrow', 
+							'date Dropdown', 
+							'date', 
+							'form-elements__input-6', 
 							'', 
-							'Email', 
+							'2019-08-19', 
 							'', 
-							'arrow_forward', 
-							'purple')
-			.form-elements__column
-				section.form-elements__inner
-					.form-elements__item
-						h3.form-elements__item-title Checkbox Buttons
-						+checkbox(
 							'', 
-							['Можно курить', 
-							'Можно с питомцами', 
-							'Можно пригласить гостей (до 10 человек)'])
-					.form-elements__item
-						h3.form-elements__item-title Radio Buttons
-						+radio(
-							'', 
-							['Мужчина', 'Женщина'])
-					.form-elements__item
-						h3.form-elements__item-title Toggle
-						+toggle(
-							'', 
-							['Получать спецпредложения', 
-							'Получать спецпредложения'])
-					.form-elements__item
-						h3.form-elements__item-title like button
-						+like('', '2')
-						+like('', '12')
-					.form-elements__item
-						h3.form-elements__item-title rate button
-						+rate('', 4, 1)
-						+rate('', 5, 1)
-			.form-elements__column
-				section.form-elements__inner
-					.form-elements__item
-						+slider(1, 'Range Slider')
-					.form-elements__item
-						h3.form-elements__item-title buttons
-						.form-elements__btn.btn click me
-						.form-elements__btn.btn.btn_hover click me
-						.form-elements__btn.btn.btn__theme_light 
-							span.btn__text click me
-						.form-elements__btn.btn.btn__theme_light.btn_hover
-							span.btn__text click me
-						.form-elements__btn.btn.btn_icon-link click me
-						.form-elements__btn.btn.btn_icon-link.btn_icon-link-hover click me
-						.form-elements__btn.btn.btn_arrow перейти к оплате
-					.form-elements__item
-						h3.form-elements__item-title pagination
-						#pagination-container
-						p.pagination__text <span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды
-			.form-elements__column
-				section.form-elements__inner
-					.form-elements__item
-						+dropdown(
-							'rooms',
-							'', 
-							'dropdown', 
-							'Default', 
-							'спальни', 
-							'кровати', 
-							'ванные комнаты')
-					.form-elements__item
-						+dropdown(
-							'rooms',
-							'', 
-							'dropdown', 
-							'expanded', 
-							'спальни', 
-							'кровати', 
-							'ванные комнаты')
-			.form-elements__column
-				section.form-elements__inner
-					.form-elements__item
-						h3.form-elements__item-title expandable checkbox list
-					.form-elements__item
-						h3.form-elements__item-title expandable checkbox list
-						+checkbox(
-							'', 
-							['Завтрак', 
-							'Письменный стол', 
-							'Стул для кормления',
-							'Кроватка',
-							'Телевизор',
-							'Шампунь'])
-			.form-elements__column
-				section.form-elements__inner
-					.form-elements__item
-						+dropdown(
-							'peoples',
-							'', 
-							'dropdown', 
-							'', 
-							'взрослые', 
-							'дети', 
-							'младенцы',
-							'1')
-			.form-elements__column
-				section.form-elements__inner
-					.form-elements__item
-						h3.form-elements__item-title rich Checkbox Buttons
-						+checkbox(
-							'', 
-							['Ширина коридоров в номере не менее 91 см.', 
-							'На 1 этаже вас встретит специалист  и проводит до номера.'],
-							['Широкий коридор',
-							'Помощник для инвалидов'])
-			.form-elements__column
-				section.form-elements__inner
-					.form-elements__item
-						+dropdown(
-							'peoples',
-							'', 
-							'dropdown', 
-							'', 
-							'взрослые', 
-							'дети', 
-							'младенцы',
-							'1')
-			.form-elements__column
-				section.form-elements__inner
-					.form-elements__item
-						h3.form-elements__item-title bullet list
-						ul.form-elements__bullet-list
-							li.form-elements__bullet-item Нельзя с питомцами
-							li.form-elements__bullet-item Без вечеринок и мероприятий
-							li.form-elements__bullet-item Время прибытия — после 13:00, а выезд до 12:00
-			.form-elements__column
-				section.form-elements__inner
-					.form-elements__item
-						+info(
-							'',
-							'insert_emoticon',
-							'Комфорт',
-							'Шумопоглощающие стены')
-					.form-elements__item
-						+info(
-							'',
-							'location_city',
-							'Удобство',
-							'Окно в каждой из спален')
-			.form-elements__column
-				section.form-elements__inner
-					.form-elements__item
-						+review(
-							'',
-							'img/murad.jpg',
-							'12',
-							'Мурад Сарафанов',
-							'5 дней назад',
-							'Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+							'expand_more')
+				.form-elements__item
+					+input(
+						'filter date dropdown', 
+						'email', 
+						'form-elements__input-7', 
+						'', 
+						'19 авг - 23 авг', 
+						'', 
+						'', 
+						'expand_more')
+				.form-elements__item
+					+input(
+						'subscription text field', 
+						'email', 
+						'form-elements__input-8', 
+						'input__field_with-arrow', 
+						'', 
+						'Email', 
+						'', 
+						'arrow_forward', 
+						'purple')
+			section.form-elements__section
+				.form-elements__item
+					h3.form-elements__item-title Checkbox Buttons
+					+checkbox(
+						'', 
+						['Можно курить', 
+						'Можно с питомцами', 
+						'Можно пригласить гостей (до 10 человек)'])
+				.form-elements__item
+					h3.form-elements__item-title Radio Buttons
+					+radio(
+						'', 
+						['Мужчина', 'Женщина'])
+				.form-elements__item
+					h3.form-elements__item-title Toggle
+					+toggle(
+						'', 
+						['Получать спецпредложения', 
+						'Получать спецпредложения'])
+				.form-elements__item
+					h3.form-elements__item-title like button
+					+like('', '2')
+					+like('', '12')
+				.form-elements__item
+					h3.form-elements__item-title rate button
+					+rate('', 4, 1)
+					+rate('', 5, 1)
+			section.form-elements__section
+				.form-elements__item
+					+slider(1, 'Range Slider')
+				.form-elements__item
+					h3.form-elements__item-title buttons
+					.form-elements__btn.btn click me
+					.form-elements__btn.btn.btn_hover click me
+					.form-elements__btn.btn.btn__theme_light 
+						span.btn__text click me
+					.form-elements__btn.btn.btn__theme_light.btn_hover
+						span.btn__text click me
+					.form-elements__btn.btn.btn_icon-link click me
+					.form-elements__btn.btn.btn_icon-link.btn_icon-link-hover click me
+					.form-elements__btn.btn.btn_arrow перейти к оплате
+				.form-elements__item
+					h3.form-elements__item-title pagination
+					#pagination-container
+					p.pagination__text <span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды
+			section.form-elements__section
+				.form-elements__item
+					+dropdown(
+						'rooms',
+						'', 
+						'dropdown', 
+						'Default', 
+						'спальни', 
+						'кровати', 
+						'ванные комнаты')
+				.form-elements__item
+					+dropdown(
+						'rooms',
+						'', 
+						'dropdown', 
+						'expanded', 
+						'спальни', 
+						'кровати', 
+						'ванные комнаты')
+			section.form-elements__section
+				.form-elements__item
+					h3.form-elements__item-title expandable checkbox list
+				.form-elements__item
+					h3.form-elements__item-title expandable checkbox list
+					+checkbox(
+						'', 
+						['Завтрак', 
+						'Письменный стол', 
+						'Стул для кормления',
+						'Кроватка',
+						'Телевизор',
+						'Шампунь'])
+			section.form-elements__section
+				.form-elements__item
+					+dropdown(
+						'peoples',
+						'', 
+						'dropdown', 
+						'', 
+						'взрослые', 
+						'дети', 
+						'младенцы',
+						'1')
+			section.form-elements__section
+				.form-elements__item
+					h3.form-elements__item-title rich Checkbox Buttons
+					+checkbox(
+						'', 
+						['Ширина коридоров в номере не менее 91 см.', 
+						'На 1 этаже вас встретит специалист  и проводит до номера.'],
+						['Широкий коридор',
+						'Помощник для инвалидов'])
+			section.form-elements__section
+				.form-elements__item
+					+dropdown(
+						'peoples',
+						'', 
+						'dropdown', 
+						'', 
+						'взрослые', 
+						'дети', 
+						'младенцы',
+						'1')
+			section.form-elements__section
+				.form-elements__item
+					h3.form-elements__item-title bullet list
+					ul.form-elements__bullet-list
+						li.form-elements__bullet-item Нельзя с питомцами
+						li.form-elements__bullet-item Без вечеринок и мероприятий
+						li.form-elements__bullet-item Время прибытия — после 13:00, а выезд до 12:00
+			section.form-elements__section
+				.form-elements__item
+					+info(
+						'',
+						'insert_emoticon',
+						'Комфорт',
+						'Шумопоглощающие стены')
+				.form-elements__item
+					+info(
+						'',
+						'location_city',
+						'Удобство',
+						'Окно в каждой из спален')
+			section.form-elements__section
+				.form-elements__item
+					+review(
+						'',
+						'img/murad.jpg',
+						'12',
+						'Мурад Сарафанов',
+						'5 дней назад',
+						'Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
