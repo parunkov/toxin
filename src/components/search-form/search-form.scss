@@ -2,6 +2,16 @@
 .search-form {
   padding-top: 40px;
   padding-bottom: 30px;
+  padding-left: 30%*100/380;
+  padding-right: 30%*100/380;
+  @media (max-width: 1440px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media (max-width: 385px) {
+    padding-left: 30%*100/385;
+    padding-left: 30%*100/385;
+  }
 }
 .search-form__title {
   display: block;

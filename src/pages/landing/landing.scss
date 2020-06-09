@@ -84,21 +84,21 @@
     flex: none;
     width: 100%;
   }
-  padding-left: 30%*100/1200;
-  padding-right: 30%*100/1200;
+  // padding-left: 30%*100/1200;
+  // padding-right: 30%*100/1200;
   margin-right: 20px;
   width: 100%;
   background-color: $white;
   border-radius: 4px;
   box-shadow: 0 0 25px $shadow;
-  @media (max-width: 1440px) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  @media (max-width: 385px) {
-    padding-left: 30%*100/385;
-    padding-left: 30%*100/385;
-  }
+  // @media (max-width: 1440px) {
+  //   padding-left: 30px;
+  //   padding-right: 30px;
+  // }
+  // @media (max-width: 385px) {
+  //   padding-left: 30%*100/385;
+  //   padding-left: 30%*100/385;
+  // }
 }
 .landing__text {
   display: block;
