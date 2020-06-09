@@ -499,6 +499,7 @@
   vertical-align: top;
   margin-right: 20px;
   margin-bottom: 10px;
+  text-decoration: none;
   &:last-child {
     margin-right: 0;
     margin-bottom: 9px;
@@ -507,14 +508,14 @@
     flex: none;
     margin-right: 0;
   }
-  .btn {
-    text-decoration: none;
-    @media (max-width: $mobile-menu-breakpoint) {
-      display: inline-block;
-      width: inherit;
-      min-width: 196px;
-    }
-  }
+  // .btn {
+  //   text-decoration: none;
+  //   @media (max-width: $mobile-menu-breakpoint) {
+  //     display: inline-block;
+  //     width: inherit;
+  //     min-width: 196px;
+  //   }
+  // }
 }
 .header__btn-content {
   @media (max-width: 950px) {
