@@ -107,7 +107,7 @@
     flex-wrap: wrap;
   }
 }
-.footer__subscription {
+.footer__subscription-block {
   flex: 1 0 280%*100/1160;
   min-width: 280px;
   padding-top: 5px;
@@ -141,10 +141,10 @@
   text-transform: uppercase;
   margin-bottom: 24px;
   color: $black;
-  &_subscription {
+}
+.footer__subscription-block .footer__title {
     margin-bottom: 18px;
     letter-spacing: -0.3px;
-  }
 }
 .footer__list-item {
   margin-bottom: 24px;

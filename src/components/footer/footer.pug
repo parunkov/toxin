@@ -17,8 +17,8 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 								each val, j in menu[i].incl
 									li.footer__list-item
 										a(href=menu[i].hrefs[j] class="footer__link") !{menu[i].incl[j]}
-				.footer__subscription
-					h2.footer__title.footer__title_subscription= h3
+				.footer__subscription-block
+					h2.footer__title= h3
 					p.footer__text= p 
 					form.footer__form
 						if ui
