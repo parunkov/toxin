@@ -3,10 +3,9 @@
   padding-top: 40px;
   padding-bottom: 30px;
 }
-.search-form__header-wrapper {
+.search-form__title {
+  display: block;
   margin-bottom: 17px;
-}
-.search-form__header {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25em;
@@ -35,7 +34,7 @@
     }
   }
 }
-.search-form__input-1-wrapper, .search-form__input-2-wrapper {
+.search-form__arrival-wrapper, .search-form__departure-wrapper {
   margin-top: auto;
   flex: 0 0 47.24%;
   .input__icon {
@@ -44,10 +43,10 @@
     }
   }
 }
-.search-form__input-1-wrapper {
+.search-form__arrival-wrapper {
   margin-right: auto;
 }
-.search-form__input-1-wrapper .input__field, .search-form__input-2-wrapper .input__field {
+.search-form__arrival-wrapper .input__field, .search-form__departure-wrapper .input__field {
   text-transform: uppercase;
   letter-spacing: -0.4px;
   cursor: default;

@@ -11,8 +11,8 @@ const $myDatepicker = $('.search-form__datepicker-container .datepicker__content
 const $datepickerContainer = $('.search-form__datepicker-container');
 const $setBtn = $('.search-form__datepicker-container .datepicker__set-btn');
 const $clearBtn = $('.search-form__datepicker-container .datepicker__clear-btn');
-const $arrival = $('.search-form__input-1-wrapper .input__field');
-const $departure = $('.search-form__input-2-wrapper .input__field');
+const $arrival = $('.search-form__arrival-wrapper .input__field');
+const $departure = $('.search-form__departure-wrapper .input__field');
 
 const $icon = $('.search-form__inputs-wrapper .input__icon');
 console.log($icon);

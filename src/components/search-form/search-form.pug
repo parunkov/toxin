@@ -3,11 +3,10 @@ mixin search-form
 	include ../../components/dropdown/dropdown.pug
 	include ../../components/datepicker/datepicker.pug
 	article.search-form
-		.search-form__header-wrapper
-			h1.search-form__header Найдём номера под ваши пожелания
+		h1.search-form__title Найдём номера под ваши пожелания
 		form.search-form__form
 			.search-form__inputs-wrapper
-				.search-form__input-1-wrapper
+				.search-form__arrival-wrapper
 					+input(
 					'прибытие', 
 					'text', 
@@ -17,7 +16,7 @@ mixin search-form
 					'ДД.ММ.ГГГГ', 
 					'', 
 					'expand_more')
-				.search-form__input-2-wrapper
+				.search-form__departure-wrapper
 					+input(
 					'выезд', 
 					'text', 
