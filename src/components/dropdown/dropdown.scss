@@ -189,6 +189,9 @@
   border: none;
   outline: none;
   background: transparent;
+  &:hover {
+    color: $black-50;
+  }
 } 
 .dropdown__clear-btn {
   display: none;
