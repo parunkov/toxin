@@ -141,9 +141,19 @@
 .datepicker--cell.datepicker--cell-day.-range-from-.-disabled-, .datepicker--cell.datepicker--cell-day.-range-from-.-focus-.-disabled- {
   color: #a1a1a1;
 }
-.datepicker--cell.datepicker--cell-day.-other-month-.-in-range-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-focus-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-focus- {
+// .datepicker--cell.datepicker--cell-day.-other-month-.-in-range-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-focus-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-focus- {
+//   color: #dedede;
+//   background: transparent;
+// }
+.datepicker--cell.datepicker--cell-day.-other-month-.-in-range-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-focus-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-disabled- {
   color: #dedede;
   background: transparent;
+}
+.datepicker--cell.datepicker--cell-day.-other-month-.-focus- {
+  color: #dedede;
+}
+.datepicker--cell.datepicker--cell-day.-other-month-.-in-range-.-focus- {
+  color: #cccccc;
 }
 .datepicker--cell.-in-range-.-disabled- {
   background: transparent;
