@@ -2,46 +2,46 @@
 .headers-footers {
   padding-bottom: 130px;
   background: $grey;
-  .footer__container {
-    padding-top: 98px;
-    @media (max-width: $mobile-menu-breakpoint) {
-      padding-top: 25px;
-    }
-  }
-  .footer__social-section .footer__container {
-    padding-top: 12px;
-  }
-  .footer__navigation-section {
-    padding-bottom: 79px;
-    @media (max-width: $mobile-menu-breakpoint) {
-      padding-bottom: 25px;
-    }
-  }
-  .footer__social-item {
-    margin-right: 16px;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-  .footer__copyright {
-    letter-spacing: -0.1px;
-  }
+  // .footer__container {
+  //   padding-top: 98px;
+  //   @media (max-width: $mobile-menu-breakpoint) {
+  //     padding-top: 25px;
+  //   }
+  // }
+  // .footer__social-section .footer__container {
+  //   padding-top: 12px;
+  // }
+  // .footer__navigation-section {
+  //   padding-bottom: 79px;
+  //   @media (max-width: $mobile-menu-breakpoint) {
+  //     padding-bottom: 25px;
+  //   }
+  // }
+  // .footer__social-item {
+  //   margin-right: 16px;
+  //   &:last-child {
+  //     margin-right: 0;
+  //   }
+  // }
+  // .footer__copyright {
+  //   letter-spacing: -0.1px;
+  // }
 }
 .headers-footers__header {
   width: 100%;
   background: $white;
   &_unlogged {
-    margin-top: 8px;
-    margin-bottom: 38px;
+    margin-top: 10px;
+    margin-bottom: 40px;
   }
   &_logged {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
-  .header__navigation {
-    padding-top: 17px;
-  }
+  // .header__navigation {
+  //   padding-top: 17px;
+  // }
   .header__navigation-list {
-    padding-top: 12px;
+    // padding-top: 12px;
     padding-right: 0;
   }
   .header__navigation-item {
@@ -131,28 +131,28 @@
       }
     }
   }
-  .header__user-block {
-    margin-bottom: 0;
-    flex: 0 0 200px;
-    @media (max-width: $mobile-menu-breakpoint) {
-      flex: none;
-    }
-  }
-  .header__btn-content {
-    @media (max-width: 950px) {
-      width: none;
-      margin-right: 0;
-    }
-    @media (max-width: $mobile-menu-breakpoint) {
-      width: 100%;
-      margin: 0 auto;
-    }
-  }
-  .header__btn .btn {
-    @media (max-width: $mobile-menu-breakpoint) {
-      min-width: 105px;
-    }
-  }
+  // // .header__user-block {
+  // //   margin-bottom: 0;
+  // //   flex: 0 0 200px;
+  // //   @media (max-width: $mobile-menu-breakpoint) {
+  // //     flex: none;
+  // //   }
+  // // }
+  // .header__btn-content {
+  //   @media (max-width: 950px) {
+  //     width: none;
+  //     margin-right: 0;
+  //   }
+  //   @media (max-width: $mobile-menu-breakpoint) {
+  //     width: 100%;
+  //     margin: 0 auto;
+  //   }
+  // }
+  // .header__btn .btn {
+  //   @media (max-width: $mobile-menu-breakpoint) {
+  //     min-width: 105px;
+  //   }
+  // }
 }
 .headers-footers__footer {
   margin-bottom: 38px;
