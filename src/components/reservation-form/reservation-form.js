@@ -4,7 +4,7 @@ import '../input/input';
 import '../dropdown/dropdown';
 import '../btn/btn';
 import './reservation-form.scss';
-import '../datepicker/datepicker';
+import '../datepicker-block/datepicker-block';
 import $ from 'jquery';
 
 const $button = $('.reservation-form .iqdropdown button');
@@ -17,10 +17,10 @@ $(document).ready(() => {
   $('.reservation-form .iqdropdown').removeClass('menu-open');
 });
 
-const $myDatepicker = $('.reservation-form__datepicker-container .datepicker__content').datepicker().data('datepicker');
+const $myDatepicker = $('.reservation-form__datepicker-container .datepicker-block__content').datepicker().data('datepicker');
 const $datepickerContainer = $('.reservation-form__datepicker-container');
-const $setBtn = $('.reservation-form__datepicker-container .datepicker__set-btn');
-const $clearBtn = $('.reservation-form__datepicker-container .datepicker__clear-btn');
+const $setBtn = $('.reservation-form__datepicker-container .datepicker-block__set-btn');
+const $clearBtn = $('.reservation-form__datepicker-container .datepicker-block__clear-btn');
 const $arrival = $('.reservation-form__input-wrapper_left .input__field');
 const $departure = $('.reservation-form__input-wrapper_right .input__field');
 

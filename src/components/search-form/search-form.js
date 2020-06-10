@@ -3,14 +3,14 @@ import '../../variables.scss';
 import '../input/input';
 import '../dropdown/dropdown';
 import '../btn/btn';
-import '../datepicker/datepicker';
+import '../datepicker-block/datepicker-block';
 import './search-form.scss';
 import $ from 'jquery';
 
-const $myDatepicker = $('.search-form__datepicker-container .datepicker__content').datepicker().data('datepicker');
+const $myDatepicker = $('.search-form__datepicker-container .datepicker-block__content').datepicker().data('datepicker');
 const $datepickerContainer = $('.search-form__datepicker-container');
-const $setBtn = $('.search-form__datepicker-container .datepicker__set-btn');
-const $clearBtn = $('.search-form__datepicker-container .datepicker__clear-btn');
+const $setBtn = $('.search-form__datepicker-container .datepicker-block__set-btn');
+const $clearBtn = $('.search-form__datepicker-container .datepicker-block__clear-btn');
 const $arrival = $('.search-form__arrival-wrapper .input__field');
 const $departure = $('.search-form__departure-wrapper .input__field');
 

@@ -8,7 +8,7 @@ import '../../components/slider/slider';
 import '../../components/checkbox/checkbox';
 import '../../components/card/card';
 import '../../components/footer/footer';
-import '../../components/datepicker/datepicker';
+import '../../components/datepicker-block/datepicker-block';
 import '../../components/pagination/pagination';
 import './search-room.scss';
 import $ from 'jquery';

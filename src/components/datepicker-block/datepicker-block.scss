@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-.datepicker__container {
+.datepicker-block {
   width: 100%;
   padding-right: 4.75%;
   padding-left: 4.75%;
@@ -236,14 +236,14 @@
   font-family: 'Material Icons';
   color: $purple;
 }
-.datepicker__bottom {
+.datepicker-block__bottom {
   display: flex;
   flex-direction: row-reverse;
   margin-top: 18px;
   padding-bottom: 18px;
   padding-left: 5px;
 }
-.datepicker__clear-btn, .datepicker__set-btn {
+.datepicker-block__clear-btn, .datepicker-block__set-btn {
   word-break: break-all;
   flex: 0 1 auto;
   font-weight: 700;
@@ -255,12 +255,12 @@
   outline: none;
   background: transparent;
 } 
-.datepicker__clear-btn {
+.datepicker-block__clear-btn {
   display: none;
   margin-right: auto;
   color: $black-50;
 }
-.datepicker__set-btn {
+.datepicker-block__set-btn {
   display: inline-block;
   padding-right: 5px;
   text-align: right;
