@@ -8,6 +8,7 @@
   border-radius: 4px;
 }
 .datepicker {
+  color: $black-50;
   width: 100%;
   font-size: 12px;
   font-family: Montserrat, Arial, sans-serif;
@@ -127,7 +128,7 @@
   background: $bg-purple;
   &.-focus- {
     background: $bg-purple;
-    color: #cccccc;
+    color: $black-25;
   }
 }
 .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-current-.-selected-,
@@ -139,21 +140,24 @@
   }
 }
 .datepicker--cell.datepicker--cell-day.-range-from-.-disabled-, .datepicker--cell.datepicker--cell-day.-range-from-.-focus-.-disabled- {
-  color: #a1a1a1;
+  color: $black-50;
 }
 // .datepicker--cell.datepicker--cell-day.-other-month-.-in-range-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-focus-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-focus- {
-//   color: #dedede;
+//   color: $black-25;
 //   background: transparent;
 // }
 .datepicker--cell.datepicker--cell-day.-other-month-.-in-range-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-focus-.-disabled-, .datepicker--cell.datepicker--cell-day.-other-month-.-range-from-.-disabled- {
-  color: #dedede;
+  color: $black-25;
   background: transparent;
 }
 .datepicker--cell.datepicker--cell-day.-other-month-.-focus- {
-  color: #dedede;
+  color: $black-25;
 }
 .datepicker--cell.datepicker--cell-day.-other-month-.-in-range-.-focus- {
-  color: #cccccc;
+  color: $black-25;
+}
+.datepicker--cell.datepicker--cell-day.-other-month-.-range-to-, .datepicker--cell.datepicker--cell-day.-other-month-.-range-from- {
+  color: $white;
 }
 .datepicker--cell.-in-range-.-disabled- {
   background: transparent;
