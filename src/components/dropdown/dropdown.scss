@@ -34,7 +34,7 @@
 .dropdown__input {
   position: relative;
 }
-.iqdropdown {
+.dropdown__wrapper {
   clear: both;
   width: 100%;
   height: 44px;
@@ -42,10 +42,10 @@
   border: 1px solid $black-25;
   border-radius: 4px;
 }
-.iqdropdown.menu-open {
+.dropdown__wrapper_menu-open {
   border: 1px solid $black-50;
 }
-.iqdropdown .iqdropdown-selection {
+.dropdown__wrapper .dropdown__selection {
   position: absolute;
   top: 9px;
   left: 0;
@@ -78,11 +78,11 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.iqdropdown.menu-open .iqdropdown-selection::after {
+.dropdown__wrapper_menu-open .dropdown__selection::after {
   background: $white;
   transform: rotate(180deg);
 }
-.iqdropdown-item {
+.dropdown__item-title {
   padding-right: 35%;
   margin-bottom: 7px;
   font-weight: 700;
@@ -91,10 +91,10 @@
   color: $black;
   text-transform: uppercase;
 }
-.iqdropdown.menu-open .iqdropdown-menu {
+.dropdown__wrapper.dropdown__wrapper_menu-open .dropdown__menu {
   display: block;
 }
-.iqdropdown .iqdropdown-menu {
+.dropdown__wrapper .dropdown__menu {
   position: absolute;
   top: 42px;
   right: 0;
@@ -111,19 +111,19 @@
   box-shadow:  0px 10px 20px 0px $black-5;
   cursor: default;
 }
-.iqdropdown .iqdropdown-menu-option {
+.dropdown__wrapper .dropdown__menu-item-wrapper {
   position: relative;
   min-height: 30px;
   margin-bottom: 7px;
   padding-top: 5px;
   padding-left: 14px;
 }
-.iqdropdown-item-controls {
+.dropdown__item-controls {
   position: absolute;
   top: 0;
   right: -8px;
 }
-.iqdropdown .button-decrement, .iqdropdown .button-increment {
+.dropdown__wrapper .dropdown__button-decrement, .dropdown__wrapper .dropdown__button-increment {
   position: relative;
   display: inline-block;
   width: 30px;
@@ -134,7 +134,7 @@
   outline: none;
   cursor: pointer;
 }
-.iqdropdown .counter {
+.dropdown__wrapper .dropdown__counter {
   display: inline-block;
   width: 28px;
   padding-top: 7px;
@@ -147,13 +147,13 @@
   color: $black;
   text-transform: uppercase;
 }
-.iqdropdown .icon-decrement, .iqdropdown .icon-increment {
+.dropdown__wrapper .dropdown__icon-decrement, .dropdown__wrapper .dropdown__icon-increment {
   position: absolute;
   top: 46%;
   left: 51%;
   transform: translate(-50%, -50%);
 }
-.iqdropdown .icon-decrement::after, .iqdropdown .icon-increment::after {
+.dropdown__wrapper .dropdown__icon-decrement::after, .dropdown__wrapper .dropdown__icon-increment::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -163,10 +163,10 @@
   color: $black-50;
   transform: translate(-50%, -50%);
 }
-.iqdropdown .icon-decrement::after {
+.dropdown__wrapper .dropdown__icon-decrement::after {
   content: '-';
 }
-.iqdropdown .icon-increment::after {
+.dropdown__wrapper .dropdown__icon-increment::after {
   content: '+';
   transform: translate(-50%, -44%);
 }

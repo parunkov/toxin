@@ -28,7 +28,7 @@ $(document).ready(() => {
   $('.dropdown__input-icon').eq(2).trigger('click');
   $('.dropdown__input-icon').eq(3).trigger('click');
 
-  const $button = $('.form-elements__section:nth-child(8) .form-elements__item .iqdropdown button');
+  const $button = $('.form-elements__section:nth-child(8) .form-elements__item .dropdown__wrapper button');
   $button.eq(1).trigger('click');
   $button.eq(1).trigger('click');
   $button.eq(3).trigger('click');
