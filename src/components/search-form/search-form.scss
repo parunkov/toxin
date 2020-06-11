@@ -28,65 +28,8 @@
   font-family: 'Open Sans', Arial, sans-serif;
   color: $black;
 }
-.search-form__inputs-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 18px;
-  .input__header {
-    word-break: break-all;
-  }
-  input {
-    &::-webkit-input-placeholder {
-      color: $black-75;
-    }
-    &::-moz-placeholder {
-      color: $black-75;
-    }
-    &:-moz-placeholder {
-      color: $black-75;
-    }
-    &:-ms-input-placeholder {
-      color: $black-75;
-    }
-  }
-}
-.search-form__arrival-wrapper, .search-form__departure-wrapper {
-  margin-top: auto;
-  flex: 0 0 47.24%;
-  .input__icon {
-    @media (max-width: 350px) {
-      width: 32px;
-    }
-  }
-}
-.search-form__arrival-wrapper {
-  margin-right: auto;
-}
-.search-form__arrival-wrapper .input__field, .search-form__departure-wrapper .input__field {
-  text-transform: uppercase;
-  letter-spacing: -0.4px;
-  cursor: default;
-  &:hover {
-    border: 1px solid $black-25;
-  }
-  @media (max-width: 350px) {
-    padding-left: 12px;
-  }
-}
-.search-form .dropdown__container {
-  margin-bottom: 30px;
-}
-.search-form__datepicker-wrapper {
-  position: relative;
-}
-.search-form__datepicker-container {
-  position: absolute;
-  top: -10px;
-  z-index: 10;
-  display: none;
-  width: 100%;
-  background: $white;
-}
 .search-form__link {
+  display: block;
   text-decoration: none;
+  margin-top: 30px;
 }

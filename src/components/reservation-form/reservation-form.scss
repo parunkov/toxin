@@ -48,61 +48,6 @@
     font-size: 12px;
   }
 }
-.reservation-form__inputs-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 17px;
-  .input__h3 {
-    word-break: break-all;
-  }
-  .input__icon {
-    @media (max-width: 350px) {
-      width: 32px;
-    }
-  }
-}
-.reservation-form__input-wrapper .input__field {
-  letter-spacing: -0.4px;
-  cursor: default;
-  &:hover {
-    border: 1px solid $black-25;
-  }
-  @media (max-width: 350px) {
-    padding-left: 12px;
-  }
-  &::-webkit-input-placeholder {
-      color: $black-75;
-  }
-  &::-moz-placeholder {
-    color: $black-75;
-  }
-  &:-moz-placeholder {
-    color: $black-75;
-  }
-  &:-ms-input-placeholder {
-    color: $black-75;
-  }
-}
-.reservation-form__input-wrapper {
-  margin-top: auto;
-  flex: 0 0 47%;
-  &:first-child {
-    margin-right: auto;
-  }
-}
-.reservation-form__datepicker-wrapper {
-  position: relative;
-}
-.reservation-form__datepicker-container {
- position: absolute;
- top: -10px;
- left: 0;
- z-index: 10;
- display: none;
-}
-.reservation-form__dropdown-wrapper .dropdown__container {
-  margin-bottom: 22px;
-}
 .reservation-form__text {
   font-weight: 400;
   font-size: 14px;
@@ -137,7 +82,7 @@
   display: flex;
   flex-wrap: wrap;
   clear: both;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
   padding-top: 16px;
   &-text {
     font-weight: 700;

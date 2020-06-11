@@ -1,0 +1,38 @@
+mixin inputs-block
+	include ../../components/input/input.pug
+	include ../../components/dropdown/dropdown.pug
+	include ../../components/datepicker-block/datepicker-block.pug
+	.inputs-block
+		.inputs-block__inputs-wrapper
+			.inputs-block__arrival-wrapper
+				+input(
+				'прибытие', 
+				'text', 
+				'arrival', 
+				'', 
+				'', 
+				'дд.мм.гггг', 
+				'', 
+				'expand_more')
+			.inputs-block__departure-wrapper
+				+input(
+				'выезд', 
+				'text', 
+				'departure', 
+				'', 
+				'', 
+				'дд.мм.гггг', 
+				'', 
+				'expand_more')
+		.inputs-block__datepicker-wrapper
+			.inputs-block__datepicker-container
+				+datepicker
+		+dropdown(
+		'peoples',
+		'', 
+		'гости', 
+		'', 
+		'взрослые', 
+		'дети', 
+		'младенцы',
+		'1')
