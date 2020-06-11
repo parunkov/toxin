@@ -8,7 +8,7 @@ mixin dropdown__menu-item()
 mixin dropdown(type, cl, h3, p, item1, item2, item3, clear)
 	section(class="dropdown dropdown_theme_" + type)
 		div(class="dropdown__container " + cl)
-			h3.dropdown__header= h3
+			h2.dropdown__title= h3
 			p.dropdown__state= p
 			.dropdown__wrapper
 				.dropdown__input
