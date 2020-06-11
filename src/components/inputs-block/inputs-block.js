@@ -24,15 +24,15 @@ $departure.attr('disabled', '');
 
 $('.inputs-block .input__icon').click(function (evt) {
   evt.preventDefault();
-  if ($datepickerContainer.css('display') === 'block' && $(this).text() === 'expand_more') {
-    $datepickerContainer.css({ display: 'none' });
+  if ($datepickerContainer.hasClass('inputs-block__datepicker-container_visible') && $(this).text() === 'expand_more') {
+    $datepickerContainer.removeClass('inputs-block__datepicker-container_visible');
     $iconText.text('expand_more');
     $(this).text('expand_more');
     $icon.css({ cursor: 'pointer' });
-  } else if ($datepickerContainer.css('display') === 'block' && $(this).text() === 'expand_less') {
+  } else if ($datepickerContainer.hasClass('inputs-block__datepicker-container_visible') && $(this).text() === 'expand_less') {
     $(this).text('expand_more');
-  } else if ($datepickerContainer.css('display') === 'none' && $(this).text() === 'expand_less') {
-    $datepickerContainer.css({ display: 'block' });
+  } else if (!$datepickerContainer.hasClass('inputs-block__datepicker-container_visible') && $(this).text() === 'expand_less') {
+    $datepickerContainer.addClass('inputs-block__datepicker-container_visible');
     $iconText.text('expand_more');
     $icon.css({ cursor: 'default' });
     $(this).text('expand_less');
@@ -40,7 +40,7 @@ $('.inputs-block .input__icon').click(function (evt) {
   }
   $setBtn.click((e) => {
     e.preventDefault();
-    $datepickerContainer.css({ display: 'none' });
+    $datepickerContainer.removeClass('inputs-block__datepicker-container_visible');
     $icon.css({ cursor: 'pointer' });
     $iconText.text('expand_more');
     if ($myDatepicker.selectedDates[0]) {
@@ -60,3 +60,4 @@ $('.inputs-block .input__icon').click(function (evt) {
     $departure.attr('value', '');
   });
 });
+
