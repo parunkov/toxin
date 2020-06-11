@@ -16,7 +16,7 @@ $(document).ready(() => {
   const $dropdown__wrapper = $('.dropdown__wrapper');
 
   $dropdown__wrapper.each((i) => {
-    const $type = $('.dropdown__type');
+    const $dropdown = $('.dropdown');
     const $counter = $dropdown__wrapper.eq(i).find('.dropdown__counter');
     const $decrementBtn = $dropdown__wrapper.eq(i).find('.dropdown__button-decrement');
     const $incrementBtn = $dropdown__wrapper.eq(i).find('.dropdown__button-increment');
@@ -27,9 +27,8 @@ $(document).ready(() => {
     let totalCount = 0;
     let inputValue = '';
 
-
-    $type.each((j) => {
-      if ($type.eq(j).html() === 'rooms') {
+    $dropdown.each((j) => {
+      if ($dropdown.eq(j).hasClass('dropdown_theme_rooms')) {
         $text.eq(j).attr('value', '0 спален, 0 кроватей, 0 ванных');
       } else {
         $text.eq(j).attr('placeholder', 'Сколько гостей');
@@ -92,7 +91,7 @@ $(document).ready(() => {
       opacytyBtn();
 
       const $itemCounter = $('.dropdown__menu').eq(i).find('.dropdown__counter');
-      if ($type.eq(i).html() === 'rooms') {
+      if ($dropdown.eq(i).hasClass('dropdown_theme_rooms')){
         const textPart0 = `${$itemCounter[0].innerHTML} ${num2str(+$itemCounter[0].innerHTML, ['спальня', 'спальни', 'спален'])},`;
         const textPart1 = `${$itemCounter[1].innerHTML} ${num2str(+$itemCounter[1].innerHTML, ['кровать', 'кровати', 'кроватей'])},`;
         const textPart2 = `${$itemCounter[2].innerHTML} ${num2str(+$itemCounter[2].innerHTML, ['ванная', 'ванные', 'ванных'])}`;
