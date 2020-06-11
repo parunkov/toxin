@@ -46,7 +46,7 @@ $(document).ready(() => {
         totalCount += 1;
         // console.log(totalCount);
         if (totalCount) {
-          $dropdownClear.css({ display: 'block' });
+          $dropdownClear.addClass('dropdown__clear-btn_visible');
         }
       });
       $decrementBtn.eq(j).click((evt) => {
@@ -60,7 +60,7 @@ $(document).ready(() => {
         }
         // console.log(totalCount);
         if (!totalCount) {
-          $dropdownClear.css({ display: 'none' });
+          $dropdownClear.removeClass('dropdown__clear-btn_visible');
         }
         $counter.eq(j).html(count);
       });
@@ -69,11 +69,9 @@ $(document).ready(() => {
     const opacytyBtn = function () {
       for (let j = 0; j < $counter.length; j += 1) {
         if ($counter.eq(j).html() === '0') {
-          $decrementBtn.eq(j).css({ opacity: '0.5' });
-          $decrementBtn.eq(j).css({ cursor: 'default' });
+          $decrementBtn.eq(j).addClass('dropdown__button-decrement_inactive');
         } else {
-          $decrementBtn.eq(j).css({ opacity: '1' });
-          $decrementBtn.eq(j).css({ cursor: 'pointer' });
+          $decrementBtn.eq(j).removeClass('dropdown__button-decrement_inactive');
         }
       }
     };
@@ -82,10 +80,10 @@ $(document).ready(() => {
     $dropdown__wrapper.eq(i).find('.dropdown__input-icon').click(() => {
       if ($dropdown__wrapper.eq(i).find('.dropdown__input-icon-text').text() === 'expand_more') {
         $dropdown__wrapper.eq(i).find('.dropdown__input-icon-text').text('expand_less');
-        $dropdown__wrapper.eq(i).attr('style', 'border-radius: 4px 4px 0 0;');
+        $dropdown__wrapper.eq(i).addClass('dropdown__wrapper_witch-menu');
       } else {
         $dropdown__wrapper.eq(i).find('.dropdown__input-icon-text').text('expand_more');
-        $dropdown__wrapper.eq(i).attr('style', '');
+        $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_witch-menu');
       }
       $dropdown__wrapper.eq(i).toggleClass('dropdown__wrapper_menu-open');
     });
@@ -118,7 +116,7 @@ $(document).ready(() => {
     $dropdown__wrapper.eq(i).find('.dropdown__set-btn').click((e) => {
       e.preventDefault();
       $dropdown__wrapper.eq(i).find('.dropdown__input-icon-text').text('expand_more');
-      $dropdown__wrapper.eq(i).attr('style', '');
+      $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_witch-menu');
       $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_menu-open');
       $dropdown__wrapper.eq(i).find('.dropdown__selection').attr('value', inputValue);
     });
@@ -126,7 +124,7 @@ $(document).ready(() => {
       e.preventDefault();
       totalCount = 0;
       $dropdown__wrapper.eq(i).find('.dropdown__counter').html('0');
-      $dropdownClear.css({ display: 'none' });
+      $dropdownClear.removeClass('dropdown__clear-btn_visible');
       opacytyBtn();
       $dropdown__wrapper.eq(i).find('.dropdown__selection').attr('placeholder', 'Сколько гостей');
       $dropdown__wrapper.eq(i).find('.dropdown__selection').attr('value', '');
