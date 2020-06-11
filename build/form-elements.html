@@ -31,14 +31,14 @@
                 <section class="input">
                   <h3 class="input__header">Text Field</h3>
                   <p class="input__text">Hover / Focus</p>
-                  <input class="input__field input__field_hover" type="email" name="form-elements__input-2" placeholder="">
+                  <input class="input__field input__field_hover" type="email" name="form-elements__input-2" value="This is pretty awesome" placeholder="">
                 </section>
           </div>
           <div class="form-elements__item">
                 <section class="input">
                   <h3 class="input__header">Dropdown</h3>
                   <p class="input__text">Default</p>
-                  <input class="input__field " type="email" name="form-elements__input-3" placeholder=""><i class="input__icon">expand_more</i>
+                  <input class="input__field " type="email" name="form-elements__input-3" value="Сколько гостей" placeholder=""><i class="input__icon">expand_more</i>
                 </section>
           </div>
           <div class="form-elements__item">
@@ -59,14 +59,14 @@
             <div class="form-elements__item-inner form-elements__item-inner_right">
                   <section class="input">
                     <h3 class="input__header">date Dropdown</h3>
-                    <input class="input__field " type="date" name="form-elements__input-6" placeholder=""><i class="input__icon">expand_more</i>
+                    <input class="input__field input__field_uppercase" type="date" name="form-elements__input-6" value="2019-08-19" placeholder=""><i class="input__icon">expand_more</i>
                   </section>
             </div>
           </div>
           <div class="form-elements__item">
                 <section class="input">
                   <h3 class="input__header">filter date dropdown</h3>
-                  <input class="input__field " type="email" name="form-elements__input-7" placeholder=""><i class="input__icon">expand_more</i>
+                  <input class="input__field " type="text" name="form-elements__input-7" value="19 авг - 23 авг" placeholder=""><i class="input__icon">expand_more</i>
                 </section>
           </div>
           <div class="form-elements__item">
@@ -177,7 +177,7 @@
             <div class="form-elements__btn btn btn__theme_light btn_hover"><span class="btn__text">click me</span></div>
             <div class="form-elements__btn btn btn_icon-link">click me</div>
             <div class="form-elements__btn btn btn_icon-link btn_icon-link-hover">click me</div>
-            <div class="form-elements__btn btn btn_arrow">перейти к оплате</div>
+            <div class="form-elements__btn btn btn_witch-arrow">перейти к оплате</div>
           </div>
           <div class="form-elements__item">
             <h3 class="form-elements__item-title">pagination</h3>
@@ -187,35 +187,34 @@
         </section>
         <section class="form-elements__section">
           <div class="form-elements__item">
-                <section class="dropdown">
-                  <div class="dropdown__type">rooms</div>
+                <section class="dropdown dropdown_theme_rooms">
                   <div class="dropdown__container ">
                     <h3 class="dropdown__header">dropdown</h3>
                     <p class="dropdown__state">Default</p>
-                    <div class="iqdropdown">
+                    <div class="dropdown__wrapper">
                       <div class="dropdown__input">
-                        <input class="iqdropdown-selection " name="" autocomplete="off" readonly>
+                        <input class="dropdown__selection " name="" autocomplete="off" readonly>
                         <div class="dropdown__input-icon"><i class="dropdown__input-icon-text">expand_more</i></div>
-                        <div class="iqdropdown-menu">
-                          <div class="iqdropdown-menu-option" data-id="item1">
-                            <h3 class="iqdropdown-item">спальни</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                        <div class="dropdown__menu">
+                          <div class="dropdown__menu-item-wrapper" data-id="item1">
+                            <h3 class="dropdown__item-title">спальни</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
-                          <div class="iqdropdown-menu-option" data-id="item2">
-                            <h3 class="iqdropdown-item">кровати</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                          <div class="dropdown__menu-item-wrapper" data-id="item2">
+                            <h3 class="dropdown__item-title">кровати</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
-                          <div class="iqdropdown-menu-option" data-id="item3">
-                            <h3 class="iqdropdown-item">ванные комнаты</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                          <div class="dropdown__menu-item-wrapper" data-id="item3">
+                            <h3 class="dropdown__item-title">ванные комнаты</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
                         </div>
@@ -225,35 +224,34 @@
                 </section>
           </div>
           <div class="form-elements__item">
-                <section class="dropdown">
-                  <div class="dropdown__type">rooms</div>
+                <section class="dropdown dropdown_theme_rooms">
                   <div class="dropdown__container ">
                     <h3 class="dropdown__header">dropdown</h3>
                     <p class="dropdown__state">expanded</p>
-                    <div class="iqdropdown">
+                    <div class="dropdown__wrapper">
                       <div class="dropdown__input">
-                        <input class="iqdropdown-selection " name="" autocomplete="off" readonly>
+                        <input class="dropdown__selection " name="" autocomplete="off" readonly>
                         <div class="dropdown__input-icon"><i class="dropdown__input-icon-text">expand_more</i></div>
-                        <div class="iqdropdown-menu">
-                          <div class="iqdropdown-menu-option" data-id="item1">
-                            <h3 class="iqdropdown-item">спальни</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                        <div class="dropdown__menu">
+                          <div class="dropdown__menu-item-wrapper" data-id="item1">
+                            <h3 class="dropdown__item-title">спальни</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
-                          <div class="iqdropdown-menu-option" data-id="item2">
-                            <h3 class="iqdropdown-item">кровати</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                          <div class="dropdown__menu-item-wrapper" data-id="item2">
+                            <h3 class="dropdown__item-title">кровати</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
-                          <div class="iqdropdown-menu-option" data-id="item3">
-                            <h3 class="iqdropdown-item">ванные комнаты</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                          <div class="dropdown__menu-item-wrapper" data-id="item3">
+                            <h3 class="dropdown__item-title">ванные комнаты</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
                         </div>
@@ -305,35 +303,34 @@
         </section>
         <section class="form-elements__section">
           <div class="form-elements__item">
-                <section class="dropdown">
-                  <div class="dropdown__type">peoples</div>
+                <section class="dropdown dropdown_theme_peoples">
                   <div class="dropdown__container ">
                     <h3 class="dropdown__header">dropdown</h3>
                     <p class="dropdown__state"></p>
-                    <div class="iqdropdown">
+                    <div class="dropdown__wrapper">
                       <div class="dropdown__input">
-                        <input class="iqdropdown-selection " name="" autocomplete="off" readonly>
+                        <input class="dropdown__selection " name="" autocomplete="off" readonly>
                         <div class="dropdown__input-icon"><i class="dropdown__input-icon-text">expand_more</i></div>
-                        <div class="iqdropdown-menu">
-                          <div class="iqdropdown-menu-option" data-id="item1">
-                            <h3 class="iqdropdown-item">взрослые</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                        <div class="dropdown__menu">
+                          <div class="dropdown__menu-item-wrapper" data-id="item1">
+                            <h3 class="dropdown__item-title">взрослые</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
-                          <div class="iqdropdown-menu-option" data-id="item2">
-                            <h3 class="iqdropdown-item">дети</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                          <div class="dropdown__menu-item-wrapper" data-id="item2">
+                            <h3 class="dropdown__item-title">дети</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
-                          <div class="iqdropdown-menu-option" data-id="item3">
-                            <h3 class="iqdropdown-item">младенцы</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                          <div class="dropdown__menu-item-wrapper" data-id="item3">
+                            <h3 class="dropdown__item-title">младенцы</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
                           <div class="dropdown__bottom">
@@ -368,35 +365,34 @@
         </section>
         <section class="form-elements__section">
           <div class="form-elements__item">
-                <section class="dropdown">
-                  <div class="dropdown__type">peoples</div>
+                <section class="dropdown dropdown_theme_peoples">
                   <div class="dropdown__container ">
                     <h3 class="dropdown__header">dropdown</h3>
                     <p class="dropdown__state"></p>
-                    <div class="iqdropdown">
+                    <div class="dropdown__wrapper">
                       <div class="dropdown__input">
-                        <input class="iqdropdown-selection " name="" autocomplete="off" readonly>
+                        <input class="dropdown__selection " name="" autocomplete="off" readonly>
                         <div class="dropdown__input-icon"><i class="dropdown__input-icon-text">expand_more</i></div>
-                        <div class="iqdropdown-menu">
-                          <div class="iqdropdown-menu-option" data-id="item1">
-                            <h3 class="iqdropdown-item">взрослые</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                        <div class="dropdown__menu">
+                          <div class="dropdown__menu-item-wrapper" data-id="item1">
+                            <h3 class="dropdown__item-title">взрослые</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
-                          <div class="iqdropdown-menu-option" data-id="item2">
-                            <h3 class="iqdropdown-item">дети</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                          <div class="dropdown__menu-item-wrapper" data-id="item2">
+                            <h3 class="dropdown__item-title">дети</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
-                          <div class="iqdropdown-menu-option" data-id="item3">
-                            <h3 class="iqdropdown-item">младенцы</h3>
-                                <div class="iqdropdown-item-controls">
-                                  <button class="button-decrement"><i class="icon-decrement"></i></button><span class="counter">0</span>
-                                  <button class="button-increment"><i class="icon-increment"></i></button>
+                          <div class="dropdown__menu-item-wrapper" data-id="item3">
+                            <h3 class="dropdown__item-title">младенцы</h3>
+                                <div class="dropdown__item-controls">
+                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
+                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
                                 </div>
                           </div>
                           <div class="dropdown__bottom">
