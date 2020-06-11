@@ -37,6 +37,7 @@
   margin: 0 auto;
   padding-right: 11%*100/1440;
   padding-left: 20%*100/1440;
+  min-height: 830px;
   @media (max-width: 1440px) {
     max-width: $page-container;
   }
@@ -48,9 +49,11 @@
   padding-top: 70px;
   @media (max-width: $mobile-menu-breakpoint) {
     padding-top: 30px;
+    min-height: 584px;
   }
   @media (max-width: 650px) {
     flex-direction: column;
+    min-height: 498px;
   }
 }
 .landing {
@@ -66,40 +69,40 @@
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
-.landing__form-wrapper {
-   flex: 0 0 380px;
-  max-width: 380px;
-  margin-bottom: 386px;
-  @media (max-width: $page-container) {
-    flex: 0 0 380px;
-  }
-  @media (max-width: $mobile-menu-breakpoint) {
-    margin-bottom: 180px;
-  }
-  @media (max-width: 650px) {
-    margin-bottom: 20px;
-  }
-  @media (max-width: 420px) {
-    display: block;
-    flex: none;
-    width: 100%;
-  }
-  // padding-left: 30%*100/1200;
-  // padding-right: 30%*100/1200;
-  margin-right: 20px;
-  width: 100%;
-  background-color: $white;
-  border-radius: 4px;
-  box-shadow: 0 0 25px $shadow;
-  // @media (max-width: 1440px) {
-  //   padding-left: 30px;
-  //   padding-right: 30px;
-  // }
-  // @media (max-width: 385px) {
-  //   padding-left: 30%*100/385;
-  //   padding-left: 30%*100/385;
-  // }
-}
+// .landing__form-wrapper {
+//    flex: 0 0 380px;
+//   max-width: 380px;
+//   margin-bottom: 386px;
+//   @media (max-width: $page-container) {
+//     flex: 0 0 380px;
+//   }
+//   @media (max-width: $mobile-menu-breakpoint) {
+//     margin-bottom: 180px;
+//   }
+//   @media (max-width: 650px) {
+//     margin-bottom: 20px;
+//   }
+//   @media (max-width: 420px) {
+//     display: block;
+//     flex: none;
+//     width: 100%;
+//   }
+//   // padding-left: 30%*100/1200;
+//   // padding-right: 30%*100/1200;
+//   margin-right: 20px;
+//   width: 100%;
+//   background-color: $white;
+//   border-radius: 4px;
+//   box-shadow: 0 0 25px $shadow;
+//   // @media (max-width: 1440px) {
+//   //   padding-left: 30px;
+//   //   padding-right: 30px;
+//   // }
+//   // @media (max-width: 385px) {
+//   //   padding-left: 30%*100/385;
+//   //   padding-left: 30%*100/385;
+//   // }
+// }
 .landing__text {
   display: block;
   padding-left: 20px;

@@ -2,8 +2,14 @@
 .search-form {
   padding-top: 40px;
   padding-bottom: 30px;
-  padding-left: 30%*100/380;
-  padding-right: 30%*100/380;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: $white;
+  border-radius: 4px;
+  flex: 0 0 380px;
+  max-width: 380px;
+  box-shadow: 0 0 25px $shadow;
+  margin-bottom: auto;
   @media (max-width: 1440px) {
     padding-left: 30px;
     padding-right: 30px;
