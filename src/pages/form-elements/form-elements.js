@@ -35,7 +35,16 @@ $(document).ready(() => {
   $button.eq(6).trigger('click');
   $('.form-elements__section:nth-child(8) .dropdown__input-icon-text').trigger('click');
 
-  $('.form-elements__section:nth-child(3) .form-elements__item:nth-child(3)').bind('DOMSubtreeModified', () => {
+  const $roomDropdown = $('.dropdown_theme_rooms');
+  for (let i = 0; i < 2; i += 1) {
+    const $dropdownBtn = $roomDropdown.eq(i).find('.dropdown__button-increment');
+    for (let j = 0; j < 2; j += 1) {
+      $dropdownBtn.eq(j).trigger('click');
+      $dropdownBtn.eq(j).trigger('click');
+    }
+  }
+
+    $('.form-elements__section:nth-child(3) .form-elements__item:nth-child(3)').bind('DOMSubtreeModified', () => {
     const $paginationPage = $('.paginationjs-page');
     if ($paginationPage.length > 4) {
       $paginationPage.css({ 'margin-right': '-8px' });
