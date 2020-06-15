@@ -76,7 +76,7 @@ $(document).ready(() => {
     };
     opacytyBtn();
 
-    $dropdown__wrapper.eq(i).find('.dropdown__input-icon').click(() => {
+    $dropdown__wrapper.eq(i).find('.dropdown__input-icon-text').click(() => {
       if ($dropdown__wrapper.eq(i).find('.dropdown__input-icon-text').text() === 'expand_more') {
         $dropdown__wrapper.eq(i).find('.dropdown__input-icon-text').text('expand_less');
         $dropdown__wrapper.eq(i).addClass('dropdown__wrapper_witch-menu');
