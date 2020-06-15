@@ -33,7 +33,7 @@ $(document).ready(() => {
   $button.eq(1).trigger('click');
   $button.eq(3).trigger('click');
   $button.eq(6).trigger('click');
-  $('.form-elements__section:nth-child(8) .dropdown__input-icon-text').trigger('click');
+  $('.form-elements__section:nth-child(8) .dropdown__input-icon').trigger('click');
 
   const $roomDropdown = $('.dropdown_theme_rooms');
   for (let i = 0; i < 2; i += 1) {

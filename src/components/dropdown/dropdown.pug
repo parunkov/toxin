@@ -10,8 +10,7 @@ mixin dropdown(type, cl, h3, p, item1, item2, item3, clear)
 		h2.dropdown__title= h3
 		.dropdown__wrapper
 			input(type= text name= cl class="dropdown__selection "+cl autocomplete="off" readonly)
-			// .dropdown__input-icon
-			i.dropdown__input-icon-text= "expand_more"
+			i.dropdown__input-icon= "expand_more"
 			.dropdown__menu
 				div(class="dropdown__menu-item-wrapper" data-id="item1")
 					h3.dropdown__item-title #{item1}
