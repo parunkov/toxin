@@ -6,10 +6,10 @@ mixin dropdown__menu-item()
 		button.dropdown__button-increment
 			i.dropdown__icon-increment
 mixin dropdown(type, cl, h3, p, item1, item2, item3, clear)
-	div(class="dropdown dropdown_theme_" + type)
+	section(class="dropdown dropdown_theme_" + type)
 		div(class="dropdown__container " + cl)
 			h2.dropdown__title= h3
-			p.dropdown__state= p
+			// p.dropdown__state= p
 			.dropdown__wrapper
 				.dropdown__input
 					input(type= text name= cl class="dropdown__selection "+cl autocomplete="off" readonly)

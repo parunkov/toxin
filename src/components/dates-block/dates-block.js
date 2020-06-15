@@ -3,36 +3,36 @@ import '../../variables.scss';
 import '../input/input';
 import '../dropdown/dropdown';
 import '../datepicker-block/datepicker-block';
-import './inputs-block.scss';
+import './dates-block.scss';
 import $ from 'jquery';
 
-const $myDatepicker = $('.inputs-block__datepicker-container .datepicker-block__content').datepicker().data('datepicker');
-const $datepickerContainer = $('.inputs-block__datepicker-container');
-const $setBtn = $('.inputs-block__datepicker-container .datepicker-block__set-btn');
-const $clearBtn = $('.inputs-block__datepicker-container .datepicker-block__clear-btn');
-const $arrival = $('.inputs-block__arrival-wrapper .input__field');
-const $departure = $('.inputs-block__departure-wrapper .input__field');
+const $myDatepicker = $('.dates-block__datepicker-container .datepicker-block__content').datepicker().data('datepicker');
+const $datepickerContainer = $('.dates-block__datepicker-container');
+const $setBtn = $('.dates-block__datepicker-container .datepicker-block__set-btn');
+const $clearBtn = $('.dates-block__datepicker-container .datepicker-block__clear-btn');
+const $arrival = $('.dates-block__arrival-wrapper .input__field');
+const $departure = $('.dates-block__departure-wrapper .input__field');
 
-const $icon = $('.inputs-block__inputs-wrapper .input__icon');
+const $icon = $('.dates-block__inputs-wrapper .input__icon');
 console.log($icon);
-const $iconText = $('.inputs-block__inputs-wrapper .input__icon');
+const $iconText = $('.dates-block__inputs-wrapper .input__icon');
 
 const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.getMonth() + 1}`).substr(-2)}.${date.getFullYear()}`;
 
 $arrival.attr('disabled', '');
 $departure.attr('disabled', '');
 
-$('.inputs-block .input__icon').click(function (evt) {
+$('.dates-block .input__icon').click(function (evt) {
   evt.preventDefault();
-  if ($datepickerContainer.hasClass('inputs-block__datepicker-container_visible') && $(this).text() === 'expand_more') {
-    $datepickerContainer.removeClass('inputs-block__datepicker-container_visible');
+  if ($datepickerContainer.hasClass('dates-block__datepicker-container_visible') && $(this).text() === 'expand_more') {
+    $datepickerContainer.removeClass('dates-block__datepicker-container_visible');
     $iconText.text('expand_more');
     $(this).text('expand_more');
     $icon.css({ cursor: 'pointer' });
-  } else if ($datepickerContainer.hasClass('inputs-block__datepicker-container_visible') && $(this).text() === 'expand_less') {
+  } else if ($datepickerContainer.hasClass('dates-block__datepicker-container_visible') && $(this).text() === 'expand_less') {
     $(this).text('expand_more');
-  } else if (!$datepickerContainer.hasClass('inputs-block__datepicker-container_visible') && $(this).text() === 'expand_less') {
-    $datepickerContainer.addClass('inputs-block__datepicker-container_visible');
+  } else if (!$datepickerContainer.hasClass('dates-block__datepicker-container_visible') && $(this).text() === 'expand_less') {
+    $datepickerContainer.addClass('dates-block__datepicker-container_visible');
     $iconText.text('expand_more');
     $icon.css({ cursor: 'default' });
     $(this).text('expand_less');
@@ -40,7 +40,7 @@ $('.inputs-block .input__icon').click(function (evt) {
   }
   $setBtn.click((e) => {
     e.preventDefault();
-    $datepickerContainer.removeClass('inputs-block__datepicker-container_visible');
+    $datepickerContainer.removeClass('dates-block__datepicker-container_visible');
     $icon.css({ cursor: 'pointer' });
     $iconText.text('expand_more');
     if ($myDatepicker.selectedDates[0]) {

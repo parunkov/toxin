@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-.inputs-block__inputs-wrapper {
+.dates-block__inputs-wrapper {
   display: flex;
   flex-wrap: nowrap;
   margin-bottom: 18px;
@@ -21,7 +21,7 @@
     }
   }
 }
-.inputs-block__arrival-wrapper, .inputs-block__departure-wrapper {
+.dates-block__arrival-wrapper, .dates-block__departure-wrapper {
   margin-top: auto;
   flex: 0 0 47.24%;
   .input__icon {
@@ -30,10 +30,10 @@
     }
   }
 }
-.inputs-block__arrival-wrapper {
+.dates-block__arrival-wrapper {
   margin-right: auto;
 }
-.inputs-block__arrival-wrapper .input__field, .inputs-block__departure-wrapper .input__field {
+.dates-block__arrival-wrapper .input__field, .dates-block__departure-wrapper .input__field {
   text-transform: uppercase;
   letter-spacing: -0.4px;
   cursor: default;
@@ -44,13 +44,13 @@
     padding-left: 12px;
   }
 }
-.inputs-block .dropdown__container {
+.dates-block .dropdown__container {
   margin-bottom: 19px;
 }
-.inputs-block__datepicker-wrapper {
+.dates-block__datepicker-wrapper {
   position: relative;
 }
-.inputs-block__datepicker-container {
+.dates-block__datepicker-container {
   position: absolute;
   top: -10px;
   z-index: 10;

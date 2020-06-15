@@ -49,6 +49,7 @@
   }
 }
 .reservation-form__text {
+  display: block;
   font-weight: 400;
   font-size: 14px;
   font-family: Montserrat, Arial, sans-serif;
@@ -64,6 +65,9 @@
     float: right;
     width: 75%*100/320;
     text-align: right;
+  }
+  &:nth-child(3) {
+    margin-top: 19px;
   }
 }
 .reservation-form__i {
