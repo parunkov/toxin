@@ -257,6 +257,9 @@
   border: none;
   outline: none;
   background: transparent;
+  &:hover {
+    color: $black-50;
+  }
 } 
 .datepicker-block__clear-btn {
   display: none;
