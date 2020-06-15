@@ -1,8 +1,10 @@
 @import '../../variables.scss';
+.dates-block {
+  margin-bottom: 18px;
+}
 .dates-block__inputs-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  margin-bottom: 18px;
   .input__header {
     word-break: break-all;
   }
@@ -44,9 +46,9 @@
     padding-left: 12px;
   }
 }
-.dates-block .dropdown__container {
-  margin-bottom: 19px;
-}
+// .dates-block .dropdown__container {
+//   margin-bottom: 19px;
+// }
 .dates-block__datepicker-wrapper {
   position: relative;
 }
