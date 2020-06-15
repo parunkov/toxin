@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-// @import './item-quantity-dropdown.min.css';
+
 .dropdown {
   position: relative;
   min-height: 68px;
@@ -48,7 +48,6 @@
 }
 .dropdown__wrapper .dropdown__selection {
   position: relative;
-  // position: absolute;
   top: 9px;
   left: 0;
   display: block;
@@ -106,7 +105,7 @@
   margin-right: -1px;
   margin-left: -1px;
   padding-top: 7px;
-  padding-right: 15px;
+  padding-right: 0;
   background-color: $white;
   border: 1px solid $black-50;
   border-radius: 0 0 4px 4px;
@@ -123,7 +122,7 @@
 .dropdown__item-controls {
   position: absolute;
   top: 0;
-  right: -8px;
+  right: 7px;
 }
 .dropdown__wrapper .dropdown__button-decrement, .dropdown__wrapper .dropdown__button-increment {
   position: relative;
@@ -180,7 +179,7 @@
   display: flex;
   flex-direction: row-reverse;
   margin-top: 18px;
-  margin-right: -13px;
+  margin-right: 2px;
   margin-bottom: 12px;
   padding-left: 6px;
 }
