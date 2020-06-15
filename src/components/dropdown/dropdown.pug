@@ -9,21 +9,21 @@ mixin dropdown(type, cl, h3, p, item1, item2, item3, clear)
 	section(class="dropdown dropdown_theme_" + type)
 		h2.dropdown__title= h3
 		.dropdown__wrapper
-			.dropdown__input
-				input(type= text name= cl class="dropdown__selection "+cl autocomplete="off" readonly)
-				.dropdown__input-icon
-					i.dropdown__input-icon-text= "expand_more"
-				.dropdown__menu
-					div(class="dropdown__menu-item-wrapper" data-id="item1")
-						h3.dropdown__item-title #{item1}
-						+dropdown__menu-item
-					div(class="dropdown__menu-item-wrapper" data-id="item2")
-						h3.dropdown__item-title #{item2}
-						+dropdown__menu-item
-					div(class="dropdown__menu-item-wrapper" data-id="item3")
-						h3.dropdown__item-title #{item3}
-						+dropdown__menu-item
-					if clear
-						.dropdown__bottom
-							button(type="button" class="dropdown__set-btn") применить
-							button(type="button" class="dropdown__clear-btn") очистить
+			// .dropdown__input
+			input(type= text name= cl class="dropdown__selection "+cl autocomplete="off" readonly)
+			.dropdown__input-icon
+				i.dropdown__input-icon-text= "expand_more"
+			.dropdown__menu
+				div(class="dropdown__menu-item-wrapper" data-id="item1")
+					h3.dropdown__item-title #{item1}
+					+dropdown__menu-item
+				div(class="dropdown__menu-item-wrapper" data-id="item2")
+					h3.dropdown__item-title #{item2}
+					+dropdown__menu-item
+				div(class="dropdown__menu-item-wrapper" data-id="item3")
+					h3.dropdown__item-title #{item3}
+					+dropdown__menu-item
+				if clear
+					.dropdown__bottom
+						button(type="button" class="dropdown__set-btn") применить
+						button(type="button" class="dropdown__clear-btn") очистить
