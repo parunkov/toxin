@@ -15,7 +15,8 @@ $gradient-green: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 $gradient-black: linear-gradient(180deg, #919191 0%, #3d4975 100%);
 $shadow: rgba(0, 0, 0, 0.2);
 $black-text: #000000;
-$bg-purple: rgba(188, 156, 255, 0.25);
+// $bg-purple: rgba(188, 156, 255, 0.25);
+$bg-purple: linear-gradient(180deg, rgba(188, 156, 255, 0.25) 0%, rgba(139, 164, 249, 0.25) 100%);
 // width
 $page-min: 320px;
 $page-content-min: 315px;

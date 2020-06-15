@@ -121,6 +121,9 @@
   font-weight: 400;
   color: $white;
 }
+.datepicker--cell-day.-other-month- {
+  color: $black-25;
+}
 .datepicker--cell-day.-other-month-::before, .datepicker--cell-day.-other-month-:hover, .-selected-.datepicker--cell-day.-other-month-:hover {
   color: $white;
 }
