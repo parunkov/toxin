@@ -31,15 +31,15 @@ $clear.each((i) => {
   $clear.eq(i).click((evt) => {
     evt.preventDefault();
     myDatepickers[i].clear();
-    $clear.eq(i).css({ display: 'none' });
+    $clear.eq(i).removeClass('datepicker-block__clear-btn_visible');
   });
 });
 $('.datepicker-block').each(function (i) {
-  $(this).mouseup(() => {
+  $(this).mousemove(() => {
     if (myDatepickers[i].selectedDates.length === 0) {
-      $clear.eq(i).css({ display: 'none' });
+      $clear.eq(i).removeClass('datepicker-block__clear-btn_visible');
     } else {
-      $clear.eq(i).css({ display: 'block' });
+      $clear.eq(i).addClass('datepicker-block__clear-btn_visible');
     }
   });
 });

@@ -262,6 +262,9 @@
   display: none;
   margin-right: auto;
   color: $black-50;
+  &_visible {
+    display: block;
+  }
 }
 .datepicker-block__set-btn {
   display: inline-block;
