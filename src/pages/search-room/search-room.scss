@@ -104,23 +104,23 @@
 .search-room__input-wrapper {
   margin-bottom: 17px;
 }
-.search-room__input-wrapper .input__field {
-  &::-webkit-input-placeholder {
-    color: $black-75;
-  }
-  &::-moz-placeholder {
-    color: $black-75;
-  }
-  &:-moz-placeholder {
-    color: $black-75;
-  }
-  &:-ms-input-placeholder {
-    color: $black-75;
-  }
-  &:hover {
-    border: 1px solid $black-25;
-  }
-}
+// .search-room__input-wrapper .input__field {
+//   &::-webkit-input-placeholder {
+//     color: $black-75;
+//   }
+//   &::-moz-placeholder {
+//     color: $black-75;
+//   }
+//   &:-moz-placeholder {
+//     color: $black-75;
+//   }
+//   &:-ms-input-placeholder {
+//     color: $black-75;
+//   }
+//   &:hover {
+//     border: 1px solid $black-25;
+//   }
+// }
 .search-room__datepicker-wrapper {
   position: relative;
 }

@@ -18,24 +18,26 @@
     }
   }
 }
-.registration-form__input-wrapper:nth-child(1) .input__field {
+.registration-form__input-wrapper:nth-child(1) {
   margin-bottom: 10px;
 }
-.registration-form__input-wrapper:nth-child(2) .input__field {
+.registration-form__input-wrapper:nth-child(2) {
   margin-bottom: 10px;
 }
 .registration-form__radio-wrapper {
   margin-bottom: 19px;
 }
-.registration-form__input-wrapper:nth-child(4) .input__field {
+.registration-form__input-wrapper:nth-child(4) {
   margin-bottom: 17px;
-  text-transform: uppercase;
-  letter-spacing: -0.4px;
+  // .input__field {
+  //   text-transform: uppercase;
+  //   letter-spacing: -0.4px;
+  // }
 }
-.registration-form__input-wrapper:nth-child(5) .input__field {
+.registration-form__input-wrapper:nth-child(5) {
   margin-bottom: 10px;
 }
-.registration-form__input-wrapper:nth-child(6) .input__field {
+.registration-form__input-wrapper:nth-child(6) {
   margin-bottom: 10px;
 }
 .registration-form__toggle-wrapper {

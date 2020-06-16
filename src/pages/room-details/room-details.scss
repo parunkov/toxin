@@ -124,6 +124,7 @@
 .room-details__content-row:first-child {
   display: flex;
   flex-wrap: nowrap;
+  margin-bottom: 0;
   @media (max-width: 1080px) {
     flex-wrap: wrap;
   }
@@ -262,9 +263,10 @@
 .room-details__content-row:nth-child(2) {
   display: flex;
   flex-wrap: nowrap;
+  margin-bottom: 10px;
   .room-details__article {
     flex: 0 1 100%;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     .room-details__title {
       margin-bottom: 21px;
     }

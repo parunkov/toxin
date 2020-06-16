@@ -81,6 +81,10 @@
       color: $black-25;
     }
   }
+  &_theme_caps {
+    text-transform: uppercase;
+    letter-spacing: -0.4px;
+  }
   &_with-arrow {
     &::-webkit-input-placeholder {
       color: $black-25;
