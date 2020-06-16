@@ -7,7 +7,7 @@
 .dropdown__type {
   display: none;
 }
-.dropdown__title {
+.dropdown__name {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.2em;
@@ -83,7 +83,7 @@
   background: $white;
   transform: rotate(180deg);
 }
-.dropdown__item-title {
+.dropdown__item-text {
   padding-right: 35%;
   margin-bottom: 7px;
   font-weight: 700;

@@ -2,7 +2,7 @@
 .input {
   position: relative;
 }
-.input__header {
+.input__name {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.2em;
@@ -13,6 +13,7 @@
   float: left;
   margin-bottom: 5px;
   padding-top: 4px;
+  // word-break: break-all;
 }
 .input__text {
   line-height: 1.6em;
