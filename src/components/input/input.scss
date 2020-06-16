@@ -40,16 +40,16 @@
   border: 1px solid $black-25;
   border-radius: 4px;
   &::-webkit-input-placeholder {
-    color: $black-25;
+    color: $black-75;
   }
   &::-moz-placeholder {
-    color: $black-25;
+    color: $black-75;
   }
   &:-moz-placeholder {
-    color: $black-25;
+    color: $black-75;
   }
   &:-ms-input-placeholder {
-    color: $black-25;
+    color: $black-75;
   }
   &:hover, &_hover, &:focus, &_focus {
     border: 1px solid $black-50;
@@ -67,7 +67,37 @@
   &::-ms-clear {
     display: none;
   }
+  &_theme_light {
+    &::-webkit-input-placeholder {
+      color: $black-25;
+    }
+    &::-moz-placeholder {
+      color: $black-25;
+    }
+    &:-moz-placeholder {
+      color: $black-25;
+    }
+    &:-ms-input-placeholder {
+      color: $black-25;
+    }
+  }
   &_with-arrow {
+    &::-webkit-input-placeholder {
+      color: $black-25;
+    }
+    &::-moz-placeholder {
+      color: $black-25;
+    }
+    &:-moz-placeholder {
+      color: $black-25;
+    }
+    &:-ms-input-placeholder {
+      color: $black-25;
+    }
+    &:hover, &_hover, &:focus, &_focus {
+      border: 1px solid $black-50;
+      outline: none;
+    }
     + .input__icon{
       display: block;
       padding-top: 10px;

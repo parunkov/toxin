@@ -8,20 +8,20 @@
   // .input__name {
   //   word-break: break-all;
   // }
-  input {
-    &::-webkit-input-placeholder {
-      color: $black-75;
-    }
-    &::-moz-placeholder {
-      color: $black-75;
-    }
-    &:-moz-placeholder {
-      color: $black-75;
-    }
-    &:-ms-input-placeholder {
-      color: $black-75;
-    }
-  }
+  // input {
+  //   &::-webkit-input-placeholder {
+  //     color: $black-75;
+  //   }
+  //   &::-moz-placeholder {
+  //     color: $black-75;
+  //   }
+  //   &:-moz-placeholder {
+  //     color: $black-75;
+  //   }
+  //   &:-ms-input-placeholder {
+  //     color: $black-75;
+  //   }
+  // }
 }
 .dates-block__arrival-wrapper, .dates-block__departure-wrapper {
   margin-top: auto;
