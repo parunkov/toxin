@@ -62,12 +62,15 @@
   max-width: 415px;
   margin-left: 6px;
 }
+.colors-types__color-block-wrapper {
+  margin-bottom: 18.5px;
+}
 .colors-types__color-block {
   display: inline-block;
   width: 70px;
   height: 70px;
   margin-right: 36px;
-  margin-bottom: 18.5px;
+  // margin-bottom: 18.5px;
   background-color: $black;
   border-radius: 6px;
   &_color_dark75 {
@@ -112,6 +115,7 @@
 .colors-types__types-block-wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 .colors-types__left-part {
   flex: 0 0 60px;
@@ -124,7 +128,7 @@
 }
 .colors-types__right-part {
   flex: 1 0 200px;
-  margin-bottom: 48px;
+  // margin-bottom: 48px;
   padding-top: 2px;
   padding-left: 7px;
   &_body {
