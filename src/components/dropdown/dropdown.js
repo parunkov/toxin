@@ -84,7 +84,6 @@ $(document).ready(() => {
         $dropdown__wrapper.eq(i).find('.dropdown__input-button').text('expand_more');
         $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_witch-menu');
       }
-      $dropdown__wrapper.eq(i).toggleClass('dropdown__wrapper_menu-open');
     });
 
     $dropdown__wrapper.eq(i).find('button').click(() => {
@@ -117,7 +116,6 @@ $(document).ready(() => {
       e.preventDefault();
       $dropdown__wrapper.eq(i).find('.dropdown__input-button').text('expand_more');
       $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_witch-menu');
-      $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_menu-open');
       $dropdown__wrapper.eq(i).find('.dropdown__input').attr('value', inputValue);
     });
     $dropdown__wrapper.eq(i).find('.dropdown__clear-btn').click((e) => {

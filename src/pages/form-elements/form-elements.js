@@ -29,10 +29,11 @@ $(document).ready(() => {
   $('.dropdown__input-button').eq(3).trigger('click');
 
   const $button = $('.form-elements__section:nth-child(8) .form-elements__item .dropdown__wrapper button');
-  $button.eq(1).trigger('click');
-  $button.eq(1).trigger('click');
-  $button.eq(3).trigger('click');
-  $button.eq(6).trigger('click');
+  console.log($button);
+  $button.eq(2).trigger('click');
+  $button.eq(2).trigger('click');
+  $button.eq(4).trigger('click');
+  $button.eq(7).trigger('click');
   $('.form-elements__section:nth-child(8) .dropdown__input-button').trigger('click');
 
   const $roomDropdown = $('.dropdown');
