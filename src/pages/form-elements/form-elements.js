@@ -48,8 +48,9 @@ $(document).ready(() => {
 
     $('.form-elements__section:nth-child(3) .form-elements__item:nth-child(3)').bind('DOMSubtreeModified', () => {
     const $paginationPage = $('.paginationjs-page');
+    $paginationPage.removeClass('paginationjs-page_size_small');
     if ($paginationPage.length > 4) {
-      $paginationPage.css({ 'margin-right': '-8px' });
+      $paginationPage.addClass('paginationjs-page_size_small');
     }
   });
 });
