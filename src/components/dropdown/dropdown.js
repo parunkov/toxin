@@ -18,8 +18,8 @@ $(document).ready(() => {
   $dropdown__wrapper.each((i) => {
     const $dropdown = $('.dropdown');
     const $counter = $dropdown__wrapper.eq(i).find('.dropdown__counter');
-    const $decrementBtn = $dropdown__wrapper.eq(i).find('.dropdown__button-decrement');
-    const $incrementBtn = $dropdown__wrapper.eq(i).find('.dropdown__button-increment');
+    const $decrementBtn = $dropdown__wrapper.eq(i).find('.dropdown__button_decrement');
+    const $incrementBtn = $dropdown__wrapper.eq(i).find('.dropdown__button_increment');
     const $text = $('.dropdown__input');
     const $dropdownClear = $dropdown__wrapper.eq(i).find('.dropdown__clear-btn');
 
@@ -68,9 +68,9 @@ $(document).ready(() => {
     const opacytyBtn = function () {
       for (let j = 0; j < $counter.length; j += 1) {
         if ($counter.eq(j).html() === '0') {
-          $decrementBtn.eq(j).addClass('dropdown__button-decrement_inactive');
+          $decrementBtn.eq(j).addClass('dropdown__button_decrement-inactive');
         } else {
-          $decrementBtn.eq(j).removeClass('dropdown__button-decrement_inactive');
+          $decrementBtn.eq(j).removeClass('dropdown__button_decrement-inactive');
         }
       }
     };

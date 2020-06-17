@@ -1,10 +1,10 @@
 mixin dropdown__menu-item()
 	.dropdown__item-controls
-		button.dropdown__button-decrement
-			i.dropdown__icon-decrement
+		button(type="button" class="dropdown__button dropdown__button_decrement")
+			//- i.dropdown__icon-decrement
 		span.dropdown__counter 0
-		button.dropdown__button-increment
-			i.dropdown__icon-increment
+		button(type="button" class="dropdown__button dropdown__button_increment")
+			//- i.dropdown__icon-increment
 mixin dropdown(type, name, h3, p, item1, item2, item3, clear)
 	section.dropdown
 		span.dropdown__name= h3

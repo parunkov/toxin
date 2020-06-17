@@ -126,7 +126,7 @@
   top: 0;
   right: 7px;
 }
-.dropdown__wrapper .dropdown__button-decrement, .dropdown__wrapper .dropdown__button-increment {
+.dropdown__wrapper .dropdown__button {
   position: relative;
   display: inline-block;
   width: 30px;
@@ -136,8 +136,25 @@
   border-radius: 15px;
   outline: none;
   cursor: pointer;
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: Montserrat, Arial, sans-serif;
+    color: $black-50;
+    transform: translate(-50%, -50%);
+  }
+  &_increment::after {
+    content: '+';
+    transform: translate(-50%, -44%);
+  }
+  &_decrement::after {
+    content: '-';
+  }
 }
-.dropdown__wrapper .dropdown__button-decrement_inactive {
+.dropdown__wrapper .dropdown__button_decrement-inactive {
   opacity: 0.5;
   cursor: default;
 }
@@ -153,29 +170,6 @@
   text-align: center;
   color: $black;
   text-transform: uppercase;
-}
-.dropdown__wrapper .dropdown__icon-decrement, .dropdown__wrapper .dropdown__icon-increment {
-  position: absolute;
-  top: 46%;
-  left: 51%;
-  transform: translate(-50%, -50%);
-}
-.dropdown__wrapper .dropdown__icon-decrement::after, .dropdown__wrapper .dropdown__icon-increment::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-weight: 400;
-  font-size: 18px;
-  font-family: Montserrat, Arial, sans-serif;
-  color: $black-50;
-  transform: translate(-50%, -50%);
-}
-.dropdown__wrapper .dropdown__icon-decrement::after {
-  content: '-';
-}
-.dropdown__wrapper .dropdown__icon-increment::after {
-  content: '+';
-  transform: translate(-50%, -44%);
 }
 .dropdown__bottom {
   display: flex;

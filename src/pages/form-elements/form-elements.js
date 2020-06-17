@@ -39,7 +39,7 @@ $(document).ready(() => {
   const $roomDropdown = $('.dropdown');
   for (let i = 0; i < 2; i += 1) {
     // console.log($roomDropdown.eq(i));
-    const $dropdownBtn = $roomDropdown.eq(i).find('.dropdown__button-increment');
+    const $dropdownBtn = $roomDropdown.eq(i).find('.dropdown__button_increment');
     for (let j = 0; j < 2; j += 1) {
       $dropdownBtn.eq(j).trigger('click');
       $dropdownBtn.eq(j).trigger('click');
