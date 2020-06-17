@@ -12,13 +12,13 @@ mixin dropdown(type, name, h3, p, item1, item2, item3, clear)
 			input(type="text" name= name class="dropdown__input" autocomplete="off" readonly)
 			button(type="button" class="dropdown__input-button")= "expand_more"
 			.dropdown__menu
-				div(class="dropdown__menu-item-wrapper" data-id="item1")
+				div(class="dropdown__item-wrapper")
 					span.dropdown__item-text #{item1}
 					+dropdown__menu-item
-				div(class="dropdown__menu-item-wrapper" data-id="item2")
+				div(class="dropdown__item-wrapper")
 					span.dropdown__item-text #{item2}
 					+dropdown__menu-item
-				div(class="dropdown__menu-item-wrapper" data-id="item3")
+				div(class="dropdown__item-wrapper")
 					span.dropdown__item-text #{item3}
 					+dropdown__menu-item
 				if clear
