@@ -20,7 +20,7 @@ $(document).ready(() => {
     const $counter = $dropdown__wrapper.eq(i).find('.dropdown__counter');
     const $decrementBtn = $dropdown__wrapper.eq(i).find('.dropdown__button-decrement');
     const $incrementBtn = $dropdown__wrapper.eq(i).find('.dropdown__button-increment');
-    const $text = $('.dropdown__selection');
+    const $text = $('.dropdown__input');
     const $dropdownClear = $dropdown__wrapper.eq(i).find('.dropdown__clear-btn');
 
     let totalCount = 0;
@@ -28,8 +28,6 @@ $(document).ready(() => {
 
     $dropdown.each((j) => {
       const type = $dropdown.eq(j).find('.dropdown__item-text').html();
-      // console.log($dropdown.eq(j).find('.dropdown__item-text').html());
-      // console.log(type);
       if (type === 'спальни') {
         $text.eq(j).attr('value', '0 спален, 0 кроватей, 0 ванных');
       } else {
@@ -94,13 +92,12 @@ $(document).ready(() => {
 
       const $itemCounter = $('.dropdown__menu').eq(i).find('.dropdown__counter');
       const type = $dropdown.eq(i).find('.dropdown__item-text').html();
-      // console.log(type);
       if (type === 'спальни'){
         const textPart0 = `${$itemCounter[0].innerHTML} ${num2str(+$itemCounter[0].innerHTML, ['спальня', 'спальни', 'спален'])},`;
         const textPart1 = `${$itemCounter[1].innerHTML} ${num2str(+$itemCounter[1].innerHTML, ['кровать', 'кровати', 'кроватей'])},`;
         const textPart2 = `${$itemCounter[2].innerHTML} ${num2str(+$itemCounter[2].innerHTML, ['ванная', 'ванные', 'ванных'])}`;
 
-        $('.dropdown__selection').eq(i).attr('value', `${textPart0} ${textPart1} ${textPart2}`);
+        $('.dropdown__input').eq(i).attr('value', `${textPart0} ${textPart1} ${textPart2}`);
         inputValue = `${textPart0} ${textPart1} ${textPart2}`;
       } else {
         const guestsNumber = +$itemCounter[0].innerHTML
@@ -121,7 +118,7 @@ $(document).ready(() => {
       $dropdown__wrapper.eq(i).find('.dropdown__input-icon').text('expand_more');
       $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_witch-menu');
       $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_menu-open');
-      $dropdown__wrapper.eq(i).find('.dropdown__selection').attr('value', inputValue);
+      $dropdown__wrapper.eq(i).find('.dropdown__input').attr('value', inputValue);
     });
     $dropdown__wrapper.eq(i).find('.dropdown__clear-btn').click((e) => {
       e.preventDefault();
@@ -129,8 +126,8 @@ $(document).ready(() => {
       $dropdown__wrapper.eq(i).find('.dropdown__counter').html('0');
       $dropdownClear.removeClass('dropdown__clear-btn_visible');
       opacytyBtn();
-      $dropdown__wrapper.eq(i).find('.dropdown__selection').attr('placeholder', 'Сколько гостей');
-      $dropdown__wrapper.eq(i).find('.dropdown__selection').attr('value', '');
+      $dropdown__wrapper.eq(i).find('.dropdown__input').attr('placeholder', 'Сколько гостей');
+      $dropdown__wrapper.eq(i).find('.dropdown__input').attr('value', '');
       inputValue = '';
     });
   });

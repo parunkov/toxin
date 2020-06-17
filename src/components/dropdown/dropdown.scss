@@ -46,7 +46,7 @@
 .dropdown__wrapper_witch-menu {
   border: 1px solid $black-50;
 }
-.dropdown__wrapper .dropdown__selection {
+.dropdown__wrapper .dropdown__input {
   position: relative;
   top: 9px;
   left: 0;
@@ -79,7 +79,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.dropdown__wrapper_witch-menu .dropdown__selection::after {
+.dropdown__wrapper_witch-menu .dropdown__input::after {
   background: $white;
   transform: rotate(180deg);
 }
