@@ -3,7 +3,7 @@ import './input.scss';
 import './input.pug';
 import $ from 'jquery';
 
-const $icon = $('.input__icon');
+const $icon = $('.input__button');
 
 $icon.each((i) => {
   $icon.eq(i).click(() => {

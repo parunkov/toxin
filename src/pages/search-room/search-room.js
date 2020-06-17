@@ -45,7 +45,7 @@ $(document).ready(() => {
   $button2.eq(3).trigger('click');
 
 
-  $('.search-room__input-wrapper i').removeClass('input__icon').addClass('search-room__input-icon');
+  $('.search-room__input-wrapper i').removeClass('input__button').addClass('search-room__input-icon');
   const $icon = $('.search-room__input-icon');
   $icon.each((i) => {
     $icon.eq(i).click(() => {

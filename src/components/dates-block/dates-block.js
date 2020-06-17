@@ -13,16 +13,16 @@ const $clearBtn = $('.dates-block__datepicker-container .datepicker-block__clear
 const $arrival = $('.dates-block__arrival-wrapper .input__field');
 const $departure = $('.dates-block__departure-wrapper .input__field');
 
-const $icon = $('.dates-block__inputs-wrapper .input__icon');
+const $icon = $('.dates-block__inputs-wrapper .input__button');
 console.log($icon);
-const $iconText = $('.dates-block__inputs-wrapper .input__icon');
+const $iconText = $('.dates-block__inputs-wrapper .input__button');
 
 const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.getMonth() + 1}`).substr(-2)}.${date.getFullYear()}`;
 
 $arrival.attr('disabled', '');
 $departure.attr('disabled', '');
 
-$('.dates-block .input__icon').click(function (evt) {
+$('.dates-block .input__button').click(function (evt) {
   evt.preventDefault();
   if ($datepickerContainer.hasClass('dates-block__datepicker-container_visible') && $(this).text() === 'expand_more') {
     $datepickerContainer.removeClass('dates-block__datepicker-container_visible');

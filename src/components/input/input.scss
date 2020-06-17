@@ -102,10 +102,10 @@
       border: 1px solid $black-50;
       outline: none;
     }
-    + .input__icon{
+    + .input__button{
       display: block;
-      padding-top: 10px;
-      padding-left: 0;
+      padding-top: 0;
+      padding-left: 5px;
       background-repeat:no-repeat
     }
   }
@@ -115,13 +115,13 @@
     }
   }
 }
-.input__icon {
+.input__button {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 44px;
   height: 44px;
-  padding-top: 9px;
+  padding-top: 3px;
   text-align: center;
   background: transparent;
   border-radius: 4px;
@@ -130,6 +130,8 @@
   font-size: 24px;
   font-family: 'Material Icons';
   color: $black-50;
+  border: none;
+  outline: none;
   &_color_purple {
     color: $purple;
   }
