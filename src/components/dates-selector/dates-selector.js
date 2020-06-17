@@ -28,20 +28,20 @@ $('.dates-selector .input__button').click(function (evt) {
     $datepickerContainer.removeClass('dates-selector__datepicker-container_visible');
     $iconText.text('expand_more');
     $(this).text('expand_more');
-    $icon.css({ cursor: 'pointer' });
+    $icon.removeClass('input__button_cursor_default');
   } else if ($datepickerContainer.hasClass('dates-selector__datepicker-container_visible') && $(this).text() === 'expand_less') {
     $(this).text('expand_more');
   } else if (!$datepickerContainer.hasClass('dates-selector__datepicker-container_visible') && $(this).text() === 'expand_less') {
     $datepickerContainer.addClass('dates-selector__datepicker-container_visible');
     $iconText.text('expand_more');
-    $icon.css({ cursor: 'default' });
+    $icon.addClass('input__button_cursor_default');
     $(this).text('expand_less');
-    $(this).css({ cursor: 'pointer' });
+    $(this).removeClass('input__button_cursor_default');
   }
   $setBtn.click((e) => {
     e.preventDefault();
     $datepickerContainer.removeClass('dates-selector__datepicker-container_visible');
-    $icon.css({ cursor: 'pointer' });
+    $icon.removeClass('input__button_cursor_default');
     $iconText.text('expand_more');
     if ($myDatepicker.selectedDates[0]) {
       $arrival.attr('value', dateToValue($myDatepicker.selectedDates[0]));
