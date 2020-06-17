@@ -4,7 +4,7 @@ mixin dates-selector
 	include ../../components/datepicker-block/datepicker-block.pug
 	.dates-selector
 		.dates-selector__inputs-wrapper
-			.dates-selector__arrival-wrapper
+			.dates-selector__input
 				+input(
 				'прибытие', 
 				'text', 
@@ -14,7 +14,7 @@ mixin dates-selector
 				'дд.мм.гггг', 
 				'', 
 				'expand_more')
-			.dates-selector__departure-wrapper
+			.dates-selector__input
 				+input(
 				'выезд', 
 				'text', 

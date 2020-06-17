@@ -1,29 +1,9 @@
 @import '../../variables.scss';
-// .dates-selector {
-//   margin-bottom: 18px;
-// }
 .dates-selector__inputs-wrapper {
   display: flex;
   flex-wrap: nowrap;
-  // .input__name {
-  //   word-break: break-all;
-  // }
-  // input {
-  //   &::-webkit-input-placeholder {
-  //     color: $black-75;
-  //   }
-  //   &::-moz-placeholder {
-  //     color: $black-75;
-  //   }
-  //   &:-moz-placeholder {
-  //     color: $black-75;
-  //   }
-  //   &:-ms-input-placeholder {
-  //     color: $black-75;
-  //   }
-  // }
 }
-.dates-selector__arrival-wrapper, .dates-selector__departure-wrapper {
+.dates-selector__input {
   margin-top: auto;
   flex: 0 0 47.24%;
   .input__button {
@@ -32,10 +12,10 @@
     }
   }
 }
-.dates-selector__arrival-wrapper {
+.dates-selector__input:first-child {
   margin-right: auto;
 }
-.dates-selector__arrival-wrapper .input__field, .dates-selector__departure-wrapper .input__field {
+.dates-selector__input .input__field {
   text-transform: uppercase;
   letter-spacing: -0.4px;
   cursor: default;
@@ -46,9 +26,6 @@
     padding-left: 12px;
   }
 }
-// .dates-selector .dropdown__container {
-//   margin-bottom: 19px;
-// }
 .dates-selector__datepicker-wrapper {
   position: relative;
 }
