@@ -76,12 +76,12 @@ $(document).ready(() => {
     };
     opacytyBtn();
 
-    $dropdown__wrapper.eq(i).find('.dropdown__input-icon').click(() => {
-      if ($dropdown__wrapper.eq(i).find('.dropdown__input-icon').text() === 'expand_more') {
-        $dropdown__wrapper.eq(i).find('.dropdown__input-icon').text('expand_less');
+    $dropdown__wrapper.eq(i).find('.dropdown__input-button').click(() => {
+      if ($dropdown__wrapper.eq(i).find('.dropdown__input-button').text() === 'expand_more') {
+        $dropdown__wrapper.eq(i).find('.dropdown__input-button').text('expand_less');
         $dropdown__wrapper.eq(i).addClass('dropdown__wrapper_witch-menu');
       } else {
-        $dropdown__wrapper.eq(i).find('.dropdown__input-icon').text('expand_more');
+        $dropdown__wrapper.eq(i).find('.dropdown__input-button').text('expand_more');
         $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_witch-menu');
       }
       $dropdown__wrapper.eq(i).toggleClass('dropdown__wrapper_menu-open');
@@ -115,7 +115,7 @@ $(document).ready(() => {
 
     $dropdown__wrapper.eq(i).find('.dropdown__set-btn').click((e) => {
       e.preventDefault();
-      $dropdown__wrapper.eq(i).find('.dropdown__input-icon').text('expand_more');
+      $dropdown__wrapper.eq(i).find('.dropdown__input-button').text('expand_more');
       $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_witch-menu');
       $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_menu-open');
       $dropdown__wrapper.eq(i).find('.dropdown__input').attr('value', inputValue);
