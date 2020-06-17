@@ -5,9 +5,9 @@ mixin input(h3, type, name, cl, val, plac, p, icon, color)
 		if p
 			p.input__text= p
 		if val		
-			input(type= type name= name class="input__field "+cl value= val placeholder= plac)
+			input(type= type name= name class="input__field"+cl value= val placeholder= plac)
 		else
-			input(type= type name= name class="input__field "+cl placeholder= plac)
+			input(type= type name= name class="input__field"+cl placeholder= plac)
 		if icon
 			if color === 'purple'
 				i.input__icon.input__icon_color_purple= icon

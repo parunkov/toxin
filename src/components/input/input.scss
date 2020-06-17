@@ -109,6 +109,11 @@
       background-repeat:no-repeat
     }
   }
+  &_theme_without-hover {
+    &:hover {
+      border: 1px solid $black-25;
+    }
+  }
 }
 .input__icon {
   position: absolute;
