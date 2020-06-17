@@ -1,8 +1,8 @@
 @import '../../variables.scss';
-.dates-block {
-  margin-bottom: 18px;
-}
-.dates-block__inputs-wrapper {
+// .dates-selector {
+//   margin-bottom: 18px;
+// }
+.dates-selector__inputs-wrapper {
   display: flex;
   flex-wrap: nowrap;
   // .input__name {
@@ -23,7 +23,7 @@
   //   }
   // }
 }
-.dates-block__arrival-wrapper, .dates-block__departure-wrapper {
+.dates-selector__arrival-wrapper, .dates-selector__departure-wrapper {
   margin-top: auto;
   flex: 0 0 47.24%;
   .input__button {
@@ -32,10 +32,10 @@
     }
   }
 }
-.dates-block__arrival-wrapper {
+.dates-selector__arrival-wrapper {
   margin-right: auto;
 }
-.dates-block__arrival-wrapper .input__field, .dates-block__departure-wrapper .input__field {
+.dates-selector__arrival-wrapper .input__field, .dates-selector__departure-wrapper .input__field {
   text-transform: uppercase;
   letter-spacing: -0.4px;
   cursor: default;
@@ -46,13 +46,13 @@
     padding-left: 12px;
   }
 }
-// .dates-block .dropdown__container {
+// .dates-selector .dropdown__container {
 //   margin-bottom: 19px;
 // }
-.dates-block__datepicker-wrapper {
+.dates-selector__datepicker-wrapper {
   position: relative;
 }
-.dates-block__datepicker-container {
+.dates-selector__datepicker-container {
   position: absolute;
   top: 6px;
   z-index: 10;

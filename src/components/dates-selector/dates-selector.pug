@@ -1,10 +1,10 @@
-mixin dates-block
+mixin dates-selector
 	include ../../components/input/input.pug
 	include ../../components/dropdown/dropdown.pug
 	include ../../components/datepicker-block/datepicker-block.pug
-	.dates-block
-		.dates-block__inputs-wrapper
-			.dates-block__arrival-wrapper
+	.dates-selector
+		.dates-selector__inputs-wrapper
+			.dates-selector__arrival-wrapper
 				+input(
 				'прибытие', 
 				'text', 
@@ -14,7 +14,7 @@ mixin dates-block
 				'дд.мм.гггг', 
 				'', 
 				'expand_more')
-			.dates-block__departure-wrapper
+			.dates-selector__departure-wrapper
 				+input(
 				'выезд', 
 				'text', 
@@ -24,6 +24,6 @@ mixin dates-block
 				'дд.мм.гггг', 
 				'', 
 				'expand_more')
-		.dates-block__datepicker-wrapper
-			.dates-block__datepicker-container
+		.dates-selector__datepicker-wrapper
+			.dates-selector__datepicker-container
 				+datepicker

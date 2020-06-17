@@ -1,5 +1,5 @@
 mixin reservation-form
-	include ../../components/dates-block/dates-block.pug
+	include ../../components/dates-selector/dates-selector.pug
 	article.reservation-form
 		.reservation-form__title
 			.reservation-form__title-left
@@ -8,7 +8,8 @@ mixin reservation-form
 			.reservation-form__title-right
 				p.reservation-form__title_price 9 990₽ <span class="reservation-form__title_price-text">в сутки</span>
 		form.reservation-form__form
-			+dates-block
+			.reservation-form__dates-selector
+				+dates-selector
 			+dropdown(
 				'peoples',
 				'', 
