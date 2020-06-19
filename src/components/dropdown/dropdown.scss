@@ -39,11 +39,11 @@
   text-align: left;
   border: 1px solid $black-25;
   border-radius: 4px;
-  &_witch-menu {
+  &_expanded {
     border-radius: 4px 4px 0 0;
   }
 }
-.dropdown__wrapper_witch-menu {
+.dropdown__wrapper_expanded {
   border: 1px solid $black-50;
 }
 .dropdown__wrapper .dropdown__input {
@@ -63,7 +63,7 @@
   outline: none;
   cursor: default;
 }
-.dropdown__input-button {
+.dropdown__arrow {
   position: absolute;
   top: 2px;
   right: 2px;
@@ -81,7 +81,7 @@
   border: none;
   outline: none;
 }
-.dropdown__wrapper_witch-menu .dropdown__input::after {
+.dropdown__wrapper_expanded .dropdown__input::after {
   background: $white;
   transform: rotate(180deg);
 }
@@ -94,7 +94,7 @@
   color: $black;
   text-transform: uppercase;
 }
-.dropdown__wrapper.dropdown__wrapper_witch-menu .dropdown__menu {
+.dropdown__wrapper.dropdown__wrapper_expanded .dropdown__menu {
   display: block;
 }
 .dropdown__wrapper .dropdown__menu {

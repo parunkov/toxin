@@ -10,7 +10,7 @@ mixin dropdown(type, name, h3, p, item1, item2, item3, clear)
 		span.dropdown__name= h3
 		.dropdown__wrapper
 			input(type="text" name= name class="dropdown__input" autocomplete="off" readonly)
-			button(type="button" class="dropdown__input-button")= "expand_more"
+			button(type="button" class="dropdown__arrow")= "expand_more"
 			.dropdown__menu
 				div(class="dropdown__item-wrapper")
 					span.dropdown__item-text #{item1}

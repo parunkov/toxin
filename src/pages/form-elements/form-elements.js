@@ -24,9 +24,9 @@ $('.form-elements__section:nth-child(5) .form-elements__item:nth-child(2) .check
 $('.form-elements__section:nth-child(5) .form-elements__item:nth-child(2) .checkbox__input').eq(0).prop('checked', false);
 $('.like__input').eq(2).prop('checked', true);
 $(document).ready(() => {
-  $('.dropdown__input-button').eq(1).trigger('click');
-  $('.dropdown__input-button').eq(2).trigger('click');
-  $('.dropdown__input-button').eq(3).trigger('click');
+  $('.dropdown__arrow').eq(1).trigger('click');
+  $('.dropdown__arrow').eq(2).trigger('click');
+  $('.dropdown__arrow').eq(3).trigger('click');
 
   const $button = $('.form-elements__section:nth-child(8) .form-elements__item .dropdown__wrapper button');
   console.log($button);
@@ -34,7 +34,7 @@ $(document).ready(() => {
   $button.eq(2).trigger('click');
   $button.eq(4).trigger('click');
   $button.eq(7).trigger('click');
-  $('.form-elements__section:nth-child(8) .dropdown__input-button').trigger('click');
+  $('.form-elements__section:nth-child(8) .dropdown__arrow').trigger('click');
 
   const $roomDropdown = $('.dropdown');
   for (let i = 0; i < 2; i += 1) {
