@@ -14,14 +14,7 @@
   text-transform: uppercase;
   background: $gradient-purple;
   border-radius: 22px;
-  // &_submit {
-  //   display: block;
-  //   width: 100%;
-  //   padding-top: 0;
-  //   padding-bottom: 0;
-  //   border: none;
-  // }
-  &:hover, &_hover {
+  &:hover, &_transparent {
     opacity: 0.5;
   }
   &__theme_light {
@@ -40,15 +33,21 @@
     padding-top: 14px;
     border-radius: 20px;
   }
-  &_icon-link {
+  &_theme_text {
     min-height: 15px;
-    padding-top: 0;
+    padding: 0;
     color: $purple;
     background: $white;
-    &:hover, &-hover {
+    border: none;
+    outline: none;
+    &:hover {
       color: $black-50;
       opacity: 1;
     }
+  }
+  &_color_gray {
+    color: $black-50;
+    opacity: 1;
   }
   &_theme_arrow {
     display: block;

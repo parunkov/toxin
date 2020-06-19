@@ -1,9 +1,9 @@
 mixin dropdown__menu-item()
 	.dropdown__item-controls
-		button(type="button" class="dropdown__button dropdown__button_decrement")
+		button(type="button" class="dropdown__counter-button dropdown__counter-button_theme_decrement")
 			//- i.dropdown__icon-decrement
 		span.dropdown__counter 0
-		button(type="button" class="dropdown__button dropdown__button_increment")
+		button(type="button" class="dropdown__counter-button dropdown__counter-button_theme_increment")
 			//- i.dropdown__icon-increment
 mixin dropdown(type, name, h3, p, item1, item2, item3, clear)
 	section.dropdown
@@ -22,6 +22,8 @@ mixin dropdown(type, name, h3, p, item1, item2, item3, clear)
 					span.dropdown__item-text #{item3}
 					+dropdown__menu-item
 				if clear
-					.dropdown__settings-block
-						button(type="button" class="dropdown__set-btn") применить
-						button(type="button" class="dropdown__clear-btn") очистить
+					.dropdown__buttons-block
+						.dropdown__set-btn
+							button(type="button" class="btn btn_theme_text") применить
+						.dropdown__clear-btn
+							button(type="button" class="btn btn_theme_text btn_color_gray") очистить

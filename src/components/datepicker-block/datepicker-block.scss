@@ -239,12 +239,12 @@
   font-family: 'Material Icons';
   color: $purple;
 }
-.datepicker-block__settings-block {
+.datepicker-block__buttons-block {
   display: flex;
   flex-direction: row-reverse;
+  padding-left: 4px;
   margin-top: 18px;
   padding-bottom: 18px;
-  padding-left: 5px;
 }
 .datepicker-block__clear-btn, .datepicker-block__set-btn {
   word-break: break-all;

@@ -51,7 +51,7 @@
   &:-ms-input-placeholder {
     color: $black-75;
   }
-  &:hover, &_hover, &:focus, &_focus {
+  &:hover, &_selected, &:focus {
     border: 1px solid $black-50;
     outline: none;
   }
@@ -98,7 +98,7 @@
     &:-ms-input-placeholder {
       color: $black-25;
     }
-    &:hover, &_hover, &:focus, &_focus {
+    &:hover, &_selected, &:focus {
       border: 1px solid $black-50;
       outline: none;
     }

@@ -10,8 +10,8 @@ const $myDatepicker = $('.dates-selector__datepicker-container .datepicker-block
 const $datepickerContainer = $('.dates-selector__datepicker-container');
 const $setBtn = $('.dates-selector__datepicker-container .datepicker-block__set-btn');
 const $clearBtn = $('.dates-selector__datepicker-container .datepicker-block__clear-btn');
-const $arrival = $('.dates-selector__arrival-wrapper .input__field');
-const $departure = $('.dates-selector__departure-wrapper .input__field');
+const $arrival = $('.dates-selector__input:first-child .input__field');
+const $departure = $('.dates-selector__input:nth-child(2) .input__field');
 
 const $icon = $('.dates-selector__inputs-wrapper .input__button');
 console.log($icon);
