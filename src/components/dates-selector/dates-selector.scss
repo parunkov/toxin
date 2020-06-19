@@ -1,4 +1,7 @@
 @import '../../variables.scss';
+.dates-selector {
+  position: relative;
+}
 .dates-selector__inputs-wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -26,12 +29,10 @@
     padding-left: 12px;
   }
 }
-.dates-selector__datepicker-wrapper {
-  position: relative;
-}
-.dates-selector__datepicker-container {
+.dates-selector__datepicker {
   position: absolute;
-  top: 6px;
+  bottom: -7px;
+  transform: translate(0, 100%);
   z-index: 10;
   display: none;
   width: 100%;

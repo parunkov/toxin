@@ -6,10 +6,10 @@ import '../datepicker-block/datepicker-block';
 import './dates-selector.scss';
 import $ from 'jquery';
 
-const $myDatepicker = $('.dates-selector__datepicker-container .datepicker-block__content').datepicker().data('datepicker');
-const $datepickerContainer = $('.dates-selector__datepicker-container');
-const $setBtn = $('.dates-selector__datepicker-container .datepicker-block__set-btn');
-const $clearBtn = $('.dates-selector__datepicker-container .datepicker-block__clear-btn');
+const $myDatepicker = $('.dates-selector__datepicker .datepicker-block__content').datepicker().data('datepicker');
+const $datepickerContainer = $('.dates-selector__datepicker');
+const $setBtn = $('.dates-selector__datepicker .datepicker-block__set-btn');
+const $clearBtn = $('.dates-selector__datepicker .datepicker-block__clear-btn');
 const $arrival = $('.dates-selector__input:first-child .input__field');
 const $departure = $('.dates-selector__input:nth-child(2) .input__field');
 
@@ -24,15 +24,15 @@ $departure.attr('disabled', '');
 
 $('.dates-selector .input__button').click(function (evt) {
   evt.preventDefault();
-  if ($datepickerContainer.hasClass('dates-selector__datepicker-container_visible') && $(this).text() === 'expand_more') {
-    $datepickerContainer.removeClass('dates-selector__datepicker-container_visible');
+  if ($datepickerContainer.hasClass('dates-selector__datepicker_visible') && $(this).text() === 'expand_more') {
+    $datepickerContainer.removeClass('dates-selector__datepicker_visible');
     $iconText.text('expand_more');
     $(this).text('expand_more');
     $icon.removeClass('input__button_cursor_default');
-  } else if ($datepickerContainer.hasClass('dates-selector__datepicker-container_visible') && $(this).text() === 'expand_less') {
+  } else if ($datepickerContainer.hasClass('dates-selector__datepicker_visible') && $(this).text() === 'expand_less') {
     $(this).text('expand_more');
-  } else if (!$datepickerContainer.hasClass('dates-selector__datepicker-container_visible') && $(this).text() === 'expand_less') {
-    $datepickerContainer.addClass('dates-selector__datepicker-container_visible');
+  } else if (!$datepickerContainer.hasClass('dates-selector__datepicker_visible') && $(this).text() === 'expand_less') {
+    $datepickerContainer.addClass('dates-selector__datepicker_visible');
     $iconText.text('expand_more');
     $icon.addClass('input__button_cursor_default');
     $(this).text('expand_less');
@@ -40,7 +40,7 @@ $('.dates-selector .input__button').click(function (evt) {
   }
   $setBtn.click((e) => {
     e.preventDefault();
-    $datepickerContainer.removeClass('dates-selector__datepicker-container_visible');
+    $datepickerContainer.removeClass('dates-selector__datepicker_visible');
     $icon.removeClass('input__button_cursor_default');
     $iconText.text('expand_more');
     if ($myDatepicker.selectedDates[0]) {
