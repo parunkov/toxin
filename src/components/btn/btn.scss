@@ -14,13 +14,13 @@
   text-transform: uppercase;
   background: $gradient-purple;
   border-radius: 22px;
-  &_submit {
-    display: block;
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
-    border: none;
-  }
+  // &_submit {
+  //   display: block;
+  //   width: 100%;
+  //   padding-top: 0;
+  //   padding-bottom: 0;
+  //   border: none;
+  // }
   &:hover, &_hover {
     opacity: 0.5;
   }
@@ -50,12 +50,16 @@
       opacity: 1;
     }
   }
-  &_witch-arrow {
+  &_theme_arrow {
     display: block;
     padding-right: 40px;
     padding-left: 38px;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
   }
-  &_witch-arrow::after {
+  &_theme_arrow::after {
     content: ' arrow_forward';
     position: absolute;
     top: 50%;
