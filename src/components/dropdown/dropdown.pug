@@ -31,13 +31,4 @@ mixin dropdown(cl, name, header, p, item1, item2, item3, clear)
 			span.dropdown__name= header
 			.dropdown__wrapper
 				input(type="text" name= name class="dropdown__input" autocomplete="off" readonly)
-				button(type="button" class="dropdown__arrow dropdown__arrow_theme_date")= "expand_more"
-			//- +input(
-			//- header, 
-			//- 'text', 
-			//- name, 
-			//- '', 
-			//- '', 
-			//- 'дд.мм.гггг', 
-			//- '', 
-			//- 'expand_more')
+				button(type="button" class="dropdown__arrow")= "expand_more"
