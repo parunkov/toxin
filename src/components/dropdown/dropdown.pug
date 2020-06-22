@@ -1,29 +1,43 @@
 mixin dropdown__menu-item()
 	.dropdown__item-controls
 		button(type="button" class="dropdown__counter-button dropdown__counter-button_theme_decrement")
-			//- i.dropdown__icon-decrement
 		span.dropdown__counter 0
 		button(type="button" class="dropdown__counter-button dropdown__counter-button_theme_increment")
-			//- i.dropdown__icon-increment
-mixin dropdown(type, name, h3, p, item1, item2, item3, clear)
-	section.dropdown
-		span.dropdown__name= h3
-		.dropdown__wrapper
-			input(type="text" name= name class="dropdown__input" autocomplete="off" readonly)
-			button(type="button" class="dropdown__arrow")= "expand_more"
-			.dropdown__menu
-				div(class="dropdown__item-wrapper")
-					span.dropdown__item-text #{item1}
-					+dropdown__menu-item
-				div(class="dropdown__item-wrapper")
-					span.dropdown__item-text #{item2}
-					+dropdown__menu-item
-				div(class="dropdown__item-wrapper")
-					span.dropdown__item-text #{item3}
-					+dropdown__menu-item
-				if clear
-					.dropdown__buttons-block
-						.dropdown__set-btn
-							button(type="button" class="btn btn_theme_text") применить
-						.dropdown__clear-btn
-							button(type="button" class="btn btn_theme_text btn_color_gray") очистить
+mixin dropdown(cl, name, header, p, item1, item2, item3, clear)
+	if item1
+		section.dropdown
+			span.dropdown__name= header
+			.dropdown__wrapper
+				input(type="text" name= name class="dropdown__input" autocomplete="off" readonly)
+				button(type="button" class="dropdown__arrow")= "expand_more"
+				.dropdown__menu
+					div(class="dropdown__item-wrapper")
+						span.dropdown__item-text #{item1}
+						+dropdown__menu-item
+					div(class="dropdown__item-wrapper")
+						span.dropdown__item-text #{item2}
+						+dropdown__menu-item
+					div(class="dropdown__item-wrapper")
+						span.dropdown__item-text #{item3}
+						+dropdown__menu-item
+					if clear
+						.dropdown__buttons-block
+							.dropdown__set-btn
+								button(type="button" class="btn btn_theme_text") применить
+							.dropdown__clear-btn
+								button(type="button" class="btn btn_theme_text btn_color_gray") очистить
+	else
+		div(class="dropdown" + cl)
+			span.dropdown__name= header
+			.dropdown__wrapper
+				input(type="text" name= name class="dropdown__input" autocomplete="off" readonly)
+				button(type="button" class="dropdown__arrow dropdown__arrow_theme_date")= "expand_more"
+			//- +input(
+			//- header, 
+			//- 'text', 
+			//- name, 
+			//- '', 
+			//- '', 
+			//- 'дд.мм.гггг', 
+			//- '', 
+			//- 'expand_more')

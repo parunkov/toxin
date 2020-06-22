@@ -3,26 +3,14 @@ mixin dates-selector
 	include ../../components/dropdown/dropdown.pug
 	include ../../components/datepicker-block/datepicker-block.pug
 	.dates-selector
-		.dates-selector__inputs-wrapper
-			.dates-selector__input
-				+input(
-				'прибытие', 
-				'text', 
-				'arrival', 
-				'', 
-				'', 
-				'дд.мм.гггг', 
-				'', 
-				'expand_more')
-			.dates-selector__input
-				+input(
-				'выезд', 
-				'text', 
-				'departure', 
-				'', 
-				'', 
-				'дд.мм.гггг', 
-				'', 
-				'expand_more')
+		//- .dates-selector__container
+		+dropdown (
+		' dropdown_theme_date',
+		'arrival',
+		'прибытие')
+		+dropdown (
+		' dropdown_theme_date',
+		'departure',
+		'выезд')
 		.dates-selector__datepicker
 				+datepicker

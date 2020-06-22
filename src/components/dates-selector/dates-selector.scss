@@ -1,33 +1,10 @@
 @import '../../variables.scss';
 .dates-selector {
   position: relative;
-}
-.dates-selector__inputs-wrapper {
   display: flex;
   flex-wrap: nowrap;
-}
-.dates-selector__input {
-  margin-top: auto;
-  flex: 0 0 47.24%;
-  .input__button {
-    @media (max-width: 350px) {
-      width: 32px;
-    }
-  }
-}
-.dates-selector__input:first-child {
-  margin-right: auto;
-}
-.dates-selector__input .input__field {
-  text-transform: uppercase;
-  letter-spacing: -0.4px;
-  cursor: default;
-  &:hover {
-    border: 1px solid $black-25;
-  }
-  @media (max-width: 350px) {
-    padding-left: 12px;
-  }
+  justify-content: space-between;
+  align-items: flex-end;
 }
 .dates-selector__datepicker {
   position: absolute;

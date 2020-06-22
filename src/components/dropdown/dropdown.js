@@ -13,7 +13,7 @@ const num2str = function (num, textForms) {
 };
 
 $(document).ready(() => {
-  const $dropdown__wrapper = $('.dropdown__wrapper');
+  const $dropdown__wrapper = $('.dropdown:not(.dropdown_theme_date)').find('.dropdown__wrapper');
 
   $dropdown__wrapper.each((i) => {
     const $dropdown = $('.dropdown');
@@ -30,6 +30,8 @@ $(document).ready(() => {
       const type = $dropdown.eq(j).find('.dropdown__item-text').html();
       if (type === 'спальни') {
         $text.eq(j).attr('value', '0 спален, 0 кроватей, 0 ванных');
+      } else if (!type) {
+        $text.eq(j).attr('placeholder', 'дд.мм.гггг');
       } else {
         $text.eq(j).attr('placeholder', 'Сколько гостей');
       }
