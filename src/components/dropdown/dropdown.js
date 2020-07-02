@@ -131,4 +131,13 @@ $(document).ready(() => {
       inputValue = '';
     });
   });
+
+  $(document).click((e) => {
+    $dropdown__wrapper.each((i) => {
+      if (!$dropdown__wrapper.eq(i).is(e.target) && $dropdown__wrapper.eq(i).has(e.target).length === 0) {
+        $dropdown__wrapper.eq(i).find('.dropdown__arrow').text('expand_more');
+        $dropdown__wrapper.eq(i).removeClass('dropdown__wrapper_expanded');
+      }
+    });
+  });
 });

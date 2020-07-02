@@ -24,9 +24,6 @@ $('.form-elements__section:nth-child(5) .form-elements__item:nth-child(2) .check
 $('.form-elements__section:nth-child(5) .form-elements__item:nth-child(2) .checkbox__input').eq(0).prop('checked', false);
 $('.like__input').eq(2).prop('checked', true);
 $(document).ready(() => {
-  $('.dropdown__arrow').eq(1).trigger('click');
-  $('.dropdown__arrow').eq(2).trigger('click');
-  $('.dropdown__arrow').eq(3).trigger('click');
 
   const $button = $('.form-elements__section:nth-child(8) .form-elements__item .dropdown__wrapper button');
   console.log($button);
@@ -38,12 +35,17 @@ $(document).ready(() => {
 
   const $roomDropdown = $('.dropdown');
   for (let i = 0; i < 2; i += 1) {
-    // console.log($roomDropdown.eq(i));
     const $dropdownBtn = $roomDropdown.eq(i).find('.dropdown__counter-button_theme_increment');
     for (let j = 0; j < 2; j += 1) {
       $dropdownBtn.eq(j).trigger('click');
       $dropdownBtn.eq(j).trigger('click');
     }
+  }
+
+  const $dropdown__wrapper = $('.dropdown:not(.dropdown_theme_date)').find('.dropdown__wrapper');
+  for (let i = 1; i < 4 ; i += 1) {
+    $dropdown__wrapper.eq(i).find('.dropdown__arrow').text('expand_less');
+    $dropdown__wrapper.eq(i).addClass('dropdown__wrapper_expanded');
   }
 
     $('.form-elements__section:nth-child(3) .form-elements__item:nth-child(3)').bind('DOMSubtreeModified', () => {
