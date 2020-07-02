@@ -46,12 +46,12 @@
 .card__shadow_left {
   top: 0;
   left: 0;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  // background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
 }
 .card__shadow_right {
   top: 0;
   right: 0;
-  background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  // background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
 }
 .card__arrow {
   position: absolute;
@@ -65,8 +65,16 @@
   cursor: pointer;
   color: transparent;
 }
-.card__slider:hover .card__arrow {
-  color: $white;
+.card__slider:hover {
+  .card__arrow {
+    color: $white;
+  }
+  .card__shadow_left {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  }
+  .card__shadow_right {
+    background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
+  }
 }
 .card__arrow_left {
   top: 52.5px;
