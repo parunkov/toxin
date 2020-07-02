@@ -111,6 +111,10 @@ $(document).ready(() => {
           const inputText = inputValue;
           inputValue = `${inputText}, ${babyNumber} ${num2str(+babyNumber, ['младенец', 'младенца', 'младенцев'])}`;
         }
+        if (guestsNumber === 0) {
+          inputValue = '';
+        }
+        $('.dropdown__input').eq(i).attr('value', inputValue);
       }
     });
 
