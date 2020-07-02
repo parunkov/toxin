@@ -68,6 +68,14 @@ $(document).ready(() => {
         $departure.attr('value', '');
       });
     });
-  });  
 
+    $(document).click((e) => {
+      if ((!$datepickerContainer.eq(i).is(e.target) && $datepickerContainer.eq(i).has(e.target).length === 0)
+        && (!e.target.className.includes('datepicker'))
+        && (!$datesSelector.eq(i).find('.dropdown__wrapper').is(e.target) && $datesSelector.eq(i).find('.dropdown__wrapper').has(e.target).length === 0)) {
+        $icon.text('expand_more');
+        $datepickerContainer.removeClass('dates-selector__datepicker_visible');
+      }
+    });
+  });
 });
