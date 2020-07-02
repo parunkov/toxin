@@ -54,27 +54,26 @@
               <h1 class="login-form__header">Войти</h1>
               <form class="login-form__form">
                 <div class="login-form__input-wrapper">
-                      <section class="input">
-                        <input class="input__field " type="email" name="email" placeholder="Email">
-                      </section>
+                      <div class="input">
+                        <input class="input__field input__field_theme_light" type="email" name="email" placeholder="Email">
+                      </div>
                 </div>
                 <div class="login-form__input-wrapper">
-                      <section class="input">
-                        <input class="input__field " type="text" name="password" placeholder="Пароль">
-                      </section>
+                      <div class="input">
+                        <input class="input__field input__field_theme_light" type="text" name="password" placeholder="Пароль">
+                      </div>
                 </div>
                 <div class="login-form__btn">
-                  <button class="btn btn_witch-arrow btn_submit">войти</button>
+                  <button class="btn btn_theme_arrow" type="submit">войти</button>
                 </div>
               </form>
               <div class="login-form__footer">
                 <div class="login-form__footer-left">
                   <p class="login-form__footer-text">Нет аккаунта на Toxin?</p>
                 </div>
-                <div class="login-form__footer-right"><a class="login-form__link" href="registration.html">
-                    <div class="login-form__btn-wrapper">
-                      <div class="btn btn__theme_light btn__size_big"><span class="btn__text">создать</span></div>
-                    </div></a></div>
+                <div class="login-form__footer-right">
+                  <div class="login-form__button"><a class="btn btn__theme_light btn__size_big" href="registration.html"><span class="btn__text">создать</span></a></div>
+                </div>
               </div>
             </article>
       </div>
@@ -119,9 +118,10 @@
                     <h2 class="footer__title">Подписка</h2>
                     <p class="footer__text">Получайте специальные предложения и новости сервиса</p>
                     <form class="footer__form">
-                          <section class="input">
-                            <input class="input__field input__field_with-arrow" type="email" name="email" placeholder="Email"><i class="input__icon input__icon_color_purple">arrow_forward</i>
-                          </section>
+                          <div class="input">
+                            <input class="input__field input__field_with-arrow" type="email" name="email" placeholder="Email">
+                            <button class="input__button input__button_color_purple" type="button">arrow_forward</button>
+                          </div>
                     </form>
                   </div>
                 </div>

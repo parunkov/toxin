@@ -21,59 +21,57 @@
       <div class="form-elements__container">
         <section class="form-elements__section">
           <div class="form-elements__item">
-                <section class="input">
-                  <h3 class="input__header">Text Field</h3>
+                <div class="input"><span class="input__name">Text Field</span>
                   <p class="input__text">Default</p>
-                  <input class="input__field " type="email" name="form-elements__input-1" placeholder="Email">
-                </section>
+                  <input class="input__field input__field_theme_light" type="email" name="form-elements__input-1" placeholder="Email">
+                </div>
           </div>
           <div class="form-elements__item">
-                <section class="input">
-                  <h3 class="input__header">Text Field</h3>
+                <div class="input"><span class="input__name">Text Field</span>
                   <p class="input__text">Hover / Focus</p>
-                  <input class="input__field input__field_hover" type="email" name="form-elements__input-2" value="This is pretty awesome" placeholder="">
-                </section>
+                  <input class="input__field input__field_selected" type="email" name="form-elements__input-2" value="This is pretty awesome">
+                </div>
           </div>
           <div class="form-elements__item">
-                <section class="input">
-                  <h3 class="input__header">Dropdown</h3>
+                <div class="input"><span class="input__name">Dropdown</span>
                   <p class="input__text">Default</p>
-                  <input class="input__field " type="email" name="form-elements__input-3" value="Сколько гостей" placeholder=""><i class="input__icon">expand_more</i>
-                </section>
+                  <input class="input__field" type="email" name="form-elements__input-3" value="Сколько гостей">
+                  <button class="input__button" type="button">expand_more</button>
+                </div>
           </div>
           <div class="form-elements__item">
-                <section class="input">
-                  <h3 class="input__header">masked text field</h3>
+                <div class="input"><span class="input__name">masked text field</span>
                   <p class="input__text">Default</p>
-                  <input class="input__field input__field_uppercase" type="date" name="form-elements__input-4" placeholder="Email"><i class="input__icon">expand_more</i>
-                </section>
+                  <input class="input__field input__field_uppercase" type="date" name="form-elements__input-4" placeholder="Email">
+                  <button class="input__button" type="button">expand_more</button>
+                </div>
           </div>
           <div class="form-elements__item">
             <div class="form-elements__item-inner form-elements__item-inner_left">
-                  <section class="input">
-                    <h3 class="input__header">date Dropdown</h3>
-                    <input class="input__field input__field_uppercase" type="date" name="form-elements__input-5" placeholder=""><i class="input__icon">expand_more</i>
-                  </section>
+                  <div class="input"><span class="input__name">date Dropdown</span>
+                    <input class="input__field input__field_uppercase" type="date" name="form-elements__input-5" placeholder="">
+                    <button class="input__button" type="button">expand_more</button>
+                  </div>
             </div>
             <div class="form-elements__space"></div>
             <div class="form-elements__item-inner form-elements__item-inner_right">
-                  <section class="input">
-                    <h3 class="input__header">date Dropdown</h3>
-                    <input class="input__field input__field_uppercase" type="date" name="form-elements__input-6" value="2019-08-19" placeholder=""><i class="input__icon">expand_more</i>
-                  </section>
+                  <div class="input"><span class="input__name">date Dropdown</span>
+                    <input class="input__field input__field_uppercase" type="date" name="form-elements__input-6" value="2019-08-19">
+                    <button class="input__button" type="button">expand_more</button>
+                  </div>
             </div>
           </div>
           <div class="form-elements__item">
-                <section class="input">
-                  <h3 class="input__header">filter date dropdown</h3>
-                  <input class="input__field " type="text" name="form-elements__input-7" value="19 авг - 23 авг" placeholder=""><i class="input__icon">expand_more</i>
-                </section>
+                <div class="input"><span class="input__name">filter date dropdown</span>
+                  <input class="input__field" type="text" name="form-elements__input-7" value="19 авг - 23 авг">
+                  <button class="input__button" type="button">expand_more</button>
+                </div>
           </div>
           <div class="form-elements__item">
-                <section class="input">
-                  <h3 class="input__header">subscription text field</h3>
-                  <input class="input__field input__field_with-arrow" type="email" name="form-elements__input-8" placeholder="Email"><i class="input__icon input__icon_color_purple">arrow_forward</i>
-                </section>
+                <div class="input"><span class="input__name">subscription text field</span>
+                  <input class="input__field input__field_with-arrow" type="email" name="form-elements__input-8" placeholder="Email">
+                  <button class="input__button input__button_color_purple" type="button">arrow_forward</button>
+                </div>
           </div>
         </section>
         <section class="form-elements__section">
@@ -101,12 +99,12 @@
             <h3 class="form-elements__item-title">Radio Buttons</h3>
                 <div class="radio">
                   <label class="radio__label">
-                    <input class="radio__input " type="radio" name="" checked>
+                    <input class="radio__input" type="radio" name="form-elements__radio" checked>
                     <div class="radio__custom"></div>
                     <p class="radio__text">Мужчина</p>
                   </label>
                   <label class="radio__label">
-                    <input class="radio__input " type="radio" name="">
+                    <input class="radio__input" type="radio" name="form-elements__radio">
                     <div class="radio__custom"></div>
                     <p class="radio__text">Женщина</p>
                   </label>
@@ -171,13 +169,27 @@
           </div>
           <div class="form-elements__item">
             <h3 class="form-elements__item-title">buttons</h3>
-            <div class="form-elements__btn btn">click me</div>
-            <div class="form-elements__btn btn btn_hover">click me</div>
-            <div class="form-elements__btn btn btn__theme_light"> <span class="btn__text">click me</span></div>
-            <div class="form-elements__btn btn btn__theme_light btn_hover"><span class="btn__text">click me</span></div>
-            <div class="form-elements__btn btn btn_icon-link">click me</div>
-            <div class="form-elements__btn btn btn_icon-link btn_icon-link-hover">click me</div>
-            <div class="form-elements__btn btn btn_witch-arrow">перейти к оплате</div>
+            <div class="form-elements__btn">
+              <div class="btn">click me</div>
+            </div>
+            <div class="form-elements__btn">
+              <div class="btn btn_transparent">click me</div>
+            </div>
+            <div class="form-elements__btn">
+              <div class="btn btn__theme_light"> <span class="btn__text">click me</span></div>
+            </div>
+            <div class="form-elements__btn">
+              <div class="btn btn__theme_light btn_transparent"><span class="btn__text">click me</span></div>
+            </div>
+            <div class="form-elements__btn">
+              <div class="btn btn_theme_text">click me</div>
+            </div>
+            <div class="form-elements__btn">
+              <div class="btn btn_theme_text btn_color_gray">click me</div>
+            </div>
+            <div class="form-elements__btn">
+              <button class="btn btn_theme_arrow" type="button">перейти к оплате</button>
+            </div>
           </div>
           <div class="form-elements__item">
             <h3 class="form-elements__item-title">pagination</h3>
@@ -187,74 +199,56 @@
         </section>
         <section class="form-elements__section">
           <div class="form-elements__item">
-                <section class="dropdown dropdown_theme_rooms">
-                  <div class="dropdown__container ">
-                    <h2 class="dropdown__title">dropdown</h2>
-                    <p class="dropdown__state">Default</p>
-                    <div class="dropdown__wrapper">
-                      <div class="dropdown__input">
-                        <input class="dropdown__selection " name="" autocomplete="off" readonly>
-                        <div class="dropdown__input-icon"><i class="dropdown__input-icon-text">expand_more</i></div>
-                        <div class="dropdown__menu">
-                          <div class="dropdown__menu-item-wrapper" data-id="item1">
-                            <h3 class="dropdown__item-title">спальни</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                          <div class="dropdown__menu-item-wrapper" data-id="item2">
-                            <h3 class="dropdown__item-title">кровати</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                          <div class="dropdown__menu-item-wrapper" data-id="item3">
-                            <h3 class="dropdown__item-title">ванные комнаты</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                        </div>
+                <section class="dropdown"><span class="dropdown__name">dropdown</span>
+                  <div class="dropdown__wrapper">
+                    <input class="dropdown__input" type="text" name="rooms" autocomplete="off" readonly>
+                    <button class="dropdown__arrow" type="button">expand_more</button>
+                    <div class="dropdown__menu">
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">спальни</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">кровати</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">ванные комнаты</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
                       </div>
                     </div>
                   </div>
                 </section>
           </div>
           <div class="form-elements__item">
-                <section class="dropdown dropdown_theme_rooms">
-                  <div class="dropdown__container ">
-                    <h2 class="dropdown__title">dropdown</h2>
-                    <p class="dropdown__state">expanded</p>
-                    <div class="dropdown__wrapper">
-                      <div class="dropdown__input">
-                        <input class="dropdown__selection " name="" autocomplete="off" readonly>
-                        <div class="dropdown__input-icon"><i class="dropdown__input-icon-text">expand_more</i></div>
-                        <div class="dropdown__menu">
-                          <div class="dropdown__menu-item-wrapper" data-id="item1">
-                            <h3 class="dropdown__item-title">спальни</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                          <div class="dropdown__menu-item-wrapper" data-id="item2">
-                            <h3 class="dropdown__item-title">кровати</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                          <div class="dropdown__menu-item-wrapper" data-id="item3">
-                            <h3 class="dropdown__item-title">ванные комнаты</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                        </div>
+                <section class="dropdown"><span class="dropdown__name">dropdown</span>
+                  <div class="dropdown__wrapper">
+                    <input class="dropdown__input" type="text" name="rooms" autocomplete="off" readonly>
+                    <button class="dropdown__arrow" type="button">expand_more</button>
+                    <div class="dropdown__menu">
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">спальни</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">кровати</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">ванные комнаты</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
                       </div>
                     </div>
                   </div>
@@ -303,40 +297,35 @@
         </section>
         <section class="form-elements__section">
           <div class="form-elements__item">
-                <section class="dropdown dropdown_theme_peoples">
-                  <div class="dropdown__container ">
-                    <h2 class="dropdown__title">dropdown</h2>
-                    <p class="dropdown__state"></p>
-                    <div class="dropdown__wrapper">
-                      <div class="dropdown__input">
-                        <input class="dropdown__selection " name="" autocomplete="off" readonly>
-                        <div class="dropdown__input-icon"><i class="dropdown__input-icon-text">expand_more</i></div>
-                        <div class="dropdown__menu">
-                          <div class="dropdown__menu-item-wrapper" data-id="item1">
-                            <h3 class="dropdown__item-title">взрослые</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                          <div class="dropdown__menu-item-wrapper" data-id="item2">
-                            <h3 class="dropdown__item-title">дети</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                          <div class="dropdown__menu-item-wrapper" data-id="item3">
-                            <h3 class="dropdown__item-title">младенцы</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                          <div class="dropdown__bottom">
-                            <button class="dropdown__set-btn">применить</button>
-                            <button class="dropdown__clear-btn">очистить</button>
-                          </div>
+                <section class="dropdown"><span class="dropdown__name">dropdown</span>
+                  <div class="dropdown__wrapper">
+                    <input class="dropdown__input" type="text" name="guests" autocomplete="off" readonly>
+                    <button class="dropdown__arrow" type="button">expand_more</button>
+                    <div class="dropdown__menu">
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">взрослые</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">дети</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">младенцы</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__buttons-block">
+                        <div class="dropdown__set-btn">
+                          <button class="btn btn_theme_text" type="button">применить</button>
+                        </div>
+                        <div class="dropdown__clear-btn">
+                          <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
                         </div>
                       </div>
                     </div>
@@ -365,40 +354,35 @@
         </section>
         <section class="form-elements__section">
           <div class="form-elements__item">
-                <section class="dropdown dropdown_theme_peoples">
-                  <div class="dropdown__container ">
-                    <h2 class="dropdown__title">dropdown</h2>
-                    <p class="dropdown__state"></p>
-                    <div class="dropdown__wrapper">
-                      <div class="dropdown__input">
-                        <input class="dropdown__selection " name="" autocomplete="off" readonly>
-                        <div class="dropdown__input-icon"><i class="dropdown__input-icon-text">expand_more</i></div>
-                        <div class="dropdown__menu">
-                          <div class="dropdown__menu-item-wrapper" data-id="item1">
-                            <h3 class="dropdown__item-title">взрослые</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                          <div class="dropdown__menu-item-wrapper" data-id="item2">
-                            <h3 class="dropdown__item-title">дети</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                          <div class="dropdown__menu-item-wrapper" data-id="item3">
-                            <h3 class="dropdown__item-title">младенцы</h3>
-                                <div class="dropdown__item-controls">
-                                  <button class="dropdown__button-decrement"><i class="dropdown__icon-decrement"></i></button><span class="dropdown__counter">0</span>
-                                  <button class="dropdown__button-increment"><i class="dropdown__icon-increment"></i></button>
-                                </div>
-                          </div>
-                          <div class="dropdown__bottom">
-                            <button class="dropdown__set-btn">применить</button>
-                            <button class="dropdown__clear-btn">очистить</button>
-                          </div>
+                <section class="dropdown"><span class="dropdown__name">dropdown</span>
+                  <div class="dropdown__wrapper">
+                    <input class="dropdown__input" type="text" name="guests" autocomplete="off" readonly>
+                    <button class="dropdown__arrow" type="button">expand_more</button>
+                    <div class="dropdown__menu">
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">взрослые</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">дети</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">младенцы</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__buttons-block">
+                        <div class="dropdown__set-btn">
+                          <button class="btn btn_theme_text" type="button">применить</button>
+                        </div>
+                        <div class="dropdown__clear-btn">
+                          <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
                         </div>
                       </div>
                     </div>
