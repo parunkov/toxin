@@ -111,3 +111,60 @@ const addCart = function (dataset, chartClass, sectorClass) {
 };
 addCart(dataset1, '.room-details__chart', 'room-details__sector');
 addCart(dataset2, '.room-details__chart-white-mask', 'room-details__sector');
+
+const $sectors = $('.room-details__sector');
+const $masks = $('.room-details__chart-white-mask .room-details__sector');
+const $chartText = $('.room-details__chart-inner');
+const $chartNumber = $('.room-details__chart-number');
+$sectors.eq(1).hover(() => {
+  $masks.css({'background' : '#ffffff'});
+  $masks.eq(1).css({'background' : 'transparent'});
+  $chartText.css({'color': '#bc9cff'});
+  $chartNumber.text('260');
+});
+$sectors.eq(3).hover(() => {
+  $masks.css({'background' : '#ffffff'});
+  $masks.eq(3).css({'background' : 'transparent'});
+  $chartText.css({'color': '#6fcf97'});
+  $chartNumber.text('270');
+});
+$sectors.eq(5).hover(() => {
+  $masks.css({'background' : '#ffffff'});
+  $masks.eq(5).css({'background' : 'transparent'});
+  $masks.eq(6).css({'background' : 'transparent'});
+  $chartText.css({'color': '#ffcd9c'});
+  $chartNumber.text('520');
+});
+$sectors.eq(6).hover(() => {
+  $masks.css({'background' : '#ffffff'});
+  $masks.eq(5).css({'background' : 'transparent'});
+  $masks.eq(6).css({'background' : 'transparent'});
+  $chartText.css({'color': '#ffcd9c'});
+  $chartNumber.text('520');
+});
+$masks.eq(1).hover(() => {
+  $masks.css({'background' : '#ffffff'});
+  $masks.eq(1).css({'background' : 'transparent'});
+  $chartText.css({'color': '#bc9cff'});
+  $chartNumber.text('260');
+});
+$masks.eq(3).hover(() => {
+  $masks.css({'background' : '#ffffff'});
+  $masks.eq(3).css({'background' : 'transparent'});
+  $chartText.css({'color': '#6fcf97'});
+  $chartNumber.text('270');
+});
+$masks.eq(5).hover(() => {
+  $masks.css({'background' : '#ffffff'});
+  $masks.eq(5).css({'background' : 'transparent'});
+  $masks.eq(6).css({'background' : 'transparent'});
+  $chartText.css({'color': '#ffcd9c'});
+  $chartNumber.text('520');
+});
+$masks.eq(6).hover(() => {
+  $masks.css({'background' : '#ffffff'});
+  $masks.eq(5).css({'background' : 'transparent'});
+  $masks.eq(6).css({'background' : 'transparent'});
+  $chartText.css({'color': '#ffcd9c'});
+  $chartNumber.text('520');
+});

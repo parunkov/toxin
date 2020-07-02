@@ -207,6 +207,7 @@
   text-align: center;
   background: $white;
   border-radius: 50px;
+  color: $purple;
 }
 .room-details__sector {
   position: absolute;
@@ -221,13 +222,13 @@
   font-weight: 700;
   font-size: 24px;
   font-family: Quicksand, Arial, sans-serif;
-  color: $purple;
+  // color: $purple;
 }
 .room-details__chart-text {
   font-weight: 700;
   font-size: 12px;
   font-family: Montserrat, Arial, sans-serif;
-  color: $purple;
+  // color: $purple;
   text-transform: uppercase;
 }
 .room-details__chart-comment {
