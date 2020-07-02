@@ -30,6 +30,7 @@ $(document).ready(() => {
       const type = $dropdown.eq(j).find('.dropdown__item-text').html();
       if (type === 'спальни') {
         $text.eq(j).attr('value', '0 спален, 0 кроватей, 0 ванных');
+        $text.eq(j).attr('placeholder', 'Выберите удобства');
       } else if (!type) {
         $text.eq(j).attr('placeholder', 'дд.мм.гггг');
       } else {
@@ -94,12 +95,27 @@ $(document).ready(() => {
       const $itemCounter = $('.dropdown__menu').eq(i).find('.dropdown__counter');
       const type = $dropdown.eq(i).find('.dropdown__item-text').html();
       if (type === 'спальни'){
-        const textPart0 = `${$itemCounter[0].innerHTML} ${num2str(+$itemCounter[0].innerHTML, ['спальня', 'спальни', 'спален'])},`;
-        const textPart1 = `${$itemCounter[1].innerHTML} ${num2str(+$itemCounter[1].innerHTML, ['кровать', 'кровати', 'кроватей'])},`;
+        const textPart0 = `${$itemCounter[0].innerHTML} ${num2str(+$itemCounter[0].innerHTML, ['спальня', 'спальни', 'спален'])}`;
+        const textPart1 = `${$itemCounter[1].innerHTML} ${num2str(+$itemCounter[1].innerHTML, ['кровать', 'кровати', 'кроватей'])}`;
         const textPart2 = `${$itemCounter[2].innerHTML} ${num2str(+$itemCounter[2].innerHTML, ['ванная', 'ванные', 'ванных'])}`;
 
-        $('.dropdown__input').eq(i).attr('value', `${textPart0} ${textPart1} ${textPart2}`);
-        inputValue = `${textPart0} ${textPart1} ${textPart2}`;
+        inputValue = '';
+        if (+$itemCounter[0].innerHTML) {
+          inputValue = inputValue + textPart0;
+        }
+        if (+$itemCounter[1].innerHTML) {
+          if (+$itemCounter[0].innerHTML) {
+            inputValue = inputValue + ', ';
+          }
+          inputValue = inputValue + textPart1;
+        }
+        if (+$itemCounter[2].innerHTML) {
+          if (+$itemCounter[0].innerHTML || +$itemCounter[1].innerHTML) {
+            inputValue = inputValue + ', ';
+          }
+          inputValue = inputValue + textPart2;
+        }
+        $('.dropdown__input').eq(i).attr('value', inputValue);
       } else {
         const guestsNumber = +$itemCounter[0].innerHTML
         + +$itemCounter[1].innerHTML
