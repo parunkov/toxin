@@ -131,7 +131,14 @@
   z-index: 10;
   display: none;
   width: 320px;
+  border-radius: 4px;
   background: $white;
+  @media (max-width: 905px) {
+    width: 100%;
+  }
+  &_visible {
+    display: block;
+  }
 }
 .search-room__peoples-dropdown-wrapper {
   margin-bottom: 29px;
