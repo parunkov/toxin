@@ -5,6 +5,9 @@ import '../dropdown/dropdown';
 import '../datepicker-block/datepicker-block';
 import './dates-selector.scss';
 import $ from 'jquery';
+import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js';
+
+console.log($.mask);
 
 $(document).ready(() => {
   const $datesSelector = $('.dates-selector');
@@ -21,8 +24,10 @@ $(document).ready(() => {
 
     const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.getMonth() + 1}`).substr(-2)}.${date.getFullYear()}`;
 
-    $arrival.attr('disabled', '');
-    $departure.attr('disabled', '');
+    // $arrival.attr('disabled', '');
+    // $departure.attr('disabled', '');
+    $arrival.mask('99.99.9999');
+    $departure.mask('99.99.9999');
 
     $icon.click(function (evt) {
       evt.preventDefault();
