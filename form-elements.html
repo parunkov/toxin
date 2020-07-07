@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="description" content="Form Elements">
+    <title>Form Elements
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  <link href="./css/form-elements.css" rel="stylesheet"></head>
+  <body>
+        <header class="ui-kit"><a class="ui-kit__a" href="index.html">
+            <div class="ui-kit__logo"></div></a></header>
+    <div class="form-elements">
+      <div class="form-elements__container">
+        <section class="form-elements__section">
+          <div class="form-elements__item">
+                <div class="input"><span class="input__name">Text Field</span>
+                  <p class="input__text">Default</p>
+                  <input class="input__field input__field_theme_light" type="email" name="form-elements__input-1" placeholder="Email">
+                </div>
+          </div>
+          <div class="form-elements__item">
+                <div class="input"><span class="input__name">Text Field</span>
+                  <p class="input__text">Hover / Focus</p>
+                  <input class="input__field input__field_selected" type="email" name="form-elements__input-2" value="This is pretty awesome">
+                </div>
+          </div>
+          <div class="form-elements__item">
+                <div class="input"><span class="input__name">Dropdown</span>
+                  <p class="input__text">Default</p>
+                  <input class="input__field" type="email" name="form-elements__input-3" value="Сколько гостей">
+                  <button class="input__button" type="button">expand_more</button>
+                </div>
+          </div>
+          <div class="form-elements__item">
+                <div class="input"><span class="input__name">masked text field</span>
+                  <p class="input__text">Default</p>
+                  <input class="input__field input__field_uppercase" type="date" name="form-elements__input-4" placeholder="Email">
+                  <button class="input__button" type="button">expand_more</button>
+                </div>
+          </div>
+          <div class="form-elements__item">
+            <div class="form-elements__item-inner form-elements__item-inner_left">
+                  <div class="input"><span class="input__name">date Dropdown</span>
+                    <input class="input__field input__field_uppercase" type="date" name="form-elements__input-5" placeholder="">
+                    <button class="input__button" type="button">expand_more</button>
+                  </div>
+            </div>
+            <div class="form-elements__space"></div>
+            <div class="form-elements__item-inner form-elements__item-inner_right">
+                  <div class="input"><span class="input__name">date Dropdown</span>
+                    <input class="input__field input__field_uppercase" type="date" name="form-elements__input-6" value="2019-08-19">
+                    <button class="input__button" type="button">expand_more</button>
+                  </div>
+            </div>
+          </div>
+          <div class="form-elements__item">
+                <div class="input"><span class="input__name">filter date dropdown</span>
+                  <input class="input__field" type="text" name="form-elements__input-7" value="19 авг - 23 авг">
+                  <button class="input__button" type="button">expand_more</button>
+                </div>
+          </div>
+          <div class="form-elements__item">
+                <div class="input"><span class="input__name">subscription text field</span>
+                  <input class="input__field input__field_with-arrow" type="email" name="form-elements__input-8" placeholder="Email">
+                  <button class="input__button input__button_color_purple" type="button">arrow_forward</button>
+                </div>
+          </div>
+        </section>
+        <section class="form-elements__section">
+          <div class="form-elements__item">
+            <h3 class="form-elements__item-title">Checkbox Buttons</h3>
+                <div class="checkbox">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input " type="checkbox" name="-0">
+                    <div class="checkbox__custom"></div>
+                    <p class="checkbox__text">Можно курить</p>
+                  </label>
+                  <label class="checkbox__label">
+                    <input class="checkbox__input " type="checkbox" name="-1">
+                    <div class="checkbox__custom"></div>
+                    <p class="checkbox__text">Можно с питомцами</p>
+                  </label>
+                  <label class="checkbox__label">
+                    <input class="checkbox__input " type="checkbox" name="-2">
+                    <div class="checkbox__custom"></div>
+                    <p class="checkbox__text">Можно пригласить гостей (до 10 человек)</p>
+                  </label>
+                </div>
+          </div>
+          <div class="form-elements__item">
+            <h3 class="form-elements__item-title">Radio Buttons</h3>
+                <div class="radio">
+                  <label class="radio__label">
+                    <input class="radio__input" type="radio" name="form-elements__radio" checked>
+                    <div class="radio__custom"></div>
+                    <p class="radio__text">Мужчина</p>
+                  </label>
+                  <label class="radio__label">
+                    <input class="radio__input" type="radio" name="form-elements__radio">
+                    <div class="radio__custom"></div>
+                    <p class="radio__text">Женщина</p>
+                  </label>
+                </div>
+          </div>
+          <div class="form-elements__item">
+            <h3 class="form-elements__item-title">Toggle</h3>
+                <div class="toggle">
+                  <label class="toggle__label">
+                    <input class="toggle__input " type="checkbox" name="-0">
+                    <div class="toggle__custom">
+                      <div class="toggle__custom-inner"></div>
+                    </div>
+                    <p class="toggle__text">Получать спецпредложения</p>
+                  </label>
+                  <label class="toggle__label">
+                    <input class="toggle__input " type="checkbox" name="-1">
+                    <div class="toggle__custom">
+                      <div class="toggle__custom-inner"></div>
+                    </div>
+                    <p class="toggle__text">Получать спецпредложения</p>
+                  </label>
+                </div>
+          </div>
+          <div class="form-elements__item">
+            <h3 class="form-elements__item-title">like button</h3>
+                <div class="like">
+                  <label class="like__label">
+                    <input class="like__input " type="checkbox" name="-like">
+                    <div class="like__custom"><span class="like__inner">
+                        <p class="like__text">2</p></span></div>
+                  </label>
+                </div>
+                <div class="like">
+                  <label class="like__label">
+                    <input class="like__input " type="checkbox" name="-like">
+                    <div class="like__custom"><span class="like__inner">
+                        <p class="like__text">12</p></span></div>
+                  </label>
+                </div>
+          </div>
+          <div class="form-elements__item">
+            <h3 class="form-elements__item-title">rate button</h3>
+                <div class="rate ">
+                  <div class="rate__active">1</div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
+                </div>
+                <div class="rate ">
+                  <div class="rate__active">1</div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
+                </div>
+          </div>
+        </section>
+        <section class="form-elements__section">
+          <div class="form-elements__item">
+                <div class="slider__container">
+                  <h3 class="slider__header">Range Slider</h3>
+                  <p class="slider__text">
+                    <label for="slider__amount"></label>
+                  </p>
+                  <input type="text" id="slider__amount" readonly style="border:0;">
+                  <div id="slider__range"></div>
+                </div>
+          </div>
+          <div class="form-elements__item">
+            <h3 class="form-elements__item-title">buttons</h3>
+            <div class="form-elements__btn">
+              <div class="btn">click me</div>
+            </div>
+            <div class="form-elements__btn">
+              <div class="btn btn_transparent">click me</div>
+            </div>
+            <div class="form-elements__btn">
+              <div class="btn btn__theme_light"> <span class="btn__text">click me</span></div>
+            </div>
+            <div class="form-elements__btn">
+              <div class="btn btn__theme_light btn_transparent"><span class="btn__text">click me</span></div>
+            </div>
+            <div class="form-elements__btn">
+              <div class="btn btn_theme_text">click me</div>
+            </div>
+            <div class="form-elements__btn">
+              <div class="btn btn_theme_text btn_color_gray">click me</div>
+            </div>
+            <div class="form-elements__btn">
+              <button class="btn btn_theme_arrow" type="button">перейти к оплате</button>
+            </div>
+          </div>
+          <div class="form-elements__item">
+            <h3 class="form-elements__item-title">pagination</h3>
+            <div id="pagination-container"></div>
+            <p class="pagination__text"><span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды</p>
+          </div>
+        </section>
+        <section class="form-elements__section">
+          <div class="form-elements__item">
+                <section class="dropdown"><span class="dropdown__name">dropdown</span>
+                  <div class="dropdown__wrapper">
+                    <input class="dropdown__input" type="text" name="rooms" autocomplete="off" readonly>
+                    <button class="dropdown__arrow" type="button">expand_more</button>
+                    <div class="dropdown__menu">
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">спальни</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">кровати</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">ванные комнаты</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+          </div>
+          <div class="form-elements__item">
+                <section class="dropdown"><span class="dropdown__name">dropdown</span>
+                  <div class="dropdown__wrapper">
+                    <input class="dropdown__input" type="text" name="rooms" autocomplete="off" readonly>
+                    <button class="dropdown__arrow" type="button">expand_more</button>
+                    <div class="dropdown__menu">
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">спальни</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">кровати</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">ванные комнаты</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+          </div>
+        </section>
+        <section class="form-elements__section">
+          <div class="form-elements__item">
+            <h3 class="form-elements__item-title">expandable checkbox list</h3>
+          </div>
+          <div class="form-elements__item">
+            <h3 class="form-elements__item-title">expandable checkbox list</h3>
+                <div class="checkbox">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input " type="checkbox" name="-0">
+                    <div class="checkbox__custom"></div>
+                    <p class="checkbox__text">Завтрак</p>
+                  </label>
+                  <label class="checkbox__label">
+                    <input class="checkbox__input " type="checkbox" name="-1">
+                    <div class="checkbox__custom"></div>
+                    <p class="checkbox__text">Письменный стол</p>
+                  </label>
+                  <label class="checkbox__label">
+                    <input class="checkbox__input " type="checkbox" name="-2">
+                    <div class="checkbox__custom"></div>
+                    <p class="checkbox__text">Стул для кормления</p>
+                  </label>
+                  <label class="checkbox__label">
+                    <input class="checkbox__input " type="checkbox" name="-3">
+                    <div class="checkbox__custom"></div>
+                    <p class="checkbox__text">Кроватка</p>
+                  </label>
+                  <label class="checkbox__label">
+                    <input class="checkbox__input " type="checkbox" name="-4">
+                    <div class="checkbox__custom"></div>
+                    <p class="checkbox__text">Телевизор</p>
+                  </label>
+                  <label class="checkbox__label">
+                    <input class="checkbox__input " type="checkbox" name="-5">
+                    <div class="checkbox__custom"></div>
+                    <p class="checkbox__text">Шампунь</p>
+                  </label>
+                </div>
+          </div>
+        </section>
+        <section class="form-elements__section">
+          <div class="form-elements__item">
+                <section class="dropdown"><span class="dropdown__name">dropdown</span>
+                  <div class="dropdown__wrapper">
+                    <input class="dropdown__input" type="text" name="guests" autocomplete="off" readonly>
+                    <button class="dropdown__arrow" type="button">expand_more</button>
+                    <div class="dropdown__menu">
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">взрослые</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">дети</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">младенцы</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__buttons-block">
+                        <div class="dropdown__set-btn">
+                          <button class="btn btn_theme_text" type="button">применить</button>
+                        </div>
+                        <div class="dropdown__clear-btn">
+                          <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+          </div>
+        </section>
+        <section class="form-elements__section">
+          <div class="form-elements__item">
+            <h3 class="form-elements__item-title">rich Checkbox Buttons</h3>
+                <div class="checkbox">
+                  <label class="checkbox__label">
+                    <input class="checkbox__input " type="checkbox" name="-0">
+                    <div class="checkbox__custom"></div>
+                    <h4 class="checkbox__header">Широкий коридор</h4>
+                  </label>
+                  <p class="checkbox__text_small">Ширина коридоров в номере не менее 91 см.</p>
+                  <label class="checkbox__label">
+                    <input class="checkbox__input " type="checkbox" name="-1">
+                    <div class="checkbox__custom"></div>
+                    <h4 class="checkbox__header">Помощник для инвалидов</h4>
+                  </label>
+                  <p class="checkbox__text_small">На 1 этаже вас встретит специалист  и проводит до номера.</p>
+                </div>
+          </div>
+        </section>
+        <section class="form-elements__section">
+          <div class="form-elements__item">
+                <section class="dropdown"><span class="dropdown__name">dropdown</span>
+                  <div class="dropdown__wrapper">
+                    <input class="dropdown__input" type="text" name="guests" autocomplete="off" readonly>
+                    <button class="dropdown__arrow" type="button">expand_more</button>
+                    <div class="dropdown__menu">
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">взрослые</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">дети</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__item-wrapper"><span class="dropdown__item-text">младенцы</span>
+                            <div class="dropdown__item-controls">
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
+                              <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                            </div>
+                      </div>
+                      <div class="dropdown__buttons-block">
+                        <div class="dropdown__set-btn">
+                          <button class="btn btn_theme_text" type="button">применить</button>
+                        </div>
+                        <div class="dropdown__clear-btn">
+                          <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+          </div>
+        </section>
+        <section class="form-elements__section">
+          <div class="form-elements__item">
+            <h3 class="form-elements__item-title">bullet list</h3>
+            <ul class="form-elements__bullet-list">
+              <li class="form-elements__bullet-item">Нельзя с питомцами</li>
+              <li class="form-elements__bullet-item">Без вечеринок и мероприятий</li>
+              <li class="form-elements__bullet-item">Время прибытия — после 13:00, а выезд до 12:00</li>
+            </ul>
+          </div>
+        </section>
+        <section class="form-elements__section">
+          <div class="form-elements__item">
+                <div class=" info">
+                  <div class="info__img-wrapper"><i class="info__img">insert_emoticon</i></div>
+                  <div class="info__text-wrapper">
+                    <h4 class="info__header">Комфорт</h4>
+                    <p class="info__text">Шумопоглощающие стены</p>
+                  </div>
+                </div>
+          </div>
+          <div class="form-elements__item">
+                <div class=" info">
+                  <div class="info__img-wrapper"><i class="info__img">location_city</i></div>
+                  <div class="info__text-wrapper">
+                    <h4 class="info__header">Удобство</h4>
+                    <p class="info__text">Окно в каждой из спален</p>
+                  </div>
+                </div>
+          </div>
+        </section>
+        <section class="form-elements__section">
+          <div class="form-elements__item">
+                <div class="review">
+                  <div class="review__column-left">
+                    <div class="review__img-wrapper"><img class="-img review__img" src="img/murad.jpg"></div>
+                    <div class="review__like-wrapper">
+                          <div class="like">
+                            <label class="like__label">
+                              <input class="like__input " type="checkbox" name="-like">
+                              <div class="like__custom"><span class="like__inner">
+                                  <p class="like__text">12</p></span></div>
+                            </label>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="review__column-right">
+                    <h4 class="review__header">Мурад Сарафанов</h4>
+                    <p class="review__days">5 дней назад</p>
+                    <p class="review__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
+                  </div>
+                </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  <script type="text/javascript" src="./js/form-elements.js"></script></body>
+</html>
