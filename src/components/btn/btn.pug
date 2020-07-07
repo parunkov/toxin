@@ -1,0 +1,29 @@
+mixin btn(text, type, mod)
+	if type === 'div'
+		if mod
+			div(class="btn btn_" + mod) #{text}
+		else
+			.btn #{text}
+	else if type === 'div-light'
+		if mod
+			div(class="btn btn_theme_light btn_" + mod)
+				span.btn__text #{text}
+		else
+			.btn.btn_theme_light 
+				span.btn__text #{text}
+	else if type === 'div-text'
+		if mod
+			div(class="btn btn_theme_text btn_" + mod) #{text}
+		else
+			.btn.btn_theme_text #{text}
+	else if type === 'button'
+		if mod
+			button(type="button" class="btn btn_" + mod) #{text}
+		else
+			button(type="button" class="btn") #{text}
+	else if type === 'submit'
+		if mod
+			button(type="submit" class="btn btn_" + mod) #{text}
+		else
+			button(type="submit" class="btn") #{text}
+
