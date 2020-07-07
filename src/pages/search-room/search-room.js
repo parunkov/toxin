@@ -15,10 +15,10 @@ import $ from 'jquery';
 
 $('.search-room__input-wrapper .input__field').attr('disabled', '');
 
-$('.search-room__filters-title').click((evt) => {
+$('.search-room__aside-title').click((evt) => {
   evt.preventDefault();
   $('.search-room__form').toggleClass('d-block');
-  $('.search-room__filters-title').toggleClass('search-room__filters-title_rotate');
+  $('.search-room__aside-title').toggleClass('search-room__aside-title_rotate');
 });
 
 $('.search-room__expandable-title').click((evt) => {

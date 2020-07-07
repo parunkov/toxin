@@ -1,6 +1,9 @@
 @import '../../variables.scss';
 .card {
   height: 257.5px;
+  max-width: 270px;
+  display: inline-block;
+  border-radius: 4px;
 }
 .card__slider {
   height: 152px;
