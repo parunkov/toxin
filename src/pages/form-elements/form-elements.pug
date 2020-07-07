@@ -101,6 +101,15 @@ block main
 			cl: '',
 			text: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
 		}
+		const checkbox2 = {
+			cl: '',
+			text: ['Завтрак', 
+					'Письменный стол', 
+					'Стул для кормления',
+					'Кроватка',
+					'Телевизор',
+					'Шампунь']
+		}
 		const radio = {
 				cl: 'registration-form__radio',
 				text: ['Мужчина', 'Женщина']
@@ -109,8 +118,37 @@ block main
 				cl: 'registration-form__toggle',
 				text: ['Получать спецпредложения']
 			}
+		const sliderTitle = 'Range Slider';
 		const btnText = 'click me';
 		const btnText2 = 'перейти к оплате';
+		const dropdown1 = {
+				cl: 'rooms',
+				name: 'rooms',
+				header: 'dropdown',
+				p: 'Default',
+				item1: 'спальни',
+				item2: 'кровати',
+				item3: 'ванные комнаты'
+			}
+		const dropdown2 = {
+				cl: 'rooms',
+				name: 'rooms',
+				header: 'dropdown',
+				p: 'expanded',
+				item1: 'спальни',
+				item2: 'кровати',
+				item3: 'ванные комнаты'
+			}
+		const dropdown3 = {
+				cl: 'peoples',
+				name: 'guests',
+				header: 'dropdown',
+				p: '',
+				item1: 'взрослые',
+				item2: 'дети',
+				item3: 'младенцы',
+				clear: '1'
+			}
 	+ui-kit
 	.form-elements
 		.form-elements__container
@@ -154,7 +192,7 @@ block main
 					+rate('', 5, 1)
 			section.form-elements__section
 				.form-elements__item
-					+slider(1, 'Range Slider')
+					+slider(1, sliderTitle)
 				.form-elements__item
 					h3.form-elements__item-title #{headers[5]}
 					.form-elements__btn
@@ -177,47 +215,18 @@ block main
 					p.pagination__text <span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды
 			section.form-elements__section
 				.form-elements__item
-					+dropdown(
-						'rooms',
-						'rooms', 
-						'dropdown', 
-						'Default', 
-						'спальни', 
-						'кровати', 
-						'ванные комнаты')
+					+dropdownO(dropdown1)
 				.form-elements__item
-					+dropdown(
-						'rooms',
-						'rooms', 
-						'dropdown', 
-						'expanded', 
-						'спальни', 
-						'кровати', 
-						'ванные комнаты')
+					+dropdownO(dropdown2)
 			section.form-elements__section
 				.form-elements__item
 					h3.form-elements__item-title #{headers[7]}
 				.form-elements__item
 					h3.form-elements__item-title #{headers[7]}
-					+checkbox(
-						'', 
-						['Завтрак', 
-						'Письменный стол', 
-						'Стул для кормления',
-						'Кроватка',
-						'Телевизор',
-						'Шампунь'])
+					+checkboxO(checkbox2)
 			section.form-elements__section
 				.form-elements__item
-					+dropdown(
-						'peoples',
-						'guests', 
-						'dropdown', 
-						'', 
-						'взрослые', 
-						'дети', 
-						'младенцы',
-						'1')
+					+dropdownO(dropdown3)
 			section.form-elements__section
 				.form-elements__item
 					h3.form-elements__item-title #{headers[8]}
@@ -229,15 +238,7 @@ block main
 						'Помощник для инвалидов'])
 			section.form-elements__section
 				.form-elements__item
-					+dropdown(
-						'peoples',
-						'guests', 
-						'dropdown', 
-						'', 
-						'взрослые', 
-						'дети', 
-						'младенцы',
-						'1')
+					+dropdownO(dropdown3)
 			section.form-elements__section
 				.form-elements__item
 					h3.form-elements__item-title #{headers[9]}
