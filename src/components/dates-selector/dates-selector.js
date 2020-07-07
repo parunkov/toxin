@@ -7,8 +7,6 @@ import './dates-selector.scss';
 import $ from 'jquery';
 import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js';
 
-console.log($.mask);
-
 $(document).ready(() => {
   const $datesSelector = $('.dates-selector');
 
