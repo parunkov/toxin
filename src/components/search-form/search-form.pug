@@ -1,20 +1,13 @@
 mixin search-form(data)
 	include ../../components/dates-selector/dates-selector.pug
+	include ../../components/btn/btn.pug
 	-
 		const {title, dropdown1, dropdown2,	dropdown3, btnText} = data;
 	article.search-form
 		h1.search-form__title #{title}
 		form.search-form__form
 			.search-form__dates-selector
-				+dates-selector
-			+dropdown(
-				'peoples',
-				'guests', 
-				'гости', 
-				'', 
-				'взрослые', 
-				'дети', 
-				'младенцы',
-				'1')
+				+dates-selectorO(dropdown1, dropdown2)
+			+dropdownO(dropdown3)
 			.search-form__button
-				button(type="submit" class="btn btn_theme_arrow") #{btnText}
+				+btn(btnText, 'submit', 'theme_arrow')

@@ -13,3 +13,12 @@ mixin dates-selector
 		'выезд')
 		.dates-selector__datepicker
 				+datepicker
+mixin dates-selectorO(data1, data2)
+	include ../../components/input/input.pug
+	include ../../components/dropdown/dropdown.pug
+	include ../../components/datepicker-block/datepicker-block.pug
+	.dates-selector
+		+dropdownO (data1)
+		+dropdownO (data2)
+		.dates-selector__datepicker
+				+datepicker
