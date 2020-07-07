@@ -17,6 +17,98 @@ block main
 	include ../../components/review/review.pug
 	include ../../components/btn/btn.pug
 	-
+		const input1 = {
+			h3: 'Text Field',
+			type: 'email',
+			name: 'form-elements__input-1',
+			cl: ' input__field_theme_light',
+			val: '',
+			plac: 'Email',
+			p: 'Default'
+		}
+		const input2 = {
+			h3: 'Text Field',
+			type: 'email',
+			name: 'form-elements__input-2',
+			cl: ' input__field_selected',
+			val: 'This is pretty awesome',
+			plac: '',
+			p: 'Hover / Focus'
+		}
+		const input3 = {
+			h3: 'Dropdown',
+			type: 'email',
+			name: 'form-elements__input-3',
+			cl: '',
+			val: 'Сколько гостей',
+			plac: '',
+			p: 'Default',
+			icon: 'expand_more'
+		}
+		const input4 = {
+			h3: 'masked text field',
+			type: 'date',
+			name: 'form-elements__input-4',
+			cl: ' input__field_uppercase',
+			val: '',
+			plac: 'Email',
+			p: 'Default',
+			icon: 'expand_more'
+		}
+		const input5 = {
+			h3: 'date Dropdown',
+			type: 'date',
+			name: 'form-elements__input-5',
+			cl: ' input__field_uppercase',
+			val: '',
+			plac: '',
+			p: '',
+			icon: 'expand_more'
+		}
+		const input6 = {
+			h3: 'date Dropdown',
+			type: 'date',
+			name: 'form-elements__input-6',
+			cl: ' input__field_uppercase',
+			val: '2019-08-19',
+			plac: '',
+			p: '',
+			icon: 'expand_more'
+		}
+		const input7 = {
+			h3: 'filter date dropdown',
+			type: 'text',
+			name: 'form-elements__input-7',
+			cl: '',
+			val: '19 авг - 23 авг',
+			plac: '',
+			p: '',
+			icon: 'expand_more'
+		}
+		const input8 = {
+			h3: 'subscription text field',
+			type: 'email',
+			name: 'form-elements__input-8',
+			cl: ' input__field_with-arrow',
+			val: '',
+			plac: 'Email',
+			p: '',
+			icon: 'arrow_forward',
+			color: 'purple'
+		}
+		const headers = ['Checkbox Buttons', 'Radio Buttons', 'Toggle', 'like button', 'rate button', 'buttons', 'pagination', 'expandable checkbox list', 'rich Checkbox Buttons', 'bullet list']
+		const checkbox1 = {
+			cl: '',
+			text: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
+		}
+		const radio = {
+				cl: 'registration-form__radio',
+				text: ['Мужчина', 'Женщина']
+			}
+		const toggle = {
+				cl: 'registration-form__toggle',
+				text: ['Получать спецпредложения']
+			}
 		const btnText = 'click me';
 		const btnText2 = 'перейти к оплате';
 	+ui-kit
@@ -24,118 +116,47 @@ block main
 		.form-elements__container
 			section.form-elements__section
 				.form-elements__item
-					+input(
-						'Text Field', 
-						'email', 
-						'form-elements__input-1', 
-						' input__field_theme_light', 
-						'', 
-						'Email', 
-						'Default')
+					+inputO(input1)
 				.form-elements__item
-					+input(
-						'Text Field', 
-						'email', 
-						'form-elements__input-2', 
-						' input__field_selected', 
-						'This is pretty awesome', 
-						'', 
-						'Hover / Focus')
+					+inputO(input2)
 				.form-elements__item
-					+input(
-						'Dropdown', 
-						'email', 
-						'form-elements__input-3', 
-						'', 
-						'Сколько гостей', 
-						'', 
-						'Default', 
-						'expand_more')
+					+inputO(input3)
 				.form-elements__item
-					+input(
-						'masked text field', 
-						'date', 
-						'form-elements__input-4', 
-						' input__field_uppercase', 
-						'', 
-						'Email', 
-						'Default', 
-						'expand_more')
+					+inputO(input4)
 				.form-elements__item
 					.form-elements__item-inner.form-elements__item-inner_left
-						+input(
-							'date Dropdown', 
-							'date', 
-							'form-elements__input-5', 
-							' input__field_uppercase', 
-							'', 
-							'', 
-							'', 
-							'expand_more')
+						+inputO(input5)
 					.form-elements__space
 					.form-elements__item-inner.form-elements__item-inner_right
-						+input(
-							'date Dropdown', 
-							'date', 
-							'form-elements__input-6', 
-							' input__field_uppercase', 
-							'2019-08-19', 
-							'', 
-							'', 
-							'expand_more')
+						+inputO(input6)
 				.form-elements__item
-					+input(
-						'filter date dropdown', 
-						'text', 
-						'form-elements__input-7', 
-						'', 
-						'19 авг - 23 авг', 
-						'', 
-						'', 
-						'expand_more')
+					+inputO(input7)
 				.form-elements__item
-					+input(
-						'subscription text field', 
-						'email', 
-						'form-elements__input-8', 
-						' input__field_with-arrow', 
-						'', 
-						'Email', 
-						'', 
-						'arrow_forward', 
-						'purple')
+					+inputO(input8)
 			section.form-elements__section
 				.form-elements__item
-					h3.form-elements__item-title Checkbox Buttons
-					+checkbox(
-						'', 
-						['Можно курить', 
-						'Можно с питомцами', 
-						'Можно пригласить гостей (до 10 человек)'])
+					h3.form-elements__item-title #{headers[0]}
+					+checkboxO(checkbox1)
 				.form-elements__item
-					h3.form-elements__item-title Radio Buttons
-					+radio(
-						'form-elements__radio', 
-						['Мужчина', 'Женщина'])
+					h3.form-elements__item-title #{headers[1]}
+					+radioO(radio)
 				.form-elements__item
-					h3.form-elements__item-title Toggle
-					+toggle(
-						'', 
-						['Получать спецпредложения', 
-						'Получать спецпредложения'])
+					h3.form-elements__item-title #{headers[2]}
+					+toggleO(toggle)
+					+toggleO(toggle)
 				.form-elements__item
-					h3.form-elements__item-title like button
+					h3.form-elements__item-title #{headers[3]}
 					+like('', '2')
 					+like('', '12')
 				.form-elements__item
-					h3.form-elements__item-title rate button
+					h3.form-elements__item-title #{headers[4]}
 					+rate('', 4, 1)
 					+rate('', 5, 1)
 			section.form-elements__section
 				.form-elements__item
 					+slider(1, 'Range Slider')
 				.form-elements__item
-					h3.form-elements__item-title buttons
+					h3.form-elements__item-title #{headers[5]}
 					.form-elements__btn
 						+btn(btnText, 'div')
 					.form-elements__btn
@@ -151,7 +172,7 @@ block main
 					.form-elements__btn
 						+btn(btnText2, 'button', 'theme_arrow')
 				.form-elements__item
-					h3.form-elements__item-title pagination
+					h3.form-elements__item-title #{headers[6]}
 					#pagination-container
 					p.pagination__text <span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды
 			section.form-elements__section
@@ -175,9 +196,9 @@ block main
 						'ванные комнаты')
 			section.form-elements__section
 				.form-elements__item
-					h3.form-elements__item-title expandable checkbox list
+					h3.form-elements__item-title #{headers[7]}
 				.form-elements__item
-					h3.form-elements__item-title expandable checkbox list
+					h3.form-elements__item-title #{headers[7]}
 					+checkbox(
 						'', 
 						['Завтрак', 
@@ -199,7 +220,7 @@ block main
 						'1')
 			section.form-elements__section
 				.form-elements__item
-					h3.form-elements__item-title rich Checkbox Buttons
+					h3.form-elements__item-title #{headers[8]}
 					+checkbox(
 						'', 
 						['Ширина коридоров в номере не менее 91 см.', 
@@ -219,7 +240,7 @@ block main
 						'1')
 			section.form-elements__section
 				.form-elements__item
-					h3.form-elements__item-title bullet list
+					h3.form-elements__item-title #{headers[9]}
 					ul.form-elements__bullet-list
 						li.form-elements__bullet-item Нельзя с питомцами
 						li.form-elements__bullet-item Без вечеринок и мероприятий

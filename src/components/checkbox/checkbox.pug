@@ -10,3 +10,17 @@ mixin checkbox(cl, text, head)
 					p.checkbox__text= t
 			if head
 				p.checkbox__text_small= t
+mixin checkboxO(data)
+	-
+		const {cl, text, head} = data
+	.checkbox
+		each t, i in text
+			label.checkbox__label
+				input(type="checkbox" name=cl+"-"+i class="checkbox__input"+" "+cl)
+				.checkbox__custom
+				if head
+					h4.checkbox__header= head[i]
+				else
+					p.checkbox__text= t
+			if head
+				p.checkbox__text_small= t
