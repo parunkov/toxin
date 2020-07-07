@@ -8,6 +8,36 @@ block main
 	include ../../components/header/header.pug
 	include ../../components/footer/footer.pug
 	include ../../components/reservation-form/reservation-form.pug
+	-
+		const reservationFormData = {
+			title: '888',
+			title2: 'люкс',
+			titlePrice: '9 990₽',
+			titlePrice2: 'в сутки',
+			dropdown1: {
+				cl: ' dropdown_theme_date',
+				name: 'arrival',
+				header: 'прибытие'
+			}, 
+			dropdown2: {
+				cl: ' dropdown_theme_date',
+				name: 'departure',
+				header: 'выезд'
+			},
+			dropdown3: {
+				cl: 'peoples',
+				name: 'guests',
+				header: 'гости',
+				p: '',
+				item1: 'взрослые',
+				item2: 'дети',
+				item3: 'младенцы',
+				clear: '1'
+			}, 
+			text: ['9 990₽ х 4 суток', '39 960₽', 'Сбор за услуги: скидка 2&nbsp;179₽', '0₽', 'Сбор за дополнительные услуги', '300₽'],
+			total: ['Итого', '38 081₽'],
+			btnText: 'забронировать'
+		}
 	+header
 	main.room-details
 		figure.room-details__img-section
@@ -98,5 +128,5 @@ block main
 							p.room-details__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
 				.room-details__form-column
 					.room-details__form
-						+reservation-form
+						+reservation-form(reservationFormData)
 	+footer

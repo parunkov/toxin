@@ -97,6 +97,35 @@ block main
 				footerText: 'Уже есть аккаунт на Toxin',
 				btnText2: 'войти'
 			}
+			const reservationFormData = {
+				title: '888',
+				title2: 'люкс',
+				titlePrice: '9 990₽',
+				titlePrice2: 'в сутки',
+				dropdown1: {
+					cl: ' dropdown_theme_date',
+					name: 'arrival',
+					header: 'прибытие'
+				}, 
+				dropdown2: {
+					cl: ' dropdown_theme_date',
+					name: 'departure',
+					header: 'выезд'
+				},
+				dropdown3: {
+					cl: 'peoples',
+					name: 'guests',
+					header: 'гости',
+					p: '',
+					item1: 'взрослые',
+					item2: 'дети',
+					item3: 'младенцы',
+					clear: '1'
+				}, 
+				text: ['9 990₽ х 4 суток', '39 960₽', 'Сбор за услуги: скидка 2', '179₽', '0₽', 'Сбор за дополнительные услуги', '300₽'],
+				total: ['Итого', '38 081₽'],
+				btnText: 'забронировать'
+			}
 
 			const RoomData = function(img, num, lux, price, rate, rev) {
 				this.img = img;
@@ -118,7 +147,7 @@ block main
 					+registration-form(registrationFormData)
 			.cards__column
 				.cards__card-wrapper.cards__card-wrapper_reservation
-					+reservation-form
+					+reservation-form(reservationFormData)
 				.cards__card-wrapper.cards__card-wrapper_login
 					+login-form
 			.cards__column.cards__column_right

@@ -1,38 +1,33 @@
-mixin reservation-form
+mixin reservation-form(data)
 	include ../../components/dates-selector/dates-selector.pug
+	include ../../components/btn/btn.pug
+	-
+		const {title, title2, titlePrice, titlePrice2, dropdown1, dropdown2, dropdown3, text, total, btnText} = data;
 	article.reservation-form
 		.reservation-form__title
 			.reservation-form__title-left
-				h1.reservation-form__title-text <span class="reservation-form__title_number">№</span>888
-					span.reservation-form__title_category  люкс
+				h1.reservation-form__title-text <span class="reservation-form__title_number">№</span>#{title}
+					span.reservation-form__title_category  #{title2}
 			.reservation-form__title-right
-				p.reservation-form__title_price 9 990₽ <span class="reservation-form__title_price-text">в сутки</span>
+				p.reservation-form__title_price #{titlePrice} <span class="reservation-form__title_price-text">#{titlePrice2}</span>
 		form.reservation-form__form
 			.reservation-form__dates-selector
-				+dates-selector
-			+dropdown(
-				'peoples',
-				'', 
-				'гости', 
-				'', 
-				'взрослые', 
-				'дети', 
-				'младенцы',
-				'1')
+				+dates-selectorO(dropdown1, dropdown2)
+			+dropdownO(dropdown3)
 			p.reservation-form__text 
-				span.reservation-form__text_left 9 990₽ х 4 суток 
-				span.reservation-form__text_right 39 960₽
+				span.reservation-form__text_left #{text[0]} 
+				span.reservation-form__text_right #{text[1]}
 			p.reservation-form__text
-				span.reservation-form__text_left Сбор за услуги: скидка 2&nbsp;179₽ 
+				span.reservation-form__text_left #{text[2]}&nbsp;#{text[3]}
 				span.reservation-form__i i
-				span.reservation-form__text_right 0₽
+				span.reservation-form__text_right #{text[4]}
 			p.reservation-form__text
-				span.reservation-form__text_left Сбор за дополнительные услуги
+				span.reservation-form__text_left #{text[5]}
 				span.reservation-form__i i
-				span.reservation-form__text_right 300₽
+				span.reservation-form__text_right #{text[6]}
 			.reservation-form__price
-				span.reservation-form__price-text Итого
+				span.reservation-form__price-text #{total[0]}
 				span.reservation-form__price-space
-				h2.reservation-form__price-value 38 081₽
+				h2.reservation-form__price-value #{total[1]}
 			.reservation-form__btn
-				button(type="submit" class="btn btn_theme_arrow") забронировать
+				+btn(btnText, 'submit', 'theme_arrow')
