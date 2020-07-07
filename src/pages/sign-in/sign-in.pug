@@ -8,8 +8,33 @@ block main
 	include ../../components/login-form/login-form.pug
 	include ../../components/header/header.pug
 	include ../../components/footer/footer.pug
+	-
+		const loginFormData = {
+			title: 'Войти',
+			input1: {
+				h3: '',
+				type: 'email',
+				name: 'email',
+				cl: ' input__field_theme_light',
+				val: '',
+				plac: 'Email',
+				p: ''
+			},
+			input2: {
+				h3: '',
+				type: 'password',
+				name: 'password',
+				cl: ' input__field_theme_light',
+				val: '',
+				plac: 'Пароль',
+				p: ''
+			},
+			btnText: 'войти',
+			footerText: 'Нет аккаунта на Toxin?',
+			btnText2: 'создать'
+		}
 	+header
 	main.sign-in
 		.sign-in__container
-			+login-form
+			+login-form(loginFormData)
 	+footer

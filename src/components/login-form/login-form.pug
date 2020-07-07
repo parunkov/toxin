@@ -1,32 +1,20 @@
 include ../../components/input/input.pug
-mixin login-form
+include ../../components/btn/btn.pug
+mixin login-form(data)
+	-
+		const {title, input1, input2, btnText, footerText, btnText2} = data;
 	article.login-form
-		h1.login-form__header Войти
+		h1.login-form__header #{title}
 		form.login-form__form
 			.login-form__input-wrapper
-				+input(
-					'', 
-					'email', 
-					'email', 
-					' input__field_theme_light', 
-					'', 
-					'Email', 
-					'')
+				+inputO(input1)
 			.login-form__input-wrapper
-				+input(
-					'', 
-					'password', 
-					'password', 
-					' input__field_theme_light', 
-					'', 
-					'Пароль', 
-					'')
+				+inputO(input1)
 			.login-form__btn
-				button(type="submit" class="btn btn_theme_arrow") войти
+				+btn(btnText, 'submit', 'theme_arrow')
 		.login-form__footer
 			.login-form__footer-left
-				p.login-form__footer-text Нет аккаунта на Toxin?
+				p.login-form__footer-text #{footerText}
 			.login-form__footer-right
 				.login-form__button
-					a(href="registration.html" class="btn btn_theme_light btn__size_big")
-						span.btn__text создать
+					+btn(btnText2, 'big-a', 0, 'registration.html')
