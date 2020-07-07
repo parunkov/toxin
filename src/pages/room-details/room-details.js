@@ -53,7 +53,7 @@ const dataset2 = [
   },
   {
     value: 24,
-    color: 'transparent',
+    color: '#ffffff',
   },
   {
     value: 1,
@@ -116,55 +116,26 @@ const $sectors = $('.room-details__sector');
 const $masks = $('.room-details__chart-white-mask .room-details__sector');
 const $chartText = $('.room-details__chart-inner');
 const $chartNumber = $('.room-details__chart-number');
-$sectors.eq(1).hover(() => {
-  $masks.css({'background' : '#ffffff'});
-  $masks.eq(1).css({'background' : 'transparent'});
-  $chartText.css({'color': '#bc9cff'});
-  $chartNumber.text('260');
-});
-$sectors.eq(3).hover(() => {
-  $masks.css({'background' : '#ffffff'});
-  $masks.eq(3).css({'background' : 'transparent'});
-  $chartText.css({'color': '#6fcf97'});
-  $chartNumber.text('270');
-});
-$sectors.eq(5).hover(() => {
-  $masks.css({'background' : '#ffffff'});
-  $masks.eq(5).css({'background' : 'transparent'});
-  $masks.eq(6).css({'background' : 'transparent'});
-  $chartText.css({'color': '#ffcd9c'});
-  $chartNumber.text('520');
-});
-$sectors.eq(6).hover(() => {
-  $masks.css({'background' : '#ffffff'});
-  $masks.eq(5).css({'background' : 'transparent'});
-  $masks.eq(6).css({'background' : 'transparent'});
-  $chartText.css({'color': '#ffcd9c'});
-  $chartNumber.text('520');
-});
-$masks.eq(1).hover(() => {
-  $masks.css({'background' : '#ffffff'});
-  $masks.eq(1).css({'background' : 'transparent'});
-  $chartText.css({'color': '#bc9cff'});
-  $chartNumber.text('260');
-});
-$masks.eq(3).hover(() => {
-  $masks.css({'background' : '#ffffff'});
-  $masks.eq(3).css({'background' : 'transparent'});
-  $chartText.css({'color': '#6fcf97'});
-  $chartNumber.text('270');
-});
-$masks.eq(5).hover(() => {
-  $masks.css({'background' : '#ffffff'});
-  $masks.eq(5).css({'background' : 'transparent'});
-  $masks.eq(6).css({'background' : 'transparent'});
-  $chartText.css({'color': '#ffcd9c'});
-  $chartNumber.text('520');
-});
-$masks.eq(6).hover(() => {
-  $masks.css({'background' : '#ffffff'});
-  $masks.eq(5).css({'background' : 'transparent'});
-  $masks.eq(6).css({'background' : 'transparent'});
-  $chartText.css({'color': '#ffcd9c'});
-  $chartNumber.text('520');
-});
+const onSectorHover = (numbers, color, text) => {
+  numbers.forEach((i) => {
+    const onHover = () => {
+      $masks.css({'background' : '#ffffff'});
+      numbers.forEach((j) => {
+        $masks.eq(j).css({'background' : 'transparent'});
+      });
+      $chartText.css({'color': color});
+      $chartNumber.text(text);
+    }
+    const onLeave = () => {
+      $masks.css({'background' : '#ffffff'});
+      $chartText.css({'color': 'rgba(31, 32, 65, 0.5)'});
+      $chartNumber.text('1050');
+    }
+    $sectors.eq(i).hover(onHover, onLeave);
+    $masks.eq(i).hover(onHover, onLeave);
+  });
+}
+
+onSectorHover([1], '#bc9cff', '260');
+onSectorHover([3], '#6fcf97', '270');
+onSectorHover([5, 6], '#ffcd9c', '520');
