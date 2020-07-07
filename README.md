@@ -6,7 +6,7 @@
 
 ## Демо страница
 
-https://parunkov.github.io/toxin/build/index.html  
+https://parunkov.github.io/toxin/
 
 ## Команды
 
