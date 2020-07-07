@@ -14,7 +14,7 @@ const CopyWebpackPlugin= require('copy-webpack-plugin');
 
 const PATHS = {
     src: path.join(__dirname, 'src'),
-    build: path.join(__dirname, 'build')
+    build: path.join(__dirname, '../toxin_gh-pages')
 };
 
 let fs = require('fs');
