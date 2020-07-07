@@ -22,7 +22,6 @@ $(document).ready(() => {
     const $incrementBtn = $dropdown__wrapper.eq(i).find('.dropdown__counter-button_theme_increment');
     const $text = $('.dropdown__input');
     const $dropdownClear = $dropdown__wrapper.eq(i).find('.dropdown__clear-btn');
-    console.log($text);
 
     let totalCount = 0;
     let inputValue = '';

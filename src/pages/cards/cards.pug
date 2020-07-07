@@ -14,7 +14,32 @@ block main
 		include ../../components/search-form/search-form.pug
 		+ui-kit
 		- 	
-			let RoomData = function(img, num, lux, price, rate, rev) {
+			const searchFormData = {
+				title: 'Найдём номера под ваши пожелания',
+				dropdown1: {
+					cl: ' dropdown_theme_date',
+					name: 'arrival',
+					header: 'прибытие'
+				}, 
+				dropdown2: {
+					cl: ' dropdown_theme_date',
+					name: 'departure',
+					header: 'выезд'
+				},
+				dropdown3: {
+					cl: 'peoples',
+					name: 'guests',
+					header: 'гости',
+					p: '',
+					item1: 'взрослые',
+					item2: 'дети',
+					item3: 'младенцы',
+					clear: '1'
+				}, 
+				btnText: 'подобрать номер'
+			}
+
+			const RoomData = function(img, num, lux, price, rate, rev) {
 				this.img = img;
 				this.num = num;
 				this.lux = lux;
@@ -22,14 +47,14 @@ block main
 				this.rate = rate;
 				this.rev = rev;
 			};
-			let data = [
+			const data = [
 				new RoomData(['img/image1.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 888, 'люкс', '9 990', 5, 145),
 				new RoomData(['img/image2.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 840, '', '9 990', 4, 65)
 				];
 		.cards__container
 			.cards__column
 				.cards__card-wrapper.cards__card-wrapper_search
-					+search-form
+					+search-form(searchFormData)
 				.cards__card-wrapper.cards__card-wrapper_registration
 					+registration-form
 			.cards__column

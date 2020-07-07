@@ -1,7 +1,9 @@
-mixin search-form
+mixin search-form(data)
 	include ../../components/dates-selector/dates-selector.pug
+	-
+		const {title, dropdown1, dropdown2,	dropdown3, btnText} = data;
 	article.search-form
-		h1.search-form__title Найдём номера под ваши пожелания
+		h1.search-form__title #{title}
 		form.search-form__form
 			.search-form__dates-selector
 				+dates-selector
@@ -15,4 +17,4 @@ mixin search-form
 				'младенцы',
 				'1')
 			.search-form__button
-				button(type="submit" class="btn btn_theme_arrow")  подобрать номер
+				button(type="submit" class="btn btn_theme_arrow") #{btnText}

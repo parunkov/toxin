@@ -8,10 +8,36 @@ block main
 	include ../../components/header/header.pug
 	include ../../components/footer/footer.pug
 	include ../../components/search-form/search-form.pug
+	-
+		const searchFormData = {
+			title: 'Найдём номера под ваши пожелания',
+			dropdown1: {
+				cl: ' dropdown_theme_date',
+				name: 'arrival',
+				header: 'прибытие'
+			}, 
+			dropdown2: {
+				cl: ' dropdown_theme_date',
+				name: 'departure',
+				header: 'выезд'
+			},
+			dropdown3: {
+				cl: 'peoples',
+				name: 'guests',
+				header: 'гости',
+				p: '',
+				item1: 'взрослые',
+				item2: 'дети',
+				item3: 'младенцы',
+				clear: '1'
+			}, 
+			btnText: 'подобрать номер'
+		}
+
 	+header
 	main.landing
 		.landing__container
 			//- .landing__form-wrapper
-			+search-form
+			+search-form(searchFormData)
 			p.landing__text Лучшие номера для вашей работы, отдыха и просто вдохновения
 	+footer
