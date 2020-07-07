@@ -1,4 +1,4 @@
-mixin btn(text, type, mod)
+mixin btn(text, type, mod, href)
 	if type === 'div'
 		if mod
 			div(class="btn btn_" + mod) #{text}
@@ -26,4 +26,6 @@ mixin btn(text, type, mod)
 			button(type="submit" class="btn btn_" + mod) #{text}
 		else
 			button(type="submit" class="btn") #{text}
-
+	else if type === 'big-a'
+		a(href=href class="btn btn_theme_light btn__size_big")
+			span.btn__text #{text}

@@ -1,70 +1,33 @@
-mixin registration-form
+mixin registration-form(data)
 	include ../../components/input/input.pug
 	include ../../components/radio/radio.pug
 	include ../../components/toggle/toggle.pug
+	include ../../components/btn/btn.pug
+	-
+		const {title, input1, input2, radio, input3, input4, input5, toggle, btnText, footerText, btnText2} = data;
 	article.registration-form
 		.registration-form__title-wrapper
-			h1.registration-form__title Регистрация аккаунта
+			h1.registration-form__title #{title}
 		form.registration-form__form
 			.registration-form__input-wrapper
-				+input(
-					'', 
-					'text', 
-					'name', 
-					' input__field_theme_light', 
-					'', 
-					'Имя', 
-					'')
+				+inputO(input1)
 			.registration-form__input-wrapper
-				+input(
-					'', 
-					'text', 
-					'surname', 
-					' registration-form__input-2 input__field_theme_light', 
-					'', 
-					'Фамилия', 
-					'')
+				+inputO(input2)
 			.registration-form__radio-wrapper
-				+radio(
-					'registration-form__radio', 
-					['Мужчина', 'Женщина'])
+				+radioO(radio)
 			.registration-form__input-wrapper
-				+input(
-					'дата рождения', 
-					'date', 
-					'birthday', 
-					' input__field_theme_uppercase', 
-					'', 
-					'', 
-					'')
+				+inputO(input3)
 			.registration-form__input-wrapper
-				+input(
-					'данные для входа в сервис', 
-					'email', 
-					'email', 
-					' input__field_theme_light', 
-					'', 
-					'Email', 
-					'')
+				+inputO(input4)
 			.registration-form__input-wrapper
-				+input(
-					'', 
-					'password', 
-					'password', 
-					' input__field_theme_light', 
-					'', 
-					'Пароль', 
-					'')
+				+inputO(input5)
 			.registration-form__toggle-wrapper
-				+toggle(
-					'registration-form__toggle', 
-					['Получать спецпредложения'])
+				+toggleO(toggle)
 			.registration-form__btn
-				button(type="submit" class="btn btn_theme_arrow") перейти к оплате
+				+btn(btnText, 'submit', 'theme_arrow')
 		.registration-form__footer
 			.registration-form__footer-left
-				p.registration-form__footer-text Уже есть аккаунт на Toxin
+				p.registration-form__footer-text #{footerText}
 			.registration-form__footer-right
 				.registration-form__button 
-					a(href="sign-in.html" class="btn btn_theme_light btn__size_big")
-						span.btn__text войти
+				+btn(btnText2, 'big-a', 0, 'sign-in.html')

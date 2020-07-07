@@ -8,3 +8,15 @@ mixin radio(cl, text)
 					input(type="radio" name=cl class="radio__input")
 				.radio__custom
 				p.radio__text= t
+mixin radioO(data)
+	-
+		const {cl, text} = data
+	.radio
+		each t, i in text
+			label.radio__label
+				if i === 0
+					input(type="radio" name=cl class="radio__input" checked)
+				else
+					input(type="radio" name=cl class="radio__input")
+				.radio__custom
+				p.radio__text= t

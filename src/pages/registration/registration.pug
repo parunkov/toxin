@@ -8,8 +8,69 @@ block main
 	include ../../components/header/header.pug
 	include ../../components/registration-form/registration-form.pug
 	include ../../components/footer/footer.pug
+	-
+		const registrationFormData = {
+			title: 'Регистрация аккаунта',
+			input1: {
+				h3: '',
+				type: 'text',
+				name: 'name',
+				cl: ' input__field_theme_light',
+				val: '',
+				plac: 'Имя',
+				p: ''
+			},
+			input2: {
+				h3: '',
+				type: 'text',
+				name: 'surname',
+				cl: ' registration-form__input-2 input__field_theme_light',
+				val: '',
+				plac: 'Фамилия',
+				p: ''
+			},
+			radio: {
+				cl: 'registration-form__radio',
+				text: ['Мужчина', 'Женщина']
+			},
+			input3: {
+				h3: 'дата рождения',
+				type: 'date',
+				name: 'birthday',
+				cl: ' input__field_theme_uppercase',
+				val: '',
+				plac: '',
+				p: ''
+			},
+			input4: {
+				h3: 'данные для входа в сервис',
+				type: 'email',
+				name: 'email',
+				cl: ' input__field_theme_light',
+				val: '',
+				plac: 'Email',
+				p: ''
+			},
+			input5: {
+				h3: '',
+				type: 'password',
+				name: 'password',
+				cl: ' input__field_theme_light',
+				val: '',
+				plac: 'Пароль',
+				p: ''
+			},
+			toggle: {
+				cl: 'registration-form__toggle',
+				text: ['Получать спецпредложения']
+			},
+			btnText: 'перейти к оплате',
+			footerText: 'Уже есть аккаунт на Toxin',
+			btnText2: 'войти'
+		}
+
 	+header
 	main.registration
 		.registration__container
-			+registration-form
+			+registration-form(registrationFormData)
 	+footer
