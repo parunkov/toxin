@@ -38,6 +38,44 @@ block main
 			total: ['Итого', '38 081₽'],
 			btnText: 'забронировать'
 		}
+		const headers = ['Сведения о номере', 'Впечатления от номера', 'Отзывы посетителей номера', '2 отзыва', 'Правила', 'Отмена'];
+		const info1 = {
+			cl: '',
+			img: 'insert_emoticon',
+			head: 'Комфорт',
+			text: 'Шумопоглощающие стены'
+		}
+		const info2 = {
+			cl: '',
+			img: 'location_city',
+			head: 'Удобство',
+			text: 'Окно в каждой из спален'
+		}
+		const info3 = {
+			cl: '',
+			img: 'whatshot',
+			head: 'Уют',
+			text: 'Номер оснащён камином'
+		}
+		const chart = ['1050', 'голосов', 'Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован'];
+		const review1 = {
+			cl: '',
+			img: 'img/murad.jpg',
+			like: '12',
+			head: 'Мурад Сарафанов',
+			days: '5 дней назад',
+			text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
+		};
+		const review2 = {
+			cl: '',
+			img: 'img/Patricia.jpg',
+			like: '2',
+			head: 'Патрисия Стёклышкова',
+			days: 'Неделю назад',
+			text: 'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент'
+		};
+		const bullets = ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'];
+		const text = 'Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.';
 	+header
 	main.room-details
 		figure.room-details__img-section
@@ -56,76 +94,52 @@ block main
 				.room-details__content-column
 					.room-details__content-row
 						article.room-details__article
-							h2.room-details__title Сведения о номере
+							h2.room-details__title #{headers[0]}
 							.room-details__info-wrapper
-								+info(
-									'',
-									'insert_emoticon',
-									'Комфорт',
-									'Шумопоглощающие стены')
+								+infoO(info1)
 							.room-details__info-wrapper
-								+info(
-									'',
-									'location_city',
-									'Удобство',
-									'Окно в каждой из спален')
+								+infoO(info2)
 							.room-details__info-wrapper
-								+info(
-									'',
-									'whatshot',
-									'Уют',
-									'Номер оснащён камином')
+								+infoO(info3)
 						article.room-details__article
-							h2.room-details__title Впечатления от номера
+							h2.room-details__title #{headers[1]}
 							.room-details__chart-wrapper
 								.room-details__chart
 								.room-details__chart-white-mask
 								.room-details__chart-inner
-									.room-details__chart-number 1050
-									.room-details__chart-text голосов
+									.room-details__chart-number #{chart[0]}
+									.room-details__chart-text #{chart[1]}
 							.room-details__chart-comment
 								.room-details__chart-item
 									.room-details__mark.room-details__mark_color_orange
-									p.room-details__chart-text-item Великолепно
+									p.room-details__chart-text-item #{chart[2]}
 								.room-details__chart-item
 									.room-details__mark.room-details__mark_color_green
-									p.room-details__chart-text-item Хорошо
+									p.room-details__chart-text-item #{chart[3]}
 								.room-details__chart-item
 									.room-details__mark.room-details__mark_color_purple
-									p.room-details__chart-text-item Удовлетворительно
+									p.room-details__chart-text-item #{chart[4]}
 								.room-details__chart-item
 									.room-details__mark.room-details__mark_color_black
-									p.room-details__chart-text-item Разочарован
+									p.room-details__chart-text-item #{chart[5]}
 					.room-details__content-row
 						article.room-details__article
-							h2.room-details__title.room-details__title Отзывы посетителей номера
-								span.room-details__title-right-part 2 отзыва
+							h2.room-details__title.room-details__title #{headers[2]}
+								span.room-details__title-right-part #{headers[3]}
 							.room-details__review-wrapper.room-details__review-wrapper_1
-								+review(
-									'',
-									'img/murad.jpg',
-									'12',
-									'Мурад Сарафанов',
-									'5 дней назад',
-									'Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+								+reviewO(review1)
 							.room-details__review-wrapper.room-details__review-wrapper_2
-								+review(
-									'',
-									'img/Patricia.jpg',
-									'2',
-									'Патрисия Стёклышкова',
-									'Неделю назад',
-									'Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент')
+								+reviewO(review2)
 					.room-details__content-row
 						article.room-details__article
-							h2.room-details__title.room-details__title Правила
+							h2.room-details__title.room-details__title #{headers[4]}
 							ul.room-details__ul
-								li.room-details__bullet-item Нельзя с питомцами
-								li.room-details__bullet-item Без вечеринок и мероприятий
-								li.room-details__bullet-item Время прибытия — после 13:00, а выезд до 12:00
+								li.room-details__bullet-item #{bullets[0]}
+								li.room-details__bullet-item #{bullets[1]}
+								li.room-details__bullet-item #{bullets[2]}
 						article.room-details__article
-							h2.room-details__title.room-details__title Отмена
-							p.room-details__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+							h2.room-details__title.room-details__title #{headers[5]}
+							p.room-details__text #{text}
 				.room-details__form-column
 					.room-details__form
 						+reservation-form(reservationFormData)
