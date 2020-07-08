@@ -3,19 +3,20 @@ import './dropdown.scss';
 import './dropdown.pug';
 import $ from 'jquery';
 // import {dropdownTexts} from '../../pages/form-elements/form-elements';
+import {dropdownTexts} from '../../commonData/commonData';
 
-const dropdownTexts = {
-  type: 'спальни',
-  value1:'0 спален, 0 кроватей, 0 ванных',
-  placeholder1: 'Выберите удобства',
-  placeholder2: 'дд.мм.гггг',
-  placeholder3: 'Сколько гостей',
-  variants1: ['спальня', 'спальни', 'спален'],
-  variants2: ['ванная', 'ванные', 'ванных'],
-  variants3: ['младенец', 'младенца', 'младенцев'],
-  variants4: ['кровать', 'кровати', 'кроватей'],
-  variants5: ['гость', 'гостя', 'гостей']
-}
+// const dropdownTexts = {
+//   type: 'спальни',
+//   value1:'0 спален, 0 кроватей, 0 ванных',
+//   placeholder1: 'Выберите удобства',
+//   placeholder2: 'дд.мм.гггг',
+//   placeholder3: 'Сколько гостей',
+//   variants1: ['спальня', 'спальни', 'спален'],
+//   variants2: ['ванная', 'ванные', 'ванных'],
+//   variants3: ['младенец', 'младенца', 'младенцев'],
+//   variants4: ['кровать', 'кровати', 'кроватей'],
+//   variants5: ['гость', 'гостя', 'гостей']
+// }
 
 const num2str = function (num, textForms) {
   const n = Math.abs(num) % 100;
