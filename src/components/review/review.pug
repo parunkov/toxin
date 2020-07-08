@@ -1,15 +1,4 @@
-mixin review(cl, img, like, head, days, text)
-	.review
-		.review__column-left
-			.review__img-wrapper
-				img(src=img class=cl + "-img review__img")
-			.review__like-wrapper
-				+like(cl, like)
-		.review__column-right
-			h4.review__header= head
-			p.review__days= days
-			p.review__text= text
-mixin reviewO(data)
+mixin review(data)
 	-
 		const {cl, img, like, head, days, text} = data
 	.review

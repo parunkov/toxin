@@ -1,12 +1,4 @@
-mixin toggle(cl, text)
-	.toggle
-		each t, i in text
-			label.toggle__label
-				input(type="checkbox" name=cl+"-"+i class="toggle__input"+" "+cl)
-				.toggle__custom
-					.toggle__custom-inner
-				p.toggle__text= t
-mixin toggleO(data)
+mixin toggle(data)
 	-
 		const {cl, text} = data;
 	.toggle

@@ -1,14 +1,4 @@
-mixin radio(cl, text)
-	.radio
-		each t, i in text
-			label.radio__label
-				if i === 0
-					input(type="radio" name=cl class="radio__input" checked)
-				else
-					input(type="radio" name=cl class="radio__input")
-				.radio__custom
-				p.radio__text= t
-mixin radioO(data)
+mixin radio(data)
 	-
 		const {cl, text} = data
 	.radio
