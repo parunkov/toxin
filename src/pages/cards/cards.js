@@ -11,9 +11,9 @@ import '../../components/card/card';
 import '../../components/data/data';
 import './cards.scss';
 
-const regFormText = {
-  header1: 'Регистрация<br>аккаунта',
-  header2: 'Регистрация аккаунта'
-}
+// const regFormText = {
+//   header1: 'Регистрация<br>аккаунта',
+//   header2: 'Регистрация аккаунта'
+// }
 
-export {regFormText};
+// export {regFormText};
