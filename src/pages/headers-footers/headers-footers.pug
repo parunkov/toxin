@@ -9,6 +9,8 @@ block main
 		include ../../components/header/header.pug
 		include ../../components/footer/footer.pug
 		include ../../components/logo/logo.pug
+		-
+			const text = 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.';
 
 		+ui-kit
 		.headers-footers__header.headers-footers__header_unlogged
@@ -22,7 +24,7 @@ block main
 				.headers-footers__footer-container
 					.headers-footers__logo
 						+logo
-					p.headers-footers__text Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+					p.headers-footers__text #{text}
 					ul.headers-footers__social-list
 						li.footer__social-item
 							a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social-link footer__social-link_theme_twitter") Twitter
