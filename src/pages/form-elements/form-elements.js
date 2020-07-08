@@ -39,7 +39,6 @@ $('.like__input').eq(2).prop('checked', true);
 $(document).ready(() => {
 
   const $button = $('.form-elements__section:nth-child(8) .form-elements__item .dropdown__wrapper button');
-  console.log($button);
   $button.eq(2).trigger('click');
   $button.eq(2).trigger('click');
   $button.eq(4).trigger('click');

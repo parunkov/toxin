@@ -1,0 +1,10 @@
+diff a/src/components/dropdown/dropdown.js b/src/components/dropdown/dropdown.js	(rejected hunks)
+@@ -116,7 +116,7 @@
+           }
+           inputValue = inputValue + textPart2;
+         }
+-        $('.dropdown__input').eq(i).attr('value', inputValue);
++        $dropdown__wrapper.eq(i).find('.dropdown__input').eq(i).attr('value', inputValue);
+       } else {
+         const guestsNumber = +$itemCounter[0].innerHTML
+         + +$itemCounter[1].innerHTML

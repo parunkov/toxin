@@ -6,13 +6,16 @@ import '../radio/radio';
 import '../toggle/toggle';
 import './registration-form.scss';
 import $ from 'jquery';
+import {regFormText} from '../../pages/cards/cards';
 
-const onWindowResize = () => {
-  if ($(window).width() < 350) {
-    $('.registration-form__title').html('Регистрация<br>аккаунта');
-  } else {
-    $('.registration-form__title').html('Регистрация аккаунта');
-  }
-};
-onWindowResize();
-$(window).resize(onWindowResize);
+$(document).ready(() => {
+  const onWindowResize = () => {
+    if ($(window).width() < 350) {
+      $('.registration-form__title').html(regFormText.header1);
+    } else {
+      $('.registration-form__title').html(regFormText.header2);
+    }
+  };
+  onWindowResize();
+  $(window).resize(onWindowResize);
+});
