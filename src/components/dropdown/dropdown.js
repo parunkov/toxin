@@ -2,6 +2,7 @@ import '../../variables.scss';
 import './dropdown.scss';
 import './dropdown.pug';
 import $ from 'jquery';
+import {dropdownTexts} from '../../pages/form-elements/form-elements';
 
 const num2str = function (num, textForms) {
   const n = Math.abs(num) % 100;
@@ -28,13 +29,13 @@ $(document).ready(() => {
 
     $dropdown.each((j) => {
       const type = $dropdown.eq(j).find('.dropdown__item-text').html();
-      if (type === 'спальни') {
-        $text.eq(j).attr('value', '0 спален, 0 кроватей, 0 ванных');
-        $text.eq(j).attr('placeholder', 'Выберите удобства');
+      if (type === dropdownTexts.type) {
+        $text.eq(j).attr('value', dropdownTexts.value1);
+        $text.eq(j).attr('placeholder', dropdownTexts.placeholder1);
       } else if (!type) {
-        $text.eq(j).attr('placeholder', 'дд.мм.гггг');
+        $text.eq(j).attr('placeholder', dropdownTexts.placeholder2);
       } else {
-        $text.eq(j).attr('placeholder', 'Сколько гостей');
+        $text.eq(j).attr('placeholder', dropdownTexts.placeholder3);
       }
     });
 
@@ -94,10 +95,10 @@ $(document).ready(() => {
 
       const $itemCounter = $('.dropdown__menu').eq(i).find('.dropdown__counter');
       const type = $dropdown.eq(i).find('.dropdown__item-text').html();
-      if (type === 'спальни'){
-        const textPart0 = `${$itemCounter[0].innerHTML} ${num2str(+$itemCounter[0].innerHTML, ['спальня', 'спальни', 'спален'])}`;
-        const textPart1 = `${$itemCounter[1].innerHTML} ${num2str(+$itemCounter[1].innerHTML, ['кровать', 'кровати', 'кроватей'])}`;
-        const textPart2 = `${$itemCounter[2].innerHTML} ${num2str(+$itemCounter[2].innerHTML, ['ванная', 'ванные', 'ванных'])}`;
+      if (type === dropdownTexts.type){
+        const textPart0 = `${$itemCounter[0].innerHTML} ${num2str(+$itemCounter[0].innerHTML, dropdownTexts.variants1)}`;
+        const textPart1 = `${$itemCounter[1].innerHTML} ${num2str(+$itemCounter[1].innerHTML, dropdownTexts.variants4)}`;
+        const textPart2 = `${$itemCounter[2].innerHTML} ${num2str(+$itemCounter[2].innerHTML, dropdownTexts.variants2)}`;
 
         inputValue = '';
         if (+$itemCounter[0].innerHTML) {
@@ -122,10 +123,10 @@ $(document).ready(() => {
         + +$itemCounter[2].innerHTML;
         const babyNumber = +$itemCounter[2].innerHTML;
         inputValue = `${guestsNumber} ${num2str(+guestsNumber,
-          ['гость', 'гостя', 'гостей'])}`;
+          dropdownTexts.variants5)}`;
         if (babyNumber) {
           const inputText = inputValue;
-          inputValue = `${inputText}, ${babyNumber} ${num2str(+babyNumber, ['младенец', 'младенца', 'младенцев'])}`;
+          inputValue = `${inputText}, ${babyNumber} ${num2str(+babyNumber, dropdownTexts.variants3)}`;
         }
         if (guestsNumber === 0) {
           inputValue = '';
@@ -146,7 +147,7 @@ $(document).ready(() => {
       $dropdown__wrapper.eq(i).find('.dropdown__counter').html('0');
       $dropdownClear.removeClass('dropdown__clear-btn_visible');
       opacytyBtn();
-      $dropdown__wrapper.eq(i).find('.dropdown__input').attr('placeholder', 'Сколько гостей');
+      $dropdown__wrapper.eq(i).find('.dropdown__input').attr('placeholder', dropdownTexts.placeholder3);
       $dropdown__wrapper.eq(i).find('.dropdown__input').attr('value', '');
       inputValue = '';
     });
