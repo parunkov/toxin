@@ -1,24 +1,9 @@
-mixin dates-selector
+mixin dates-selector(data1, data2, text1, text2)
 	include ../../components/input/input.pug
 	include ../../components/dropdown/dropdown.pug
 	include ../../components/datepicker-block/datepicker-block.pug
 	.dates-selector
-		+dropdown (
-		' dropdown_theme_date',
-		'arrival',
-		'прибытие')
-		+dropdown (
-		' dropdown_theme_date',
-		'departure',
-		'выезд')
+		+dropdown (data1)
+		+dropdown (data2)
 		.dates-selector__datepicker
-				+datepicker
-mixin dates-selectorO(data1, data2)
-	include ../../components/input/input.pug
-	include ../../components/dropdown/dropdown.pug
-	include ../../components/datepicker-block/datepicker-block.pug
-	.dates-selector
-		+dropdownO (data1)
-		+dropdownO (data2)
-		.dates-selector__datepicker
-				+datepicker
+				+datepicker(text1, text2)

@@ -94,6 +94,7 @@ block main
 				}
 				const paginationText = 'из 100+ вариантов аренды';
 				const cardText = ['₽', 'в сутки', 'Отзывов'];
+				const datepickerText = ['применить', 'очистить'];
 		.search-room__container
 			.search-room__filters
 				h3.search-room__aside-title #{headers[0]}
@@ -103,9 +104,9 @@ block main
 						+inputO(input1)
 					.search-room__datepicker-wrapper
 						.search-room__datepicker-container
-							+datepicker
+							+datepicker(datepickerText[0], datepickerText[1])
 					.search-room__peoples-dropdown-wrapper
-						+dropdownO(dropdown1)
+						+dropdown(dropdown1)
 					.search-room__slider-wrapper
 						+slider(1, sliderTitle)
 					.search-room__slider-text #{sliderText}
@@ -116,7 +117,7 @@ block main
 						h3.search-room__aside-title.search-room__rich-title #{headers[2]}
 						+checkbox(checkbox2)
 					.search-room__room-dropdown-wrapper
-						+dropdownO(dropdown2)
+						+dropdown(dropdown2)
 					.search-room__expandable-wrapper
 						h3.search-room__aside-title.search-room__expandable-title #{headers[3]}
 						.search-room__expandable-text.d-none

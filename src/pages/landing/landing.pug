@@ -9,6 +9,7 @@ block main
 	include ../../components/footer/footer.pug
 	include ../../components/search-form/search-form.pug
 	-
+		const datepickerText = ['применить', 'очистить'];
 		const searchFormData = {
 			title: 'Найдём номера под ваши пожелания',
 			dropdown1: {
@@ -31,7 +32,9 @@ block main
 				item3: 'младенцы',
 				clear: '1'
 			}, 
-			btnText: 'подобрать номер'
+			btnText: 'подобрать номер',
+			datepickerText1: datepickerText[0],
+			datepickerText2: datepickerText[1]
 		}
 		const landigText = 'Лучшие номера для вашей работы, отдыха и просто вдохновения';
 

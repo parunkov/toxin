@@ -2,7 +2,7 @@ mixin reservation-form(data)
 	include ../../components/dates-selector/dates-selector.pug
 	include ../../components/btn/btn.pug
 	-
-		const {title, title2, titlePrice, titlePrice2, dropdown1, dropdown2, dropdown3, text, total, btnText} = data;
+		const {title, title2, titlePrice, titlePrice2, dropdown1, dropdown2, dropdown3, text, total, btnText, datepickerText1, datepickerText2} = data;
 	article.reservation-form
 		.reservation-form__title
 			.reservation-form__title-left
@@ -12,8 +12,8 @@ mixin reservation-form(data)
 				p.reservation-form__title_price #{titlePrice} <span class="reservation-form__title_price-text">#{titlePrice2}</span>
 		form.reservation-form__form
 			.reservation-form__dates-selector
-				+dates-selectorO(dropdown1, dropdown2)
-			+dropdownO(dropdown3)
+				+dates-selector(dropdown1, dropdown2, datepickerText1, datepickerText2)
+			+dropdown(dropdown3)
 			p.reservation-form__text 
 				span.reservation-form__text_left #{text[0]} 
 				span.reservation-form__text_right #{text[1]}

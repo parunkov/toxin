@@ -1,8 +1,8 @@
-mixin datepicker
+mixin datepicker(text1, text2)
 	.datepicker-block
 		.datepicker-block__content
 		.datepicker-block__buttons-block
 			.datepicker-block__set-btn
-				button(type="button" class="btn btn_theme_text") применить
+				button(type="button" class="btn btn_theme_text") #{text1}
 			.datepicker-block__clear-btn
-				button(type="button" class="btn btn_theme_text btn_color_gray") очистить
+				button(type="button" class="btn btn_theme_text btn_color_gray") #{text2}

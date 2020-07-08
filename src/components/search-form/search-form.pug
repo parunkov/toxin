@@ -2,12 +2,12 @@ mixin search-form(data)
 	include ../../components/dates-selector/dates-selector.pug
 	include ../../components/btn/btn.pug
 	-
-		const {title, dropdown1, dropdown2,	dropdown3, btnText} = data;
+		const {title, dropdown1, dropdown2,	dropdown3, btnText, datepickerText1, datepickerText2} = data;
 	article.search-form
 		h1.search-form__title #{title}
 		form.search-form__form
 			.search-form__dates-selector
-				+dates-selectorO(dropdown1, dropdown2)
-			+dropdownO(dropdown3)
+				+dates-selector(dropdown1, dropdown2, datepickerText1, datepickerText2)
+			+dropdown(dropdown3)
 			.search-form__button
 				+btn(btnText, 'submit', 'theme_arrow')
