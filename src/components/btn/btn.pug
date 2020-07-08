@@ -29,3 +29,9 @@ mixin btn(text, type, mod, href)
 	else if type === 'big-a'
 		a(href=href class="btn btn_theme_light btn__size_big")
 			span.btn__text #{text}
+	else if type === 'small'
+		a(href=href class="btn btn__size_small") !{text}
+	else if type === 'small-light'
+		a(href=href class="btn btn_theme_light btn__size_small") 
+			span.btn__text  !{text}
+			

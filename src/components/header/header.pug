@@ -1,6 +1,9 @@
 include ../../components/logo/logo.pug
+include ../../components/btn/btn.pug
 
-mixin headerMarkup(cl, menu, btn1, href1, btn2, href2, login)
+mixin headerMarkup(data)
+	-
+		const {cl, menu, btn1, href1, btn2, href2, login} = data;
 	header(class = "header " + cl)
 		nav.header__navigation
 			.header__logo
@@ -25,25 +28,24 @@ mixin headerMarkup(cl, menu, btn1, href1, btn2, href2, login)
 			else
 				.header__user-block
 					.header__btn
-						a(href=href1 class="btn btn_theme_light btn__size_small") 
-							span.btn__text  !{btn1}
+						+btn(btn1, 'small-light', 0, href1)
 					.header__btn
-						a(href=href2 class="btn btn__size_small") !{btn2}
+						+btn(btn2, 'small', 0, href2)
 -
-	let MenuItem = function(item, href, incl, hrefs) {
+	const MenuItem = function(item, href, incl, hrefs) {
 		this.item = item;
 		this.href = href;
 		this.incl = incl;
 		this.hrefs = hrefs;
 	}
-	let menuRus = [
+	const menuRus = [
 		new MenuItem('О нас', '/mock-address/change-me'),
 		new MenuItem('Услуги', '/mock-address/change-me', ['Услуга 1', 'Услуга 2', 'Услуга 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
 		new MenuItem('Вакансии', '/mock-address/change-me'),
 		new MenuItem('Новости', '/mock-address/change-me'),
 		new MenuItem('Соглашения', '/mock-address/change-me', ['Соглашение 1', 'Соглашение 2', 'Соглашение 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
 	];
-	let menuEng = [
+	const menuEng = [
 		new MenuItem('Home', '/mock-address/change-me'),
 		new MenuItem('About Us', '/mock-address/change-me'),
 		new MenuItem('Services', '/mock-address/change-me', ['Service 1', 'Service 2', 'Service 3'], ['/mock-address/change-me', "/mock-address/change-me", '/mock-address/change-me']),
@@ -51,11 +53,36 @@ mixin headerMarkup(cl, menu, btn1, href1, btn2, href2, login)
 		new MenuItem('News', '/mock-address/change-me'),
 		new MenuItem('Documentation', '/mock-address/change-me')
 	];
+	const markupEng1 = {
+		cl: '',
+		menu: menuEng,
+		btn1: 'Login',
+		href1: '/mock-address/change-me',
+		btn2: 'Register',
+		href2: '/mock-address/change-me',
+		login: 1
+	}
+	const markupEng2 = {
+		cl: '',
+		menu: menuEng,
+		btn1: 'Login',
+		href1: '/mock-address/change-me',
+		btn2: 'Register',
+		href2: '/mock-address/change-me'
+	}
+	const markupRus = {
+		cl: '',
+		menu: menuRus,
+		btn1: 'войти',
+		href1: 'sign-in.html',
+		btn2: 'зарегистрироваться',
+		href2: 'registration.html'
+	}
 mixin header(isEng, isLogged)
 	if isEng
 		if isLogged
-			+headerMarkup('', menuEng, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me', 1)
+			+headerMarkup(markupEng1)
 		else
-			+headerMarkup('', menuEng, 'Login', '/mock-address/change-me', 'Register', '/mock-address/change-me')
+			+headerMarkup(markupEng2)
 	else
-		+headerMarkup('', menuRus, 'войти', 'sign-in.html', 'зарегистрироваться', 'registration.html')
+		+headerMarkup(markupRus)
