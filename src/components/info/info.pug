@@ -5,3 +5,12 @@ mixin info(cl, img, head, text)
 		.info__text-wrapper
 			h4.info__header= head
 			p.info__text= text
+mixin infoO(data)
+	-
+		const {cl, img, head, text}	= data
+	div(class=cl+" info")
+		.info__img-wrapper
+			i.info__img= img
+		.info__text-wrapper
+			h4.info__header= head
+			p.info__text= text

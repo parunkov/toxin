@@ -110,6 +110,13 @@ block main
 					'Телевизор',
 					'Шампунь']
 		}
+		const checkbox3 = {
+			cl: '',
+			text: ['Ширина коридоров в номере не менее 91 см.', 
+				'На 1 этаже вас встретит специалист  и проводит до номера.'],
+			head: ['Широкий коридор',
+			'Помощник для инвалидов']
+		}
 		const radio = {
 				cl: 'registration-form__radio',
 				text: ['Мужчина', 'Женщина']
@@ -149,6 +156,27 @@ block main
 				item3: 'младенцы',
 				clear: '1'
 			}
+		const bullets = ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'];
+		const info1 = {
+			cl: '',
+			img: 'insert_emoticon',
+			head: 'Комфорт',
+			text: 'Шумопоглощающие стены'
+		}
+		const info2 = {
+			cl: '',
+			img: 'location_city',
+			head: 'Удобство',
+			text: 'Окно в каждой из спален'
+		}
+		const review = {
+			cl: '',
+			img: 'img/murad.jpg',
+			like: '12',
+			head: 'Мурад Сарафанов',
+			days: '5 дней назад',
+			text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
+		}
 	+ui-kit
 	.form-elements
 		.form-elements__container
@@ -230,12 +258,7 @@ block main
 			section.form-elements__section
 				.form-elements__item
 					h3.form-elements__item-title #{headers[8]}
-					+checkbox(
-						'', 
-						['Ширина коридоров в номере не менее 91 см.', 
-						'На 1 этаже вас встретит специалист  и проводит до номера.'],
-						['Широкий коридор',
-						'Помощник для инвалидов'])
+					+checkboxO(checkbox3)
 			section.form-elements__section
 				.form-elements__item
 					+dropdownO(dropdown3)
@@ -243,28 +266,14 @@ block main
 				.form-elements__item
 					h3.form-elements__item-title #{headers[9]}
 					ul.form-elements__bullet-list
-						li.form-elements__bullet-item Нельзя с питомцами
-						li.form-elements__bullet-item Без вечеринок и мероприятий
-						li.form-elements__bullet-item Время прибытия — после 13:00, а выезд до 12:00
+						li.form-elements__bullet-item #{bullets[0]}
+						li.form-elements__bullet-item #{bullets[1]}
+						li.form-elements__bullet-item #{bullets[2]}
 			section.form-elements__section
 				.form-elements__item
-					+info(
-						'',
-						'insert_emoticon',
-						'Комфорт',
-						'Шумопоглощающие стены')
+					+infoO(info1)
 				.form-elements__item
-					+info(
-						'',
-						'location_city',
-						'Удобство',
-						'Окно в каждой из спален')
+					+infoO(info2)
 			section.form-elements__section
 				.form-elements__item
-					+review(
-						'',
-						'img/murad.jpg',
-						'12',
-						'Мурад Сарафанов',
-						'5 дней назад',
-						'Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+					+reviewO(review)
