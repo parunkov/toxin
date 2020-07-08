@@ -16,6 +16,7 @@ block main
 	include ../../components/info/info.pug
 	include ../../components/review/review.pug
 	include ../../components/btn/btn.pug
+	include ../../components/pagination/pagination.pug
 	-
 		const input1 = {
 			h3: 'Text Field',
@@ -177,6 +178,7 @@ block main
 			days: '5 дней назад',
 			text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
 		}
+		const paginationText = 'из 100+ вариантов аренды'
 	+ui-kit
 	.form-elements
 		.form-elements__container
@@ -239,8 +241,7 @@ block main
 						+btn(btnText2, 'button', 'theme_arrow')
 				.form-elements__item
 					h3.form-elements__item-title #{headers[6]}
-					#pagination-container
-					p.pagination__text <span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды
+					+pagination(1, 12, paginationText)
 			section.form-elements__section
 				.form-elements__item
 					+dropdownO(dropdown1)

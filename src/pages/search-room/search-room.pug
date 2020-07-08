@@ -15,8 +15,9 @@ block main
 		include ../../components/checkbox/checkbox.pug
 		include ../../components/card/card.pug
 		include ../../components/datepicker-block/datepicker-block.pug
+		include ../../components/pagination/pagination.pug
 		- 	
-			let RoomData = function(img, num, lux, price, rate, rev, link) {
+			const RoomData = function(img, num, lux, price, rate, rev, link) {
 				this.img = img;
 				this.num = num;
 				this.lux = lux;
@@ -25,7 +26,7 @@ block main
 				this.rev = rev;
 				this.link = link;
 			};
-			let data = [
+			const data = [
 				new RoomData(['img/image1.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 888, 'люкс', '9 990', 5, 145, 'room-details.html'),
 				new RoomData(['img/image2.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 840, '', '9 990', 4, 65, 'mock-address/change-me'),
 				new RoomData(['img/image3.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 980, 'люкс', '8 500', 3, 35, 'mock-address/change-me'),
@@ -39,79 +40,92 @@ block main
 				new RoomData(['img/image11.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 444, '', '5 000', 3, 15, 'mock-address/change-me'),
 				new RoomData(['img/image12.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 352, '', '5 000', 3, 53, 'mock-address/change-me')
 				];
+				const input1 = {
+					h3: 'даты пребывания в отеле',
+					type: 'text',
+					name: 'search-room__input-1',
+					cl: ' input__field_theme_without-hover',
+					val: '19 авг - 23 авг',
+					plac: 'Введите даты',
+					p: '',
+					icon: 'expand_more'
+				}
+				const dropdown1 = {
+					cl: 'peoples',
+					name: 'guests',
+					header: 'dropdown',
+					p: '',
+					item1: 'взрослые',
+					item2: 'дети',
+					item3: 'младенцы',
+					clear: '1'
+				}
+				const dropdown2 = {
+					cl: 'rooms',
+					name: 'rooms',
+					header: 'удобства номера',
+					p: '',
+					item1: 'спальни',
+					item2: 'кровати',
+					item3: 'ванные комнаты'
+				}
+				const sliderTitle = 'диапазон цены';
+				const sliderText = 'Стоимость за сутки пребывания в номере';
+				const headers = ['Фильтры', 'Checkbox Buttons', 'доступность', 'дополнительные удобства', 'Номера, которые мы для вас подобрали'];
+				const checkbox1 = {
+					cl: '',
+					text: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
+				}
+				const checkbox2 = {
+					cl: '',
+					text: ['Ширина коридоров в номере не менее 91 см.', 
+						'На 1 этаже вас встретит специалист  и проводит до номера.'],
+					head: ['Широкий коридор',
+					'Помощник для инвалидов']
+				}
+				const checkbox3 = {
+					cl: '',
+					text: ['Завтрак', 
+							'Письменный стол', 
+							'Стул для кормления',
+							'Кроватка',
+							'Телевизор',
+							'Шампунь']
+				}
+				const paginationText = 'из 100+ вариантов аренды'
 		.search-room__container
 			.search-room__filters
-				h3.search-room__aside-title Фильтры
+				h3.search-room__aside-title #{headers[0]}
 			aside.search-room__form
 				form.search-room__form-content
 					.search-room__input-wrapper
-						+input(
-							'даты пребывания в отеле', 
-							'text', 
-							'search-room__input-1', 
-							' input__field_theme_without-hover', 
-							'19 авг - 23 авг', 
-							'Введите даты', 
-							'',
-							'expand_more')
+						+inputO(input1)
 					.search-room__datepicker-wrapper
 						.search-room__datepicker-container
 							+datepicker
 					.search-room__peoples-dropdown-wrapper
-						+dropdown(
-							'peoples',
-							'guests', 
-							'гости', 
-							'', 
-							'взрослые', 
-							'дети', 
-							'младенцы',
-							'1')
+						+dropdownO(dropdown1)
 					.search-room__slider-wrapper
-						+slider(1, 'диапазон цены')
-					.search-room__slider-text Стоимость за сутки пребывания в номере
+						+slider(1, sliderTitle)
+					.search-room__slider-text #{sliderText}
 					.search-room__checkbox-wrapper
-						h3.search-room__aside-title.search-room__checkbox-title Checkbox Buttons
-						+checkbox(
-							'', 
-							['Можно курить', 
-							'Можно с питомцами', 
-							'Можно пригласить гостей (до 10 человек)'])
+						h3.search-room__aside-title.search-room__checkbox-title #{headers[1]}
+						+checkboxO(checkbox1)
 					.search-room__rich-wrapper
-						h3.search-room__aside-title.search-room__rich-title доступность
-						+checkbox(
-							'', 
-							['Ширина коридоров в номере не менее 91 см.', 
-							'На 1 этаже вас встретит специалист  и проводит до номера.'],
-							['Широкий коридор',
-							'Помощник для инвалидов'])
+						h3.search-room__aside-title.search-room__rich-title #{headers[2]}
+						+checkboxO(checkbox2)
 					.search-room__room-dropdown-wrapper
-						+dropdown(
-							'rooms',
-							'rooms', 
-							'удобства номера', 
-							'', 
-							'спальни', 
-							'кровати', 
-							'ванные комнаты')
+						+dropdownO(dropdown2)
 					.search-room__expandable-wrapper
-						h3.search-room__aside-title.search-room__expandable-title дополнительные удобства
+						h3.search-room__aside-title.search-room__expandable-title #{headers[3]}
 						.search-room__expandable-text.d-none
-							+checkbox(
-								'', 
-								['Завтрак', 
-								'Письменный стол', 
-								'Стул для кормления',
-								'Кроватка',
-								'Телевизор',
-								'Шампунь'])
+							+checkboxO(checkbox3)
 			section.search-room__cards
-				h1.search-room__title Номера, которые мы для вас подобрали
+				h1.search-room__title #{headers[4]}
 				.search-room__cards-wrapper
 					each val, i in data
 						.search-room__card-wrapper
 							+card('', val)
 				.search-room__pagination-wrapper
-					#pagination-container
-					p.pagination__text <span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды
+					+pagination(1, 12, paginationText)
 	+footer
