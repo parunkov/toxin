@@ -33,10 +33,11 @@ block main
 			}, 
 			btnText: 'подобрать номер'
 		}
+		const landigText = 'Лучшие номера для вашей работы, отдыха и просто вдохновения';
 
 	+header
 	main.landing
 		.landing__container
 			+search-form(searchFormData)
-			p.landing__text Лучшие номера для вашей работы, отдыха и просто вдохновения
+			p.landing__text #{landigText}
 	+footer
