@@ -92,7 +92,8 @@ block main
 							'Телевизор',
 							'Шампунь']
 				}
-				const paginationText = 'из 100+ вариантов аренды'
+				const paginationText = 'из 100+ вариантов аренды';
+				const cardText = ['₽', 'в сутки', 'Отзывов'];
 		.search-room__container
 			.search-room__filters
 				h3.search-room__aside-title #{headers[0]}
@@ -110,22 +111,22 @@ block main
 					.search-room__slider-text #{sliderText}
 					.search-room__checkbox-wrapper
 						h3.search-room__aside-title.search-room__checkbox-title #{headers[1]}
-						+checkboxO(checkbox1)
+						+checkbox(checkbox1)
 					.search-room__rich-wrapper
 						h3.search-room__aside-title.search-room__rich-title #{headers[2]}
-						+checkboxO(checkbox2)
+						+checkbox(checkbox2)
 					.search-room__room-dropdown-wrapper
 						+dropdownO(dropdown2)
 					.search-room__expandable-wrapper
 						h3.search-room__aside-title.search-room__expandable-title #{headers[3]}
 						.search-room__expandable-text.d-none
-							+checkboxO(checkbox3)
+							+checkbox(checkbox3)
 			section.search-room__cards
 				h1.search-room__title #{headers[4]}
 				.search-room__cards-wrapper
 					each val, i in data
 						.search-room__card-wrapper
-							+card('', val)
+							+card('', val, cardText)
 				.search-room__pagination-wrapper
 					+pagination(1, 12, paginationText)
 	+footer

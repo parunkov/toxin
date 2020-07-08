@@ -1,5 +1,5 @@
 include ../rate/rate.pug
-mixin card(cl, data)
+mixin card(cl, data, text)
 	section(class="card " + cl)
 		.card__slider
 			.card__slide-wrapper
@@ -19,9 +19,9 @@ mixin card(cl, data)
 					span.card__num №
 					h2.card__header #{data.num}
 					span.card__lux #{data.lux}
-			.card__price #{data.price}₽
-				span.card__price-text в сутки
+			.card__price #{data.price}#{text[0]}
+				span.card__price-text #{text[1]}
 			.card__rate
 				+rate('', data.rate)
 				.card__reviews #{data.rev}
-					span.card__reviews-text Отзывов
+					span.card__reviews-text #{text[2]}

@@ -162,6 +162,7 @@ block main
 				new RoomData(['img/image1.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 888, 'люкс', '9 990', 5, 145),
 				new RoomData(['img/image2.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 840, '', '9 990', 4, 65)
 				];
+			const cardText = ['₽', 'в сутки', 'Отзывов'];
 		.cards__container
 			.cards__column
 				.cards__card-wrapper.cards__card-wrapper_search
@@ -177,6 +178,6 @@ block main
 				.cards__card-wrapper.cards__card-wrapper_datepicker
 					+datepicker
 				.cards__card-wrapper.cards__card-wrapper_card
-					+card('cards__card-1', data[0])
+					+card('cards__card-1', data[0], cardText)
 				.cards__card-wrapper.cards__card-wrapper_card
-					+card('cards__card-1', data[1])
+					+card('cards__card-1', data[1], cardText)
