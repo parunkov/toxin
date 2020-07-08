@@ -1,7 +1,60 @@
 include ../../components/input/input.pug
 include ../../components/logo/logo.pug
 
-mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
+-
+	const navRus = [
+		new MenuItem('навигация', '/mock-address/change-me', ['О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
+		new MenuItem('о нас', '/mock-address/change-me', ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
+		new MenuItem('Служба поддержки', '/mock-address/change-me', ['Соглашения', 'Сообщества', 'Связь с нами'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me'])
+	];
+	const navEng = [
+		new MenuItem('Navigation', '/mock-address/change-me', ['About Us', 'News', 'Support', 'Products'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
+		new MenuItem('About Us', '/mock-address/change-me', ['Who we are', 'Our team', 'Careers', 'Investors'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
+		new MenuItem('Support', '/mock-address/change-me', ['Documentation', 'Community', 'Get in Touch'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me'])
+	];
+	const inputEng = {
+		h3: '',
+		type: 'email',
+		name: 'email',
+		cl: ' input__field_with-arrow',
+		val: '',
+		plac: 'Your email address',
+		p: '',
+		icon: 'arrow_forward',
+		color: 'purple'
+	}
+	const inputRus = {
+		h3: '',
+		type: 'email',
+		name: 'email',
+		cl: ' input__field_with-arrow',
+		val: '',
+		plac: 'Email',
+		p: '',
+		icon: 'arrow_forward',
+		color: 'purple'
+	}
+	const markupFooterEng = {
+		cl: '',
+		text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.',
+		menu: navEng,
+		h3: 'Subscribe to our newsletter',
+		p: 'Receive our latest news and promotions in your inbox!',
+		copyright: 'Copyright © 2018 Toxin UI Kit. All rights reserved.',
+		ui: 1
+	}
+	const markupFooterRus = {
+		cl: '',
+		text: 'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
+		menu: navRus,
+		h3: 'Подписка',
+		p: 'Получайте специальные предложения и новости сервиса',
+		copyright: 'Copyright © 2018 Toxin отель. Все права зачищены.'
+	}
+
+mixin footerMarkup(data)
+	-
+		const {cl, text, menu, h3, p, copyright, ui} = data;
 	footer(class = "footer " + cl)
 		section.footer__navigation-section
 			.footer__container
@@ -22,29 +75,9 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 					p.footer__text= p 
 					form.footer__form
 						if ui
-							- let email = 'Your email address';
-							+input(
-								'', 
-								'email', 
-								'email', 
-								' input__field_with-arrow', 
-								'', 
-								email, 
-								'', 
-								'arrow_forward', 
-								'purple')
+							+inputO(inputEng)
 						else
-							- let email = 'Email'
-							+input(
-								'', 
-								'email', 
-								'email', 
-								' input__field_with-arrow', 
-								'', 
-								email, 
-								'', 
-								'arrow_forward', 
-								'purple')
+							+inputO(inputRus)
 		section.footer__social-section
 			.footer__container
 				p.footer__copyright= copyright
@@ -57,31 +90,7 @@ mixin footerMarkup(cl, text, menu, h3, p, copyright, ui)
 						a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social-link footer__social-link_theme_instagram") Instagram
 
 mixin footer(isEng)
-	-
-		let navRus = [
-			new MenuItem('навигация', '/mock-address/change-me', ['О нас', 'Новости', 'Служба поддержки', 'Услуги'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
-			new MenuItem('о нас', '/mock-address/change-me', ['О сервисе', 'Наша команда', 'Вакансии', 'Инвесторы'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
-			new MenuItem('Служба поддержки', '/mock-address/change-me', ['Соглашения', 'Сообщества', 'Связь с нами'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me'])
-		];
-		let navEng = [
-			new MenuItem('Navigation', '/mock-address/change-me', ['About Us', 'News', 'Support', 'Products'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
-			new MenuItem('About Us', '/mock-address/change-me', ['Who we are', 'Our team', 'Careers', 'Investors'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me']),
-			new MenuItem('Support', '/mock-address/change-me', ['Documentation', 'Community', 'Get in Touch'], ['/mock-address/change-me', '/mock-address/change-me', '/mock-address/change-me'])
-		];
 	if isEng
-		+footerMarkup(
-			'', 
-			'Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.',
-			navEng, 
-			'Subscribe to our newsletter',
-			'Receive our latest news and promotions in your inbox!',
-			'Copyright © 2018 Toxin UI Kit. All rights reserved.', 
-			1)
+		+footerMarkup(markupFooterEng)
 	else
-		+footerMarkup(
-			'', 
-			'Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»',
-			navRus, 
-			'Подписка',
-			'Получайте специальные предложения и новости сервиса',
-			'Copyright © 2018 Toxin отель. Все права зачищены.')
+		+footerMarkup(markupFooterRus)
