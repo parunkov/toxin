@@ -1,7 +1,5 @@
 include ../../components/logo/logo.pug
 include ../../components/btn/btn.pug
-//- include ../../commonData/headerData.pug
-//- import '../../commonData/headerData';
 
 mixin headerMarkup(data)
 	-
@@ -35,7 +33,7 @@ mixin headerMarkup(data)
 						+btn(btn2, 'small', 0, href2)
 -
 	//- import {a} from '../../commonData/headerData';
-	const b = a;
+	//- const a = require('./header.json');
 	const MenuItem = function(item, href, incl, hrefs) {
 		this.item = item;
 		this.href = href;
