@@ -9,3 +9,4 @@ $('.search-form .btn_theme_arrow').click((e) => {
 	console.log(1);
 	window.location.href = 'search-room.html';
 });
+
