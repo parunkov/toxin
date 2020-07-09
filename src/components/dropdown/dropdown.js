@@ -185,6 +185,7 @@ class Dropdown {
     this.$input.attr('value', '');
     for (let i = 0; i < this.counters.length; i += 1) {
       this.counters[i].$decrementBtn.addClass('dropdown__counter-button_theme_decrement-inactive');
+      this.counters[i].value = 0;
     }
   }
   documentClick(e) {
