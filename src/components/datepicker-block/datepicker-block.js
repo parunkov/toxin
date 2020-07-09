@@ -8,14 +8,14 @@ import $ from 'jquery';
 
 class Datepicker {
   constructor(datepicker) {
-    this.datepicker = datepicker;
-    this.setBtn = this.datepicker.find('.datepicker-block__set-btn');
-    this.clearBtn = this.datepicker.find('.datepicker-block__clear-btn');
-    this.content = this.datepicker.find('.datepicker-block__content');
+    this.$datepicker = datepicker;
+    this.$setBtn = datepicker.find('.datepicker-block__set-btn');
+    this.$clearBtn = datepicker.find('.datepicker-block__clear-btn');
+    this.$content = datepicker.find('.datepicker-block__content');
     this.init();
   }
   init() {
-    this.content.datepicker({
+    this.$content.datepicker({
       minDate: new Date(),
       range: true,
       navTitles: {
@@ -25,35 +25,36 @@ class Datepicker {
       },
       dateFormat: 'dd.mm.yyyy',
     });
-    this.dates = this.content.datepicker().data('datepicker');
-    this.setBtn.click((evt) => this.set(evt));
-    this.clearBtn.click((evt) => this.clear(evt));
-    this.datepicker.mousemove(() => this.mousemove());
+    this.dates = this.$content.datepicker().data('datepicker');
+    this.$setBtn.click((evt) => this.set(evt));
+    this.$clearBtn.click((evt) => this.clear(evt));
+    this.$datepicker.mousemove(() => this.mousemove());
   }
   set(evt) {
     evt.preventDefault();
-    return this.dates.selectedDates;
+    // return this.dates.selectedDates;
   }
   clear(evt) {
     evt.preventDefault();
     this.dates.clear();
-    this.clearBtn.removeClass('datepicker-block__clear-btn_visible');
-    return this.dates.selectedDates;
+    this.$clearBtn.removeClass('datepicker-block__clear-btn_visible');
+    // return this.dates.selectedDates;
   }
   mousemove() {
     if (this.dates.selectedDates.length === 0) {
-      this.clearBtn.removeClass('datepicker-block__clear-btn_visible');
+      this.$clearBtn.removeClass('datepicker-block__clear-btn_visible');
     } else {
-      this.clearBtn.addClass('datepicker-block__clear-btn_visible');
+      this.$clearBtn.addClass('datepicker-block__clear-btn_visible');
     }
   }
 }
 
 
-// const datepickers = [];
+// const $datepickers = [];
 // $('.datepicker-block').each((i) =>{
-//   datepickers[i] = new Datepicker($('.datepicker-block').eq(i));
+//   $datepickers[i] = new Datepicker($('.datepicker-block').eq(i));
 // });
+
 export default Datepicker;
 
 

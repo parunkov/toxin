@@ -10,10 +10,7 @@ import '../../components/datepicker-block/datepicker-block';
 import '../../components/card/card';
 import '../../components/data/data';
 import './cards.scss';
+import Datepicker from '../../components/datepicker-block/datepicker-block';
 
-// const regFormText = {
-//   header1: 'Регистрация<br>аккаунта',
-//   header2: 'Регистрация аккаунта'
-// }
+const datepicker = new Datepicker($('.cards__column_right .datepicker-block'));
 
-// export {regFormText};
