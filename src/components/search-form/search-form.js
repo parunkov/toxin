@@ -14,8 +14,4 @@ $('.search-form .btn_theme_arrow').click((e) => {
 	window.location.href = 'search-room.html';
 });
 
-const $dropdowns = [];
-$('.dropdown').each((i) =>{
-  $dropdowns[i] = new Dropdown($('.dropdown').eq(i));
-});
-
+const dropdown = new Dropdown($('.search-form .dropdown').eq(2));
