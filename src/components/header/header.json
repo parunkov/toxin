@@ -1,8 +1,0 @@
-{
-  "name": "John",
-  "age": 25,
-  "roles": {
-    "isAdmin": false,
-    "isEditor": true
-  }
-}
