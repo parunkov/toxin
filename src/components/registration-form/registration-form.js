@@ -6,7 +6,6 @@ import '../radio/radio';
 import '../toggle/toggle';
 import './registration-form.scss';
 import $ from 'jquery';
-// import {regFormText} from '../../pages/cards/cards';
 import {regFormText} from '../../commonData/commonData';
 
 $(document).ready(() => {
