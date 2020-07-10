@@ -3,3 +3,6 @@ import '../../variables.scss';
 import '../dates-selector/dates-selector'
 import '../btn/btn';
 import './reservation-form.scss';
+import DatesSelector from '../dates-selector/dates-selector';
+
+const selector = new DatesSelector($('.reservation-form .dates-selector'));

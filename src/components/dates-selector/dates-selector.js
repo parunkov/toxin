@@ -97,10 +97,17 @@ class DatesSelector {
 	}
 }
 
-const datesSelectors = [];
-$('.dates-selector').each((i) =>{
-	datesSelectors[i] = new DatesSelector($('.dates-selector').eq(i));
-});
+// const datesSelectors = [];
+// $('.dates-selector').each((i) =>{
+// 	datesSelectors[i] = new DatesSelector($('.dates-selector').eq(i));
+// });
+
+export default DatesSelector;
+
+
+
+
+
 
 // $(document).ready(() => {
 //   const $datesSelector = $('.dates-selector');

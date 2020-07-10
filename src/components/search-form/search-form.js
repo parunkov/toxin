@@ -4,6 +4,9 @@ import '../dates-selector/dates-selector'
 import '../btn/btn';
 import './search-form.scss';
 import Dropdown from '../dropdown/dropdown';
+import DatesSelector from '../dates-selector/dates-selector';
+
+const selector = new DatesSelector($('.search-form .dates-selector'));
 
 $('.search-form .btn_theme_arrow').click((e) => {
 	e.preventDefault();
