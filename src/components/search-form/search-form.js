@@ -10,7 +10,6 @@ const selector = new DatesSelector($('.search-form .dates-selector'));
 
 $('.search-form .btn_theme_arrow').click((e) => {
 	e.preventDefault();
-	console.log(1);
 	window.location.href = 'search-room.html';
 });
 

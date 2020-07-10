@@ -103,7 +103,6 @@ class Dropdown {
         this.total += counters[i].value;
       }
       this.$input.attr('value', this.setValue());
-      console.log(this.total);
       if (this.$input.attr('value')) {
         console.log(this.$clearBtn);
         this.$clearBtn.addClass('dropdown__clear-btn_visible');

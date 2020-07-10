@@ -14,10 +14,16 @@ import './search-room.scss';
 import $ from 'jquery';
 import Datepicker from '../../components/datepicker-block/datepicker-block';
 import Dropdown from '../../components/dropdown/dropdown';
+import Card from '../../components/card/card';
 
 const $dropdowns = [];
 $('.dropdown').each((i) =>{
   $dropdowns[i] = new Dropdown($('.dropdown').eq(i));
+});
+
+const cards = [];
+$('.card').each((i) => {
+  cards[i] = new Card($('.card').eq(i));
 });
 
 $('.search-room__input-wrapper .input__field').attr('disabled', '');
