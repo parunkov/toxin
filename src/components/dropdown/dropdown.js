@@ -93,7 +93,9 @@ class Dropdown {
         this.$wrapper.removeClass('dropdown__wrapper_expanded');
       }
     }
-    this.$arrow.click(onArrowClick);
+    if (!this.$dropdown.hasClass('dropdown_theme_date')) {
+      this.$arrow.click(onArrowClick);
+    }
 
     const onControlsClick = (() => {
       this.total = 0;
@@ -189,18 +191,22 @@ class Dropdown {
     }
   }
   documentClick(e) {
-    if (!this.$wrapper.is(e.target) && this.$wrapper.has(e.target).length === 0) {
-      this.$arrow.text('expand_more');
-      this.$wrapper.removeClass('dropdown__wrapper_expanded');
+    if (!this.$dropdown.hasClass('dropdown_theme_date')) {
+      if (!this.$wrapper.is(e.target) && this.$wrapper.has(e.target).length === 0) {
+        this.$arrow.text('expand_more');
+        this.$wrapper.removeClass('dropdown__wrapper_expanded');
+      }
     }
   }
 
 }
 
-const $dropdowns = [];
-$('.dropdown').each((i) =>{
-  $dropdowns[i] = new Dropdown($('.dropdown').eq(i));
-});
+// const $dropdowns = [];
+// $('.dropdown').each((i) =>{
+//   $dropdowns[i] = new Dropdown($('.dropdown').eq(i));
+// });
+
+export default Dropdown;
 
 
 

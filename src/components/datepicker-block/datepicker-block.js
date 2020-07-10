@@ -50,10 +50,10 @@ class Datepicker {
 }
 
 
-const $datepickers = [];
-$('.datepicker-block').each((i) =>{
-  $datepickers[i] = new Datepicker($('.datepicker-block').eq(i));
-});
+// const $datepickers = [];
+// $('.datepicker-block').each((i) =>{
+//   $datepickers[i] = new Datepicker($('.datepicker-block').eq(i));
+// });
 
 export default Datepicker;
 
