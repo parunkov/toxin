@@ -17,10 +17,16 @@ import '../../components/review/review';
 import './form-elements.scss';
 import $ from 'jquery';
 import Dropdown from '../../components/dropdown/dropdown';
+import Rate from '../../components/rate/rate';
 
 const $dropdowns = [];
 $('.dropdown').each((i) =>{
   $dropdowns[i] = new Dropdown($('.dropdown').eq(i));
+});
+
+const rates = [];
+$('.rate').each((i) => {
+  rates[i] = new Rate($('.rate').eq(i));
 });
 
 // const dropdownTexts = {

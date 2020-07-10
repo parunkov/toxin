@@ -1,6 +1,5 @@
 mixin rate(cl, n, active)
-	div(class= "rate " + cl)
-		.rate__active #{active}
+	div(class= "rate " + cl data-active=active)
 		- for (let i = 0; i <5 ; i++)
 			if i < n
 				i(class= "rate__star") star
