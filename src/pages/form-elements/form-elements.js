@@ -16,6 +16,12 @@ import '../../components/info/info';
 import '../../components/review/review';
 import './form-elements.scss';
 import $ from 'jquery';
+import Dropdown from '../../components/dropdown/dropdown';
+
+const $dropdowns = [];
+$('.dropdown').each((i) =>{
+  $dropdowns[i] = new Dropdown($('.dropdown').eq(i));
+});
 
 // const dropdownTexts = {
 //   type: 'спальни',

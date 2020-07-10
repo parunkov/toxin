@@ -13,6 +13,12 @@ import '../../components/pagination/pagination';
 import './search-room.scss';
 import $ from 'jquery';
 import Datepicker from '../../components/datepicker-block/datepicker-block';
+import Dropdown from '../../components/dropdown/dropdown';
+
+const $dropdowns = [];
+$('.dropdown').each((i) =>{
+  $dropdowns[i] = new Dropdown($('.dropdown').eq(i));
+});
 
 $('.search-room__input-wrapper .input__field').attr('disabled', '');
 
