@@ -104,7 +104,6 @@ class Dropdown {
       }
       this.$input.attr('value', this.setValue());
       if (this.$input.attr('value')) {
-        console.log(this.$clearBtn);
         this.$clearBtn.addClass('dropdown__clear-btn_visible');
       }
     });
