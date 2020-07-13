@@ -11,9 +11,9 @@ import {regFormText} from '../../commonData/commonData';
 $(document).ready(() => {
   const onWindowResize = () => {
     if ($(window).width() < 350) {
-      $('.registration-form__title').html(regFormText.header1);
+      $('.js-registration-form__title').html(regFormText.header1);
     } else {
-      $('.registration-form__title').html(regFormText.header2);
+      $('.js-registration-form__title').html(regFormText.header2);
     }
   };
   onWindowResize();
