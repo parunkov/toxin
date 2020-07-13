@@ -4,7 +4,7 @@ mixin checkbox(data)
 	.checkbox
 		each t, i in text
 			label.checkbox__label
-				input(type="checkbox" name=cl+"-"+i class="checkbox__input"+" "+cl)
+				input(type="checkbox" name=cl+"-"+i class="js-checkbox__input"+" "+cl)
 				.checkbox__custom
 				if head
 					h4.checkbox__header= head[i]

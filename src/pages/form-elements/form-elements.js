@@ -29,11 +29,11 @@ $('.js-rate').each((i) => {
   rates[i] = new Rate($('.js-rate').eq(i));
 });
 
-$('.js-form-elements__section:nth-child(2) .js-form-elements__item:nth-child(1) .checkbox__input:gt(0)').prop('checked', true);
+$('.js-form-elements__section:nth-child(2) .js-form-elements__item:nth-child(1) .js-checkbox__input:gt(0)').prop('checked', true);
 $('.js-form-elements__section:nth-child(2) .js-form-elements__item:nth-child(3) .js-toggle__input').eq(0).prop('checked', true);
 $('.js-like__input').eq(1).prop('checked', true);
-$('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .checkbox__input:lt(4)').prop('checked', true);
-$('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .checkbox__input').eq(0).prop('checked', false);
+$('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .js-checkbox__input:lt(4)').prop('checked', true);
+$('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .js-checkbox__input').eq(0).prop('checked', false);
 $('.js-like__input').eq(2).prop('checked', true);
 $(document).ready(() => {
 

@@ -41,53 +41,53 @@ $('.js-card').each((i) => {
   cards[i] = new Card($('.js-card').eq(i));
 });
 
-$('.search-room__input-wrapper .input__field').attr('disabled', '');
+$('.js-search-room__input-wrapper input').attr('disabled', '');
 
-$('.search-room__aside-title').click((evt) => {
+$('.js-search-room__aside-title').click((evt) => {
   evt.preventDefault();
-  $('.search-room__form').toggleClass('d-block');
-  $('.search-room__aside-title').toggleClass('search-room__aside-title_rotate');
+  $('.js-search-room__form').toggleClass('d-block');
+  $('.js-search-room__aside-title').toggleClass('js-search-room__aside-title_rotate');
 });
 
-$('.search-room__expandable-title').click((evt) => {
+$('.js-search-room__expandable-title').click((evt) => {
   evt.preventDefault();
-  $('.search-room__expandable-text').toggleClass('d-none');
-  $('.search-room__expandable-title').toggleClass('search-room__expandable-title_rotate');
+  $('.js-search-room__expandable-text').toggleClass('d-none');
+  $('.js-search-room__expandable-title').toggleClass('js-search-room__expandable-title_rotate');
 });
 
-$('.search-room__checkbox-wrapper .checkbox__input:gt(0)').prop('checked', true);
-$('.search-room__expandable-wrapper .checkbox__input:lt(4)').prop('checked', true);
-$('.search-room__expandable-wrapper .checkbox__input').eq(0).prop('checked', false);
+$('.js-search-room__checkbox-wrapper .js-checkbox__input:gt(0)').prop('checked', true);
+$('.search-room__expandable-wrapper .js-checkbox__input:lt(4)').prop('checked', true);
+$('.search-room__expandable-wrapper .js-checkbox__input').eq(0).prop('checked', false);
 
 $(document).ready(() => {
-  const $button1 = $('.search-room__peoples-dropdown-wrapper .js-dropdown__wrapper button');
-  const $button2 = $('.search-room__room-dropdown-wrapper .js-dropdown__wrapper button');
+  const $button1 = $('.js-search-room__peoples-dropdown-wrapper .js-dropdown__wrapper button');
+  const $button2 = $('.js-search-room__room-dropdown-wrapper .js-dropdown__wrapper button');
 
   $button1.eq(1).trigger('click');
   $button1.eq(3).trigger('click');
   $button1.eq(5).trigger('click');
-  $('.search-room__peoples-dropdown-wrapper .js-dropdown__set-btn').trigger('click');
+  $('.js-search-room__peoples-dropdown-wrapper .js-dropdown__set-btn').trigger('click');
   $button2.eq(1).trigger('click');
   $button2.eq(1).trigger('click');
   $button2.eq(3).trigger('click');
   $button2.eq(3).trigger('click');
 
 
-  const $input1 = $('.input__field').eq(0);
+  const $input1 = $('.js-search-room__input-wrapper input').eq(0);
   const $icon = $('.js-input__button').eq(0);
-  const datepicker = new Datepicker($('.datepicker-block'));
-  const $datepickerContainer = $('.search-room__datepicker-container');
+  const datepicker = new Datepicker($('.js-datepicker-block'));
+  const $datepickerContainer = $('.js-search-room__datepicker-container');
   const months = [
     'янв', 'фев', 'мар', 'апр', 'май', 'июн',
     'июл', 'авг', 'сен', 'окт', 'ноя', 'дек',
   ];
   const dateToValue = (date) => (`${(`0${date.getDate()}`).substr(-2)} ${months[date.getMonth()]}`);
   $icon.click(() => {
-    $datepickerContainer.toggleClass('search-room__datepicker-container_visible');
+    $datepickerContainer.toggleClass('js-search-room__datepicker-container_visible');
   });
   datepicker.$setBtn.click((e) => {
     e.preventDefault();
-    $datepickerContainer.removeClass('search-room__datepicker-container_visible');
+    $datepickerContainer.removeClass('js-search-room__datepicker-container_visible');
     $icon.text('expand_more');
     const dates = datepicker.dates.selectedDates;
     if (dates[1]) {
