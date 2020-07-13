@@ -37,8 +37,8 @@ $('.js-dropdown').each((i) =>{
 });
 
 const cards = [];
-$('.card').each((i) => {
-  cards[i] = new Card($('.card').eq(i));
+$('.js-card').each((i) => {
+  cards[i] = new Card($('.js-card').eq(i));
 });
 
 $('.search-room__input-wrapper .input__field').attr('disabled', '');

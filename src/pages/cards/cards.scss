@@ -15,7 +15,7 @@
     width: 100%;
   }
 }
-.cards__column {
+.cards__column, .js-cards__column  {
   flex: 0 0 420%*100/1200;
   &_right {
     flex: 0 0 360%*100/1200;
@@ -58,8 +58,9 @@
   }
   &_datepicker {
     max-width: 360px;
-    padding-left: 1.25%;
-    padding-right: 1.25%;  
+    // padding-left: 1.25%;
+    // padding-right: 1.25%; 
+    padding: 0; 
     @media (min-width: 1445px) {
       margin-left: 20px;
       margin-right: auto;

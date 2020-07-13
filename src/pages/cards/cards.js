@@ -12,10 +12,10 @@ import './cards.scss';
 import Datepicker from '../../components/datepicker-block/datepicker-block';
 import Card from '../../components/card/card';
 
-const datepicker = new Datepicker($('.cards__column_right .datepicker-block'));
+const datepicker = new Datepicker($('.js-cards__column_right .js-datepicker-block'));
 
 const cards = [];
-$('.card').each((i) => {
-  cards[i] = new Card($('.card').eq(i));
+$('.js-card').each((i) => {
+  cards[i] = new Card($('.js-card').eq(i));
 });
 
