@@ -3,7 +3,7 @@
   padding-bottom: 130px;
   background: $grey;
 }
-.headers-footers__header {
+.headers-footers__header, .js-headers-footers__header {
   width: 100%;
   background: $white;
   &_unlogged {
@@ -13,11 +13,7 @@
   &_logged {
     margin-bottom: 40px;
   }
-  // .js-header__navigation {
-  //   padding-top: 17px;
-  // }
   .js-header__navigation-list {
-    // padding-top: 12px;
     padding-right: 0;
   }
   .js-header__navigation-item {
