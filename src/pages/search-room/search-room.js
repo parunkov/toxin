@@ -32,8 +32,8 @@ import Dropdown from '../../components/dropdown/dropdown';
 import Card from '../../components/card/card';
 
 const $dropdowns = [];
-$('.dropdown').each((i) =>{
-  $dropdowns[i] = new Dropdown($('.dropdown').eq(i));
+$('.js-dropdown').each((i) =>{
+  $dropdowns[i] = new Dropdown($('.js-dropdown').eq(i));
 });
 
 const cards = [];

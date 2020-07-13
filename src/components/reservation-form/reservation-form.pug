@@ -3,7 +3,7 @@ mixin reservation-form(data)
 	include ../../components/btn/btn.pug
 	-
 		const {title, title2, titlePrice, titlePrice2, dropdown1, dropdown2, dropdown3, text, total, btnText, datepickerText1, datepickerText2} = data;
-	article.reservation-form
+	article.js-reservation-form
 		.reservation-form__title
 			.reservation-form__title-left
 				h1.reservation-form__title-text <span class="reservation-form__title_number">№</span>#{title}

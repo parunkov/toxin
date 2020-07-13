@@ -20,27 +20,14 @@ import Dropdown from '../../components/dropdown/dropdown';
 import Rate from '../../components/rate/rate';
 
 const $dropdowns = [];
-$('.dropdown').each((i) =>{
-  $dropdowns[i] = new Dropdown($('.dropdown').eq(i));
+$('.js-dropdown').each((i) =>{
+  $dropdowns[i] = new Dropdown($('.js-dropdown').eq(i));
 });
 
 const rates = [];
 $('.rate').each((i) => {
   rates[i] = new Rate($('.rate').eq(i));
 });
-
-// const dropdownTexts = {
-//   type: 'спальни',
-//   value1:'0 спален, 0 кроватей, 0 ванных',
-//   placeholder1: 'Выберите удобства',
-//   placeholder2: 'дд.мм.гггг',
-//   placeholder3: 'Сколько гостей',
-//   variants1: ['спальня', 'спальни', 'спален'],
-//   variants2: ['ванная', 'ванные', 'ванных'],
-//   variants3: ['младенец', 'младенца', 'младенцев'],
-//   variants4: ['кровать', 'кровати', 'кроватей'],
-//   variants5: ['гость', 'гостя', 'гостей']
-// }
 
 $('.form-elements__section:nth-child(2) .form-elements__item:nth-child(1) .checkbox__input:gt(0)').prop('checked', true);
 $('.form-elements__section:nth-child(2) .form-elements__item:nth-child(3) .toggle__input').eq(0).prop('checked', true);
@@ -57,7 +44,7 @@ $(document).ready(() => {
   $button.eq(7).trigger('click');
   $('.form-elements__section:nth-child(8) .js-dropdown__arrow').trigger('click');
 
-  const $roomDropdown = $('.dropdown');
+  const $roomDropdown = $('.js-dropdown');
   for (let i = 0; i < 2; i += 1) {
     const $dropdownBtn = $roomDropdown.eq(i).find('.js-dropdown__counter-button_theme_increment');
     for (let j = 0; j < 2; j += 1) {
@@ -66,7 +53,7 @@ $(document).ready(() => {
     }
   }
 
-  const $js_dropdown__wrapper = $('.dropdown:not(.js-dropdown_theme_date)').find('.js-dropdown__wrapper');
+  const $js_dropdown__wrapper = $('.js-dropdown:not(.js-dropdown_theme_date)').find('.js-dropdown__wrapper');
   for (let i = 1; i < 4 ; i += 1) {
     $js_dropdown__wrapper.eq(i).find('.js-dropdown__arrow').text('expand_less');
     $js_dropdown__wrapper.eq(i).addClass('js-dropdown__wrapper_expanded');
@@ -80,5 +67,3 @@ $(document).ready(() => {
     }
   });
 });
-
-// export {dropdownTexts};

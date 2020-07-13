@@ -7,7 +7,7 @@ mixin dropdown(data)
 	-
 		const {cl, name, header, p, item1, item2, item3, clear} = data
 	if item1
-		section.dropdown
+		section.js-dropdown
 			span.dropdown__name= header
 			.js-dropdown__wrapper
 				input(type="text" name= name class="js-dropdown__input" autocomplete="off" readonly)
@@ -29,7 +29,7 @@ mixin dropdown(data)
 							.js-dropdown__clear-btn
 								button(type="button" class="btn btn_theme_text btn_color_gray") очистить
 	else
-		div(class="dropdown" + cl)
+		div(class="js-dropdown" + cl)
 			span.dropdown__name= header
 			.js-dropdown__wrapper
 				input(type="text" name= name class="js-dropdown__input" autocomplete="off")
