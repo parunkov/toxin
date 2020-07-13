@@ -14,7 +14,7 @@ import './images/room3.jpg';
 import './images/Patricia.jpg';
 import $ from 'jquery';
 
-$('.room-details__review-wrapper_1 .js-like__input').prop('checked', true);
+$('.js-room-details__review-wrapper_1 .js-like__input').prop('checked', true);
 
 const dataset1 = [
   {
@@ -109,13 +109,13 @@ const addCart = function (dataset, chartClass, sectorClass) {
     }, angle, true));
   }(curr, prev)), 0);
 };
-addCart(dataset1, '.room-details__chart', 'room-details__sector');
-addCart(dataset2, '.room-details__chart-white-mask', 'room-details__sector');
+addCart(dataset1, '.js-room-details__chart', 'js-room-details__sector');
+addCart(dataset2, '.js-room-details__chart-white-mask', 'js-room-details__sector');
 
-const $sectors = $('.room-details__sector');
-const $masks = $('.room-details__chart-white-mask .room-details__sector');
-const $chartText = $('.room-details__chart-inner');
-const $chartNumber = $('.room-details__chart-number');
+const $sectors = $('.js-room-details__sector');
+const $masks = $('.js-room-details__chart-white-mask .js-room-details__sector');
+const $chartText = $('.js-room-details__chart-inner');
+const $chartNumber = $('.js-room-details__chart-number');
 const onSectorHover = (numbers, color, text) => {
   numbers.forEach((i) => {
     const onHover = () => {

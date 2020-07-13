@@ -195,7 +195,7 @@
   display: inline-block;
   margin-right: 24px;
 }
-.room-details__chart {
+.js-room-details__chart {
   // border: 1px solid red;
   position: relative;
   width: 120px;
@@ -210,7 +210,7 @@
   font-family: Montserrat, Arial, sans-serif;
   color: $black-75;
 }
-.room-details__chart-white-mask {
+.js-room-details__chart-white-mask {
   // border: 1px solid red;
   position: absolute;
   top: 4px;
@@ -220,7 +220,7 @@
   overflow: hidden;
   border-radius: 56px;
 }
-.room-details__chart-inner {
+.js-room-details__chart-inner {
   // border: 1px solid red;
   position: absolute;
   top: 10px;
@@ -234,7 +234,7 @@
   border-radius: 50px;
   color: $black-50;
 }
-.room-details__sector {
+.js-room-details__sector {
   position: absolute;
   top: 0;
   left: 50%;
@@ -242,7 +242,7 @@
   height: 50%;
   transform-origin: left bottom;
 }
-.room-details__chart-number {
+.js-room-details__chart-number {
   margin-bottom: 5px;
   font-weight: 700;
   font-size: 24px;
