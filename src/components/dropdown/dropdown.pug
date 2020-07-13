@@ -9,9 +9,9 @@ mixin dropdown(data)
 	if item1
 		section.dropdown
 			span.dropdown__name= header
-			.dropdown__wrapper
+			.js-dropdown__wrapper
 				input(type="text" name= name class="dropdown__input" autocomplete="off" readonly)
-				button(type="button" class="dropdown__arrow")= "expand_more"
+				button(type="button" class="js-dropdown__arrow")= "expand_more"
 				.dropdown__menu
 					div(class="dropdown__item-wrapper")
 						span.dropdown__item-text #{item1}
@@ -31,6 +31,6 @@ mixin dropdown(data)
 	else
 		div(class="dropdown" + cl)
 			span.dropdown__name= header
-			.dropdown__wrapper
+			.js-dropdown__wrapper
 				input(type="text" name= name class="dropdown__input" autocomplete="off")
-				button(type="button" class="dropdown__arrow")= "expand_more"
+				button(type="button" class="js-dropdown__arrow")= "expand_more"

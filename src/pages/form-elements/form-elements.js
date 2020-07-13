@@ -50,12 +50,12 @@ $('.form-elements__section:nth-child(5) .form-elements__item:nth-child(2) .check
 $('.like__input').eq(2).prop('checked', true);
 $(document).ready(() => {
 
-  const $button = $('.form-elements__section:nth-child(8) .form-elements__item .dropdown__wrapper button');
+  const $button = $('.form-elements__section:nth-child(8) .form-elements__item .js-dropdown__wrapper button');
   $button.eq(2).trigger('click');
   $button.eq(2).trigger('click');
   $button.eq(4).trigger('click');
   $button.eq(7).trigger('click');
-  $('.form-elements__section:nth-child(8) .dropdown__arrow').trigger('click');
+  $('.form-elements__section:nth-child(8) .js-dropdown__arrow').trigger('click');
 
   const $roomDropdown = $('.dropdown');
   for (let i = 0; i < 2; i += 1) {
@@ -66,10 +66,10 @@ $(document).ready(() => {
     }
   }
 
-  const $dropdown__wrapper = $('.dropdown:not(.dropdown_theme_date)').find('.dropdown__wrapper');
+  const $js_dropdown__wrapper = $('.dropdown:not(.js-dropdown_theme_date)').find('.js-dropdown__wrapper');
   for (let i = 1; i < 4 ; i += 1) {
-    $dropdown__wrapper.eq(i).find('.dropdown__arrow').text('expand_less');
-    $dropdown__wrapper.eq(i).addClass('dropdown__wrapper_expanded');
+    $js_dropdown__wrapper.eq(i).find('.js-dropdown__arrow').text('expand_less');
+    $js_dropdown__wrapper.eq(i).addClass('js-dropdown__wrapper_expanded');
   }
 
     $('.form-elements__section:nth-child(3) .form-elements__item:nth-child(3)').bind('DOMSubtreeModified', () => {

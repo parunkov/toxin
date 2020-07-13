@@ -12,43 +12,43 @@ import Datepicker from '../datepicker-block/datepicker-block';
 class DatesSelector {
 	constructor(datesSelector) {
 		this.$datesSelector = datesSelector;
-		this.arrival = new Dropdown(datesSelector.find('.dropdown_theme_date:first-child'));
-		this.departure = new Dropdown(datesSelector.find('.dropdown_theme_date:nth-child(2)'));
-		this.datepicker = new Datepicker(datesSelector.find('.datepicker-block'));
+		this.arrival = new Dropdown(datesSelector.find('.js-dropdown_theme_date:first-child'));
+		this.departure = new Dropdown(datesSelector.find('.js-dropdown_theme_date:nth-child(2)'));
+		this.datepicker = new Datepicker(datesSelector.find('.js-datepicker-block'));
 		this.init();
 	}
 	init() {
 		const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.getMonth() + 1}`).substr(-2)}.${date.getFullYear()}`;
-		const $datepickerContainer = this.$datesSelector.find('.dates-selector__datepicker');
+		const $datepickerContainer = this.$datesSelector.find('.js-dates-selector__datepicker');
 
 		this.arrival.$input.mask('99.99.9999');
 		this.departure.$input.mask('99.99.9999');
 
 		const onArrowClick = (evt, inputArrow) => {
 			evt.preventDefault();
-			if ($datepickerContainer.hasClass('dates-selector__datepicker_visible') && inputArrow.text() === 'expand_more') {
+			if ($datepickerContainer.hasClass('js-dates-selector__datepicker_visible') && inputArrow.text() === 'expand_more') {
 				this.arrival.$arrow.text('expand_less');
 				this.departure.$arrow.text('expand_less');
 				inputArrow.text('expand_more');
-			} else if ($datepickerContainer.hasClass('dates-selector__datepicker_visible') && inputArrow.text() === 'expand_less') {
+			} else if ($datepickerContainer.hasClass('js-dates-selector__datepicker_visible') && inputArrow.text() === 'expand_less') {
 				inputArrow.text('expand_more');
-				$datepickerContainer.removeClass('dates-selector__datepicker_visible');
-				this.arrival.$arrow.removeClass('dropdown__arrow_cursor_default');
-				this.departure.$arrow.removeClass('dropdown__arrow_cursor_default');
-			} else if (!$datepickerContainer.hasClass('dates-selector__datepicker_visible') && inputArrow.text() === 'expand_less') {
-				$datepickerContainer.addClass('dates-selector__datepicker_visible');
+				$datepickerContainer.removeClass('js-dates-selector__datepicker_visible');
+				this.arrival.$arrow.removeClass('js-dropdown__arrow_cursor_default');
+				this.departure.$arrow.removeClass('js-dropdown__arrow_cursor_default');
+			} else if (!$datepickerContainer.hasClass('js-dates-selector__datepicker_visible') && inputArrow.text() === 'expand_less') {
+				$datepickerContainer.addClass('js-dates-selector__datepicker_visible');
 				this.arrival.$arrow.text('expand_more');
 				this.departure.$arrow.text('expand_more');
 				inputArrow.text('expand_less');
-				inputArrow.removeClass('dropdown__arrow_cursor_default');
+				inputArrow.removeClass('js-dropdown__arrow_cursor_default');
 			} else {
-				$datepickerContainer.addClass('dates-selector__datepicker_visible');
+				$datepickerContainer.addClass('js-dates-selector__datepicker_visible');
 				this.arrival.$arrow.text('expand_more');
 				this.departure.$arrow.text('expand_more');
-				this.arrival.$arrow.addClass('dropdown__arrow_cursor_default');
-				this.departure.$arrow.addClass('dropdown__arrow_cursor_default');
+				this.arrival.$arrow.addClass('js-dropdown__arrow_cursor_default');
+				this.departure.$arrow.addClass('js-dropdown__arrow_cursor_default');
 				inputArrow.text('expand_less');
-				inputArrow.removeClass('dropdown__arrow_cursor_default');
+				inputArrow.removeClass('js-dropdown__arrow_cursor_default');
 			}
 
 		}
@@ -58,9 +58,9 @@ class DatesSelector {
 
 		const onSetBtnClick = (e) => {
 			e.preventDefault();
-			$datepickerContainer.removeClass('dates-selector__datepicker_visible');
-			this.arrival.$arrow.removeClass('dropdown__arrow_cursor_default');
-			this.departure.$arrow.removeClass('dropdown__arrow_cursor_default');
+			$datepickerContainer.removeClass('js-dates-selector__datepicker_visible');
+			this.arrival.$arrow.removeClass('js-dropdown__arrow_cursor_default');
+			this.departure.$arrow.removeClass('js-dropdown__arrow_cursor_default');
 			this.arrival.$arrow.text('expand_more');
 			this.departure.$arrow.text('expand_more');
 			if (this.datepicker.dates.selectedDates[0]) {
@@ -86,10 +86,10 @@ class DatesSelector {
 		$(document).click((e) => {
 			if ((!$datepickerContainer.is(e.target) && $datepickerContainer.has(e.target).length === 0)
 				&& (!e.target.className.includes('datepicker'))
-				&& (!this.$datesSelector.find('.dropdown__wrapper').is(e.target) && this.$datesSelector.find('.dropdown__wrapper').has(e.target).length === 0)) {
+				&& (!this.$datesSelector.find('.js-dropdown__wrapper').is(e.target) && this.$datesSelector.find('.js-dropdown__wrapper').has(e.target).length === 0)) {
 				this.arrival.$arrow.text('expand_more');
 				this.departure.$arrow.text('expand_more');
-				$datepickerContainer.removeClass('dates-selector__datepicker_visible');
+				$datepickerContainer.removeClass('js-dates-selector__datepicker_visible');
 			}
 		});
 	}

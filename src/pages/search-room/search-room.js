@@ -60,8 +60,8 @@ $('.search-room__expandable-wrapper .checkbox__input:lt(4)').prop('checked', tru
 $('.search-room__expandable-wrapper .checkbox__input').eq(0).prop('checked', false);
 
 $(document).ready(() => {
-  const $button1 = $('.search-room__peoples-dropdown-wrapper .dropdown__wrapper button');
-  const $button2 = $('.search-room__room-dropdown-wrapper .dropdown__wrapper button');
+  const $button1 = $('.search-room__peoples-dropdown-wrapper .js-dropdown__wrapper button');
+  const $button2 = $('.search-room__room-dropdown-wrapper .js-dropdown__wrapper button');
 
   $button1.eq(1).trigger('click');
   $button1.eq(3).trigger('click');
