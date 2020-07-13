@@ -8,8 +8,8 @@ class Pagination {
   constructor(pagination) {
     this.$pagination = pagination;
     this.$container = pagination.find('#pagination-container');
-    this.$first = pagination.find('.pagination__first');
-    this.$second = pagination.find('.pagination__second');
+    this.$first = pagination.find('.js-pagination__first');
+    this.$second = pagination.find('.js-pagination__second');
     this.init();
   }
   init() {
@@ -45,38 +45,5 @@ class Pagination {
   }
 }
 
-const pagination = new Pagination($('.pagination'));
+const pagination = new Pagination($('.js-pagination'));
 
-
-
-
-// $(document).ready(() => {
-//   $(() => {
-//     (function () {
-//       const $container = $('#pagination-container');
-//       const sources = (function () {
-//         const result = [];
-
-//         for (let i = 0; i < 180; i += 1) {
-//           result.push(i);
-//         }
-
-//         return result;
-//       }());
-
-//       const options = {
-//         dataSource: sources,
-//         pageSize: 12,
-//         pageRange: 1,
-//         autoHidePrevious: true,
-//         autoHideNext: true,
-//         callback(response, pagination) {
-//           $('.pagination__first').html(pagination.pageNumber * pagination.pageSize - pagination.pageSize + 1);
-//           $('.pagination__second').html(pagination.pageNumber * pagination.pageSize);
-//         },
-//       };
-//       console.log($container.pagination);
-//       $container.pagination(options);
-//     }());
-//   });
-// });
