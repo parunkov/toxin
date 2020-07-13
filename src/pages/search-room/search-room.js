@@ -66,7 +66,7 @@ $(document).ready(() => {
   $button1.eq(1).trigger('click');
   $button1.eq(3).trigger('click');
   $button1.eq(5).trigger('click');
-  $('.search-room__peoples-dropdown-wrapper .dropdown__set-btn').trigger('click');
+  $('.search-room__peoples-dropdown-wrapper .js-dropdown__set-btn').trigger('click');
   $button2.eq(1).trigger('click');
   $button2.eq(1).trigger('click');
   $button2.eq(3).trigger('click');

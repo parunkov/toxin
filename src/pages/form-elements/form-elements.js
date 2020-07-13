@@ -59,7 +59,7 @@ $(document).ready(() => {
 
   const $roomDropdown = $('.dropdown');
   for (let i = 0; i < 2; i += 1) {
-    const $dropdownBtn = $roomDropdown.eq(i).find('.dropdown__counter-button_theme_increment');
+    const $dropdownBtn = $roomDropdown.eq(i).find('.js-dropdown__counter-button_theme_increment');
     for (let j = 0; j < 2; j += 1) {
       $dropdownBtn.eq(j).trigger('click');
       $dropdownBtn.eq(j).trigger('click');

@@ -14,7 +14,7 @@
       cursor: default;
     }
   }
-  .dropdown__input {
+  .js-dropdown__input {
     text-transform: uppercase;
     letter-spacing: -0.1px;
     cursor: default;
@@ -81,7 +81,7 @@
 .js-dropdown__wrapper_expanded {
   border: 1px solid $black-50;
 }
-.dropdown__input {
+.js-dropdown__input {
   position: relative;
   top: 9px;
   left: 0;
@@ -117,11 +117,11 @@
   border: none;
   outline: none;
 }
-.js-dropdown__wrapper_expanded .dropdown__input::after {
+.js-dropdown__wrapper_expanded .js-dropdown__input::after {
   background: $white;
   transform: rotate(180deg);
 }
-.dropdown__item-text {
+.js-dropdown__item-text {
   padding-right: 35%;
   margin-bottom: 7px;
   font-weight: 700;
@@ -157,12 +157,12 @@
   padding-top: 5px;
   padding-left: 14px;
 }
-.dropdown__item-controls {
+.js-dropdown__item-controls {
   position: absolute;
   top: 0;
   right: 7px;
 }
-.js-dropdown__wrapper .dropdown__counter-button {
+.js-dropdown__wrapper .js-dropdown__counter-button {
   position: relative;
   display: inline-block;
   width: 30px;
@@ -190,11 +190,11 @@
     content: '-';
   }
 }
-.js-dropdown__wrapper .dropdown__counter-button_theme_decrement-inactive {
+.js-dropdown__wrapper .js-dropdown__counter-button_theme_decrement-inactive {
   opacity: 0.5;
   cursor: default;
 }
-.js-dropdown__wrapper .dropdown__counter {
+.js-dropdown__wrapper .js-dropdown__counter {
   display: inline-block;
   width: 28px;
   padding-top: 7px;
@@ -215,7 +215,7 @@
   margin-bottom: 12px;
   padding-left: 6px;
 }
-.dropdown__clear-btn, .dropdown__set-btn {
+.js-dropdown__clear-btn, .js-dropdown__set-btn {
   word-break: break-all;
   flex: 0 1 auto;
   font-weight: 700;
@@ -230,7 +230,7 @@
     color: $black-50;
   }
 } 
-.dropdown__clear-btn {
+.js-dropdown__clear-btn {
   display: none;
   margin-left: 5px;
   margin-right: auto;
@@ -239,7 +239,7 @@
     display: block;
   }
 }
-.dropdown__set-btn {
+.js-dropdown__set-btn {
   display: inline-block;
   padding-right: 5px;
   text-align: right;
