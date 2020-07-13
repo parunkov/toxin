@@ -7,10 +7,10 @@ import '../../components/footer/footer';
 import '../../components/logo/logo'
 import './headers-footers.scss';
 
-$('.header').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
-$('.header').find('.header__navigation-item').eq(0).find('a')
+$('.header').find('.js-header__navigation-item').eq(0).addClass('js-header__navigation-item_active');
+$('.header').find('.js-header__navigation-item').eq(0).find('a')
   .addClass('header__link_active');
 
-$('.headers-footers__header_logged').find('.header__navigation-item').eq(0).addClass('header__navigation-item_active');
-$('.headers-footers__header_logged').find('.header__navigation-item').eq(0).find('a')
+$('.headers-footers__header_logged').find('.js-header__navigation-item').eq(0).addClass('js-header__navigation-item_active');
+$('.headers-footers__header_logged').find('.js-header__navigation-item').eq(0).find('a')
   .addClass('header__link_active');

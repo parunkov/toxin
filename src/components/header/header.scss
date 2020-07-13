@@ -1,12 +1,12 @@
 @import '../../variables.scss';
-.header {
+.js-header {
   flex: 0 0 auto;
   width: 100%;
   position: relative;
   z-index: 10;
   box-shadow: 0 10px 20px $black-5;
 }
-.header__navigation {
+.js-header__navigation {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
   margin-bottom: 13px;
   margin-right: auto;
 }
-.header__burger {
+.js-header__burger {
   position: relative;
   display: none;
   background: transparent;
@@ -48,7 +48,7 @@
     cursor: pointer;
   }
 }
-.header__burger-line {
+.js-header__burger-line {
   width: 100%;
   height: 5px;
   position: absolute;
@@ -84,7 +84,7 @@
     }
   }
 }
-.header__navigation-list {
+.js-header__navigation-list {
   flex: 1 1 320px;
   padding-top: 13px;
   padding-right: 11px;
@@ -98,12 +98,12 @@
     margin: 0 auto;
   }
 }
-.header__navigation-list_visible {
+.js-header__navigation-list_visible {
   @media (max-width: $mobile-menu-breakpoint) {
     display: block;
   }
 }
-.header__navigation-item_with-submenu .header__navigation-list {
+.js-header__navigation-item_with-submenu .js-header__navigation-list {
   position: absolute;
   top: 16px;
   left: -10px;
@@ -127,7 +127,7 @@
     }
   }
 }
-.header__navigation-item_with-submenu.header__navigation-item_expanded .header__navigation-list {
+.js-header__navigation-item_with-submenu.js-header__navigation-item_expanded .js-header__navigation-list {
   visibility: visible;
   opacity: 1;
   @media (max-width: $mobile-menu-breakpoint) {
@@ -138,7 +138,7 @@
     opacity: 1;
   }
 }
-.header__navigation-item {
+.js-header__navigation-item {
   position: relative;
   display: inline-block;
   margin-right: 34px;
@@ -170,7 +170,7 @@
   }
   &:nth-child(2) {
     margin-right: 41px;
-    .header__navigation-item .header__link {
+    .js-header__navigation-item .header__link {
       min-width: 65px;
     }
     @media (max-width: $mobile-menu-breakpoint) {
@@ -212,7 +212,7 @@
       margin-top: 0;
       margin-left: 10px;
     }
-    .header__navigation-item {
+    .js-header__navigation-item {
     display: block;
     margin-right: 0;
     padding-left: 10px;
@@ -380,7 +380,7 @@
   }
 }
 
-.header__navigation-list_visible {
+.js-header__navigation-list_visible {
   visibility: visible;
   opacity: 1;
   @media (max-width: $mobile-menu-breakpoint) {
@@ -391,13 +391,13 @@
     opacity: 1;
   }
 }
-.header__navigation-item_active:hover {
+.js-header__navigation-item_active:hover {
   cursor: default;
   .header__link {
     cursor: default;
   }
 }
-.header__navigation-item_active a:hover, .header__link_active:hover {
+.js-header__navigation-item_active a:hover, .header__link_active:hover {
   cursor: default;
 }
 .header__link {
@@ -414,7 +414,7 @@
 .header__link_active:hover {
   color: $black-75;
 }
-.header__navigation-item_with-submenu > .header__link::after, .header__navigation-item_expanded > .header__link::after {
+.js-header__navigation-item_with-submenu > .header__link::after, .js-header__navigation-item_expanded > .header__link::after {
   position: absolute;
   right: -25px;
   bottom: -5px;
@@ -436,13 +436,13 @@
     line-height: 1px;
   }
 }
-.header__navigation-item_with-submenu > .header__link::after {
+.js-header__navigation-item_with-submenu > .header__link::after {
   content: 'expand_more';
 }
-.header__navigation-item_expanded > .header__link::after {
+.js-header__navigation-item_expanded > .header__link::after {
   content: 'expand_less';
 }
-.header__user-block-logged {
+.js-header__user-block-logged {
   flex: 0 0 145px;
   height: 30px;
   margin-top: 4px;
@@ -470,7 +470,7 @@
   color: $black-50;
   cursor: default;
 }
-.header__user-block {
+.js-header__user-block {
   flex: 0 1 auto;
   margin-bottom: 0;
   padding-top: 3px;
@@ -489,7 +489,7 @@
     max-width: 100%;
   }
 }
-.header__user-block_visible {
+.js-header__user-block_visible {
   @media (max-width: $mobile-menu-breakpoint) {
     display: inline-block;
   }
