@@ -102,37 +102,3 @@ $(document).ready(() => {
 
 });
 
-
-
-
-
-
-// const $input1 = $('.input__field').eq(0);
-//   const $icon = $('.input__button');
-//   const $myDatepicker = $('.datepicker-block__content').datepicker().data('datepicker');
-//   const $datepickerContainer = $('.search-room__datepicker-container');
-//   const $setBtn = $('.datepicker-block__set-btn');
-//   const $clearBtn = $('.datepicker-block__clear-btn');
-//   const months = [
-//     'янв', 'фев', 'мар', 'апр', 'май', 'июн',
-//     'июл', 'авг', 'сен', 'окт', 'ноя', 'дек',
-//   ];
-//   const dateToValue = (date) => (`${(`0${date.getDate()}`).substr(-2)} ${months[date.getMonth()]}`);
-//   $icon.eq(0).click(() => {
-//     $datepickerContainer.toggleClass('search-room__datepicker-container_visible');
-//   });
-//   $setBtn.click((e) => {
-//     e.preventDefault();
-//     $datepickerContainer.removeClass('search-room__datepicker-container_visible');
-//     $icon.eq(0).text('expand_more');
-//     if ($myDatepicker.selectedDates[1]) {
-//       $input1.attr('value', `${dateToValue($myDatepicker.selectedDates[0])} - ${dateToValue($myDatepicker.selectedDates[1])}`);
-//     } else {
-//       $input1.attr('value', '');
-//     }
-//   });
-//   $clearBtn.click(() => {
-//     $input1.attr('value', '');
-//   });
-
-// });

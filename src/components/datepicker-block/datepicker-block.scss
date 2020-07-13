@@ -246,7 +246,7 @@
   margin-top: 18px;
   padding-bottom: 18px;
 }
-.datepicker-block__clear-btn, .datepicker-block__set-btn {
+.js-datepicker-block__clear-btn, .js-datepicker-block__set-btn {
   word-break: break-all;
   flex: 0 1 auto;
   font-weight: 700;
@@ -261,7 +261,7 @@
     color: $black-50;
   }
 } 
-.datepicker-block__clear-btn {
+.js-datepicker-block__clear-btn {
   display: none;
   margin-right: auto;
   color: $black-50;
@@ -269,7 +269,7 @@
     display: block;
   }
 }
-.datepicker-block__set-btn {
+.js-datepicker-block__set-btn {
   display: inline-block;
   padding-right: 5px;
   text-align: right;
