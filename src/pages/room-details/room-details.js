@@ -8,10 +8,10 @@ import '../../components/footer/footer';
 import '../../components/info/info';
 import '../../components/reservation-form/reservation-form';
 import './room-details.scss';
-import './room1.jpg';
-import './room2.jpg';
-import './room3.jpg';
-import './Patricia.jpg';
+import './images/room1.jpg';
+import './images/room2.jpg';
+import './images/room3.jpg';
+import './images/Patricia.jpg';
 import $ from 'jquery';
 
 $('.room-details__review-wrapper_1 .like__input').prop('checked', true);

@@ -1,18 +1,18 @@
 @import '../../variables.scss';
 @keyframes bg {
   0% {
-    background-image: url('bg3.jpg');
+    background-image: url('images/bg3.jpg');
   }
 
   33% {
-    background-image: url('bg2.jpg');
+    background-image: url('images/bg2.jpg');
   }
 
   66% {
-    background-image: url('bg1.jpg');
+    background-image: url('images/bg1.jpg');
   }
   100% {
-    background-image: url('bg3.jpg');
+    background-image: url('images/bg3.jpg');
   }
 }
 @keyframes text {

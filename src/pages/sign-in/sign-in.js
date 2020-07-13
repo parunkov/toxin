@@ -5,4 +5,4 @@ import '../../components/header/header';
 import '../../components/footer/footer';
 import '../../components/login-form/login-form';
 import './sign-in.scss';
-import '../registration/reg__bg.jpg';
+import '../registration/images/reg__bg.jpg';

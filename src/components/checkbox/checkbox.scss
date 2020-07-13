@@ -19,7 +19,7 @@
   border-radius: 4px;
 }
 .checkbox__input:checked + .checkbox__custom {
-  background: url('check.svg') center center no-repeat;
+  background: url('images/check.svg') center center no-repeat;
   border: 1px solid $purple;
 }
 .checkbox__text {

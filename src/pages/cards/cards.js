@@ -8,7 +8,6 @@ import '../../components/reservation-form/reservation-form';
 import '../../components/login-form/login-form';
 import '../../components/datepicker-block/datepicker-block';
 import '../../components/card/card';
-import '../../components/data/data';
 import './cards.scss';
 import Datepicker from '../../components/datepicker-block/datepicker-block';
 import Card from '../../components/card/card';

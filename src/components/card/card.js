@@ -1,7 +1,6 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../rate/rate';
-import '../data/data';
 import './card.scss';
 import $ from 'jquery';
 
