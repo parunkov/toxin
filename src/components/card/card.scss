@@ -9,7 +9,6 @@
   height: 152px;
   margin-bottom: 21px;
   overflow: hidden;
-  // border: 1px solid $green;
   border-radius: 4px 4px 0 0;
 }
 .card__slide-wrapper {
@@ -18,23 +17,23 @@
   margin: 0 auto;
 }
 
-.card__slide {
+.js-card__slide {
   display: none;
 }
-.card__slide-active {
+.js-card__slide-active {
   position: absolute;
   top: 0;
   left: 0;
   display: block;
 }
-.card__slide-left {
+.js-card__slide-left {
   position: absolute;
   top: 0;
   left: -270px;
   display: block;
   opacity: 0.4;
 }
-.card__slide-right {
+.js-card__slide-right {
   position: absolute;
   top: 0;
   left: 270px;
@@ -49,12 +48,10 @@
 .card__shadow_left {
   top: 0;
   left: 0;
-  // background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
 }
 .card__shadow_right {
   top: 0;
   right: 0;
-  // background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
 }
 .card__arrow {
   position: absolute;
@@ -79,13 +76,13 @@
     background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
   }
 }
-.card__arrow_left {
+.js-card__arrow_left {
   top: 52.5px;
   left: 0;
   padding-top: 12px;
   transform: rotate(90deg);
 }
-.card__arrow_right {
+.js-card__arrow_right {
   top: 52.5px;
   right: 0;
   padding-top: 10px;
@@ -96,7 +93,7 @@
   top: 121px;
   right: 16px;
 }
-.card__control {
+.js-card__control {
   display: inline-block;
   width: 7.5px;
   height: 7.5px;
