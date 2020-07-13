@@ -6,8 +6,8 @@ import $ from 'jquery';
 class Like {
   constructor(like) {
     this.$like = like;
-    this.$input = like.find('.like__input');
-    this.$text = like.find('.like__text');
+    this.$input = like.find('.js-like__input');
+    this.$text = like.find('.js-like__text');
     this.value = +this.$text.html();
     this.init();
   }
@@ -27,28 +27,6 @@ class Like {
 
 const likes = [];
 
-$('.like__label').each((i) => {
-  likes[i] = new Like($('.like__label').eq(i));
+$('.js-like__label').each((i) => {
+  likes[i] = new Like($('.js-like__label').eq(i));
 });
-
-
-
-// $(document).ready(() => {
-//   const $like = $('.like__label');
-//   $like.each((i) => {
-//     const $input = $('.like input').eq(i);
-//     const onClick = (e) => {
-//       e.preventDefault();
-//       const $text = $('.like__text').eq(i);
-//       const value = +$text.html();
-//       if ($input.prop('checked')) {
-//         $input.prop('checked', false);
-//         $text.html(value - 1);
-//       } else {
-//         $input.prop('checked', true);
-//         $text.html(value + 1);
-//       }
-//     };
-//     $like.eq(i).click(onClick);
-//   });
-// });

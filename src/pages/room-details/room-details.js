@@ -14,7 +14,7 @@ import './images/room3.jpg';
 import './images/Patricia.jpg';
 import $ from 'jquery';
 
-$('.room-details__review-wrapper_1 .like__input').prop('checked', true);
+$('.room-details__review-wrapper_1 .js-like__input').prop('checked', true);
 
 const dataset1 = [
   {

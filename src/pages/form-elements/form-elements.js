@@ -44,10 +44,10 @@ $('.rate').each((i) => {
 
 $('.form-elements__section:nth-child(2) .form-elements__item:nth-child(1) .checkbox__input:gt(0)').prop('checked', true);
 $('.form-elements__section:nth-child(2) .form-elements__item:nth-child(3) .toggle__input').eq(0).prop('checked', true);
-$('.like__input').eq(1).prop('checked', true);
+$('.js-like__input').eq(1).prop('checked', true);
 $('.form-elements__section:nth-child(5) .form-elements__item:nth-child(2) .checkbox__input:lt(4)').prop('checked', true);
 $('.form-elements__section:nth-child(5) .form-elements__item:nth-child(2) .checkbox__input').eq(0).prop('checked', false);
-$('.like__input').eq(2).prop('checked', true);
+$('.js-like__input').eq(2).prop('checked', true);
 $(document).ready(() => {
 
   const $button = $('.form-elements__section:nth-child(8) .form-elements__item .js-dropdown__wrapper button');
