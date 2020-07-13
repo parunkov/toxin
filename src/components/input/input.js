@@ -6,7 +6,7 @@ import $ from 'jquery';
 class Input {
 	constructor(input) {
 		this.$input = input;
-		this.$arrow = input.find('.input__button');
+		this.$arrow = input.find('.js-input__button');
 		this.init();
 	}
 	init() {
@@ -21,18 +21,7 @@ class Input {
 }
 
 const inputs = [];
-$('.input').each((i) => {
-	inputs[i] = new Input($('.input').eq(i));
+$('.js-input').each((i) => {
+	inputs[i] = new Input($('.js-input').eq(i));
 });
 
-// const $icon = $('.input__button');
-
-// $icon.each((i) => {
-//   $icon.eq(i).click(() => {
-//     if ($icon.eq(i).text() === 'expand_more') {
-//       $icon.eq(i).text('expand_less');
-//     } else if ($icon.eq(i).text() === 'expand_less') {
-//       $icon.eq(i).text('expand_more');
-//     }
-//   });
-// });

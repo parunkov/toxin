@@ -1,7 +1,7 @@
 mixin input(data)
 	-
 		const {h3, type, name, cl, val, plac, p, icon, color} = data;
-	.input
+	.js-input
 		if h3
 			span.input__name= h3
 		if p
@@ -15,6 +15,6 @@ mixin input(data)
 			input(type= type name= name class="input__field"+cl placeholder= plac)
 		if icon
 			if color === 'purple'
-				button(type="button" class="input__button input__button_color_purple")= icon
+				button(type="button" class="js-input__button js-input__button_color_purple")= icon
 			else
-				button(type="button" class="input__button")= icon
+				button(type="button" class="js-input__button")= icon

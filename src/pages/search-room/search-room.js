@@ -74,7 +74,7 @@ $(document).ready(() => {
 
 
   const $input1 = $('.input__field').eq(0);
-  const $icon = $('.input__button').eq(0);
+  const $icon = $('.js-input__button').eq(0);
   const datepicker = new Datepicker($('.datepicker-block'));
   const $datepickerContainer = $('.search-room__datepicker-container');
   const months = [
