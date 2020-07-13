@@ -16,33 +16,33 @@
     <meta name="theme-color" content="#ffffff">
   <link href="./css/search-room.css" rel="stylesheet"></head>
   <body>
-            <header class="header ">
-              <nav class="header__navigation">
+            <header class="js-header ">
+              <nav class="js-header__navigation">
                 <div class="header__logo"><a class="logo" href="index.html"><img class="logo__image" src="img/logo.svg" width="100%" alt="Отель Toxin"></a>
                 </div>
-                <button class="header__burger" type="button">
-                  <div class="header__burger-line"></div>
+                <button class="js-header__burger" type="button">
+                  <div class="js-header__burger-line"></div>
                 </button>
-                <ul class="header__navigation-list">
-                  <li class="header__navigation-item"><a class="header__link" href="/mock-address/change-me">О нас</a></li>
-                  <li class="header__navigation-item header__navigation-item_with-submenu"><a class="header__link" href="/mock-address/change-me">Услуги</a>
-                    <ul class="header__navigation-list">
-                      <li class="header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 1</a></li>
-                      <li class="header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 2</a></li>
-                      <li class="header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 3</a></li>
+                <ul class="js-header__navigation-list">
+                  <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">О нас</a></li>
+                  <li class="js-header__navigation-item js-header__navigation-item_with-submenu"><a class="header__link" href="/mock-address/change-me">Услуги</a>
+                    <ul class="js-header__navigation-list">
+                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 1</a></li>
+                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 2</a></li>
+                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 3</a></li>
                     </ul>
                   </li>
-                  <li class="header__navigation-item"><a class="header__link" href="/mock-address/change-me">Вакансии</a></li>
-                  <li class="header__navigation-item"><a class="header__link" href="/mock-address/change-me">Новости</a></li>
-                  <li class="header__navigation-item header__navigation-item_with-submenu"><a class="header__link" href="/mock-address/change-me">Соглашения</a>
-                    <ul class="header__navigation-list">
-                      <li class="header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 1</a></li>
-                      <li class="header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 2</a></li>
-                      <li class="header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 3</a></li>
+                  <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Вакансии</a></li>
+                  <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Новости</a></li>
+                  <li class="js-header__navigation-item js-header__navigation-item_with-submenu"><a class="header__link" href="/mock-address/change-me">Соглашения</a>
+                    <ul class="js-header__navigation-list">
+                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 1</a></li>
+                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 2</a></li>
+                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 3</a></li>
                     </ul>
                   </li>
                 </ul>
-                <div class="header__user-block">
+                <div class="js-header__user-block">
                   <div class="header__btn"><a class="btn btn_theme_light btn__size_small" href="sign-in.html"> <span class="btn__text"> войти</span></a>
                   </div>
                   <div class="header__btn"><a class="btn btn__size_small" href="registration.html">зарегистрироваться</a>
@@ -53,60 +53,60 @@
     <main class="search-room">
       <div class="search-room__container">
         <div class="search-room__filters">
-          <h3 class="search-room__aside-title">Фильтры</h3>
+          <h3 class="js-search-room__aside-title">Фильтры</h3>
         </div>
-        <aside class="search-room__form">
-          <form class="search-room__form-content">
-            <div class="search-room__input-wrapper">
-                    <div class="input"><span class="input__name">даты пребывания в отеле</span>
+        <aside class="js-search-room__form">
+          <form class="js-search-room__form-content">
+            <div class="js-search-room__input-wrapper">
+                    <div class="js-input"><span class="input__name">даты пребывания в отеле</span>
                       <input class="input__field input__field_theme_without-hover" type="text" name="search-room__input-1" value="19 авг - 23 авг" placeholder="Введите даты">
-                      <button class="input__button" type="button">expand_more</button>
+                      <button class="js-input__button" type="button">expand_more</button>
                     </div>
             </div>
             <div class="search-room__datepicker-wrapper">
-              <div class="search-room__datepicker-container">
-                      <div class="datepicker-block">
-                        <div class="datepicker-block__content"></div>
+              <div class="js-search-room__datepicker-container">
+                      <div class="js-datepicker-block">
+                        <div class="js-datepicker-block__content"></div>
                         <div class="datepicker-block__buttons-block">
-                          <div class="datepicker-block__set-btn">
+                          <div class="js-datepicker-block__set-btn">
                             <button class="btn btn_theme_text" type="button">применить</button>
                           </div>
-                          <div class="datepicker-block__clear-btn">
+                          <div class="js-datepicker-block__clear-btn">
                             <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
                           </div>
                         </div>
                       </div>
               </div>
             </div>
-            <div class="search-room__peoples-dropdown-wrapper">
-                    <section class="dropdown"><span class="dropdown__name">dropdown</span>
-                      <div class="dropdown__wrapper">
-                        <input class="dropdown__input" type="text" name="guests" autocomplete="off" readonly>
-                        <button class="dropdown__arrow" type="button">expand_more</button>
+            <div class="js-search-room__peoples-dropdown-wrapper">
+                    <section class="js-dropdown"><span class="dropdown__name">dropdown</span>
+                      <div class="js-dropdown__wrapper">
+                        <input class="js-dropdown__input" type="text" name="guests" autocomplete="off" readonly>
+                        <button class="js-dropdown__arrow" type="button">expand_more</button>
                         <div class="dropdown__menu">
-                          <div class="dropdown__item-wrapper"><span class="dropdown__item-text">взрослые</span>
-                                  <div class="dropdown__item-controls">
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                          <div class="dropdown__item-wrapper"><span class="js-dropdown__item-text">взрослые</span>
+                                  <div class="js-dropdown__item-controls">
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_decrement" type="button"></button><span class="js-dropdown__counter">0</span>
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_increment" type="button"></button>
                                   </div>
                           </div>
-                          <div class="dropdown__item-wrapper"><span class="dropdown__item-text">дети</span>
-                                  <div class="dropdown__item-controls">
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                          <div class="dropdown__item-wrapper"><span class="js-dropdown__item-text">дети</span>
+                                  <div class="js-dropdown__item-controls">
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_decrement" type="button"></button><span class="js-dropdown__counter">0</span>
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_increment" type="button"></button>
                                   </div>
                           </div>
-                          <div class="dropdown__item-wrapper"><span class="dropdown__item-text">младенцы</span>
-                                  <div class="dropdown__item-controls">
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                          <div class="dropdown__item-wrapper"><span class="js-dropdown__item-text">младенцы</span>
+                                  <div class="js-dropdown__item-controls">
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_decrement" type="button"></button><span class="js-dropdown__counter">0</span>
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_increment" type="button"></button>
                                   </div>
                           </div>
                           <div class="dropdown__buttons-block">
-                            <div class="dropdown__set-btn">
+                            <div class="js-dropdown__set-btn">
                               <button class="btn btn_theme_text" type="button">применить</button>
                             </div>
-                            <div class="dropdown__clear-btn">
+                            <div class="js-dropdown__clear-btn">
                               <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
                             </div>
                           </div>
@@ -115,7 +115,7 @@
                     </section>
             </div>
             <div class="search-room__slider-wrapper">
-                    <div class="slider__container">
+                    <div class="js-slider">
                       <h3 class="slider__header">диапазон цены</h3>
                       <p class="slider__text">
                         <label for="slider__amount"></label>
@@ -125,65 +125,65 @@
                     </div>
             </div>
             <div class="search-room__slider-text">Стоимость за сутки пребывания в номере</div>
-            <div class="search-room__checkbox-wrapper">
-              <h3 class="search-room__aside-title search-room__checkbox-title">Checkbox Buttons</h3>
+            <div class="js-search-room__checkbox-wrapper">
+              <h3 class="js-search-room__aside-title search-room__checkbox-title">Checkbox Buttons</h3>
                     <div class="checkbox">
                       <label class="checkbox__label">
-                        <input class="checkbox__input " type="checkbox" name="-0">
+                        <input class="js-checkbox__input " type="checkbox" name="-0">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Можно курить</p>
                       </label>
                       <label class="checkbox__label">
-                        <input class="checkbox__input " type="checkbox" name="-1">
+                        <input class="js-checkbox__input " type="checkbox" name="-1">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Можно с питомцами</p>
                       </label>
                       <label class="checkbox__label">
-                        <input class="checkbox__input " type="checkbox" name="-2">
+                        <input class="js-checkbox__input " type="checkbox" name="-2">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Можно пригласить гостей (до 10 человек)</p>
                       </label>
                     </div>
             </div>
             <div class="search-room__rich-wrapper">
-              <h3 class="search-room__aside-title search-room__rich-title">доступность</h3>
+              <h3 class="js-search-room__aside-title search-room__rich-title">доступность</h3>
                     <div class="checkbox">
                       <label class="checkbox__label">
-                        <input class="checkbox__input " type="checkbox" name="-0">
+                        <input class="js-checkbox__input " type="checkbox" name="-0">
                         <div class="checkbox__custom"></div>
                         <h4 class="checkbox__header">Широкий коридор</h4>
                       </label>
                       <p class="checkbox__text_small">Ширина коридоров в номере не менее 91 см.</p>
                       <label class="checkbox__label">
-                        <input class="checkbox__input " type="checkbox" name="-1">
+                        <input class="js-checkbox__input " type="checkbox" name="-1">
                         <div class="checkbox__custom"></div>
                         <h4 class="checkbox__header">Помощник для инвалидов</h4>
                       </label>
                       <p class="checkbox__text_small">На 1 этаже вас встретит специалист  и проводит до номера.</p>
                     </div>
             </div>
-            <div class="search-room__room-dropdown-wrapper">
-                    <section class="dropdown"><span class="dropdown__name">удобства номера</span>
-                      <div class="dropdown__wrapper">
-                        <input class="dropdown__input" type="text" name="rooms" autocomplete="off" readonly>
-                        <button class="dropdown__arrow" type="button">expand_more</button>
+            <div class="js-search-room__room-dropdown-wrapper">
+                    <section class="js-dropdown"><span class="dropdown__name">удобства номера</span>
+                      <div class="js-dropdown__wrapper">
+                        <input class="js-dropdown__input" type="text" name="rooms" autocomplete="off" readonly>
+                        <button class="js-dropdown__arrow" type="button">expand_more</button>
                         <div class="dropdown__menu">
-                          <div class="dropdown__item-wrapper"><span class="dropdown__item-text">спальни</span>
-                                  <div class="dropdown__item-controls">
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                          <div class="dropdown__item-wrapper"><span class="js-dropdown__item-text">спальни</span>
+                                  <div class="js-dropdown__item-controls">
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_decrement" type="button"></button><span class="js-dropdown__counter">0</span>
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_increment" type="button"></button>
                                   </div>
                           </div>
-                          <div class="dropdown__item-wrapper"><span class="dropdown__item-text">кровати</span>
-                                  <div class="dropdown__item-controls">
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                          <div class="dropdown__item-wrapper"><span class="js-dropdown__item-text">кровати</span>
+                                  <div class="js-dropdown__item-controls">
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_decrement" type="button"></button><span class="js-dropdown__counter">0</span>
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_increment" type="button"></button>
                                   </div>
                           </div>
-                          <div class="dropdown__item-wrapper"><span class="dropdown__item-text">ванные комнаты</span>
-                                  <div class="dropdown__item-controls">
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter">0</span>
-                                    <button class="dropdown__counter-button dropdown__counter-button_theme_increment" type="button"></button>
+                          <div class="dropdown__item-wrapper"><span class="js-dropdown__item-text">ванные комнаты</span>
+                                  <div class="js-dropdown__item-controls">
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_decrement" type="button"></button><span class="js-dropdown__counter">0</span>
+                                    <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_increment" type="button"></button>
                                   </div>
                           </div>
                         </div>
@@ -191,36 +191,36 @@
                     </section>
             </div>
             <div class="search-room__expandable-wrapper">
-              <h3 class="search-room__aside-title search-room__expandable-title">дополнительные удобства</h3>
-              <div class="search-room__expandable-text d-none">
+              <h3 class="js-search-room__aside-title js-search-room__expandable-title">дополнительные удобства</h3>
+              <div class="js-search-room__expandable-text d-none">
                       <div class="checkbox">
                         <label class="checkbox__label">
-                          <input class="checkbox__input " type="checkbox" name="-0">
+                          <input class="js-checkbox__input " type="checkbox" name="-0">
                           <div class="checkbox__custom"></div>
                           <p class="checkbox__text">Завтрак</p>
                         </label>
                         <label class="checkbox__label">
-                          <input class="checkbox__input " type="checkbox" name="-1">
+                          <input class="js-checkbox__input " type="checkbox" name="-1">
                           <div class="checkbox__custom"></div>
                           <p class="checkbox__text">Письменный стол</p>
                         </label>
                         <label class="checkbox__label">
-                          <input class="checkbox__input " type="checkbox" name="-2">
+                          <input class="js-checkbox__input " type="checkbox" name="-2">
                           <div class="checkbox__custom"></div>
                           <p class="checkbox__text">Стул для кормления</p>
                         </label>
                         <label class="checkbox__label">
-                          <input class="checkbox__input " type="checkbox" name="-3">
+                          <input class="js-checkbox__input " type="checkbox" name="-3">
                           <div class="checkbox__custom"></div>
                           <p class="checkbox__text">Кроватка</p>
                         </label>
                         <label class="checkbox__label">
-                          <input class="checkbox__input " type="checkbox" name="-4">
+                          <input class="js-checkbox__input " type="checkbox" name="-4">
                           <div class="checkbox__custom"></div>
                           <p class="checkbox__text">Телевизор</p>
                         </label>
                         <label class="checkbox__label">
-                          <input class="checkbox__input " type="checkbox" name="-5">
+                          <input class="js-checkbox__input " type="checkbox" name="-5">
                           <div class="checkbox__custom"></div>
                           <p class="checkbox__text">Шампунь</p>
                         </label>
@@ -233,22 +233,22 @@
           <h1 class="search-room__title">Номера, которые мы для вас подобрали</h1>
           <div class="search-room__cards-wrapper">
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image1.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image1.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -256,8 +256,7 @@
                             <h2 class="card__header">888</h2><span class="card__lux">люкс</span></span></a>
                         <div class="card__price">9 990₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
                                 </div>
                           <div class="card__reviews">145<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -265,22 +264,22 @@
                     </section>
             </div>
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image2.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image2.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -288,8 +287,7 @@
                             <h2 class="card__header">840</h2><span class="card__lux"></span></span></a>
                         <div class="card__price">9 990₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
                                 </div>
                           <div class="card__reviews">65<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -297,22 +295,22 @@
                     </section>
             </div>
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image3.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image3.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -320,8 +318,7 @@
                             <h2 class="card__header">980</h2><span class="card__lux">люкс</span></span></a>
                         <div class="card__price">8 500₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
                                 </div>
                           <div class="card__reviews">35<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -329,22 +326,22 @@
                     </section>
             </div>
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image4.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image4.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -352,8 +349,7 @@
                             <h2 class="card__header">856</h2><span class="card__lux"></span></span></a>
                         <div class="card__price">7 300₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
                                 </div>
                           <div class="card__reviews">19<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -361,22 +357,22 @@
                     </section>
             </div>
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image5.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image5.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -384,8 +380,7 @@
                             <h2 class="card__header">740</h2><span class="card__lux"></span></span></a>
                         <div class="card__price">6 000₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
                                 </div>
                           <div class="card__reviews">44<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -393,22 +388,22 @@
                     </section>
             </div>
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image6.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image6.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -416,8 +411,7 @@
                             <h2 class="card__header">982</h2><span class="card__lux"></span></span></a>
                         <div class="card__price">5 800₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
                                 </div>
                           <div class="card__reviews">56<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -425,22 +419,22 @@
                     </section>
             </div>
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image7.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image7.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -448,8 +442,7 @@
                             <h2 class="card__header">678</h2><span class="card__lux"></span></span></a>
                         <div class="card__price">5 500₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
                                 </div>
                           <div class="card__reviews">45<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -457,22 +450,22 @@
                     </section>
             </div>
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image8.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image8.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -480,8 +473,7 @@
                             <h2 class="card__header">450</h2><span class="card__lux"></span></span></a>
                         <div class="card__price">5 300₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
                                 </div>
                           <div class="card__reviews">39<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -489,22 +481,22 @@
                     </section>
             </div>
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image9.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image9.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -512,8 +504,7 @@
                             <h2 class="card__header">350</h2><span class="card__lux"></span></span></a>
                         <div class="card__price">5 000₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
                                 </div>
                           <div class="card__reviews">77<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -521,22 +512,22 @@
                     </section>
             </div>
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image10.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image10.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -544,8 +535,7 @@
                             <h2 class="card__header">666</h2><span class="card__lux"></span></span></a>
                         <div class="card__price">5 000₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
                                 </div>
                           <div class="card__reviews">25<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -553,22 +543,22 @@
                     </section>
             </div>
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image11.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image11.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -576,8 +566,7 @@
                             <h2 class="card__header">444</h2><span class="card__lux"></span></span></a>
                         <div class="card__price">5 000₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
                                 </div>
                           <div class="card__reviews">15<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -585,22 +574,22 @@
                     </section>
             </div>
             <div class="search-room__card-wrapper">
-                    <section class="card ">
+                    <section class="js-card ">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
-                          <div class="card__slide"><img src="img/image12.jpg"></div>
-                          <div class="card__slide"><img src="img/image13.jpg"></div>
-                          <div class="card__slide"><img src="img/image14.jpg"></div>
-                          <div class="card__slide"><img src="img/image15.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image12.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image13.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image14.jpg"></div>
+                          <div class="js-card__slide"><img src="img/image15.jpg"></div>
                           <div class="card__shadow card__shadow_left"></div>
                           <div class="card__shadow card__shadow_right"></div>
-                          <div class="card__arrow card__arrow_left">expand_more</div>
-                          <div class="card__arrow card__arrow_right">expand_more</div>
+                          <div class="card__arrow js-card__arrow_left">expand_more</div>
+                          <div class="card__arrow js-card__arrow_right">expand_more</div>
                           <div class="card__controls">
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
-                            <div class="card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
+                            <div class="js-card__control"></div>
                           </div>
                         </div>
                       </div>
@@ -608,8 +597,7 @@
                             <h2 class="card__header">352</h2><span class="card__lux"></span></span></a>
                         <div class="card__price">5 000₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
-                                <div class="rate ">
-                                  <div class="rate__active"></div><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
+                                <div class="js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
                                 </div>
                           <div class="card__reviews">53<span class="card__reviews-text">Отзывов</span></div>
                         </div>
@@ -618,8 +606,10 @@
             </div>
           </div>
           <div class="search-room__pagination-wrapper">
-                  <div id="pagination-container"></div>
-                  <p class="pagination__text"><span class="pagination__first">1</span> – <span class="pagination__second">12</span> из 100+ вариантов аренды</p>
+                  <div class="js-pagination">
+                    <div id="pagination-container"></div>
+                    <p class="pagination__text"><span class="js-pagination__first">1</span> – <span class="js-pagination__second">12</span> из 100+ вариантов аренды</p>
+                  </div>
           </div>
         </section>
       </div>
@@ -664,9 +654,9 @@
                     <h2 class="footer__title">Подписка</h2>
                     <p class="footer__text">Получайте специальные предложения и новости сервиса</p>
                     <form class="footer__form">
-                            <div class="input">
+                            <div class="js-input">
                               <input class="input__field input__field_with-arrow" type="email" name="email" placeholder="Email">
-                              <button class="input__button input__button_color_purple" type="button">arrow_forward</button>
+                              <button class="js-input__button js-input__button_color_purple" type="button">arrow_forward</button>
                             </div>
                     </form>
                   </div>
