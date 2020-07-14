@@ -44,35 +44,30 @@ class Card {
       this.showSlides();
     });
   }
+
   showSlides() {
+    const changeSlides = (left, center, right) => {
+      this.$slides.eq(left).addClass('js-card__slide-left');
+      this.$slides.eq(center).addClass('js-card__slide-active');
+      this.$slides.eq(right).addClass('js-card__slide-right');
+      this.$controls.eq(center).addClass('js-card__control_active');
+    }
     this.$slides.removeClass('js-card__slide-left');
     this.$slides.removeClass('js-card__slide-active');
     this.$slides.removeClass('js-card__slide-right');
     this.$controls.removeClass('js-card__control_active');
     switch (this.counter) {
       case 0:
-      this.$slides.eq(3).addClass('js-card__slide-left');
-      this.$slides.eq(0).addClass('js-card__slide-active');
-      this.$slides.eq(1).addClass('js-card__slide-right');
-      this.$controls.eq(0).addClass('js-card__control_active');
+      changeSlides(3, 0, 1);
       break;
       case 1:
-      this.$slides.eq(0).addClass('js-card__slide-left');
-      this.$slides.eq(1).addClass('js-card__slide-active');
-      this.$slides.eq(2).addClass('js-card__slide-right');
-      this.$controls.eq(1).addClass('js-card__control_active');
+      changeSlides(0, 1, 2);
       break;
       case 2:
-      this.$slides.eq(1).addClass('js-card__slide-left');
-      this.$slides.eq(2).addClass('js-card__slide-active');
-      this.$slides.eq(3).addClass('js-card__slide-right');
-      this.$controls.eq(2).addClass('js-card__control_active');
+      changeSlides(1, 2, 3);
       break;
       case 3:
-      this.$slides.eq(2).addClass('js-card__slide-left');
-      this.$slides.eq(3).addClass('js-card__slide-active');
-      this.$slides.eq(0).addClass('js-card__slide-right');
-      this.$controls.eq(3).addClass('js-card__control_active');
+      changeSlides(2, 3, 0);
       break;
       default:
       break;
