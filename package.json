@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "air-datepicker": "^2.2.3",
+    "dayjs": "^1.8.29",
     "jquery": "^3.4.1",
     "jquery-ui": "^1.12.1",
     "jquery.maskedinput": "^1.4.1",
