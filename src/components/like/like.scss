@@ -5,7 +5,7 @@
   min-width: 40px;
   margin-right: 6px;
 }
-.js-like__input {
+.like__input {
   display: none;
 }
 .like__custom {
@@ -32,7 +32,7 @@
   font-family: 'Material Icons';
   color: $black-25;
 }
-.js-like__text {
+.like__text {
   font-size: 14px;
   line-height: 1.6em;
   padding-top: 1px;
@@ -44,13 +44,13 @@
   font-family: Montserrat, Arial, sans-serif;
   color: $black-25;
 }
-.js-like__input:checked + .like__custom {
+.like__input:checked + .like__custom {
   background: $gradient-purple;
 }
-.js-like__input:checked + .like__custom::after {
+.like__input:checked + .like__custom::after {
   content: 'favorite';
   color: $purple;
 }
-.js-like__input:checked + .like__custom .js-like__text {
+.like__input:checked + .like__custom .like__text {
   color: $purple;
 }
