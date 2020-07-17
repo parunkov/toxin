@@ -1,10 +1,10 @@
 mixin toggle(data)
 	-
-		const {cl, text} = data;
+		const {className, text} = data;
 	.toggle
 		each t, i in text
 			label.toggle__label
-				input(type="checkbox" name=cl+"-"+i class="js-toggle__input"+" "+cl)
+				input(type="checkbox" name=className+"-"+i class="js-toggle__input"+" "+className)
 				.toggle__custom
 					.toggle__custom-inner
 				p.toggle__text= t
