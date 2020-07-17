@@ -1,6 +1,6 @@
 {
   "markupEng1": {
-    "cl": "",
+    "className": "",
     "menu": [
       {
         "item": "Home",
@@ -38,13 +38,13 @@
       }
     ],
     "btn1": "Login",
-    "href1": "/mock-address/change-me",
+    "link1": "/mock-address/change-me",
     "btn2": "Register",
-    "href2": "/mock-address/change-me",
+    "link2": "/mock-address/change-me",
     "login": 1
   },
   "markupEng2": {
-    "cl": "",
+    "className": "",
     "menu": [
       {
         "item": "Home",
@@ -82,12 +82,12 @@
       }
     ],
     "btn1": "Login",
-    "href1": "/mock-address/change-me",
+    "link1": "/mock-address/change-me",
     "btn2": "Register",
-    "href2": "/mock-address/change-me"
+    "link2": "/mock-address/change-me"
   },
   "markupRus": {
-    "cl": "",
+    "className": "",
     "menu": [
       {
         "item": "О нас",
@@ -131,8 +131,8 @@
       }
     ],
     "btn1": "войти",
-    "href1": "sign-in.html",
+    "link1": "sign-in.html",
     "btn2": "зарегистрироваться",
-    "href2": "registration.html"
+    "link2": "registration.html"
   }
 }
