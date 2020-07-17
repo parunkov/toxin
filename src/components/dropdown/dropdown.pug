@@ -1,38 +1,38 @@
 mixin dropdown__menu-item()
-	.js-dropdown__item-controls
-		button(type="button" class="js-dropdown__counter-button js-dropdown__counter-button_theme_decrement")
-		span.js-dropdown__counter 0
-		button(type="button" class="js-dropdown__counter-button js-dropdown__counter-button_theme_increment")
+	.dropdown__item-controls.js-dropdown__item-controls
+		button(type="button" class="dropdown__counter-button js-dropdown__counter-button dropdown__counter-button_theme_decrement js-dropdown__counter-button_theme_decrement")
+		span.dropdown__counter.js-dropdown__counter 0
+		button(type="button" class="dropdown__counter-button js-dropdown__counter-button dropdown__counter-button_theme_increment js-dropdown__counter-button_theme_increment")
 mixin dropdown(data)
 	-
 		const {cl, name, header, p, item1, item2, item3, clear} = data
 	if item1
-		section.js-dropdown
+		section.dropdown.js-dropdown
 			span.dropdown__name= header
 			if p
 				p.dropdown__text= p
-			.js-dropdown__wrapper
-				input(type="text" name= name class="js-dropdown__input" autocomplete="off" readonly)
-				button(type="button" class="js-dropdown__arrow")= "expand_more"
+			.dropdown__wrapper.js-dropdown__wrapper
+				input(type="text" name= name class="dropdown__input js-dropdown__input" autocomplete="off" readonly)
+				button(type="button" class="dropdown__arrow js-dropdown__arrow")= "expand_more"
 				.dropdown__menu
 					div(class="dropdown__item-wrapper")
-						span.js-dropdown__item-text #{item1}
+						span.dropdown__item-text.js-dropdown__item-text #{item1}
 						+dropdown__menu-item
 					div(class="dropdown__item-wrapper")
-						span.js-dropdown__item-text #{item2}
+						span.dropdown__item-text.js-dropdown__item-text #{item2}
 						+dropdown__menu-item
 					div(class="dropdown__item-wrapper")
-						span.js-dropdown__item-text #{item3}
+						span.dropdown__item-text.js-dropdown__item-text #{item3}
 						+dropdown__menu-item
 					if clear
 						.dropdown__buttons-block
-							.js-dropdown__set-btn
+							.dropdown__set-btn.js-dropdown__set-btn
 								button(type="button" class="btn btn_theme_text") применить
-							.js-dropdown__clear-btn
+							.dropdown__clear-btn.js-dropdown__clear-btn
 								button(type="button" class="btn btn_theme_text btn_color_gray") очистить
 	else
-		div(class="js-dropdown" + cl)
+		div(class="dropdown js-dropdown" + cl)
 			span.dropdown__name= header
-			.js-dropdown__wrapper
-				input(type="text" name= name class="js-dropdown__input" autocomplete="off")
-				button(type="button" class="js-dropdown__arrow")= "expand_more"
+			.dropdown__wrapper.js-dropdown__wrapper
+				input(type="text" name= name class="dropdown__input js-dropdown__input" autocomplete="off")
+				button(type="button" class="dropdown__arrow js-dropdown__arrow")= "expand_more"

@@ -1,11 +1,11 @@
 @import '../../variables.scss';
 
-.js-dropdown {
+.dropdown, .js-dropdown {
   position: relative;
   min-height: 68px;
   &_theme_date {
   flex: 0 0 47.24%;
-  .js-dropdown__arrow {
+  .dropdown__arrow, .js-dropdown__arrow {
     @media (max-width: 380px) {
       padding-left: 0;
       width: 25px;
@@ -14,7 +14,7 @@
       cursor: default;
     }
   }
-  .js-dropdown__input {
+  .dropdown__input {
     text-transform: uppercase;
     letter-spacing: -0.1px;
     cursor: default;
@@ -77,7 +77,7 @@
   color: $black-50;
   text-transform: uppercase;
 }
-.js-dropdown__wrapper {
+.dropdown__wrapper, .js-dropdown__wrapper {
   position: relative;
   clear: both;
   width: 100%;
@@ -87,12 +87,10 @@
   border-radius: 4px;
   &_expanded {
     border-radius: 4px 4px 0 0;
+    border: 1px solid $black-50;
   }
 }
-.js-dropdown__wrapper_expanded {
-  border: 1px solid $black-50;
-}
-.js-dropdown__input {
+.dropdown__input {
   position: relative;
   top: 9px;
   left: 0;
@@ -110,7 +108,7 @@
   outline: none;
   cursor: default;
 }
-.js-dropdown__arrow {
+.dropdown__arrow {
   position: absolute;
   top: 2px;
   right: 2px;
@@ -132,7 +130,7 @@
   background: $white;
   transform: rotate(180deg);
 }
-.js-dropdown__item-text {
+.dropdown__item-text {
   padding-right: 35%;
   margin-bottom: 7px;
   font-weight: 700;
@@ -161,19 +159,19 @@
   box-shadow:  0px 10px 20px 0px $black-5;
   cursor: default;
 }
-.js-dropdown__wrapper .dropdown__item-wrapper {
+.dropdown__wrapper .dropdown__item-wrapper {
   position: relative;
   min-height: 30px;
   margin-bottom: 7px;
   padding-top: 5px;
   padding-left: 14px;
 }
-.js-dropdown__item-controls {
+.dropdown__item-controls {
   position: absolute;
   top: 0;
   right: 7px;
 }
-.js-dropdown__wrapper .js-dropdown__counter-button {
+.dropdown__wrapper .dropdown__counter-button {
   position: relative;
   display: inline-block;
   width: 30px;
@@ -201,11 +199,11 @@
     content: '-';
   }
 }
-.js-dropdown__wrapper .js-dropdown__counter-button_theme_decrement-inactive {
+.dropdown__wrapper .js-dropdown__counter-button_theme_decrement-inactive {
   opacity: 0.5;
   cursor: default;
 }
-.js-dropdown__wrapper .js-dropdown__counter {
+.dropdown__wrapper .dropdown__counter, .dropdown__wrapper .js-dropdown__counter {
   display: inline-block;
   width: 28px;
   padding-top: 7px;
@@ -226,7 +224,7 @@
   margin-bottom: 12px;
   padding-left: 6px;
 }
-.js-dropdown__clear-btn, .js-dropdown__set-btn {
+.dropdown__clear-btn, .dropdown__set-btn {
   word-break: break-all;
   flex: 0 1 auto;
   font-weight: 700;
@@ -241,7 +239,7 @@
     color: $black-50;
   }
 } 
-.js-dropdown__clear-btn {
+.dropdown__clear-btn, .js-dropdown__clear-btn {
   display: none;
   margin-left: 5px;
   margin-right: auto;
@@ -250,7 +248,7 @@
     display: block;
   }
 }
-.js-dropdown__set-btn {
+.dropdown__set-btn {
   display: inline-block;
   padding-right: 5px;
   text-align: right;
