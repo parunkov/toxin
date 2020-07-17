@@ -1,12 +1,12 @@
 mixin radio(data)
 	-
 		const {cl, text} = data
-	.js-radio
+	.radio.js-radio
 		each t, i in text
-			label.js-radio__label
+			label.radio__label.js-radio__label
 				if i === 0
-					input(type="radio" name=cl class="js-radio__input" checked)
+					input(type="radio" name=cl class="radio__input js-radio__input" checked)
 				else
-					input(type="radio" name=cl class="js-radio__input")
+					input(type="radio" name=cl class="radio__input js-radio__input")
 				.radio__custom
 				p.radio__text= t
