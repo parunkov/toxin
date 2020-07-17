@@ -1,37 +1,37 @@
-mixin btn(text, type, mod, href)
+mixin btn(text, type, modifier, link)
 	if type === 'div'
-		if mod
-			div(class="btn btn_" + mod) #{text}
+		if modifier
+			div(class="btn btn_" + modifier) #{text}
 		else
 			.btn #{text}
 	else if type === 'div-light'
-		if mod
-			div(class="btn btn_theme_light btn_" + mod)
+		if modifier
+			div(class="btn btn_theme_light btn_" + modifier)
 				span.btn__text #{text}
 		else
 			.btn.btn_theme_light 
 				span.btn__text #{text}
 	else if type === 'div-text'
-		if mod
-			div(class="btn btn_theme_text btn_" + mod) #{text}
+		if modifier
+			div(class="btn btn_theme_text btn_" + modifier) #{text}
 		else
 			.btn.btn_theme_text #{text}
 	else if type === 'button'
-		if mod
-			button(type="button" class="btn btn_" + mod) #{text}
+		if modifier
+			button(type="button" class="btn btn_" + modifier) #{text}
 		else
 			button(type="button" class="btn") #{text}
 	else if type === 'submit'
-		if mod
-			button(type="submit" class="btn btn_" + mod) #{text}
+		if modifier
+			button(type="submit" class="btn btn_" + modifier) #{text}
 		else
 			button(type="submit" class="btn") #{text}
 	else if type === 'big-a'
-		a(href=href class="btn btn_theme_light btn__size_big")
+		a(href=link class="btn btn_theme_light btn__size_big")
 			span.btn__text #{text}
 	else if type === 'small'
-		a(href=href class="btn btn__size_small") !{text}
+		a(href=link class="btn btn__size_small") !{text}
 	else if type === 'small-light'
-		a(href=href class="btn btn_theme_light btn__size_small") 
+		a(href=link class="btn btn_theme_light btn__size_small") 
 			span.btn__text  !{text}
 			
