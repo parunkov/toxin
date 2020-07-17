@@ -1,1 +1,135 @@
-{"markupFooterEng":{"cl":"","text":"Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.","menu":[{"item":"Navigation","href":"/mock-address/change-me","incl":["About Us","News","Support","Products"],"hrefs":["/mock-address/change-me","/mock-address/change-me","/mock-address/change-me","/mock-address/change-me"]},{"item":"About Us","href":"/mock-address/change-me","incl":["Who we are","Our team","Careers","Investors"],"hrefs":["/mock-address/change-me","/mock-address/change-me","/mock-address/change-me","/mock-address/change-me"]},{"item":"Support","href":"/mock-address/change-me","incl":["Documentation","Community","Get in Touch"],"hrefs":["/mock-address/change-me","/mock-address/change-me","/mock-address/change-me"]}],"h3":"Subscribe to our newsletter","p":"Receive our latest news and promotions in your inbox!","copyright":"Copyright © 2018 Toxin UI Kit. All rights reserved.","ui":1},"markupFooterRus":{"cl":"","text":"Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»","menu":[{"item":"навигация","href":"/mock-address/change-me","incl":["О нас","Новости","Служба поддержки","Услуги"],"hrefs":["/mock-address/change-me","/mock-address/change-me","/mock-address/change-me","/mock-address/change-me"]},{"item":"о нас","href":"/mock-address/change-me","incl":["О сервисе","Наша команда","Вакансии","Инвесторы"],"hrefs":["/mock-address/change-me","/mock-address/change-me","/mock-address/change-me","/mock-address/change-me"]},{"item":"Служба поддержки","href":"/mock-address/change-me","incl":["Соглашения","Сообщества","Связь с нами"],"hrefs":["/mock-address/change-me","/mock-address/change-me","/mock-address/change-me"]}],"h3":"Подписка","p":"Получайте специальные предложения и новости сервиса","copyright":"Copyright © 2018 Toxin отель. Все права зачищены."},"inputRus":{"h3":"","type":"email","name":"email","cl":" input__field_with-arrow","val":"","plac":"Email","p":"","icon":"arrow_forward","color":"purple"},"inputEng":{"h3":"","type":"email","name":"email","cl":" input__field_with-arrow","val":"","plac":"Your email address","p":"","icon":"arrow_forward","color":"purple"}}
+{
+  "markupFooterEng": {
+    "cl": "",
+    "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.",
+    "menu": [
+      {
+        "item": "Navigation",
+        "href": "/mock-address/change-me",
+        "incl": [
+          "About Us",
+          "News",
+          "Support",
+          "Products"
+        ],
+        "hrefs": [
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me"
+        ]
+      },
+      {
+        "item": "About Us",
+        "href": "/mock-address/change-me",
+        "incl": [
+          "Who we are",
+          "Our team",
+          "Careers",
+          "Investors"
+        ],
+        "hrefs": [
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me"
+        ]
+      },
+      {
+        "item": "Support",
+        "href": "/mock-address/change-me",
+        "incl": [
+          "Documentation",
+          "Community",
+          "Get in Touch"
+        ],
+        "hrefs": [
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me"
+        ]
+      }
+    ],
+    "h3": "Subscribe to our newsletter",
+    "p": "Receive our latest news and promotions in your inbox!",
+    "copyright": "Copyright © 2018 Toxin UI Kit. All rights reserved.",
+    "ui": 1
+  },
+  "markupFooterRus": {
+    "cl": "",
+    "text": "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
+    "menu": [
+      {
+        "item": "навигация",
+        "href": "/mock-address/change-me",
+        "incl": [
+          "О нас",
+          "Новости",
+          "Служба поддержки",
+          "Услуги"
+        ],
+        "hrefs": [
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me"
+        ]
+      },
+      {
+        "item": "о нас",
+        "href": "/mock-address/change-me",
+        "incl": [
+          "О сервисе",
+          "Наша команда",
+          "Вакансии",
+          "Инвесторы"
+        ],
+        "hrefs": [
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me"
+        ]
+      },
+      {
+        "item": "Служба поддержки",
+        "href": "/mock-address/change-me",
+        "incl": [
+          "Соглашения",
+          "Сообщества",
+          "Связь с нами"
+        ],
+        "hrefs": [
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me"
+        ]
+      }
+    ],
+    "h3": "Подписка",
+    "p": "Получайте специальные предложения и новости сервиса",
+    "copyright": "Copyright © 2018 Toxin отель. Все права зачищены."
+  },
+  "inputRus": {
+    "h3": "",
+    "type": "email",
+    "name": "email",
+    "cl": " input__field_with-arrow",
+    "val": "",
+    "plac": "Email",
+    "p": "",
+    "icon": "arrow_forward",
+    "color": "purple"
+  },
+  "inputEng": {
+    "h3": "",
+    "type": "email",
+    "name": "email",
+    "cl": " input__field_with-arrow",
+    "val": "",
+    "plac": "Your email address",
+    "p": "",
+    "icon": "arrow_forward",
+    "color": "purple"
+  }
+}

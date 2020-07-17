@@ -1,1 +1,138 @@
-{"markupEng1":{"cl":"","menu":[{"item":"Home","href":"/mock-address/change-me"},{"item":"About Us","href":"/mock-address/change-me"},{"item":"Services","href":"/mock-address/change-me","incl":["Service 1","Service 2","Service 3"],"hrefs":["/mock-address/change-me","/mock-address/change-me","/mock-address/change-me"]},{"item":"Careers","href":"/mock-address/change-me"},{"item":"News","href":"/mock-address/change-me"},{"item":"Documentation","href":"/mock-address/change-me"}],"btn1":"Login","href1":"/mock-address/change-me","btn2":"Register","href2":"/mock-address/change-me","login":1},"markupEng2":{"cl":"","menu":[{"item":"Home","href":"/mock-address/change-me"},{"item":"About Us","href":"/mock-address/change-me"},{"item":"Services","href":"/mock-address/change-me","incl":["Service 1","Service 2","Service 3"],"hrefs":["/mock-address/change-me","/mock-address/change-me","/mock-address/change-me"]},{"item":"Careers","href":"/mock-address/change-me"},{"item":"News","href":"/mock-address/change-me"},{"item":"Documentation","href":"/mock-address/change-me"}],"btn1":"Login","href1":"/mock-address/change-me","btn2":"Register","href2":"/mock-address/change-me"},"markupRus":{"cl":"","menu":[{"item":"О нас","href":"/mock-address/change-me"},{"item":"Услуги","href":"/mock-address/change-me","incl":["Услуга 1","Услуга 2","Услуга 3"],"hrefs":["/mock-address/change-me","/mock-address/change-me","/mock-address/change-me"]},{"item":"Вакансии","href":"/mock-address/change-me"},{"item":"Новости","href":"/mock-address/change-me"},{"item":"Соглашения","href":"/mock-address/change-me","incl":["Соглашение 1","Соглашение 2","Соглашение 3"],"hrefs":["/mock-address/change-me","/mock-address/change-me","/mock-address/change-me"]}],"btn1":"войти","href1":"sign-in.html","btn2":"зарегистрироваться","href2":"registration.html"}}
+{
+  "markupEng1": {
+    "cl": "",
+    "menu": [
+      {
+        "item": "Home",
+        "href": "/mock-address/change-me"
+      },
+      {
+        "item": "About Us",
+        "href": "/mock-address/change-me"
+      },
+      {
+        "item": "Services",
+        "href": "/mock-address/change-me",
+        "incl": [
+          "Service 1",
+          "Service 2",
+          "Service 3"
+        ],
+        "hrefs": [
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me"
+        ]
+      },
+      {
+        "item": "Careers",
+        "href": "/mock-address/change-me"
+      },
+      {
+        "item": "News",
+        "href": "/mock-address/change-me"
+      },
+      {
+        "item": "Documentation",
+        "href": "/mock-address/change-me"
+      }
+    ],
+    "btn1": "Login",
+    "href1": "/mock-address/change-me",
+    "btn2": "Register",
+    "href2": "/mock-address/change-me",
+    "login": 1
+  },
+  "markupEng2": {
+    "cl": "",
+    "menu": [
+      {
+        "item": "Home",
+        "href": "/mock-address/change-me"
+      },
+      {
+        "item": "About Us",
+        "href": "/mock-address/change-me"
+      },
+      {
+        "item": "Services",
+        "href": "/mock-address/change-me",
+        "incl": [
+          "Service 1",
+          "Service 2",
+          "Service 3"
+        ],
+        "hrefs": [
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me"
+        ]
+      },
+      {
+        "item": "Careers",
+        "href": "/mock-address/change-me"
+      },
+      {
+        "item": "News",
+        "href": "/mock-address/change-me"
+      },
+      {
+        "item": "Documentation",
+        "href": "/mock-address/change-me"
+      }
+    ],
+    "btn1": "Login",
+    "href1": "/mock-address/change-me",
+    "btn2": "Register",
+    "href2": "/mock-address/change-me"
+  },
+  "markupRus": {
+    "cl": "",
+    "menu": [
+      {
+        "item": "О нас",
+        "href": "/mock-address/change-me"
+      },
+      {
+        "item": "Услуги",
+        "href": "/mock-address/change-me",
+        "incl": [
+          "Услуга 1",
+          "Услуга 2",
+          "Услуга 3"
+        ],
+        "hrefs": [
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me"
+        ]
+      },
+      {
+        "item": "Вакансии",
+        "href": "/mock-address/change-me"
+      },
+      {
+        "item": "Новости",
+        "href": "/mock-address/change-me"
+      },
+      {
+        "item": "Соглашения",
+        "href": "/mock-address/change-me",
+        "incl": [
+          "Соглашение 1",
+          "Соглашение 2",
+          "Соглашение 3"
+        ],
+        "hrefs": [
+          "/mock-address/change-me",
+          "/mock-address/change-me",
+          "/mock-address/change-me"
+        ]
+      }
+    ],
+    "btn1": "войти",
+    "href1": "sign-in.html",
+    "btn2": "зарегистрироваться",
+    "href2": "registration.html"
+  }
+}
