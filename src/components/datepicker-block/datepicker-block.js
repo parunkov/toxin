@@ -29,7 +29,6 @@ class Datepicker {
     this.$setBtn.click((evt) => this.set(evt));
     this.$clearBtn.click((evt) => this.clear(evt));
     this.$datepicker.mousemove(() => this.mousemove());
-    // console.log(this.dates.selectDate);
   }
   set(evt) {
     evt.preventDefault();
@@ -48,7 +47,6 @@ class Datepicker {
   }
   setDates(first, second) {
     this.dates.clear();
-    console.log(first, second);
     if (first && second) {
       this.dates.selectDate([first, second]);
     }
