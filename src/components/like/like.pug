@@ -1,7 +1,7 @@
-mixin like(cl, text)
+mixin like(className, text)
 	.like
 		label.like__label.js-like__label
-			input(type="checkbox" name=cl + "-like" class="like__input js-like__input" + " " + cl)
+			input(type="checkbox" name=className + "-like" class="like__input js-like__input" + " " + className)
 			.like__custom
 				span.like__inner
 					p.like__text.js-like__text= text
