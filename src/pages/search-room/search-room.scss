@@ -205,10 +205,11 @@
   margin-bottom: 18px;
   @media (max-width: 905px) {
     text-align: center;
+    justify-content: center;
   }
 }
 .search-room__card-wrapper {
-  flex: 1 0 280px;
+  flex: 0 0 280px;
   margin-bottom: 21px;
   padding-right: 4.8%*100/834;
   // border: 1px solid magenta;
