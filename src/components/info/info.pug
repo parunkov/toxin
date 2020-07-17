@@ -1,9 +1,9 @@
 mixin info(data)
 	-
-		const {cl, img, head, text}	= data
-	div(class=cl+" info")
+		const {className, img, header, text}	= data
+	div(class=className+" info")
 		.info__img-wrapper
 			i.info__img= img
 		.info__text-wrapper
-			h4.info__header= head
+			h4.info__header= header
 			p.info__text= text
