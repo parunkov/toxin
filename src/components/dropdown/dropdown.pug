@@ -9,6 +9,8 @@ mixin dropdown(data)
 	if item1
 		section.js-dropdown
 			span.dropdown__name= header
+			if p
+				p.dropdown__text= p
 			.js-dropdown__wrapper
 				input(type="text" name= name class="js-dropdown__input" autocomplete="off" readonly)
 				button(type="button" class="js-dropdown__arrow")= "expand_more"

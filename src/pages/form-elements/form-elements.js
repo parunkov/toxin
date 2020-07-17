@@ -14,10 +14,12 @@ import '../../components/pagination/pagination';
 import '../../components/dropdown/dropdown';
 import '../../components/info/info';
 import '../../components/review/review';
+import '../../components/dates-selector/dates-selector';
 import './form-elements.scss';
 import $ from 'jquery';
 import Dropdown from '../../components/dropdown/dropdown';
 import Rate from '../../components/rate/rate';
+import DatesSelector from '../../components/dates-selector/dates-selector';
 
 const $dropdowns = [];
 $('.js-dropdown').each((i) =>{
@@ -28,6 +30,8 @@ const rates = [];
 $('.js-rate').each((i) => {
   rates[i] = new Rate($('.js-rate').eq(i));
 });
+
+const selector = new DatesSelector($('.js-dates-selector'));
 
 $('.js-form-elements__section:nth-child(2) .js-form-elements__item:nth-child(1) .js-checkbox__input:gt(0)').prop('checked', true);
 $('.js-form-elements__section:nth-child(2) .js-form-elements__item:nth-child(3) .js-toggle__input').eq(0).prop('checked', true);
@@ -45,16 +49,16 @@ $(document).ready(() => {
   $('.js-form-elements__section:nth-child(8) .js-dropdown__arrow').trigger('click');
 
   const $roomDropdown = $('.js-dropdown');
-  for (let i = 0; i < 2; i += 1) {
+  for (let i = 3; i < 5; i += 1) {
     const $dropdownBtn = $roomDropdown.eq(i).find('.js-dropdown__counter-button_theme_increment');
-    for (let j = 0; j < 2; j += 1) {
+    for (let j = 3; j < 5; j += 1) {
       $dropdownBtn.eq(j).trigger('click');
       $dropdownBtn.eq(j).trigger('click');
     }
   }
 
   const $js_dropdown__wrapper = $('.js-dropdown:not(.js-dropdown_theme_date)').find('.js-dropdown__wrapper');
-  for (let i = 1; i < 4 ; i += 1) {
+  for (let i = 2; i < 5 ; i += 1) {
     $js_dropdown__wrapper.eq(i).find('.js-dropdown__arrow').text('expand_less');
     $js_dropdown__wrapper.eq(i).addClass('js-dropdown__wrapper_expanded');
   }

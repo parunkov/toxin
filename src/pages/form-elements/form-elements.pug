@@ -17,6 +17,7 @@ block main
 	include ../../components/review/review.pug
 	include ../../components/btn/btn.pug
 	include ../../components/pagination/pagination.pug
+	include ../../components/dates-selector/dates-selector.pug
 	-
 		const input1 = {
 			h3: 'Text Field',
@@ -36,16 +37,16 @@ block main
 			plac: '',
 			p: 'Hover / Focus'
 		}
-		const input3 = {
-			h3: 'Dropdown',
-			type: 'email',
-			name: 'form-elements__input-3',
-			cl: '',
-			val: 'Сколько гостей',
-			plac: '',
-			p: 'Default',
-			icon: 'expand_more'
-		}
+		// const input3 = {
+		// 	h3: 'Dropdown',
+		// 	type: 'email',
+		// 	name: 'form-elements__input-3',
+		// 	cl: '',
+		// 	val: 'Сколько гостей',
+		// 	plac: '',
+		// 	p: 'Default',
+		// 	icon: 'expand_more'
+		// }
 		const input4 = {
 			h3: 'masked text field',
 			type: 'date',
@@ -55,26 +56,26 @@ block main
 			plac: 'Email',
 			p: 'Default'
 		}
-		const input5 = {
-			h3: 'date Dropdown',
-			type: 'date',
-			name: 'form-elements__input-5',
-			cl: ' input__field_uppercase',
-			val: '',
-			plac: '',
-			p: '',
-			icon: 'expand_more'
-		}
-		const input6 = {
-			h3: 'date Dropdown',
-			type: 'date',
-			name: 'form-elements__input-6',
-			cl: ' input__field_uppercase',
-			val: '2019-08-19',
-			plac: '',
-			p: '',
-			icon: 'expand_more'
-		}
+		// const input5 = {
+		// 	h3: 'date Dropdown',
+		// 	type: 'date',
+		// 	name: 'form-elements__input-5',
+		// 	cl: ' input__field_uppercase',
+		// 	val: '',
+		// 	plac: '',
+		// 	p: '',
+		// 	icon: 'expand_more'
+		// }
+		// const input6 = {
+		// 	h3: 'date Dropdown',
+		// 	type: 'date',
+		// 	name: 'form-elements__input-6',
+		// 	cl: ' input__field_uppercase',
+		// 	val: '2019-08-19',
+		// 	plac: '',
+		// 	p: '',
+		// 	icon: 'expand_more'
+		// }
 		const input7 = {
 			h3: 'filter date dropdown',
 			type: 'text',
@@ -156,6 +157,28 @@ block main
 				item3: 'младенцы',
 				clear: '1'
 			}
+		const dropdown4 = {
+				cl: 'peoples',
+				name: 'guests',
+				header: 'dropdown',
+				p: 'Default',
+				item1: 'взрослые',
+				item2: 'дети',
+				item3: 'младенцы',
+				clear: '1'
+			}
+		const dropdown5 = {
+				cl: ' js-dropdown_theme_date',
+				name: 'arrival',
+				header: 'date Dropdown'
+			}
+		const dropdown6 = {
+				cl: ' js-dropdown_theme_date',
+				name: 'departure',
+				header: 'date Dropdown'
+			}
+		const datepickerText = ['применить', 'очистить'];
+
 		const bullets = ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'];
 		const info1 = {
 			cl: '',
@@ -178,6 +201,7 @@ block main
 			text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
 		}
 		const paginationText = 'из 100+ вариантов аренды'
+
 	+ui-kit
 	.form-elements
 		.form-elements__container
@@ -187,15 +211,17 @@ block main
 				.js-form-elements__item
 					+input(input2)
 				.js-form-elements__item
-					+input(input3)
+					// +input(input3)
+					+dropdown(dropdown4)
 				.js-form-elements__item
 					+input(input4)
 				.js-form-elements__item
-					.js-form-elements__item-inner.js-form-elements__item-inner_left
-						+input(input5)
-					.form-elements__space
-					.js-form-elements__item-inner.js-form-elements__item-inner_right
-						+input(input6)
+					+dates-selector(dropdown5, dropdown6, datepickerText[0], datepickerText[1])
+					// .js-form-elements__item-inner.js-form-elements__item-inner_left
+					// 	+input(input5)
+					// .form-elements__space
+					// .js-form-elements__item-inner.js-form-elements__item-inner_right
+					// 	+input(input6)
 				.js-form-elements__item
 					+input(input7)
 				.js-form-elements__item
