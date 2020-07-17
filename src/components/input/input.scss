@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-.js-input {
+.input {
   position: relative;
 }
 .input__name {
@@ -103,7 +103,7 @@
       border: 1px solid $black-50;
       outline: none;
     }
-    + .js-input__button{
+    + .input__button{
       display: block;
       padding-top: 0;
       padding-left: 5px;
@@ -116,7 +116,7 @@
     }
   }
 }
-.js-input__button {
+.input__button {
   position: absolute;
   right: 0;
   bottom: 0;
