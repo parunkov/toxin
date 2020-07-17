@@ -1,12 +1,12 @@
 @import '../../variables.scss';
 
-.js-dates-filter {
+.dates-filter {
 
 }
 .dates-filter__datepicker-wrapper {
   position: relative;
 }
-.js-dates-filter__datepicker-container {
+.dates-filter__datepicker-container, .js-dates-filter__datepicker-container {
   position: absolute;
   top: 10px;
   left: 0;
