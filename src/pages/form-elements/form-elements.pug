@@ -18,6 +18,7 @@ block main
 	include ../../components/btn/btn.pug
 	include ../../components/pagination/pagination.pug
 	include ../../components/dates-selector/dates-selector.pug
+	include ../../components/dates-filter/dates-filter.pug
 	-
 		const input1 = {
 			h3: 'Text Field',
@@ -37,16 +38,6 @@ block main
 			plac: '',
 			p: 'Hover / Focus'
 		}
-		// const input3 = {
-		// 	h3: 'Dropdown',
-		// 	type: 'email',
-		// 	name: 'form-elements__input-3',
-		// 	cl: '',
-		// 	val: 'Сколько гостей',
-		// 	plac: '',
-		// 	p: 'Default',
-		// 	icon: 'expand_more'
-		// }
 		const input4 = {
 			h3: 'masked text field',
 			type: 'date',
@@ -56,26 +47,6 @@ block main
 			plac: 'Email',
 			p: 'Default'
 		}
-		// const input5 = {
-		// 	h3: 'date Dropdown',
-		// 	type: 'date',
-		// 	name: 'form-elements__input-5',
-		// 	cl: ' input__field_uppercase',
-		// 	val: '',
-		// 	plac: '',
-		// 	p: '',
-		// 	icon: 'expand_more'
-		// }
-		// const input6 = {
-		// 	h3: 'date Dropdown',
-		// 	type: 'date',
-		// 	name: 'form-elements__input-6',
-		// 	cl: ' input__field_uppercase',
-		// 	val: '2019-08-19',
-		// 	plac: '',
-		// 	p: '',
-		// 	icon: 'expand_more'
-		// }
 		const input7 = {
 			h3: 'filter date dropdown',
 			type: 'text',
@@ -96,6 +67,16 @@ block main
 			p: '',
 			icon: 'arrow_forward',
 			color: 'purple'
+		}
+		const input9 = {
+			h3: 'filter date dropdown',
+			type: 'text',
+			name: 'search-room__input-1',
+			cl: ' input__field_theme_without-hover',
+			val: '19 авг - 23 авг',
+			plac: 'Введите даты',
+			p: '',
+			icon: 'expand_more'
 		}
 		const headers = ['Checkbox Buttons', 'Radio Buttons', 'Toggle', 'like button', 'rate button', 'buttons', 'pagination', 'expandable checkbox list', 'rich Checkbox Buttons', 'bullet list']
 		const checkbox1 = {
@@ -223,7 +204,8 @@ block main
 					// .js-form-elements__item-inner.js-form-elements__item-inner_right
 					// 	+input(input6)
 				.js-form-elements__item
-					+input(input7)
+					+dates-filter(input9, datepickerText)
+					// +input(input7)
 				.js-form-elements__item
 					+input(input8)
 			section.js-form-elements__section

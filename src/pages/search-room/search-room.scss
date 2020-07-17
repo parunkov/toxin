@@ -103,25 +103,6 @@
 .js-search-room__input-wrapper {
   margin-bottom: 17px;
 }
-.search-room__datepicker-wrapper {
-  position: relative;
-}
-.js-search-room__datepicker-container {
-  position: absolute;
-  top: -10px;
-  left: 0;
-  z-index: 10;
-  display: none;
-  width: 320px;
-  border-radius: 4px;
-  background: $white;
-  @media (max-width: 905px) {
-    width: 100%;
-  }
-  &_visible {
-    display: block;
-  }
-}
 .js-search-room__peoples-dropdown-wrapper {
   margin-bottom: 29px;
 }

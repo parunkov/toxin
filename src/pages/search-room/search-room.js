@@ -25,6 +25,7 @@ import '../../components/card/card';
 import '../../components/footer/footer';
 import '../../components/datepicker-block/datepicker-block';
 import '../../components/pagination/pagination';
+import '../../components/dates-filter/dates-filter';
 import './search-room.scss';
 import $ from 'jquery';
 import Datepicker from '../../components/datepicker-block/datepicker-block';
@@ -40,8 +41,6 @@ const cards = [];
 $('.js-card').each((i) => {
   cards[i] = new Card($('.js-card').eq(i));
 });
-
-$('.js-search-room__input-wrapper input').attr('disabled', '');
 
 $('.js-search-room__aside-title').click((evt) => {
   evt.preventDefault();
@@ -71,34 +70,6 @@ $(document).ready(() => {
   $button2.eq(1).trigger('click');
   $button2.eq(3).trigger('click');
   $button2.eq(3).trigger('click');
-
-
-  const $input1 = $('.js-search-room__input-wrapper input').eq(0);
-  const $icon = $('.js-input__button').eq(0);
-  const datepicker = new Datepicker($('.js-datepicker-block'));
-  const $datepickerContainer = $('.js-search-room__datepicker-container');
-  const months = [
-    'янв', 'фев', 'мар', 'апр', 'май', 'июн',
-    'июл', 'авг', 'сен', 'окт', 'ноя', 'дек',
-  ];
-  const dateToValue = (date) => (`${(`0${date.getDate()}`).substr(-2)} ${months[date.getMonth()]}`);
-  $icon.click(() => {
-    $datepickerContainer.toggleClass('js-search-room__datepicker-container_visible');
-  });
-  datepicker.$setBtn.click((e) => {
-    e.preventDefault();
-    $datepickerContainer.removeClass('js-search-room__datepicker-container_visible');
-    $icon.text('expand_more');
-    const dates = datepicker.dates.selectedDates;
-    if (dates[1]) {
-      $input1.attr('value', `${dateToValue(dates[0])} - ${dateToValue(dates[1])}`);
-    } else {
-      $input1.attr('value', '');
-    }
-  });
-  datepicker.$clearBtn.click(() => {
-    $input1.attr('value', '');
-  });
-
 });
+
 

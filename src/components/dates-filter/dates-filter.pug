@@ -1,0 +1,8 @@
+mixin dates-filter(input1, datepickerText)
+	include ../../components/input/input.pug
+	include ../../components/datepicker-block/datepicker-block.pug
+	.js-dates-filter
+		+input(input1)
+		.dates-filter__datepicker-wrapper
+			.js-dates-filter__datepicker-container
+				+datepicker(datepickerText[0], datepickerText[1])
