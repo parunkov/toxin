@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-.js-datepicker-block {
+.datepicker-block {
   width: 100%;
   padding-right: 4.75%;
   padding-left: 4.75%;
@@ -246,7 +246,7 @@
   margin-top: 18px;
   padding-bottom: 18px;
 }
-.js-datepicker-block__clear-btn, .js-datepicker-block__set-btn {
+.datepicker-block__clear-btn, .datepicker-block__set-btn {
   word-break: break-all;
   flex: 0 1 auto;
   font-weight: 700;
@@ -261,7 +261,7 @@
     color: $black-50;
   }
 } 
-.js-datepicker-block__clear-btn {
+.datepicker-block__clear-btn, .js-datepicker-block__clear-btn {
   display: none;
   margin-right: auto;
   color: $black-50;
@@ -269,7 +269,7 @@
     display: block;
   }
 }
-.js-datepicker-block__set-btn {
+.datepicker-block__set-btn {
   display: inline-block;
   padding-right: 5px;
   text-align: right;
