@@ -1,12 +1,12 @@
 @import '../../variables.scss';
-.js-header {
+.header {
   flex: 0 0 auto;
   width: 100%;
   position: relative;
   z-index: 10;
   box-shadow: 0 10px 20px $black-5;
 }
-.js-header__navigation {
+.header__navigation {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
   margin-bottom: 13px;
   margin-right: auto;
 }
-.js-header__burger {
+.header__burger {
   position: relative;
   display: none;
   background: transparent;
@@ -48,7 +48,7 @@
     cursor: pointer;
   }
 }
-.js-header__burger-line {
+.header__burger-line, .js-header__burger-line {
   width: 100%;
   height: 5px;
   position: absolute;
@@ -84,7 +84,7 @@
     }
   }
 }
-.js-header__navigation-list {
+.header__navigation-list {
   flex: 1 1 320px;
   padding-top: 13px;
   padding-right: 11px;
@@ -103,7 +103,7 @@
     display: block;
   }
 }
-.js-header__navigation-item_with-submenu .js-header__navigation-list {
+.header__navigation-item_with-submenu .header__navigation-list {
   position: absolute;
   top: 16px;
   left: -10px;
@@ -127,7 +127,7 @@
     }
   }
 }
-.js-header__navigation-item_with-submenu.js-header__navigation-item_expanded .js-header__navigation-list {
+.header__navigation-item_with-submenu.js-header__navigation-item_expanded .header__navigation-list {
   visibility: visible;
   opacity: 1;
   @media (max-width: $mobile-menu-breakpoint) {
@@ -138,7 +138,7 @@
     opacity: 1;
   }
 }
-.js-header__navigation-item {
+.header__navigation-item, .js-header__navigation-item {
   position: relative;
   display: inline-block;
   margin-right: 34px;
@@ -170,7 +170,7 @@
   }
   &:nth-child(2) {
     margin-right: 41px;
-    .js-header__navigation-item .header__link {
+    .header__navigation-item .header__link {
       min-width: 65px;
     }
     @media (max-width: $mobile-menu-breakpoint) {
@@ -211,7 +211,7 @@
       margin-top: 0;
       margin-left: 10px;
     }
-    .js-header__navigation-item {
+    .header__navigation-item {
     display: block;
     margin-right: 0;
     padding-left: 10px;
@@ -360,7 +360,7 @@
 .js-header__navigation-item_expanded > .header__link::after {
   content: 'expand_less';
 }
-.js-header__user-block-logged {
+.header__user-block-logged {
   flex: 0 0 145px;
   height: 30px;
   margin-top: 4px;
@@ -388,7 +388,7 @@
   color: $black-50;
   cursor: default;
 }
-.js-header__user-block {
+.header__user-block {
   flex: 0 1 auto;
   margin-bottom: 0;
   padding-top: 3px;
@@ -426,14 +426,6 @@
     flex: none;
     margin-right: 0;
   }
-  // .btn {
-  //   text-decoration: none;
-  //   @media (max-width: $mobile-menu-breakpoint) {
-  //     display: inline-block;
-  //     width: inherit;
-  //     min-width: 196px;
-  //   }
-  // }
 }
 .header__btn-content {
   @media (max-width: 950px) {

@@ -4,29 +4,29 @@ include ../../components/btn/btn.pug
 mixin headerMarkup(data)
 	-
 		const {cl, menu, btn1, href1, btn2, href2, login} = data;
-	header(class = "js-header " + cl)
-		nav.js-header__navigation
+	header(class = "header js-header " + cl)
+		nav.header__navigation.js-header__navigation
 			.header__logo
 				+logo
-			button(type="button" class="js-header__burger")
-				.js-header__burger-line
-			ul.js-header__navigation-list
+			button(type="button" class="header__burger js-header__burger")
+				.header__burger-line.js-header__burger-line
+			ul.header__navigation-list.js-header__navigation-list
 				each val, i in menu
 					if menu[i].incl
-						li.js-header__navigation-item.js-header__navigation-item_with-submenu
+						li.header__navigation-item.js-header__navigation-item.header__navigation-item_with-submenu.js-header__navigation-item_with-submenu
 							a(href=menu[i].href class="header__link") !{menu[i].item}
-							ul.js-header__navigation-list
+							ul.header__navigation-list.js-header__navigation-list
 								each val, j in menu[i].incl
-									li.js-header__navigation-item
+									li.header__navigation-item.js-header__navigation-item
 										a(href=menu[i].hrefs[j] class="header__link") !{menu[i].incl[j]}
 					else
-						li.js-header__navigation-item
+						li.header__navigation-item.js-header__navigation-item
 							a(href=menu[i].href class="header__link") !{menu[i].item}
 			if login
-				.js-header__user-block-logged
+				.header__user-block-logged.js-header__user-block-logged
 					.header__user Cosmin Negoita
 			else
-				.js-header__user-block
+				.header__user-block.js-header__user-block
 					.header__btn
 						+btn(btn1, 'small-light', 0, href1)
 					.header__btn
