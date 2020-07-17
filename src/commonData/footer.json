@@ -111,24 +111,24 @@
     "copyright": "Copyright © 2018 Toxin отель. Все права зачищены."
   },
   "inputRus": {
-    "h3": "",
+    "header": "",
     "type": "email",
     "name": "email",
-    "cl": " input__field_with-arrow",
-    "val": "",
-    "plac": "Email",
-    "p": "",
+    "className": " input__field_with-arrow",
+    "value": "",
+    "placeholder": "Email",
+    "text": "",
     "icon": "arrow_forward",
     "color": "purple"
   },
   "inputEng": {
-    "h3": "",
+    "header": "",
     "type": "email",
     "name": "email",
-    "cl": " input__field_with-arrow",
-    "val": "",
-    "plac": "Your email address",
-    "p": "",
+    "className": " input__field_with-arrow",
+    "value": "",
+    "placeholder": "Your email address",
+    "text": "",
     "icon": "arrow_forward",
     "color": "purple"
   }

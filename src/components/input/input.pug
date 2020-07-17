@@ -1,18 +1,18 @@
 mixin input(data)
 	-
-		const {h3, type, name, cl, val, plac, p, icon, color} = data;
+		const {header, type, name, className, value, placeholder, text, icon, color} = data;
 	.input.js-input
-		if h3
-			span.input__name= h3
-		if p
-			p.input__text= p
-		if val	
-			if plac	
-				input(type= type name= name class="input__field"+cl value= val placeholder= plac)
+		if header
+			span.input__name= header
+		if text
+			p.input__text= text
+		if value	
+			if placeholder	
+				input(type= type name= name class="input__field"+className value= value placeholder= placeholder)
 			else 
-				input(type= type name= name class="input__field"+cl value= val)
+				input(type= type name= name class="input__field"+className value= value)
 		else
-			input(type= type name= name class="input__field"+cl placeholder= plac)
+			input(type= type name= name class="input__field"+className placeholder= placeholder)
 		if icon
 			if color === 'purple'
 				button(type="button" class="input__button js-input__button input__button_color_purple js-input__button_color_purple")= icon
