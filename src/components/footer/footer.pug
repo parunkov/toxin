@@ -6,8 +6,8 @@ include ../../components/logo/logo.pug
 
 mixin footerMarkup(data)
 	-
-		const {cl, text, menu, h3, p, copyright, ui} = data;
-	footer(class = "footer " + cl)
+		const {className, text, menu, title, text2, copyright, ui} = data;
+	footer(class = "footer " + className)
 		section.footer__navigation-section
 			.footer__container
 				.footer__text-column
@@ -23,8 +23,8 @@ mixin footerMarkup(data)
 									li.footer__list-item
 										a(href=menu[i].hrefs[j] class="footer__link") !{menu[i].incl[j]}
 				.footer__subscription-block
-					h2.footer__title= h3
-					p.footer__text= p 
+					h2.footer__title= title
+					p.footer__text= text2 
 					form.footer__form
 						if ui
 							+input(footerData.inputEng)

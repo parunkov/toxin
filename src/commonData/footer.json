@@ -1,6 +1,6 @@
 {
   "markupFooterEng": {
-    "cl": "",
+    "className": "",
     "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.",
     "menu": [
       {
@@ -50,13 +50,13 @@
         ]
       }
     ],
-    "h3": "Subscribe to our newsletter",
-    "p": "Receive our latest news and promotions in your inbox!",
+    "title": "Subscribe to our newsletter",
+    "text2": "Receive our latest news and promotions in your inbox!",
     "copyright": "Copyright © 2018 Toxin UI Kit. All rights reserved.",
     "ui": 1
   },
   "markupFooterRus": {
-    "cl": "",
+    "className": "",
     "text": "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
     "menu": [
       {
@@ -106,8 +106,8 @@
         ]
       }
     ],
-    "h3": "Подписка",
-    "p": "Получайте специальные предложения и новости сервиса",
+    "title": "Подписка",
+    "text2": "Получайте специальные предложения и новости сервиса",
     "copyright": "Copyright © 2018 Toxin отель. Все права зачищены."
   },
   "inputRus": {
