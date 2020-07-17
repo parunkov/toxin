@@ -1,14 +1,14 @@
 mixin checkbox(data)
 	-
-		const {cl, text, head} = data
+		const {className, text, title} = data
 	.checkbox
 		each t, i in text
 			label.checkbox__label
-				input(type="checkbox" name=cl+"-"+i class="js-checkbox__input"+" "+cl)
+				input(type="checkbox" name=className+"-"+i class="js-checkbox__input"+" "+className)
 				.checkbox__custom
-				if head
-					h4.checkbox__header= head[i]
+				if title
+					h4.checkbox__header= title[i]
 				else
 					p.checkbox__text= t
-			if head
+			if title
 				p.checkbox__text_small= t
