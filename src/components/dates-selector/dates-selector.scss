@@ -1,12 +1,12 @@
 @import '../../variables.scss';
-.js-dates-selector {
+.dates-selector {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-end;
 }
-.js-dates-selector__datepicker {
+.dates-selector__datepicker, .js-dates-selector__datepicker {
   position: absolute;
   bottom: -7px;
   transform: translate(0, 100%);
