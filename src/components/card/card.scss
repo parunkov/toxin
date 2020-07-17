@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-.js-card {
+.card {
   height: 257.5px;
   max-width: 270px;
   display: inline-block;
@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 
-.js-card__slide {
+.card__slide {
   display: none;
 }
 .js-card__slide-active {
@@ -26,14 +26,14 @@
   left: 0;
   display: block;
 }
-.js-card__slide-left {
+.card__slide-left {
   position: absolute;
   top: 0;
   left: -270px;
   display: block;
   opacity: 0.4;
 }
-.js-card__slide-right {
+.card__slide-right {
   position: absolute;
   top: 0;
   left: 270px;
@@ -76,13 +76,13 @@
     background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
   }
 }
-.js-card__arrow_left {
+.card__arrow_left {
   top: 52.5px;
   left: 0;
   padding-top: 12px;
   transform: rotate(90deg);
 }
-.js-card__arrow_right {
+.card__arrow_right {
   top: 52.5px;
   right: 0;
   padding-top: 10px;
@@ -93,7 +93,7 @@
   top: 121px;
   right: 16px;
 }
-.js-card__control {
+.card__control, .js-card__control {
   display: inline-block;
   width: 7.5px;
   height: 7.5px;

@@ -1,18 +1,18 @@
 include ../rate/rate.pug
 mixin card(cl, data, text)
-	section(class="js-card " + cl)
+	section(class="card js-card " + cl)
 		.card__slider
 			.card__slide-wrapper
 				- for (let i = 0; i < 4; i++)
-					.js-card__slide
+					.card__slide.js-card__slide
 						img(src=data.img[i])
 				.card__shadow.card__shadow_left
 				.card__shadow.card__shadow_right
-				.card__arrow.js-card__arrow_left expand_more
-				.card__arrow.js-card__arrow_right expand_more
+				.card__arrow.card__arrow_left.js-card__arrow_left expand_more
+				.card__arrow.card__arrow_right.js-card__arrow_right expand_more
 				.card__controls
 					- for (let i = 0; i < 4; i++)
-						.js-card__control
+						.card__control.js-card__control
 		.card__text
 			a(class="card__a" href= data.link)
 				span.card__num-wrapper
