@@ -3,6 +3,7 @@ import './input.scss';
 import './input.pug';
 import $ from 'jquery';
 import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput';
+import '../title/title';
 
 class Input {
 	constructor(input) {

@@ -1,9 +1,12 @@
+include ../../components/title/title.pug
+
 mixin input(data)
 	-
 		const {header, type, name, className, value, placeholder, text, icon, color} = data;
 	.input.js-input
 		if header
-			span.input__name= header
+			span.input__name
+				+title(header)
 		if text
 			p.input__text= text
 		if value	
