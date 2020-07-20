@@ -54,9 +54,9 @@ $('.js-search-room__expandable-title').click((evt) => {
   $('.js-search-room__expandable-title').toggleClass('js-search-room__expandable-title_rotate');
 });
 
-$('.js-search-room__checkbox-wrapper .js-checkbox-list__input:gt(0)').prop('checked', true);
-$('.search-room__expandable-wrapper .js-checkbox-list__input:lt(4)').prop('checked', true);
-$('.search-room__expandable-wrapper .js-checkbox-list__input').eq(0).prop('checked', false);
+$('.js-search-room__checkbox-wrapper .js-checkbox__input:gt(0)').prop('checked', true);
+$('.search-room__expandable-wrapper .js-checkbox__input:lt(4)').prop('checked', true);
+$('.search-room__expandable-wrapper .js-checkbox__input').eq(0).prop('checked', false);
 
 $(document).ready(() => {
   const $button1 = $('.js-search-room__peoples-dropdown-wrapper .js-dropdown__wrapper button');

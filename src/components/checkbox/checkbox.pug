@@ -1,0 +1,10 @@
+mixin checkbox(i, title, t)
+	label.checkbox__label
+		input(type="checkbox" name="checkbox-"+i class="checkbox__input js-checkbox__input")
+		.checkbox__custom
+		if title
+			h4.checkbox__header= title
+		else
+			p.checkbox__text= t
+	if title
+		p.checkbox__text_small= t
