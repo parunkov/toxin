@@ -102,31 +102,31 @@ block main
 					+title(headers[0])
 			aside.search-room__form.js-search-room__form
 				form.search-room__form-content.js-search-room__form-content
-					.search-room__input-wrapper.js-search-room__input-wrapper
+					.search-room__input.js-search-room__input
 						+dates-filter(input1, datepickerText)
-					.search-room__peoples-dropdown-wrapper.js-search-room__peoples-dropdown-wrapper
+					.search-room__peoples-dropdown.js-search-room__peoples-dropdown
 						+dropdown(dropdown1)
-					.search-room__slider-wrapper
+					.search-room__slider
 						+slider(1, sliderTitle)
 					.search-room__slider-text #{sliderText}
-					.search-room__checkbox-wrapper.js-search-room__checkbox-wrapper
+					.search-room__checkbox.js-search-room__checkbox
 						h3.search-room__checkbox-title
 							+title(headers[1])
 						+checkbox-list(checkbox1)
-					.search-room__rich-checkbox-wrapper
+					.search-room__rich-checkbox
 						h3.search-room__rich-checkbox-title
 							+title(headers[2])
 						+checkbox-list(checkbox2)
-					.search-room__room-dropdown-wrapper.js-search-room__room-dropdown-wrapper
+					.search-room__room-dropdown.js-search-room__room-dropdown
 						+dropdown(dropdown2)
-					.search-room__expandable-list-wrapper
+					.search-room__expandable-list
 						h3.search-room__expandable-list-title.js-search-room__expandable-list-title
 							+title(headers[3])
 						.search-room__expandable-text.js-search-room__expandable-text.d-none
 							+checkbox-list(checkbox3)
 			section.search-room__cards
 				h1.search-room__title #{headers[4]}
-				.search-room__cards-wrapper
+				.search-room__cards
 					each val, i in data
 						.search-room__card-wrapper
 							+card('', val, cardText)

@@ -54,18 +54,18 @@ $('.js-search-room__expandable-list-title').click((evt) => {
   $('.js-search-room__expandable-list-title').toggleClass('js-search-room__expandable-list-title_rotate');
 });
 
-$('.js-search-room__checkbox-wrapper .js-checkbox__input:gt(0)').prop('checked', true);
-$('.search-room__expandable-list-wrapper .js-checkbox__input:lt(4)').prop('checked', true);
-$('.search-room__expandable-list-wrapper .js-checkbox__input').eq(0).prop('checked', false);
+$('.js-search-room__checkbox .js-checkbox__input:gt(0)').prop('checked', true);
+$('.search-room__expandable-list .js-checkbox__input:lt(4)').prop('checked', true);
+$('.search-room__expandable-list .js-checkbox__input').eq(0).prop('checked', false);
 
 $(document).ready(() => {
-  const $button1 = $('.js-search-room__peoples-dropdown-wrapper .js-dropdown__wrapper button');
-  const $button2 = $('.js-search-room__room-dropdown-wrapper .js-dropdown__wrapper button');
+  const $button1 = $('.js-search-room__peoples-dropdown .js-dropdown__wrapper button');
+  const $button2 = $('.js-search-room__room-dropdown .js-dropdown__wrapper button');
 
   $button1.eq(1).trigger('click');
   $button1.eq(3).trigger('click');
   $button1.eq(5).trigger('click');
-  $('.js-search-room__peoples-dropdown-wrapper .js-dropdown__set-btn').trigger('click');
+  $('.js-search-room__peoples-dropdown .js-dropdown__set-btn').trigger('click');
   $button2.eq(1).trigger('click');
   $button2.eq(1).trigger('click');
   $button2.eq(3).trigger('click');
