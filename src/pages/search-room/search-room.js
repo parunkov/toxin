@@ -48,15 +48,15 @@ $('.js-search-room__aside-title').click((evt) => {
   $('.js-search-room__aside-title').toggleClass('js-search-room__aside-title_rotate');
 });
 
-$('.js-search-room__expandable-title').click((evt) => {
+$('.js-search-room__expandable-list-title').click((evt) => {
   evt.preventDefault();
   $('.js-search-room__expandable-text').toggleClass('d-none');
-  $('.js-search-room__expandable-title').toggleClass('js-search-room__expandable-title_rotate');
+  $('.js-search-room__expandable-list-title').toggleClass('js-search-room__expandable-list-title_rotate');
 });
 
 $('.js-search-room__checkbox-wrapper .js-checkbox__input:gt(0)').prop('checked', true);
-$('.search-room__expandable-wrapper .js-checkbox__input:lt(4)').prop('checked', true);
-$('.search-room__expandable-wrapper .js-checkbox__input').eq(0).prop('checked', false);
+$('.search-room__expandable-list-wrapper .js-checkbox__input:lt(4)').prop('checked', true);
+$('.search-room__expandable-list-wrapper .js-checkbox__input').eq(0).prop('checked', false);
 
 $(document).ready(() => {
   const $button1 = $('.js-search-room__peoples-dropdown-wrapper .js-dropdown__wrapper button');
