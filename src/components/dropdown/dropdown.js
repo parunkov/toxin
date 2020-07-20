@@ -25,19 +25,19 @@ class Counter {
   }
   init() {
 
-    this.$decrementBtn.addClass('js-dropdown__counter-button_theme_decrement-inactive');
+    this.$decrementBtn.addClass('js-dropdown__counter-button_inactive');
 
     const onIncrementClick = (evt) => {
       evt.preventDefault();
       this.value += 1;
       this.$count.html(this.value);
-      this.$decrementBtn.removeClass('js-dropdown__counter-button_theme_decrement-inactive');
+      this.$decrementBtn.removeClass('js-dropdown__counter-button_inactive');
     }
     const onDecrementClick = (evt) => {
       evt.preventDefault();
-      this.$decrementBtn.addClass('js-dropdown__counter-button_theme_decrement-inactive');
+      this.$decrementBtn.addClass('js-dropdown__counter-button_inactive');
         if (this.value > 1) {
-           this.$decrementBtn.removeClass('js-dropdown__counter-button_theme_decrement-inactive');
+           this.$decrementBtn.removeClass('js-dropdown__counter-button_inactive');
            this.value -= 1;
          } else if (this.value > 0) {
           this.value -= 1;
@@ -172,7 +172,7 @@ class Dropdown {
     this.setValue();
     this.$input.attr('value', '');
     for (let i = 0; i < this.counters.length; i += 1) {
-      this.counters[i].$decrementBtn.addClass('js-dropdown__counter-button_theme_decrement-inactive');
+      this.counters[i].$decrementBtn.addClass('js-dropdown__counter-button_inactive');
       this.counters[i].value = 0;
     }
   }
