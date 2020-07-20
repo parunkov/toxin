@@ -16,33 +16,33 @@
     <meta name="theme-color" content="#ffffff">
   <link href="./css/room-details.css" rel="stylesheet"></head>
   <body>
-            <header class="js-header ">
-              <nav class="js-header__navigation">
+            <header class="header js-header ">
+              <nav class="header__navigation js-header__navigation">
                 <div class="header__logo"><a class="logo" href="index.html"><img class="logo__image" src="img/logo.svg" width="100%" alt="Отель Toxin"></a>
                 </div>
-                <button class="js-header__burger" type="button">
-                  <div class="js-header__burger-line"></div>
+                <button class="header__burger js-header__burger" type="button">
+                  <div class="header__burger-line js-header__burger-line"></div>
                 </button>
-                <ul class="js-header__navigation-list">
-                  <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">О нас</a></li>
-                  <li class="js-header__navigation-item js-header__navigation-item_with-submenu"><a class="header__link" href="/mock-address/change-me">Услуги</a>
-                    <ul class="js-header__navigation-list">
-                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 1</a></li>
-                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 2</a></li>
-                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 3</a></li>
+                <ul class="header__navigation-list js-header__navigation-list">
+                  <li class="header__navigation-item js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">О нас</a></li>
+                  <li class="header__navigation-item js-header__navigation-item header__navigation-item_with-submenu js-header__navigation-item_with-submenu"><a class="header__link" href="/mock-address/change-me">Услуги</a>
+                    <ul class="header__navigation-list js-header__navigation-list">
+                      <li class="header__navigation-item js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 1</a></li>
+                      <li class="header__navigation-item js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 2</a></li>
+                      <li class="header__navigation-item js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Услуга 3</a></li>
                     </ul>
                   </li>
-                  <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Вакансии</a></li>
-                  <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Новости</a></li>
-                  <li class="js-header__navigation-item js-header__navigation-item_with-submenu"><a class="header__link" href="/mock-address/change-me">Соглашения</a>
-                    <ul class="js-header__navigation-list">
-                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 1</a></li>
-                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 2</a></li>
-                      <li class="js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 3</a></li>
+                  <li class="header__navigation-item js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Вакансии</a></li>
+                  <li class="header__navigation-item js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Новости</a></li>
+                  <li class="header__navigation-item js-header__navigation-item header__navigation-item_with-submenu js-header__navigation-item_with-submenu"><a class="header__link" href="/mock-address/change-me">Соглашения</a>
+                    <ul class="header__navigation-list js-header__navigation-list">
+                      <li class="header__navigation-item js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 1</a></li>
+                      <li class="header__navigation-item js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 2</a></li>
+                      <li class="header__navigation-item js-header__navigation-item"><a class="header__link" href="/mock-address/change-me">Соглашение 3</a></li>
                     </ul>
                   </li>
                 </ul>
-                <div class="js-header__user-block">
+                <div class="header__user-block js-header__user-block">
                   <div class="header__btn"><a class="btn btn_theme_light btn__size_small" href="sign-in.html"> <span class="btn__text"> войти</span></a>
                   </div>
                   <div class="header__btn"><a class="btn btn__size_small" href="registration.html">зарегистрироваться</a>
@@ -64,7 +64,7 @@
             <div class="room-details__content-row">
               <article class="room-details__article">
                 <h2 class="room-details__title">Сведения о номере</h2>
-                <div class="room-details__info-wrapper">
+                <div class="room-details__info">
                             <div class=" info">
                               <div class="info__img-wrapper"><i class="info__img">insert_emoticon</i></div>
                               <div class="info__text-wrapper">
@@ -73,7 +73,7 @@
                               </div>
                             </div>
                 </div>
-                <div class="room-details__info-wrapper">
+                <div class="room-details__info">
                             <div class=" info">
                               <div class="info__img-wrapper"><i class="info__img">location_city</i></div>
                               <div class="info__text-wrapper">
@@ -82,7 +82,7 @@
                               </div>
                             </div>
                 </div>
-                <div class="room-details__info-wrapper">
+                <div class="room-details__info">
                             <div class=" info">
                               <div class="info__img-wrapper"><i class="info__img">whatshot</i></div>
                               <div class="info__text-wrapper">
@@ -94,11 +94,11 @@
               </article>
               <article class="room-details__article">
                 <h2 class="room-details__title">Впечатления от номера</h2>
-                <div class="room-details__chart-wrapper">
-                  <div class="js-room-details__chart"></div>
-                  <div class="js-room-details__chart-white-mask"></div>
-                  <div class="js-room-details__chart-inner">
-                    <div class="js-room-details__chart-number">1050</div>
+                <div class="room-details__chart">
+                  <div class="room-details__chart js-room-details__chart"></div>
+                  <div class="room-details__chart-white-mask js-room-details__chart-white-mask"></div>
+                  <div class="room-details__chart-inner js-room-details__chart-inner">
+                    <div class="room-details__chart-number js-room-details__chart-number">1050</div>
                     <div class="room-details__chart-text">голосов</div>
                   </div>
                 </div>
@@ -125,16 +125,16 @@
             <div class="room-details__content-row">
               <article class="room-details__article">
                 <h2 class="room-details__title room-details__title">Отзывы посетителей номера<span class="room-details__title-right-part">2 отзыва</span></h2>
-                <div class="room-details__review-wrapper room-details__review-wrapper_1">
+                <div class="room-details__review room-details__review_1 js-room-details__review_1">
                             <div class="review">
                               <div class="review__column-left">
                                 <div class="review__img-wrapper"><img class="-img review__img" src="img/murad.jpg"></div>
                                 <div class="review__like-wrapper">
                                             <div class="like">
-                                              <label class="js-like__label">
-                                                <input class="js-like__input " type="checkbox" name="-like">
+                                              <label class="like__label js-like__label">
+                                                <input class="like__input js-like__input " type="checkbox" name="-like">
                                                 <div class="like__custom"><span class="like__inner">
-                                                    <p class="js-like__text">12</p></span></div>
+                                                    <p class="like__text js-like__text">12</p></span></div>
                                               </label>
                                             </div>
                                 </div>
@@ -146,16 +146,16 @@
                               </div>
                             </div>
                 </div>
-                <div class="room-details__review-wrapper room-details__review-wrapper_2">
+                <div class="room-details__review room-details__review_2">
                             <div class="review">
                               <div class="review__column-left">
                                 <div class="review__img-wrapper"><img class="-img review__img" src="img/Patricia.jpg"></div>
                                 <div class="review__like-wrapper">
                                             <div class="like">
-                                              <label class="js-like__label">
-                                                <input class="js-like__input " type="checkbox" name="-like">
+                                              <label class="like__label js-like__label">
+                                                <input class="like__input js-like__input " type="checkbox" name="-like">
                                                 <div class="like__custom"><span class="like__inner">
-                                                    <p class="js-like__text">2</p></span></div>
+                                                    <p class="like__text js-like__text">2</p></span></div>
                                               </label>
                                             </div>
                                 </div>
@@ -186,7 +186,7 @@
           </div>
           <div class="room-details__form-column">
             <div class="room-details__form">
-                  <article class="js-reservation-form">
+                  <article class="reservation-form js-reservation-form">
                     <div class="reservation-form__title">
                       <div class="reservation-form__title-left">
                         <h1 class="reservation-form__title-text"><span class="reservation-form__title_number">№</span>888<span class="reservation-form__title_category"> люкс</span></h1>
@@ -197,27 +197,27 @@
                     </div>
                     <form class="reservation-form__form">
                       <div class="reservation-form__dates-selector">
-                            <div class="js-dates-selector">
-                                  <div class="js-dropdown js-dropdown_theme_date"><span class="dropdown__name">прибытие</span>
-                                    <div class="js-dropdown__wrapper">
-                                      <input class="js-dropdown__input" type="text" name="arrival" autocomplete="off">
-                                      <button class="js-dropdown__arrow" type="button">expand_more</button>
+                            <div class="dates-selector js-dates-selector">
+                                  <div class="dropdown js-dropdown js-dropdown_theme_date"><span class="dropdown__name"><span class="title">прибытие</span></span>
+                                    <div class="dropdown__wrapper js-dropdown__wrapper">
+                                      <input class="dropdown__input js-dropdown__input" type="text" name="arrival" autocomplete="off">
+                                      <button class="dropdown__arrow js-dropdown__arrow" type="button">expand_more</button>
                                     </div>
                                   </div>
-                                  <div class="js-dropdown js-dropdown_theme_date"><span class="dropdown__name">выезд</span>
-                                    <div class="js-dropdown__wrapper">
-                                      <input class="js-dropdown__input" type="text" name="departure" autocomplete="off">
-                                      <button class="js-dropdown__arrow" type="button">expand_more</button>
+                                  <div class="dropdown js-dropdown js-dropdown_theme_date"><span class="dropdown__name"><span class="title">выезд</span></span>
+                                    <div class="dropdown__wrapper js-dropdown__wrapper">
+                                      <input class="dropdown__input js-dropdown__input" type="text" name="departure" autocomplete="off">
+                                      <button class="dropdown__arrow js-dropdown__arrow" type="button">expand_more</button>
                                     </div>
                                   </div>
-                              <div class="js-dates-selector__datepicker">
-                                    <div class="js-datepicker-block">
-                                      <div class="js-datepicker-block__content"></div>
+                              <div class="dates-selector__datepicker js-dates-selector__datepicker">
+                                    <div class="datepicker-block js-datepicker-block">
+                                      <div class="datepicker-block__content js-datepicker-block__content"></div>
                                       <div class="datepicker-block__buttons-block">
-                                        <div class="js-datepicker-block__set-btn">
+                                        <div class="datepicker-block__set-btn js-datepicker-block__set-btn">
                                           <button class="btn btn_theme_text" type="button">применить</button>
                                         </div>
-                                        <div class="js-datepicker-block__clear-btn">
+                                        <div class="datepicker-block__clear-btn js-datepicker-block__clear-btn">
                                           <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
                                         </div>
                                       </div>
@@ -225,34 +225,34 @@
                               </div>
                             </div>
                       </div>
-                          <section class="js-dropdown"><span class="dropdown__name">гости</span>
-                            <div class="js-dropdown__wrapper">
-                              <input class="js-dropdown__input" type="text" name="guests" autocomplete="off" readonly>
-                              <button class="js-dropdown__arrow" type="button">expand_more</button>
+                          <section class="dropdown js-dropdown"><span class="dropdown__name"><span class="title">гости</span></span>
+                            <div class="dropdown__wrapper js-dropdown__wrapper">
+                              <input class="dropdown__input js-dropdown__input" type="text" name="guests" autocomplete="off" readonly>
+                              <button class="dropdown__arrow js-dropdown__arrow" type="button">expand_more</button>
                               <div class="dropdown__menu">
-                                <div class="dropdown__item-wrapper"><span class="js-dropdown__item-text">взрослые</span>
-                                      <div class="js-dropdown__item-controls">
-                                        <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_decrement" type="button"></button><span class="js-dropdown__counter">0</span>
-                                        <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_increment" type="button"></button>
+                                <div class="dropdown__item-wrapper"><span class="dropdown__item-text js-dropdown__item-text">взрослые</span>
+                                      <div class="dropdown__item-controls js-dropdown__item-controls">
+                                        <button class="dropdown__counter-button js-dropdown__counter-button dropdown__counter-button_theme_decrement js-dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter js-dropdown__counter">0</span>
+                                        <button class="dropdown__counter-button js-dropdown__counter-button dropdown__counter-button_theme_increment js-dropdown__counter-button_theme_increment" type="button"></button>
                                       </div>
                                 </div>
-                                <div class="dropdown__item-wrapper"><span class="js-dropdown__item-text">дети</span>
-                                      <div class="js-dropdown__item-controls">
-                                        <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_decrement" type="button"></button><span class="js-dropdown__counter">0</span>
-                                        <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_increment" type="button"></button>
+                                <div class="dropdown__item-wrapper"><span class="dropdown__item-text js-dropdown__item-text">дети</span>
+                                      <div class="dropdown__item-controls js-dropdown__item-controls">
+                                        <button class="dropdown__counter-button js-dropdown__counter-button dropdown__counter-button_theme_decrement js-dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter js-dropdown__counter">0</span>
+                                        <button class="dropdown__counter-button js-dropdown__counter-button dropdown__counter-button_theme_increment js-dropdown__counter-button_theme_increment" type="button"></button>
                                       </div>
                                 </div>
-                                <div class="dropdown__item-wrapper"><span class="js-dropdown__item-text">младенцы</span>
-                                      <div class="js-dropdown__item-controls">
-                                        <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_decrement" type="button"></button><span class="js-dropdown__counter">0</span>
-                                        <button class="js-dropdown__counter-button js-dropdown__counter-button_theme_increment" type="button"></button>
+                                <div class="dropdown__item-wrapper"><span class="dropdown__item-text js-dropdown__item-text">младенцы</span>
+                                      <div class="dropdown__item-controls js-dropdown__item-controls">
+                                        <button class="dropdown__counter-button js-dropdown__counter-button dropdown__counter-button_theme_decrement js-dropdown__counter-button_theme_decrement" type="button"></button><span class="dropdown__counter js-dropdown__counter">0</span>
+                                        <button class="dropdown__counter-button js-dropdown__counter-button dropdown__counter-button_theme_increment js-dropdown__counter-button_theme_increment" type="button"></button>
                                       </div>
                                 </div>
                                 <div class="dropdown__buttons-block">
-                                  <div class="js-dropdown__set-btn">
+                                  <div class="dropdown__set-btn js-dropdown__set-btn">
                                     <button class="btn btn_theme_text" type="button">применить</button>
                                   </div>
-                                  <div class="js-dropdown__clear-btn">
+                                  <div class="dropdown__clear-btn js-dropdown__clear-btn">
                                     <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
                                   </div>
                                 </div>
@@ -285,7 +285,8 @@
                   </div>
                   <nav class="footer__navigation">
                     <section class="footer__navigation-column">
-                      <h2 class="footer__title">навигация</h2>
+                      <h2 class="footer__title"><span class="title">навигация</span>
+                      </h2>
                       <ul class="footer__list">
                         <li class="footer__list-item"><a class="footer__link" href="/mock-address/change-me">О нас</a></li>
                         <li class="footer__list-item"><a class="footer__link" href="/mock-address/change-me">Новости</a></li>
@@ -294,7 +295,8 @@
                       </ul>
                     </section>
                     <section class="footer__navigation-column">
-                      <h2 class="footer__title">о нас</h2>
+                      <h2 class="footer__title"><span class="title">о нас</span>
+                      </h2>
                       <ul class="footer__list">
                         <li class="footer__list-item"><a class="footer__link" href="/mock-address/change-me">О сервисе</a></li>
                         <li class="footer__list-item"><a class="footer__link" href="/mock-address/change-me">Наша команда</a></li>
@@ -303,7 +305,8 @@
                       </ul>
                     </section>
                     <section class="footer__navigation-column">
-                      <h2 class="footer__title">Служба поддержки</h2>
+                      <h2 class="footer__title"><span class="title">Служба поддержки</span>
+                      </h2>
                       <ul class="footer__list">
                         <li class="footer__list-item"><a class="footer__link" href="/mock-address/change-me">Соглашения</a></li>
                         <li class="footer__list-item"><a class="footer__link" href="/mock-address/change-me">Сообщества</a></li>
@@ -312,12 +315,13 @@
                     </section>
                   </nav>
                   <div class="footer__subscription-block">
-                    <h2 class="footer__title">Подписка</h2>
+                    <h2 class="footer__title"><span class="title">Подписка</span>
+                    </h2>
                     <p class="footer__text">Получайте специальные предложения и новости сервиса</p>
                     <form class="footer__form">
-                          <div class="js-input">
+                          <div class="input js-input">
                             <input class="input__field input__field_with-arrow" type="email" name="email" placeholder="Email">
-                            <button class="js-input__button js-input__button_color_purple" type="button">arrow_forward</button>
+                            <button class="input__button js-input__button input__button_color_purple js-input__button_color_purple" type="button">arrow_forward</button>
                           </div>
                     </form>
                   </div>
