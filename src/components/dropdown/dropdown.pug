@@ -1,3 +1,5 @@
+include ../../components/title/title.pug
+
 mixin dropdown__menu-item()
 	.dropdown__item-controls.js-dropdown__item-controls
 		button(type="button" class="dropdown__counter-button js-dropdown__counter-button dropdown__counter-button_theme_decrement js-dropdown__counter-button_theme_decrement")
@@ -8,7 +10,8 @@ mixin dropdown(data)
 		const {className, name, header, text, item1, item2, item3, clear} = data
 	if item1
 		section.dropdown.js-dropdown
-			span.dropdown__name= header
+			span.dropdown__name
+				+title(header)
 			if text
 				p.dropdown__text= text
 			.dropdown__wrapper.js-dropdown__wrapper
@@ -32,7 +35,8 @@ mixin dropdown(data)
 								button(type="button" class="btn btn_theme_text btn_color_gray") очистить
 	else
 		div(class="dropdown js-dropdown" + className)
-			span.dropdown__name= header
+			span.dropdown__name
+				+title(header)
 			.dropdown__wrapper.js-dropdown__wrapper
 				input(type="text" name= name class="dropdown__input js-dropdown__input" autocomplete="off")
 				button(type="button" class="dropdown__arrow js-dropdown__arrow")= "expand_more"

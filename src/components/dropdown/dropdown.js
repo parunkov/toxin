@@ -3,6 +3,7 @@ import './dropdown.scss';
 import './dropdown.pug';
 import $ from 'jquery';
 import {dropdownTexts} from '../../commonData/commonData';
+import '../title/title';
 
 const num2str = function (num, textForms) {
   const n = Math.abs(num) % 100;
