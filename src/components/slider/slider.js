@@ -3,6 +3,7 @@ import './slider.scss';
 import './slider.pug';
 import '../../../node_modules/jquery-ui/ui/widgets/slider';
 import $ from 'jquery';
+import '../title/title';
 
 class Slider {
   constructor(slider) {

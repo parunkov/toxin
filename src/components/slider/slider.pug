@@ -1,6 +1,9 @@
+include ../../components/title/title.pug
+
 mixin slider(a, text)
 	.slider.js-slider
-		h3.slider__header= text
+		h3.slider__header
+				+title(text)
 		p.slider__text
 			label(for="slider__amount")
 		input(type="text" id="slider__amount" readonly style="border:0;")
