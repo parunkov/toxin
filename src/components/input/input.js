@@ -2,6 +2,7 @@ import '../../variables.scss';
 import './input.scss';
 import './input.pug';
 import $ from 'jquery';
+import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput';
 
 class Input {
 	constructor(input) {
@@ -10,6 +11,7 @@ class Input {
 		this.init();
 	}
 	init() {
+		$('.js-input__field_type_masked').mask('99.99.9999');
 		this.$arrow.click(() => {
 		    if (this.$arrow.text() === 'expand_more') {
 		      this.$arrow.text('expand_less');

@@ -5,7 +5,7 @@ import '../dropdown/dropdown';
 import '../datepicker-block/datepicker-block';
 import './dates-selector.scss';
 import $ from 'jquery';
-import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js';
+import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput';
 import Dropdown from '../dropdown/dropdown';
 import Datepicker from '../datepicker-block/datepicker-block';
 
