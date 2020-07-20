@@ -1,5 +1,6 @@
 include ../../components/input/input.pug
 include ../../components/logo/logo.pug
+include ../../components/title/title.pug
 
 -
 	const footerData = require('../../commonData/footer.json');
@@ -17,13 +18,15 @@ mixin footerMarkup(data)
 				nav.footer__navigation
 					each val, i in menu
 						section.footer__navigation-column
-							h2.footer__title !{menu[i].item}
+							h2.footer__title
+								+title(menu[i].item)
 							ul.footer__list
 								each val, j in menu[i].incl
 									li.footer__list-item
 										a(href=menu[i].hrefs[j] class="footer__link") !{menu[i].incl[j]}
 				.footer__subscription-block
-					h2.footer__title= title
+					h2.footer__title
+						+title(title)
 					p.footer__text= text2 
 					form.footer__form
 						if ui
