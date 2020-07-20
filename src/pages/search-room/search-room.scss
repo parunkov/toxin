@@ -156,7 +156,7 @@
     margin-bottom: 11px;
   }
 }
-.search-room__cards {
+.search-room__cards-wrapper {
   flex: auto;
   padding-top: 3px;
   min-width: 282px;
@@ -192,7 +192,7 @@
   border-radius: 4px;
   box-shadow: 0 10px 20px $black-5;
 }
-.search-room__pagination-wrapper {
+.search-room__pagination {
   margin-bottom: 69px;
   text-align: center;
   margin-left: -20px;
@@ -204,7 +204,7 @@
     margin-bottom: 69px;
   }
 }
-.search-room__pagination-wrapper .paginationjs-page {
+.search-room__pagination .paginationjs-page {
   margin-right: 1px;
   @media (max-width: 800px) {
     margin-right: -6px;
