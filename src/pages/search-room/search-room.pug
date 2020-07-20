@@ -12,7 +12,7 @@ block main
 		include ../../components/input/input.pug
 		include ../../components/dropdown/dropdown.pug
 		include ../../components/slider/slider.pug
-		include ../../components/checkbox/checkbox.pug
+		include ../../components/checkbox-list/checkbox-list.pug
 		include ../../components/card/card.pug
 		include ../../components/datepicker-block/datepicker-block.pug
 		include ../../components/pagination/pagination.pug
@@ -112,18 +112,18 @@ block main
 					.search-room__checkbox-wrapper.js-search-room__checkbox-wrapper
 						h3.search-room__checkbox-title
 							+title(headers[1])
-						+checkbox(checkbox1)
+						+checkbox-list(checkbox1)
 					.search-room__rich-wrapper
 						h3.search-room__rich-title
 							+title(headers[2])
-						+checkbox(checkbox2)
+						+checkbox-list(checkbox2)
 					.search-room__room-dropdown-wrapper.js-search-room__room-dropdown-wrapper
 						+dropdown(dropdown2)
 					.search-room__expandable-wrapper
 						h3.search-room__expandable-title.js-search-room__expandable-title
 							+title(headers[3])
 						.search-room__expandable-text.js-search-room__expandable-text.d-none
-							+checkbox(checkbox3)
+							+checkbox-list(checkbox3)
 			section.search-room__cards
 				h1.search-room__title #{headers[4]}
 				.search-room__cards-wrapper

@@ -1,0 +1,14 @@
+mixin checkbox-list(data)
+	-
+		const {className, text, title} = data
+	.checkbox-list
+		each t, i in text
+			label.checkbox-list__label
+				input(type="checkbox" name=className+"-"+i class="checkbox-list__input js-checkbox-list__input"+" "+className)
+				.checkbox-list__custom
+				if title
+					h4.checkbox-list__header= title[i]
+				else
+					p.checkbox-list__text= t
+			if title
+				p.checkbox-list__text_small= t

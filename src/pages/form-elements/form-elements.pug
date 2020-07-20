@@ -6,7 +6,7 @@ block title
 block main
 	include ../../components/ui-kit/ui-kit.pug
 	include ../../components/input/input.pug
-	include ../../components/checkbox/checkbox.pug
+	include ../../components/checkbox-list/checkbox-list.pug
 	include ../../components/radio/radio.pug
 	include ../../components/toggle/toggle.pug
 	include ../../components/like/like.pug
@@ -206,7 +206,7 @@ block main
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
 						+title(headers[0])
-					+checkbox(checkbox1)
+					+checkbox-list(checkbox1)
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
 						+title(headers[1])
@@ -262,7 +262,7 @@ block main
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
 						+title(headers[7])
-					+checkbox(checkbox2)
+					+checkbox-list(checkbox2)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
 					+dropdown(dropdown3)
@@ -270,7 +270,7 @@ block main
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
 						+title(headers[8])
-					+checkbox(checkbox3)
+					+checkbox-list(checkbox3)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
 					+dropdown(dropdown3)

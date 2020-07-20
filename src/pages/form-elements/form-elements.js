@@ -3,7 +3,7 @@ import '../../variables.scss';
 import '../../components/page/page';
 import '../../components/ui-kit/ui-kit';
 import '../../components/input/input';
-import '../../components/checkbox/checkbox';
+import '../../components/checkbox-list/checkbox-list';
 import '../../components/radio/radio';
 import '../../components/toggle/toggle';
 import '../../components/like/like';
@@ -34,11 +34,11 @@ $('.js-rate').each((i) => {
 
 const selector = new DatesSelector($('.js-dates-selector'));
 
-$('.js-form-elements__section:nth-child(2) .js-form-elements__item:nth-child(1) .js-checkbox__input:gt(0)').prop('checked', true);
+$('.js-form-elements__section:nth-child(2) .js-form-elements__item:nth-child(1) .js-checkbox-list__input:gt(0)').prop('checked', true);
 $('.js-form-elements__section:nth-child(2) .js-form-elements__item:nth-child(3) .js-toggle__input').eq(0).prop('checked', true);
 $('.js-like__input').eq(1).prop('checked', true);
-$('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .js-checkbox__input:lt(4)').prop('checked', true);
-$('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .js-checkbox__input').eq(0).prop('checked', false);
+$('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .js-checkbox-list__input:lt(4)').prop('checked', true);
+$('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .js-checkbox-list__input').eq(0).prop('checked', false);
 $('.js-like__input').eq(2).prop('checked', true);
 $(document).ready(() => {
 
