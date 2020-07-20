@@ -177,7 +177,7 @@
     margin-bottom: 21px;
   }
 }
-.room-details__info-wrapper {
+.room-details__info {
   margin-bottom: 20px;
   border-bottom: 1px solid $black-10;
   &:last-child {
@@ -190,7 +190,7 @@
     max-width: 291px;
   }
 }
-.room-details__chart-wrapper {
+.room-details__chart {
   position: relative;
   display: inline-block;
   margin-right: 24px;
@@ -320,7 +320,7 @@
     text-align: left;
   }
 }
-.room-details__review-wrapper {
+.room-details__review {
   margin-bottom: 25px;
 }
 .room-details__content-row:nth-child(3) {
