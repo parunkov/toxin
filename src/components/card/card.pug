@@ -1,6 +1,6 @@
 include ../rate/rate.pug
-mixin card(className, data, text)
-	section(class="card js-card " + className)
+mixin card(data, text)
+	section(class="card js-card")
 		.card__slider
 			.card__slide-wrapper
 				- for (let i = 0; i < 4; i++)
