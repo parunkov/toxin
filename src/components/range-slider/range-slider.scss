@@ -1,19 +1,19 @@
 @import '../../variables.scss';
-.slider {
+.range-slider {
   position: relative;
 }
-#ui-slider-range {
+#ui-range-slider-range {
   position: relative;
   width: 100%;
 }
-.slider__header {
+.range-slider__header {
   display: inline-block;
   float: left;
   width: 50%;
   padding-top: 1px;
   margin-bottom: 7px;
 }
-#slider__amount {
+#range-slider__amount {
   display: inline-block;
   width: 50%;
   margin-bottom: 20px;
@@ -59,13 +59,13 @@
   background-position: 0 0;
   border: 0;
 }
-.slider__text {
+.range-slider__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.6em;
   font-family: Montserrat, Arial, sans-serif;
   color: $black-75;
 }
-#slider__range {
+#range-slider__range {
   clear: both;
 }

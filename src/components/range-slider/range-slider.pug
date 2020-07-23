@@ -1,0 +1,10 @@
+include ../../components/title/title.pug
+
+mixin range-slider(text)
+	.range-slider.js-range-slider
+		h3.range-slider__header
+				+title(text)
+		p.range-slider__text
+			label(for="range-slider__amount")
+		input(type="text" id="range-slider__amount" readonly style="border:0;")
+		#range-slider__range

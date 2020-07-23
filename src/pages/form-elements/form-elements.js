@@ -8,7 +8,7 @@ import '../../components/radio/radio';
 import '../../components/toggle/toggle';
 import '../../components/like/like';
 import '../../components/rate/rate';
-import '../../components/slider/slider';
+import '../../components/range-slider/range-slider';
 import '../../components/btn/btn';
 import '../../components/pagination/pagination';
 import '../../components/dropdown/dropdown';

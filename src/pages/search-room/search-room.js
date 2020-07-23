@@ -19,7 +19,7 @@ import '../../components/page/page';
 import '../../components/header/header';
 import '../../components/input/input';
 import '../../components/dropdown/dropdown';
-import '../../components/slider/slider';
+import '../../components/range-slider/range-slider';
 import '../../components/checkbox-list/checkbox-list';
 import '../../components/card/card';
 import '../../components/footer/footer';

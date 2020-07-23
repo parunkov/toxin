@@ -11,7 +11,7 @@ block main
 	include ../../components/toggle/toggle.pug
 	include ../../components/like/like.pug
 	include ../../components/rate/rate.pug
-	include ../../components/slider/slider.pug
+	include ../../components/range-slider/range-slider.pug
 	include ../../components/dropdown/dropdown.pug
 	include ../../components/info/info.pug
 	include ../../components/review/review.pug
@@ -224,7 +224,7 @@ block main
 					+rate(5, 1)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
-					+slider(sliderTitle)
+					+range-slider(sliderTitle)
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
 						+title(headers[5])
