@@ -130,13 +130,13 @@ class Dropdown {
         }
         if (this.counters[1].value) {
           if (this.counters[0].value) {
-            inputValue = inputValue + ', ';
+            inputValue = `${inputValue}, `;
           }
           inputValue = inputValue + textPart1;
         }
         if (this.counters[2].value) {
           if (this.counters[0].value || this.counters[1].value) {
-            inputValue = inputValue + ', ';
+            inputValue = `${inputValue}, `;
           }
           inputValue = inputValue + textPart2;
         }
