@@ -25,7 +25,7 @@ import '../../components/card/card';
 import '../../components/footer/footer';
 import '../../components/datepicker-block/datepicker-block';
 import '../../components/pagination/pagination';
-import '../../components/dates-filter/dates-filter';
+import '../../components/filter-date-driopdown/filter-date-driopdown';
 import './search-room.scss';
 import $ from 'jquery';
 import Datepicker from '../../components/datepicker-block/datepicker-block';

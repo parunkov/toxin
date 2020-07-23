@@ -15,7 +15,7 @@ import '../../components/dropdown/dropdown';
 import '../../components/info/info';
 import '../../components/review/review';
 import '../../components/dates-selector/dates-selector';
-import '../../components/dates-filter/dates-filter';
+import '../../components/filter-date-driopdown/filter-date-driopdown';
 import './form-elements.scss';
 import $ from 'jquery';
 import Dropdown from '../../components/dropdown/dropdown';
