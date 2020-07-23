@@ -1,6 +1,5 @@
 {
   "markupEng1": {
-    "className": "",
     "menu": [
       {
         "item": "Home",
@@ -44,7 +43,6 @@
     "login": 1
   },
   "markupEng2": {
-    "className": "",
     "menu": [
       {
         "item": "Home",
@@ -87,7 +85,6 @@
     "link2": "/mock-address/change-me"
   },
   "markupRus": {
-    "className": "",
     "menu": [
       {
         "item": "О нас",

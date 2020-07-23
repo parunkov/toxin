@@ -3,8 +3,8 @@ include ../../components/btn/btn.pug
 
 mixin headerMarkup(data)
 	-
-		const {className, menu, btn1, link1, btn2, link2, login} = data;
-	header(class = "header js-header " + className)
+		const {menu, btn1, link1, btn2, link2, login} = data;
+	header(class = "header js-header")
 		nav.header__navigation.js-header__navigation
 			.header__logo
 				+logo
