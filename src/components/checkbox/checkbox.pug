@@ -1,10 +1,10 @@
-mixin checkbox(i, title, t)
+mixin checkbox(index, title, text)
 	label.checkbox__label
-		input(type="checkbox" name="checkbox-"+i class="checkbox__input js-checkbox__input")
+		input(type="checkbox" name=`checkbox-${index}` class="checkbox__input js-checkbox__input")
 		.checkbox__custom
 		if title
 			h4.checkbox__header= title
 		else
-			p.checkbox__text= t
+			p.checkbox__text= text
 	if title
-		p.checkbox__text_small= t
+		p.checkbox__text_small= text
