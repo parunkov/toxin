@@ -1,7 +1,7 @@
-mixin rate(n, active)
+mixin rate(value, active)
 	div(class= "rate js-rate" data-active=active)
 		- for (let i = 0; i <5 ; i++)
-			if i < n
+			if i < value
 				i(class= "rate__star") star
 			else
 				i(class= "rate__star") star_border
