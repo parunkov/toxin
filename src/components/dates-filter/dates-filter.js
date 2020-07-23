@@ -25,7 +25,6 @@ class DatesFilter {
 		];
 		const dateToValue = (date) => (`${(`0${date.getDate()}`).substr(-2)} ${months[date.getMonth()]}`);
 		this.$icon.click(() => {
-			console.log(1);
 			this.$datepickerContainer.toggleClass('js-dates-filter__datepicker-container_visible');
 		});
 		this.datepicker.$setBtn.click((e) => {
@@ -40,7 +39,16 @@ class DatesFilter {
 			}
 		});
 		this.datepicker.$clearBtn.click(() => {
-		this.$input1.attr('value', '');
+		this.$input.attr('value', '');
+		});
+
+		$(document).click((e) => {
+			if ((!this.$datepickerContainer.is(e.target) && this.$datepickerContainer.has(e.target).length === 0)
+				&& (!e.target.className.includes('datepicker')) && (!this.$datesFilter.is(e.target) && this.$datesFilter.has(e.target).length === 0)
+				) {
+					this.$icon.text('expand_more');
+					this.$datepickerContainer.removeClass('js-dates-filter__datepicker-container_visible');
+			}
 		});
 	}
 }
