@@ -12,5 +12,11 @@ $('.js-search-form .btn_theme_arrow').click((e) => {
 	e.preventDefault();
 	window.location.href = 'search-room.html';
 });
+$('.js-search-form').keydown((e) => {
+	if (e.keyCode === 13) {
+		e.preventDefault();
+		return false;
+	}
+});
 
 const dropdown = new Dropdown($('.js-search-form .js-dropdown').eq(2));
