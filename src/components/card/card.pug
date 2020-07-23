@@ -23,6 +23,6 @@ mixin card(data, text)
 				span.card__price-text #{text[1]}
 			.card__rate
 				.card__rate-wrapper
-					+rate('', data.rate)
+					+rate(data.rate)
 				.card__reviews #{data.rev}
 					span.card__reviews-text #{text[2]}

@@ -1,5 +1,5 @@
-mixin rate(className, n, active)
-	div(class= "rate js-rate " + className data-active=active)
+mixin rate(n, active)
+	div(class= "rate js-rate" data-active=active)
 		- for (let i = 0; i <5 ; i++)
 			if i < n
 				i(class= "rate__star") star
