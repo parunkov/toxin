@@ -1,12 +1,12 @@
 mixin review(data)
 	-
-		const {className, img, like, head, days, text} = data
+		const {img, like, head, days, text} = data
 	.review
 		.review__column-left
 			.review__img-wrapper
-				img(src=img class=className + "-img review__img")
+				img(src=img class="review__img")
 			.review__like-wrapper
-				+like(className, like)
+				+like(like)
 		.review__column-right
 			h4.review__header= head
 			p.review__days= days
