@@ -7,8 +7,8 @@ include ../../components/title/title.pug
 
 mixin footerMarkup(data)
 	-
-		const {className, text, menu, title, text2, copyright, ui} = data;
-	footer(class = "footer " + className)
+		const {text, menu, title, text2, copyright, ui} = data;
+	footer(class = "footer")
 		section.footer__navigation-section
 			.footer__container
 				.footer__text-column
