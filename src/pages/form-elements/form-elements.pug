@@ -15,7 +15,7 @@ block main
 	include ../../components/dropdown/dropdown.pug
 	include ../../components/info/info.pug
 	include ../../components/review/review.pug
-	include ../../components/btn/btn.pug
+	include ../../components/button/button.pug
 	include ../../components/pagination/pagination.pug
 	include ../../components/dates-selector/dates-selector.pug
 	include ../../components/filter-date-driopdown/filter-date-driopdown.pug
@@ -229,19 +229,19 @@ block main
 					h3.form-elements__item-title.js-form-elements__item-title
 						+title(headers[5])
 					.form-elements__btn
-						+btn(btnText, 'div')
+						+button({text: btnText, tag: 'div'})
 					.form-elements__btn
-						+btn(btnText, 'div', 'transparent')
+						+button({text: btnText, tag: 'div', modifiers: ['transparent']})
 					.form-elements__btn
-						+btn(btnText, 'div-light')
+						+button({text: btnText, tag: 'div', modifiers: ['themeLight']})
 					.form-elements__btn
-						+btn(btnText, 'div-light', 'transparent')
+						+button({text: btnText, tag: 'div', modifiers: ['themeLight', 'transparent']})
 					.form-elements__btn
-						+btn(btnText, 'div-text')
+						+button({text: btnText, tag: 'div', modifiers: ['text']})
 					.form-elements__btn
-						+btn(btnText, 'div-text', 'color_gray')
+						+button({text: btnText, tag: 'div', modifiers: ['text', 'colorGray']})
 					.form-elements__btn
-						+btn(btnText2, 'button', 'theme_arrow')
+					+button({text: btnText2, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
 						+title(headers[6])

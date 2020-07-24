@@ -1,7 +1,7 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../input/input';
-import '../btn/btn';
+import '../button/button';
 import '../radio/radio';
 import '../toggle/toggle';
 import './registration-form.scss';

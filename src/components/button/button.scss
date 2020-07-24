@@ -1,5 +1,6 @@
 @import '../../variables.scss';
-.btn {
+
+.button {
   position: relative;
   min-height: 44px;
   padding-top: 16px;
@@ -20,18 +21,13 @@
   &_theme_light {
     display: block;
     position: relative;
-    padding: 2px;
-    color: $purple;
-  }
-  &__text {
-    text-decoration: none;
-    display: block;
-    background: $white;
+     padding-top: 14px;
     padding-bottom: 14px;
-    background-clip: padding-box;
-    min-height: 40px;
-    padding-top: 14px;
-    border-radius: 20px;
+    color: $purple;
+    border: solid 2px transparent;
+    background-image: $gradient-white, $gradient-purple;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
   }
   &_theme_text {
     min-height: 15px;
@@ -70,8 +66,9 @@
     font-family: 'Material Icons';
     color: $white;
     text-transform: none;
+    word-break: normal;
   }
-  &__size_small {
+  &_size_small {
     display: block;
     width: 100%;
     min-height: 34px;
@@ -80,29 +77,16 @@
     padding-right: 20px;
     padding-left: 19px;
   }
+  &_size_big {
+    word-break: break-all;
+  }
 }
-.btn_theme_light.btn__size_small {
+.button_theme_light.button_size_small {
   display: block;
   width: 100%;
   min-height: 34px;
-  padding-top: 2px;
-  padding-right: 2px;
-  padding-left: 2px;
-  padding-bottom: 2px;
-  .btn__text {
-    text-decoration: none;
-    padding-top: 9px;
-    padding-left: 17px;
-    padding-right: 18px;
-    padding-bottom: 9px;
-    min-height: 30px;
-  }
-}
-.btn_theme_light.btn__size_big {
-  .btn__text {
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    word-break: break-all;
-  }
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 17px;
+  padding-right: 18px;
 }

@@ -9,7 +9,7 @@ import '../../components/toggle/toggle';
 import '../../components/like/like';
 import '../../components/rate/rate';
 import '../../components/range-slider/range-slider';
-import '../../components/btn/btn';
+import '../../components/button/button';
 import '../../components/pagination/pagination';
 import '../../components/dropdown/dropdown';
 import '../../components/info/info';

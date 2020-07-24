@@ -9,23 +9,20 @@
   line-height: 1.25em;
   font-family: 'Open Sans', Arial, sans-serif;
   color: $black;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   @media (max-width: 350px) {
     word-break: break-all;
   }
 }
-.login-form__input-wrapper:nth-child(1) {
+.login-form__input:nth-child(1) {
   margin-bottom: 10px;
 }
-.login-form__input-wrapper:nth-child(2) {
+.login-form__input:nth-child(2) {
   margin-bottom: 20px;
 }
 .login-form__btn {
   margin-bottom: 30px;
   word-break: break-all;
-  .btn_theme_arrow::after {
-    word-break: normal;
-  }
 }
 .login-form__footer {
   display: flex;

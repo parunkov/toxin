@@ -43,8 +43,8 @@ mixin footerMarkup(data)
 						a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social-link footer__social-link_theme_facebook") Facebook
 					li.footer__social-item
 						a(href="/mock-address/change-me" target="_blank" rel="noopener noreferrer" class="footer__social-link footer__social-link_theme_instagram") Instagram
-mixin footer(isEng)
-	if isEng
+mixin footer(isEnglish)
+	if isEnglish
 		+footerMarkup(footerData.markupFooterEng)
 	else
 		+footerMarkup(footerData.markupFooterRus)

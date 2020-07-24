@@ -10,7 +10,7 @@
   font-family: 'Open Sans', Arial, sans-serif;
   color: $black;
 }
-.registration-form__title-wrapper {
+.registration-form__title {
   margin-bottom: 20px;
   @media (max-width: 350px) {
     .registration-form__title {
@@ -18,37 +18,34 @@
     }
   }
 }
-.registration-form__input-wrapper:nth-child(1) {
+.registration-form__input:nth-child(1) {
   margin-bottom: 10px;
 }
-.registration-form__input-wrapper:nth-child(2) {
+.registration-form__input:nth-child(2) {
   margin-bottom: 10px;
 }
-.registration-form__radio-wrapper {
-  margin-bottom: 19px;
+.registration-form__radio {
+  margin-bottom: 17px;
 }
-.registration-form__input-wrapper:nth-child(4) {
+.registration-form__input:nth-child(4) {
   margin-bottom: 17px;
   // .input__field {
   //   text-transform: uppercase;
   //   letter-spacing: -0.4px;
   // }
 }
-.registration-form__input-wrapper:nth-child(5) {
+.registration-form__input:nth-child(5) {
   margin-bottom: 10px;
 }
-.registration-form__input-wrapper:nth-child(6) {
+.registration-form__input:nth-child(6) {
   margin-bottom: 10px;
 }
-.registration-form__toggle-wrapper {
-  margin-bottom: 24px;
+.registration-form__toggle {
+  margin-bottom: 21px;
 }
 .registration-form__btn {
   margin-bottom: 30px;
   word-break: break-all;
-  .btn_theme_arrow::after {
-    word-break: normal;
-  }
 }
 .registration-form__footer {
   display: flex;

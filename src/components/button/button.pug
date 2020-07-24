@@ -1,0 +1,15 @@
+mixin button({text, tag, modifiers, type, link})
+	-
+		let className = 'button';
+		if (modifiers) {
+			for (let i = 0; i < modifiers.length; i += 1) {
+				className = modifiers[i] === 'themeLight' ? className + ' button_theme_light' : className;
+				className = modifiers[i] === 'transparent' ? className + ' button_transparent' : className;
+				className = modifiers[i] === 'text' ? className + ' button_theme_text' : className;
+				className = modifiers[i] === 'colorGray' ? className + ' button_color_gray' : className;
+				className = modifiers[i] === 'themeArrow' ? className + ' button_theme_arrow' : className;
+				className = modifiers[i] === 'sizeBig' ? className + ' button_size_big' : className;
+				className = modifiers[i] === 'sizeSmall' ? className + ' button_size_small' : className;
+			}
+		}
+	#{tag}(class=className type=type href=link) #{text}
