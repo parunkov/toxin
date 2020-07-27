@@ -22,7 +22,80 @@
     padding-right: 0;
   }
 
-  .js-header__navigation-item {
+}
+
+.headers-footers__header .js-header__navigation-item_with-submenu .js-header__navigation-item {
+  margin-right: 0;
+
+  @media (max-width:$mobile-menu-breakpoint) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:nth-child(1) {
+    margin-right: 0;
+
+    @media (max-width:$mobile-menu-breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-right: 0;
+
+    @media (max-width:$mobile-menu-breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &:nth-child(3) {
+    margin-right: 0;
+
+    @media (max-width:$mobile-menu-breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &:nth-child(4) {
+    margin-right: 0;
+
+    @media (max-width:$mobile-menu-breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    @media (max-width:$mobile-menu-breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.headers-footers__header .js-header__navigation-item {
+  margin-right: 26px;
+
+  @media (max-width: $mobile-menu-breakpoint) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  &:nth-child(1) {
+    margin-right: 26px;
+
+    @media (max-width: $mobile-menu-breakpoint) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+  &:nth-child(2) {
     margin-right: 26px;
 
     @media (max-width: $mobile-menu-breakpoint) {
@@ -30,131 +103,37 @@
       margin-left: 0;
     }
 
-    &:nth-child(1) {
-      margin-right: 26px;
-
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-
-    &:nth-child(2) {
-      margin-right: 26px;
-
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-
-      .js-header__navigation-item .header__link {
-        min-width: 65px;
-      }
-    }
-
-    &:nth-child(3) {
-      margin-right: 36px;
-
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-
-    &:nth-child(4) {
-      margin-right: 26px;
-
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
-    }
-
-    &:last-child {
-      margin-right: 29px;
-
-      @media (max-width: $mobile-menu-breakpoint) {
-        margin-right: 0;
-        margin-left: 0;
-      }
+    .js-header__navigation-item .header__link {
+      min-width: 65px;
     }
   }
 
-  .js-header__navigation-item_with-submenu .js-header__navigation-item {
-    margin-right: 0;
+  &:nth-child(3) {
+    margin-right: 36px;
 
-    @media (max-width:$mobile-menu-breakpoint) {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    &:nth-child(1) {
+    @media (max-width: $mobile-menu-breakpoint) {
       margin-right: 0;
-
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-
-    &:nth-child(2) {
-      margin-right: 0;
-
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-
-    &:nth-child(3) {
-      margin-right: 0;
-
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-
-    &:nth-child(4) {
-      margin-right: 0;
-
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-
-    &:last-child {
-      margin-right: 0;
-
-      @media (max-width:$mobile-menu-breakpoint) {
-        margin-left: auto;
-        margin-right: auto;
-      }
+      margin-left: 0;
     }
   }
-  // // .js-header__user-block {
-  // //   margin-bottom: 0;
-  // //   flex: 0 0 200px;
-  // //   @media (max-width: $mobile-menu-breakpoint) {
-  // //     flex: none;
-  // //   }
-  // // }
-  // .header__btn-content {
-  //   @media (max-width: 950px) {
-  //     width: none;
-  //     margin-right: 0;
-  //   }
-  //   @media (max-width: $mobile-menu-breakpoint) {
-  //     width: 100%;
-  //     margin: 0 auto;
-  //   }
-  // }
-  // .header__btn .btn {
-  //   @media (max-width: $mobile-menu-breakpoint) {
-  //     min-width: 105px;
-  //   }
-  // }
+
+  &:nth-child(4) {
+    margin-right: 26px;
+
+    @media (max-width: $mobile-menu-breakpoint) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+  &:last-child {
+    margin-right: 29px;
+
+    @media (max-width: $mobile-menu-breakpoint) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
 }
 
 .headers-footers__footer {
