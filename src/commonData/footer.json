@@ -112,22 +112,22 @@
     "header": "",
     "type": "email",
     "name": "email",
-    "className": " input__field_with-arrow",
     "value": "",
     "placeholder": "Email",
     "text": "",
     "icon": "arrow_forward",
-    "color": "purple"
+    "color": "purple",
+    "modifiers": ["withArrow"]
   },
   "inputEng": {
     "header": "",
     "type": "email",
     "name": "email",
-    "className": " input__field_with-arrow",
     "value": "",
     "placeholder": "Your email address",
     "text": "",
     "icon": "arrow_forward",
-    "color": "purple"
+    "color": "purple",
+    "modifiers": ["withArrow"]
   }
 }
