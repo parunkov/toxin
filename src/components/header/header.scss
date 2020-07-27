@@ -246,107 +246,6 @@
     }
   }
 
-  &_with-submenu {
-    position: relative;
-    margin-right: 33px;
-
-    @media (max-width: $mobile-menu-breakpoint) {
-      margin-right: 0;
-      margin-top: 0;
-      margin-left: 10px;
-    }
-
-    .header__navigation-item {
-      display: block;
-      margin-right: 0;
-      padding-left: 10px;
-      padding-right: 10px;
-      text-align: left;
-
-      @media (max-width: $mobile-menu-breakpoint) {
-        position: static;
-        text-align: center;
-        background: $black-10;
-        display: flex;
-        flex: 1 1 auto;      
-        padding-top: 5px;
-        padding-bottom: 5px;
-        margin-bottom: 2px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-right: 0;
-
-        @media (max-width:$mobile-menu-breakpoint) {
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        &:nth-child(1) {
-          margin-right: 0;
-
-          @media (max-width:$mobile-menu-breakpoint) {
-            margin-left: auto;
-            margin-right: auto;
-          }
-        }
-
-        &:nth-child(2) {
-          margin-right: 0;
-
-          @media (max-width:$mobile-menu-breakpoint) {
-            margin-left: auto;
-            margin-right: auto;
-          }
-        }
-
-        &:nth-child(3) {
-          margin-right: 0;
-
-          @media (max-width:$mobile-menu-breakpoint) {
-            margin-left: auto;
-            margin-right: auto;
-          }
-        }
-
-        &:nth-child(4) {
-          margin-right: 0;
-
-          @media (max-width:$mobile-menu-breakpoint) {
-            margin-left: auto;
-            margin-right: auto;
-          }
-        }
-
-        &:last-child {
-          margin-right: 0;
-
-          @media (max-width:$mobile-menu-breakpoint) {
-            margin-left: auto;
-            margin-right: auto;
-          }
-        }
-      }
-
-      &:hover {
-        @media (max-width: $mobile-menu-breakpoint) {
-
-          .header__link {
-            color: $black-text;
-          }
-        }
-      }
-
-      .header__link {
-        display: block;
-        min-width: 110px;
-
-        @media (max-width: $mobile-menu-breakpoint) {
-          display: inline;
-        }
-      }
-    }
-  }
-
   &_active {
     cursor: default;
 
@@ -359,6 +258,112 @@
   .header__link {
     text-decoration: none;
     cursor: pointer;
+  }
+}
+
+.header__navigation-item_with-submenu {
+  position: relative;
+  margin-right: 33px;
+
+  @media (max-width: $mobile-menu-breakpoint) {
+    margin-right: 0;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+}
+
+.header__navigation-item_with-submenu .header__navigation-item {
+  display: block;
+  margin-right: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+
+  @media (max-width: $mobile-menu-breakpoint) {
+    position: static;
+    text-align: center;
+    background: $black-10;
+    display: flex;
+    flex: 1 1 auto;      
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 0;
+  }
+
+  @media (max-width:$mobile-menu-breakpoint) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &:nth-child(1) {
+    margin-right: 0;
+
+    @media (max-width:$mobile-menu-breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-right: 0;
+
+    @media (max-width:$mobile-menu-breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &:nth-child(3) {
+    margin-right: 0;
+
+    @media (max-width:$mobile-menu-breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &:nth-child(4) {
+    margin-right: 0;
+
+    @media (max-width:$mobile-menu-breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    @media (max-width:$mobile-menu-breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+  
+
+
+  .header__link {
+    display: block;
+    min-width: 110px;
+
+    @media (max-width: $mobile-menu-breakpoint) {
+      display: inline;
+    }
+  }
+}
+
+.header__navigation-item_with-submenu .header__navigation-item:hover {
+  @media (max-width: $mobile-menu-breakpoint) {
+
+    .header__link {
+      color: $black-text;
+    }
   }
 }
 
@@ -458,7 +463,7 @@
   @media (max-width: $mobile-menu-breakpoint) {
     display: none;
     text-align: center;
-    border-left: none;
+    border-left: 0;
     border-top: 1px solid $black-10;
     margin-bottom: 10px;
   }
