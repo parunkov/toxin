@@ -1,16 +1,19 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
+
 .card {
   height: 257.5px;
   max-width: 270px;
   display: inline-block;
   border-radius: 4px;
 }
+
 .card__slider {
   height: 152px;
   margin-bottom: 21px;
   overflow: hidden;
   border-radius: 4px 4px 0 0;
 }
+
 .card__slide-wrapper {
   position: relative;
   width: 270px;
@@ -20,39 +23,46 @@
 .card__slide {
   display: none;
 }
+
 .js-card__slide-active {
   position: absolute;
   top: 0;
   left: 0;
   display: block;
 }
+
 .card__slide-left {
   position: absolute;
   top: 0;
   left: -270px;
   display: block;
-  opacity: 0.4;
+  opacity: .4;
 }
+
 .card__slide-right {
   position: absolute;
   top: 0;
   left: 270px;
   display: block;
-  opacity: 0.4;
+  opacity: .4;
 }
+
 .card__shadow {
   position: absolute;
   width: 40px;
   height: 152px;
 }
+
 .card__shadow_left {
   top: 0;
   left: 0;
 }
+
 .card__shadow_right {
   top: 0;
   right: 0;
 }
+
 .card__arrow {
   position: absolute;
   width: 45px;
@@ -61,39 +71,48 @@
   padding-right: 9.5px;
   font-weight: 400;
   font-size: 24px;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   cursor: pointer;
   color: transparent;
 }
+
 .card__slider:hover {
+
   .card__arrow {
     color: $white;
   }
+
   .card__shadow_left {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
   }
+
   .card__shadow_right {
-    background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(-90deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
   }
 }
+
 .card__arrow_left {
   top: 52.5px;
   left: 0;
   padding-top: 12px;
   transform: rotate(90deg);
 }
+
 .card__arrow_right {
   top: 52.5px;
   right: 0;
   padding-top: 10px;
   transform: rotate(-90deg);
 }
+
 .card__controls {
   position: absolute;
   top: 121px;
   right: 16px;
 }
-.card__control, .js-card__control {
+
+.card__control,
+.js-card__control {
   display: inline-block;
   width: 7.5px;
   height: 7.5px;
@@ -101,27 +120,33 @@
   border: 1px solid $white;
   border-radius: 3.75px;
   cursor: pointer;
+
   &_active {
     background: $white;
   }
 }
+
 .card__text {
   padding-right: 6.3%;
   padding-left: 20%*100/270;
 }
+
 .card__a {
   color: $black-text;
 }
+
 .card__num-wrapper {
   float: left;
   vertical-align: top;
 }
+
 .card__num {
   display: inline;
   font-weight: 700;
   font-size: 14px;
   font-family: Montserrat, Arial, sans-serif;
 }
+
 .card__header {
   font-weight: 700;
   font-size: 19px;
@@ -131,6 +156,7 @@
   display: inline;
   margin-right: 5px;
 }
+
 .card__lux {
   display: inline;
   font-weight: 700;
@@ -139,6 +165,7 @@
   color: $purple;
   text-transform: uppercase;
 }
+
 .card__price {
   display: block;
   padding-top: 3px;
@@ -151,22 +178,27 @@
   color: $black-50;
   border-bottom: 1px solid $black-10;
 }
+
 .card__price-text {
   margin-left: 5px;
   font-weight: 400;
   font-size: 12px;
 }
+
 .card__rate {
   clear: both;
   padding-top: 10px;
+
   &::after {
-    content: '';
+    content: "";
     clear: both;
   }
 }
+
 .card__rate-wrapper {
   float: left;
 }
+
 .card__reviews {
   display: block;
   padding-top: 3px;
@@ -177,6 +209,7 @@
   text-align: right;
   color: $black-50;
 }
+
 .card__reviews-text {
   margin-left: 5px;
   font-weight: 400;

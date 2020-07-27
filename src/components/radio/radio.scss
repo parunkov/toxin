@@ -1,15 +1,19 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
+
 .radio__input {
   display: none;
 }
+
 .radio__label {
   position: relative;
   display: inline-block;
   padding-left: 29px;
+
   &_cursor_pointer {
     cursor: pointer;
   }
 }
+
 .radio__custom {
   position: absolute;
   cursor: pointer;
@@ -21,6 +25,7 @@
   border: 1px solid $black-25;
   border-radius: 10px;
 }
+
 .radio__input:checked + .radio__custom {
   cursor: default;
   top: 1px;
@@ -31,6 +36,7 @@
   border: 3px solid $white;
   box-shadow: 0 0 0 1px $purple;
 }
+
 .radio__text {
   font-weight: 400;
   font-size: 14px;
@@ -40,6 +46,7 @@
   margin-right: 17px;
   color: $black-50;
 }
+
 .radio__input:checked ~ .radio__text {
   cursor: default;
   color: $black-75;

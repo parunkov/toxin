@@ -1,12 +1,15 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
+
 .checkbox__input {
   display: none;
 }
+
 .checkbox {
   display: block;
   position: relative;
   vertical-align: top;
 }
+
 .checkbox__custom {
   position: absolute;
   cursor: pointer;
@@ -18,10 +21,12 @@
   border: 1px solid $black-25;
   border-radius: 4px;
 }
+
 .js-checkbox__input:checked + .checkbox__custom {
-  background: url('images/check.svg') center center no-repeat;
+  background: url("images/check.svg") center center no-repeat;
   border: 1px solid $purple;
 }
+
 .checkbox__text {
   display: inline-block;
   cursor: pointer;
@@ -29,6 +34,7 @@
   padding-left: 29px;
   line-height: 1.4em;
   color: $black-50;
+
   &_small {
     margin-bottom: 12px;
     padding-left: 29px;
@@ -40,6 +46,7 @@
     text-transform: none;
   }
 }
+
 .checkbox__header {
   font-weight: 700;
   font-size: 14px;

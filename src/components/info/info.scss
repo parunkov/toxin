@@ -1,7 +1,9 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
+
 .info {
   padding-bottom: 20px;
 }
+
 .info__img {
   display: inline-block;
   float: left;
@@ -11,13 +13,15 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 47.81px;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   color: $purple;
 }
+
 .info__text-wrapper {
   display: inline-block;
   padding-top: 3px;
 }
+
 .info__header {
   font-weight: 700;
   font-size: 14px;
@@ -27,6 +31,7 @@
   text-transform: none;
   margin-bottom: 5px;
 }
+
 .info__text {
   font-weight: 400;
   font-size: 14px;

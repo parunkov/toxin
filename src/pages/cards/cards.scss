@@ -1,33 +1,42 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
+
 .cards {
   background: $grey;
 }
+
 .cards__container {
   width: 1200%*100/1440;
   margin: 0 auto;
   padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
+
   @media (max-width: 1440px) {
     width: $page-container;
   }
+
   @media (max-width: $page-container) {
     width: 100%;
   }
 }
+
 .cards__column {
   flex: 0 0 420%*100/1200;
-  &_right {
-    flex: 0 0 360%*100/1200;
-  }
+
   @media (max-width: $page-container) {
     flex: 1 0 320px;
   }
+
   @media (max-width: 420px) {
     display: block;
     width: 100%;
   }
+
+  &_right {
+    flex: 0 0 360%*100/1200;
+  }
 }
+
 .cards__card-wrapper {
   width: 380%*100/420;
   max-width: 380px;
@@ -37,6 +46,15 @@
   background-color: $white;
   border-radius: 4px;
   box-shadow: 0 0 25px $shadow;
+
+  @media (max-width: $page-container) {
+    min-width: 310px;
+  }
+
+  @media (max-width: 380px) {
+    overflow-x: hidden;
+  }
+
   &_search {
     margin-bottom: 40px;
     padding-left: 0;
@@ -44,65 +62,80 @@
     background: transparent;
     box-shadow: none;
   }
+
   &_registration {
     margin-bottom: 140px;
+
     @media (max-width: $page-container) {
       margin-bottom: 40px;
     }
   }
+
   &_reservation {
     margin-bottom: 39px;
   }
-  &_login, &_datepicker {
+
+  &_login,
+  &_datepicker {
     margin-bottom: 39px;
   }
+
   &_datepicker {
     max-width: 360px;
     // padding-left: 1.25%;
     // padding-right: 1.25%; 
     padding: 0; 
+
     @media (min-width: 1445px) {
       margin-left: 20px;
       margin-right: auto;
     } 
+
     @media (max-width: 959px) {
       max-width: 400px;
     }
+
     .datepicker-block {
       border-color: transparent;
     }
+
     .datepicker--cell-day {
       height: 40px;
+
       @media (max-width: 959px) {
         height: 50px;
       }
+
       @media (max-width: 420px) {
         height: 45px;
       }
+
       @media (max-width: 385px) {
         height: 40px;
       }
+
       @media (max-width: 360px) {
         height: 38px;
       }      
     }
-    .datepicker--cell-day.-current-, .datepicker--cell-day.-range-from-, .datepicker--cell-day.-range-to-, .datepicker--cell-day.-range-from-.-selected-, .datepicker--cell-day.-range-to-.-selected-  {
+
+    .datepicker--cell-day.-current-,
+    .datepicker--cell-day.-range-from-,
+    .datepicker--cell-day.-range-to-,
+    .datepicker--cell-day.-range-from-.-selected-,
+    .datepicker--cell-day.-range-to-.-selected- {
       border-radius: 50%;    
     }  
   }
+
   &_card {
     margin-bottom: 40px;
     background: transparent;
     box-shadow: none;
-    padding-left: 0.7%;
+    padding-left: .7%;
     padding-right: 14.6%;
   }
-  @media (max-width: $page-container) {
-    min-width: 310px;
-  }
-  @media (max-width: 380px) {
-    overflow-x: hidden;
-  }
+
   .card {
     background: $white;
     box-shadow: 0 0 25px $shadow;

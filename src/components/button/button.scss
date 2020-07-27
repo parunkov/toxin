@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .button {
   position: relative;
@@ -15,13 +15,16 @@
   text-transform: uppercase;
   background: $gradient-purple;
   border-radius: 22px;
-  &:hover, &_transparent {
-    opacity: 0.5;
+
+  &:hover,
+  &_transparent {
+    opacity: .5;
   }
+
   &_theme_light {
     display: block;
     position: relative;
-     padding-top: 14px;
+    padding-top: 14px;
     padding-bottom: 14px;
     color: $purple;
     border: solid 2px transparent;
@@ -29,6 +32,7 @@
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
+
   &_theme_text {
     min-height: 15px;
     padding: 0;
@@ -36,15 +40,18 @@
     background: $white;
     border: none;
     outline: none;
+
     &:hover {
       color: $black-50;
       opacity: 1;
     }
   }
+
   &_color_gray {
     color: $black-50;
     opacity: 1;
   }
+
   &_theme_arrow {
     display: block;
     padding-right: 40px;
@@ -54,8 +61,9 @@
     padding-bottom: 0;
     border: none;
   }
+
   &_theme_arrow::after {
-    content: ' arrow_forward';
+    content: " arrow_forward";
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
@@ -63,11 +71,12 @@
     display: inline;
     font-weight: 400;
     font-size: 24px;
-    font-family: 'Material Icons';
+    font-family: "Material Icons";
     color: $white;
     text-transform: none;
     word-break: normal;
   }
+
   &_size_small {
     display: block;
     width: 100%;
@@ -77,10 +86,12 @@
     padding-right: 20px;
     padding-left: 19px;
   }
+
   &_size_big {
     word-break: break-all;
   }
 }
+
 .button_theme_light.button_size_small {
   display: block;
   width: 100%;

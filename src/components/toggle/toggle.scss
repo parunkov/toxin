@@ -1,10 +1,13 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
+
 .toggle__input {
   display: none;
 }
+
 .toggle__label {
   position: relative;
 }
+
 .toggle__custom {
   position: absolute;
   top: 0;
@@ -15,6 +18,7 @@
   border: 1px solid $black-25;
   border-radius: 10px;
 }
+
 .toggle__custom-inner {
   position: absolute;
   top: 3px;
@@ -24,13 +28,16 @@
   background-color: $black-25;
   border-radius: 6px;
 }
+
 .js-toggle__input:checked + .toggle__custom {
   border: 1px solid $purple;
 }
+
 .js-toggle__input:checked + .toggle__custom .toggle__custom-inner {
   left: 22px;
   background: $gradient-purple;
 }
+
 .toggle__text {
   font-weight: 400;
   font-size: 14px;

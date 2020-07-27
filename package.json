@@ -12,7 +12,11 @@
     "jquery-ui": "^1.12.1",
     "jquery.maskedinput": "^1.4.1",
     "paginationjs": "^2.1.5",
-    "reset-css": "^5.0.1"
+    "reset-css": "^5.0.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.3",

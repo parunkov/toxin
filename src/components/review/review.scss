@@ -1,23 +1,27 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .review {
   display: flex;
   flex-wrap: nowrap;
 }
+
 .review__column-left {
   flex: 0 0 48px;
 }
+
 .review__column-right {
   flex: auto;
   padding-top: 3px;
   padding-left: 10px;
 }
+
 .review__img {
   float: left;
   width: 44px;
   height: 44px;
   border-radius: 22px;
 }
+
 .review__img-wrapper {
   width: 48px;
   height: 48px;
@@ -26,9 +30,11 @@
   border-radius: 24px;
   box-shadow: 0 10px 20px $black-10;
 }
+
 .review__like-wrapper {
   padding-left: 3px;
 }
+
 .review__header {
   font-weight: 700;
   font-size: 14px;
@@ -38,9 +44,11 @@
   text-transform: none;
   margin-bottom: 5px;
 }
+
 .review__days {
   margin-bottom: 16px;
 }
+
 .review__text {
   line-height: 24px;
 }

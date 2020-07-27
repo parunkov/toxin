@@ -1,32 +1,41 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
+
 .registration-form {
   padding-top: 40px;
   padding-bottom: 30px;
 }
+
 .registration-form__title {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25em;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   color: $black;
 }
+
 .registration-form__title {
   margin-bottom: 20px;
+
   @media (max-width: 350px) {
+
     .registration-form__title {
       word-break: break-all;
     }
   }
 }
+
 .registration-form__input:nth-child(1) {
   margin-bottom: 10px;
 }
+
 .registration-form__input:nth-child(2) {
   margin-bottom: 10px;
 }
+
 .registration-form__radio {
   margin-bottom: 17px;
 }
+
 .registration-form__input:nth-child(4) {
   margin-bottom: 17px;
   // .input__field {
@@ -34,33 +43,42 @@
   //   letter-spacing: -0.4px;
   // }
 }
+
 .registration-form__input:nth-child(5) {
   margin-bottom: 10px;
 }
+
 .registration-form__input:nth-child(6) {
   margin-bottom: 10px;
 }
+
 .registration-form__toggle {
   margin-bottom: 21px;
 }
+
 .registration-form__btn {
   margin-bottom: 30px;
   word-break: break-all;
 }
+
 .registration-form__footer {
   display: flex;
   flex-wrap: nowrap;
 }
+
 .registration-form__footer-left {
   flex: auto;
   padding-top: 14px;
 }
+
 .registration-form__footer-text {
   color: $black-text;
 }
+
 .registration-form__footer-right {
   flex: 0 0 99%*100/320;
 }
+
 .registration-form__button {
   display: block;
 }

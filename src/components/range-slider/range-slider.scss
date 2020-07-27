@@ -1,11 +1,14 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
+
 .range-slider {
   position: relative;
 }
+
 #ui-range-slider-range {
   position: relative;
   width: 100%;
 }
+
 .range-slider__header {
   display: inline-block;
   float: left;
@@ -13,6 +16,7 @@
   padding-top: 1px;
   margin-bottom: 7px;
 }
+
 #range-slider__amount {
   display: inline-block;
   width: 50%;
@@ -26,6 +30,7 @@
   text-transform: uppercase;
   outline: none;
 }
+
 .ui-slider-horizontal {
   position: relative;
   height: 6px;
@@ -33,6 +38,7 @@
   border: 1px solid $black-25;
   border-radius: 3px;
 }
+
 .ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
@@ -46,19 +52,21 @@
   cursor: pointer;
 
   -ms-touch-action: none;
-      touch-action: none;
+  touch-action: none;
 }
+
 .ui-slider .ui-slider-range {
   position: absolute;
   z-index: 1;
   display: block;
   height: 6px;
-  font-size: 0.7em;
+  font-size: .7em;
   background: red;
   background: $gradient-green;
   background-position: 0 0;
   border: 0;
 }
+
 .range-slider__text {
   font-weight: 400;
   font-size: 14px;
@@ -66,6 +74,7 @@
   font-family: Montserrat, Arial, sans-serif;
   color: $black-75;
 }
+
 #range-slider__range {
   clear: both;
 }

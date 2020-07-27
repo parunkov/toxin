@@ -1,12 +1,15 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .filter-date-driopdown {
 
 }
+
 .filter-date-driopdown__datepicker-wrapper {
   position: relative;
 }
-.filter-date-driopdown__datepicker-container, .js-filter-date-driopdown__datepicker-container {
+
+.filter-date-driopdown__datepicker-container,
+.js-filter-date-driopdown__datepicker-container {
   position: absolute;
   top: 10px;
   left: 0;
@@ -15,9 +18,11 @@
   width: 320px;
   border-radius: 4px;
   background: $white;
+
   @media (max-width: 905px) {
     width: 100%;
   }
+
   &_visible {
     display: block;
   }

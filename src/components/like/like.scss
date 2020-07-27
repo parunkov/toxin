@@ -1,13 +1,16 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
+
 .like {
   position: relative;
   display: inline-block;
   min-width: 40px;
   margin-right: 6px;
 }
+
 .like__input {
   display: none;
 }
+
 .like__custom {
   min-width: 40px;
   height: 20px;
@@ -16,22 +19,25 @@
   cursor: pointer;
   background: $black-25;
 }
+
 .like__inner {
   display: block;
   background: $white;
   border-radius: 9px;
 }
+
 .like__custom::after {
-  content: 'favorite_border';
+  content: "favorite_border";
   position: absolute;
   top: 5px;
   left: 5px;
   font-weight: 400;
   font-size: 10px;
   line-height: 9.96px;
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   color: $black-25;
 }
+
 .like__text {
   font-size: 14px;
   line-height: 1.6em;
@@ -44,13 +50,16 @@
   font-family: Montserrat, Arial, sans-serif;
   color: $black-25;
 }
+
 .like__input:checked + .like__custom {
   background: $gradient-purple;
 }
+
 .like__input:checked + .like__custom::after {
-  content: 'favorite';
+  content: "favorite";
   color: $purple;
 }
+
 .like__input:checked + .like__custom .like__text {
   color: $purple;
 }
