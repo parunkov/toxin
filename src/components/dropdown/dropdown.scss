@@ -23,7 +23,7 @@
     text-transform: uppercase;
     letter-spacing: -.1px;
     cursor: default;
-    border: none;
+    border: 0;
     outline: none;
 
     @media (max-width: 400px) {
@@ -32,7 +32,7 @@
 
     &:hover {
       border: 1px solid $black-25;
-      border: none;
+      border: 0;
       outline: none;
     }
   }
@@ -106,7 +106,7 @@
   display: block;
   width: 86%;
   padding-left: 15px;
-  border: none;
+  border: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -133,7 +133,7 @@
   background: $white;
   border-radius: 4px;
   cursor: pointer;
-  border: none;
+  border: 0;
   outline: none;
 }
 
@@ -258,7 +258,7 @@
   font-family: Montserrat, Arial, sans-serif;
   text-transform: uppercase;
   cursor: pointer;
-  border: none;
+  border: 0;
   outline: none;
   background: transparent;
 
