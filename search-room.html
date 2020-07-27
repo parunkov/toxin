@@ -16,7 +16,7 @@
     <meta name="theme-color" content="#ffffff">
   <link href="./css/search-room.css" rel="stylesheet"></head>
   <body>
-            <header class="header js-header ">
+            <header class="header js-header">
               <nav class="header__navigation js-header__navigation">
                 <div class="header__logo"><a class="logo" href="index.html"><img class="logo__image" src="img/logo.svg" width="100%" alt="Отель Toxin"></a>
                 </div>
@@ -43,9 +43,11 @@
                   </li>
                 </ul>
                 <div class="header__user-block js-header__user-block">
-                  <div class="header__btn"><a class="btn btn_theme_light btn__size_small" href="sign-in.html"> <span class="btn__text"> войти</span></a>
+                  <div class="header__btn">
+                        <a class="button button_theme_light button_size_small" type="submit" href="sign-in.html">войти</a>
                   </div>
-                  <div class="header__btn"><a class="btn btn__size_small" href="registration.html">зарегистрироваться</a>
+                  <div class="header__btn">
+                        <a class="button button_size_small" type="submit" href="registration.html">зарегистрироваться</a>
                   </div>
                 </div>
               </nav>
@@ -59,21 +61,21 @@
         <aside class="search-room__form js-search-room__form">
           <form class="search-room__form-content js-search-room__form-content">
             <div class="search-room__input js-search-room__input">
-                    <div class="dates-filter js-dates-filter">
+                    <div class="filter-date-driopdown js-filter-date-driopdown">
                             <div class="input js-input"><span class="input__name"><span class="title">даты пребывания в отеле</span></span>
                               <input class="input__field input__field_theme_without-hover-effect" type="text" name="search-room__input-1" value="19 авг - 23 авг" placeholder="Введите даты">
                               <button class="input__button js-input__button" type="button">expand_more</button>
                             </div>
-                      <div class="dates-filter__datepicker-wrapper">
-                        <div class="dates-filter__datepicker-container js-dates-filter__datepicker-container">
+                      <div class="filter-date-driopdown__datepicker-wrapper">
+                        <div class="filter-date-driopdown__datepicker-container js-filter-date-driopdown__datepicker-container">
                                 <div class="datepicker-block js-datepicker-block">
                                   <div class="datepicker-block__content js-datepicker-block__content"></div>
                                   <div class="datepicker-block__buttons-block">
                                     <div class="datepicker-block__set-btn js-datepicker-block__set-btn">
-                                      <button class="btn btn_theme_text" type="button">применить</button>
+                                      <button class="button button_theme_text" type="button">применить</button>
                                     </div>
                                     <div class="datepicker-block__clear-btn js-datepicker-block__clear-btn">
-                                      <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
+                                      <button class="button button_theme_text button_color_gray" type="button">очистить</button>
                                     </div>
                                   </div>
                                 </div>
@@ -107,10 +109,10 @@
                           </div>
                           <div class="dropdown__buttons-block">
                             <div class="dropdown__set-btn js-dropdown__set-btn">
-                              <button class="btn btn_theme_text" type="button">применить</button>
+                              <button class="button button_theme_text" type="button">применить</button>
                             </div>
                             <div class="dropdown__clear-btn js-dropdown__clear-btn">
-                              <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
+                              <button class="button button_theme_text button_color_gray" type="button">очистить</button>
                             </div>
                           </div>
                         </div>
@@ -118,14 +120,14 @@
                     </section>
             </div>
             <div class="search-room__slider">
-                    <div class="slider js-slider">
-                      <h3 class="slider__header"><span class="title">диапазон цены</span>
+                    <div class="range-slider js-range-slider">
+                      <h3 class="range-slider__header"><span class="title">диапазон цены</span>
                       </h3>
-                      <p class="slider__text">
-                        <label for="slider__amount"></label>
+                      <p class="range-slider__text">
+                        <label for="range-slider__amount"></label>
                       </p>
-                      <input type="text" id="slider__amount" readonly style="border:0;">
-                      <div id="slider__range"></div>
+                      <input type="text" id="range-slider__amount" readonly style="border:0;">
+                      <div id="range-slider__range"></div>
                     </div>
             </div>
             <div class="search-room__slider-text">Стоимость за сутки пребывания в номере</div>
@@ -133,17 +135,17 @@
               <h3 class="search-room__checkbox-title"><span class="title">Checkbox Buttons</span>
               </h3>
                     <div class="checkbox-list">
-                            <label class="checkbox__label">
+                            <label class="checkbox">
                               <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-0">
                               <div class="checkbox__custom"></div>
                               <p class="checkbox__text">Можно курить</p>
                             </label>
-                            <label class="checkbox__label">
+                            <label class="checkbox">
                               <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-1">
                               <div class="checkbox__custom"></div>
                               <p class="checkbox__text">Можно с питомцами</p>
                             </label>
-                            <label class="checkbox__label">
+                            <label class="checkbox">
                               <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-2">
                               <div class="checkbox__custom"></div>
                               <p class="checkbox__text">Можно пригласить гостей (до 10 человек)</p>
@@ -154,13 +156,13 @@
               <h3 class="search-room__rich-checkbox-title"><span class="title">доступность</span>
               </h3>
                     <div class="checkbox-list">
-                            <label class="checkbox__label">
+                            <label class="checkbox">
                               <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-0">
                               <div class="checkbox__custom"></div>
                               <h4 class="checkbox__header">Широкий коридор</h4>
                             </label>
                             <p class="checkbox__text_small">Ширина коридоров в номере не менее 91 см.</p>
-                            <label class="checkbox__label">
+                            <label class="checkbox">
                               <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-1">
                               <div class="checkbox__custom"></div>
                               <h4 class="checkbox__header">Помощник для инвалидов</h4>
@@ -201,32 +203,32 @@
               </h3>
               <div class="search-room__expandable-text js-search-room__expandable-text d-none">
                       <div class="checkbox-list">
-                              <label class="checkbox__label">
+                              <label class="checkbox">
                                 <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-0">
                                 <div class="checkbox__custom"></div>
                                 <p class="checkbox__text">Завтрак</p>
                               </label>
-                              <label class="checkbox__label">
+                              <label class="checkbox">
                                 <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-1">
                                 <div class="checkbox__custom"></div>
                                 <p class="checkbox__text">Письменный стол</p>
                               </label>
-                              <label class="checkbox__label">
+                              <label class="checkbox">
                                 <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-2">
                                 <div class="checkbox__custom"></div>
                                 <p class="checkbox__text">Стул для кормления</p>
                               </label>
-                              <label class="checkbox__label">
+                              <label class="checkbox">
                                 <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-3">
                                 <div class="checkbox__custom"></div>
                                 <p class="checkbox__text">Кроватка</p>
                               </label>
-                              <label class="checkbox__label">
+                              <label class="checkbox">
                                 <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-4">
                                 <div class="checkbox__custom"></div>
                                 <p class="checkbox__text">Телевизор</p>
                               </label>
-                              <label class="checkbox__label">
+                              <label class="checkbox">
                                 <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-5">
                                 <div class="checkbox__custom"></div>
                                 <p class="checkbox__text">Шампунь</p>
@@ -240,7 +242,7 @@
           <h1 class="search-room__title">Номера, которые мы для вас подобрали</h1>
           <div class="search-room__cards">
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image1.jpg"></div>
@@ -264,7 +266,7 @@
                         <div class="card__price">9 990₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
                                   </div>
                           </div>
                           <div class="card__reviews">145<span class="card__reviews-text">Отзывов</span></div>
@@ -273,7 +275,7 @@
                     </section>
             </div>
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image2.jpg"></div>
@@ -297,7 +299,7 @@
                         <div class="card__price">9 990₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
                                   </div>
                           </div>
                           <div class="card__reviews">65<span class="card__reviews-text">Отзывов</span></div>
@@ -306,7 +308,7 @@
                     </section>
             </div>
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image3.jpg"></div>
@@ -330,7 +332,7 @@
                         <div class="card__price">8 500₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
                                   </div>
                           </div>
                           <div class="card__reviews">35<span class="card__reviews-text">Отзывов</span></div>
@@ -339,7 +341,7 @@
                     </section>
             </div>
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image4.jpg"></div>
@@ -363,7 +365,7 @@
                         <div class="card__price">7 300₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
                                   </div>
                           </div>
                           <div class="card__reviews">19<span class="card__reviews-text">Отзывов</span></div>
@@ -372,7 +374,7 @@
                     </section>
             </div>
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image5.jpg"></div>
@@ -396,7 +398,7 @@
                         <div class="card__price">6 000₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
                                   </div>
                           </div>
                           <div class="card__reviews">44<span class="card__reviews-text">Отзывов</span></div>
@@ -405,7 +407,7 @@
                     </section>
             </div>
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image6.jpg"></div>
@@ -429,7 +431,7 @@
                         <div class="card__price">5 800₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
                                   </div>
                           </div>
                           <div class="card__reviews">56<span class="card__reviews-text">Отзывов</span></div>
@@ -438,7 +440,7 @@
                     </section>
             </div>
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image7.jpg"></div>
@@ -462,7 +464,7 @@
                         <div class="card__price">5 500₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
                                   </div>
                           </div>
                           <div class="card__reviews">45<span class="card__reviews-text">Отзывов</span></div>
@@ -471,7 +473,7 @@
                     </section>
             </div>
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image8.jpg"></div>
@@ -495,7 +497,7 @@
                         <div class="card__price">5 300₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
                                   </div>
                           </div>
                           <div class="card__reviews">39<span class="card__reviews-text">Отзывов</span></div>
@@ -504,7 +506,7 @@
                     </section>
             </div>
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image9.jpg"></div>
@@ -528,7 +530,7 @@
                         <div class="card__price">5 000₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
                                   </div>
                           </div>
                           <div class="card__reviews">77<span class="card__reviews-text">Отзывов</span></div>
@@ -537,7 +539,7 @@
                     </section>
             </div>
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image10.jpg"></div>
@@ -561,7 +563,7 @@
                         <div class="card__price">5 000₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
                                   </div>
                           </div>
                           <div class="card__reviews">25<span class="card__reviews-text">Отзывов</span></div>
@@ -570,7 +572,7 @@
                     </section>
             </div>
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image11.jpg"></div>
@@ -594,7 +596,7 @@
                         <div class="card__price">5 000₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
                                   </div>
                           </div>
                           <div class="card__reviews">15<span class="card__reviews-text">Отзывов</span></div>
@@ -603,7 +605,7 @@
                     </section>
             </div>
             <div class="search-room__card">
-                    <section class="card js-card ">
+                    <section class="card js-card">
                       <div class="card__slider">
                         <div class="card__slide-wrapper">
                           <div class="card__slide js-card__slide"><img src="img/image12.jpg"></div>
@@ -627,7 +629,7 @@
                         <div class="card__price">5 000₽<span class="card__price-text">в сутки</span></div>
                         <div class="card__rate">
                           <div class="card__rate-wrapper">
-                                  <div class="rate js-rate "><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
+                                  <div class="rate js-rate"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i><i class="rate__star">star_border</i>
                                   </div>
                           </div>
                           <div class="card__reviews">53<span class="card__reviews-text">Отзывов</span></div>
@@ -645,7 +647,7 @@
         </section>
       </div>
     </main>
-            <footer class="footer ">
+            <footer class="footer">
               <section class="footer__navigation-section">
                 <div class="footer__container">
                   <div class="footer__text-column">

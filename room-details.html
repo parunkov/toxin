@@ -16,7 +16,7 @@
     <meta name="theme-color" content="#ffffff">
   <link href="./css/room-details.css" rel="stylesheet"></head>
   <body>
-            <header class="header js-header ">
+            <header class="header js-header">
               <nav class="header__navigation js-header__navigation">
                 <div class="header__logo"><a class="logo" href="index.html"><img class="logo__image" src="img/logo.svg" width="100%" alt="Отель Toxin"></a>
                 </div>
@@ -43,9 +43,11 @@
                   </li>
                 </ul>
                 <div class="header__user-block js-header__user-block">
-                  <div class="header__btn"><a class="btn btn_theme_light btn__size_small" href="sign-in.html"> <span class="btn__text"> войти</span></a>
+                  <div class="header__btn">
+                        <a class="button button_theme_light button_size_small" type="submit" href="sign-in.html">войти</a>
                   </div>
-                  <div class="header__btn"><a class="btn btn__size_small" href="registration.html">зарегистрироваться</a>
+                  <div class="header__btn">
+                        <a class="button button_size_small" type="submit" href="registration.html">зарегистрироваться</a>
                   </div>
                 </div>
               </nav>
@@ -65,7 +67,7 @@
               <article class="room-details__article">
                 <h2 class="room-details__title">Сведения о номере</h2>
                 <div class="room-details__info">
-                            <div class=" info">
+                            <div class="info">
                               <div class="info__img-wrapper"><i class="info__img">insert_emoticon</i></div>
                               <div class="info__text-wrapper">
                                 <h4 class="info__header">Комфорт</h4>
@@ -74,7 +76,7 @@
                             </div>
                 </div>
                 <div class="room-details__info">
-                            <div class=" info">
+                            <div class="info">
                               <div class="info__img-wrapper"><i class="info__img">location_city</i></div>
                               <div class="info__text-wrapper">
                                 <h4 class="info__header">Удобство</h4>
@@ -83,7 +85,7 @@
                             </div>
                 </div>
                 <div class="room-details__info">
-                            <div class=" info">
+                            <div class="info">
                               <div class="info__img-wrapper"><i class="info__img">whatshot</i></div>
                               <div class="info__text-wrapper">
                                 <h4 class="info__header">Уют</h4>
@@ -128,11 +130,11 @@
                 <div class="room-details__review room-details__review_1 js-room-details__review_1">
                             <div class="review">
                               <div class="review__column-left">
-                                <div class="review__img-wrapper"><img class="-img review__img" src="img/murad.jpg"></div>
+                                <div class="review__img-wrapper"><img class="review__img" src="img/murad.jpg"></div>
                                 <div class="review__like-wrapper">
                                             <div class="like">
                                               <label class="like__label js-like__label">
-                                                <input class="like__input js-like__input " type="checkbox" name="-like">
+                                                <input class="like__input js-like__input" type="checkbox" name="like">
                                                 <div class="like__custom"><span class="like__inner">
                                                     <p class="like__text js-like__text">12</p></span></div>
                                               </label>
@@ -149,11 +151,11 @@
                 <div class="room-details__review room-details__review_2">
                             <div class="review">
                               <div class="review__column-left">
-                                <div class="review__img-wrapper"><img class="-img review__img" src="img/Patricia.jpg"></div>
+                                <div class="review__img-wrapper"><img class="review__img" src="img/Patricia.jpg"></div>
                                 <div class="review__like-wrapper">
                                             <div class="like">
                                               <label class="like__label js-like__label">
-                                                <input class="like__input js-like__input " type="checkbox" name="-like">
+                                                <input class="like__input js-like__input" type="checkbox" name="like">
                                                 <div class="like__custom"><span class="like__inner">
                                                     <p class="like__text js-like__text">2</p></span></div>
                                               </label>
@@ -215,10 +217,10 @@
                                       <div class="datepicker-block__content js-datepicker-block__content"></div>
                                       <div class="datepicker-block__buttons-block">
                                         <div class="datepicker-block__set-btn js-datepicker-block__set-btn">
-                                          <button class="btn btn_theme_text" type="button">применить</button>
+                                          <button class="button button_theme_text" type="button">применить</button>
                                         </div>
                                         <div class="datepicker-block__clear-btn js-datepicker-block__clear-btn">
-                                          <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
+                                          <button class="button button_theme_text button_color_gray" type="button">очистить</button>
                                         </div>
                                       </div>
                                     </div>
@@ -250,10 +252,10 @@
                                 </div>
                                 <div class="dropdown__buttons-block">
                                   <div class="dropdown__set-btn js-dropdown__set-btn">
-                                    <button class="btn btn_theme_text" type="button">применить</button>
+                                    <button class="button button_theme_text" type="button">применить</button>
                                   </div>
                                   <div class="dropdown__clear-btn js-dropdown__clear-btn">
-                                    <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
+                                    <button class="button button_theme_text button_color_gray" type="button">очистить</button>
                                   </div>
                                 </div>
                               </div>
@@ -266,7 +268,7 @@
                         <h2 class="reservation-form__price-value">38 081₽</h2>
                       </div>
                       <div class="reservation-form__btn">
-                            <button class="btn btn_theme_arrow" type="submit">забронировать</button>
+                            <button class="button button_theme_arrow" type="submit">забронировать</button>
                       </div>
                     </form>
                   </article>
@@ -275,7 +277,7 @@
         </section>
       </div>
     </main>
-            <footer class="footer ">
+            <footer class="footer">
               <section class="footer__navigation-section">
                 <div class="footer__container">
                   <div class="footer__text-column">

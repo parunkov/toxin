@@ -29,7 +29,7 @@
           <div class="form-elements__item js-form-elements__item">
                 <div class="input js-input"><span class="input__name"><span class="title">Text Field</span></span>
                   <p class="input__text">Hover / Focus</p>
-                  <input class="input__field input__field_focused" type="email" name="form-elements__input-2" value="This is pretty awesome">
+                  <input class="input__field input__field_focused" type="text" name="form-elements__input-2" value="This is pretty awesome">
                 </div>
           </div>
           <div class="form-elements__item js-form-elements__item">
@@ -59,10 +59,10 @@
                       </div>
                       <div class="dropdown__buttons-block">
                         <div class="dropdown__set-btn js-dropdown__set-btn">
-                          <button class="btn btn_theme_text" type="button">применить</button>
+                          <button class="button button_theme_text" type="button">применить</button>
                         </div>
                         <div class="dropdown__clear-btn js-dropdown__clear-btn">
-                          <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
+                          <button class="button button_theme_text button_color_gray" type="button">очистить</button>
                         </div>
                       </div>
                     </div>
@@ -72,7 +72,7 @@
           <div class="form-elements__item js-form-elements__item">
                 <div class="input js-input"><span class="input__name"><span class="title">masked text field</span></span>
                   <p class="input__text">Default</p>
-                  <input class="input__field input__field_theme_uppercase js-input__field_type_masked" type="text" name="form-elements__input-4" placeholder="дд.мм.гггг">
+                  <input class="input__field input__field_theme_uppercase" type="text" name="form-elements__input-4" placeholder="дд.мм.гггг">
                 </div>
           </div>
           <div class="form-elements__item js-form-elements__item">
@@ -94,10 +94,10 @@
                           <div class="datepicker-block__content js-datepicker-block__content"></div>
                           <div class="datepicker-block__buttons-block">
                             <div class="datepicker-block__set-btn js-datepicker-block__set-btn">
-                              <button class="btn btn_theme_text" type="button">применить</button>
+                              <button class="button button_theme_text" type="button">применить</button>
                             </div>
                             <div class="datepicker-block__clear-btn js-datepicker-block__clear-btn">
-                              <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
+                              <button class="button button_theme_text button_color_gray" type="button">очистить</button>
                             </div>
                           </div>
                         </div>
@@ -105,21 +105,21 @@
                 </div>
           </div>
           <div class="form-elements__item js-form-elements__item">
-                <div class="dates-filter js-dates-filter">
+                <div class="filter-date-driopdown js-filter-date-driopdown">
                       <div class="input js-input"><span class="input__name"><span class="title">filter date dropdown</span></span>
                         <input class="input__field input__field_theme_without-hover-effect" type="text" name="search-room__input-1" value="19 авг - 23 авг" placeholder="Введите даты">
                         <button class="input__button js-input__button" type="button">expand_more</button>
                       </div>
-                  <div class="dates-filter__datepicker-wrapper">
-                    <div class="dates-filter__datepicker-container js-dates-filter__datepicker-container">
+                  <div class="filter-date-driopdown__datepicker-wrapper">
+                    <div class="filter-date-driopdown__datepicker-container js-filter-date-driopdown__datepicker-container">
                           <div class="datepicker-block js-datepicker-block">
                             <div class="datepicker-block__content js-datepicker-block__content"></div>
                             <div class="datepicker-block__buttons-block">
                               <div class="datepicker-block__set-btn js-datepicker-block__set-btn">
-                                <button class="btn btn_theme_text" type="button">применить</button>
+                                <button class="button button_theme_text" type="button">применить</button>
                               </div>
                               <div class="datepicker-block__clear-btn js-datepicker-block__clear-btn">
-                                <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
+                                <button class="button button_theme_text button_color_gray" type="button">очистить</button>
                               </div>
                             </div>
                           </div>
@@ -139,17 +139,17 @@
             <h3 class="form-elements__item-title js-form-elements__item-title"><span class="title">Checkbox Buttons</span>
             </h3>
                 <div class="checkbox-list">
-                      <label class="checkbox__label">
+                      <label class="checkbox">
                         <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-0">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Можно курить</p>
                       </label>
-                      <label class="checkbox__label">
+                      <label class="checkbox">
                         <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-1">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Можно с питомцами</p>
                       </label>
-                      <label class="checkbox__label">
+                      <label class="checkbox">
                         <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-2">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Можно пригласить гостей (до 10 человек)</p>
@@ -177,7 +177,7 @@
             </h3>
                 <div class="toggle">
                   <label class="toggle__label">
-                    <input class="js-toggle__input registration-form__toggle" type="checkbox" name="registration-form__toggle-0">
+                    <input class="toggle__input js-toggle__input" type="checkbox" name="toggle">
                     <div class="toggle__custom">
                       <div class="toggle__custom-inner"></div>
                     </div>
@@ -186,7 +186,7 @@
                 </div>
                 <div class="toggle">
                   <label class="toggle__label">
-                    <input class="js-toggle__input registration-form__toggle" type="checkbox" name="registration-form__toggle-0">
+                    <input class="toggle__input js-toggle__input" type="checkbox" name="toggle">
                     <div class="toggle__custom">
                       <div class="toggle__custom-inner"></div>
                     </div>
@@ -199,14 +199,14 @@
             </h3>
                 <div class="like">
                   <label class="like__label js-like__label">
-                    <input class="like__input js-like__input " type="checkbox" name="-like">
+                    <input class="like__input js-like__input" type="checkbox" name="like">
                     <div class="like__custom"><span class="like__inner">
                         <p class="like__text js-like__text">2</p></span></div>
                   </label>
                 </div>
                 <div class="like">
                   <label class="like__label js-like__label">
-                    <input class="like__input js-like__input " type="checkbox" name="-like">
+                    <input class="like__input js-like__input" type="checkbox" name="like">
                     <div class="like__custom"><span class="like__inner">
                         <p class="like__text js-like__text">12</p></span></div>
                   </label>
@@ -215,47 +215,47 @@
           <div class="form-elements__item js-form-elements__item">
             <h3 class="form-elements__item-title js-form-elements__item-title"><span class="title">rate button</span>
             </h3>
-                <div class="rate js-rate " data-active="1"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
+                <div class="rate js-rate" data-active="1"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
                 </div>
-                <div class="rate js-rate " data-active="1"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
+                <div class="rate js-rate" data-active="1"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
                 </div>
           </div>
         </section>
         <section class="form-elements__section js-form-elements__section">
           <div class="form-elements__item js-form-elements__item">
-                <div class="slider js-slider">
-                  <h3 class="slider__header"><span class="title">Range Slider</span>
+                <div class="range-slider js-range-slider">
+                  <h3 class="range-slider__header"><span class="title">Range Slider</span>
                   </h3>
-                  <p class="slider__text">
-                    <label for="slider__amount"></label>
+                  <p class="range-slider__text">
+                    <label for="range-slider__amount"></label>
                   </p>
-                  <input type="text" id="slider__amount" readonly style="border:0;">
-                  <div id="slider__range"></div>
+                  <input type="text" id="range-slider__amount" readonly style="border:0;">
+                  <div id="range-slider__range"></div>
                 </div>
           </div>
           <div class="form-elements__item js-form-elements__item">
             <h3 class="form-elements__item-title js-form-elements__item-title"><span class="title">buttons</span>
             </h3>
             <div class="form-elements__btn">
-                  <div class="btn">click me</div>
+                  <div class="button">click me</div>
             </div>
             <div class="form-elements__btn">
-                  <div class="btn btn_transparent">click me</div>
+                  <div class="button button_transparent">click me</div>
             </div>
             <div class="form-elements__btn">
-                  <div class="btn btn_theme_light"> <span class="btn__text">click me</span></div>
+                  <div class="button button_theme_light">click me</div>
             </div>
             <div class="form-elements__btn">
-                  <div class="btn btn_theme_light btn_transparent"><span class="btn__text">click me</span></div>
+                  <div class="button button_theme_light button_transparent">click me</div>
             </div>
             <div class="form-elements__btn">
-                  <div class="btn btn_theme_text">click me</div>
+                  <div class="button button_theme_text">click me</div>
             </div>
             <div class="form-elements__btn">
-                  <div class="btn btn_theme_text btn_color_gray">click me</div>
+                  <div class="button button_theme_text button_color_gray">click me</div>
             </div>
             <div class="form-elements__btn">
-                  <button class="btn btn_theme_arrow" type="button">перейти к оплате</button>
+                  <button class="button button_theme_arrow" type="submit">перейти к оплате</button>
             </div>
           </div>
           <div class="form-elements__item js-form-elements__item">
@@ -336,32 +336,32 @@
             <h3 class="form-elements__item-title js-form-elements__item-title"><span class="title">expandable checkbox list</span>
             </h3>
                 <div class="checkbox-list">
-                      <label class="checkbox__label">
+                      <label class="checkbox">
                         <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-0">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Завтрак</p>
                       </label>
-                      <label class="checkbox__label">
+                      <label class="checkbox">
                         <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-1">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Письменный стол</p>
                       </label>
-                      <label class="checkbox__label">
+                      <label class="checkbox">
                         <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-2">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Стул для кормления</p>
                       </label>
-                      <label class="checkbox__label">
+                      <label class="checkbox">
                         <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-3">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Кроватка</p>
                       </label>
-                      <label class="checkbox__label">
+                      <label class="checkbox">
                         <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-4">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Телевизор</p>
                       </label>
-                      <label class="checkbox__label">
+                      <label class="checkbox">
                         <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-5">
                         <div class="checkbox__custom"></div>
                         <p class="checkbox__text">Шампунь</p>
@@ -396,10 +396,10 @@
                       </div>
                       <div class="dropdown__buttons-block">
                         <div class="dropdown__set-btn js-dropdown__set-btn">
-                          <button class="btn btn_theme_text" type="button">применить</button>
+                          <button class="button button_theme_text" type="button">применить</button>
                         </div>
                         <div class="dropdown__clear-btn js-dropdown__clear-btn">
-                          <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
+                          <button class="button button_theme_text button_color_gray" type="button">очистить</button>
                         </div>
                       </div>
                     </div>
@@ -412,13 +412,13 @@
             <h3 class="form-elements__item-title js-form-elements__item-title"><span class="title">rich Checkbox Buttons</span>
             </h3>
                 <div class="checkbox-list">
-                      <label class="checkbox__label">
+                      <label class="checkbox">
                         <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-0">
                         <div class="checkbox__custom"></div>
                         <h4 class="checkbox__header">Широкий коридор</h4>
                       </label>
                       <p class="checkbox__text_small">Ширина коридоров в номере не менее 91 см.</p>
-                      <label class="checkbox__label">
+                      <label class="checkbox">
                         <input class="checkbox__input js-checkbox__input" type="checkbox" name="checkbox-1">
                         <div class="checkbox__custom"></div>
                         <h4 class="checkbox__header">Помощник для инвалидов</h4>
@@ -454,10 +454,10 @@
                       </div>
                       <div class="dropdown__buttons-block">
                         <div class="dropdown__set-btn js-dropdown__set-btn">
-                          <button class="btn btn_theme_text" type="button">применить</button>
+                          <button class="button button_theme_text" type="button">применить</button>
                         </div>
                         <div class="dropdown__clear-btn js-dropdown__clear-btn">
-                          <button class="btn btn_theme_text btn_color_gray" type="button">очистить</button>
+                          <button class="button button_theme_text button_color_gray" type="button">очистить</button>
                         </div>
                       </div>
                     </div>
@@ -478,7 +478,7 @@
         </section>
         <section class="form-elements__section js-form-elements__section">
           <div class="form-elements__item js-form-elements__item">
-                <div class=" info">
+                <div class="info">
                   <div class="info__img-wrapper"><i class="info__img">insert_emoticon</i></div>
                   <div class="info__text-wrapper">
                     <h4 class="info__header">Комфорт</h4>
@@ -487,7 +487,7 @@
                 </div>
           </div>
           <div class="form-elements__item js-form-elements__item">
-                <div class=" info">
+                <div class="info">
                   <div class="info__img-wrapper"><i class="info__img">location_city</i></div>
                   <div class="info__text-wrapper">
                     <h4 class="info__header">Удобство</h4>
@@ -500,11 +500,11 @@
           <div class="form-elements__item js-form-elements__item">
                 <div class="review">
                   <div class="review__column-left">
-                    <div class="review__img-wrapper"><img class="-img review__img" src="img/murad.jpg"></div>
+                    <div class="review__img-wrapper"><img class="review__img" src="img/murad.jpg"></div>
                     <div class="review__like-wrapper">
                           <div class="like">
                             <label class="like__label js-like__label">
-                              <input class="like__input js-like__input " type="checkbox" name="-like">
+                              <input class="like__input js-like__input" type="checkbox" name="like">
                               <div class="like__custom"><span class="like__inner">
                                   <p class="like__text js-like__text">12</p></span></div>
                             </label>
