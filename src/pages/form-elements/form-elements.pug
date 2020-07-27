@@ -25,34 +25,33 @@ block main
 			header: 'Text Field',
 			type: 'email',
 			name: 'form-elements__input-1',
-			className: ' input__field_theme_light',
 			value: '',
 			placeholder: 'Email',
-			text: 'Default'
+			text: 'Default',
+			modifiers: ['themeLight']
 		}
 		const input2 = {
 			header: 'Text Field',
 			type: 'text',
 			name: 'form-elements__input-2',
-			className: ' input__field_focused',
 			value: 'This is pretty awesome',
 			placeholder: '',
-			text: 'Hover / Focus'
+			text: 'Hover / Focus',
+			modifiers: ['focused']
 		}
 		const input4 = {
 			header: 'masked text field',
 			type: 'text',
 			name: 'form-elements__input-4',
-			className: ' input__field_theme_uppercase js-input__field_type_masked',
 			value: '',
 			placeholder: 'дд.мм.гггг',
-			text: 'Default'
+			text: 'Default',
+			modifiers: ['themeUpprecase']
 		}
 		const input7 = {
 			header: 'filter date dropdown',
 			type: 'text',
 			name: 'form-elements__input-7',
-			className: '',
 			value: '19 авг - 23 авг',
 			placeholder: '',
 			text: '',
@@ -62,22 +61,22 @@ block main
 			header: 'subscription text field',
 			type: 'email',
 			name: 'form-elements__input-8',
-			className: ' input__field_with-arrow',
 			value: '',
 			placeholder: 'Email',
 			text: '',
 			icon: 'arrow_forward',
-			color: 'purple'
+			color: 'purple',
+			modifiers: ['withArrow']
 		}
 		const input9 = {
 			header: 'filter date dropdown',
 			type: 'text',
 			name: 'search-room__input-1',
-			className: ' input__field_theme_without-hover-effect',
 			value: '19 авг - 23 авг',
 			placeholder: 'Введите даты',
 			text: '',
-			icon: 'expand_more'
+			icon: 'expand_more',
+			modifiers: ['withoutHoverEffect']
 		}
 		const headers = ['Checkbox Buttons', 'Radio Buttons', 'Toggle', 'like button', 'rate button', 'buttons', 'pagination', 'expandable checkbox list', 'rich Checkbox Buttons', 'bullet list']
 		const checkbox1 = {

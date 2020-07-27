@@ -2,7 +2,18 @@ include ../../components/title/title.pug
 
 mixin input(data)
 	-
-		const {header, type, name, className, value, placeholder, text, icon, color} = data;
+		const {header, type, name, value, placeholder, text, icon, color, modifiers} = data;
+		let className = 'input__field';
+		if (modifiers) {
+			for (let i = 0; i < modifiers.length; i += 1) {
+				className = modifiers[i] === 'themeLight' ? className + ' input__field_theme_light' : className;
+				className = modifiers[i] === 'themeUpprecase' ? className + ' input__field_theme_uppercase' : className;
+				className = modifiers[i] === 'focused' ? className + ' input__field_focused' : className;
+				className = modifiers[i] === 'withArrow' ? className + ' input__field_with-arrow' : className;
+				className = modifiers[i] === 'withoutHoverEffect' ? className + ' input__field_theme_without-hover-effect' : className;
+				className = modifiers[i] === 'typeMasked' ? className + ' js-input__field_type_masked' : className;
+			}
+		}
 	.input.js-input
 		if header
 			span.input__name
@@ -11,13 +22,40 @@ mixin input(data)
 			p.input__text= text
 		if value	
 			if placeholder	
-				input(type= type name= name class="input__field"+className value= value placeholder= placeholder)
+				input(type= type name= name class=className value= value placeholder= placeholder)
 			else 
-				input(type= type name= name class="input__field"+className value= value)
+				input(type= type name= name class=className value= value)
 		else
-			input(type= type name= name class="input__field"+className placeholder= placeholder)
+			input(type= type name= name class=className placeholder= placeholder)
 		if icon
 			if color === 'purple'
 				button(type="button" class="input__button js-input__button input__button_color_purple js-input__button_color_purple")= icon
 			else
 				button(type="button" class="input__button js-input__button")= icon
+
+
+
+
+
+
+	//- 			mixin input(data)
+	//- -
+	//- 	const {header, type, name, className, value, placeholder, text, icon, color} = data;
+	//- .input.js-input
+	//- 	if header
+	//- 		span.input__name
+	//- 			+title(header)
+	//- 	if text
+	//- 		p.input__text= text
+	//- 	if value	
+	//- 		if placeholder	
+	//- 			input(type= type name= name class="input__field"+className value= value placeholder= placeholder)
+	//- 		else 
+	//- 			input(type= type name= name class="input__field"+className value= value)
+	//- 	else
+	//- 		input(type= type name= name class="input__field"+className placeholder= placeholder)
+	//- 	if icon
+	//- 		if color === 'purple'
+	//- 			button(type="button" class="input__button js-input__button input__button_color_purple js-input__button_color_purple")= icon
+	//- 		else
+	//- 			button(type="button" class="input__button js-input__button")= icon
