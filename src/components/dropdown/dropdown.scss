@@ -1,11 +1,12 @@
 @import '../../variables.scss';
 
-.dropdown, .js-dropdown {
+.dropdown {
   position: relative;
   min-height: 68px;
-  &_theme_date {
+}
+.js-dropdown_theme_date {
   flex: 0 0 47.24%;
-  .dropdown__arrow, .js-dropdown__arrow {
+  .dropdown__arrow {
     @media (max-width: 380px) {
       padding-left: 0;
       width: 25px;
@@ -36,7 +37,6 @@
   .dropdown__name {
     word-break: break-all;
   }
-}
 
 }
 .dropdown__type {
@@ -71,7 +71,7 @@
   color: $black-50;
   text-transform: uppercase;
 }
-.dropdown__wrapper, .js-dropdown__wrapper {
+.dropdown__wrapper {
   position: relative;
   clear: both;
   width: 100%;
@@ -79,10 +79,10 @@
   text-align: left;
   border: 1px solid $black-25;
   border-radius: 4px;
-  &_expanded {
-    border-radius: 4px 4px 0 0;
-    border: 1px solid $black-50;
-  }
+}
+.js-dropdown__wrapper_expanded {
+  border-radius: 4px 4px 0 0;
+  border: 1px solid $black-50;
 }
 .dropdown__input {
   position: relative;
@@ -233,14 +233,14 @@
     color: $black-50;
   }
 } 
-.dropdown__clear-btn, .js-dropdown__clear-btn {
+.dropdown__clear-btn {
   display: none;
   margin-left: 5px;
   margin-right: auto;
   color: $black-50;
-  &_visible {
-    display: block;
-  }
+}
+.js-dropdown__clear-btn_visible {
+  display: block;
 }
 .dropdown__set-btn {
   display: inline-block;
