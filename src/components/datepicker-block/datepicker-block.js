@@ -36,13 +36,13 @@ class Datepicker {
   clear(evt) {
     evt.preventDefault();
     this.dates.clear();
-    this.$clearBtn.removeClass('js-datepicker-block__clear-btn_visible');
+    this.$clearBtn.removeClass('datepicker-block__clear-btn_visible');
   }
   mousemove() {
     if (this.dates.selectedDates.length === 0) {
-      this.$clearBtn.removeClass('js-datepicker-block__clear-btn_visible');
+      this.$clearBtn.removeClass('datepicker-block__clear-btn_visible');
     } else {
-      this.$clearBtn.addClass('js-datepicker-block__clear-btn_visible');
+      this.$clearBtn.addClass('datepicker-block__clear-btn_visible');
     }
   }
   setDates(first, second) {
