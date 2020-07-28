@@ -10,7 +10,6 @@
   flex: 0 0 380px;
   max-width: 380px;
   box-shadow: 0 0 25px $shadow;
-  // margin-bottom: auto;
   @media (max-width: 1440px) {
     padding-left: 30px;
     padding-right: 30px;
@@ -20,24 +19,24 @@
     padding-left: 30%*100/385;
     padding-left: 30%*100/385;
   }
-}
 
-.search-form__title {
-  display: block;
-  margin-bottom: 17px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.25em;
-  font-family: "Open Sans", Arial, sans-serif;
-  color: $black;
-}
+  &__title {
+    display: block;
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25em;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: $black;
+  }
 
-.search-form__dates-selector {
-  margin-bottom: 18px;
-}
+  &__dates-selector {
+    margin-bottom: 18px;
+  }
 
-.search-form__button {
-  display: block;
-  text-decoration: none;
-  margin-top: 30px;
+  &__button {
+    display: block;
+    text-decoration: none;
+    margin-top: 30px;
+  }
 }
