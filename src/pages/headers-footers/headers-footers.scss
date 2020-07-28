@@ -18,13 +18,13 @@
     margin-bottom: 40px;
   }
 
-  .js-header__navigation-list {
+  .header__navigation-list {
     padding-right: 0;
   }
 
 }
 
-.headers-footers__header .js-header__navigation-item_with-submenu .js-header__navigation-item {
+.headers-footers__header .header__navigation-item_with-submenu .header__navigation-item {
   margin-right: 0;
 
   @media (max-width:$mobile-menu-breakpoint) {
@@ -78,7 +78,7 @@
   }
 }
 
-.headers-footers__header .js-header__navigation-item {
+.headers-footers__header .header__navigation-item {
   margin-right: 26px;
 
   @media (max-width: $mobile-menu-breakpoint) {
@@ -103,7 +103,7 @@
       margin-left: 0;
     }
 
-    .js-header__navigation-item .header__link {
+    .header__navigation-item .header__link {
       min-width: 65px;
     }
   }
