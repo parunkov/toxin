@@ -20,8 +20,7 @@
   }
 }
 
-.cards__column,
-.js-cards__column {
+.cards__column {
   flex: 0 0 420%*100/1200;
 
   @media (max-width: $page-container) {

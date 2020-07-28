@@ -12,7 +12,7 @@ import './cards.scss';
 import Datepicker from '../../components/datepicker-block/datepicker-block';
 import Card from '../../components/card/card';
 
-const datepicker = new Datepicker($('.js-cards__column_right .js-datepicker-block'));
+const datepicker = new Datepicker($('.cards__column_right .js-datepicker-block'));
 
 const cards = [];
 $('.js-card').each((i) => {
