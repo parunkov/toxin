@@ -109,11 +109,11 @@ const addCart = function (dataset, chartClass, sectorClass) {
     }, angle, true));
   }(curr, prev)), 0);
 };
-addCart(dataset1, '.js-room-details__chart', 'js-room-details__sector');
-addCart(dataset2, '.js-room-details__chart-white-mask', 'js-room-details__sector');
+addCart(dataset1, '.js-room-details__chart', 'room-details__sector');
+addCart(dataset2, '.js-room-details__chart-white-mask', 'room-details__sector');
 
-const $sectors = $('.js-room-details__sector');
-const $masks = $('.js-room-details__chart-white-mask .js-room-details__sector');
+const $sectors = $('.room-details__sector');
+const $masks = $('.js-room-details__chart-white-mask .room-details__sector');
 const $chartText = $('.js-room-details__chart-inner');
 const $chartNumber = $('.js-room-details__chart-number');
 const onSectorHover = (numbers, color, text) => {
