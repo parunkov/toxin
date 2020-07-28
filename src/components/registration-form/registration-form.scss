@@ -3,82 +3,78 @@
 .registration-form {
   padding-top: 40px;
   padding-bottom: 30px;
-}
 
-.registration-form__title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.25em;
-  font-family: "Open Sans", Arial, sans-serif;
-  color: $black;
-}
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25em;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: $black;
+  }
 
-.registration-form__title {
-  margin-bottom: 20px;
+  &__title {
+    margin-bottom: 20px;
 
-  @media (max-width: 350px) {
+    @media (max-width: 350px) {
 
-    .registration-form__title {
-      word-break: break-all;
+      .registration-form__title {
+        word-break: break-all;
+      }
     }
   }
-}
 
-.registration-form__input:nth-child(1) {
-  margin-bottom: 10px;
-}
+  &__input:nth-child(1) {
+    margin-bottom: 10px;
+  }
 
-.registration-form__input:nth-child(2) {
-  margin-bottom: 10px;
-}
+  &__input:nth-child(2) {
+    margin-bottom: 10px;
+  }
 
-.registration-form__radio {
-  margin-bottom: 17px;
-}
+  &__radio {
+    margin-bottom: 17px;
+  }
 
-.registration-form__input:nth-child(4) {
-  margin-bottom: 17px;
-  // .input__field {
-  //   text-transform: uppercase;
-  //   letter-spacing: -0.4px;
-  // }
-}
+  &__input:nth-child(4) {
+    margin-bottom: 17px;
+  }
 
-.registration-form__input:nth-child(5) {
-  margin-bottom: 10px;
-}
+  &__input:nth-child(5) {
+    margin-bottom: 10px;
+  }
 
-.registration-form__input:nth-child(6) {
-  margin-bottom: 10px;
-}
+  &__input:nth-child(6) {
+    margin-bottom: 10px;
+  }
 
-.registration-form__toggle {
-  margin-bottom: 21px;
-}
+  &__toggle {
+    margin-bottom: 21px;
+  }
 
-.registration-form__btn {
-  margin-bottom: 30px;
-  word-break: break-all;
-}
+  &__btn {
+    margin-bottom: 30px;
+    word-break: break-all;
+  }
 
-.registration-form__footer {
-  display: flex;
-  flex-wrap: nowrap;
-}
+  &__footer {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
-.registration-form__footer-left {
-  flex: auto;
-  padding-top: 14px;
-}
+  &__footer-left {
+    flex: auto;
+    padding-top: 14px;
+  }
 
-.registration-form__footer-text {
-  color: $black-text;
-}
+  &__footer-text {
+    color: $black-text;
+  }
 
-.registration-form__footer-right {
-  flex: 0 0 99%*100/320;
-}
+  &__footer-right {
+    flex: 0 0 99%*100/320;
+  }
 
-.registration-form__button {
-  display: block;
+  &__button {
+    display: block;
+  }
 }
