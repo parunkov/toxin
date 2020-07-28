@@ -29,11 +29,11 @@
   border-radius: 6px;
 }
 
-.js-toggle__input:checked + .toggle__custom {
+.toggle__input:checked + .toggle__custom {
   border: 1px solid $purple;
 }
 
-.js-toggle__input:checked + .toggle__custom .toggle__custom-inner {
+.toggle__input:checked + .toggle__custom .toggle__custom-inner {
   left: 22px;
   background: $gradient-purple;
 }
