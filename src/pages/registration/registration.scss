@@ -7,39 +7,27 @@
   background: transparent url("images/reg__bg.jpg") center bottom no-repeat;
   background-size: cover;
 
-  .reg__radio-wrapper {
-    margin-bottom: 19px;
-  }
+  &__container {
+    width: 380%*100/1440;
+    padding-left: 30%*100/1440;
+    padding-right: 30%*100/1440;
+    margin: 0 auto;
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: 4px;
+    box-shadow: 0 0 25px $shadow;
+    max-width: 380px;
 
-  .reg__toggle-wrapper {
-    margin-bottom: 24px;
-  }
-}
+    @media (max-width: 1440px) {
+      width: 380px;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
 
-.registration__container {
-  width: 380%*100/1440;
-  padding-left: 30%*100/1440;
-  padding-right: 30%*100/1440;
-  margin: 0 auto;
-  background-color: $white;
-  border: 1px solid rgba(0, 0, 0, .12);
-  border-radius: 4px;
-  box-shadow: 0 0 25px $shadow;
-  max-width: 380px;
-
-  @media (max-width: 1440px) {
-    width: 380px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (max-width: 385px) {
-    width: 97%;
-    padding-left: 30%*100/385;
-    padding-left: 30%*100/385;
-  }
-
-  .toggle__text {
-    margin-top: -2px;
+    @media (max-width: 385px) {
+      width: 97%;
+      padding-left: 30%*100/385;
+      padding-left: 30%*100/385;
+    }
   }
 }
