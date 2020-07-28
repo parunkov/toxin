@@ -50,7 +50,7 @@
       overflow-x: hidden;
     }
 
-    &_search {
+    &_block_search {
       margin-bottom: 40px;
       padding-left: 0;
       padding-right: 0;
@@ -58,7 +58,7 @@
       box-shadow: none;
     }
 
-    &_registration {
+    &_block_registration {
       margin-bottom: 140px;
 
       @media (max-width: $page-container) {
@@ -66,16 +66,16 @@
       }
     }
 
-    &_reservation {
+    &_block_reservation {
       margin-bottom: 39px;
     }
 
-    &_login,
-    &_datepicker {
+    &_block_login,
+    &_block_datepicker {
       margin-bottom: 39px;
     }
 
-    &_card {
+    &_block_card {
       margin-bottom: 40px;
       background: transparent;
       box-shadow: none;
@@ -83,15 +83,16 @@
       padding-right: 14.6%;
     }
 
-    .card {
+  }
+
+  &__card {
       background: $white;
       box-shadow: 0 0 25px $shadow;
       border-right: 4px;
       min-width: 270px;
     }
-  }
 
-  &__card-wrapper_datepicker {
+  &__card-wrapper_block_datepicker {
     max-width: 360px;
     padding: 0; 
 

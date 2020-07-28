@@ -163,19 +163,21 @@ block main
 			const cardText = ['₽', 'в сутки', 'Отзывов'];
 		.cards__container
 			.cards__column
-				.cards__card-wrapper.cards__card-wrapper_search
+				.cards__card-wrapper.cards__card-wrapper_block_search
 					+search-form(searchFormData)
-				.cards__card-wrapper.cards__card-wrapper_registration
+				.cards__card-wrapper.cards__card-wrapper_block_registration
 					+registration-form(registrationFormData)
 			.cards__column
-				.cards__card-wrapper.cards__card-wrapper_reservation
+				.cards__card-wrapper.cards__card-wrapper_block_reservation
 					+reservation-form(reservationFormData)
-				.cards__card-wrapper.cards__card-wrapper_login
+				.cards__card-wrapper.cards__card-wrapper_block_login
 					+login-form(loginFormData)
 			.cards__column.cards__column_right
-				.cards__card-wrapper.cards__card-wrapper_datepicker
+				.cards__card-wrapper.cards__card-wrapper_block_datepicker
 					+datepicker(datepickerText[0], datepickerText[1])
-				.cards__card-wrapper.cards__card-wrapper_card
-					+card(data[0], cardText)
-				.cards__card-wrapper.cards__card-wrapper_card
-					+card(data[1], cardText)
+				.cards__card-wrapper.cards__card-wrapper_block_card
+					.cards__card
+						+card(data[0], cardText)
+				.cards__card-wrapper.cards__card-wrapper_block_card
+					.cards__card
+						+card(data[1], cardText)
