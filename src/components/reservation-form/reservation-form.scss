@@ -3,137 +3,137 @@
 .reservation-form {
   padding-top: 40px;
   padding-bottom: 30px;
-}
 
-.reservation-form__title-left {
-  display: inline-block;
-  width: 60%;
-  padding-left: 2px;
-}
-
-.reservation-form__title-text {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.25em;
-  font-family: "Open Sans", Arial, sans-serif;
-  color: $black;
-}
-
-.reservation-form__title-right {
-  display: inline-block;
-  width: 38%;
-  text-align: right;
-}
-
-.reservation-form__title {
-  margin-bottom: 12px;
-
-  &_number {
-    font-weight: 700;
-    font-size: 16px;
-    font-family: Montserrat, Arial, sans-serif;
-  }
-
-  &_category {
-    font-weight: 700;
-    font-size: 12px;
-    font-family: Montserrat, Arial, sans-serif;
-    color: $purple;
-    text-transform: uppercase;
-  }
-
-  &_price {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.6em;
-    font-family: Montserrat, Arial, sans-serif;
-    color: $black-75;
-    font-weight: 700;
-    letter-spacing: -.2px;
-  }
-
-  &_price-text {
-    font-weight: 400;
-    font-size: 12px;
-  }
-}
-
-.reservation-form__dates-selector {
-  margin-bottom: 16px;
-}
-
-.reservation-form__text {
-  display: block;
-  font-weight: 400;
-  font-size: 14px;
-  font-family: Montserrat, Arial, sans-serif;
-  color: $black-75;
-  clear: both;
-  margin-bottom: 15px;
-  line-height: 1.3em;
-
-  &_left {
+  &__title-left {
     display: inline-block;
-    width: 220%*100/320;
+    width: 60%;
+    padding-left: 2px;
   }
 
-  &_right {
-    float: right;
-    width: 75%*100/320;
+  &__title-text {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25em;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: $black;
+  }
+
+  &__title-right {
+    display: inline-block;
+    width: 38%;
     text-align: right;
   }
 
-  &:nth-child(3) {
-    margin-top: 20px;
+  &__title {
+    margin-bottom: 12px;
+
+    &_number {
+      font-weight: 700;
+      font-size: 16px;
+      font-family: Montserrat, Arial, sans-serif;
+    }
+
+    &_category {
+      font-weight: 700;
+      font-size: 12px;
+      font-family: Montserrat, Arial, sans-serif;
+      color: $purple;
+      text-transform: uppercase;
+    }
+
+    &_price {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.6em;
+      font-family: Montserrat, Arial, sans-serif;
+      color: $black-75;
+      font-weight: 700;
+      letter-spacing: -.2px;
+    }
+
+    &_price-text {
+      font-weight: 400;
+      font-size: 12px;
+    }
   }
-}
 
-.reservation-form__i {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: top;
-  text-align: center;
-  color: $black-25;
-  font-weight: 700;
-  font-size: 12px;
-  border: 1px solid $black-25;
-  border-radius: 10px;
-}
+  &__dates-selector {
+    margin-bottom: 16px;
+  }
 
-.reservation-form__price {
-  display: flex;
-  flex-wrap: wrap;
-  clear: both;
-  margin-bottom: 21px;
-  padding-top: 16px;
+  &__text {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Montserrat, Arial, sans-serif;
+    color: $black-75;
+    clear: both;
+    margin-bottom: 15px;
+    line-height: 1.3em;
 
-  &-text {
+    &_left {
+      display: inline-block;
+      width: 220%*100/320;
+    }
+
+    &_right {
+      float: right;
+      width: 75%*100/320;
+      text-align: right;
+    }
+
+    &:nth-child(3) {
+      margin-top: 20px;
+    }
+  }
+
+  &__i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+    text-align: center;
+    color: $black-25;
     font-weight: 700;
-    font-size: 19px;
-    font-family: "Open Sans", Arial, sans-serif;
-    color: $black;
-    flex-grow: 0;
-    margin-right: 5px;
+    font-size: 12px;
+    border: 1px solid $black-25;
+    border-radius: 10px;
   }
 
-  &-space {
-    flex-grow: 1;
-    height: 18px;
-    border-bottom: 1px dotted $black-25;
+  &__price {
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+    margin-bottom: 21px;
+    padding-top: 16px;
+
+    &-text {
+      font-weight: 700;
+      font-size: 19px;
+      font-family: "Open Sans", Arial, sans-serif;
+      color: $black;
+      flex-grow: 0;
+      margin-right: 5px;
+    }
+
+    &-space {
+      flex-grow: 1;
+      height: 18px;
+      border-bottom: 1px dotted $black-25;
+    }
+
+    &-value {
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 1.2em;
+      font-family: Quicksand, Arial, sans-serif;
+      color: $black;
+      flex-grow: 0;
+      margin-left: 5px;
+    }
   }
 
-  &-value {
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 1.2em;
-    font-family: Quicksand, Arial, sans-serif;
-    color: $black;
-    flex-grow: 0;
-    margin-left: 5px;
+  &__btn {
+    clear: both;
   }
-}
-
-.reservation-form__btn {
-  clear: both;
 }
