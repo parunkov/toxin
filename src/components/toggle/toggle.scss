@@ -1,50 +1,52 @@
 @import "../../variables.scss";
 
-.toggle__input {
-  display: none;
-}
+.toggle {
+  &__input {
+    display: none;
+  }
 
-.toggle__label {
-  position: relative;
-}
+  &__label {
+    position: relative;
+  }
 
-.toggle__custom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 20px;
-  background-color: $white;
-  border: 1px solid $black-25;
-  border-radius: 10px;
-}
+  &__custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    background-color: $white;
+    border: 1px solid $black-25;
+    border-radius: 10px;
+  }
 
-.toggle__custom-inner {
-  position: absolute;
-  top: 3px;
-  left: 4px;
-  width: 12px;
-  height: 12px;
-  background-color: $black-25;
-  border-radius: 6px;
-}
+  &__custom-inner {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: $black-25;
+    border-radius: 6px;
+  }
 
-.toggle__input:checked + .toggle__custom {
-  border: 1px solid $purple;
-}
+  &__input:checked + .toggle__custom {
+    border: 1px solid $purple;
+  }
 
-.toggle__input:checked + .toggle__custom .toggle__custom-inner {
-  left: 22px;
-  background: $gradient-purple;
-}
+  &__input:checked + .toggle__custom .toggle__custom-inner {
+    left: 22px;
+    background: $gradient-purple;
+  }
 
-.toggle__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.6em;
-  font-family: Montserrat, Arial, sans-serif;
-  color: $black-75;
-  cursor: pointer;
-  margin-bottom: 10px;
-  padding-left: 50px;
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-family: Montserrat, Arial, sans-serif;
+    color: $black-75;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding-left: 50px;
+  }
 }
