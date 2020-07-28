@@ -1,13 +1,5 @@
 @import "../../variables.scss";
 
-.d-none {
-  display: none;
-}
-
-.d-block {
-  display: block !important;
-}
-
 .search-room {
   flex: 1 0 auto;
   position: relative;
@@ -94,7 +86,6 @@
 
 .search-room__form {
   flex: 0 0 275%*100/1200;
-  // border: 1px solid green;
   min-width: 266px;
   max-width: 310px;
   margin-right: 4.5%;
@@ -107,6 +98,9 @@
 
   @media (max-width: 600px) {
     flex-grow: 1;
+  }
+  &_visible {
+    display: block !important;
   }
 }
 
@@ -184,6 +178,10 @@
 
 .search-room__expandable-text {
   margin-bottom: 30px;
+
+  &_hidden {
+    display: none;
+  }
 
   .checkbox__text {
     margin-bottom: 11px;

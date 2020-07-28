@@ -44,13 +44,13 @@ $('.js-card').each((i) => {
 
 $('.js-search-room__aside-title').click((evt) => {
   evt.preventDefault();
-  $('.js-search-room__form').toggleClass('d-block');
+  $('.js-search-room__form').toggleClass('search-room__form_visible');
   $('.js-search-room__aside-title').toggleClass('js-search-room__aside-title_rotate');
 });
 
 $('.js-search-room__expandable-list-title').click((evt) => {
   evt.preventDefault();
-  $('.js-search-room__expandable-text').toggleClass('d-none');
+  $('.js-search-room__expandable-text').toggleClass('search-room__expandable-text_hidden');
   $('.js-search-room__expandable-list-title').toggleClass('js-search-room__expandable-list-title_rotate');
 });
 
