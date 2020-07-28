@@ -58,10 +58,10 @@ $(document).ready(() => {
     }
   }
 
-  const $js_dropdown__wrapper = $('.js-dropdown:not(.js-dropdown_theme_date)').find('.js-dropdown__wrapper');
+  const $js_dropdown__wrapper = $('.js-dropdown:not(.dropdown_theme_date)').find('.js-dropdown__wrapper');
   for (let i = 2; i < 5 ; i += 1) {
     $js_dropdown__wrapper.eq(i).find('.js-dropdown__arrow').text('expand_less');
-    $js_dropdown__wrapper.eq(i).addClass('js-dropdown__wrapper_expanded');
+    $js_dropdown__wrapper.eq(i).addClass('dropdown__wrapper_expanded');
   }
 
     $('.js-form-elements__section:nth-child(3) .js-form-elements__item:nth-child(3)').bind('DOMSubtreeModified', () => {

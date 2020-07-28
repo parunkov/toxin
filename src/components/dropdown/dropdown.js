@@ -17,27 +17,27 @@ const num2str = function (num, textForms) {
 class Counter {
   constructor(counter) {
     this.$counter = counter;
-    this.$incrementBtn = counter.find('.js-dropdown__counter-button_theme_increment');
-    this.$decrementBtn = counter.find('.js-dropdown__counter-button_theme_decrement');
-    this.$count = counter.find('.js-dropdown__counter');
+    this.$incrementBtn = counter.find('.dropdown__counter-button_theme_increment');
+    this.$decrementBtn = counter.find('.dropdown__counter-button_theme_decrement');
+    this.$count = counter.find('.dropdown__counter');
     this.value = 0;
     this.init();
   }
   init() {
 
-    this.$decrementBtn.addClass('js-dropdown__counter-button_inactive');
+    this.$decrementBtn.addClass('dropdown__counter-button_inactive');
 
     const onIncrementClick = (evt) => {
       evt.preventDefault();
       this.value += 1;
       this.$count.html(this.value);
-      this.$decrementBtn.removeClass('js-dropdown__counter-button_inactive');
+      this.$decrementBtn.removeClass('dropdown__counter-button_inactive');
     }
     const onDecrementClick = (evt) => {
       evt.preventDefault();
-      this.$decrementBtn.addClass('js-dropdown__counter-button_inactive');
+      this.$decrementBtn.addClass('dropdown__counter-button_inactive');
         if (this.value > 1) {
-           this.$decrementBtn.removeClass('js-dropdown__counter-button_inactive');
+           this.$decrementBtn.removeClass('dropdown__counter-button_inactive');
            this.value -= 1;
          } else if (this.value > 0) {
           this.value -= 1;
@@ -75,13 +75,13 @@ class Dropdown {
     const onArrowClick = () => {
       if (this.$arrow.text() === 'expand_more') {
         this.$arrow.text('expand_less');
-        this.$wrapper.addClass('js-dropdown__wrapper_expanded');
+        this.$wrapper.addClass('dropdown__wrapper_expanded');
       } else {
         this.$arrow.text('expand_more');
-        this.$wrapper.removeClass('js-dropdown__wrapper_expanded');
+        this.$wrapper.removeClass('dropdown__wrapper_expanded');
       }
     }
-    if (!this.$dropdown.hasClass('js-dropdown_theme_date')) {
+    if (!this.$dropdown.hasClass('dropdown_theme_date')) {
       this.$arrow.click(onArrowClick);
     }
 
@@ -92,7 +92,7 @@ class Dropdown {
       }
       this.$input.attr('value', this.setValue());
       if (this.$input.attr('value')) {
-        this.$clearBtn.addClass('js-dropdown__clear-btn_visible');
+        this.$clearBtn.addClass('dropdown__clear-btn_visible');
       }
     });
     $controls.each((i) => {
@@ -161,26 +161,26 @@ class Dropdown {
   setBtnClick(e) {
     e.preventDefault();
     this.$arrow.text('expand_more');
-    this.$wrapper.removeClass('js-dropdown__wrapper_expanded');
+    this.$wrapper.removeClass('dropdown__wrapper_expanded');
     this.setValue();
   }
   clearBtnClick(e) {
     e.preventDefault();
     this.total = 0;
-    this.$dropdown.find('.js-dropdown__counter').html('0');
-    this.$clearBtn.removeClass('js-dropdown__clear-btn_visible');
+    this.$dropdown.find('.dropdown__counter').html('0');
+    this.$clearBtn.removeClass('dropdown__clear-btn_visible');
     this.setValue();
     this.$input.attr('value', '');
     for (let i = 0; i < this.counters.length; i += 1) {
-      this.counters[i].$decrementBtn.addClass('js-dropdown__counter-button_inactive');
+      this.counters[i].$decrementBtn.addClass('dropdown__counter-button_inactive');
       this.counters[i].value = 0;
     }
   }
   documentClick(e) {
-    if (!this.$dropdown.hasClass('js-dropdown_theme_date')) {
+    if (!this.$dropdown.hasClass('dropdown_theme_date')) {
       if (!this.$wrapper.is(e.target) && this.$wrapper.has(e.target).length === 0) {
         this.$arrow.text('expand_more');
-        this.$wrapper.removeClass('js-dropdown__wrapper_expanded');
+        this.$wrapper.removeClass('dropdown__wrapper_expanded');
       }
     }
   }

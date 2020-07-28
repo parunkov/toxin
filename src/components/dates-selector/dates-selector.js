@@ -16,8 +16,8 @@ dayjs.extend(customParseFormat);
 class DatesSelector {
 	constructor(datesSelector) {
 		this.$datesSelector = datesSelector;
-		this.arrival = new Dropdown(datesSelector.find('.js-dropdown_theme_date:first-child'));
-		this.departure = new Dropdown(datesSelector.find('.js-dropdown_theme_date:nth-child(2)'));
+		this.arrival = new Dropdown(datesSelector.find('.dropdown_theme_date:first-child'));
+		this.departure = new Dropdown(datesSelector.find('.dropdown_theme_date:nth-child(2)'));
 		this.datepicker = new Datepicker(datesSelector.find('.js-datepicker-block'));
 		this.arrivalDate = {}
 		this.departureDate = {};
