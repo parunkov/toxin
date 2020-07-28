@@ -7,6 +7,49 @@
   background: $white;
   border: 1px solid $black-25;
   border-radius: 4px;
+
+  &__buttons-block {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 4px;
+    margin-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  &__clear-btn,
+  &__set-btn {
+    word-break: break-all;
+    flex: 0 1 auto;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: Montserrat, Arial, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background: transparent;
+
+    &:hover {
+      color: $black-50;
+    }
+  } 
+
+  &__clear-btn {
+    display: none;
+    margin-right: auto;
+    color: $black-50;
+
+    &_visible {
+      display: block;
+    }
+  }
+
+  &__set-btn {
+    display: inline-block;
+    padding-right: 5px;
+    text-align: right;
+    color: $purple;
+  }
 }
 
 .datepicker {
@@ -307,45 +350,3 @@
   color: $purple;
 }
 
-.datepicker-block__buttons-block {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-left: 4px;
-  margin-top: 18px;
-  padding-bottom: 18px;
-}
-
-.datepicker-block__clear-btn,
-.datepicker-block__set-btn {
-  word-break: break-all;
-  flex: 0 1 auto;
-  font-weight: 700;
-  font-size: 12px;
-  font-family: Montserrat, Arial, sans-serif;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: 0;
-  outline: none;
-  background: transparent;
-
-  &:hover {
-    color: $black-50;
-  }
-} 
-
-.datepicker-block__clear-btn {
-  display: none;
-  margin-right: auto;
-  color: $black-50;
-
-  &_visible {
-    display: block;
-  }
-}
-
-.datepicker-block__set-btn {
-  display: inline-block;
-  padding-right: 5px;
-  text-align: right;
-  color: $purple;
-}
