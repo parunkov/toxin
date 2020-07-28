@@ -24,7 +24,7 @@
   display: none;
 }
 
-.js-card__slide-active {
+.card__slide-active {
   position: absolute;
   top: 0;
   left: 0;
@@ -111,8 +111,7 @@
   right: 16px;
 }
 
-.card__control,
-.js-card__control {
+.card__control {
   display: inline-block;
   width: 7.5px;
   height: 7.5px;

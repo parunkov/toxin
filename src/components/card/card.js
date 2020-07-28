@@ -48,14 +48,14 @@ class Card {
   showSlides() {
     const changeSlides = (left, center, right) => {
       this.$slides.eq(left).addClass('js-card__slide-left');
-      this.$slides.eq(center).addClass('js-card__slide-active');
+      this.$slides.eq(center).addClass('card__slide-active');
       this.$slides.eq(right).addClass('js-card__slide-right');
-      this.$controls.eq(center).addClass('js-card__control_active');
+      this.$controls.eq(center).addClass('card__control_active');
     }
     this.$slides.removeClass('js-card__slide-left');
-    this.$slides.removeClass('js-card__slide-active');
+    this.$slides.removeClass('card__slide-active');
     this.$slides.removeClass('js-card__slide-right');
-    this.$controls.removeClass('js-card__control_active');
+    this.$controls.removeClass('card__control_active');
     switch (this.counter) {
       case 0:
       changeSlides(3, 0, 1);
