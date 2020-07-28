@@ -5,30 +5,30 @@ import '../logo/logo';
 import './header.scss';
 import $ from 'jquery';
 
-const $subMenu = $('.js-header__navigation-list .js-header__navigation-list');
-const $itemWithSubMenu = $('.js-header__navigation-item_with-submenu');
+const $subMenu = $('.header__navigation-list .header__navigation-list');
+const $itemWithSubMenu = $('.header__navigation-item_with-submenu');
 
 $itemWithSubMenu.click(
   function (e) {
-    if ($(e.target).parent().hasClass('js-header__navigation-item_with-submenu')) {
+    if ($(e.target).parent().hasClass('header__navigation-item_with-submenu')) {
       e.preventDefault();
     }
-    if ($(this).hasClass('js-header__navigation-item_expanded')) {
-      $itemWithSubMenu.removeClass('js-header__navigation-item_expanded');
+    if ($(this).hasClass('header__navigation-item_expanded')) {
+      $itemWithSubMenu.removeClass('header__navigation-item_expanded');
     } else {
-      $itemWithSubMenu.removeClass('js-header__navigation-item_expanded');
-      $(this).addClass('js-header__navigation-item_expanded');
+      $itemWithSubMenu.removeClass('header__navigation-item_expanded');
+      $(this).addClass('header__navigation-item_expanded');
 
     }
   },
   );
 $(document).click(
   (e) => {
-    if ($(e.target).parent().hasClass('js-header__navigation-item_with-submenu')) {
+    if ($(e.target).parent().hasClass('header__navigation-item_with-submenu')) {
       e.preventDefault();
     } else {
       $subMenu.removeClass('header__navigation-list_visible');
-      $itemWithSubMenu.removeClass('js-header__navigation-item_expanded');
+      $itemWithSubMenu.removeClass('header__navigation-item_expanded');
     }
   },
   );
@@ -42,9 +42,9 @@ class Header {
   init() {
     this.$burger.click(
       () => {
-        this.$header.find('.js-header__navigation > .js-header__navigation-list').toggleClass('js-header__navigation-list_visible');
-        this.$header.find('.js-header__user-block').toggleClass('js-header__user-block_visible');
-        this.$header.find('.js-header__user-block-logged').toggleClass('js-header__user-block_visible');
+        this.$header.find('.header__navigation > .header__navigation-list').toggleClass('header__navigation-list_visible');
+        this.$header.find('.header__user-block').toggleClass('header__user-block_visible');
+        this.$header.find('.header__user-block-logged').toggleClass('header__user-block_visible');
         this.$burger.find('.header__burger-line').toggleClass('header__burger-line_cross');
       },
       );

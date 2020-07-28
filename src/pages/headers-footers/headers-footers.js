@@ -9,8 +9,8 @@ import './headers-footers.scss';
 
 $('.js-header').find('.js-header__navigation-item').eq(0).addClass('js-header__navigation-item_active');
 $('.js-header').find('.js-header__navigation-item').eq(0).find('a')
-  .addClass('js-header__link_active');
+  .addClass('header__link_active');
 
 $('.js-headers-footers__header_logged').find('.js-header__navigation-item').eq(0).addClass('js-header__navigation-item_active');
 $('.js-headers-footers__header_logged').find('.js-header__navigation-item').eq(0).find('a')
-  .addClass('js-header__link_active');
+  .addClass('header__link_active');
