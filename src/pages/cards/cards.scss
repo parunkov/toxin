@@ -19,19 +19,23 @@
     }
   }
 
-  &__column  {
+  &__column {
     flex: 0 0 420%*100/1200;
-    &_right {
-      flex: 0 0 360%*100/1200;
-    }
+
     @media (max-width: $page-container) {
       flex: 1 0 320px;
     }
+
     @media (max-width: 420px) {
       display: block;
       width: 100%;
     }
+
+    &_right {
+      flex: 0 0 360%*100/1200;
+    }
   }
+
   &__card-wrapper {
     width: 380%*100/420;
     max-width: 380px;
@@ -86,11 +90,11 @@
   }
 
   &__card {
-      background: $white;
-      box-shadow: 0 0 25px $shadow;
-      border-right: 4px;
-      min-width: 270px;
-    }
+    background: $white;
+    box-shadow: 0 0 25px $shadow;
+    border-right: 4px;
+    min-width: 270px;
+  }
 
   &__card-wrapper_block_datepicker {
     max-width: 360px;
