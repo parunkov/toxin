@@ -1,61 +1,61 @@
 @import "../../variables.scss";
 
-.checkbox__input {
-  display: none;
-}
-
 .checkbox {
   display: block;
   position: relative;
   vertical-align: top;
-}
 
-.checkbox__custom {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  background-color: $white;
-  border: 1px solid $black-25;
-  border-radius: 4px;
-}
-
-.checkbox__input:checked + .checkbox__custom {
-  background: url("images/check.svg") center center no-repeat;
-  border: 1px solid $purple;
-}
-
-.checkbox__text {
-  display: inline-block;
-  cursor: pointer;
-  margin-bottom: 11px;
-  padding-left: 29px;
-  line-height: 1.4em;
-  color: $black-50;
-
-  &_small {
-    margin-bottom: 12px;
-    padding-left: 29px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    font-family: Montserrat, Arial, sans-serif;
-    color: $black-50;
-    text-transform: none;
+  &__input {
+    display: none;
   }
-}
 
-.checkbox__header {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: Montserrat, Arial, sans-serif;
-  color: $black-75;
-  text-transform: none;
-  display: inline-block;
-  cursor: pointer;
-  margin-bottom: 5px;
-  padding-left: 29px;
+  &__custom {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: $white;
+    border: 1px solid $black-25;
+    border-radius: 4px;
+  }
+
+  &__input:checked + .checkbox__custom {
+    background: url("images/check.svg") center center no-repeat;
+    border: 1px solid $purple;
+  }
+
+  &__text {
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 11px;
+    padding-left: 29px;
+    line-height: 1.4em;
+    color: $black-50;
+
+    &_small {
+      margin-bottom: 12px;
+      padding-left: 29px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      font-family: Montserrat, Arial, sans-serif;
+      color: $black-50;
+      text-transform: none;
+    }
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Montserrat, Arial, sans-serif;
+    color: $black-75;
+    text-transform: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding-left: 29px;
+  }
 }
