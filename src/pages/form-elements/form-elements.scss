@@ -281,12 +281,12 @@
 .form-elements__section:nth-child(5) .form-elements__item:nth-child(2) {
   margin-bottom: 50px;
 
-  h3 {
+  .form-elements__item-title {
     position: relative;
     display: block;
   }
 
-  h3::after {
+  .form-elements__item-title::after {
     content: "expand_more";
     position: absolute;
     top: -1px;
@@ -306,11 +306,11 @@
 .form-elements__section:nth-child(5) .form-elements__item:nth-child(2) {
   margin-bottom: 91px;
 
-  h3 {
+  .form-elements__item-title {
     margin-bottom: 18px;
   }
 
-  h3::after {
+  .form-elements__item-title::after {
     transform: rotate(180deg);
   }
 }
@@ -324,7 +324,7 @@
   margin-bottom: 40px;
   padding-right: 5px;
 
-  h3 {
+  .form-elements__item-title {
     margin-bottom: 17px;
   }
 }
@@ -333,7 +333,7 @@
   margin-bottom: 40px;
   padding-right: 5px;
 
-  h3 {
+  .form-elements__item-title {
     margin-bottom: 14px;
   }
 }
