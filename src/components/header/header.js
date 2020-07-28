@@ -27,7 +27,7 @@ $(document).click(
     if ($(e.target).parent().hasClass('js-header__navigation-item_with-submenu')) {
       e.preventDefault();
     } else {
-      $subMenu.removeClass('js-header__navigation-list_visible');
+      $subMenu.removeClass('header__navigation-list_visible');
       $itemWithSubMenu.removeClass('js-header__navigation-item_expanded');
     }
   },
@@ -45,7 +45,7 @@ class Header {
         this.$header.find('.js-header__navigation > .js-header__navigation-list').toggleClass('js-header__navigation-list_visible');
         this.$header.find('.js-header__user-block').toggleClass('js-header__user-block_visible');
         this.$header.find('.js-header__user-block-logged').toggleClass('js-header__user-block_visible');
-        this.$burger.find('.js-header__burger-line').toggleClass('js-header__burger-line_cross');
+        this.$burger.find('.header__burger-line').toggleClass('header__burger-line_cross');
       },
       );
   }
