@@ -8,7 +8,7 @@ import DatesSelector from '../dates-selector/dates-selector';
 
 const selector = new DatesSelector($('.js-search-form .js-dates-selector'));
 
-$('.js-search-form .button_theme_arrow').click((e) => {
+$('.js-search-form .button_translucent_theme_with-arrow').click((e) => {
 	e.preventDefault();
 	window.location.href = 'search-room.html';
 });

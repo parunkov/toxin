@@ -17,7 +17,7 @@
   border-radius: 22px;
 
   &:hover,
-  &_transparent {
+  &_translucent {
     opacity: .5;
   }
 
@@ -52,7 +52,7 @@
     opacity: 1;
   }
 
-  &_theme_arrow {
+  &_translucent_theme_with-arrow {
     display: block;
     padding-right: 40px;
     padding-left: 38px;
@@ -62,7 +62,7 @@
     border: 0;
   }
 
-  &_theme_arrow::after {
+  &_translucent_theme_with-arrow::after {
     content: " arrow_forward";
     position: absolute;
     top: 50%;
