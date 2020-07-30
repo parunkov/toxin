@@ -100,9 +100,7 @@ block main
 				name: 'registration-form__radio',
 				text: ['Мужчина', 'Женщина']
 			}
-		const toggle = {
-				text: ['Получать спецпредложения']
-			}
+		const toggleText = 'Получать спецпредложения';
 		const sliderTitle = 'Range Slider';
 		const btnText = 'click me';
 		const btnText2 = 'перейти к оплате';
@@ -200,8 +198,8 @@ block main
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
 						+title(headers[2])
-					+toggle(toggle)
-					+toggle(toggle)
+					+toggle(toggleText)
+					+toggle(toggleText)
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
 						+title(headers[3])

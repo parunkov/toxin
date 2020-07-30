@@ -1,8 +1,8 @@
 include ../../components/title/title.pug
 
-mixin input(data)
+mixin input(data = {})
 	-
-		const {header, type, name, value, placeholder, text, icon, color, modifiers} = data;
+		const {header, type = 'text', name, value, placeholder, text, icon, color, modifiers} = data;
 		let className = 'input__field';
 		if (modifiers) {
 			modifiers.forEach((item, i) => {

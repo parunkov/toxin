@@ -1,10 +1,7 @@
-mixin toggle(data)
-	-
-		const {text} = data;
+mixin toggle(text)
 	.toggle
-		each value, i in text
-			label.toggle__label
-				input(type="checkbox" name="toggle" class="toggle__input js-toggle__input")
-				.toggle__custom
-					.toggle__custom-inner
-				p.toggle__text= value
+		label.toggle__label
+			input(type="checkbox" name="toggle" class="toggle__input js-toggle__input")
+			.toggle__custom
+				.toggle__custom-inner
+			p.toggle__text= text

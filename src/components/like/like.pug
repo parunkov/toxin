@@ -1,4 +1,6 @@
 mixin like(text)
+	-
+		if (!text) {text = '1'}
 	.like
 		label.like__label.js-like__label
 			input(type="checkbox" name="like" class="like__input js-like__input")
