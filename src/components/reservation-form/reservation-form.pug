@@ -3,6 +3,7 @@ mixin reservation-form(data)
 	include ../../components/button/button.pug
 	-
 		const {title, title2, titlePrice, titlePrice2, dropdown1, dropdown2, dropdown3, text, total, btnText, datepickerText1, datepickerText2} = data;
+		const  {price, priceValue, tax1, tax1End, tax1Value, tax2, tax2Value} = text;
 	article.reservation-form.js-reservation-form
 		.reservation-form__title
 			.reservation-form__title-left
@@ -15,19 +16,19 @@ mixin reservation-form(data)
 				+dates-selector(dropdown1, dropdown2, datepickerText1, datepickerText2)
 			+dropdown(dropdown3)
 			p.reservation-form__text 
-				span.reservation-form__text_left #{text[0]} 
-				span.reservation-form__text_right #{text[1]}
+				span.reservation-form__text_left #{price} 
+				span.reservation-form__text_right #{priceValue}
 			p.reservation-form__text
-				span.reservation-form__text_left #{text[2]}&nbsp;#{text[3]}
+				span.reservation-form__text_left #{tax1}&nbsp;#{tax1End}
 				span.reservation-form__i i
-				span.reservation-form__text_right #{text[4]}
+				span.reservation-form__text_right #{tax1Value}
 			p.reservation-form__text
-				span.reservation-form__text_left #{text[5]}
+				span.reservation-form__text_left #{tax2}
 				span.reservation-form__i i
-				span.reservation-form__text_right #{text[6]}
+				span.reservation-form__text_right #{tax2Value}
 			.reservation-form__price
-				span.reservation-form__price-text #{total[0]}
+				span.reservation-form__price-text #{total.text}
 				span.reservation-form__price-space
-				h2.reservation-form__price-value #{total[1]}
+				h2.reservation-form__price-value #{total.value}
 			.reservation-form__btn
 				+button({text: btnText, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})

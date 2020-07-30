@@ -32,8 +32,19 @@ block main
 				item3: 'младенцы',
 				clear: '1'
 			}, 
-			text: ['9 990₽ х 4 суток', '39 960₽', 'Сбор за услуги: скидка 2', '179₽', '0₽', 'Сбор за дополнительные услуги', '300₽'],
-			total: ['Итого', '38 081₽'],
+			text: {
+				price: '9 990₽ х 4 суток',
+				priceValue: '39 960₽',
+				tax1: 'Сбор за услуги: скидка 2',
+				tax1End: '179₽',
+				tax1Value: '0₽',
+				tax2: 'Сбор за дополнительные услуги',
+				tax2Value: '300₽'
+			},
+			total: {
+				text: 'Итого',
+				value: '38 081₽'
+			},
 			btnText: 'забронировать',
 			datepickerText1: datepickerText[0],
 			datepickerText2: datepickerText[1]
