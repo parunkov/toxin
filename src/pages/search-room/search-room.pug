@@ -70,7 +70,13 @@ block main
 				}
 				const sliderTitle = 'диапазон цены';
 				const sliderText = 'Стоимость за сутки пребывания в номере';
-				const headers = ['Фильтры', 'Checkbox Buttons', 'доступность', 'дополнительные удобства', 'Номера, которые мы для вас подобрали'];
+				const headers = {
+					filters: 'Фильтры',
+					checkbox: 'Checkbox Buttons',
+					availability: 'доступность',
+					facilities: 'дополнительные удобства',
+					rooms: 'Номера, которые мы для вас подобрали'
+				};
 				const checkboxList1 = {
 					text: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
 				}
@@ -98,7 +104,7 @@ block main
 		.search-room__container
 			.search-room__filters
 				h3.search-room__aside-title.js-search-room__aside-title
-					+title(headers[0])
+					+title(headers.filters)
 			aside.search-room__form.js-search-room__form
 				form.search-room__form-content.js-search-room__form-content
 					.search-room__input.js-search-room__input
@@ -110,21 +116,21 @@ block main
 					.search-room__slider-text #{sliderText}
 					.search-room__checkbox.js-search-room__checkbox
 						h3.search-room__checkbox-title
-							+title(headers[1])
+							+title(headers.checkbox)
 						+checkbox-list(checkboxList1)
 					.search-room__rich-checkbox
 						h3.search-room__rich-checkbox-title
-							+title(headers[2])
+							+title(headers.availability)
 						+checkbox-list(checkboxList2)
 					.search-room__room-dropdown.js-search-room__room-dropdown
 						+dropdown(dropdown2)
 					.search-room__expandable-list
 						h3.search-room__expandable-list-title.js-search-room__expandable-list-title
-							+title(headers[3])
+							+title(headers.facilities)
 						.search-room__expandable-text.js-search-room__expandable-text.search-room__expandable-text_hidden
 							+checkbox-list(checkbox3)
 			section.search-room__cards-wrapper
-				h1.search-room__title #{headers[4]}
+				h1.search-room__title #{headers.rooms}
 				.search-room__cards
 					each val, i in data
 						.search-room__card
