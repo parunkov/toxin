@@ -78,11 +78,21 @@ block main
 			icon: 'expand_more',
 			modifiers: ['withoutHoverEffect']
 		}
-		const headers = ['Checkbox Buttons', 'Radio Buttons', 'Toggle', 'like button', 'rate button', 'buttons', 'pagination', 'expandable checkbox list', 'rich Checkbox Buttons', 'bullet list']
-		const checkbox1 = {
+		const headers = {
+			checkbox: 'Checkbox Buttons',
+			radio: 'Radio Buttons',
+			toggle: 'Toggle',
+			like: 'like button',
+			rate: 'rate button',
+			buttons: 'buttons',
+			pagination: 'pagination',
+			expandableList: 'expandable checkbox list',
+			richCeckbox: 'rich Checkbox Buttons',
+			bullet: 'bullet list'}
+		const checkboxList1 = {
 			text: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
 		}
-		const checkbox2 = {
+		const checkboxList2 = {
 			text: ['Завтрак', 
 					'Письменный стол', 
 					'Стул для кормления',
@@ -90,7 +100,7 @@ block main
 					'Телевизор',
 					'Шампунь']
 		}
-		const checkbox3 = {
+		const checkboxList3 = {
 			text: ['Ширина коридоров в номере не менее 91 см.', 
 				'На 1 этаже вас встретит специалист  и проводит до номера.'],
 			title: ['Широкий коридор',
@@ -189,25 +199,25 @@ block main
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers[0])
-					+checkbox-list(checkbox1)
+						+title(headers.checkbox)
+					+checkbox-list(checkboxList1)
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers[1])
+						+title(headers.radio)
 					+radio(radio)
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers[2])
+						+title(headers.toggle)
 					+toggle(toggleText)
 					+toggle(toggleText)
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers[3])
+						+title(headers.like)
 					+like('2')
 					+like('12')
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers[4])
+						+title(headers.rate)
 					+rate(4, 1)
 					+rate(5, 1)
 			section.form-elements__section.js-form-elements__section
@@ -215,7 +225,7 @@ block main
 					+range-slider(sliderTitle)
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers[5])
+						+title(headers.buttons)
 					.form-elements__btn
 						+button({text: btnText, tag: 'div'})
 					.form-elements__btn
@@ -232,7 +242,7 @@ block main
 						+button({text: btnText2, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers[6])
+						+title(headers.pagination)
 					+pagination(1, 12, paginationText)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
@@ -242,26 +252,26 @@ block main
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers[7])
+						+title(headers.expandableList)
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers[7])
-					+checkbox-list(checkbox2)
+						+title(headers.expandableList)
+					+checkbox-list(checkboxList2)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
 					+dropdown(dropdown3)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers[8])
-					+checkbox-list(checkbox3)
+						+title(headers.richCeckbox)
+					+checkbox-list(checkboxList3)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
 					+dropdown(dropdown3)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers[9])
+						+title(headers.bullet)
 					ul.form-elements__bullet-list
 						li.form-elements__bullet-item #{bullets[0]}
 						li.form-elements__bullet-item #{bullets[1]}

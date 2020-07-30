@@ -71,10 +71,10 @@ block main
 				const sliderTitle = 'диапазон цены';
 				const sliderText = 'Стоимость за сутки пребывания в номере';
 				const headers = ['Фильтры', 'Checkbox Buttons', 'доступность', 'дополнительные удобства', 'Номера, которые мы для вас подобрали'];
-				const checkbox1 = {
+				const checkboxList1 = {
 					text: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
 				}
-				const checkbox2 = {
+				const checkboxList2 = {
 					text: ['Ширина коридоров в номере не менее 91 см.', 
 						'На 1 этаже вас встретит специалист  и проводит до номера.'],
 					title: ['Широкий коридор',
@@ -107,11 +107,11 @@ block main
 					.search-room__checkbox.js-search-room__checkbox
 						h3.search-room__checkbox-title
 							+title(headers[1])
-						+checkbox-list(checkbox1)
+						+checkbox-list(checkboxList1)
 					.search-room__rich-checkbox
 						h3.search-room__rich-checkbox-title
 							+title(headers[2])
-						+checkbox-list(checkbox2)
+						+checkbox-list(checkboxList2)
 					.search-room__room-dropdown.js-search-room__room-dropdown
 						+dropdown(dropdown2)
 					.search-room__expandable-list
