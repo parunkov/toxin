@@ -21,7 +21,7 @@ import '../../components/input/input';
 import '../../components/dropdown/dropdown';
 import '../../components/range-slider/range-slider';
 import '../../components/checkbox-list/checkbox-list';
-import '../../components/card/card';
+import '../../components/room-card/room-card';
 import '../../components/footer/footer';
 import '../../components/datepicker-block/datepicker-block';
 import '../../components/pagination/pagination';
@@ -31,7 +31,7 @@ import './search-room.scss';
 import $ from 'jquery';
 import Datepicker from '../../components/datepicker-block/datepicker-block';
 import Dropdown from '../../components/dropdown/dropdown';
-import Card from '../../components/card/card';
+import Card from '../../components/room-card/room-card';
 
 const $dropdowns = [];
 $('.js-dropdown').each((i) =>{

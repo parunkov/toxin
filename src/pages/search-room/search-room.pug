@@ -13,7 +13,7 @@ block main
 		include ../../components/dropdown/dropdown.pug
 		include ../../components/range-slider/range-slider.pug
 		include ../../components/checkbox-list/checkbox-list.pug
-		include ../../components/card/card.pug
+		include ../../components/room-card/room-card.pug
 		include ../../components/datepicker-block/datepicker-block.pug
 		include ../../components/pagination/pagination.pug
 		include ../../components/filter-date-driopdown/filter-date-driopdown.pug
@@ -132,7 +132,7 @@ block main
 				.search-room__cards
 					each value, i in data
 						.search-room__card
-							+card(value, cardText)
+							+room-card(value, cardText)
 				.search-room__pagination
 					+pagination(1, 12, paginationText)
 	+footer

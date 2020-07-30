@@ -1,16 +1,16 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../rate/rate';
-import './card.scss';
+import './room-card.scss';
 import $ from 'jquery';
 
 class Card {
   constructor(card) {
     this.$card = card;
-    this.$slides = card.find('.js-card__slide');
-    this.$left = card.find('.js-card__arrow_left');
-    this.$right = card.find('.js-card__arrow_right');
-    this.$controls = card.find('.js-card__control');
+    this.$slides = card.find('.js-room-card__slide');
+    this.$left = card.find('.js-room-card__arrow_left');
+    this.$right = card.find('.js-room-card__arrow_right');
+    this.$controls = card.find('.js-room-card__control');
     this.counter = 0;
     this.init();
   }
@@ -47,15 +47,15 @@ class Card {
 
   showSlides() {
     const changeSlides = (left, center, right) => {
-      this.$slides.eq(left).addClass('js-card__slide-left');
-      this.$slides.eq(center).addClass('card__slide-active');
-      this.$slides.eq(right).addClass('js-card__slide-right');
-      this.$controls.eq(center).addClass('card__control_active');
+      this.$slides.eq(left).addClass('js-room-card__slide-left');
+      this.$slides.eq(center).addClass('room-card__slide-active');
+      this.$slides.eq(right).addClass('js-room-card__slide-right');
+      this.$controls.eq(center).addClass('room-card__control_active');
     }
-    this.$slides.removeClass('js-card__slide-left');
-    this.$slides.removeClass('card__slide-active');
-    this.$slides.removeClass('js-card__slide-right');
-    this.$controls.removeClass('card__control_active');
+    this.$slides.removeClass('js-room-card__slide-left');
+    this.$slides.removeClass('room-card__slide-active');
+    this.$slides.removeClass('js-room-card__slide-right');
+    this.$controls.removeClass('room-card__control_active');
     switch (this.counter) {
       case 0:
       changeSlides(3, 0, 1);

@@ -6,7 +6,7 @@ block title
 block main
 	.cards
 		include ../../components/ui-kit/ui-kit.pug
-		include ../../components/card/card.pug
+		include ../../components/room-card/room-card.pug
 		include ../../components/datepicker-block/datepicker-block.pug
 		include ../../components/login-form/login-form.pug
 		include ../../components/registration-form/registration-form.pug
@@ -190,7 +190,7 @@ block main
 					+datepicker(datepickerText[0], datepickerText[1])
 				.cards__card-wrapper.cards__card-wrapper_block_card
 					.cards__card
-						+card(data[0], cardText)
+						+room-card(data[0], cardText)
 				.cards__card-wrapper.cards__card-wrapper_block_card
 					.cards__card
-						+card(data[1], cardText)
+						+room-card(data[1], cardText)

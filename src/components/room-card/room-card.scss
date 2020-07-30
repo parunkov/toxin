@@ -1,6 +1,6 @@
 @import "../../variables.scss";
 
-.card {
+.room-card {
   height: 257.5px;
   max-width: 270px;
   display: inline-block;
@@ -77,15 +77,15 @@
 
   &__slider:hover {
 
-    .card__arrow {
+    .room-card__arrow {
       color: $white;
     }
 
-    .card__shadow_left {
+    .room-card__shadow_left {
       background-image: linear-gradient(90deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
     }
 
-    .card__shadow_right {
+    .room-card__shadow_right {
       background-image: linear-gradient(-90deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
     }
   }
