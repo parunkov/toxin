@@ -6,7 +6,7 @@ mixin room-card(data, text)
 	section(class="room-card js-room-card")
 		.room-card__slider
 			.room-card__slide-wrapper
-				- for (let i = 0; i < 4; i++)
+				- for (let i = 0; i < img.length; i++)
 					.room-card__slide.js-room-card__slide
 						img(src=img[i])
 				.room-card__shadow.room-card__shadow_left
@@ -14,7 +14,7 @@ mixin room-card(data, text)
 				.room-card__arrow.room-card__arrow_left.js-room-card__arrow_left expand_more
 				.room-card__arrow.room-card__arrow_right.js-room-card__arrow_right expand_more
 				.room-card__controls
-					- for (let i = 0; i < 4; i++)
+					- for (let i = 0; i < img.length; i++)
 						.room-card__control.js-room-card__control
 		.room-card__text
 			a(class="room-card__link" href= link)
