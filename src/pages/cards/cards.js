@@ -15,7 +15,7 @@ import Card from '../../components/room-card/room-card';
 const datepicker = new Datepicker($('.cards__column_right .js-datepicker-block'));
 
 const cards = [];
-$('.js-card').each((i) => {
-  cards[i] = new Card($('.js-card').eq(i));
+$('.js-room-card').each((i) => {
+  cards[i] = new Card($('.js-room-card').eq(i));
 });
 

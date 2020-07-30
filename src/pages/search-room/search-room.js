@@ -39,8 +39,8 @@ $('.js-dropdown').each((i) =>{
 });
 
 const cards = [];
-$('.js-card').each((i) => {
-  cards[i] = new Card($('.js-card').eq(i));
+$('.js-room-card').each((i) => {
+  cards[i] = new Card($('.js-room-card').eq(i));
 });
 
 $('.js-search-room__aside-title').click((evt) => {

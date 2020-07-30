@@ -1,7 +1,7 @@
 include ../rate/rate.pug
 mixin room-card(data, text)
 	-
-		const {img, num, lux, price, rate, rev} = data;
+		const {img, num, lux, price, rate, rev, link} = data;
 		const {currency, time, reviews} = text;
 	section(class="room-card js-room-card")
 		.room-card__slider
@@ -17,7 +17,7 @@ mixin room-card(data, text)
 					- for (let i = 0; i < 4; i++)
 						.room-card__control.js-room-card__control
 		.room-card__text
-			a(class="room-card__a" href= link)
+			a(class="room-card__link" href= link)
 				span.room-card__num-wrapper
 					span.room-card__num №
 					h2.room-card__header #{num}
