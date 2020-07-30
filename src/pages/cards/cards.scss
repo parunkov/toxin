@@ -33,6 +33,15 @@
 
     &_right {
       flex: 0 0 360%*100/1200;
+
+      @media (max-width: $page-container) {
+        flex: 1 0 320px;
+      }
+
+      @media (max-width: 420px) {
+        display: block;
+        width: 100%;
+      }
     }
   }
 
