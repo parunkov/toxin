@@ -9,7 +9,7 @@
     display: none;
   }
 
-  &__custom {
+  &__inner {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -21,7 +21,7 @@
     border-radius: 4px;
   }
 
-  &__input:checked + .checkbox__custom {
+  &__input:checked + .checkbox__inner {
     background: url("images/check.svg") center center no-repeat;
     border: 1px solid $purple;
   }

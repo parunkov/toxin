@@ -10,7 +10,7 @@
     position: relative;
   }
 
-  &__custom {
+  &__inner {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,7 +21,7 @@
     border-radius: 10px;
   }
 
-  &__custom-inner {
+  &__inner-circle {
     position: absolute;
     top: 3px;
     left: 4px;
@@ -31,11 +31,11 @@
     border-radius: 6px;
   }
 
-  &__input:checked + .toggle__custom {
+  &__input:checked + .toggle__inner {
     border: 1px solid $purple;
   }
 
-  &__input:checked + .toggle__custom .toggle__custom-inner {
+  &__input:checked + .toggle__inner .toggle__inner-circle {
     left: 22px;
     background: $gradient-purple;
   }

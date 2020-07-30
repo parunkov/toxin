@@ -10,7 +10,7 @@
     display: none;
   }
 
-  &__custom {
+  &__inner {
     min-width: 40px;
     height: 20px;
     padding: 1px;
@@ -19,13 +19,13 @@
     background: $black-25;
   }
 
-  &__inner {
+  &__inner-text {
     display: block;
     background: $white;
     border-radius: 9px;
   }
 
-  &__custom::after {
+  &__inner::after {
     content: "favorite_border";
     position: absolute;
     top: 5px;
@@ -50,16 +50,16 @@
     color: $black-25;
   }
 
-  &__input:checked + .like__custom {
+  &__input:checked + .like__inner {
     background: $gradient-purple;
   }
 
-  &__input:checked + .like__custom::after {
+  &__input:checked + .like__inner::after {
     content: "favorite";
     color: $purple;
   }
 
-  &__input:checked + .like__custom .like__text {
+  &__input:checked + .like__inner .like__text {
     color: $purple;
   }
 }

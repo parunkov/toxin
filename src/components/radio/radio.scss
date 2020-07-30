@@ -16,7 +16,7 @@
     }
   }
 
-  &__custom {
+  &__inner {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -28,7 +28,7 @@
     border-radius: 10px;
   }
 
-  &__input:checked + .radio__custom {
+  &__input:checked + .radio__inner {
     cursor: default;
     top: 1px;
     left: 1px;

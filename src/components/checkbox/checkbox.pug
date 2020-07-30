@@ -1,7 +1,7 @@
 mixin checkbox(index, title, text)
 	label.checkbox
 		input(type="checkbox" name=`checkbox-${index}` class="checkbox__input js-checkbox__input")
-		.checkbox__custom
+		.checkbox__inner
 		if title
 			h4.checkbox__header= title
 		else
