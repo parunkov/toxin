@@ -149,43 +149,8 @@
     margin-bottom: 29px;
   }
 
-  &__expandable-list-title {
-    position: relative;
-    margin-bottom: 18px;
-    cursor: pointer;
-
-    &::after,
-    &_rotate::after {
-      content: "expand_more";
-      position: absolute;
-      top: -1px;
-      right: 12px;
-      display: block;
-      font-weight: 400;
-      font-size: 24px;
-      font-family: "Material Icons";
-      text-align: center;
-      color: $black-50;
-      text-transform: none;
-      background: #ffffff;
-      border-radius: 4px;
-    }
-
-    &_rotate::after {
-      transform: rotate(180deg);
-    }
-  }
-
-  &__expandable-text {
+  &__expandable-list {
     margin-bottom: 30px;
-
-    &_hidden {
-      display: none;
-    }
-
-    .checkbox__text {
-      margin-bottom: 11px;
-    }
   }
 
   &__cards-wrapper {

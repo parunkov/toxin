@@ -20,6 +20,7 @@ block main
 	include ../../components/dates-selector/dates-selector.pug
 	include ../../components/filter-date-driopdown/filter-date-driopdown.pug
 	include ../../components/title/title.pug
+	include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
 	-
 		const input1 = {
 			header: 'Text Field',
@@ -251,12 +252,9 @@ block main
 					+dropdown(dropdown2)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
-					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers.expandableList)
+					+expandable-checkbox-list(headers.expandableList, checkboxList2)
 				.form-elements__item.js-form-elements__item
-					h3.form-elements__item-title.js-form-elements__item-title
-						+title(headers.expandableList)
-					+checkbox-list(checkboxList2)
+					+expandable-checkbox-list(headers.expandableList, checkboxList2)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
 					+dropdown(dropdown3)

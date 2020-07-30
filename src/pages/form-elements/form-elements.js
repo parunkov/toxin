@@ -16,6 +16,7 @@ import '../../components/info/info';
 import '../../components/review/review';
 import '../../components/dates-selector/dates-selector';
 import '../../components/filter-date-driopdown/filter-date-driopdown';
+import '../../components/expandable-checkbox-list/expandable-checkbox-list';
 import './form-elements.scss';
 import $ from 'jquery';
 import Dropdown from '../../components/dropdown/dropdown';
@@ -71,4 +72,6 @@ $(document).ready(() => {
       $paginationPage.addClass('paginationjs-page_size_small');
     }
   });
+
+  $('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .js-expandable-checkbox-list__title').trigger('click');
 });

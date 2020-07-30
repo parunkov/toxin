@@ -26,6 +26,7 @@ import '../../components/footer/footer';
 import '../../components/datepicker-block/datepicker-block';
 import '../../components/pagination/pagination';
 import '../../components/filter-date-driopdown/filter-date-driopdown';
+import '../../components/expandable-checkbox-list/expandable-checkbox-list';
 import './search-room.scss';
 import $ from 'jquery';
 import Datepicker from '../../components/datepicker-block/datepicker-block';
@@ -46,12 +47,6 @@ $('.js-search-room__aside-title').click((evt) => {
   evt.preventDefault();
   $('.js-search-room__form').toggleClass('search-room__form_visible');
   $('.js-search-room__aside-title').toggleClass('js-search-room__aside-title_rotate');
-});
-
-$('.js-search-room__expandable-list-title').click((evt) => {
-  evt.preventDefault();
-  $('.js-search-room__expandable-text').toggleClass('search-room__expandable-text_hidden');
-  $('.js-search-room__expandable-list-title').toggleClass('js-search-room__expandable-list-title_rotate');
 });
 
 $('.js-search-room__checkbox .js-checkbox__input:gt(0)').prop('checked', true);

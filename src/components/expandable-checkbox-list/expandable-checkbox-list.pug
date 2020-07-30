@@ -1,0 +1,9 @@
+include ../../components/checkbox-list/checkbox-list.pug
+include ../../components/title/title.pug
+
+mixin expandable-checkbox-list(title, checkboxList)
+	.expandable-checkbox-list.js-expandable-checkbox-list
+		h3.expandable-checkbox-list__title.js-expandable-checkbox-list__title
+			+title(title)
+		.expandable-checkbox-list__text.js-expandable-checkbox-list__text.expandable-checkbox-list__text_hidden
+			+checkbox-list(checkboxList)
