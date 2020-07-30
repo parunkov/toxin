@@ -49,7 +49,14 @@ block main
 			datepickerText1: datepickerText[0],
 			datepickerText2: datepickerText[1]
 		}
-		const headers = ['Сведения о номере', 'Впечатления от номера', 'Отзывы посетителей номера', '2 отзыва', 'Правила', 'Отмена'];
+		const headers = {
+			information: 'Сведения о номере',
+			impressions: 'Впечатления от номера',
+			reviews: 'Отзывы посетителей номера',
+			reviewsNumber: '2 отзыва',
+			rules: 'Правила',
+			cancel: 'Отмена'
+		};
 		const info1 = {
 			img: 'insert_emoticon',
 			header: 'Комфорт',
@@ -101,7 +108,7 @@ block main
 				.room-details__content-column
 					.room-details__content-row
 						article.room-details__article
-							h2.room-details__title #{headers[0]}
+							h2.room-details__title #{headers.information}
 							.room-details__info
 								+info(info1)
 							.room-details__info
@@ -109,7 +116,7 @@ block main
 							.room-details__info
 								+info(info3)
 						article.room-details__article
-							h2.room-details__title #{headers[1]}
+							h2.room-details__title #{headers.impressions}
 							.room-details__chart
 								.room-details__chart.js-room-details__chart
 								.room-details__chart-white-mask.js-room-details__chart-white-mask
@@ -131,21 +138,21 @@ block main
 									p.room-details__chart-text-item #{chart[5]}
 					.room-details__content-row
 						article.room-details__article
-							h2.room-details__title #{headers[2]}
-								span.room-details__title-right-part #{headers[3]}
+							h2.room-details__title #{headers.reviews}
+								span.room-details__title-right-part #{headers.reviewsNumber}
 							.room-details__review.room-details__review_1.js-room-details__review_1
 								+review(review1)
 							.room-details__review.room-details__review_2
 								+review(review2)
 					.room-details__content-row
 						article.room-details__article
-							h2.room-details__title #{headers[4]}
+							h2.room-details__title #{headers.rules}
 							ul.room-details__ul
 								li.room-details__bullet-item #{bullets[0]}
 								li.room-details__bullet-item #{bullets[1]}
 								li.room-details__bullet-item #{bullets[2]}
 						article.room-details__article
-							h2.room-details__title.room-details__title #{headers[5]}
+							h2.room-details__title.room-details__title #{headers.cancel}
 							p.room-details__text #{text}
 				.room-details__form-column
 					.room-details__form
