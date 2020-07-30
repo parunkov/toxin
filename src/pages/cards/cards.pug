@@ -158,7 +158,11 @@ block main
 				new RoomData(['img/image1.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 888, 'люкс', '9 990', 5, 145),
 				new RoomData(['img/image2.jpg', 'img/image13.jpg', 'img/image14.jpg', 'img/image15.jpg'], 840, '', '9 990', 4, 65)
 				];
-			const cardText = ['₽', 'в сутки', 'Отзывов'];
+			const cardText = {
+				currency: '₽',
+				time: 'в сутки',
+				reviews: 'Отзывов'
+			};
 		.cards__container
 			.cards__column
 				.cards__card-wrapper.cards__card-wrapper_block_search
