@@ -5,14 +5,14 @@ mixin input(data)
 		const {header, type, name, value, placeholder, text, icon, color, modifiers} = data;
 		let className = 'input__field';
 		if (modifiers) {
-			for (let i = 0; i < modifiers.length; i += 1) {
-				className = modifiers[i] === 'themeLight' ? className + ' input__field_theme_light' : className;
-				className = modifiers[i] === 'themeUpprecase' ? className + ' input__field_theme_uppercase' : className;
-				className = modifiers[i] === 'focused' ? className + ' input__field_focused' : className;
-				className = modifiers[i] === 'withArrow' ? className + ' input__field_with-arrow' : className;
-				className = modifiers[i] === 'withoutHoverEffect' ? className + ' input__field_theme_without-hover-effect' : className;
-				className = modifiers[i] === 'typeMasked' ? className + ' js-input__field_type_masked' : className;
-			}
+			modifiers.forEach((item, i) => {
+				className = item === 'themeLight' ? className + ' input__field_theme_light' : className;
+				className = item === 'themeUpprecase' ? className + ' input__field_theme_uppercase' : className;
+				className = item === 'focused' ? className + ' input__field_focused' : className;
+				className = item === 'withArrow' ? className + ' input__field_with-arrow' : className;
+				className = item === 'withoutHoverEffect' ? className + ' input__field_theme_without-hover-effect' : className;
+				className = item === 'typeMasked' ? className + ' js-input__field_type_masked' : className;
+			});
 		}
 	.input.js-input
 		if header
