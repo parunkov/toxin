@@ -11,12 +11,12 @@ mixin headerMarkup(data)
 			button(type="button" class="header__burger js-header__burger")
 				.header__burger-line
 			ul.header__navigation-list.js-header__navigation-list
-				each val, i in menu
+				each value, i in menu
 					if menu[i].incl
 						li.header__navigation-item.js-header__navigation-item.header__navigation-item_with-submenu.js-header__navigation-item_with-submenu
 							a(href=menu[i].href class="header__link") !{menu[i].item}
 							ul.header__navigation-list.js-header__navigation-list
-								each val, j in menu[i].incl
+								each value, j in menu[i].incl
 									li.header__navigation-item.js-header__navigation-item
 										a(href=menu[i].hrefs[j] class="header__link") !{menu[i].incl[j]}
 					else

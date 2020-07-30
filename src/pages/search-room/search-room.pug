@@ -132,9 +132,9 @@ block main
 			section.search-room__cards-wrapper
 				h1.search-room__title #{headers.rooms}
 				.search-room__cards
-					each val, i in data
+					each value, i in data
 						.search-room__card
-							+card(val, cardText)
+							+card(value, cardText)
 				.search-room__pagination
 					+pagination(1, 12, paginationText)
 	+footer
