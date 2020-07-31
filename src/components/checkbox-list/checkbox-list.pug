@@ -1,19 +1,14 @@
 include ../../components/checkbox/checkbox.pug
 
-mixin checkbox-list(data)
+mixin checkbox-list(data = {})
 	-
-		const {text, title} = data
+		const {text, title = null} = data
 	.checkbox-list
-		-
-			const texts = [];
-			for (let i = 0; i < text.length; i += 1) {
-				texts.push({text: text[i], title: ''});
-				if (title) {
-					texts[i].title = title[i];
-				}
-			}
-		each value, i in texts
+		each value, i in text
 			-
-				const header = texts[i].title;
-				const text = texts[i].text;
-			+checkbox(i, header, text)
+				let header = '';
+				if (title) {
+					header = title[i];
+				}
+				const text1 = text[i];
+			+checkbox(i, header, text1)
