@@ -43,6 +43,8 @@ $('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) 
 $('.js-like__input').eq(2).prop('checked', true);
 $(document).ready(() => {
 
+  $('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .js-expandable-checkbox-list__title').trigger('click');
+
   const $button = $('.js-form-elements__section:nth-child(8) .js-form-elements__item .js-dropdown__wrapper button');
   $button.eq(2).trigger('click');
   $button.eq(2).trigger('click');
@@ -72,6 +74,4 @@ $(document).ready(() => {
       $paginationPage.addClass('paginationjs-page_size_small');
     }
   });
-
-  $('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .js-expandable-checkbox-list__title').trigger('click');
 });

@@ -11,4 +11,5 @@ mixin checkbox-list(data = {})
 					header = titles[i];
 				}
 				const text = texts[i];
-			+checkbox(i, header, text)
+			.checkbox-list__checkbox
+				+checkbox(header, text)
