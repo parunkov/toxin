@@ -2,13 +2,13 @@ include ../../components/checkbox/checkbox.pug
 
 mixin checkbox-list(data = {})
 	-
-		const {texts, title = null} = data
+		const {texts, titles = null} = data
 	.checkbox-list
 		each value, i in texts
 			-
 				let header = '';
-				if (title) {
-					header = title[i];
+				if (titles) {
+					header = titles[i];
 				}
-				const text1 = texts[i];
-			+checkbox(i, header, text1)
+				const text = texts[i];
+			+checkbox(i, header, text)
