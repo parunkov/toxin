@@ -1,6 +1,6 @@
-mixin checkbox(title = '', text)
+mixin checkbox(title = '', text, name)
 	label.checkbox
-		input(type="checkbox" name=`checkbox-${index}` class="checkbox__input js-checkbox__input")
+		input(type="checkbox" name= name class="checkbox__input js-checkbox__input")
 		.checkbox__inner
 		if title
 			h4.checkbox__header= title

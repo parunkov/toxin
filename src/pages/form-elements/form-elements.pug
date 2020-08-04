@@ -90,23 +90,23 @@ block main
 			expandableList: 'expandable checkbox list',
 			richCeckbox: 'rich Checkbox Buttons',
 			bullet: 'bullet list'}
-		const checkboxList1 = {
-			texts: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
-		}
-		const checkboxList2 = {
-			texts: ['Завтрак', 
-					'Письменный стол', 
-					'Стул для кормления',
-					'Кроватка',
-					'Телевизор',
-					'Шампунь']
-		}
-		const checkboxList3 = {
-			texts: ['Ширина коридоров в номере не менее 91 см.', 
-				'На 1 этаже вас встретит специалист  и проводит до номера.'],
-			titles: ['Широкий коридор',
-			'Помощник для инвалидов']
-		}
+		const checkboxList1 = [
+			{name: 'smoking', text: 'Можно курить'}, 
+			{name: 'pets', text: 'Можно с питомцами'}, 
+			{name: 'guests', text: 'Можно пригласить гостей (до 10 человек)'}
+		]
+		const checkboxList2 = [
+			{name: 'breakfast', text: 'Завтрак'}, 
+			{name: 'table', text: 'Письменный стол'}, 
+			{name: 'chair', text: 'Стул для кормления'},
+			{name: 'bed', text: 'Кроватка'},
+			{name: 'tv', text: 'Телевизор'},
+			{name: 'shampoo', text: 'Шампунь'}
+		]
+		const checkboxList3 = [
+			{name: 'corridor', title: 'Широкий коридор',  text: 'Ширина коридоров в номере не менее 91 см.'},
+			{name: 'helper', title: 'Помощник для инвалидов',  text: 'На 1 этаже вас встретит специалист  и проводит до номера.'}
+		]
 		const radio = {
 				name: 'registration-form__radio',
 				text: ['Мужчина', 'Женщина']
@@ -116,7 +116,7 @@ block main
 		const btnText = 'click me';
 		const btnText2 = 'перейти к оплате';
 		const dropdown1 = {
-				name: 'rooms',
+				name: 'rooms1',
 				header: 'dropdown',
 				text: 'Default',
 				item1: 'спальни',
@@ -124,7 +124,7 @@ block main
 				item3: 'ванные комнаты'
 			}
 		const dropdown2 = {
-				name: 'rooms',
+				name: 'rooms2',
 				header: 'dropdown',
 				text: 'expanded',
 				item1: 'спальни',
@@ -132,7 +132,7 @@ block main
 				item3: 'ванные комнаты'
 			}
 		const dropdown3 = {
-				name: 'guests',
+				name: 'guests1',
 				header: 'dropdown',
 				text: '',
 				item1: 'взрослые',
@@ -141,7 +141,7 @@ block main
 				clear: '1'
 			}
 		const dropdown4 = {
-				name: 'guests',
+				name: 'guests2',
 				header: 'dropdown',
 				text: 'Default',
 				item1: 'взрослые',

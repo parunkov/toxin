@@ -78,23 +78,23 @@ block main
 					facilities: 'дополнительные удобства',
 					rooms: 'Номера, которые мы для вас подобрали'
 				};
-				const checkboxList1 = {
-					texts: ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)']
-				}
-				const checkboxList2 = {
-					texts: ['Ширина коридоров в номере не менее 91 см.', 
-						'На 1 этаже вас встретит специалист  и проводит до номера.'],
-					titles: ['Широкий коридор',
-					'Помощник для инвалидов']
-				}
-				const checkbox3 = {
-					texts: ['Завтрак', 
-							'Письменный стол', 
-							'Стул для кормления',
-							'Кроватка',
-							'Телевизор',
-							'Шампунь']
-				}
+				const checkboxList1 = [
+					{name: 'smoking', text: 'Можно курить'}, 
+					{name: 'pets', text: 'Можно с питомцами'}, 
+					{name: 'guests', text: 'Можно пригласить гостей (до 10 человек)'}
+				]
+				const checkboxList2 = [
+					{name: 'breakfast', text: 'Завтрак'}, 
+					{name: 'table', text: 'Письменный стол'}, 
+					{name: 'chair', text: 'Стул для кормления'},
+					{name: 'bed', text: 'Кроватка'},
+					{name: 'tv', text: 'Телевизор'},
+					{name: 'shampoo', text: 'Шампунь'}
+				]
+				const checkboxList3 = [
+					{name: 'corridor', title: 'Широкий коридор',  text: 'Ширина коридоров в номере не менее 91 см.'},
+					{name: 'helper', title: 'Помощник для инвалидов',  text: 'На 1 этаже вас встретит специалист  и проводит до номера.'}
+				]
 				const paginationText = 'из 100+ вариантов аренды';
 				const cardText = {
 					currency: '₽',
@@ -122,11 +122,11 @@ block main
 					.search-room__rich-checkbox
 						h3.search-room__rich-checkbox-title
 							+title(headers.availability)
-						+checkbox-list(checkboxList2)
+						+checkbox-list(checkboxList3)
 					.search-room__room-dropdown.js-search-room__room-dropdown
 						+dropdown(dropdown2)
 					.search-room__expandable-list
-						+expandable-checkbox-list(headers.facilities, checkbox3)
+						+expandable-checkbox-list(headers.facilities, checkboxList2)
 			section.search-room__cards-wrapper
 				h1.search-room__title #{headers.rooms}
 				.search-room__cards
