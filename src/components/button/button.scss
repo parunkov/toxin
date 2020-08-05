@@ -52,7 +52,7 @@
     opacity: 1;
   }
 
-  &_translucent_theme_with-arrow {
+  &_theme_with-arrow {
     display: block;
     padding-right: 40px;
     padding-left: 38px;
@@ -62,7 +62,7 @@
     border: 0;
   }
 
-  &_translucent_theme_with-arrow::after {
+  &_theme_with-arrow::after {
     content: " arrow_forward";
     position: absolute;
     top: 50%;
