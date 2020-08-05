@@ -5,7 +5,7 @@ mixin button(data = {})
 		if (modifiers) {
 			modifiers.forEach((item, i) => {
 				className = item === 'themeLight' ? className + ' button_theme_light' : className;
-				className = item === 'transparent' ? className + ' button_translucent' : className;
+				className = item === 'translucent' ? className + ' button_translucent' : className;
 				className = item === 'text' ? className + ' button_theme_text' : className;
 				className = item === 'colorGray' ? className + ' button_color_gray' : className;
 				className = item === 'themeArrow' ? className + ' button_theme_with-arrow' : className;
