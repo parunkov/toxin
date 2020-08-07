@@ -7,6 +7,10 @@
 
   &__input {
     display: none;
+    &:checked + .checkbox__inner {
+      background: url("images/check.svg") center center no-repeat;
+      border: 1px solid $purple;
+    }
   }
 
   &__inner {
@@ -19,11 +23,6 @@
     background-color: $white;
     border: 1px solid $black-25;
     border-radius: 4px;
-  }
-
-  &__input:checked + .checkbox__inner {
-    background: url("images/check.svg") center center no-repeat;
-    border: 1px solid $purple;
   }
 
   &__text {
