@@ -1,6 +1,6 @@
 mixin button(data = {})
 	-
-		const {text = '', tag = 'div', modifiers, type, link} = data;
+		const {text = '', tag = 'button', modifiers, type, link} = data;
 		let className = 'button';
 		if (modifiers) {
 			modifiers.forEach((item, i) => {
