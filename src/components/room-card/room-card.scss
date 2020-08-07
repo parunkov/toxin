@@ -53,14 +53,16 @@
     height: 152px;
   }
 
-  &__shadow_left {
-    top: 0;
-    left: 0;
-  }
+  &__shadow {
+    &_left {
+      top: 0;
+      left: 0;
+    }
 
-  &__shadow_right {
-    top: 0;
-    right: 0;
+    &_right {
+      top: 0;
+      right: 0;
+    }
   }
 
   &__arrow {
@@ -91,18 +93,20 @@
     }
   }
 
-  &__arrow_left {
-    top: 52.5px;
-    left: 0;
-    padding-top: 12px;
-    transform: rotate(90deg);
-  }
+  &__arrow {
+    &_left {
+      top: 52.5px;
+      left: 0;
+      padding-top: 12px;
+      transform: rotate(90deg);
+    }
 
-  &__arrow_right {
-    top: 52.5px;
-    right: 0;
-    padding-top: 10px;
-    transform: rotate(-90deg);
+    &_right {
+      top: 52.5px;
+      right: 0;
+      padding-top: 10px;
+      transform: rotate(-90deg);
+    }
   }
 
   &__controls {
