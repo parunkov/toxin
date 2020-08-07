@@ -91,17 +91,21 @@
     text-align: left;
     border: 1px solid $black-25;
     border-radius: 4px;
+
     &_expanded {
       border-radius: 4px 4px 0 0;
       border: 1px solid $black-50;
+
       .dropdown__input::after {
         background: $white;
         transform: rotate(180deg);
       }
+
       .dropdown__menu {
         display: block;
       }
     }
+
     .dropdown__item {
       position: relative;
       min-height: 30px;
@@ -109,6 +113,7 @@
       padding-top: 5px;
       padding-left: 14px;
     }
+
     .dropdown__counter-button {
       position: relative;
       display: inline-block;
@@ -139,11 +144,13 @@
       &_theme_decrement::after {
         content: "-";
       }
+
       &_inactive {
         opacity: .5;
         cursor: default;
       }
     }
+
     .dropdown__counter {
       display: inline-block;
       width: 28px;
@@ -263,6 +270,7 @@
     margin-left: 5px;
     margin-right: auto;
     color: $black-50;
+
     &_visible {
       display: block;
     }

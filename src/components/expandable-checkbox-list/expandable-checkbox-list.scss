@@ -1,6 +1,7 @@
 @import "../../variables.scss";
 
 .expandable-checkbox-list {
+
   &__title {
     position: relative;
     margin-bottom: 18px;
@@ -29,6 +30,7 @@
   }
 
   &__text {
+
     &_hidden {
       display: none;
     }

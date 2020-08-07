@@ -17,6 +17,7 @@
     border-radius: 10px;
     cursor: pointer;
     background: $black-25;
+
     &::after {
       content: "favorite_border";
       position: absolute;
@@ -63,10 +64,12 @@
 
   &__input:checked + .like__inner {
     background: $gradient-purple;
+
     &::after {
       content: "favorite";
       color: $purple;
     }
+
     .like__text {
       color: $purple;
     }

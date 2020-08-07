@@ -20,7 +20,9 @@
   &_translucent {
     opacity: .5;
   }
+
   &_theme {
+
     &_light {
       display: block;
       position: relative;
@@ -32,6 +34,7 @@
       background-origin: border-box;
       background-clip: padding-box, border-box;
     }
+
     &_text {
       min-height: 15px;
       padding: 0;
@@ -45,6 +48,7 @@
         opacity: 1;
       }
     }
+
     &_with-arrow {
       display: block;
       padding-right: 40px;
@@ -53,6 +57,7 @@
       padding-top: 0;
       padding-bottom: 0;
       border: 0;
+
       &::after {
         content: " arrow_forward";
         position: absolute;
@@ -68,6 +73,7 @@
         word-break: normal;
       }
     }
+
     &_light.button_size_small {
       display: block;
       width: 100%;
@@ -86,6 +92,7 @@
 
 
   &_size {
+
     &_small {
       display: block;
       width: 100%;
@@ -95,6 +102,7 @@
       padding-right: 20px;
       padding-left: 19px;
     }
+
     &_big {
       word-break: break-all;
     }
