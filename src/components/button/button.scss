@@ -1,6 +1,7 @@
 @import "../../variables.scss";
 
 .button {
+  display: block;
   position: relative;
   min-height: 44px;
   padding-top: 16px;
@@ -24,7 +25,7 @@
   &_theme {
 
     &_light {
-      display: block;
+      
       position: relative;
       padding-top: 14px;
       padding-bottom: 14px;
@@ -50,7 +51,7 @@
     }
 
     &_with-arrow {
-      display: block;
+      
       padding-right: 40px;
       padding-left: 38px;
       width: 100%;
@@ -75,7 +76,7 @@
     }
 
     &_light.button_size_small {
-      display: block;
+      
       width: 100%;
       min-height: 34px;
       padding-top: 9px;
@@ -94,7 +95,7 @@
   &_size {
 
     &_small {
-      display: block;
+      
       width: 100%;
       min-height: 34px;
       padding-top: 10px;
