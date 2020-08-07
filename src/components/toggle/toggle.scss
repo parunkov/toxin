@@ -33,11 +33,10 @@
 
   &__input:checked + .toggle__inner {
     border: 1px solid $purple;
-  }
-
-  &__input:checked + .toggle__inner .toggle__inner-circle {
-    left: 22px;
-    background: $gradient-purple;
+    .toggle__inner-circle {
+      left: 22px;
+      background: $gradient-purple;
+    }
   }
 
   &__text {
