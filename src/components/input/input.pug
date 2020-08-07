@@ -2,7 +2,7 @@ include ../../components/title/title.pug
 
 mixin input(data = {})
 	-
-		const {header, type = 'text', name, value, placeholder, text, icon, color, modifiers} = data;
+		const {header, type = 'text', name, value, placeholder, text, icon, buttonColor, modifiers} = data;
 		let className = 'input__field';
 		if (modifiers) {
 			modifiers.forEach((item, i) => {
@@ -28,7 +28,7 @@ mixin input(data = {})
 		else
 			input(type= type name= name class=className placeholder= placeholder)
 		if icon
-			if color === 'purple'
+			if buttonColor === 'purple'
 				button(type="button" class="input__button js-input__button input__button_colored")= icon
 			else
 				button(type="button" class="input__button js-input__button")= icon
