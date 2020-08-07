@@ -63,39 +63,41 @@
       overflow-x: hidden;
     }
 
-    &_block_search {
-      margin-bottom: 40px;
-      padding-left: 0;
-      padding-right: 0;
-      background: transparent;
-      box-shadow: none;
-    }
-
-    &_block_registration {
-      margin-bottom: 140px;
-
-      @media (max-width: $page-container) {
+    &_block {
+      &_search {
         margin-bottom: 40px;
+        padding-left: 0;
+        padding-right: 0;
+        background: transparent;
+        box-shadow: none;
       }
-    }
 
-    &_block_reservation {
-      margin-bottom: 39px;
-    }
+      &_registration {
+        margin-bottom: 140px;
 
-    &_block_login,
-    &_block_datepicker {
-      margin-bottom: 39px;
-    }
+        @media (max-width: $page-container) {
+          margin-bottom: 40px;
+        }
+      }
 
-    &_block_card {
-      margin-bottom: 40px;
-      background: transparent;
-      box-shadow: none;
-      padding-left: .7%;
-      padding-right: 14.6%;
-    }
+      &_reservation {
+        margin-bottom: 39px;
+      }
 
+      &_login,
+      &_datepicker {
+        margin-bottom: 39px;
+      }
+
+      &_card {
+        margin-bottom: 40px;
+        background: transparent;
+        box-shadow: none;
+        padding-left: .7%;
+        padding-right: 14.6%;
+      }
+
+    }
   }
 
   &__card {
