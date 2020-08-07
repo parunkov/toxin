@@ -37,32 +37,30 @@
     margin-bottom: 30px;
     padding-right: 20%*100/1200;
     padding-left: 20%*100/1200;
-  }
+    &:first-child {
+      flex: 1 0 700%*100/1200;
 
-  &__column:first-child {
-    flex: 1 0 700%*100/1200;
+      @media (max-width: $page-container) {
+        flex: 1 0 auto;
+      }
 
-    @media (max-width: $page-container) {
-      flex: 1 0 auto;
+      @media (max-width: $page-inner-min) {
+        display: block;
+        flex: none;
+      }
     }
+    &:last-child {
+      flex: 0 0 500%*100/1200;
 
-    @media (max-width: $page-inner-min) {
-      display: block;
-      flex: none;
-    }
-  }
+      @media (max-width: $page-container) {
+        flex: 0 0 auto;
+      }
 
-  &__column:last-child {
-    flex: 0 0 500%*100/1200;
-
-    @media (max-width: $page-container) {
-      flex: 0 0 auto;
-    }
-
-    @media (max-width: 450px) {
-      display: block;
-      flex: none;
-      width: 95%;
+      @media (max-width: 450px) {
+        display: block;
+        flex: none;
+        width: 95%;
+      }
     }
   }
 
@@ -89,30 +87,33 @@
     background-color: $black;
     border-radius: 6px;
 
-    &_color_dark75 {
-      background-color: $black-75;
-    }
+    &_color {
+      &_dark75 {
+        background-color: $black-75;
+      }
 
-    &_color_dark50 {
-      background-color: $black-50;
-    }
+      &_dark50 {
+        background-color: $black-50;
+      }
 
-    &_color_dark25 {
-      background-color: $black-25;
-    }
+      &_dark25 {
+        background-color: $black-25;
+      }
 
-    &_color_dark5 {
-      background-color: $black-5;
-    }
+      &_dark5 {
+        background-color: $black-5;
+      }
 
-    &_color_purple {
-      background-color: $purple;
-    }
+      &_purple {
+        background-color: $purple;
+      }
 
-    &_color_green {
-      background-color: $green;
+      &_green {
+        background-color: $green;
+      }
     }
   }
+
 
   &__color-block-text {
     display: inline-block;
@@ -169,27 +170,27 @@
     font-weight: 400;
     font-family: Montserrat, Arial, sans-serif;
     color: $black-25;
-  }
 
-  &__type_h1 {
-    font-size: 24px;
-    text-transform: uppercase;
-  }
+    &_h1 {
+      font-size: 24px;
+      text-transform: uppercase;
+    }
 
-  &__type_h2 {
-    font-size: 19px;
-    text-transform: uppercase;
-  }
+    &_h2 {
+      font-size: 19px;
+      text-transform: uppercase;
+    }
 
-  &__type_h3 {
-    margin-left: 11px;
-    font-size: 12px;
-    text-transform: uppercase;
-  }
+    &_h3 {
+      margin-left: 11px;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
 
-  &__type_body {
-    font-size: 14px;
-    line-height: 24px;
+    &_body {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   &__types-block-h1 {
