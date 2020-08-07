@@ -91,11 +91,72 @@
     text-align: left;
     border: 1px solid $black-25;
     border-radius: 4px;
-  }
+    &_expanded {
+      border-radius: 4px 4px 0 0;
+      border: 1px solid $black-50;
+      .dropdown__input::after {
+        background: $white;
+        transform: rotate(180deg);
+      }
+      .dropdown__menu {
+        display: block;
+      }
+    }
+    .dropdown__item {
+      position: relative;
+      min-height: 30px;
+      margin-bottom: 7px;
+      padding-top: 5px;
+      padding-left: 14px;
+    }
+    .dropdown__counter-button {
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background: $white;
+      border: 1px solid $black-50;
+      border-radius: 15px;
+      outline: none;
+      cursor: pointer;
 
-  &__wrapper_expanded {
-    border-radius: 4px 4px 0 0;
-    border: 1px solid $black-50;
+      &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-weight: 400;
+        font-size: 18px;
+        font-family: Montserrat, Arial, sans-serif;
+        color: $black-50;
+        transform: translate(-50%, -50%);
+      }
+
+      &_theme_increment::after {
+        content: "+";
+        transform: translate(-50%, -44%);
+      }
+
+      &_theme_decrement::after {
+        content: "-";
+      }
+      &_inactive {
+        opacity: .5;
+        cursor: default;
+      }
+    }
+    .dropdown__counter {
+      display: inline-block;
+      width: 28px;
+      padding-top: 7px;
+      padding-left: 4px;
+      font-weight: 700;
+      font-size: 12px;
+      font-family: Montserrat, Arial, sans-serif;
+      vertical-align: top;
+      text-align: center;
+      color: $black;
+      text-transform: uppercase;
+    }
   }
 
   &__input {
@@ -136,11 +197,6 @@
     outline: none;
   }
 
-  &__wrapper_expanded .dropdown__input::after {
-    background: $white;
-    transform: rotate(180deg);
-  }
-
   &__item-text {
     padding-right: 35%;
     margin-bottom: 7px;
@@ -149,10 +205,6 @@
     font-family: Montserrat, Arial, sans-serif;
     color: $black;
     text-transform: uppercase;
-  }
-
-  &__wrapper.dropdown__wrapper_expanded .dropdown__menu {
-    display: block;
   }
 
   &__menu {
@@ -173,69 +225,10 @@
     cursor: default;
   }
 
-  &__wrapper .dropdown__item {
-    position: relative;
-    min-height: 30px;
-    margin-bottom: 7px;
-    padding-top: 5px;
-    padding-left: 14px;
-  }
-
   &__item-controls {
     position: absolute;
     top: 0;
     right: 7px;
-  }
-
-  &__wrapper .dropdown__counter-button {
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: $white;
-    border: 1px solid $black-50;
-    border-radius: 15px;
-    outline: none;
-    cursor: pointer;
-
-    &::after {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      font-weight: 400;
-      font-size: 18px;
-      font-family: Montserrat, Arial, sans-serif;
-      color: $black-50;
-      transform: translate(-50%, -50%);
-    }
-
-    &_theme_increment::after {
-      content: "+";
-      transform: translate(-50%, -44%);
-    }
-
-    &_theme_decrement::after {
-      content: "-";
-    }
-  }
-
-  &__wrapper .dropdown__counter-button_inactive {
-    opacity: .5;
-    cursor: default;
-  }
-
-  &__wrapper .dropdown__counter {
-    display: inline-block;
-    width: 28px;
-    padding-top: 7px;
-    padding-left: 4px;
-    font-weight: 700;
-    font-size: 12px;
-    font-family: Montserrat, Arial, sans-serif;
-    vertical-align: top;
-    text-align: center;
-    color: $black;
-    text-transform: uppercase;
   }
 
   &__buttons-block {
@@ -270,10 +263,9 @@
     margin-left: 5px;
     margin-right: auto;
     color: $black-50;
-  }
-
-  &__clear-btn_visible {
-    display: block;
+    &_visible {
+      display: block;
+    }
   }
 
   &__set-btn {
