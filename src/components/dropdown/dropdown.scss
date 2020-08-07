@@ -136,13 +136,15 @@
         transform: translate(-50%, -50%);
       }
 
-      &_theme_increment::after {
-        content: "+";
-        transform: translate(-50%, -44%);
-      }
+      &_theme {
+        &_increment::after {
+          content: "+";
+          transform: translate(-50%, -44%);
+        }
 
-      &_theme_decrement::after {
-        content: "-";
+        &_decrement::after {
+          content: "-";
+        }
       }
 
       &_inactive {
