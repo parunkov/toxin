@@ -10,9 +10,6 @@
     line-height: 1.25em;
     font-family: "Open Sans", Arial, sans-serif;
     color: $black;
-  }
-
-  &__title {
     margin-bottom: 20px;
 
     @media (max-width: 350px) {
@@ -23,28 +20,29 @@
     }
   }
 
-  &__input:nth-child(1) {
-    margin-bottom: 10px;
-  }
-
-  &__input:nth-child(2) {
-    margin-bottom: 10px;
-  }
-
   &__radio {
     margin-bottom: 17px;
   }
+  &__input {
+    &:nth-child(1) {
+      margin-bottom: 10px;
+    }
 
-  &__input:nth-child(4) {
-    margin-bottom: 17px;
-  }
+    &:nth-child(2) {
+      margin-bottom: 10px;
+    }
 
-  &__input:nth-child(5) {
-    margin-bottom: 10px;
-  }
+    &:nth-child(4) {
+      margin-bottom: 17px;
+    }
 
-  &__input:nth-child(6) {
-    margin-bottom: 10px;
+    &:nth-child(5) {
+      margin-bottom: 10px;
+    }
+
+    &:nth-child(6) {
+      margin-bottom: 10px;
+    }
   }
 
   &__toggle {
