@@ -20,30 +20,62 @@
   &_translucent {
     opacity: .5;
   }
+  &_theme {
+    &_light {
+      display: block;
+      position: relative;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      color: $purple;
+      border: solid 2px transparent;
+      background-image: $gradient-white, $gradient-purple;
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+    }
+    &_text {
+      min-height: 15px;
+      padding: 0;
+      color: $purple;
+      background: $white;
+      border: 0;
+      outline: none;
 
-  &_theme_light {
-    display: block;
-    position: relative;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    color: $purple;
-    border: solid 2px transparent;
-    background-image: $gradient-white, $gradient-purple;
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-  }
-
-  &_theme_text {
-    min-height: 15px;
-    padding: 0;
-    color: $purple;
-    background: $white;
-    border: 0;
-    outline: none;
-
-    &:hover {
-      color: $black-50;
-      opacity: 1;
+      &:hover {
+        color: $black-50;
+        opacity: 1;
+      }
+    }
+    &_with-arrow {
+      display: block;
+      padding-right: 40px;
+      padding-left: 38px;
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 0;
+      border: 0;
+      &::after {
+        content: " arrow_forward";
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 10px;
+        display: inline;
+        font-weight: 400;
+        font-size: 24px;
+        font-family: "Material Icons";
+        color: $white;
+        text-transform: none;
+        word-break: normal;
+      }
+    }
+    &_light.button_size_small {
+      display: block;
+      width: 100%;
+      min-height: 34px;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-left: 17px;
+      padding-right: 18px;
     }
   }
 
@@ -52,53 +84,20 @@
     opacity: 1;
   }
 
-  &_theme_with-arrow {
-    display: block;
-    padding-right: 40px;
-    padding-left: 38px;
-    width: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
-    border: 0;
-  }
 
-  &_theme_with-arrow::after {
-    content: " arrow_forward";
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    right: 10px;
-    display: inline;
-    font-weight: 400;
-    font-size: 24px;
-    font-family: "Material Icons";
-    color: $white;
-    text-transform: none;
-    word-break: normal;
-  }
-
-  &_size_small {
-    display: block;
-    width: 100%;
-    min-height: 34px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    padding-left: 19px;
-  }
-
-  &_size_big {
-    word-break: break-all;
-  }
-
-  &_theme_light.button_size_small {
-    display: block;
-    width: 100%;
-    min-height: 34px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 17px;
-    padding-right: 18px;
+  &_size {
+    &_small {
+      display: block;
+      width: 100%;
+      min-height: 34px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 20px;
+      padding-left: 19px;
+    }
+    &_big {
+      word-break: break-all;
+    }
   }
 }
 
