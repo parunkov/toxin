@@ -20,13 +20,7 @@ mixin input(data = {})
 				+title(header)
 		if text
 			p.input__text= text
-		if value	
-			if placeholder	
-				input(type= type name= name class=className value= value placeholder= placeholder)
-			else 
-				input(type= type name= name class=className value= value)
-		else
-			input(type= type name= name class=className placeholder= placeholder)
+		input(type= type name= name class=className value= value placeholder= placeholder)
 		if icon
 			if buttonColor === 'purple'
 				button(type="button" class="input__button js-input__button input__button_colored")= icon
