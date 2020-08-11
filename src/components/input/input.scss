@@ -37,19 +37,7 @@
     border: 1px solid $black-25;
     border-radius: 4px;
 
-    &::-webkit-input-placeholder {
-      color: $black-75;
-    }
-
-    &::-moz-placeholder {
-      color: $black-75;
-    }
-
-    &:-moz-placeholder {
-      color: $black-75;
-    }
-
-    &:-ms-input-placeholder {
+    &::placeholder {
       color: $black-75;
     }
 
@@ -60,39 +48,12 @@
       outline: none;
     }
 
-    &::-webkit-calendar-picker-indicator {
-      display: none;
-    }
-
-    &::-webkit-inner-spin-button {
-      display: none;
-    }
-
-    &::-webkit-clear-button {
-      display: none;
-    }
-
-    &::-ms-clear {
-      display: none;
-    }
-
     &_theme_light {
 
-      &::-webkit-input-placeholder {
+      &::placeholder {
         color: $black-25;
       }
 
-      &::-moz-placeholder {
-        color: $black-25;
-      }
-
-      &:-moz-placeholder {
-        color: $black-25;
-      }
-
-      &:-ms-input-placeholder {
-        color: $black-25;
-      }
     }
 
     &_theme_uppercase {
@@ -102,19 +63,7 @@
 
     &_with-arrow {
 
-      &::-webkit-input-placeholder {
-        color: $black-25;
-      }
-
-      &::-moz-placeholder {
-        color: $black-25;
-      }
-
-      &:-moz-placeholder {
-        color: $black-25;
-      }
-
-      &:-ms-input-placeholder {
+      &::placeholder {
         color: $black-25;
       }
 
