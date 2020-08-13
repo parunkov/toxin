@@ -22,7 +22,7 @@ mixin input(data = {})
 			p.input__text= text
 		input(type= type name= name class=className value= value placeholder= placeholder)
 		if icon
-			if buttonColor === 'primary'
-				button(type="button" class="input__button js-input__button input__button_colored")= icon
-			else
-				button(type="button" class="input__button js-input__button")= icon
+			-
+				let buttonClassName = 'input__button js-input__button';
+				buttonClassName = buttonColor === 'primary' ? buttonClassName + ' input__button_colored' : buttonClassName;
+			button(type="button" class= buttonClassName)= icon
