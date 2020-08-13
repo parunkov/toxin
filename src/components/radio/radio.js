@@ -1,6 +1,7 @@
 import '../../variables.scss';
 import './radio.scss';
 import './radio.pug';
+import $ from 'jquery';
 
 class Radio {
   constructor(radio) {

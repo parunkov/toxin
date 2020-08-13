@@ -1,5 +1,6 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
+import $ from 'jquery';
 import DatesSelector from '../dates-selector/dates-selector';
 import '../button/button';
 import './reservation-form.scss';

@@ -1,6 +1,7 @@
 import '../checkbox-list/checkbox-list';
 import '../title/title';
 import './expandable-checkbox-list.scss';
+import $ from 'jquery';
 
 class expandableCheckboxList {
   constructor(list) {
