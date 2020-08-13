@@ -2,7 +2,6 @@ import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../rate/rate';
 import './room-card.scss';
-import $ from 'jquery';
 
 class Card {
   constructor(card) {
