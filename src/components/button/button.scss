@@ -26,7 +26,6 @@
 
     &_light {
       
-      position: relative;
       padding-top: 14px;
       padding-bottom: 14px;
       color: $purple;
@@ -40,7 +39,7 @@
       min-height: 15px;
       padding: 0;
       color: $purple;
-      background: $white;
+      background: transparent;
       border: 0;
       outline: none;
 
