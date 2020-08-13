@@ -11,6 +11,7 @@ class Like {
     this.value = +this.$text.html();
     this.init();
   }
+
   init() {
     const onClick = () => {
       if (this.$input.prop('checked')) {

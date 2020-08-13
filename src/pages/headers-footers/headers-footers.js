@@ -4,7 +4,7 @@ import '../../components/page/page';
 import '../../components/ui-kit/ui-kit';
 import '../../components/header/header';
 import '../../components/footer/footer';
-import '../../components/logo/logo'
+import '../../components/logo/logo';
 import './headers-footers.scss';
 
 $('.js-header').find('.js-header__navigation-item').eq(0).addClass('js-header__navigation-item_active');

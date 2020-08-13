@@ -18,10 +18,9 @@ $itemWithSubMenu.click(
     } else {
       $itemWithSubMenu.removeClass('header__navigation-item_expanded');
       $(this).addClass('header__navigation-item_expanded');
-
     }
   },
-  );
+);
 $(document).click(
   (e) => {
     if ($(e.target).parent().hasClass('header__navigation-item_with-submenu')) {
@@ -31,7 +30,7 @@ $(document).click(
       $itemWithSubMenu.removeClass('header__navigation-item_expanded');
     }
   },
-  );
+);
 
 class Header {
   constructor(header) {
@@ -39,6 +38,7 @@ class Header {
     this.$burger = header.find('.js-header__burger');
     this.init();
   }
+
   init() {
     this.$burger.click(
       () => {
@@ -47,7 +47,7 @@ class Header {
         this.$header.find('.header__user-block-logged').toggleClass('header__user-block_visible');
         this.$burger.find('.header__burger-line').toggleClass('header__burger-line_cross');
       },
-      );
+    );
   }
 }
 
@@ -55,5 +55,3 @@ const headers = [];
 $('.js-header').each((i) => {
   headers[i] = new Header($('.js-header').eq(i));
 });
-
-

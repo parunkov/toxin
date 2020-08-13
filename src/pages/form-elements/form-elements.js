@@ -7,24 +7,22 @@ import '../../components/checkbox-list/checkbox-list';
 import '../../components/radio/radio';
 import '../../components/toggle/toggle';
 import '../../components/like/like';
-import '../../components/rate/rate';
+import $ from 'jquery';
+import Rate from '../../components/rate/rate';
 import '../../components/range-slider/range-slider';
 import '../../components/button/button';
 import '../../components/pagination/pagination';
-import '../../components/dropdown/dropdown';
+import Dropdown from '../../components/dropdown/dropdown';
 import '../../components/info/info';
 import '../../components/review/review';
-import '../../components/dates-selector/dates-selector';
+import DatesSelector from '../../components/dates-selector/dates-selector';
 import '../../components/filter-date-driopdown/filter-date-driopdown';
 import '../../components/expandable-checkbox-list/expandable-checkbox-list';
 import './form-elements.scss';
-import $ from 'jquery';
-import Dropdown from '../../components/dropdown/dropdown';
-import Rate from '../../components/rate/rate';
-import DatesSelector from '../../components/dates-selector/dates-selector';
+
 
 const $dropdowns = [];
-$('.js-dropdown').each((i) =>{
+$('.js-dropdown').each((i) => {
   $dropdowns[i] = new Dropdown($('.js-dropdown').eq(i));
 });
 
@@ -42,7 +40,6 @@ $('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) 
 $('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .js-checkbox__input').eq(0).prop('checked', false);
 $('.js-like__input').eq(2).prop('checked', true);
 $(document).ready(() => {
-
   $('.js-form-elements__section:nth-child(5) .js-form-elements__item:nth-child(2) .js-expandable-checkbox-list__title').trigger('click');
 
   const $button = $('.js-form-elements__section:nth-child(8) .js-form-elements__item .js-dropdown__wrapper button');
@@ -62,12 +59,12 @@ $(document).ready(() => {
   }
 
   const $js_dropdown__wrapper = $('.js-dropdown:not(.dropdown_theme_date)').find('.js-dropdown__wrapper');
-  for (let i = 2; i < 5 ; i += 1) {
+  for (let i = 2; i < 5; i += 1) {
     $js_dropdown__wrapper.eq(i).find('.js-dropdown__arrow').text('expand_less');
     $js_dropdown__wrapper.eq(i).addClass('dropdown__wrapper_expanded');
   }
 
-    $('.js-form-elements__section:nth-child(3) .js-form-elements__item:nth-child(3)').bind('DOMSubtreeModified', () => {
+  $('.js-form-elements__section:nth-child(3) .js-form-elements__item:nth-child(3)').bind('DOMSubtreeModified', () => {
     const $paginationPage = $('.paginationjs-page');
     $paginationPage.removeClass('paginationjs-page_size_small');
     if ($paginationPage.length > 4) {

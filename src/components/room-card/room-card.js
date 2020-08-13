@@ -17,6 +17,7 @@ class Card {
     this.numberRightSlide = 1;
     this.init();
   }
+
   init() {
     const setSlidesNumbers = (j) => {
       this.numberLeftSlide = j - 1;
@@ -27,7 +28,7 @@ class Card {
       if (this.counter === (this.length - 1)) {
         this.numberRightSlide = 0;
       }
-    }
+    };
     this.showSlides();
     this.$controls.each((j) => {
       this.$controls.eq(j).click((evt) => {
@@ -40,24 +41,24 @@ class Card {
     this.$left.click(() => {
       switch (this.counter) {
         case 0:
-        this.counter = this.length - 1;
-        setSlidesNumbers(this.counter);
-        break;
+          this.counter = this.length - 1;
+          setSlidesNumbers(this.counter);
+          break;
         default:
-        this.counter -= 1;
-        setSlidesNumbers(this.counter);
+          this.counter -= 1;
+          setSlidesNumbers(this.counter);
       }
       this.showSlides();
     });
     this.$right.click(() => {
       switch (this.counter) {
         case (this.length - 1):
-        this.counter = 0;
-        setSlidesNumbers(this.counter);
-        break;
+          this.counter = 0;
+          setSlidesNumbers(this.counter);
+          break;
         default:
-        this.counter += 1;
-        setSlidesNumbers(this.counter);
+          this.counter += 1;
+          setSlidesNumbers(this.counter);
       }
       this.showSlides();
     });
@@ -69,7 +70,7 @@ class Card {
       this.$slides.eq(center).addClass('room-card__slide-active');
       this.$slides.eq(right).addClass('js-room-card__slide-right');
       this.$controls.eq(center).addClass('room-card__control_active');
-    }
+    };
     this.$slides.removeClass('js-room-card__slide-left');
     this.$slides.removeClass('room-card__slide-active');
     this.$slides.removeClass('js-room-card__slide-right');
@@ -80,4 +81,3 @@ class Card {
 }
 
 export default Card;
-

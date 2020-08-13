@@ -12,6 +12,7 @@ class Slider {
     this.$amount = slider.find('#range-slider__amount');
     this.init();
   }
+
   init() {
     function prettify(num) {
       const n = num.toString();
@@ -21,11 +22,11 @@ class Slider {
 
     const sliderVal = (values) => {
       this.$amount.val(`${prettify(values[0])}₽ - ${prettify(values[1])}₽`);
-    }
+    };
     const sliderSet = () => {
       this.$amount.val(`${prettify($('#range-slider__range').slider('values', 0))}₽`
         + ` - ${prettify(`${$('#range-slider__range').slider('values', 1)}₽`)}`);
-    }
+    };
 
     $(() => {
       $('#range-slider__range').slider({

@@ -12,38 +12,38 @@ class Pagination {
     this.$second = pagination.find('.js-pagination__second');
     this.init();
   }
+
   init() {
     const setHtml = (a, b) => {
       this.$first.html(a);
       this.$second.html(b);
-    }
+    };
     $(() => {
-        const sources = (function () {
-          const result = [];
+      const sources = (function () {
+        const result = [];
 
-          for (let i = 0; i < 180; i += 1) {
-            result.push(i);
-          }
+        for (let i = 0; i < 180; i += 1) {
+          result.push(i);
+        }
 
-          return result;
-        }());
+        return result;
+      }());
 
-        const options = {
-          dataSource: sources,
-          pageSize: 12,
-          pageRange: 1,
-          autoHidePrevious: true,
-          autoHideNext: true,
-          callback(response, pagination) {
-            const a = pagination.pageNumber * pagination.pageSize - pagination.pageSize + 1;
-            const b = pagination.pageNumber * pagination.pageSize;
-            setHtml(a, b);
-          },
-        };
-        this.$container.pagination(options);
+      const options = {
+        dataSource: sources,
+        pageSize: 12,
+        pageRange: 1,
+        autoHidePrevious: true,
+        autoHideNext: true,
+        callback(response, pagination) {
+          const a = pagination.pageNumber * pagination.pageSize - pagination.pageSize + 1;
+          const b = pagination.pageNumber * pagination.pageSize;
+          setHtml(a, b);
+        },
+      };
+      this.$container.pagination(options);
     });
   }
 }
 
 const pagination = new Pagination($('.js-pagination'));
-

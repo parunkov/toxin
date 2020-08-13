@@ -119,22 +119,22 @@ const $chartNumber = $('.js-room-details__chart-number');
 const onSectorHover = (numbers, color, text) => {
   numbers.forEach((i) => {
     const onHover = () => {
-      $masks.css({'background' : '#ffffff'});
+      $masks.css({ background: '#ffffff' });
       numbers.forEach((j) => {
-        $masks.eq(j).css({'background' : 'transparent'});
+        $masks.eq(j).css({ background: 'transparent' });
       });
-      $chartText.css({'color': color});
+      $chartText.css({ color });
       $chartNumber.text(text);
-    }
+    };
     const onLeave = () => {
-      $masks.css({'background' : '#ffffff'});
-      $chartText.css({'color': 'rgba(31, 32, 65, 0.5)'});
+      $masks.css({ background: '#ffffff' });
+      $chartText.css({ color: 'rgba(31, 32, 65, 0.5)' });
       $chartNumber.text('1050');
-    }
+    };
     $sectors.eq(i).hover(onHover, onLeave);
     $masks.eq(i).hover(onHover, onLeave);
   });
-}
+};
 
 onSectorHover([1], '#bc9cff', '260');
 onSectorHover([3], '#6fcf97', '270');

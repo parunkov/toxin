@@ -3,7 +3,6 @@ import '../../variables.scss';
 import '../../../node_modules/air-datepicker/dist/js/datepicker';
 import '../../../node_modules/air-datepicker/dist/css/datepicker.css';
 import './datepicker-block.scss';
-import $ from 'jquery';
 
 
 class Datepicker {
@@ -14,6 +13,7 @@ class Datepicker {
     this.$content = datepicker.find('.js-datepicker-block__content');
     this.init();
   }
+
   init() {
     this.$content.datepicker({
       minDate: new Date(),
@@ -30,14 +30,17 @@ class Datepicker {
     this.$clearBtn.click((evt) => this.clear(evt));
     this.$datepicker.mousemove(() => this.mousemove());
   }
+
   set(evt) {
     evt.preventDefault();
   }
+
   clear(evt) {
     evt.preventDefault();
     this.dates.clear();
     this.$clearBtn.removeClass('datepicker-block__clear-btn_visible');
   }
+
   mousemove() {
     if (this.dates.selectedDates.length === 0) {
       this.$clearBtn.removeClass('datepicker-block__clear-btn_visible');
@@ -45,6 +48,7 @@ class Datepicker {
       this.$clearBtn.addClass('datepicker-block__clear-btn_visible');
     }
   }
+
   setDates(first, second) {
     this.dates.clear();
     if (first && second) {
@@ -55,4 +59,3 @@ class Datepicker {
 
 
 export default Datepicker;
-

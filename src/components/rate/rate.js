@@ -9,6 +9,7 @@ class Rate {
     this.$stars = rate.children();
     this.init();
   }
+
   init() {
     const stars = this.$stars;
     if (this.$rate.attr('data-active')) {
@@ -23,4 +24,3 @@ class Rate {
 }
 
 export default Rate;
-

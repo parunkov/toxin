@@ -6,7 +6,7 @@ import '../radio/radio';
 import '../toggle/toggle';
 import './registration-form.scss';
 import $ from 'jquery';
-import {regFormText} from '../../commonData/commonData';
+import { regFormText } from '../../commonData/commonData';
 
 $(document).ready(() => {
   const onWindowResize = () => {

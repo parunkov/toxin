@@ -15,26 +15,23 @@ import './images/image14.jpg';
 import './images/image15.jpg';
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
+import $ from 'jquery';
 import '../../components/page/page';
 import '../../components/header/header';
 import '../../components/input/input';
-import '../../components/dropdown/dropdown';
+import Dropdown from '../../components/dropdown/dropdown';
 import '../../components/range-slider/range-slider';
 import '../../components/checkbox-list/checkbox-list';
-import '../../components/room-card/room-card';
+import Card from '../../components/room-card/room-card';
 import '../../components/footer/footer';
-import '../../components/datepicker-block/datepicker-block';
 import '../../components/pagination/pagination';
 import '../../components/filter-date-driopdown/filter-date-driopdown';
 import '../../components/expandable-checkbox-list/expandable-checkbox-list';
 import './search-room.scss';
-import $ from 'jquery';
-import Datepicker from '../../components/datepicker-block/datepicker-block';
-import Dropdown from '../../components/dropdown/dropdown';
-import Card from '../../components/room-card/room-card';
+
 
 const $dropdowns = [];
-$('.js-dropdown').each((i) =>{
+$('.js-dropdown').each((i) => {
   $dropdowns[i] = new Dropdown($('.js-dropdown').eq(i));
 });
 
@@ -66,5 +63,3 @@ $(document).ready(() => {
   $button2.eq(3).trigger('click');
   $button2.eq(3).trigger('click');
 });
-
-
