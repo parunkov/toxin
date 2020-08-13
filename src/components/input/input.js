@@ -13,7 +13,7 @@ class Input {
   }
 
   init() {
-    $('.js-input__field_type_masked').mask('99.99.9999');
+    $('.js-input__field_masked').mask('99.99.9999');
     this.$arrow.click(() => {
       if (this.$arrow.text() === 'expand_more') {
         this.$arrow.text('expand_less');
