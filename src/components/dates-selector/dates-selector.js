@@ -1,10 +1,10 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../input/input';
+import $ from 'jquery';
 import Dropdown from '../dropdown/dropdown';
 import Datepicker from '../datepicker-block/datepicker-block';
 import './dates-selector.scss';
-import $ from 'jquery';
 import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput';
 
 
@@ -97,8 +97,8 @@ class DatesSelector {
 
     $(document).click((e) => {
       if ((!$datepickerContainer.is(e.target) && $datepickerContainer.has(e.target).length === 0)
-				&& (!e.target.className.includes('datepicker'))
-				&& (!this.$datesSelector.find('.js-dropdown__wrapper').is(e.target) && this.$datesSelector.find('.js-dropdown__wrapper').has(e.target).length === 0)) {
+        && (!e.target.className.includes('datepicker'))
+        && (!this.$datesSelector.find('.js-dropdown__wrapper').is(e.target) && this.$datesSelector.find('.js-dropdown__wrapper').has(e.target).length === 0)) {
         this.arrival.$arrow.text('expand_more');
         this.departure.$arrow.text('expand_more');
         $datepickerContainer.removeClass('dates-selector__datepicker_visible');
@@ -109,8 +109,7 @@ class DatesSelector {
   onChange() {
     const arrival = this.arrival.$input;
     const departure = this.departure.$input;
-    this.arrivalDate = this.datepicker.dates.selectedDates[0];
-    this.departureDate = this.datepicker.dates.selectedDates[1];
+    [this.arrivalDate, this.departureDate] = this.datepicker.dates.selectedDates;
     const onInputChange = (input, date) => {
       const inputDate = dayjs(input.val(), 'DD.MM.YYYY');
       if (!inputDate.isValid() || inputDate.isBefore(date)) {
@@ -120,7 +119,9 @@ class DatesSelector {
       return inputDate;
     };
     const setInputs = () => {
-      if (this.arrivalDate.isValid() && this.departureDate.isValid() && this.arrivalDate.isBefore(this.departureDate)) {
+      if (this.arrivalDate.isValid()
+        && this.departureDate.isValid()
+        && this.arrivalDate.isBefore(this.departureDate)) {
         this.datepicker.setDates(this.arrivalDate.$d, this.departureDate.$d);
       } else {
         this.departureDate = {};

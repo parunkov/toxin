@@ -15,11 +15,11 @@ class Input {
   init() {
     $('.js-input__field_type_masked').mask('99.99.9999');
     this.$arrow.click(() => {
-		    if (this.$arrow.text() === 'expand_more') {
-		      this.$arrow.text('expand_less');
-		    } else if (this.$arrow.text() === 'expand_less') {
-		      this.$arrow.text('expand_more');
-		    }
+      if (this.$arrow.text() === 'expand_more') {
+        this.$arrow.text('expand_less');
+      } else if (this.$arrow.text() === 'expand_less') {
+        this.$arrow.text('expand_more');
+      }
     });
   }
 }

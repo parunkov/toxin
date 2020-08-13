@@ -1,10 +1,10 @@
 import '../../../node_modules/reset-css/sass/_reset.scss';
 import '../../variables.scss';
 import '../input/input';
+import $ from 'jquery';
 import Datepicker from '../datepicker-block/datepicker-block';
 import './filter-date-driopdown.scss';
-import $ from 'jquery';
-import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js';
+import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput';
 
 
 class DatesFilter {
@@ -33,9 +33,9 @@ class DatesFilter {
       this.$icon.text('expand_more');
       const dates = this.datepicker.dates.selectedDates;
       if (dates[1]) {
-			  this.$input.attr('value', `${dateToValue(dates[0])} - ${dateToValue(dates[1])}`);
+        this.$input.attr('value', `${dateToValue(dates[0])} - ${dateToValue(dates[1])}`);
       } else {
-			  this.$input.attr('value', '');
+        this.$input.attr('value', '');
       }
     });
     this.datepicker.$clearBtn.click(() => {
@@ -43,8 +43,9 @@ class DatesFilter {
     });
 
     $(document).click((e) => {
-      if ((!this.$datepickerContainer.is(e.target) && this.$datepickerContainer.has(e.target).length === 0)
-				&& (!e.target.className.includes('datepicker')) && (!this.$datesFilter.is(e.target) && this.$datesFilter.has(e.target).length === 0)
+      if ((!this.$datepickerContainer.is(e.target)
+        && this.$datepickerContainer.has(e.target).length === 0)
+        && (!e.target.className.includes('datepicker')) && (!this.$datesFilter.is(e.target) && this.$datesFilter.has(e.target).length === 0)
       ) {
         this.$icon.text('expand_more');
         this.$datepickerContainer.removeClass('filter-date-driopdown__datepicker-container_visible');

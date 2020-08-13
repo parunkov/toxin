@@ -3,7 +3,7 @@ import '../title/title';
 import './expandable-checkbox-list.scss';
 import $ from 'jquery';
 
-class expandableCheckboxList {
+class ExpandableCheckboxList {
   constructor(list) {
     this.$list = list;
     this.$tite = list.find('.js-expandable-checkbox-list__title');
@@ -23,5 +23,5 @@ class expandableCheckboxList {
 const lists = [];
 
 $('.js-expandable-checkbox-list').each((i) => {
-  lists[i] = new expandableCheckboxList($('.js-expandable-checkbox-list').eq(i));
+  lists[i] = new ExpandableCheckboxList($('.js-expandable-checkbox-list').eq(i));
 });
