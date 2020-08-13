@@ -116,7 +116,7 @@
     "placeholder": "Email",
     "text": "",
     "icon": "arrow_forward",
-    "buttonColor": "purple",
+    "buttonColor": "primary",
     "modifiers": ["withArrow"]
   },
   "inputEng": {
@@ -127,7 +127,7 @@
     "placeholder": "Your email address",
     "text": "",
     "icon": "arrow_forward",
-    "buttonColor": "purple",
+    "buttonColor": "primary",
     "modifiers": ["withArrow"]
   }
 }

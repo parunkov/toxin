@@ -5,9 +5,9 @@ mixin input(data = {})
 		const {header, type = 'text', name, value, placeholder, text, icon, buttonColor, modifiers} = data;
 		let className = 'input__field';
 		if (modifiers) {
-			modifiers.forEach((item, i) => {
+			modifiers.forEach((item) => {
 				className = item === 'themeLight' ? className + ' input__field_theme_light' : className;
-				className = item === 'themeUpprecase' ? className + ' input__field_theme_uppercase' : className;
+				className = item === 'textUppercase' ? className + ' input__field_text_uppercase' : className;
 				className = item === 'focused' ? className + ' input__field_focused' : className;
 				className = item === 'withArrow' ? className + ' input__field_with-arrow' : className;
 				className = item === 'withoutHoverEffect' ? className + ' input__field_theme_without-hover-effect' : className;
@@ -22,7 +22,7 @@ mixin input(data = {})
 			p.input__text= text
 		input(type= type name= name class=className value= value placeholder= placeholder)
 		if icon
-			if buttonColor === 'purple'
+			if buttonColor === 'primary'
 				button(type="button" class="input__button js-input__button input__button_colored")= icon
 			else
 				button(type="button" class="input__button js-input__button")= icon
