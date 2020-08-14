@@ -46,4 +46,4 @@ class Pagination {
   }
 }
 
-const pagination = new Pagination($('.js-pagination'));
+new Pagination($('.js-pagination'));

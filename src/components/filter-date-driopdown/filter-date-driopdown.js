@@ -59,4 +59,4 @@ class DatesFilter {
   }
 }
 
-const datesFilter = new DatesFilter($('.js-filter-date-driopdown'));
+new DatesFilter($('.js-filter-date-driopdown'));

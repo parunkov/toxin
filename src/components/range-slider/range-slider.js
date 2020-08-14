@@ -44,4 +44,4 @@ class Slider {
   }
 }
 
-const slider = new Slider($('.js-range-slider'));
+new Slider($('.js-range-slider'));

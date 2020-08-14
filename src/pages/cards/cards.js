@@ -12,7 +12,7 @@ import Card from '../../components/room-card/room-card';
 import './cards.scss';
 
 
-const datepicker = new Datepicker($('.cards__column_right .js-datepicker-block'));
+new Datepicker($('.cards__column_right .js-datepicker-block'));
 
 const cards = [];
 $('.js-room-card').each((i) => {

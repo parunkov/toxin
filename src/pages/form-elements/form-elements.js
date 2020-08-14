@@ -31,7 +31,7 @@ $('.js-rate').each((i) => {
   rates[i] = new Rate($('.js-rate').eq(i));
 });
 
-const selector = new DatesSelector($('.js-dates-selector'));
+new DatesSelector($('.js-dates-selector'));
 
 $('.js-form-elements__section:nth-child(2) .js-form-elements__item:nth-child(1) .js-checkbox__input:gt(0)').prop('checked', true);
 $('.js-form-elements__section:nth-child(2) .js-form-elements__item:nth-child(3) .js-toggle__input').eq(0).prop('checked', true);

@@ -7,5 +7,5 @@ import './reservation-form.scss';
 
 import Dropdown from '../dropdown/dropdown';
 
-const selector = new DatesSelector($('.js-reservation-form .js-dates-selector'));
-const dropdown = new Dropdown($('.js-reservation-form .js-dropdown').eq(2));
+new DatesSelector($('.js-reservation-form .js-dates-selector'));
+new Dropdown($('.js-reservation-form .js-dropdown').eq(2));

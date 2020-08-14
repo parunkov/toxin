@@ -15,6 +15,7 @@ module.exports = {
     },
     "rules": {
         "func-names": 0,
+        "no-new": 0
         // "no-undef": 0,
     }
 };

@@ -7,7 +7,7 @@ import './search-form.scss';
 import Dropdown from '../dropdown/dropdown';
 
 
-const selector = new DatesSelector($('.js-search-form .js-dates-selector'));
+new DatesSelector($('.js-search-form .js-dates-selector'));
 
 $('.js-search-form .button_theme_with-arrow').click((e) => {
   e.preventDefault();
@@ -21,4 +21,4 @@ $('.js-search-form').keydown((e) => {
   return true;
 });
 
-const dropdown = new Dropdown($('.js-search-form .js-dropdown').eq(2));
+new Dropdown($('.js-search-form .js-dropdown').eq(2));
