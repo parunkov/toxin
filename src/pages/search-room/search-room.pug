@@ -49,7 +49,7 @@ block main
 					value: '19 авг - 23 авг',
 					placeholder: 'Введите даты',
 					text: '',
-					icon: 'expand_more',
+					icon: null,
 					modifiers: ['withoutHoverEffect']
 				}
 				const dropdown1 = {
@@ -109,7 +109,7 @@ block main
 			aside.search-room__form.js-search-room__form
 				form.search-room__form-content.js-search-room__form-content
 					.search-room__input.js-search-room__input
-						+filter-date-driopdown(input1, datepickerText)
+						+filter-date-driopdown(input1, datepickerText, 'expand_more')
 					.search-room__peoples-dropdown.js-search-room__peoples-dropdown
 						+dropdown(dropdown1)
 					.search-room__slider

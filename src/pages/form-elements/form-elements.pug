@@ -47,7 +47,7 @@ block main
 			value: null,
 			placeholder: 'дд.мм.гггг',
 			text: 'Default',
-			modifiers: ['textUppercase']
+			modifiers: ['textUppercase', 'masked']
 		}
 		const input7 = {
 			header: 'filter date dropdown',
@@ -76,7 +76,7 @@ block main
 			value: '19 авг - 23 авг',
 			placeholder: 'Введите даты',
 			text: '',
-			icon: 'expand_more',
+			icon: null,
 			modifiers: ['withoutHoverEffect']
 		}
 		const headers = {
@@ -194,7 +194,7 @@ block main
 				.form-elements__item.js-form-elements__item
 					+dates-selector(dropdown5, dropdown6, datepickerText[0], datepickerText[1])
 				.form-elements__item.js-form-elements__item
-					+filter-date-driopdown(input9, datepickerText)
+					+filter-date-driopdown(input9, datepickerText, 'expand_more')
 				.form-elements__item.js-form-elements__item
 					+input(input8)
 			section.form-elements__section.js-form-elements__section

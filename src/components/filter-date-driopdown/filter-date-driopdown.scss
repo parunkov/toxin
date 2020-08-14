@@ -2,6 +2,29 @@
 
 .filter-date-driopdown {
 
+  &__input {
+    position: relative;
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 44px;
+    height: 44px;
+    padding-top: 3px;
+    text-align: center;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: "Material Icons";
+    color: $black-50;
+    border: 0;
+    outline: none;
+  }
+
   &__datepicker {
     position: relative;
   }

@@ -11,7 +11,7 @@ class DatesFilter {
   constructor(datesFilter) {
     this.$datesFilter = datesFilter;
     this.$input = datesFilter.find('input');
-    this.$icon = datesFilter.find('.js-input__button');
+    this.$icon = datesFilter.find('.js-filter-date-driopdown__arrow');
     this.datepicker = new Datepicker(datesFilter.find('.js-datepicker-block'));
     this.$datepickerContainer = datesFilter.find('.js-filter-date-driopdown__datepicker-container');
     this.init();
@@ -25,6 +25,11 @@ class DatesFilter {
     ];
     const dateToValue = (date) => (`${(`0${date.getDate()}`).substr(-2)} ${months[date.getMonth()]}`);
     this.$icon.click(() => {
+      if (this.$icon.text() === 'expand_more') {
+        this.$icon.text('expand_less');
+      } else if (this.$icon.text() === 'expand_less') {
+        this.$icon.text('expand_more');
+      }
       this.$datepickerContainer.toggleClass('filter-date-driopdown__datepicker-container_visible');
     });
     this.datepicker.$setBtn.click((e) => {

@@ -1,8 +1,10 @@
-mixin filter-date-driopdown(input1, datepickerText)
+mixin filter-date-driopdown(input, datepickerText, icon)
 	include ../../components/input/input.pug
 	include ../../components/datepicker-block/datepicker-block.pug
 	.filter-date-driopdown.js-filter-date-driopdown
-		+input(input1)
+		.filter-date-driopdown__input
+			+input(input)
+			button(type="button" class="filter-date-driopdown__arrow js-filter-date-driopdown__arrow")= icon
 		.filter-date-driopdown__datepicker
 			.filter-date-driopdown__datepicker-container.js-filter-date-driopdown__datepicker-container
 				+datepicker(datepickerText[0], datepickerText[1])
