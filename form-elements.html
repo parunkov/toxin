@@ -21,13 +21,13 @@
       <div class="form-elements__container">
         <section class="form-elements__section js-form-elements__section">
           <div class="form-elements__item js-form-elements__item">
-                <div class="input js-input"><span class="input__name"><span class="title">Text Field</span></span>
+                <div class="input js-input"><span class="input__title"><span class="title">Text Field</span></span>
                   <p class="input__text">Default</p>
                   <input class="input__field input__field_theme_light" type="email" name="form-elements__input-1" placeholder="Email">
                 </div>
           </div>
           <div class="form-elements__item js-form-elements__item">
-                <div class="input js-input"><span class="input__name"><span class="title">Text Field</span></span>
+                <div class="input js-input"><span class="input__title"><span class="title">Text Field</span></span>
                   <p class="input__text">Hover / Focus</p>
                   <input class="input__field input__field_focused" type="text" name="form-elements__input-2" value="This is pretty awesome">
                 </div>
@@ -70,9 +70,9 @@
                 </section>
           </div>
           <div class="form-elements__item js-form-elements__item">
-                <div class="input js-input"><span class="input__name"><span class="title">masked text field</span></span>
+                <div class="input js-input"><span class="input__title"><span class="title">masked text field</span></span>
                   <p class="input__text">Default</p>
-                  <input class="input__field input__field_text_uppercase" type="text" name="form-elements__input-4" placeholder="дд.мм.гггг">
+                  <input class="input__field input__field_text_uppercase js-input__field_masked" type="text" name="form-elements__input-4" placeholder="дд.мм.гггг">
                 </div>
           </div>
           <div class="form-elements__item js-form-elements__item">
@@ -106,10 +106,12 @@
           </div>
           <div class="form-elements__item js-form-elements__item">
                 <div class="filter-date-driopdown js-filter-date-driopdown">
-                      <div class="input js-input"><span class="input__name"><span class="title">filter date dropdown</span></span>
-                        <input class="input__field input__field_theme_without-hover-effect" type="text" name="search-room__input-1" value="19 авг - 23 авг" placeholder="Введите даты">
-                        <button class="input__button js-input__button" type="button">expand_more</button>
-                      </div>
+                  <div class="filter-date-driopdown__input">
+                        <div class="input js-input"><span class="input__title"><span class="title">filter date dropdown</span></span>
+                          <input class="input__field input__field_theme_without-hover-effect" type="text" name="search-room__input-1" value="19 авг - 23 авг" placeholder="Введите даты">
+                        </div>
+                    <button class="filter-date-driopdown__arrow js-filter-date-driopdown__arrow" type="button">expand_more</button>
+                  </div>
                   <div class="filter-date-driopdown__datepicker">
                     <div class="filter-date-driopdown__datepicker-container js-filter-date-driopdown__datepicker-container">
                           <div class="datepicker-block js-datepicker-block">
@@ -128,7 +130,7 @@
                 </div>
           </div>
           <div class="form-elements__item js-form-elements__item">
-                <div class="input js-input"><span class="input__name"><span class="title">subscription text field</span></span>
+                <div class="input js-input"><span class="input__title"><span class="title">subscription text field</span></span>
                   <input class="input__field input__field_with-arrow" type="email" name="form-elements__input-8" placeholder="Email">
                   <button class="input__button js-input__button input__button_colored" type="button">arrow_forward</button>
                 </div>
