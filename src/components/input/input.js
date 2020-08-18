@@ -5,4 +5,6 @@ import $ from 'jquery';
 import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput';
 import '../title/title';
 
-$('.js-input__field_masked').mask('99.99.9999');
+const DATE_MASK = '99.99.9999';
+
+$('.js-input__field_masked').mask(DATE_MASK);

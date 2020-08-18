@@ -28,9 +28,10 @@ class DatesSelector {
   init() {
     const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.getMonth() + 1}`).substr(-2)}.${date.getFullYear()}`;
     const $datepickerContainer = this.$datesSelector.find('.js-dates-selector__datepicker');
-
-    this.arrival.$input.mask('99.99.9999');
-    this.departure.$input.mask('99.99.9999');
+    const DATE_MASK = '99.99.9999';
+    
+    this.arrival.$input.mask(DATE_MASK);
+    this.departure.$input.mask(DATE_MASK);
 
     const onArrowClick = (evt, inputArrow) => {
       evt.preventDefault();
