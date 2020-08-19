@@ -81,7 +81,7 @@
       }
     }
 
-    &_theme_without-hover-effect {
+    &_immutable {
 
       &:hover {
         border: 1px solid $black-25;
