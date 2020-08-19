@@ -1,36 +1,30 @@
 @import "../../variables.scss";
-
 .room-card {
   height: 257.5px;
   max-width: 270px;
   display: inline-block;
   border-radius: 4px;
   background: $white;
-
   &__slider {
     height: 152px;
     margin-bottom: 21px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
   }
-
   &__slide-wrapper {
     position: relative;
     width: 270px;
     margin: 0 auto;
   }
-
   &__slide {
     display: none;
   }
-
   &__slide-active {
     position: absolute;
     top: 0;
     left: 0;
     display: block;
   }
-
   &__slide-left {
     position: absolute;
     top: 0;
@@ -38,7 +32,6 @@
     display: block;
     opacity: .4;
   }
-
   &__slide-right {
     position: absolute;
     top: 0;
@@ -46,26 +39,21 @@
     display: block;
     opacity: .4;
   }
-
   &__shadow {
     position: absolute;
     width: 40px;
     height: 152px;
   }
-
   &__shadow {
-
     &_left {
       top: 0;
       left: 0;
     }
-
     &_right {
       top: 0;
       right: 0;
     }
   }
-
   &__arrow {
     position: absolute;
     width: 45px;
@@ -78,31 +66,24 @@
     cursor: pointer;
     color: transparent;
   }
-
   &__slider:hover {
-
     .room-card__arrow {
       color: $white;
     }
-
     .room-card__shadow_left {
       background-image: linear-gradient(90deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
     }
-
     .room-card__shadow_right {
       background-image: linear-gradient(-90deg, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, 0) 100%, rgba(255, 255, 255, 0) 100%);
     }
   }
-
   &__arrow {
-
     &_left {
       top: 52.5px;
       left: 0;
       padding-top: 12px;
       transform: rotate(90deg);
     }
-
     &_right {
       top: 52.5px;
       right: 0;
@@ -110,13 +91,11 @@
       transform: rotate(-90deg);
     }
   }
-
   &__controls {
     position: absolute;
     top: 121px;
     right: 16px;
   }
-
   &__control {
     display: inline-block;
     width: 7.5px;
@@ -125,33 +104,27 @@
     border: 1px solid $white;
     border-radius: 3.75px;
     cursor: pointer;
-
     &_active {
       background: $white;
     }
   }
-
   &__text {
     padding-right: 6.3%;
     padding-left: 20%*100/270;
   }
-
   &__link {
     color: $black-text;
   }
-
   &__num-wrapper {
     float: left;
     vertical-align: top;
   }
-
   &__num {
     display: inline;
     font-weight: 700;
     font-size: 14px;
     font-family: Montserrat, Arial, sans-serif;
   }
-
   &__header {
     font-weight: 700;
     font-size: 19px;
@@ -161,7 +134,6 @@
     display: inline;
     margin-right: 5px;
   }
-
   &__lux {
     display: inline;
     font-weight: 700;
@@ -170,7 +142,6 @@
     color: $purple;
     text-transform: uppercase;
   }
-
   &__price {
     display: block;
     padding-top: 3px;
@@ -183,27 +154,22 @@
     color: $black-50;
     border-bottom: 1px solid $black-10;
   }
-
   &__price-text {
     margin-left: 5px;
     font-weight: 400;
     font-size: 12px;
   }
-
   &__rate {
     clear: both;
     padding-top: 10px;
-
     &::after {
       content: "";
       clear: both;
     }
   }
-
   &__rate-inner {
     float: left;
   }
-
   &__reviews {
     display: block;
     padding-top: 3px;
@@ -214,7 +180,6 @@
     text-align: right;
     color: $black-50;
   }
-
   &__reviews-text {
     margin-left: 5px;
     font-weight: 400;

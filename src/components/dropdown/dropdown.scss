@@ -1,62 +1,50 @@
 @import "../../variables.scss";
-
 .dropdown {
   position: relative;
   min-height: 68px;
-
   &_theme_date {
     flex: 0 0 47.24%;
-
     &__arrow {
       @media (max-width: 380px) {
         padding-left: 0;
         width: 25px;
       }
-
       &_cursor_default {
         cursor: default;
       }
     }
-
     .dropdown__input {
       text-transform: uppercase;
       letter-spacing: -.1px;
       cursor: default;
       border: 0;
       outline: none;
-
       @media (max-width: 400px) {
         padding-left: 8px;
       }
-
       &:hover {
         border: 1px solid $black-25;
         border: 0;
         outline: none;
       }
     }
-
     &__wrapper_expanded {
       border: 1px solid $black-25;
       border-radius: 4px;
     }
-
     &__name {
       word-break: break-all;
     }
   }
-
   &__type {
     display: none;
   }
-
   &__name {
     display: block;
     float: left;
     margin-bottom: 5px;
     padding-top: 4px;
   }
-
   &__text {
     line-height: 1.6em;
     display: block;
@@ -68,7 +56,6 @@
     color: $black-50;
     text-transform: uppercase;
   }
-
   &__state {
     font-weight: 400;
     line-height: 1.6em;
@@ -81,7 +68,6 @@
     color: $black-50;
     text-transform: uppercase;
   }
-
   &__wrapper {
     position: relative;
     clear: both;
@@ -90,21 +76,17 @@
     text-align: left;
     border: 1px solid $black-25;
     border-radius: 4px;
-
     &_expanded {
       border-radius: 4px 4px 0 0;
       border: 1px solid $black-50;
-
       .dropdown__input::after {
         background: $white;
         transform: rotate(180deg);
       }
-
       .dropdown__menu {
         display: block;
       }
     }
-
     .dropdown__item {
       position: relative;
       min-height: 30px;
@@ -112,7 +94,6 @@
       padding-top: 5px;
       padding-left: 14px;
     }
-
     .dropdown__counter-button {
       position: relative;
       display: inline-block;
@@ -123,7 +104,6 @@
       border-radius: 15px;
       outline: none;
       cursor: pointer;
-
       &::after {
         position: absolute;
         top: 50%;
@@ -134,25 +114,20 @@
         color: $black-50;
         transform: translate(-50%, -50%);
       }
-
       &_theme {
-
         &_increment::after {
           content: "+";
           transform: translate(-50%, -44%);
         }
-
         &_decrement::after {
           content: "-";
         }
       }
-
       &_inactive {
         opacity: .5;
         cursor: default;
       }
     }
-
     .dropdown__counter {
       display: inline-block;
       width: 28px;
@@ -167,7 +142,6 @@
       text-transform: uppercase;
     }
   }
-
   &__input {
     position: relative;
     top: 9px;
@@ -186,7 +160,6 @@
     outline: none;
     cursor: default;
   }
-
   &__arrow {
     position: absolute;
     top: 2px;
@@ -205,7 +178,6 @@
     border: 0;
     outline: none;
   }
-
   &__item-text {
     padding-right: 35%;
     margin-bottom: 7px;
@@ -215,7 +187,6 @@
     color: $black;
     text-transform: uppercase;
   }
-
   &__menu {
     position: absolute;
     top: 42px;
@@ -233,13 +204,11 @@
     box-shadow: 0px 10px 20px 0px $black-5;
     cursor: default;
   }
-
   &__item-controls {
     position: absolute;
     top: 0;
     right: 7px;
   }
-
   &__buttons-block {
     display: flex;
     flex-direction: row-reverse;
@@ -248,7 +217,6 @@
     margin-bottom: 12px;
     padding-left: 6px;
   }
-
   &__clear-btn,
   &__set-btn {
     word-break: break-all;
@@ -261,23 +229,19 @@
     border: 0;
     outline: none;
     background: transparent;
-
     &:hover {
       color: $black-50;
     }
   } 
-
   &__clear-btn {
     display: none;
     margin-left: 5px;
     margin-right: auto;
     color: $black-50;
-
     &_visible {
       display: block;
     }
   }
-
   &__set-btn {
     display: inline-block;
     padding-right: 5px;

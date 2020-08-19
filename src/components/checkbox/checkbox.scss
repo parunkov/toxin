@@ -1,18 +1,14 @@
 @import "../../variables.scss";
-
 .checkbox {
   display: block;
   position: relative;
-
   &__input {
     display: none;
-
     &:checked + .checkbox__inner {
       background: url("images/check.svg") center center no-repeat;
       border: 1px solid $purple;
     }
   }
-
   &__inner {
     position: absolute;
     cursor: pointer;
@@ -24,14 +20,12 @@
     border: 1px solid $black-25;
     border-radius: 4px;
   }
-
   &__text {
     display: inline-block;
     cursor: pointer;
     padding-left: 29px;
     line-height: 1.4em;
     color: $black-50;
-
     &_small {
       padding-left: 29px;
       font-weight: 400;
@@ -42,7 +36,6 @@
       text-transform: none;
     }
   }
-
   &__header {
     font-weight: 700;
     font-size: 14px;

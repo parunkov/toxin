@@ -1,5 +1,4 @@
 @import "../../variables.scss";
-
 .button {
   display: block;
   position: relative;
@@ -16,14 +15,11 @@
   text-transform: uppercase;
   background: $gradient-purple;
   border-radius: 22px;
-
   &:hover,
   &_translucent {
     opacity: .5;
   }
-
   &_theme {
-
     &_light {
       
       padding-top: 14px;
@@ -34,7 +30,6 @@
       background-origin: border-box;
       background-clip: padding-box, border-box;
     }
-
     &_text {
       min-height: 15px;
       padding: 0;
@@ -42,13 +37,11 @@
       background: transparent;
       border: 0;
       outline: none;
-
       &:hover {
         color: $black-50;
         opacity: 1;
       }
     }
-
     &_with-arrow {
       
       padding-right: 40px;
@@ -57,7 +50,6 @@
       padding-top: 0;
       padding-bottom: 0;
       border: 0;
-
       &::after {
         content: " arrow_forward";
         position: absolute;
@@ -73,7 +65,6 @@
         word-break: normal;
       }
     }
-
     &_light.button_size_small {
       
       width: 100%;
@@ -84,14 +75,11 @@
       padding-right: 18px;
     }
   }
-
   &_color_gray {
     color: $black-50;
     opacity: 1;
   }
-
   &_size {
-
     &_small {
       
       width: 100%;
@@ -101,7 +89,6 @@
       padding-right: 20px;
       padding-left: 19px;
     }
-
     &_big {
       word-break: break-all;
     }

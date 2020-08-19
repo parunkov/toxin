@@ -1,5 +1,4 @@
 @import "../../variables.scss";
-
 .index {
   position: relative;
   z-index: 0;
@@ -11,7 +10,6 @@
   animation-timing-function: steps(1, end);
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-
   &__container {
     width: 100%;
     max-width: 1200%*100/1440;
@@ -21,25 +19,20 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 70px;
-
     @media (max-width: 1440px) {
       max-width: $page-container;
     }
-
     @media (max-width: $page-container) {
       max-width: 100%;
     }
-
     @media (max-width: $mobile-menu-breakpoint) {
       padding-top: 30px;
     }
-
     @media (max-width: 600px) {
       flex-direction: column;
       text-align: center;
     }
   }
-
   &__title {
     font-weight: 700;
     font-size: 24px;
@@ -51,11 +44,9 @@
     margin-bottom: 50px;
     font-family: Open Sans;
   }
-
   &__column {
     flex: 0 0 50%;
   }
-
   &__subtitle {
     font-weight: 700;
     font-size: 19px;
@@ -65,21 +56,17 @@
     margin-bottom: 30px;
     font-family: Open Sans;
   }
-
   &__links-list {
     display: block;
     margin-bottom: 50px;
   }
-
   &__links-item {
     display: block;
     margin-bottom: 20px;
   }
-
   &__link {
     text-decoration: none;
     color: $black-50;
-
     &:hover {
       color: $black-text;
     }

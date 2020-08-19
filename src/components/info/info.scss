@@ -1,8 +1,6 @@
 @import "../../variables.scss";
-
 .info {
   padding-bottom: 20px;
-
   &__img {
     display: inline-block;
     float: left;
@@ -15,12 +13,10 @@
     font-family: "Material Icons";
     color: $purple;
   }
-
   &__text-wrapper {
     display: inline-block;
     padding-top: 3px;
   }
-
   &__header {
     font-weight: 700;
     font-size: 14px;
@@ -30,7 +26,6 @@
     text-transform: none;
     margin-bottom: 5px;
   }
-
   &__text {
     font-weight: 400;
     font-size: 14px;
