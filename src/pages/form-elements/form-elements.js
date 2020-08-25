@@ -16,7 +16,7 @@ import Dropdown from '../../components/dropdown/dropdown';
 import '../../components/info/info';
 import '../../components/review/review';
 import DatesSelector from '../../components/dates-selector/dates-selector';
-import '../../components/filter-date-driopdown/filter-date-driopdown';
+import '../../components/filter-date-dropdown/filter-date-dropdown';
 import '../../components/expandable-checkbox-list/expandable-checkbox-list';
 import './form-elements.scss';
 

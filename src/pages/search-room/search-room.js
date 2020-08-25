@@ -25,7 +25,7 @@ import '../../components/checkbox-list/checkbox-list';
 import Card from '../../components/room-card/room-card';
 import '../../components/footer/footer';
 import '../../components/pagination/pagination';
-import '../../components/filter-date-driopdown/filter-date-driopdown';
+import '../../components/filter-date-dropdown/filter-date-dropdown';
 import '../../components/expandable-checkbox-list/expandable-checkbox-list';
 import './search-room.scss';
 

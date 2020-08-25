@@ -18,7 +18,7 @@ block main
 	include ../../components/button/button.pug
 	include ../../components/pagination/pagination.pug
 	include ../../components/dates-selector/dates-selector.pug
-	include ../../components/filter-date-driopdown/filter-date-driopdown.pug
+	include ../../components/filter-date-dropdown/filter-date-dropdown.pug
 	include ../../components/title/title.pug
 	include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
 	-
@@ -194,7 +194,7 @@ block main
 				.form-elements__item.js-form-elements__item
 					+dates-selector(dropdown5, dropdown6, datepickerText[0], datepickerText[1])
 				.form-elements__item.js-form-elements__item
-					+filter-date-driopdown(input9, datepickerText, 'expand_more')
+					+filter-date-dropdown(input9, datepickerText, 'expand_more')
 				.form-elements__item.js-form-elements__item
 					+input(input8)
 			section.form-elements__section.js-form-elements__section

@@ -3,7 +3,7 @@ import '../../variables.scss';
 import '../input/input';
 import $ from 'jquery';
 import Datepicker from '../datepicker-block/datepicker-block';
-import './filter-date-driopdown.scss';
+import './filter-date-dropdown.scss';
 import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput';
 
 
@@ -11,9 +11,9 @@ class DatesFilter {
   constructor(datesFilter) {
     this.$datesFilter = datesFilter;
     this.$input = datesFilter.find('input');
-    this.$icon = datesFilter.find('.js-filter-date-driopdown__arrow');
+    this.$icon = datesFilter.find('.js-filter-date-dropdown__arrow');
     this.datepicker = new Datepicker(datesFilter.find('.js-datepicker-block'));
-    this.$datepickerContainer = datesFilter.find('.js-filter-date-driopdown__datepicker-container');
+    this.$datepickerContainer = datesFilter.find('.js-filter-date-dropdown__datepicker-container');
     this.init();
   }
 
@@ -30,11 +30,11 @@ class DatesFilter {
       } else if (this.$icon.text() === 'expand_less') {
         this.$icon.text('expand_more');
       }
-      this.$datepickerContainer.toggleClass('filter-date-driopdown__datepicker-container_visible');
+      this.$datepickerContainer.toggleClass('filter-date-dropdown__datepicker-container_visible');
     });
     this.datepicker.$setBtn.click((e) => {
       e.preventDefault();
-      this.$datepickerContainer.removeClass('filter-date-driopdown__datepicker-container_visible');
+      this.$datepickerContainer.removeClass('filter-date-dropdown__datepicker-container_visible');
       this.$icon.text('expand_more');
       const dates = this.datepicker.dates.selectedDates;
       if (dates[1]) {
@@ -53,10 +53,10 @@ class DatesFilter {
         && (!e.target.className.includes('datepicker')) && (!this.$datesFilter.is(e.target) && this.$datesFilter.has(e.target).length === 0)
       ) {
         this.$icon.text('expand_more');
-        this.$datepickerContainer.removeClass('filter-date-driopdown__datepicker-container_visible');
+        this.$datepickerContainer.removeClass('filter-date-dropdown__datepicker-container_visible');
       }
     });
   }
 }
 
-new DatesFilter($('.js-filter-date-driopdown'));
+new DatesFilter($('.js-filter-date-dropdown'));

@@ -1,0 +1,10 @@
+mixin filter-date-dropdown(input, datepickerText, icon)
+	include ../../components/input/input.pug
+	include ../../components/datepicker-block/datepicker-block.pug
+	.filter-date-dropdown.js-filter-date-dropdown
+		.filter-date-dropdown__input
+			+input(input)
+			button(type="button" class="filter-date-dropdown__arrow js-filter-date-dropdown__arrow")= icon
+		.filter-date-dropdown__datepicker
+			.filter-date-dropdown__datepicker-container.js-filter-date-dropdown__datepicker-container
+				+datepicker(datepickerText[0], datepickerText[1])

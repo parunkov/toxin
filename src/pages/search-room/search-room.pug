@@ -16,7 +16,7 @@ block main
 		include ../../components/room-card/room-card.pug
 		include ../../components/datepicker-block/datepicker-block.pug
 		include ../../components/pagination/pagination.pug
-		include ../../components/filter-date-driopdown/filter-date-driopdown.pug
+		include ../../components/filter-date-dropdown/filter-date-dropdown.pug
 		include ../../components/expandable-checkbox-list/expandable-checkbox-list.pug
 		- 	
 			const RoomData = function(img, num, lux, price, rate, rev, link) {
@@ -109,7 +109,7 @@ block main
 			aside.search-room__form.js-search-room__form
 				form.search-room__form-content.js-search-room__form-content
 					.search-room__input.js-search-room__input
-						+filter-date-driopdown(input1, datepickerText, 'expand_more')
+						+filter-date-dropdown(input1, datepickerText, 'expand_more')
 					.search-room__peoples-dropdown.js-search-room__peoples-dropdown
 						+dropdown(dropdown1)
 					.search-room__slider
