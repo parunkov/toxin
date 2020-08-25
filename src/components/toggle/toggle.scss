@@ -1,11 +1,15 @@
 @import "../../variables.scss";
+
 .toggle {
+
   &__input {
     display: none;
   }
+
   &__label {
     position: relative;
   }
+
   &__inner {
     position: absolute;
     top: 0;
@@ -16,6 +20,7 @@
     border: 1px solid $black-25;
     border-radius: 10px;
   }
+
   &__inner-circle {
     position: absolute;
     top: 3px;
@@ -25,13 +30,16 @@
     background-color: $black-25;
     border-radius: 6px;
   }
+
   &__input:checked + .toggle__inner {
     border: 1px solid $purple;
+
     .toggle__inner-circle {
       left: 22px;
       background: $gradient-purple;
     }
   }
+
   &__text {
     font-weight: 400;
     font-size: 14px;

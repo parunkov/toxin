@@ -1,4 +1,5 @@
 @import "../../variables.scss";
+
 @font-face {
   font-style: normal;
   font-weight: 400;
@@ -6,6 +7,7 @@
   src: url("../../fonts/quicksand-regular.woff");
   src: url("../../fonts/quicksand-regular.ttf") format("truetype"), url("../../fonts/quicksand-regular.svg") format("svg");
 }
+
 @font-face {
   font-style: normal;
   font-weight: 700;
@@ -13,6 +15,7 @@
   src: url("../../fonts/quicksand-bold.woff");
   src: url("../../fonts/quicksand-bold.ttf") format("truetype"), url("../../fonts/quicksand-bold.svg") format("svg");
 }
+
 @font-face {
   font-style: normal;
   font-weight: 400;
@@ -20,6 +23,7 @@
   src: url("../../fonts/montserrat-regular.woff");
   src: url("../../fonts/montserrat-regular.ttf") format("truetype"), url("../../fonts/montserrat-regular.svg") format("svg");
 }
+
 @font-face {
   font-style: normal;
   font-weight: 700;
@@ -27,6 +31,7 @@
   src: url("../../fonts/montserrat-bold.woff");
   src: url("../../fonts/montserrat-bold.ttf") format("truetype"), url("../../fonts/montserrat-bold.svg") format("svg");
 }
+
 @font-face {
   font-style: normal;
   font-weight: 400;
@@ -34,6 +39,7 @@
   src: url("../../fonts/materialIcons-regular.woff");
   src: url("../../fonts/materialIcons-regular.ttf") format("truetype"), url("../../fonts/materialIcons-regular.svg") format("svg");
 }
+
 @font-face {
   font-style: normal;
   font-weight: 700;
@@ -41,6 +47,7 @@
   src: url("../../fonts/open-sans-bold.woff");
   src: url("../../fonts/open-sans-bold.ttf") format("truetype"), url("../../fonts/montserrat-bold.svg") format("svg");
 }
+
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
@@ -49,12 +56,14 @@ html {
   font-size: 14px;
   font-family: Montserrat, Arial, sans-serif;
   color: $black-75;
+
   *,
   *::before,
   *::after {
     box-sizing: inherit;
   }
 }
+
 body {
   display: flex;
   flex-direction: column;

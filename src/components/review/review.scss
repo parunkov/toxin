@@ -1,21 +1,26 @@
 @import "../../variables.scss";
+
 .review {
   display: flex;
   flex-wrap: nowrap;
+
   &__column-left {
     flex: 0 0 48px;
   }
+
   &__column-right {
     flex: auto;
     padding-top: 3px;
     padding-left: 10px;
   }
+
   &__img {
     float: left;
     width: 44px;
     height: 44px;
     border-radius: 22px;
   }
+
   &__img-wrapper {
     width: 48px;
     height: 48px;
@@ -24,9 +29,11 @@
     border-radius: 24px;
     box-shadow: 0 10px 20px $black-10;
   }
+
   &__like-wrapper {
     padding-left: 3px;
   }
+
   &__header {
     font-weight: 700;
     font-size: 14px;
@@ -36,9 +43,11 @@
     text-transform: none;
     margin-bottom: 5px;
   }
+
   &__days {
     margin-bottom: 16px;
   }
+
   &__text {
     line-height: 24px;
   }
