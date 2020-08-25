@@ -87,7 +87,7 @@
             </div>
             <div class="search-room__peoples-dropdown js-search-room__peoples-dropdown">
                     <section class="dropdown js-dropdown"><span class="dropdown__name"><span class="title">гости</span></span>
-                      <div class="dropdown__wrapper js-dropdown__wrapper">
+                      <div class="dropdown__inner js-dropdown__inner">
                         <input class="dropdown__input js-dropdown__input" type="text" name="guests" autocomplete="off" readonly>
                         <button class="dropdown__arrow js-dropdown__arrow" type="button">expand_more</button>
                         <div class="dropdown__menu">
@@ -138,25 +138,31 @@
               </h3>
                     <div class="checkbox-list">
                       <div class="checkbox-list__checkbox">
-                              <label class="checkbox">
-                                <input class="checkbox__input js-checkbox__input" type="checkbox" name="smoking">
-                                <div class="checkbox__inner"></div>
-                                <p class="checkbox__text">Можно курить</p>
-                              </label>
+                              <div class="checkbox">
+                                <label class="checkbox__label">
+                                  <input class="checkbox__input js-checkbox__input" type="checkbox" name="smoking">
+                                  <div class="checkbox__inner"></div>
+                                  <p class="checkbox__text">Можно курить</p>
+                                </label>
+                              </div>
                       </div>
                       <div class="checkbox-list__checkbox">
-                              <label class="checkbox">
-                                <input class="checkbox__input js-checkbox__input" type="checkbox" name="pets">
-                                <div class="checkbox__inner"></div>
-                                <p class="checkbox__text">Можно с питомцами</p>
-                              </label>
+                              <div class="checkbox">
+                                <label class="checkbox__label">
+                                  <input class="checkbox__input js-checkbox__input" type="checkbox" name="pets">
+                                  <div class="checkbox__inner"></div>
+                                  <p class="checkbox__text">Можно с питомцами</p>
+                                </label>
+                              </div>
                       </div>
                       <div class="checkbox-list__checkbox">
-                              <label class="checkbox">
-                                <input class="checkbox__input js-checkbox__input" type="checkbox" name="guests">
-                                <div class="checkbox__inner"></div>
-                                <p class="checkbox__text">Можно пригласить гостей (до 10 человек)</p>
-                              </label>
+                              <div class="checkbox">
+                                <label class="checkbox__label">
+                                  <input class="checkbox__input js-checkbox__input" type="checkbox" name="guests">
+                                  <div class="checkbox__inner"></div>
+                                  <p class="checkbox__text">Можно пригласить гостей (до 10 человек)</p>
+                                </label>
+                              </div>
                       </div>
                     </div>
             </div>
@@ -165,26 +171,30 @@
               </h3>
                     <div class="checkbox-list">
                       <div class="checkbox-list__checkbox">
-                              <label class="checkbox">
-                                <input class="checkbox__input js-checkbox__input" type="checkbox" name="corridor">
-                                <div class="checkbox__inner"></div>
-                                <h4 class="checkbox__header">Широкий коридор</h4>
-                              </label>
-                              <p class="checkbox__text_small">Ширина коридоров в номере не менее 91 см.</p>
+                              <div class="checkbox">
+                                <label class="checkbox__label">
+                                  <input class="checkbox__input js-checkbox__input" type="checkbox" name="corridor">
+                                  <div class="checkbox__inner"></div>
+                                  <h4 class="checkbox__header">Широкий коридор</h4>
+                                </label>
+                                <p class="checkbox__text_small">Ширина коридоров в номере не менее 91 см.</p>
+                              </div>
                       </div>
                       <div class="checkbox-list__checkbox">
-                              <label class="checkbox">
-                                <input class="checkbox__input js-checkbox__input" type="checkbox" name="helper">
-                                <div class="checkbox__inner"></div>
-                                <h4 class="checkbox__header">Помощник для инвалидов</h4>
-                              </label>
-                              <p class="checkbox__text_small">На 1 этаже вас встретит специалист  и проводит до номера.</p>
+                              <div class="checkbox">
+                                <label class="checkbox__label">
+                                  <input class="checkbox__input js-checkbox__input" type="checkbox" name="helper">
+                                  <div class="checkbox__inner"></div>
+                                  <h4 class="checkbox__header">Помощник для инвалидов</h4>
+                                </label>
+                                <p class="checkbox__text_small">На 1 этаже вас встретит специалист  и проводит до номера.</p>
+                              </div>
                       </div>
                     </div>
             </div>
             <div class="search-room__room-dropdown js-search-room__room-dropdown">
                     <section class="dropdown js-dropdown"><span class="dropdown__name"><span class="title">удобства номера</span></span>
-                      <div class="dropdown__wrapper js-dropdown__wrapper">
+                      <div class="dropdown__inner js-dropdown__inner">
                         <input class="dropdown__input js-dropdown__input" type="text" name="rooms" autocomplete="off" readonly>
                         <button class="dropdown__arrow js-dropdown__arrow" type="button">expand_more</button>
                         <div class="dropdown__menu">
@@ -217,46 +227,58 @@
                       <div class="expandable-checkbox-list__text js-expandable-checkbox-list__text expandable-checkbox-list__text_hidden">
                               <div class="checkbox-list">
                                 <div class="checkbox-list__checkbox">
-                                        <label class="checkbox">
-                                          <input class="checkbox__input js-checkbox__input" type="checkbox" name="breakfast">
-                                          <div class="checkbox__inner"></div>
-                                          <p class="checkbox__text">Завтрак</p>
-                                        </label>
+                                        <div class="checkbox">
+                                          <label class="checkbox__label">
+                                            <input class="checkbox__input js-checkbox__input" type="checkbox" name="breakfast">
+                                            <div class="checkbox__inner"></div>
+                                            <p class="checkbox__text">Завтрак</p>
+                                          </label>
+                                        </div>
                                 </div>
                                 <div class="checkbox-list__checkbox">
-                                        <label class="checkbox">
-                                          <input class="checkbox__input js-checkbox__input" type="checkbox" name="table">
-                                          <div class="checkbox__inner"></div>
-                                          <p class="checkbox__text">Письменный стол</p>
-                                        </label>
+                                        <div class="checkbox">
+                                          <label class="checkbox__label">
+                                            <input class="checkbox__input js-checkbox__input" type="checkbox" name="table">
+                                            <div class="checkbox__inner"></div>
+                                            <p class="checkbox__text">Письменный стол</p>
+                                          </label>
+                                        </div>
                                 </div>
                                 <div class="checkbox-list__checkbox">
-                                        <label class="checkbox">
-                                          <input class="checkbox__input js-checkbox__input" type="checkbox" name="chair">
-                                          <div class="checkbox__inner"></div>
-                                          <p class="checkbox__text">Стул для кормления</p>
-                                        </label>
+                                        <div class="checkbox">
+                                          <label class="checkbox__label">
+                                            <input class="checkbox__input js-checkbox__input" type="checkbox" name="chair">
+                                            <div class="checkbox__inner"></div>
+                                            <p class="checkbox__text">Стул для кормления</p>
+                                          </label>
+                                        </div>
                                 </div>
                                 <div class="checkbox-list__checkbox">
-                                        <label class="checkbox">
-                                          <input class="checkbox__input js-checkbox__input" type="checkbox" name="bed">
-                                          <div class="checkbox__inner"></div>
-                                          <p class="checkbox__text">Кроватка</p>
-                                        </label>
+                                        <div class="checkbox">
+                                          <label class="checkbox__label">
+                                            <input class="checkbox__input js-checkbox__input" type="checkbox" name="bed">
+                                            <div class="checkbox__inner"></div>
+                                            <p class="checkbox__text">Кроватка</p>
+                                          </label>
+                                        </div>
                                 </div>
                                 <div class="checkbox-list__checkbox">
-                                        <label class="checkbox">
-                                          <input class="checkbox__input js-checkbox__input" type="checkbox" name="tv">
-                                          <div class="checkbox__inner"></div>
-                                          <p class="checkbox__text">Телевизор</p>
-                                        </label>
+                                        <div class="checkbox">
+                                          <label class="checkbox__label">
+                                            <input class="checkbox__input js-checkbox__input" type="checkbox" name="tv">
+                                            <div class="checkbox__inner"></div>
+                                            <p class="checkbox__text">Телевизор</p>
+                                          </label>
+                                        </div>
                                 </div>
                                 <div class="checkbox-list__checkbox">
-                                        <label class="checkbox">
-                                          <input class="checkbox__input js-checkbox__input" type="checkbox" name="shampoo">
-                                          <div class="checkbox__inner"></div>
-                                          <p class="checkbox__text">Шампунь</p>
-                                        </label>
+                                        <div class="checkbox">
+                                          <label class="checkbox__label">
+                                            <input class="checkbox__input js-checkbox__input" type="checkbox" name="shampoo">
+                                            <div class="checkbox__inner"></div>
+                                            <p class="checkbox__text">Шампунь</p>
+                                          </label>
+                                        </div>
                                 </div>
                               </div>
                       </div>
