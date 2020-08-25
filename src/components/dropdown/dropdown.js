@@ -47,19 +47,24 @@ class Dropdown {
     if (!this.$dropdown.hasClass('dropdown_theme_date')) {
       this.$arrow.click(onArrowClick);
     }
-
+    $controls.each((i) => {
+      this.counters[i] = new Counter(this.$dropdown.find('.js-dropdown__item-controls').eq(i));
+    });
     const onControlsClick = (() => {
       this.total = 0;
-      for (let i = 0; i < counters.length; i += 1) {
-        this.total += counters[i].value;
+      for (let i = 0; i < this.counters.length; i += 1) {
+        this.total += this.counters[i].value;
       }
       this.$input.attr('value', this.setValue());
       if (this.$input.attr('value')) {
         this.$clearBtn.addClass('dropdown__clear-btn_visible');
       }
+      if (this.total === 0) {
+        this.$clearBtn.removeClass('dropdown__clear-btn_visible');
+      }
+
     });
     $controls.each((i) => {
-      this.counters[i] = new Counter(this.$dropdown.find('.js-dropdown__item-controls').eq(i));
       this.$dropdown.find('.js-dropdown__item-controls').eq(i).click(onControlsClick);
     });
 
