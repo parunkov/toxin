@@ -1,10 +1,11 @@
 mixin checkbox(title = '', text, name)
-	label.checkbox
-		input(type="checkbox" name= name class="checkbox__input js-checkbox__input")
-		.checkbox__inner
+	.checkbox
+		label.checkbox__label
+			input(type="checkbox" name= name class="checkbox__input js-checkbox__input")
+			.checkbox__inner
+			if title
+				h4.checkbox__header= title
+			else
+				p.checkbox__text= text
 		if title
-			h4.checkbox__header= title
-		else
-			p.checkbox__text= text
-	if title
-		p.checkbox__text_small= text
+			p.checkbox__text_small= text
