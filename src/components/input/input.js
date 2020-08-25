@@ -6,13 +6,13 @@ import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput';
 import '../title/title';
 
 class Input {
- constructor(input) {
+  constructor() {
+    this.mask = '99.99.9999';
     this.init();
   }
 
   init() {
-  	const DATE_MASK = '99.99.9999';
-	$('.js-input__field_masked').mask(DATE_MASK);
+    $('.js-input__field_masked').mask(this.mask);
   }
 }
 

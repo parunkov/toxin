@@ -12,11 +12,7 @@
     "jquery-ui": "^1.12.1",
     "jquery.maskedinput": "^1.4.1",
     "paginationjs": "^2.1.5",
-    "reset-css": "^5.0.1",
-    "stylelint": "^13.6.1",
-    "stylelint-config-airbnb": "0.0.0",
-    "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0"
+    "reset-css": "^5.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.3",
@@ -39,6 +35,10 @@
     "webpack-jquery-ui": "^2.0.1",
     "webpack-merge": "^4.2.2",
     "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2"
+    "eslint-plugin-import": "^2.20.2",
+    "stylelint": "^13.6.1",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
   }
 }

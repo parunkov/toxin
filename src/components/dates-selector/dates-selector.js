@@ -29,7 +29,7 @@ class DatesSelector {
     const dateToValue = (date) => `${(`0${date.getDate()}`).substr(-2)}.${(`0${date.getMonth() + 1}`).substr(-2)}.${date.getFullYear()}`;
     const $datepickerContainer = this.$datesSelector.find('.js-dates-selector__datepicker');
     const DATE_MASK = '99.99.9999';
-    
+
     this.arrival.$input.mask(DATE_MASK);
     this.departure.$input.mask(DATE_MASK);
 

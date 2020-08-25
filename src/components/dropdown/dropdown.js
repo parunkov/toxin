@@ -33,7 +33,6 @@ class Dropdown {
     this.setPlaceholder();
 
     const $controls = this.$dropdown.find('.js-dropdown__item-controls');
-    const counters = [];
 
     const onArrowClick = () => {
       if (this.$arrow.text() === 'expand_more') {
@@ -62,7 +61,6 @@ class Dropdown {
       if (this.total === 0) {
         this.$clearBtn.removeClass('dropdown__clear-btn_visible');
       }
-
     });
     $controls.each((i) => {
       this.$dropdown.find('.js-dropdown__item-controls').eq(i).click(onControlsClick);

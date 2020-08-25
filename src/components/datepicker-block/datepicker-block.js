@@ -26,13 +26,9 @@ class Datepicker {
       dateFormat: 'dd.mm.yyyy',
     });
     this.dates = this.$content.datepicker().data('datepicker');
-    this.$setBtn.click((evt) => this.set(evt));
+    this.$setBtn.click((evt) => evt.preventDefault());
     this.$clearBtn.click((evt) => this.clear(evt));
     this.$datepicker.mousemove(() => this.mousemove());
-  }
-
-  set(evt) {
-    evt.preventDefault();
   }
 
   clear(evt) {
