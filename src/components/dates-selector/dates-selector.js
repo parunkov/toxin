@@ -99,7 +99,7 @@ class DatesSelector {
     $(document).click((e) => {
       if ((!$datepickerContainer.is(e.target) && $datepickerContainer.has(e.target).length === 0)
         && (!e.target.className.includes('datepicker'))
-        && (!this.$datesSelector.find('.js-dropdown__wrapper').is(e.target) && this.$datesSelector.find('.js-dropdown__wrapper').has(e.target).length === 0)) {
+        && (!this.$datesSelector.find('.js-dropdown__inner').is(e.target) && this.$datesSelector.find('.js-dropdown__inner').has(e.target).length === 0)) {
         this.arrival.$arrow.text('expand_more');
         this.departure.$arrow.text('expand_more');
         $datepickerContainer.removeClass('dates-selector__datepicker_visible');

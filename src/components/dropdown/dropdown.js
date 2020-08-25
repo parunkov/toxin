@@ -20,7 +20,7 @@ class Dropdown {
     this.$dropdown = dropdown;
     this.counters = [];
     this.total = 0;
-    this.$wrapper = dropdown.find('.js-dropdown__wrapper');
+    this.$wrapper = dropdown.find('.js-dropdown__inner');
     this.$arrow = dropdown.find('.js-dropdown__arrow');
     this.$input = dropdown.find('.js-dropdown__input');
     this.type = dropdown.find('.js-dropdown__item-text').html();
@@ -38,10 +38,10 @@ class Dropdown {
     const onArrowClick = () => {
       if (this.$arrow.text() === 'expand_more') {
         this.$arrow.text('expand_less');
-        this.$wrapper.addClass('dropdown__wrapper_expanded');
+        this.$wrapper.addClass('dropdown__inner_expanded');
       } else {
         this.$arrow.text('expand_more');
-        this.$wrapper.removeClass('dropdown__wrapper_expanded');
+        this.$wrapper.removeClass('dropdown__inner_expanded');
       }
     };
     if (!this.$dropdown.hasClass('dropdown_theme_date')) {
@@ -128,7 +128,7 @@ class Dropdown {
   setBtnClick(e) {
     e.preventDefault();
     this.$arrow.text('expand_more');
-    this.$wrapper.removeClass('dropdown__wrapper_expanded');
+    this.$wrapper.removeClass('dropdown__inner_expanded');
     this.setValue();
   }
 
@@ -149,7 +149,7 @@ class Dropdown {
     if (!this.$dropdown.hasClass('dropdown_theme_date')) {
       if (!this.$wrapper.is(e.target) && this.$wrapper.has(e.target).length === 0) {
         this.$arrow.text('expand_more');
-        this.$wrapper.removeClass('dropdown__wrapper_expanded');
+        this.$wrapper.removeClass('dropdown__inner_expanded');
       }
     }
   }
