@@ -1,8 +1,6 @@
 @import "../../variables.scss";
-
 .range-slider {
   position: relative;
-
   &__header {
     display: inline-block;
     float: left;
@@ -10,7 +8,6 @@
     padding-top: 1px;
     margin-bottom: 7px;
   }
-
   &__text {
     font-weight: 400;
     font-size: 14px;
@@ -19,12 +16,10 @@
     color: $black-75;
   }
 }
-
 #ui-range-slider-range {
   position: relative;
   width: 100%;
 }
-
 #range-slider__amount {
   display: inline-block;
   width: 50%;
@@ -37,7 +32,6 @@
   text-transform: uppercase;
   outline: none;
 }
-
 .ui-slider-horizontal {
   position: relative;
   height: 6px;
@@ -45,7 +39,6 @@
   border: 1px solid $black-25;
   border-radius: 3px;
 }
-
 .ui-slider .ui-slider-handle {
   position: absolute;
   z-index: 2;
@@ -60,7 +53,6 @@
   -ms-touch-action: none;
   touch-action: none;
 }
-
 .ui-slider .ui-slider-range {
   position: absolute;
   z-index: 1;
@@ -72,7 +64,6 @@
   background-position: 0 0;
   border: 0;
 }
-
 #range-slider__range {
   clear: both;
 }

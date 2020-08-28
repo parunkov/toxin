@@ -1,5 +1,4 @@
 @import "../../variables.scss";
-
 .button {
   display: block;
   position: relative;
@@ -16,17 +15,12 @@
   text-transform: uppercase;
   background: $gradient-purple;
   border-radius: 22px;
-
   &:hover,
   &_translucent {
     opacity: .5;
   }
-
   &_theme {
-
-    &_light {
-      
-      padding-top: 14px;
+    &_light {padding-top: 14px;
       padding-bottom: 14px;
       color: $purple;
       border: solid 2px transparent;
@@ -34,7 +28,6 @@
       background-origin: border-box;
       background-clip: padding-box, border-box;
     }
-
     &_text {
       min-height: 15px;
       padding: 0;
@@ -42,22 +35,17 @@
       background: transparent;
       border: 0;
       outline: none;
-
       &:hover {
         color: $black-50;
         opacity: 1;
       }
     }
-
-    &_with-arrow {
-      
-      padding-right: 40px;
+    &_with-arrow {padding-right: 40px;
       padding-left: 38px;
       width: 100%;
       padding-top: 0;
       padding-bottom: 0;
       border: 0;
-
       &::after {
         content: " arrow_forward";
         position: absolute;
@@ -73,10 +61,7 @@
         word-break: normal;
       }
     }
-
-    &_light.button_size_small {
-      
-      width: 100%;
+    &_light.button_size_small {width: 100%;
       min-height: 34px;
       padding-top: 9px;
       padding-bottom: 9px;
@@ -84,24 +69,18 @@
       padding-right: 18px;
     }
   }
-
   &_color_gray {
     color: $black-50;
     opacity: 1;
   }
-
   &_size {
-
-    &_small {
-      
-      width: 100%;
+    &_small {width: 100%;
       min-height: 34px;
       padding-top: 10px;
       padding-bottom: 10px;
       padding-right: 20px;
       padding-left: 19px;
     }
-
     &_big {
       word-break: break-all;
     }

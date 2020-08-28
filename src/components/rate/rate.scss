@@ -1,15 +1,12 @@
 @import "../../variables.scss";
-
 .rate {
   display: inline-block;
   margin-right: 16px;
-
   &__n,
   &__active,
   &__number {
     display: none;
   }
-
   &__star {
     display: inline-block;
     font-weight: 400;

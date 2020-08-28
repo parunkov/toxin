@@ -1,43 +1,32 @@
 @import "../../variables.scss";
-
 @keyframes bg {
-
   0% {
     background-image: url("images/bg3.jpg");
   }
-
   33% {
     background-image: url("images/bg2.jpg");
   }
-
   66% {
     background-image: url("images/bg1.jpg");
   }
-
   100% {
     background-image: url("images/bg3.jpg");
   }
 }
-
 @keyframes text {
-
   0% {
     background: transparent;
   }
-
   33% {
     background: $grey;
   }
-
   66% {
     background: transparent;
   }
-
   100% {
     background: transparent;
   }
 }
-
 .landing {
   flex: 1 0 auto;
   position: relative;
@@ -50,7 +39,6 @@
   animation-timing-function: steps(1, end);
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
-
   &__container {
     width: 100%;
     max-width: 1200%*100/1440;
@@ -62,26 +50,21 @@
     flex-direction: row;
     align-items: flex-start;
     padding-top: 70px;
-
     @media (max-width: 1440px) {
       max-width: $page-container;
     }
-
     @media (max-width: $page-container) {
       max-width: 100%;
     }
-
     @media (max-width: $mobile-menu-breakpoint) {
       padding-top: 30px;
       min-height: 584px;
     }
-
     @media (max-width: 650px) {
       flex-direction: column;
       min-height: 498px;
     }
   }
-
   &__text {
     display: block;
     padding-left: 20px;
@@ -105,7 +88,6 @@
     color: $black-75;
     padding-right: 3px;
     border-radius: 4px;
-
     @media (max-width: $mobile-menu-breakpoint) {
       margin-right: 0;
       flex: 0 1 auto;

@@ -1,11 +1,8 @@
 @import "../../variables.scss";
-
 .filter-date-dropdown {
-
   &__input {
     position: relative;
   }
-
   &__arrow {
     position: absolute;
     right: 0;
@@ -24,11 +21,9 @@
     border: 0;
     outline: none;
   }
-
   &__datepicker {
     position: relative;
   }
-
   &__datepicker-container {
     position: absolute;
     top: 10px;
@@ -38,11 +33,9 @@
     width: 320px;
     border-radius: 4px;
     background: $white;
-
     @media (max-width: 905px) {
       width: 100%;
     }
-
     &_visible {
       display: block;
     }

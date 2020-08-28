@@ -1,12 +1,10 @@
 @import "../../variables.scss";
-
 .dates-selector {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-end;
-
   &__datepicker {
     position: absolute;
     bottom: -7px;
@@ -16,7 +14,6 @@
     width: 100%;
     background: $white;
     border-radius: 4px;
-
     &_visible {
       display: block;
     }

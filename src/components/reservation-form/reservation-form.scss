@@ -1,15 +1,12 @@
 @import "../../variables.scss";
-
 .reservation-form {
   padding-top: 40px;
   padding-bottom: 30px;
-
   &__title-left {
     display: inline-block;
     width: 60%;
     padding-left: 2px;
   }
-
   &__title-text {
     font-weight: 700;
     font-size: 24px;
@@ -17,22 +14,18 @@
     font-family: "Open Sans", Arial, sans-serif;
     color: $black;
   }
-
   &__title-right {
     display: inline-block;
     width: 38%;
     text-align: right;
   }
-
   &__title {
     margin-bottom: 12px;
-
     &_number {
       font-weight: 700;
       font-size: 16px;
       font-family: Montserrat, Arial, sans-serif;
     }
-
     &_category {
       font-weight: 700;
       font-size: 12px;
@@ -40,7 +33,6 @@
       color: $purple;
       text-transform: uppercase;
     }
-
     &_price {
       font-weight: 400;
       font-size: 14px;
@@ -50,17 +42,14 @@
       font-weight: 700;
       letter-spacing: -.2px;
     }
-
     &_price-text {
       font-weight: 400;
       font-size: 12px;
     }
   }
-
   &__dates-selector {
     margin-bottom: 16px;
   }
-
   &__text {
     display: block;
     font-weight: 400;
@@ -70,23 +59,19 @@
     clear: both;
     margin-bottom: 15px;
     line-height: 1.3em;
-
     &_left {
       display: inline-block;
       width: 220%*100/320;
     }
-
     &_right {
       float: right;
       width: 75%*100/320;
       text-align: right;
     }
-
     &:nth-child(3) {
       margin-top: 20px;
     }
   }
-
   &__i {
     display: inline-block;
     width: 20px;
@@ -99,14 +84,12 @@
     border: 1px solid $black-25;
     border-radius: 10px;
   }
-
   &__price {
     display: flex;
     flex-wrap: wrap;
     clear: both;
     margin-bottom: 21px;
     padding-top: 16px;
-
     &-text {
       font-weight: 700;
       font-size: 19px;
@@ -115,13 +98,11 @@
       flex-grow: 0;
       margin-right: 5px;
     }
-
     &-space {
       flex-grow: 1;
       height: 18px;
       border-bottom: 1px dotted $black-25;
     }
-
     &-value {
       font-weight: 700;
       font-size: 19px;
@@ -132,7 +113,6 @@
       margin-left: 5px;
     }
   }
-
   &__btn {
     clear: both;
   }

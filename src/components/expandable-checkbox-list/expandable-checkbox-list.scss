@@ -1,12 +1,9 @@
 @import "../../variables.scss";
-
 .expandable-checkbox-list {
-
   &__title {
     position: relative;
     margin-bottom: 18px;
     cursor: pointer;
-
     &::after,
     &_rotate::after {
       content: "expand_more";
@@ -23,14 +20,11 @@
       background: #ffffff;
       border-radius: 4px;
     }
-
     &_rotate::after {
       transform: rotate(180deg);
     }
   }
-
   &__text {
-
     &_hidden {
       display: none;
     }

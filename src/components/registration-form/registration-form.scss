@@ -1,9 +1,7 @@
 @import "../../variables.scss";
-
 .registration-form {
   padding-top: 40px;
   padding-bottom: 30px;
-
   &__title {
     font-weight: 700;
     font-size: 24px;
@@ -11,69 +9,53 @@
     font-family: "Open Sans", Arial, sans-serif;
     color: $black;
     margin-bottom: 20px;
-
     @media (max-width: 350px) {
-
       .registration-form__title {
         word-break: break-all;
       }
     }
   }
-
   &__radio {
     margin-bottom: 17px;
   }
-
   &__input {
-
     &:nth-child(1) {
       margin-bottom: 10px;
     }
-
     &:nth-child(2) {
       margin-bottom: 10px;
     }
-
     &:nth-child(4) {
       margin-bottom: 17px;
     }
-
     &:nth-child(5) {
       margin-bottom: 10px;
     }
-
     &:nth-child(6) {
       margin-bottom: 10px;
     }
   }
-
   &__toggle {
     margin-bottom: 21px;
   }
-
   &__btn {
     margin-bottom: 30px;
     word-break: break-all;
   }
-
   &__footer {
     display: flex;
     flex-wrap: nowrap;
   }
-
   &__footer-left {
     flex: auto;
     padding-top: 14px;
   }
-
   &__footer-text {
     color: $black-text;
   }
-
   &__footer-right {
     flex: 0 0 99%*100/320;
   }
-
   &__button {
     display: block;
   }

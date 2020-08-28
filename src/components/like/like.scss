@@ -1,15 +1,12 @@
 @import "../../variables.scss";
-
 .like {
   position: relative;
   display: inline-block;
   min-width: 40px;
   margin-right: 6px;
-
   &__input {
     display: none;
   }
-
   &__inner {
     min-width: 40px;
     height: 20px;
@@ -17,7 +14,6 @@
     border-radius: 10px;
     cursor: pointer;
     background: $black-25;
-
     &::after {
       content: "favorite_border";
       position: absolute;
@@ -30,13 +26,11 @@
       color: $black-25;
     }
   }
-
   &__inner-text {
     display: block;
     background: $white;
     border-radius: 9px;
   }
-
   &__text {
     font-size: 14px;
     line-height: 1.6em;
@@ -49,15 +43,12 @@
     font-family: Montserrat, Arial, sans-serif;
     color: $black-25;
   }
-
   &__input:checked + .like__inner {
     background: $gradient-purple;
-
     &::after {
       content: "favorite";
       color: $purple;
     }
-
     .like__text {
       color: $purple;
     }
