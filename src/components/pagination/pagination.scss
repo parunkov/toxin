@@ -1,7 +1,9 @@
 @import "../../variables.scss";
+
 #pagination-container {
   margin-bottom: 10px;
 }
+
 .paginationjs-prev,
 .paginationjs-page,
 .paginationjs-next,
@@ -14,9 +16,11 @@
   text-align: center;
   border-radius: 20px;
 }
+
 .paginationjs-page_size_small {
   margin-right: -8px !important;
 }
+
 .paginationjs-page a,
 .paginationjs-ellipsis a {
   position: relative;
@@ -28,11 +32,13 @@
   color: $black-50;
   text-decoration: none;
 }
+
 .paginationjs-prev,
 .paginationjs-next {
   background: $gradient-green;
   cursor: pointer;
 }
+
 .paginationjs-prev a,
 .paginationjs-next a {
   position: relative;
@@ -44,14 +50,17 @@
   color: transparent;
   text-decoration: none;
 }
+
 .paginationjs-page.active {
   background: $gradient-purple;
   cursor: default;
 }
+
 .paginationjs-page.active a {
   font-weight: 700;
   color: $white;
 }
+
 .paginationjs-next::after,
 .paginationjs-prev::after {
   content: " arrow_forward";
@@ -65,9 +74,11 @@
   color: $white;
   text-transform: none;
 }
+
 .paginationjs-prev::after {
   transform: rotate(180deg);
 }
+
 .pagination__text {
   font-weight: 400;
   font-size: 14px;

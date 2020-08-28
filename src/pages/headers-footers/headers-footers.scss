@@ -1,101 +1,131 @@
 @import "../../variables.scss";
+
 .headers-footers {
   padding-bottom: 130px;
   background: $grey;
+
   &__header {
     width: 100%;
     background: $white;
+
     &_unlogged {
       margin-top: 10px;
       margin-bottom: 40px;
     }
+
     &_logged {
       margin-bottom: 40px;
     }
+
     .header__navigation-list {
       padding-right: 0;
     }
+
     .header__navigation-item_with-submenu .header__navigation-item {
       margin-right: 0;
+
       @media (max-width:$mobile-menu-breakpoint) {
         margin-left: auto;
         margin-right: auto;
       }
+
       &:nth-child(1) {
         margin-right: 0;
+
         @media (max-width:$mobile-menu-breakpoint) {
           margin-left: auto;
           margin-right: auto;
         }
       }
+
       &:nth-child(2) {
         margin-right: 0;
+
         @media (max-width:$mobile-menu-breakpoint) {
           margin-left: auto;
           margin-right: auto;
         }
       }
+
       &:nth-child(3) {
         margin-right: 0;
+
         @media (max-width:$mobile-menu-breakpoint) {
           margin-left: auto;
           margin-right: auto;
         }
       }
+
       &:nth-child(4) {
         margin-right: 0;
+
         @media (max-width:$mobile-menu-breakpoint) {
           margin-left: auto;
           margin-right: auto;
         }
       }
+
       &:last-child {
         margin-right: 0;
+
         @media (max-width:$mobile-menu-breakpoint) {
           margin-left: auto;
           margin-right: auto;
         }
       }
     }
+
     .header__navigation-item {
       margin-right: 26px;
+
       @media (max-width: $mobile-menu-breakpoint) {
         margin-right: 0;
         margin-left: 0;
       }
+
       &:nth-child(1) {
         margin-right: 26px;
+
         @media (max-width: $mobile-menu-breakpoint) {
           margin-right: 0;
           margin-left: 0;
         }
       }
+
       &:nth-child(2) {
         margin-right: 26px;
+
         @media (max-width: $mobile-menu-breakpoint) {
           margin-right: 0;
           margin-left: 0;
         }
+
         .header__navigation-item .header__link {
           min-width: 65px;
         }
       }
+
       &:nth-child(3) {
         margin-right: 36px;
+
         @media (max-width: $mobile-menu-breakpoint) {
           margin-right: 0;
           margin-left: 0;
         }
       }
+
       &:nth-child(4) {
         margin-right: 26px;
+
         @media (max-width: $mobile-menu-breakpoint) {
           margin-right: 0;
           margin-left: 0;
         }
       }
+
       &:last-child {
         margin-right: 29px;
+
         @media (max-width: $mobile-menu-breakpoint) {
           margin-right: 0;
           margin-left: 0;
@@ -103,15 +133,18 @@
       }
     }
   }
+
   &__footer {
     margin-bottom: 38px;
     background: $white;
     box-shadow: 0 10px 20px $black-5;
   }
+
   &__footer {
     background: $white;
     box-shadow: 0 10px 20px $black-5;
   }
+
   &__text {
     font-weight: 400;
     font-size: 14px;
@@ -120,6 +153,7 @@
     color: $black-75;
     margin-bottom: 20px;
   } 
+
   &__footer-container {
     padding-left: 5px;
     padding-right: 5px;
@@ -128,16 +162,20 @@
     padding-top: 100px;
     padding-bottom: 110px;
     text-align: center;
+
     @media (max-width: 1440px) {
       width: 560px;
     }
+
     @media (max-width: 560px) {
       width: 100%;
     }
+
     @media (max-width: 420px) {
       width: 100vw;
     }
   }
+
   &__logo {
     width: 106px;
     margin: 0 auto;

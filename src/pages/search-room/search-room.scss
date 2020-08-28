@@ -1,4 +1,5 @@
 @import "../../variables.scss";
+
 .search-room {
   flex: 1 0 auto;
   position: relative;
@@ -7,6 +8,7 @@
   margin: 0 auto;
   background: $white;
   border-bottom: 1px solid $black-10;
+
   &__container {
     display: flex;
     flex-direction: row;
@@ -17,23 +19,29 @@
     padding-top: 27px;
     padding-right: 14%*100/1440;
     padding-left: 20%*100/1440;
+
     @media (max-width: 1440px) {
       width: 1200px;
     }
+
     @media (max-width: 1220px) {
       width: 100%;
     }
+
     @media (max-width: 905px) {
       flex-direction: column;
       padding-left: 1%;
       padding-right: 1%;
     }
+
     @media (max-width: 600px) {
       flex-wrap: wrap;
     }
   }
+
   &__filters {
     display: none;
+
     @media (max-width: 905px) {
       display: block;
       margin: 0 auto;
@@ -45,6 +53,7 @@
       text-align: center;
       background: $black-10;
     }
+
     &-header {
       position: relative;
       margin-bottom: 18px;
@@ -52,6 +61,7 @@
       display: inline-block;
       cursor: pointer;
       max-width: 240px;
+
       &::after,
       &_rotate::after {
         content: "expand_more";
@@ -66,39 +76,49 @@
         text-transform: none;
         background: transparent;
       }
+
       &_rotate::after {
         transform: rotate(180deg);
       }
     }
   }
+
   &__form {
     flex: 0 0 275%*100/1200;
     min-width: 266px;
     max-width: 310px;
     margin-right: 4.5%;
+
     @media (max-width: 905px) {
       margin: 0 auto;
       margin-bottom: 50px;
       display: none;
     }
+
     @media (max-width: 600px) {
       flex-grow: 1;
     }
+
     &_visible {
       display: block !important;
     }
   }
+
   &__aside-title {
   }
+
   &__input {
     margin-bottom: 15px;
   }
+
   &__peoples-dropdown {
     margin-bottom: 29px;
   }
+
   &__slider {
     margin-bottom: 15px;
   }
+
   &__slider-text {
     margin-bottom: 31px;
     font-weight: 400;
@@ -107,31 +127,39 @@
     font-family: Montserrat, Arial, sans-serif;
     color: $black-50;
   }
+
   &__checkbox {
     width: 222%*100/266;
     margin-bottom: 32px;
   }
+
   &__checkbox-title {
     margin-bottom: 15px;
   }
+
   &__rich-checkbox {
     margin-bottom: 26px;
     padding-right: 5px;
   }
+
   &__rich-checkbox-title {
     margin-bottom: 17px;
   }
+
   &__room-dropdown {
     margin-bottom: 29px;
   }
+
   &__expandable-list {
     margin-bottom: 30px;
   }
+
   &__cards-wrapper {
     flex: auto;
     padding-top: 3px;
     min-width: 282px;
   }
+
   &__title {
     font-weight: 700;
     font-size: 24px;
@@ -141,19 +169,23 @@
     padding-left: 4px;
     letter-spacing: .1px;
     margin-bottom: 20px;
+
     @media (max-width: 905px) {
       text-align: center;
     }
   }
+
   &__cards {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 21px;
+
     @media (max-width: 905px) {
       text-align: center;
       justify-content: center;
     }
   }
+
   &__card {
     flex: 0 0 280px;
     margin-bottom: 20px;
@@ -162,24 +194,30 @@
     border-radius: 4px;
     box-shadow: 0 10px 20px $black-5;
   }
+
   &__pagination {
     margin-bottom: 69px;
     text-align: center;
     margin-left: -20px;
+
     @media (max-width: 905px) {
       margin: 0 auto;
       margin-bottom: 69px;
     }
+
     #pagination-container {
       display: inline-block;
     }
   }
+
   &__pagination .paginationjs-page {
     margin-right: 1px;
+
     @media (max-width: 800px) {
       margin-right: -6px;
     }
   }
+
   &__input-icon {
     position: absolute;
     right: 0;
