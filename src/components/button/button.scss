@@ -20,7 +20,8 @@
     opacity: .5;
   }
   &_theme {
-    &_light {padding-top: 14px;
+    &_light {
+      padding-top: 14px;
       padding-bottom: 14px;
       color: $purple;
       border: solid 2px transparent;
@@ -40,7 +41,8 @@
         opacity: 1;
       }
     }
-    &_with-arrow {padding-right: 40px;
+    &_with-arrow {
+      padding-right: 40px;
       padding-left: 38px;
       width: 100%;
       padding-top: 0;
@@ -61,7 +63,8 @@
         word-break: normal;
       }
     }
-    &_light.button_size_small {width: 100%;
+    &_light.button_size_small {
+      width: 100%;
       min-height: 34px;
       padding-top: 9px;
       padding-bottom: 9px;
@@ -74,7 +77,8 @@
     opacity: 1;
   }
   &_size {
-    &_small {width: 100%;
+    &_small {
+      width: 100%;
       min-height: 34px;
       padding-top: 10px;
       padding-bottom: 10px;
