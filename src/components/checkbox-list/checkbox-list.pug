@@ -8,10 +8,7 @@ mixin checkbox-list(data)
 	.checkbox-list
 		each value, i in names
 			-
-				let header = '';
-				if (titles[i]) {
-					header = titles[i];
-				}
+				const header = titles[i];
 				const text = texts[i];
 				const name = names[i];
 			.checkbox-list__checkbox
