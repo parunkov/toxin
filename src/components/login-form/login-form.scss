@@ -24,7 +24,7 @@
     }
 
     &:nth-child(2) {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
   }
 
@@ -54,5 +54,8 @@
   &__button {
     display: block;
     min-width: 98.5px;
+  }
+  &__footer-button {
+    margin-bottom: 1px;
   }
 }
