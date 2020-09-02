@@ -17,5 +17,5 @@ class Input {
 }
 
 $('.js-input').each((i) => {
-  new Input($('.js-input').eq(i));
+  new Input($('.js-input__field_masked').eq(i));
 });
