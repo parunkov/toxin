@@ -16,8 +16,8 @@
     padding-bottom: 18px;
   }
 
-  &__clear-btn,
-  &__set-btn {
+  &__clear-button,
+  &__set-button {
     word-break: break-all;
     flex: 0 1 auto;
     font-weight: 700;
@@ -34,7 +34,7 @@
     }
   } 
 
-  &__clear-btn {
+  &__clear-button {
     display: none;
     margin-right: auto;
     color: $black-50;
@@ -44,7 +44,7 @@
     }
   }
 
-  &__set-btn {
+  &__set-button {
     display: inline-block;
     padding-right: 5px;
     text-align: right;
@@ -141,7 +141,7 @@
   width: 50%;
   height: 100%;
   background: $bg-purple;
-  transform: translateZ(-1px);
+  transform: translateZ(1px);
 }
 
 .datepicker--cell.-range-to-::before {

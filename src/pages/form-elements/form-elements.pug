@@ -113,8 +113,8 @@ block main
 			}
 		const toggleText = 'Получать спецпредложения';
 		const sliderTitle = 'Range Slider';
-		const btnText = 'click me';
-		const btnText2 = 'перейти к оплате';
+		const buttonText = 'click me';
+		const buttonText2 = 'перейти к оплате';
 		const dropdown1 = {
 				name: 'rooms1',
 				header: 'dropdown',
@@ -161,17 +161,17 @@ block main
 
 		const bullets = ['Нельзя с питомцами', 'Без вечеринок и мероприятий', 'Время прибытия — после 13:00, а выезд до 12:00'];
 		const info1 = {
-			img: 'insert_emoticon',
+			image: 'insert_emoticon',
 			header: 'Комфорт',
 			text: 'Шумопоглощающие стены'
 		}
 		const info2 = {
-			img: 'location_city',
+			image: 'location_city',
 			header: 'Удобство',
 			text: 'Окно в каждой из спален'
 		}
 		const review = {
-			img: 'img/murad.jpg',
+			image: 'img/murad.jpg',
 			like: '12',
 			head: 'Мурад Сарафанов',
 			days: '5 дней назад',
@@ -227,20 +227,20 @@ block main
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
 						+title(headers.buttons)
-					.form-elements__btn
-						+button({text: btnText, tag: 'div'})
-					.form-elements__btn
-						+button({text: btnText, tag: 'div', modifiers: ['translucent']})
-					.form-elements__btn
-						+button({text: btnText, tag: 'div', modifiers: ['themeLight']})
-					.form-elements__btn
-						+button({text: btnText, tag: 'div', modifiers: ['themeLight', 'translucent']})
-					.form-elements__btn
-						+button({text: btnText, tag: 'div', modifiers: ['text']})
-					.form-elements__btn
-						+button({text: btnText, tag: 'div', modifiers: ['text', 'colorGray']})
-					.form-elements__btn
-						+button({text: btnText2, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})
+					.form-elements__button
+						+button({text: buttonText, tag: 'div'})
+					.form-elements__button
+						+button({text: buttonText, tag: 'div', modifiers: ['translucent']})
+					.form-elements__button
+						+button({text: buttonText, tag: 'div', modifiers: ['themeLight']})
+					.form-elements__button
+						+button({text: buttonText, tag: 'div', modifiers: ['themeLight', 'translucent']})
+					.form-elements__button
+						+button({text: buttonText, tag: 'div', modifiers: ['text']})
+					.form-elements__button
+						+button({text: buttonText, tag: 'div', modifiers: ['text', 'colorGray']})
+					.form-elements__button
+						+button({text: buttonText2, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title.js-form-elements__item-title
 						+title(headers.pagination)

@@ -4,7 +4,7 @@ mixin registration-form(data)
 	include ../../components/toggle/toggle.pug
 	include ../../components/button/button.pug
 	-
-		const {title, input1, input2, radio, input3, input4, input5, toggleText, btnText, footerText, btnText2} = data;
+		const {title, input1, input2, radio, input3, input4, input5, toggleText, buttonText, footerText, buttonText2} = data;
 	article.registration-form
 		.registration-form__title
 			h1.registration-form__title.js-registration-form__title #{title}
@@ -23,11 +23,11 @@ mixin registration-form(data)
 				+input(input5)
 			.registration-form__toggle
 				+toggle(toggleText)
-			.registration-form__btn
-				+button({text: btnText, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})
+			.registration-form__button
+				+button({text: buttonText, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})
 		.registration-form__footer
 			.registration-form__footer-left
 				p.registration-form__footer-text #{footerText}
 			.registration-form__footer-right
 				.registration-form__button 
-				+button({text: btnText2, tag: 'a', modifiers: ['themeLight', 'sizeBig'], type: 'submit', link: 'sign-in.html'})
+				+button({text: buttonText2, tag: 'a', modifiers: ['themeLight', 'sizeBig'], type: 'submit', link: 'sign-in.html'})

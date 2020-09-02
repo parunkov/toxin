@@ -24,8 +24,8 @@ class Dropdown {
     this.$arrow = dropdown.find('.js-dropdown__arrow');
     this.$input = dropdown.find('.js-dropdown__input');
     this.type = dropdown.find('.js-dropdown__item-text').html();
-    this.$setBtn = dropdown.find('.js-dropdown__set-btn');
-    this.$clearBtn = dropdown.find('.js-dropdown__clear-btn');
+    this.$setButton = dropdown.find('.js-dropdown__set-button');
+    this.$clearButton = dropdown.find('.js-dropdown__clear-button');
     this.init();
   }
 
@@ -56,18 +56,18 @@ class Dropdown {
       }
       this.$input.attr('value', this.setValue());
       if (this.$input.attr('value')) {
-        this.$clearBtn.addClass('dropdown__clear-btn_visible');
+        this.$clearButton.addClass('dropdown__clear-button_visible');
       }
       if (this.total === 0) {
-        this.$clearBtn.removeClass('dropdown__clear-btn_visible');
+        this.$clearButton.removeClass('dropdown__clear-button_visible');
       }
     });
     $controls.each((i) => {
       this.$dropdown.find('.js-dropdown__item-controls').eq(i).click(onControlsClick);
     });
 
-    this.$setBtn.click((e) => this.setBtnClick(e));
-    this.$clearBtn.click((e) => this.clearBtnClick(e));
+    this.$setButton.click((e) => this.setButtonClick(e));
+    this.$clearButton.click((e) => this.clearButtonClick(e));
     $(document).click((e) => this.documentClick(e));
   }
 
@@ -123,22 +123,22 @@ class Dropdown {
     return inputValue;
   }
 
-  setBtnClick(e) {
+  setButtonClick(e) {
     e.preventDefault();
     this.$arrow.text('expand_more');
     this.$wrapper.removeClass('dropdown__inner_expanded');
     this.setValue();
   }
 
-  clearBtnClick(e) {
+  clearButtonClick(e) {
     e.preventDefault();
     this.total = 0;
     this.$dropdown.find('.dropdown__counter').html('0');
-    this.$clearBtn.removeClass('dropdown__clear-btn_visible');
+    this.$clearButton.removeClass('dropdown__clear-button_visible');
     this.setValue();
     this.$input.attr('value', '');
     for (let i = 0; i < this.counters.length; i += 1) {
-      this.counters[i].$decrementBtn.addClass('dropdown__counter-button_inactive');
+      this.counters[i].$decrementButton.addClass('dropdown__counter-button_inactive');
       this.counters[i].value = 0;
     }
   }

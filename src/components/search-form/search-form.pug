@@ -2,7 +2,7 @@ mixin search-form(data)
 	include ../../components/dates-selector/dates-selector.pug
 	include ../../components/button/button.pug
 	-
-		const {title, dropdown1, dropdown2,	dropdown3, btnText, datepickerText1, datepickerText2} = data;
+		const {title, dropdown1, dropdown2,	dropdown3, buttonText, datepickerText1, datepickerText2} = data;
 	article.search-form.js-search-form
 		h1.search-form__title #{title}
 		form.search-form__form
@@ -10,4 +10,4 @@ mixin search-form(data)
 				+dates-selector(dropdown1, dropdown2, datepickerText1, datepickerText2)
 			+dropdown(dropdown3)
 			.search-form__button
-				+button({text: btnText, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})
+				+button({text: buttonText, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})

@@ -32,7 +32,7 @@ class DatesFilter {
       }
       this.$datepickerContainer.toggleClass('filter-date-dropdown__datepicker-container_visible');
     });
-    this.datepicker.$setBtn.click((e) => {
+    this.datepicker.$setButton.click((e) => {
       e.preventDefault();
       this.$datepickerContainer.removeClass('filter-date-dropdown__datepicker-container_visible');
       this.$icon.text('expand_more');
@@ -43,7 +43,7 @@ class DatesFilter {
         this.$input.attr('value', '');
       }
     });
-    this.datepicker.$clearBtn.click(() => {
+    this.datepicker.$clearButton.click(() => {
       this.$input.attr('value', '');
     });
 

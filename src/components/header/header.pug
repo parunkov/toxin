@@ -3,7 +3,7 @@ include ../../components/button/button.pug
 
 mixin headerMarkup(data)
 	-
-		const {menu, btn1, link1, btn2, link2, login} = data;
+		const {menu, button1, link1, button2, link2, login} = data;
 	header(class = "header js-header")
 		nav.header__navigation.js-header__navigation
 			.header__logo
@@ -27,10 +27,10 @@ mixin headerMarkup(data)
 					.header__user Cosmin Negoita
 			else
 				.header__user-block.js-header__user-block
-					.header__btn
-						+button({text: btn1, tag: 'a', modifiers: ['themeLight', 'sizeSmall'], type: 'submit', link: link1})
-					.header__btn
-						+button({text: btn2, tag: 'a', modifiers: ['sizeSmall'], type: 'submit', link: link2})
+					.header__button
+						+button({text: button1, tag: 'a', modifiers: ['themeLight', 'sizeSmall'], type: 'submit', link: link1})
+					.header__button
+						+button({text: button2, tag: 'a', modifiers: ['sizeSmall'], type: 'submit', link: link2})
 -
 	const dataJson = require('../../commonData/header.json');
 mixin header(isEnglish, isLogged)

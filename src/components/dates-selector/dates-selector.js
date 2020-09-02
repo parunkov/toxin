@@ -64,7 +64,7 @@ class DatesSelector {
     this.arrival.$arrow.click((e) => onArrowClick(e, this.arrival.$arrow));
     this.departure.$arrow.click((e) => onArrowClick(e, this.departure.$arrow));
 
-    const onSetBtnClick = (e) => {
+    const onsetButtonClick = (e) => {
       e.preventDefault();
       $datepickerContainer.removeClass('dates-selector__datepicker_visible');
       this.arrival.$arrow.removeClass('js-dropdown__arrow_cursor_default');
@@ -85,7 +85,7 @@ class DatesSelector {
       this.arrivalDate = dayjs(this.datepicker.dates.selectedDates[0]);
       this.departureDate = dayjs(this.datepicker.dates.selectedDates[1]);
     };
-    const onClearBtnClick = (e) => {
+    const onclearButtonClick = (e) => {
       e.preventDefault();
       this.arrival.$input.val('');
       this.departure.$input.val('');
@@ -93,8 +93,8 @@ class DatesSelector {
       this.departureDate = {};
     };
 
-    this.datepicker.$setBtn.click((e) => onSetBtnClick(e));
-    this.datepicker.$clearBtn.click((e) => onClearBtnClick(e));
+    this.datepicker.$setButton.click((e) => onsetButtonClick(e));
+    this.datepicker.$clearButton.click((e) => onclearButtonClick(e));
 
     $(document).click((e) => {
       if ((!$datepickerContainer.is(e.target) && $datepickerContainer.has(e.target).length === 0)

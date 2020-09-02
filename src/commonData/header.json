@@ -36,9 +36,9 @@
         "href": "/mock-address/change-me"
       }
     ],
-    "btn1": "Login",
+    "button1": "Login",
     "link1": "/mock-address/change-me",
-    "btn2": "Register",
+    "button2": "Register",
     "link2": "/mock-address/change-me",
     "login": 1
   },
@@ -79,9 +79,9 @@
         "href": "/mock-address/change-me"
       }
     ],
-    "btn1": "Login",
+    "button1": "Login",
     "link1": "/mock-address/change-me",
-    "btn2": "Register",
+    "button2": "Register",
     "link2": "/mock-address/change-me"
   },
   "markupRus": {
@@ -127,9 +127,9 @@
         ]
       }
     ],
-    "btn1": "войти",
+    "button1": "войти",
     "link1": "sign-in.html",
-    "btn2": "зарегистрироваться",
+    "button2": "зарегистрироваться",
     "link2": "registration.html"
   }
 }

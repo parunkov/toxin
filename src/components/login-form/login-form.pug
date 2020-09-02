@@ -2,7 +2,7 @@ include ../../components/input/input.pug
 include ../../components/button/button.pug
 mixin login-form(data)
 	-
-		const {title, input1, input2, btnText, footerText, btnText2} = data;
+		const {title, input1, input2, buttonText, footerText, buttonText2} = data;
 	article.login-form
 		h1.login-form__header #{title}
 		form.login-form__form
@@ -10,11 +10,11 @@ mixin login-form(data)
 				+input(input1)
 			.login-form__input
 				+input(input2)
-			.login-form__btn
-				+button({text: btnText, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})
+			.login-form__button
+				+button({text: buttonText, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})
 		.login-form__footer
 			.login-form__footer-left
 				p.login-form__footer-text #{footerText}
 			.login-form__footer-right
 				.login-form__button
-					+button({text: btnText2, tag: 'a', modifiers: ['themeLight', 'sizeBig'], type: 'submit', link: 'registration.html'})
+					+button({text: buttonText2, tag: 'a', modifiers: ['themeLight', 'sizeBig'], type: 'submit', link: 'registration.html'})

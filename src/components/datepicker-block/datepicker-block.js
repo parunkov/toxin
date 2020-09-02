@@ -8,8 +8,8 @@ import './datepicker-block.scss';
 class Datepicker {
   constructor(datepicker) {
     this.$datepicker = datepicker;
-    this.$setBtn = datepicker.find('.js-datepicker-block__set-btn');
-    this.$clearBtn = datepicker.find('.js-datepicker-block__clear-btn');
+    this.$setButton = datepicker.find('.js-datepicker-block__set-button');
+    this.$clearButton = datepicker.find('.js-datepicker-block__clear-button');
     this.$content = datepicker.find('.js-datepicker-block__content');
     this.init();
   }
@@ -26,22 +26,22 @@ class Datepicker {
       dateFormat: 'dd.mm.yyyy',
     });
     this.dates = this.$content.datepicker().data('datepicker');
-    this.$setBtn.click((evt) => evt.preventDefault());
-    this.$clearBtn.click((evt) => this.clear(evt));
+    this.$setButton.click((evt) => evt.preventDefault());
+    this.$clearButton.click((evt) => this.clear(evt));
     this.$datepicker.mousemove(() => this.mousemove());
   }
 
   clear(evt) {
     evt.preventDefault();
     this.dates.clear();
-    this.$clearBtn.removeClass('datepicker-block__clear-btn_visible');
+    this.$clearButton.removeClass('datepicker-block__clear-button_visible');
   }
 
   mousemove() {
     if (this.dates.selectedDates.length === 0) {
-      this.$clearBtn.removeClass('datepicker-block__clear-btn_visible');
+      this.$clearButton.removeClass('datepicker-block__clear-button_visible');
     } else {
-      this.$clearBtn.addClass('datepicker-block__clear-btn_visible');
+      this.$clearButton.addClass('datepicker-block__clear-button_visible');
     }
   }
 

@@ -45,7 +45,7 @@ block main
 				text: 'Итого',
 				value: '38 081₽'
 			},
-			btnText: 'забронировать',
+			buttonText: 'забронировать',
 			datepickerText1: datepickerText[0],
 			datepickerText2: datepickerText[1]
 		}
@@ -58,31 +58,31 @@ block main
 			cancel: 'Отмена'
 		};
 		const info1 = {
-			img: 'insert_emoticon',
+			image: 'insert_emoticon',
 			header: 'Комфорт',
 			text: 'Шумопоглощающие стены',
 			datepickerText: datepicker
 		}
 		const info2 = {
-			img: 'location_city',
+			image: 'location_city',
 			header: 'Удобство',
 			text: 'Окно в каждой из спален'
 		}
 		const info3 = {
-			img: 'whatshot',
+			image: 'whatshot',
 			header: 'Уют',
 			text: 'Номер оснащён камином'
 		}
 		const chart = ['1050', 'голосов', 'Великолепно', 'Хорошо', 'Удовлетворительно', 'Разочарован'];
 		const review1 = {
-			img: 'img/murad.jpg',
+			image: 'img/murad.jpg',
 			like: '12',
 			head: 'Мурад Сарафанов',
 			days: '5 дней назад',
 			text: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
 		};
 		const review2 = {
-			img: 'img/Patricia.jpg',
+			image: 'img/Patricia.jpg',
 			like: '2',
 			head: 'Патрисия Стёклышкова',
 			days: 'Неделю назад',
@@ -92,14 +92,14 @@ block main
 		const text = 'Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.';
 	+header
 	main.room-details
-		figure.room-details__img-section
-			.room-details__img-wrapper
-				img(src="img/room1.jpg"  class="room-details__img")
-			.room-details__img-wrapper
-				.room-details__img-container
-					img(src="img/room2.jpg" class="room-details__img")
-				.room-details__img-container
-					img(src="img/room3.jpg" class="room-details__img")
+		figure.room-details__image-section
+			.room-details__image-wrapper
+				img(src="img/room1.jpg"  class="room-details__image")
+			.room-details__image-wrapper
+				.room-details__image-container
+					img(src="img/room2.jpg" class="room-details__image")
+				.room-details__image-container
+					img(src="img/room3.jpg" class="room-details__image")
 		.room-details__wrapper
 			section.room-details__container
 				include ../../components/info/info.pug

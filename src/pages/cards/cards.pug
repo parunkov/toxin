@@ -34,7 +34,7 @@ block main
 					item3: 'младенцы',
 					clear: '1'
 				}, 
-				btnText: 'подобрать номер',
+				buttonText: 'подобрать номер',
 				datepickerText1: datepickerText[0],
 				datepickerText2: datepickerText[1]
 			}
@@ -90,9 +90,9 @@ block main
 					modifiers: ['themeLight']
 				},
 				toggleText: 'Получать спецпредложения',
-				btnText: 'перейти к оплате',
+				buttonText: 'перейти к оплате',
 				footerText: 'Уже есть аккаунт на Toxin',
-				btnText2: 'войти'
+				buttonText2: 'войти'
 			}
 			const reservationFormData = {
 				title: '888',
@@ -129,7 +129,7 @@ block main
 					text: 'Итого',
 					value: '38 081₽'
 				},
-				btnText: 'забронировать',
+				buttonText: 'забронировать',
 				datepickerText1: datepickerText[0],
 				datepickerText2: datepickerText[1]
 			}
@@ -153,12 +153,12 @@ block main
 					text: '',
 					modifiers: ['themeLight']
 				},
-				btnText: 'войти',
+				buttonText: 'войти',
 				footerText: 'Нет аккаунта на Toxin?',
-				btnText2: 'создать'
+				buttonText2: 'создать'
 			}
-			const RoomData = function(img, num, lux, price, rate, rev) {
-				this.img = img;
+			const RoomData = function(images, num, lux, price, rate, rev) {
+				this.images = images;
 				this.num = num;
 				this.lux = lux;
 				this.price = price;

@@ -1,25 +1,25 @@
 include ../rate/rate.pug
 mixin room-card(data, text)
 	-
-		const {img, num, lux, price, rate, rev, link} = data;
+		const {images, num, lux, price, rate, rev, link} = data;
 		const {currency, time, reviews} = text;
 	section(class="room-card js-room-card")
 		.room-card__slider
 			.room-card__slide-wrapper
-				- for (let i = 0; i < img.length; i++)
+				- for (let i = 0; i < images.length; i++)
 					.room-card__slide.js-room-card__slide
-						img(src=img[i])
+						img(src=images[i])
 				.room-card__shadow.room-card__shadow_left
 				.room-card__shadow.room-card__shadow_right
 				.room-card__arrow.room-card__arrow_left.js-room-card__arrow_left expand_more
 				.room-card__arrow.room-card__arrow_right.js-room-card__arrow_right expand_more
 				.room-card__controls
-					- for (let i = 0; i < img.length; i++)
+					- for (let i = 0; i < images.length; i++)
 						.room-card__control.js-room-card__control
 		.room-card__text
 			a(class="room-card__link" href= link)
-				span.room-card__num-wrapper
-					span.room-card__num №
+				span.room-card__number-wrapper
+					span.room-card__number №
 					h2.room-card__header #{num}
 					span.room-card__lux #{lux}
 			.room-card__price #{price}#{currency}
