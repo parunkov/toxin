@@ -7,12 +7,8 @@ import '../title/title';
 
 class Input {
   constructor() {
-    this.mask = '99.99.9999';
-    this.init();
-  }
-
-  init() {
-    $('.js-input__field_masked').mask(this.mask);
+    const MASK = '99.99.9999';
+    $('.js-input__field_masked').mask(MASK);
   }
 }
 
