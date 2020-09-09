@@ -1,5 +1,12 @@
 mixin rate(value, active)
-	div(class= "rate js-rate" data-active=active)
+	-
+		let className;
+		if(active) {
+			className = "rate rate_active js-rate"
+		} else {
+			className = "rate js-rate"
+		}
+	div(class= className data-active=active)
 		- for (let i = 0; i <5 ; i++)
 			if i < value
 				i(class= "rate__star") star

@@ -19,4 +19,9 @@
     color: $purple;
     cursor: default;
   }
+  &_active {
+    .rate__star {
+      cursor: pointer;
+    }
+  }
 }

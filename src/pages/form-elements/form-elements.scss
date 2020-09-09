@@ -15,9 +15,9 @@
     max-width: 100%;
   }
 
-  .toggle__text {
-    margin-bottom: 14px;
-  }
+  // .toggle__text {
+  //   margin-bottom: 14px;
+  // }
 
   &__container {
     display: flex;
@@ -371,10 +371,9 @@
     flex: auto;
   }
 
-  & .rate__star {
-    cursor: pointer;
+  &__toggle {
+    margin-bottom: 14px;
   }
-
   &__button {
     display: inline-block;
     width: 99px;
