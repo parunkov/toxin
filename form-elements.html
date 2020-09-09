@@ -173,14 +173,14 @@
           <div class="form-elements__item js-form-elements__item">
             <h3 class="form-elements__item-title js-form-elements__item-title"><span class="title">Radio Buttons</span>
             </h3>
-                <div class="radio js-radio">
-                  <label class="radio__label js-radio__label">
-                    <input class="radio__input js-radio__input" type="radio" name="registration-form__radio" checked>
+                <div class="radio">
+                  <label class="radio__label">
+                    <input class="radio__input" type="radio" name="registration-form__radio" checked>
                     <div class="radio__inner"></div>
                     <p class="radio__text">Мужчина</p>
                   </label>
-                  <label class="radio__label js-radio__label">
-                    <input class="radio__input js-radio__input" type="radio" name="registration-form__radio">
+                  <label class="radio__label">
+                    <input class="radio__input" type="radio" name="registration-form__radio">
                     <div class="radio__inner"></div>
                     <p class="radio__text">Женщина</p>
                   </label>
@@ -189,24 +189,28 @@
           <div class="form-elements__item js-form-elements__item">
             <h3 class="form-elements__item-title js-form-elements__item-title"><span class="title">Toggle</span>
             </h3>
-                <div class="toggle">
-                  <label class="toggle__label">
-                    <input class="toggle__input js-toggle__input" type="checkbox" name="toggle">
-                    <div class="toggle__inner">
-                      <div class="toggle__inner-circle"></div>
-                    </div>
-                    <p class="toggle__text">Получать спецпредложения</p>
-                  </label>
-                </div>
-                <div class="toggle">
-                  <label class="toggle__label">
-                    <input class="toggle__input js-toggle__input" type="checkbox" name="toggle">
-                    <div class="toggle__inner">
-                      <div class="toggle__inner-circle"></div>
-                    </div>
-                    <p class="toggle__text">Получать спецпредложения</p>
-                  </label>
-                </div>
+            <div class="form-elements__toggle">
+                  <div class="toggle">
+                    <label class="toggle__label">
+                      <input class="toggle__input js-toggle__input" type="checkbox" name="toggle1" checked>
+                      <div class="toggle__inner">
+                        <div class="toggle__inner-circle"></div>
+                      </div>
+                      <p class="toggle__text">Получать спецпредложения</p>
+                    </label>
+                  </div>
+            </div>
+            <div class="form-elements__toggle">
+                  <div class="toggle">
+                    <label class="toggle__label">
+                      <input class="toggle__input js-toggle__input" type="checkbox" name="toggle2">
+                      <div class="toggle__inner">
+                        <div class="toggle__inner-circle"></div>
+                      </div>
+                      <p class="toggle__text">Получать спецпредложения</p>
+                    </label>
+                  </div>
+            </div>
           </div>
           <div class="form-elements__item js-form-elements__item">
             <h3 class="form-elements__item-title js-form-elements__item-title"><span class="title">like button</span>
@@ -229,9 +233,9 @@
           <div class="form-elements__item js-form-elements__item">
             <h3 class="form-elements__item-title js-form-elements__item-title"><span class="title">rate button</span>
             </h3>
-                <div class="rate js-rate" data-active="1"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
+                <div class="rate rate_active js-rate" data-active="1"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star_border</i>
                 </div>
-                <div class="rate js-rate" data-active="1"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
+                <div class="rate rate_active js-rate" data-active="1"><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i><i class="rate__star">star</i>
                 </div>
           </div>
         </section>
@@ -588,45 +592,51 @@
         </section>
         <section class="form-elements__section js-form-elements__section">
           <div class="form-elements__item js-form-elements__item">
-                <div class="info">
-                  <div class="info__image-wrapper"><i class="info__image">insert_emoticon</i></div>
-                  <div class="info__text-wrapper">
-                    <h4 class="info__header">Комфорт</h4>
-                    <p class="info__text">Шумопоглощающие стены</p>
+            <div class="form-elements__info">
+                  <div class="info">
+                    <div class="info__image-wrapper"><i class="info__image">insert_emoticon</i></div>
+                    <div class="info__text-wrapper">
+                      <h4 class="info__header">Комфорт</h4>
+                      <p class="info__text">Шумопоглощающие стены</p>
+                    </div>
                   </div>
-                </div>
+            </div>
           </div>
           <div class="form-elements__item js-form-elements__item">
-                <div class="info">
-                  <div class="info__image-wrapper"><i class="info__image">location_city</i></div>
-                  <div class="info__text-wrapper">
-                    <h4 class="info__header">Удобство</h4>
-                    <p class="info__text">Окно в каждой из спален</p>
+            <div class="form-elements__info">
+                  <div class="info">
+                    <div class="info__image-wrapper"><i class="info__image">location_city</i></div>
+                    <div class="info__text-wrapper">
+                      <h4 class="info__header">Удобство</h4>
+                      <p class="info__text">Окно в каждой из спален</p>
+                    </div>
                   </div>
-                </div>
+            </div>
           </div>
         </section>
         <section class="form-elements__section js-form-elements__section">
           <div class="form-elements__item js-form-elements__item">
-                <div class="review">
-                  <div class="review__column-left">
-                    <div class="review__image-wrapper"><img class="review__image" src="img/murad.jpg"></div>
-                    <div class="review__like-wrapper">
-                          <div class="like">
-                            <label class="like__label js-like__label">
-                              <input class="like__input js-like__input" type="checkbox" name="like">
-                              <div class="like__inner"><span class="like__inner-text">
-                                  <p class="like__text js-like__text">12</p></span></div>
-                            </label>
-                          </div>
+            <div class="form-elements__review">
+                  <div class="review">
+                    <div class="review__column-left">
+                      <div class="review__image-wrapper"><img class="review__image" src="img/murad.jpg"></div>
+                      <div class="review__like-wrapper">
+                            <div class="like">
+                              <label class="like__label js-like__label">
+                                <input class="like__input js-like__input" type="checkbox" name="like">
+                                <div class="like__inner"><span class="like__inner-text">
+                                    <p class="like__text js-like__text">12</p></span></div>
+                              </label>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="review__column-right">
+                      <h4 class="review__header">Мурад Сарафанов</h4>
+                      <p class="review__days">5 дней назад</p>
+                      <p class="review__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
                     </div>
                   </div>
-                  <div class="review__column-right">
-                    <h4 class="review__header">Мурад Сарафанов</h4>
-                    <p class="review__days">5 дней назад</p>
-                    <p class="review__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще 	потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
-                  </div>
-                </div>
+            </div>
           </div>
         </section>
       </div>
