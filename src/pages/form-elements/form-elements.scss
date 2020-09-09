@@ -15,10 +15,6 @@
     max-width: 100%;
   }
 
-  // .toggle__text {
-  //   margin-bottom: 14px;
-  // }
-
   &__container {
     display: flex;
     flex-wrap: wrap;
@@ -397,19 +393,11 @@
     }
   }
 
-  .info {
+  &__info {
     border-bottom: 1px solid $black-10;
   }
 
-  .input__field {
-    letter-spacing: -.2px;
-
-    &_uppercase {
-      text-transform: uppercase;
-    }
-  }
-
-  .review {
+  &__review {
     padding-right: 1px;
   }
 
