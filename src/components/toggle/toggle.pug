@@ -1,7 +1,7 @@
-mixin toggle(text)
+mixin toggle(text, name = "toggle")
 	.toggle
 		label.toggle__label
-			input(type="checkbox" name="toggle" class="toggle__input js-toggle__input")
+			input(type="checkbox" name= name class="toggle__input js-toggle__input")
 			.toggle__inner
 				.toggle__inner-circle
 			p.toggle__text= text
