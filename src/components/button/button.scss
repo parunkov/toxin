@@ -5,9 +5,11 @@
   position: relative;
   min-height: 44px;
   min-width: 80px;
-  max-width: 350px;
+  max-width: 200px;
   padding-top: 16px;
   padding-bottom: 16px;
+  padding-left: 5px;
+  padding-right: 5px;
   cursor: pointer;
   font-weight: 700;
   font-size: 12px;
@@ -39,6 +41,8 @@
     &_text {
       min-height: 0;
       padding: 0;
+      max-width: none;
+      min-width: 0;
       color: $purple;
       background: transparent;
       border: 0;
@@ -54,6 +58,7 @@
       padding-right: 40px;
       padding-left: 38px;
       width: 100%;
+      max-width: 350px;
       padding-top: 0;
       padding-bottom: 0;
       border: 0;
