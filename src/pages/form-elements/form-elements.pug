@@ -224,8 +224,10 @@ block main
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title
 						+title(headers.rate)
-					+rate(4, 1)
-					+rate(5, 1)
+					.form-elements__rate
+						+rate(4, 1)
+					.form-elements__rate
+						+rate(5, 1)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
 					+range-slider(sliderTitle)
