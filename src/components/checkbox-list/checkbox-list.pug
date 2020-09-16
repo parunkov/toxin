@@ -1,15 +1,11 @@
 include ../../components/checkbox/checkbox.pug
 
 mixin checkbox-list(data)
-	- 
-		const names = data.map(item => item.name);
-		const titles = data.map(item => item.title);
-		const texts = data.map(item => item.text);
 	.checkbox-list
-		each value, i in names
+		each value, i in data
 			-
-				const header = titles[i];
-				const text = texts[i];
-				const name = names[i];
+				const header = data[i].title;
+				const text = data[i].text;
+				const name = data[i].name;
 			.checkbox-list__checkbox
 				+checkbox(header, text, name)
