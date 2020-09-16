@@ -216,8 +216,11 @@ block main
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title
 						+title(headers.like)
-					+like('2')
-					+like('12')
+					.form-elements__like-wrapper
+						.form-elements__like
+							+like('2')
+						.form-elements__like
+							+like('12')
 				.form-elements__item.js-form-elements__item
 					h3.form-elements__item-title
 						+title(headers.rate)
