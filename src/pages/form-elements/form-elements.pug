@@ -199,27 +199,27 @@ block main
 					+input(input8)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
-					h3.form-elements__item-title.js-form-elements__item-title
+					h3.form-elements__item-title
 						+title(headers.checkbox)
 					+checkbox-list(checkboxList1)
 				.form-elements__item.js-form-elements__item
-					h3.form-elements__item-title.js-form-elements__item-title
+					h3.form-elements__item-title
 						+title(headers.radio)
 					+radio(radio)
 				.form-elements__item.js-form-elements__item
-					h3.form-elements__item-title.js-form-elements__item-title
+					h3.form-elements__item-title
 						+title(headers.toggle)
 					.form-elements__toggle
 						+toggle(toggleText, "toggle1", true)
 					.form-elements__toggle
 						+toggle(toggleText, "toggle2")
 				.form-elements__item.js-form-elements__item
-					h3.form-elements__item-title.js-form-elements__item-title
+					h3.form-elements__item-title
 						+title(headers.like)
 					+like('2')
 					+like('12')
 				.form-elements__item.js-form-elements__item
-					h3.form-elements__item-title.js-form-elements__item-title
+					h3.form-elements__item-title
 						+title(headers.rate)
 					+rate(4, 1)
 					+rate(5, 1)
@@ -227,7 +227,7 @@ block main
 				.form-elements__item.js-form-elements__item
 					+range-slider(sliderTitle)
 				.form-elements__item.js-form-elements__item
-					h3.form-elements__item-title.js-form-elements__item-title
+					h3.form-elements__item-title
 						+title(headers.buttons)
 					.form-elements__button
 						+button({text: buttonText, tag: 'div'})
@@ -244,7 +244,7 @@ block main
 					.form-elements__button
 						+button({text: buttonText2, tag: 'button', modifiers: ['themeArrow'], type: 'submit'})
 				.form-elements__item.js-form-elements__item
-					h3.form-elements__item-title.js-form-elements__item-title
+					h3.form-elements__item-title
 						+title(headers.pagination)
 					+pagination(1, 12, paginationText)
 			section.form-elements__section.js-form-elements__section
@@ -262,7 +262,7 @@ block main
 					+dropdown(dropdown3)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
-					h3.form-elements__item-title.js-form-elements__item-title
+					h3.form-elements__item-title
 						+title(headers.richCeckbox)
 					+checkbox-list(checkboxList3)
 			section.form-elements__section.js-form-elements__section
@@ -270,7 +270,7 @@ block main
 					+dropdown(dropdown3)
 			section.form-elements__section.js-form-elements__section
 				.form-elements__item.js-form-elements__item
-					h3.form-elements__item-title.js-form-elements__item-title
+					h3.form-elements__item-title
 						+title(headers.bullet)
 					ul.form-elements__bullet-list
 						li.form-elements__bullet-item #{bullets[0]}
