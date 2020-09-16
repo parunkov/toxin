@@ -3,10 +3,11 @@
 .reservation-form {
   padding-top: 40px;
   padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   &__title-left {
     display: inline-block;
-    width: 60%;
     padding-left: 2px;
   }
 
@@ -20,7 +21,8 @@
 
   &__title-right {
     display: inline-block;
-    width: 38%;
+    float: right;
+    margin-top: 8px;
     text-align: right;
   }
 

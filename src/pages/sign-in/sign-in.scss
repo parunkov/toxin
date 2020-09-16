@@ -10,8 +10,6 @@
   &__container {
     width: 380%*100/1440;
     margin: 0 auto;
-    padding-left: 30%*100/1440;
-    padding-right: 30%*100/1440;
     background-color: $white;
     border: 1px solid rgba(0, 0, 0, .12);
     border-radius: 4px;
@@ -20,14 +18,10 @@
 
     @media (max-width: 1440px) {
       width: 380px;
-      padding-left: 30px;
-      padding-right: 30px;
     }
 
     @media (max-width: 385px) {
       width: 97%;
-      padding-left: 30%*100/385;
-      padding-left: 30%*100/385;
     }
   }
 }
