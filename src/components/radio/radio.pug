@@ -1,3 +1,5 @@
+include ../../components/radio-item/radio-item.pug
+
 mixin radio(data)
 	-
 		const {name, texts, checkedItemNumber = 0} = data
@@ -5,7 +7,5 @@ mixin radio(data)
 		checked[checkedItemNumber] = true;
 	.radio
 		each value, i in texts
-			label.radio__label
-				input(type="radio" name=name class="radio__input" checked=checked[i])
-				.radio__inner
-				p.radio__text= value
+			.radio__item
+				+radio-item(name, value, checked[i])

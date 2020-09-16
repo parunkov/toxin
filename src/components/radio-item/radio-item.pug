@@ -1,0 +1,5 @@
+mixin radio-item(name, text, checked)
+	label.radio-item
+		input(type="radio" name=name class="radio-item__input" checked=checked)
+		.radio-item__inner
+		p.radio-item__text= text
