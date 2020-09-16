@@ -7,11 +7,12 @@ import '../title/title';
 
 class Input {
   constructor(input) {
-  	this.input = input;
-  	this.init();
+    this.input = input;
+    this.init();
   }
+
   init() {
-  	const MASK = '99.99.9999';
+    const MASK = '99.99.9999';
     this.input.mask(MASK);
   }
 }
