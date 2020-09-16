@@ -1,12 +1,11 @@
 mixin radio(data)
 	-
 		const {name, texts, checkedItemNumber = 0} = data
+		const checked = [];
+		checked[checkedItemNumber] = true;
 	.radio
 		each value, i in texts
 			label.radio__label
-				if i === checkedItemNumber
-					input(type="radio" name=name class="radio__input" checked)
-				else
-					input(type="radio" name=name class="radio__input")
+				input(type="radio" name=name class="radio__input" checked=checked[i])
 				.radio__inner
 				p.radio__text= value
