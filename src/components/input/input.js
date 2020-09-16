@@ -6,9 +6,13 @@ import '../../../node_modules/jquery.maskedinput/src/jquery.maskedinput';
 import '../title/title';
 
 class Input {
-  constructor() {
-    const MASK = '99.99.9999';
-    $('.js-input__field_masked').mask(MASK);
+  constructor(input) {
+  	this.input = input;
+  	this.init();
+  }
+  init() {
+  	const MASK = '99.99.9999';
+    this.input.mask(MASK);
   }
 }
 
