@@ -9,7 +9,7 @@
     "air-datepicker": "^2.2.3",
     "dayjs": "^1.8.29",
     "jquery": "^3.4.1",
-    "jquery-ui": "^1.12.1",
+    "jquery-ui": "^1.13.0",
     "jquery.maskedinput": "^1.4.1",
     "paginationjs": "^2.1.5",
     "reset-css": "^5.0.1"
